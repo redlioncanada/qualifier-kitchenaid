@@ -553,6 +553,12 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 				color: #999;
 				opacity: 1;
 			}
+			div {
+				position: absolute;
+				width: 100%;
+				top: 11px;
+				opacity: 0;
+			}
 		}
 	}
 	
@@ -883,6 +889,16 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 				}
 			}
 		}
+	}
+}
+
+[class*="val26"].min26, [class*="val27"].min27, [class*="val28"].min28, [class*="val29"].min29, [class*="val30"].min30, [class*="val31"].min31, [class*="val32"].min32, [class*="val33"].min33, [class*="val34"].min34, [class*="val35"].min35 {
+	.jslider-value span {
+		opacity: 0 !important;
+	}
+
+	.jslider-value div {
+		opacity: 1 !important;
 	}
 }
 

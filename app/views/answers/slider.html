@@ -9,13 +9,13 @@ https://www.npmjs.com/package/ng-slider -->
             <span class="slider-large-label" ng-bind="qs.text[0].options.dimension_label"></span>
         </div>
 
-    <div class="{{isTabletWidthOrLess ? 'hidden' : ''}} answers-main-content answer-slider {{qs.text[0].answer}} {{qs.text[0].classes}}" ng-init="setLast(qs, true)">
+    <div class="{{isTabletWidthOrLess ? 'hidden' : ''}} answers-main-content answer-slider val{{qs.text[0].answer}} {{qs.text[0].classes}}" ng-init="setLast(qs, true)">
         <div class="slider-wrap" ng-class="{'last-answer-active' : qs.text[0].answer == qs.text[0].last}" style="clear:none; float:left">
 		  <input ng-model="qs.text[0].answer" ng-change="setAnswer()"  type="text" id="answerSlider" slider options="qs.text[0].options" />
         </div>
 	</div>
 
-    <div class="answers-main-content answer-slider {{!isTabletWidthOrLess ? 'hidden' : ''}} {{qs.text[0].answer}} {{qs.text[0].classes}}" ng-init="setLast(qs, false)">
+    <div class="answers-main-content answer-slider {{!isTabletWidthOrLess ? 'hidden' : ''}} val{{qs.text[0].answer}} {{qs.text[0].classes}}" ng-init="setLast(qs, false)">
         <div class="slider-wrap" ng-class="{'last-answer-active' : qs.text[0].answer == qs.text[0].last}" style="clear:none; float:left">
           <input ng-model="qs.text[0].answer" ng-change="setAnswer()"  type="text" id="answerSlider" slider options="qs.text[0].verticalOptions" />
         </div>

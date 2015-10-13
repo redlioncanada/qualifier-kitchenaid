@@ -169,21 +169,26 @@
 					"explanation" : "Our wall ovens come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider",
 					"oneAnswer" : false,
-					"classes" : "pointer-labels no-jslider-scale left-tag label-inches",
-					"answer" : 27,
+					"classes" : "pointer-labels min26 no-jslider-scale left-tag label-inches",
+					"answer" : 26,
 					"options" : { 
-						"from" : 27,
+						"from" : 26,
 						"to" : 30,      
 					    "step": 0.0001,
-					    "dimension_label" : "WIDTH",
-					    "scale": ["27","28","29","30"]       
+					    "dimension_label" : "WIDTH"      
 					},
 					"answers" : {
+						"26" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 26,
+							"scoring" : {
+							}
+						},
 						"27" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 27,
-							"text" : "27\"",
 							"scoring" : {
 								"width27" : 1,
 								"width28" : -30,
@@ -195,7 +200,6 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 28,
-							"text" : "28\"",
 							"scoring" : {
 								"width27" : -30,
 								"width28" : 1,
@@ -207,7 +211,6 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 29,
-							"text" : "29\"",
 							"scoring" : {
 								"width27" : -30,
 								"width28" : -30,
@@ -219,7 +222,6 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 30,
-							"text" : "30\"",
 							"scoring" : {
 								"width27" : -30,
 								"width28" : -30,
@@ -447,6 +449,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
+					    "dimension_label": "WIDTH",
 					    "scale": ["Not a Concern","Somewhat a concern","Important","Very Important"]       
 					},
 					"answers" : {

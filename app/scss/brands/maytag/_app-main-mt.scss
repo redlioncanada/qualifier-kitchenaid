@@ -608,4 +608,35 @@ div[ng-class="fr_CA"] {
     .startover-btn-wrap {
 		display: none !important;
 	}
+    .mobile-results-nav li:nth-child(2) img {
+        transform:scale(1.2);
+        margin-bottom: 10px;
+        letter-spacing: .2px;
+    }
+    .mobile-results-nav li:nth-child(odd) span {
+        font-family: 'Akzidenz Grotesk Condensed' !important;
+        letter-spacing: .2px;
+    }
+    #results .mobile-results-nav li .active:after{
+        content: " ";
+        position: absolute;
+        height: 22px;
+        width: 10px;
+        margin: 25px 0 0 0;
+        -ms-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        border-style: solid;
+        border-color: transparent;
+        border-top-color: #002e5f;
+        border-width: 10px;
+        left: 50%;  
+    }  
+    .active {
+        font-size: 12px;
+        width: 80%;
+        margin: 0 auto;
+    }
 }

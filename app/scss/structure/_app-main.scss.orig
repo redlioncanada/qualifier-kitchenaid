@@ -541,14 +541,6 @@ div.mobile-app-nav-arrows {
 		}
 	}
 
-	.app-answers {
-		.answer-option {
-			&.sub-category:first-child {
-				margin-top: 100px !important;
-			}
-		}
-	}
-
 	.app-content-main-top .extra-info-wrap {
 		position: absolute;
 		top: 10px;
@@ -845,6 +837,7 @@ div.mobile-app-nav-arrows {
 	a.answer-box.radio, a.answer-box.radio-2, a.answer-box.radio-4 {
 		float: initial !important;
 	}
+<<<<<<< Updated upstream
     .picture-4-container {
         width: 200px !important;   
         
@@ -879,6 +872,12 @@ div.mobile-app-nav-arrows {
     .boxes-icon-5-container {
         width: 400px;   
     }
+=======
+
+	.app-content-main-bottom .app-content-main-bottom-results {
+		top: 98px;
+	}
+>>>>>>> Stashed changes
 }
 
 @media(max-width:750px) {
