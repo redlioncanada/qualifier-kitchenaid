@@ -20,15 +20,19 @@ var versionPath = '/home/wpcstage/mykitchenaid/latest/';
 var opts = {host: 'wpc-stage.com', port: 22, auth: 'keyMain'};
 var baseURL = 'http://mykitchenaid.wpc-stage.com';
 
-gulp.task('default', ['version'], function() {
+gulp.task('default', ['version', 'lastupdated'], function() {
     doUpload(['config', 'css', 'fonts', 'js', 'views']);
 });
 
-gulp.task('components', ['version'], function() {
+gulp.task('components', ['version', 'lastupdated'], function() {
     doUpload(['components', 'img']);
 });
 
-gulp.task('all', ['version'], function() {
+gulp.task('all', ['version', 'lastupdated'], function() {
+    doUpload(['config', 'css', 'fonts', 'js', 'views', 'components', 'img']);
+});
+
+gulp.task('production', ['version'], function() {
     doUpload(['config', 'css', 'fonts', 'js', 'views', 'components', 'img']);
 });
 
@@ -38,6 +42,13 @@ gulp.task('version', function() {
     return gulp.src('index.php')
         .pipe(replace('#LOCATION', baseURL+'/'+p.version))
         .pipe(ftp(opts));
+});
+
+gulp.task('lastupdated', function() {
+    var styles = "position:fixed;color:black;bottom:0;z-index:5000;font-size:12px;";
+    return gulp.src('../build/index.html')
+        .pipe(replace('<!-- #LASTUPDATED -->', '<p style="' + styles + '" class="lastupdated">Last updated: ' + new Date() + '</p>'))
+        .pipe(gulp.dest('../build'));
 });
 
 function doUpload(src) {
