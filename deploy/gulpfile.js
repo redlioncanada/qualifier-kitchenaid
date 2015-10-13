@@ -32,8 +32,8 @@ gulp.task('all', ['version', 'lastupdated'], function() {
     doUpload(['config', 'css', 'fonts', 'js', 'views', 'components', 'img']);
 });
 
-gulp.task('production', ['version'], function() {
-    doUpload(['config', 'css', 'fonts', 'js', 'views', 'components', 'img']);
+gulp.task('production', function() {
+    doUpload(['config', 'css', 'fonts', 'js', 'views', 'components', 'img'], true);
 });
 
 gulp.task('version', function() {
@@ -51,14 +51,15 @@ gulp.task('lastupdated', function() {
         .pipe(gulp.dest('../build'));
 });
 
-function doUpload(src) {
+function doUpload(src,prod) {
+    if (prod === 'undefined') prod = false;
     for (var i in src) {
-        opts.remotePath = basePath+p.version+'/'+src[i];
+        opts.remotePath = prod ? basePath+src[i] : basePath+p.version+'/'+src[i];
         gulp.src('../build/'+src[i]+'/**')
             .pipe(ftp(opts));
     }
     
-    opts.remotePath = basePath+p.version;
+    opts.remotePath = prod ? basePath : basePath+p.version;
     return gulp.src('../build/*')
         .pipe(ftp(opts));
 }
