@@ -1,0 +1,638 @@
+
+// .answer-box {
+// 	background: url('img/4-select-2-up-bg.png') center center no-repeat;
+// 	&.select-4 {
+// 		background: url('img/4-select-2-up-bg.png') center center no-repeat;
+// 	}
+// }
+
+
+
+.answers-main-content {
+	// @include
+	// margin-right: 15px;
+	// margin-left: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+	&.regular-container {
+		width: 550px;
+	}
+	// Radio, checkbox 4 and up as well as split
+	&.regular-4-container {
+		width: 1100px;
+	}
+	&.picture-2-container {
+		width: 770px;
+	}
+	&.picture-3-container {
+		width: 1155px;
+	}
+	&.picture-4-container {
+		width: 1156px;
+	}
+
+	// Boxes icon 2, 5, and split
+	&.boxes-icon-container {
+		width: 1156px;
+	}
+
+	// Two boxes icons or two split
+	&.boxes-icon-2-container {
+		width: 398px;
+
+	}
+	// &.boxes-icon-5-container {
+	// 	width: 995px;
+	// }
+
+
+}
+
+.select-icon {
+	display: block;
+	width: 33px;
+	height: 33px;
+	background: url('../img/icon-select-not-selected.png');
+	background-size: contain;
+	position: absolute;
+	top: 20px;
+	left: 24px;
+}
+
+
+
+.selected {
+  	.img-wrap, .select-label-wrap { // for boxes-picture
+		box-shadow: none !important;
+  	}
+	.select-icon {
+		background: url('../img/icon-select-selected.png');
+		background-size: contain;
+	}
+}
+
+.label-wrap {
+	display: inline-block;
+	text-align: left;
+}
+.label-text {
+	font-family: $AG-Bold-Cnd;
+	font-size: 17px;
+	color: #444;
+	position: relative;
+	line-height: 17px;
+}
+
+// need to fix this for that really long answer...
+// &.long-answer .label-text {
+// 	font-size: 17px;
+// }
+
+// special cases........
+.longer-label-text {
+	.label-text {
+		font-size: 17px;
+	}
+}
+.answers-main-content {
+	& > :nth-child(4) .family-split { 
+		.label-more-wrap {
+			top: 26px;
+		}
+	}
+	& > :nth-child(5) .family-split {
+		.label-wrap {
+			top: 10px;
+		}
+		.label-more-wrap {
+			top: 26px;
+		}
+	}
+} 
+
+.no-touch {
+	.answer-box {
+		&.boxes-icon-2, &.boxes-icon-5, &.boxes-icon-split {
+			&:hover {
+				img.normal {
+					visibility: hidden;
+				}
+				img.hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.answer-box {
+	transition: all 1s ease;
+	margin-left: 9px;
+	margin-right: 9px;
+	position: relative;
+	// Single select answers
+	&.radio {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&.radio, &.radio-2, &.radio-3, &.radio-4 {
+		display: block;
+		width: 532px;
+		height: 70px;
+
+		background: url('../img/radio-bg.png');
+		background-size: cover;
+		margin-bottom: 10px;
+		@include boxshadow;
+		.label-wrap {
+			position: absolute;
+			left: 88px;
+			max-width: 83%;
+			display: table;
+			height: 70px;
+
+			.label-text {
+				line-height: 20px;
+				margin: 10px 0;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			&.long-answer {
+				top: 15px;
+			}
+		}
+	}
+	// 4 or more = 2 columns
+	&.radio-2 {
+		display: inline-block;
+		float: left;
+		.select-icon {
+			left: 24px;
+		}
+	}
+	&.radio-4 {
+		display: inline-block;
+		float: left;
+		.select-icon {
+			left: 24px;
+		}
+	}
+	&.form-function {
+		float: left;
+		.label-more-wrap {
+			top: 27px
+		}
+	}
+	// Fancy split bg
+	&.radio-split, &.checkbox-split {
+		width: 532px;
+		height: 70px;
+		background: url('../img/split-bg.png');
+		display: inline-block;
+		margin-bottom: 20px;
+		@include boxshadow;
+		float: left;
+		.label-wrap {
+			position: absolute;
+			left: 88px;
+			max-width: 83%;
+			display: table;
+			height: 70px;
+
+			.label-text {
+				line-height: 20px;
+				margin: 10px 0;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			&.long-answer {
+				top: 15px;
+			}
+		}
+		.label-more-wrap {
+			display: inline-block;
+			width: 303px;
+			text-align: left;
+			position: absolute;
+			left: 220px;
+			top: 18px;
+		}
+		.label-text-more {
+			color: #ffffff;
+			font-size: 16px;
+			line-height: 16px;
+			font-family: $AG-Bold-Cnd;
+		}
+	}
+	
+	// Checkbox
+
+	&.checkbox {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.checkbox, &.checkbox-4 {
+		width: 532px;
+		height: 70px;
+		// background: url('../img/checkbox-bg.png');
+		background: url('../img/radio-bg.png');
+		background-size: cover;
+		display: block;
+		margin-bottom: 10px;
+		@include boxshadow;
+		// .select-icon {
+		// 	top: 19px;
+		// 	left: 23px;
+		// }
+
+		.label-wrap {
+			position: absolute;
+			left: 88px;
+			max-width: 83%;
+			display: table;
+			height: 70px;
+
+			.label-text {
+				line-height: 20px;
+				margin: 10px 0;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			&.long-answer {
+				top: 15px;
+			}
+		}
+	}
+	&.checkbox-4 {
+		display: inline-block;
+		float: left;
+		// .label-wrap {
+		// 	position: absolute;
+		// 	left: 100px;
+		// 	top: 23px;
+		// }
+	}
+	&.checkbox, &.checkbox-2 {
+		width: 532px;
+		height: 70px;
+		background: url('../img/radio-bg.png');
+		background-size: cover;
+		display: block;
+		margin-bottom: 10px;
+		@include boxshadow;
+		.label-wrap {
+			position: absolute;
+			top: 22px;
+			left: 100px;
+			max-width: 83%;
+
+			.label-text {
+				height: 70px;
+			}
+			&.long-answer {
+				top: 15px;
+				.label-text {
+					line-height: 20px;
+				}
+			}
+		}
+	}
+	&.checkbox-2 {
+		display: inline-block;
+		float: left;
+	}	
+
+	&.picture-2, &.picture-3 {
+		display: inline-block;
+		.img-wrap {
+			display: block;
+			width: 100%;
+			@include boxshadow;
+			img {
+				margin-top: 4px;
+				width: 100%;
+				// position: relative;
+				// top: 25px;
+			}
+		}
+		.select-label-wrap {
+			margin-top: 0px;
+			display: block;
+			width: 100%;
+			height: 49px;
+			border-right: 3px solid #CCC;
+			background: url('../img/boxes-picture-bg-bottom.png');
+			background-size: cover;
+			@include boxshadow;
+		}
+		.select-icon {
+			top: 180px;
+			left: 19px;
+		}
+		.label-wrap {
+			position: absolute;
+			bottom: 15px;
+			left: 66px;
+			text-align: left;
+		}
+	}
+	&.picture-3 {
+		float: left;
+	}
+	&.picture-4 {
+		display: inline-block;
+		.img-wrap {
+			display: block;
+			width: 277px;
+			height: 173px;
+			background: url('../img/boxes-picture-4-bg-top.png');
+			@include boxshadow;
+			img {
+				margin-top: 4px;
+				// position: relative;
+				// top: 25px;
+			}
+		}
+		.select-label-wrap {
+			margin-top: -1px;
+			display: block;
+			width: 277px;
+			height: 50px;
+			background: url('../img/boxes-picture-4-bg-bottom.png');
+			@include boxshadow;
+		}
+		.select-icon {
+			top: 181px;
+			left: 19px;
+		}
+		.label-wrap {
+			position: absolute;
+			bottom: 16px;
+			left: 66px;
+			text-align: left;
+		}
+	}
+	// Single select with icons - 2 answers
+	&.boxes-icon-2, &.boxes-icon-5, &.boxes-icon-split { // + Multiselect with icons - 5 answers
+		// @include make-md-column(6);
+		width: 172px;
+		height: 205px;
+		background: url('../img/boxes-icon-bg-new.png');
+		display: inline-block;
+		@include boxshadow;
+		.icon-wrap {
+			img {
+				position: relative;
+				top: 12px;
+			}
+		}
+		.select-icon {
+			top: 161px;
+			left: 15px;
+		}
+		.label-wrap {
+			position: absolute;
+			bottom: 18px;
+			left: 60px;
+		}
+
+		img.hover {
+			top: 12px;
+			left: 20px;
+			position: absolute;
+			opacity: 0;
+		}
+		
+		// img.normal,  {
+		// 	display: block;
+		// 	// -webkit-transition: opacity 0.3s ease-in-out;
+		// 	// -moz-transition: opacity 0.3s ease-in-out;
+		// 	// -o-transition: opacity 0.3s ease-in-out;
+		// 	// transition: opacity 0.3s ease-in-out;
+		// }
+		&.selected {
+			img.normal {
+				opacity: 0;
+			}
+			img.hover {
+				opacity: 1;
+			}
+		}
+	}
+	&.boxes-icon-split {
+		.select {
+			left: 13px;
+		}
+		.label-wrap {
+			position: absolute;
+			bottom: 15px;
+			left: 57px;
+		}
+		.label-more-wrap {
+			display: inline-block;
+			width: 303px;
+			text-align: left;
+			position: absolute;
+			left: 220px;
+			top: 18px;
+		}
+		.label-text-more {
+			color: #ffffff;
+			font-size: 16px;
+			line-height: 16px;
+			font-family: $AG-Bold-Cnd;
+		}
+	}
+	
+	// &.boxes-icon-5 {
+		// // @include make-md-column(6);
+		// width: 183px;
+		// height: 217px;
+		// background: url('../img/icon-thumb-bg.png');
+		// display: inline-block;
+		// position: relative;
+		// .icon-wrap {
+		// 	img {
+		// 		position: relative;
+		// 		top: 25px;
+		// 	}
+		// }
+		// .select-icon {
+		// 	top: 170px;
+		// 	left: 19px;
+		// }
+		// .label-wrap {
+		// 	position: absolute;
+		// 	bottom: 21px;
+		// }
+	// }
+}
+
+.picture-4-container {
+	.answer-box {
+		margin-left: 8px;
+		margin-right: 8px;
+		&:nth-child(1) {
+			margin-left: 0;
+		}
+		&:nth-child(4) {
+			margin-right: 0;
+		}
+	}
+}
+
+
+// temporary
+// .answer-box {
+// 	width: 285px;
+//   	height: 59px;
+//   	background: url('../img/4-select-4-up-bg.png');
+// }
+
+// width: 374px;
+// height: 59px;
+// background: url('../img/2-select-bg.png');
+
+// width: 544px;
+// height: 83px;
+// background: url('../img/4-select-2-up-bg.png');
+
+// width: 284px;
+// height: 59px;
+// background: url('../img/4-select-4-up-bg.png');
+
+
+// width: 285px;
+// height: 192px;
+// background: url('../img/4-select-4-up-item-bg.png');
+
+// width: 545px;
+// height: 84px;
+// background: url('../img/select-with-blue-bg.png');
+
+// width: 33px;
+// height: 33px;
+// background: url('../img/not-selected-box.png');
+
+// width: 861px;
+// height: 42px;
+// background: url('../img/slider-bg.png');
+
+
+// Ranking
+.as-sortable-item {
+	border: none;
+}
+.ranking {
+	ul, li, a {
+		-webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	}
+	ul {
+		list-style: none;
+	}
+	.rank-numbers-list {
+		display: inline-block;
+	}
+	.rank-answers-list {
+		display: inline-block;
+		li {
+			height: 61px;
+		}
+	}
+	.rank-number-wrap {
+		@include large-square-label-wrap;
+		.rank-number {
+			@include large-square-label;
+		}	
+	}
+	.label-wrap {
+		display: inline-block;
+		width: 532px;
+		height: 49px;
+		background: url('../img/ranking-bg.png');
+	}
+	.label-text {
+		top: 10px;
+		left: 80px;
+	}
+	
+}
+
+// Slider labels
+
+.slider-label-wrap {
+	@include large-square-label-wrap;
+	.slider-label {
+		@include large-square-label;
+	}
+}
+
+.carousel {
+	.carousel-indicators {
+		display: none !important;
+	}
+	.carousel-control {
+		.right, .left {
+			background: none !important;
+		}
+	}
+	.carousel-control {
+		span {
+			background: #172F57;
+			width: 50px;
+			height: 50px;
+			border-radius: 50px;
+
+		}
+	}
+	.right .carousel-control {
+		span {
+			&:before {
+
+			}
+		}
+	}
+	.left .carousel-control {
+		span {
+			&:before {
+				
+			}
+		}
+	}
+	.carousel-caption {
+		bottom: -50px;
+	}
+}
+
+//french css begin
+div[ng-class="fr_CA"] {
+	.boxes-icon-5-container {
+		.label-wrap {
+			display: inline-block;
+			text-align: left;
+			height: 48px;
+			bottom: 4px;
+			display: table;
+		}
+		.label-text {
+			font-family: $AG-Bold-Cnd;
+			font-size: 17px;
+			color: #272727;
+			position: relative;
+			line-height: 17px;
+			display: table-cell;
+			vertical-align: middle;
+			max-width: 108px;
+			font-size: 12pt;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+@mixin noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@mixin large-square-label-wrap {
+	display: inline-block;
+	border-radius: 2px;
+	background-color: rgba(76, 76, 76, 0.161);
+	box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
+	width: 63px;
+	height: 61px;
+}
+@mixin large-square-label {
+	font-family: $AG-Bold-Cnd;
+	font-size: 27px;
+	// opacity: 0.54; // this should also be a colour...
+	color: #5d5d5d;
+	top: 12px;
+	position: relative;
+}
+
+@mixin boxshadow {
+	-webkit-box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+	-moz-box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+	box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@mixin slideLeft {
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+
+@mixin slideRight {
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@mixin bounceInLeft {
+	-webkit-animation-name: bounceInLeft;
+	animation-name: bounceInLeft;
+}

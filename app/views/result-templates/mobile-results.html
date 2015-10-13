@@ -1,0 +1,96 @@
+<!-- Spliting results so images and headers become mini navigation. -->
+<ul class="mobile-results-nav" ng-if="questionsData.currentCount !=0">
+    <li ng-repeat="a in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange" class="mobile-result-selector" ng-click="selectorClicked($event);" id="result-selector-{{$index}}">
+        <div class="product-img-wrap" ng-init="a.picker=setFirstColour(a)">
+            <img ng-if="a.appliance!='Laundry'" ng-src="http://maytag.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" class="mobile-selector-img">
+            <img ng-if="a.appliance=='Laundry'" ng-src="http://maytag.com/{{a.picker.image}}" class="mobile-selector-img">
+        </div>
+        <span ng-if="$index==1" bo-text="brandData.apptext.yourBestMatch" ng-class="{'active': $index==1}" class="mobile-results-header" id="result-header-{{$index}}"></span>
+        <span ng-if="$index!=1" bo-text="brandData.apptext.otherSuggestion" class="mobile-results-header" id="result-header-{{$index}}" ></span>
+    </li>
+</ul>
+<div id="mobile-results-holder">
+<ul class="results-list" ng-if="questionsData.currentCount !=0">
+			<li ng-repeat="a in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange" class="result ani" id="result-column-{{$index}}">
+				<div class="result-wrap">
+					<!-- <div class="result-inner">
+						
+						<div class="product-colour-picker-wrap">
+							<span bo-text="brandData.apptext.colourPreference"></span>
+							<div class="colourBar">
+								<ul class="color-wrapper">
+									<li ng-repeat="colour in a.colours" ng-click="expandPriceRange(colour.prices.CAD);a.picker=colour;selectPicker(a,colour);" ng-class="{selected: a.picker.colourCode==colour.colourCode}">
+										<img ng-src="http://www.maytag.com/digitalassets/ColorBars/{{colour.colourCode}}-MT.png" />
+									</li>
+								</ul>
+							</div>
+						</div> -->
+						
+						<!--<div class="product-details-wrap" hm-swipeleft="swipeLeft()" hm-swiperight="swipeRight()">-->
+                          <div class="product-details-wrap" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()">
+							<h2 ng-if="a.appliance!='Laundry'"><span class="product-name" ng-bind-html="a.name"></span> </h2>
+							<h2 ng-if="a.appliance=='Laundry'" ><span class="product-name" ng-bind-html="a.washerName"></span> </h2>
+							<h2 ng-if="a.appliance=='Laundry'"><span class="product-name" ng-bind-html="a.dryerName"></span> </h2>
+                            <div class="sales-feature-spacer smallest"></div>
+							<!-- Product Price Wrap -->
+                             <div class="product-price-sku-wrap">
+							<span class="product-price">
+								<span bo-text="brandData.apptext.msrp"></span>:&nbsp;
+								<span ng-if="a.appliance!='Laundry' && isEnglish">${{a.picker.prices.CAD}}</span>
+								<span ng-if="a.appliance=='Laundry' && isEnglish">${{a.picker.washerPrices.CAD}}/{{a.picker.dryerPrices.CAD}}</span>
+								<span ng-if="a.appliance!='Laundry' && isFrench">{{a.picker.prices.CAD.replace('.',',')}} $</span>
+								<span ng-if="a.appliance=='Laundry' && isFrench">{{a.picker.washerPrices.CAD.replace('.',',')}}/{{a.picker.dryerPrices.CAD.replace('.',',')}} $</span>
+							</span>
+							<span class="product-sku">
+								<span bo-text="brandData.apptext.model"></span>:&nbsp; 
+								<span ng-if="a.appliance!='Laundry'">{{a.picker.sku}}</span> 
+								<span ng-if="a.appliance=='Laundry'">{{a.picker.washerSku}}/{{a.picker.dryerSku}}</span> 
+							</span>
+
+						</div> 
+                            <!-- -->
+                            <div class="sales-feature-spacer smallest"></div>
+                            <!-- -->
+							<div class="product-details">
+								<div class="sales-feature-wrapper" ng-repeat="sf in a.salesFeatures | assignScore:a | orderBy:'-score' | limitTo:3"> 
+									<h4 class="sales-feature">
+										<img ng-if="!!sf.featureKey" ng-class="{multiline: sf.headline.length > 46}" ng-src="img/icon-{{sf.featureKey}}.png" />
+										<img ng-if="!sf.featureKey" ng-class="{multiline: sf.headline.length > 46}" ng-src="img/icon-genericfeature.png" />
+										<span ng-bind-html="sf.headline"></span>
+									</h4>
+									<span ng-bind-html="sf.description"></span>
+								</div>
+								<div class="sales-feature-spacer"></div>
+								<div class="sales-feature-additional-wrapper">
+									<div ng-repeat="sf in a.salesFeatures | orderBy:'-score' | after:3 | limitTo:6"> 
+										<h4 class="sales-feature-additional">
+											<img src="img/results-checkmark.png">
+											<span ng-bind-html="sf.headline"></span>
+										</h4>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="btn-wrap">
+									<a href="{{a.url}}" class="btn btn-default" target="_blank">
+										<span class="btn-text" bo-text="brandData.apptext.moreInfo"></span>
+									</a>
+
+									<a href="#" class="btn btn-default" target="_blank">
+										<span class="btn-text btn-text-email" bo-text="brandData.apptext.email"></span>
+										<img src="img/icon-email.png"/>
+									</a>
+
+								</div>
+
+							<div ng-if="!!a.disclaimers && a.disclaimers.length > 0" class="sales-feature-spacer"></div>
+								<div class="product-disclaimers">
+									<p ng-repeat="(key, value) in a.disclaimers" bo-text="value"></p>
+								</div>
+						</div>
+					<!-- </div> -->
+				</div>
+			</li>
+		</ul>
+    </div>

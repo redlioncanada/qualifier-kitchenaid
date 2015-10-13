@@ -1,0 +1,90 @@
+.footer-wrapper {
+	position: relative;
+	z-index: 500;
+	width: 100%;
+}
+
+footer.maytag-mobile {display: none;}
+footer.maytag-desktop {display: block;}
+
+#footer-wrap{background:#F6F6F6;width:100%;margin:20px 0 0 0;padding:0;text-align:left;height:100%;overflow:hidden;border-top:1px solid #d8d7d6;}
+#footer-wrap{margin-top:0;}
+#footer{background:#f6f6f6;width:960px;margin:0 auto;padding:35px 0;color:#ccc;font-size:9px}
+#footer a{color:#ccc;text-decoration:none;font-size:9px}
+#footer a:hover,#footer a:focus{text-decoration:underline}
+#footer-menu{height:1%;overflow:hidden}
+#footer ul{width:119px;float:left;margin:0 0 -2000px;padding:0 0 2030px;border-right:1px solid #CECECE;list-style:none}
+#footer ul.first{margin-right:0}
+#footer ul.last{width:120px;border-right:0}
+#footer li{line-height:1.8em}
+#footer li.divider{border-bottom:1px solid #CECECE;padding:0 0 10px;margin:0 0 10px}
+#footer li.header a{font-weight:bold}
+#footer-menu li a{padding:0 10px;display:inline-block;line-height:1.8em}
+#footer-menu ul.first li a{padding-left:0}
+#footer-menu ul.lastst li a{padding-right:0}
+#footer-legal{border-top:1px solid #CECECE;padding-top:10px}
+#footer-trademark{float:left;width:720px;color:#ccc;padding-bottom: 15px;}
+#footer-legal-links{float:left;width:240px;text-align:right}
+#footer-legal-links span{padding:0 5px;color:#ccc}
+#footer, #footer a, #footer-trademark{color:#8d8d8d;}
+
+#footer a:hover, #footer-menu ul li a:hover{color: #002855 !important;}
+
+/*mobile footer begin*/
+footer.maytag-mobile {
+	background-color: #333;
+	height: 300px;
+	font-size: 7pt;
+	width: 100%;
+
+	.footer-links {
+	    margin: 0;
+	    padding: 10px;
+	}
+
+	.footer-menu-wrapper .footer-menu-item {
+	    width: 100%;
+	    float: left;
+	    border-top: 1px solid #D9D9D9;
+	    background: #FFFFFF;
+	    padding: 20px 0;
+	    font-size: 150%;
+	    text-transform: capitalize;
+	    font-weight: normal;
+	}
+
+	.footer-links li {
+	    width: 100%;
+	    display: block;
+	    text-align: center;
+	    padding: 0;
+	    margin: 20px 0;
+	    color: #FFFFFF;
+	    padding: 0 10px;
+	}
+
+	.footer-links li a {
+		color: #FFFFFF;
+		padding: 0 4px;
+	}
+
+	.footer-links li.legal {
+	    color: #ABABAB;
+	}
+}
+/*mobile footer end*/
+
+footer {
+	// position: absolute;
+	// bottom: 0;
+  	width: 100%;
+}
+
+@media(max-width:1023px) {
+  footer.maytag-mobile {
+    display: block;
+  }
+  footer.maytag-desktop {
+    display: none;
+  }
+}

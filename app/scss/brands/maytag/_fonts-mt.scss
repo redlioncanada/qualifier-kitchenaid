@@ -1,0 +1,38 @@
+// Maytag Fonts
+
+// @font-face {
+// 	font-family: 'Akzidenz Grotesk';
+//     src: url('../fonts/freight_display_book-webfont.eot');
+//     src: url('../fonts/freight_display_book-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/freight_display_book-webfont.woff') format('woff'),
+//          url('../fonts/AkzidGroStdBolCnd.ttf') format('truetype'),
+//          url('../fonts/freight_display_book-webfont.svg#freightdispbookregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+	font-family: 'Akzidenz Grotesk Bold Condensed';
+    src: url('../fonts/AkzidGroStdBolCnd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Akzidenz Grotesk Bold';
+    src: url('../fonts/AkzidGroStdBol.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Akzidenz Grotesk Condensed';
+    src: url('../fonts/AkzidGroStdCnd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$AG-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$AG-Bold-Cnd: 'Akzidenz Grotesk Bold Condensed', $AG-stack;
+$AG-Bold: 'Akzidenz Grotesk Bold', $AG-stack;
+$AG-Cnd: 'Akzidenz Grotesk Condensed', $AG-stack;
+

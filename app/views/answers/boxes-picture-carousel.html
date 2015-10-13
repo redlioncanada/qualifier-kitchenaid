@@ -1,0 +1,20 @@
+<!-- Carousel picture boxes answers -->
+<!-- http://angular-ui.github.io/bootstrap/#/carousel -->
+<div class="answers-main-content">
+	<a href="" class="answer answer-option answer-box picture-carousel" ng-repeat="answer in qs.text[0].answers" ng-click="answer.answer=true" ng-mousedown="buttonState='down'" ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDown : buttonState=='down', toggleButtonUp : buttonState=='up', selected : answer.answer}">
+		<div>
+			<div style="height: 305px">
+				<carousel interval="5000" style="width: 200px; height: 200px">
+					<slide ng-repeat="image in answer.images">
+						<img ng-src="{{image}}" style="margin:auto;">
+						<div class="carousel-caption">
+							<h4>{{answer.text}}</h4>
+						</div>	
+					</slide>
+				</carousel>
+			</div>
+		</div>
+	</a>
+</div>
+
+

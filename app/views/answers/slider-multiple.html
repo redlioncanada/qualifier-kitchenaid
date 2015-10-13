@@ -1,0 +1,63 @@
+<!-- Slider answer -->
+
+<!-- http://darul75.github.io/ng-slider/ 
+https://www.npmjs.com/package/ng-slider -->
+<div ng-controller="SliderMultipleCtrl">
+
+	<div class="multi-slider-wrap" ng-init="setLast(qs,true)" > 
+
+		<!-- If the slider has a dimension value, then it appears within the label below -->
+	    <div class="slider-large-label-wrap" ng-if="!!qs.text[0].options.dimension_label" style="width: 100px; clear: none; float:left">
+	        <span class="slider-large-label" ng-bind="qs.text[0].options.dimension_label"></span>
+	    </div>
+
+		<div class="answers-main-content answer-slider pointer-labels {{qs.text[0].classes}}">
+			
+
+
+		    <div class="slider-wrap" ng-class="{'hidden': isTabletWidthOrLess, 'last-answer-active' : qs.text[0].answer == qs.text[0].last}"  style="clear: none; float:left">
+				<input ng-model="qs.text[0].answer" ng-change="setAnswer()" type="text" id="answerSlider" slider options="qs.text[0].options" />
+			</div>
+
+			<div class="slider-wrap" ng-class="{'hidden': !isTabletWidthOrLess, 'last-answer-active' : qs.text[0].answer == qs.text[0].last}"  style="clear: none; float:left">
+				<input ng-model="qs.text[0].answer" ng-change="setAnswer()" type="text" id="answerSlider" slider options="qs.text[0].verticalOptions" />
+			</div>
+
+			<!-- <div class="slider-bottom-labels" ng-if="qs.text[0].classes == 'slider-labels'">
+		        <div class="slider-answer-label-wrap {{$index + 1}}" ng-repeat="labeltext in qs.text[0].answers">
+		            <span class="slider-answer-label" ng-bind-html="labeltext.text"></span>
+		            <span class="slider-answer-label more" ng-bind-html="labeltext.text_more"></span>
+		        </div>
+		    </div> -->
+
+		</div>
+	</div>
+
+	<div class="multi-slider-wrap" ng-init="setLast(qs,false)" > 
+
+		<!-- If the slider has a dimension value, then it appears within the label below -->
+	    <div class="slider-large-label-wrap" ng-if="!!qs.text[1].options.dimension_label" style="width: 100px; clear: none; float:left">
+	        <span class="slider-large-label" ng-bind="qs.text[1].options.dimension_label"></span>
+	    </div>
+
+		<div class="answers-main-content answer-slider pointer-labels {{qs.text[0].classes}}">
+			
+
+			<div class="slider-wrap" ng-class="{'hidden': isTabletWidthOrLess, 'last-answer-active' : qs.text[1].answer == qs.text[1].last}"  style="clear: none; float:left">
+				<input ng-model="qs.text[1].answer" ng-change="setAnswer()" type="text" id="answerSlider" slider options="qs.text[1].options" />
+			</div>
+
+		    <div class="slider-wrap" ng-class="{'hidden': !isTabletWidthOrLess, 'last-answer-active' : qs.text[1].answer == qs.text[1].last}"  style="clear: none; float:left">
+				<input ng-model="qs.text[1].answer" ng-change="setAnswer()" type="text" id="answerSlider" slider options="qs.text[1].verticalOptions" />
+			</div>
+
+			<!-- <div class="slider-bottom-labels" ng-if="qs.text[0].classes == 'slider-labels'">
+		        <div class="slider-answer-label-wrap {{$index + 1}}" ng-repeat="labeltext in qs.text[0].answers">
+		            <span class="slider-answer-label" ng-bind-html="labeltext.text"></span>
+		            <span class="slider-answer-label more" ng-bind-html="labeltext.text_more"></span>
+		        </div>
+		    </div> -->
+
+		</div>
+	</div>
+</div>

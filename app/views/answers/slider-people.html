@@ -1,0 +1,33 @@
+<!-- Slider answer -->
+
+<!-- http://darul75.github.io/ng-slider/ 
+https://www.npmjs.com/package/ng-slider -->
+
+<div class="answers-main-content answer-slider people-slider people{{qs.text[0].answer | number:0}} {{qs.text[0].classes}}" ng-controller="SliderCtrl" style="">
+	
+	<!-- <div class="slider-large-label-wrap" ng-if="!!qs.text[0].options.dimension_label">
+        <span class="slider-large-label" ng-bind="qs.text[0].options.dimension_label"></span>
+    </div> -->
+
+    <!-- <div class="slider-bg slider-bg-left"></div>
+    <div class="slider-bg slider-bg-right"></div> -->
+
+    <div ng-class="{'hidden': !isTabletWidthOrLess}" class="slider-wrap" ng-init="setLast(qs,true)"  ng-class="{'last-answer-active' : qs.text[0].answer == qs.text[0].last}">
+
+		<input ng-model="qs.text[0].answer" ng-change="setAnswer()"  type="text" id="answerSlider" slider options="qs.text[0].verticalOptions" />
+	</div>
+
+     <div ng-class="{'hidden': isTabletWidthOrLess}" class="slider-wrap" ng-init="setLast(qs,false)"  ng-class="{'last-answer-active' : qs.text[0].answer == qs.text[0].last}">
+
+        <input ng-model="qs.text[0].answer" ng-change="setAnswer()"  type="text" id="answerSlider" slider options="qs.text[0].options" />
+    </div>
+
+    <!-- <div class="slider-bottom-labels" ng-if="qs.text[0].classes == 'slider-labels'">
+        <div class="slider-answer-label-wrap {{$index + 1}}" ng-repeat="labeltext in qs.text[0].answers">
+            <div class="slider-answer-label-line"></div>
+            <span class="slider-answer-label" ng-bind-html="labeltext.text"></span>
+            <span class="slider-answer-label more" ng-bind-html="labeltext.text_more"></span>
+        </div>
+    </div> -->
+
+</div>

@@ -1,0 +1,734 @@
+
+		"Fridge - Purpose" : {
+			"previous" : "Appliance",
+			"next" : "Fridge - Organization",
+			"text" : [
+				{
+					"question" : "My fridge…",
+					"type" : "multiselect",
+					"answers" : [
+						{
+							"text" : "Keeps the drinks cold",
+							"value" : "Keeps the drinks cold",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Is a farmers' market",
+							"value" : "Is a farmers' market",
+							"scoring" : {
+								"side by side" : 1,
+								"french door" : 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Feeds a family",
+							"value" : "Feeds a family",
+							"scoring" : {
+								"side by side" : 1
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Holds ready-to-eat meals",
+							"value" : "Holds ready-to-eat meals",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1
+							},
+							"order" : 4
+						},
+						{
+							"text" : "Backstage of entertainment ",
+							"value" : "Backstage of entertainment ",
+							"scoring" : {
+								"french door" : 1
+							},
+							"order" : 5
+						}
+					]
+				},
+				{
+					"question" : "I use my fridge to:",
+					"answers" : [
+						{
+							"text" : "Chill my drinks",
+							"value" : "Chill my drinks",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Use as a personal farmers' market",
+							"value" : "Use as a personal farmers' market",
+							"scoring" : {
+								"side by side" : 1,
+								"french door" : 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Keep my family's favourite foods",
+							"value" : "Keep my family's favourite foods",
+							"scoring" : {
+								"side by side" : 1
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Stock up ready-to-eat meals",
+							"value" : "Stock up ready-to-eat meals",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1
+							},
+							"order" : 4
+						},
+						{
+							"text" : "Keep the party platers chilled",
+							"value" : "Keep the party platers chilled",
+							"scoring" : {
+								"french door" : 1
+							},
+							"order" : 5
+						}
+					]
+				}
+			],
+			"category" : "aesthetics",
+			"type" : "masonry"	
+		},
+		"Fridge - Organization" : {
+			"previous" : "Fridge - Purpose",
+			"next" : "Fridge - Capacity",
+			"text" : [
+				{
+					"question" : "How do you keep your fridge?",
+					"answers" : [
+						{
+							"text" : "Perfectly organized",
+							"value" : "Perfectly organized",
+							"scoring" : {
+								"side by side" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Lots of clothes, organized",
+							"value" : "Lots of clothes, organized",
+							"scoring" : {
+								"side by side" : 1,
+								"french door" : 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "lots of clothes, disorganized",
+							"value" : "lots of clothes, disorganized",
+							"scoring" : {
+								"side by side" : 1
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Few clothes",
+							"value" : "Few clothes",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1
+							},
+							"order" : 4
+						}
+					]
+				},
+				{
+					"question" : "My friends consider me: (choose one)",
+					"answers" : [
+						{
+							"text" : "Very organized and always on time",
+							"value" : "Very organized and always on time",
+							"scoring" : {
+								"side by side" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Sort of organized, sometimes late",
+							"value" : "Sort of organized, sometimes late",
+							"scoring" : {
+								"side by side" : 1,
+								"french door" : 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Organized, always late",
+							"value" : "Organized, always late",
+							"scoring" : {
+								"side by side" : 1
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Disorganized but on time",
+							"value" : "Disorganized but on time",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1
+							},
+							"order" : 4
+						}
+					]
+				}
+			],
+			"category" : "aesthetics",
+			"type" : "multi"	
+		},
+		"Fridge - Capacity" : {
+			"previous" : "Fridge - Organization",
+			"next" : "Fridge - Water",
+			"text" : [
+				{
+					"question" : "On a regular basis, my fridge feeds..",
+					"answers" : [
+						{
+							"text" : "Single",
+							"value" : "Single",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Couple",
+							"value" : "Couple",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Family of 4",
+							"value" : "Family of 4",
+							"scoring" : {
+								"side by side" : 1,
+								"french door" : 1
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Large family (6+)",
+							"value" : "Large family (6+)",
+							"scoring" : {
+								"french door" : 1
+							},
+							"order" : 4
+						},
+						{
+							"text" : "Party/entertaining",
+							"value" : "Party/entertaining",
+							"scoring" : {
+								"french door" : 1
+							},
+							"order" : 5
+						}
+					]
+				},
+				{
+					"question" : "My fridge is full: (choose one)",
+					"answers" : [
+						{
+							"text" : "All week, I grocery shop almost daily",
+							"value" : "All week, I grocery shop almost daily",
+							"scoring" : {
+								"side by side" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "At beginning of the week, but I make meals from what I have",
+							"value" : "At beginning of the week, but I make meals from what I have",
+							"scoring" : {
+								"side by side" : 1,
+								"french door" : 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Hardly ever, my family eats everything",
+							"value" : "Hardly ever, my family eats everything",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1,
+								"french door" : 1
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Rarely, I eat mostly frozen meals",
+							"value" : "Rarely, I eat mostly frozen meals",
+							"scoring" : {
+								"top mount" : 1,
+								"bottom mount" : 1
+							},
+							"order" : 4
+						},
+						{
+							"text" : "Right before I host a big party",
+							"value" : "Right before I host a big party",
+							"scoring" : {
+								"french door" : 1
+							},
+							"order" : 5
+						}
+					]
+				}
+			],
+			"category" : "aesthetics",
+			"type" : "multi"	
+		},
+		"Fridge - Water" : {
+			"previous" : "Fridge - Capacity",
+			"next" : "Fridge - Ice",
+			"text" : [
+				{
+					"question" : "I drink water from…",
+					"answers" : [
+						{
+							"text" : "Bottles",
+							"value" : "Bottles",
+							"scoring" : {
+								"filtered in-door ice/water" : 2
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Tap",
+							"value" : "Tap",
+							"scoring" : {
+								"in-door ice/water" : 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Filter water jug",
+							"value" : "Filter water jug",
+							"scoring" : {
+								"filtered in-door ice/water" : 2
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Water cooler",
+							"value" : "Water cooler",
+							"scoring" : {
+								"filtered in-door ice/water" : 2
+							},
+							"order" : 4
+						},
+						{
+							"text" : "I mostly drink juice/tea/coffee/soda",
+							"value" : "I mostly drink juice/tea/coffee/soda",
+							"order" : 5
+						}
+					]
+				},
+				{
+					"question" : "You wake up in the middle of the night very thirsty, so you grab:",
+					"answers" : [
+						{
+							"text" : "Bottle of water",
+							"value" : "Bottle of water",
+							"scoring" : {
+								"filtered in-door ice/water" : 2
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Glass of tap water",
+							"value" : "Glass of tap water",
+							"scoring" : {
+								"in-door ice/water" : 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Glass of filtered water",
+							"value" : "Glass of filtered water",
+							"scoring" : {
+								"filtered in-door ice/water" : 2
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Drink from the water cooler",
+							"value" : "Drink from the water cooler",
+							"scoring" : {
+								"filtered in-door ice/water" : 2
+							},
+							"order" : 4
+						},
+						{
+							"text" : "A Glass of Milk or Juice",
+							"value" : "A Glass of Milk or Juice",
+							"order" : 5
+						}
+					]
+				}
+			],
+			"category" : "aesthetics",
+			"type" : "multi"	
+		},
+		"Fridge - Ice" : {
+			"previous" : "Fridge - Water",
+			"next" : "Fridge - Style",
+			"text" : [
+				{
+					"question" : "I would like to use ice in…",
+					"answers" : [
+						{
+							"text" : "Soft drinks",
+							"value" : "Soft drinks",
+							"scoring" : {
+								"in-door ice/water" : "x"
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Water",
+							"value" : "Water",
+							"scoring" : {
+								"in-door ice/water" : "x"
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Smoothies",
+							"value" : "Smoothies",
+							"scoring" : {
+								"in-door ice/water" : "x"
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Entertain",
+							"value" : "Entertain",
+							"scoring" : {
+								"in-door ice/water" : "x"
+							},
+							"order" : 4
+						}
+					]
+				},
+				{
+					"question" : "I use ice when…",
+					"answers" : [
+						{
+							"text" : "I have a soft drink",
+							"value" : "I have a soft drink",
+							"scoring" : {
+								"in-door ice/water" : "x"
+							},
+							"order" : 1
+						},
+						{
+							"text" : "I make a mixed drink",
+							"value" : "I make a mixed drink",
+							"scoring" : {
+								"in-door ice/water" : "x"
+							},
+							"order" : 2
+						},
+						{
+							"text" : "I drink water",
+							"value" : "I drink water",
+							"scoring" : {
+								"in-door ice/water" : "x"
+							},
+							"order" : 3
+						},
+						{
+							"text" : "I make a smoothie",
+							"value" : "I make a smoothie",
+							"scoring" : {
+								"in-door ice/water" : "x"
+							},
+							"order" : 4
+						},
+						{
+							"text" : "I entertain",
+							"value" : "I entertain",
+							"scoring" : {
+								"in-door ice/water" : "x"
+							},
+							"order" : 5
+						}
+					]
+				}
+
+			],
+			"category" : "aesthetics",
+			"type" : "multi slider",
+			"values" : [0,1,2]	
+		},
+		"Fridge - Style" : {
+			"previous" : "Fridge - Ice",
+			"next" : "Fridge - Features",
+			"text" : [
+				{
+					"question" : "What's most important to you when choosing your appliances?",
+					"answers" : [
+						{
+							"text" : "Form",
+							"value" : "Form",
+							"scoring" : {
+								"counter depth" : "x"
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Function",
+							"value" : "Function",
+							"scoring" : {
+								"counter depth" : "x"
+							},
+							"order" : 2
+						}
+					]
+				},
+				{
+					"question" : "I always choose form over function: (Choose one)",
+					"answers" : [
+						{
+							"text" : "Always",
+							"value" : "Always",
+							"scoring" : {
+								"counter depth" : 4
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Often",
+							"value" : "Often",
+							"scoring" : {
+								"counter depth" : 3
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Sometimes",
+							"value" : "Sometimes",
+							"scoring" : {
+								"counter depth" : 2
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Rarely",
+							"value" : "Rarely",
+							"scoring" : {
+								"counter depth" : 1
+							},
+							"order" : 4
+						},
+						{
+							"text" : "Never",
+							"value" : "Never",
+							"scoring" : {
+								"counter depth" : 0
+							},
+							"order" : 5
+						}
+					]
+				}
+
+			],
+			"category" : "aesthetics",
+			"type" : "multi slider",
+			"values" : [0,1,2]	
+		},
+		"Fridge - Features" : {
+			"previous" : "Fridge - Style",
+			"next" : "Fridge - Colour",
+			"text" : [
+				{
+					"question" : "How do you shop for your groceries? (choose all that apply)",
+					"answers" : [
+						{
+							"text" : "I go to the farmers' markets",
+							"value" : "I go to the farmers' markets",
+							"scoring" : {
+								 "ethylene filter" : 2,
+								 "side by side" : 1,
+								 "french door" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "I go to the grocery store but stick to the perimeter",
+							"value" : "I go to the grocery store but stick to the perimeter",
+							"scoring" : {
+								 "ethylene filter" : 1,
+								 "side by side" : 1,
+								 "french door" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "I go aisle to aisle",
+							"value" : "I go aisle to aisle",
+							"scoring" : {
+								 "side by side" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "I spend a lot of time in the frozen food section",
+							"value" : "I spend a lot of time in the frozen food section",
+							"scoring" : {
+								 "top mount" : 1,
+								 "bottom mount" : 1
+							},
+							"order" : 1
+						}
+					]
+				},
+				{
+					"question" : "When I grocery shop, I use: (choose all that apply)",
+					"answers" : [
+						{
+							"text" : "A small basket at the farmers' market",
+							"value" : "A small basket at the farmers' market",
+							"scoring" : {
+								 "ethylene filter" : 2,
+								 "side by side" : 1,
+								 "french door" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "A basket at the grocery store to shop the perimeter",
+							"value" : "A basket at the grocery store to shop the perimeter",
+							"scoring" : {
+								 "ethylene filter" : 1,
+								 "side by side" : 1,
+								 "french door" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "A shopping cart at the grocery store to go aisle-to-aisle",
+							"value" : "A shopping cart at the grocery store to go aisle-to-aisle",
+							"scoring" : {
+								 "side by side" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "A basket or shopping cart to fill with frozen food",
+							"value" : "A basket or shopping cart to fill with frozen food",
+							"scoring" : {
+								 "top mount" : 1,
+								 "bottom mount" : 1
+							},
+							"order" : 1
+						}
+					]
+				}
+			],
+			"category" : "aesthetics",
+			"type" : "multi slider",
+			"values" : [0,1,2]	
+		},
+		"Fridge - Colour" : {
+			"previous" : "Fridge - Features",
+			"next" : null,
+			"text" : [
+				{
+					"question" : "What's your colour preference?",
+					"answers" : [
+						{
+							"text" : "Stainless",
+							"value" : "Stainless",
+							"scoring" : {
+								 "colour" : "stainless"
+							},
+							"order" : 1
+						},
+						{
+							"text" : "White",
+							"value" : "White",
+							"scoring" : {
+								 "colour" : "white"
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Black",
+							"value" : "Black",
+							"scoring" : {
+								 "colour" : "black"
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Stainless Black",
+							"value" : "Stainless Black",
+							"scoring" : {
+								 "colour" : "stainless black"
+							},
+							"order" : 1
+						}
+					]
+				},
+				{
+					"question" : "Your dream fridge would be: (choose one with colour swatches)",
+					"answers" : [
+						{
+							"text" : "Stainless",
+							"value" : "Stainless",
+							"scoring" : {
+								 "colour" : "stainless"
+							},
+							"order" : 1
+						},
+						{
+							"text" : "White",
+							"value" : "White",
+							"scoring" : {
+								 "colour" : "white"
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Black",
+							"value" : "Black",
+							"scoring" : {
+								 "colour" : "black"
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Stainless Black",
+							"value" : "Stainless Black",
+							"scoring" : {
+								 "colour" : "stainless black"
+							},
+							"order" : 1
+						}
+					]
+				},
+			],
+			"category" : "aesthetics",
+			"type" : "multi slider",
+			"values" : [0,1,2]	
+		},
+

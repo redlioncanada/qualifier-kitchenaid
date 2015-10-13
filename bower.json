@@ -1,0 +1,48 @@
+{
+  "name": "wp-qualifier-app",
+  "version": "1.0.0",
+  "authors": [
+    "Bianca Sayan",
+    "Kyle L. McGr{egor"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.4.3",
+    "angular-bindonce": "~0.3.3",
+    "angular-bootstrap": "~0.13.4",
+    "angular-cookies": "~1.3.14",
+    "angular-local-storage": "~0.1.5",
+    "angular-resource": "~1.3.14",
+    "angular-route": "~1.3.14",
+    "angular-sanitize": "~1.3.14",
+    "angular-touch": "~1.3.14",
+    "angular-ui-router": "~0.2.13",
+    "bootstrap-sass": "~3.3.3",
+    "greensock": "~1.17.0",
+    "jquery": "~2.1.4",
+    "mobile-detect": "~1.2.1",
+    "modernizer": "~2.8.2",
+    "ng-slider": "2.2.3",
+    "ng-sortable": "~1.2.0",
+    "normalize.css": "~3.0.2",
+    "protractor": "~2.1.0",
+    "ui-router": "~0.2.13",
+    "underscore": "~1.8.3"
+  },
+  "devDependencies": {
+    "angular-images-loaded": "~0.0.8",
+    "imagesloaded": "~3.1.8"
+  },
+  "directory": "app/components",
+  "resolutions": {
+    "angular": "1.4.3"
+  }
+}

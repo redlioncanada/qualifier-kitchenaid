@@ -1,0 +1,19 @@
+<!-- Rank the answers -->
+<!-- https://github.com/a5hik/ng-sortable -->
+<div class="answers-main-content ranking" ng-controller="RankCtrl" ng-init="rankCount=objSize(qs.text[0].answers);initialize(qs)">
+	<ul class="rank-numbers-list" data-as-sortable="sortable.dragControlListeners" data-ng-model="qs.text[0].answers" style="height:{{(rankCount * 63) + 63}}px;">
+		<li data-ng-repeat="item in qs.text[0].answers" data-as-sortable-item ng-class="{noanswer : !controls.questionHasAnswer}">
+			<div class="rank-number-wrap">
+				<span class="rank-number" ng-bind="$index+1"></span>
+			</div>
+		</li>
+	</ul>
+
+	<ul class="rank-answers-list" data-as-sortable="sortable.dragControlListeners" data-ng-model="qs.text[0].answers" style="height:{{(rankCount * 63) + 63}}px;">
+		<li data-ng-repeat="item in qs.text[0].answers | orderBy:'answer'" data-as-sortable-item ng-class="{noanswer : !controls.questionHasAnswer}" class="answer">
+			<div class="label-wrap" data-as-sortable-item-handle>
+				<span class="label-text" ng-bind-html="item.text"></span>
+			</div>
+		</li>
+	</ul>
+</div>

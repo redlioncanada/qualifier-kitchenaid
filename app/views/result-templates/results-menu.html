@@ -1,0 +1,18 @@
+<div>
+	<div class="results-menu-tab-wrapper">
+		<img ng-click="toggleMenu()" class="results-menu-tab" src="img/results-menu-tab.png"/>
+	</div>
+	<div class="results-menu-heading" ng-click="toggleMenu()">{{isFrench ? "Tap to change one of your previous answers(FR)" : "Tap to change one of your previous answers"}}</div>
+	<div class="results-menu-body">
+		<ul class="results-menu-menu">
+			<li ng-if="byName(q) && q.thumbnail_text != 'Appliance' && q.thumbnail_text != 'Cooking'" ng-init="a=hasAnswer(q);q.a_thumbnail_type=setType(q,a)" ng-repeat="q in questionsData.scoringQuestions | orderByOrder" ng-click="navToQuestions(q);closeMenu()">
+				
+				<div class="icon-nav">
+                    <div><img ng-src="img/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '' }}.png" /></div>
+		    	</div>
+
+		    	<div><div>{{q.text[0].question}}</div></div>
+			</li>
+		</ul>
+	</div>
+</div>

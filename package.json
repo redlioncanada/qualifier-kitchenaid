@@ -1,0 +1,42 @@
+{
+  "name": "wp-qualifier-app",
+  "version": "0.0.16",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "description": "WP Qualifier Consumer App",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "angular": "^1.3.14",
+    "bower": "^1.3.12"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.0.1",
+    "gulp": "^3.8.11",
+    "gulp-cache": "^0.2.10",
+    "gulp-connect": "^2.2.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jasmine": "^2.0.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-ruby-sass": "^1.0.0-alpha.3",
+    "gulp-sass": "^2.0.3",
+    "gulp-uglify": "^1.1.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "cd ./deploy && gulp all && gulp all"
+  },
+  "author": "Bianca Sayan, Kyle L. McGregor",
+  "license": "ISC"
+}

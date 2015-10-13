@@ -1,0 +1,14 @@
+<!-- 2 Picture box answers -->
+<div class="answers-main-content picture-2-container" ng-controller="RadioCtrl">
+	<a href="" ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box picture-2 {{answer.classes}} col-md-{{boxWidth}}" ng-click="toggle(qs.text[0].answers, answer)" ng-mousedown="buttonState='down'" ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDownNoShadow : buttonState=='down', toggleButtonUpNoShadow : buttonState=='up', selected : answer.answer}">
+		<div class="img-wrap">
+			<img ng-src="{{answer.image}}" />
+		</div>
+		<div class="select-label-wrap">
+			<div class="select-icon"></div>
+			<div class="label-wrap">
+				<div class="label-text" ng-bind-html="answer.text"></div>
+			</div>
+		</div>
+	</a>
+</div>

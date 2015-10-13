@@ -1,0 +1,15 @@
+_archive/
+node_modules/
+.tmp/
+.sass-cache/
+components/*
+bower_components/*
+app/components/*
+documents/
+build/*
+*.log
+/build
+.ftppass
+app/config/old
+.DS_Store
+

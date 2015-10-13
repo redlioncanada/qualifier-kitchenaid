@@ -1,0 +1,492 @@
+$scale1: 1.15;
+$scale2: 1.07;
+
+@-webkit-keyframes pulse-animation {
+	0% { -webkit-transform: scale(1); }
+	30% { -webkit-transform: scale($scale1); }
+	40% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1); }
+	60% { -webkit-transform: scale($scale2); }
+	70% { -webkit-transform: scale(1); }
+	80% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse-animation {
+	0% { -moz-transform: scale(1); }
+	30% { -moz-transform: scale($scale1); }
+	40% { -moz-transform: scale(1); }
+	50% { -moz-transform: scale(1); }
+	60% { -moz-transform: scale($scale2); }
+	70% { -moz-transform: scale(1); }
+	80% { -moz-transform: scale(1); }
+	100% { -moz-transform: scale(1); }
+}
+@-ms-keyframes pulse-animation {
+	0% { -ms-transform: scale(1); }
+	30% { -ms-transform: scale($scale1); }
+	40% { -ms-transform: scale(1); }
+	50% { -ms-transform: scale(1); }
+	60% { -ms-transform: scale($scale2); }
+	70% { -ms-transform: scale(1); }
+	80% { -ms-transform: scale(1); }
+	100% { -ms-transform: scale(1); }
+}
+@keyframes pulse-animation {
+	0% { transform: scale(1); }
+	30% { transform: scale($scale1); }
+	40% { transform: scale(1); }
+	50% { transform: scale(1); }
+	60% { transform: scale($scale2); }
+	70% { transform: scale(1); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+.pulse {
+	-webkit-animation-name: 'pulse-animation';
+	-webkit-animation-duration: 5000ms;
+	-webkit-transform-origin: 70% 70%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.slideLeft {
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(150%);
+	}
+	50%{
+		transform: translateX(-8%);
+	}
+	65%{
+		transform: translateX(4%);
+	}
+	80%{
+		transform: translateX(-4%);
+	}
+	95%{
+		transform: translateX(2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(150%);
+	}
+	50%{
+		-webkit-transform: translateX(-8%);
+	}
+	65%{
+		-webkit-transform: translateX(4%);
+	}
+	80%{
+		-webkit-transform: translateX(-4%);
+	}
+	95%{
+		-webkit-transform: translateX(2%);
+	}			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.slideRight {
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	50%{
+		transform: translateX(8%);
+	}
+	65%{
+		transform: translateX(-4%);
+	}
+	80%{
+		transform: translateX(4%);
+	}
+	95%{
+		transform: translateX(-2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}	
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	50%{
+		-webkit-transform: translateX(8%);
+	}
+	65%{
+		-webkit-transform: translateX(-4%);
+	}
+	80%{
+		-webkit-transform: translateX(4%);
+	}
+	95%{
+		-webkit-transform: translateX(-2%);
+	}			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes bounceInLeft {
+	0%, 60%, 75%, 90%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+	}
+
+	100% {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes bounceInLeft {
+	0%, 60%, 75%, 90%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		-ms-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		-ms-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		-ms-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		-ms-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+	}
+
+	100% {
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+	}
+}
+
+.bounceInLeft {
+	-webkit-animation-name: bounceInLeft;
+	animation-name: bounceInLeft;
+}
+
+@-moz-keyframes toggleButtonDown {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+		box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+	}
+
+	100% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+		box-shadow: 0px 0px 0px 0px #000;
+	}
+}
+
+@-webkit-keyframes toggleButtonDown {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+		box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+	}
+
+	100% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+		box-shadow: 0px 0px 0px 0px #000;
+	}
+}
+
+
+@keyframes toggleButtonDown {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+		box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+	}
+
+	100% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+		box-shadow: 0px 0px 0px 0px #000;
+	}
+}
+
+.toggleButtonDown {
+	-webkit-animation-name: toggleButtonDown;
+	-moz-animation-name: toggleButtonDown;
+	animation-name: toggleButtonDown;
+
+	animation-duration: 0.35s;	
+	animation-delay: 0ms;
+	-moz-animation-duration: 0.25s;
+	-moz-animation-delay: 0ms;
+	-webkit-animation-duration: 0.25s;
+	-webkit-animation-delay: 0ms;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;	
+
+	transform: translate(1px, 3px);
+	box-shadow: 0px 0px 0px 0px #000;
+}
+
+@-webkit-keyframes toggleButtonUp {
+	0% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+		box-shadow: 0px 0px 0px 0px #000;
+	}
+
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+		box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+	}
+}
+
+@-moz-keyframes toggleButtonUp {
+	0% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+		box-shadow: 0px 0px 0px 0px #000;
+	}
+
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+		box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+	}
+}
+
+@keyframes toggleButtonUp {
+	0% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+		box-shadow: 0px 0px 0px 0px #000;
+	}
+
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+		box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+	}
+}
+
+.toggleButtonUp {
+	-webkit-animation-name: toggleButtonUp;
+	animation-name: toggleButtonUp;
+	-moz-animation-name: toggleButtonUp;
+
+	animation-duration: 0.35s;	
+	animation-delay: 0ms;
+	-moz-animation-duration: 0.25s;
+	-moz-animation-delay: 0ms;
+	-webkit-animation-duration: 0.25s;
+	-webkit-animation-delay: 0ms;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;	
+
+	transform: translate(0px, 0px);
+	box-shadow: 4px 4px 5px -1px rgba(150, 150, 150, 0.5);
+}
+
+@-moz-keyframes toggleButtonDownNoShadow {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+	}
+}
+
+@-webkit-keyframes toggleButtonDownNoShadow {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+	}
+}
+
+
+@keyframes toggleButtonDownNoShadow {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+	}
+}
+
+.toggleButtonDownNoShadow {
+	-webkit-animation-name: toggleButtonDown;
+	-moz-animation-name: toggleButtonDown;
+	animation-name: toggleButtonDown;
+
+	animation-duration: 0.35s;	
+	animation-delay: 0ms;
+	-moz-animation-duration: 0.25s;
+	-moz-animation-delay: 0ms;
+	-webkit-animation-duration: 0.25s;
+	-webkit-animation-delay: 0ms;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;	
+
+	transform: translate(1px, 3px);
+}
+
+@-webkit-keyframes toggleButtonUpNoShadow {
+	0% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+	}
+
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+}
+
+@-moz-keyframes toggleButtonUpNoShadow {
+	0% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+	}
+
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes toggleButtonUpNoShadow {
+	0% {
+		-webkit-transform: translate(1px, 3px);
+		-ms-transform: translate(1px, 3px);
+		transform: translate(1px, 3px);
+	}
+
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+}
+
+.toggleButtonUpNoShadow {
+	-webkit-animation-name: toggleButtonUp;
+	animation-name: toggleButtonUp;
+	-moz-animation-name: toggleButtonUp;
+
+	animation-duration: 0.35s;	
+	-webkit-animation-duration: 0.25s;
+	-moz-animation-duration: 0.25s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;	
+
+	transform: translate(0px, 0px);
+}

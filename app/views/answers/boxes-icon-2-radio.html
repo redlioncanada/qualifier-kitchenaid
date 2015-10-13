@@ -1,0 +1,14 @@
+<!-- Icon box answers with blue background and hover / active state -->
+<div class="answers-main-content boxes-icon-2-container" ng-controller="RadioCtrl">
+	<a href="" ng-repeat="answer in qs.text[0].answers" 
+	class="answer answer-option answer-box boxes-icon-2 {{answer.classes}}" ng-init="answer.activeImage=answer.image" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mousedown="buttonState='down'" ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDown : buttonState=='down', toggleButtonUp : buttonState=='up', selected : answer.answer}">
+		<div class="icon-wrap">
+			<img class="normal" ng-src="{{answer.image}}" />
+			<img class="hover" ng-if="!!answer.hover" ng-src="{{answer.hover}}" />
+		</div>
+		<div class="select-icon"></div>
+		<div class="label-wrap">
+			<div class="label-text" ng-bind-html="answer.text"></div>
+		</div>
+	</a>
+</div>

@@ -1,0 +1,19 @@
+// App structure
+
+@import "normalize";
+
+// Bootstrap Sass
+@import "bootstrap/bootstrap";
+
+
+@import "mixins";
+@import "animations";
+
+// Main screen and general styles across screens
+@import "structure/app-main";
+@import "structure/answers";
+@import "structure/results";
+@import "structure/loading";
+
+// Specific screens
+

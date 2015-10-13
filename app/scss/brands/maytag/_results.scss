@@ -1,0 +1,381 @@
+// Need to separate the styles from the structure here
+
+#results {
+	.results-top {
+		h1 {
+			font-family: $AG-Bold-Cnd;
+			font-size: 41px;
+			color: #333333;
+		}
+		.results-adjust-desc {
+			font-family: $AG-Bold-Cnd;
+			font-size: 23px;
+			line-height: 15px;
+			color: #5c5c5c;
+			margin-top: 0;
+		}
+	}
+
+	h3, h4 {
+		text-transform: uppercase;
+		font-family: $AG-Bold-Cnd;
+	}
+	h2, h4 {
+		color: #002e5f;
+	}
+	.price-slider-label-wrap {
+		@include large-square-label-wrap;
+		.price-slider-label {
+			@include large-square-label;
+		}	
+	}
+	li.result {
+		//box-shadow: inset 0px 0px 5px 0px #002e5f;
+		border: 2px solid #002e5f;
+		.product-details {
+			padding-top: 1px;
+		}
+		.colourBar {
+			margin-left: auto; 
+			margin-right: auto;
+			margin-top: 10px;
+		    margin-bottom: 20px;
+		    height: 25px;
+		    display: table;
+		}
+		.colourBar ul {
+			margin: 0 auto;
+			height: inherit;
+			padding: 0;
+		}
+		.colourBar ul li {
+			height: 24px;
+			width: 27px;
+			display: block;
+			float: left;
+			margin-right: 2px;
+			cursor: pointer;
+		}
+		.colourBar li.selected::after {
+			content: url(../img/small-active-indicator.jpg);
+			cursor: initial;
+			top: -5px;
+			position: relative;
+		}
+		.product-name {
+			font-family: $AG-Bold-Cnd;
+			font-size: 16px;
+			color: #022d58; 
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		.product-price-sku-wrap {
+			color: #022d58;
+			text-align: center;
+			font-size: 16px;
+			.product-price, .product-sku {
+				display: block;
+				margin: 0 auto;
+
+				> span {
+					text-transform: uppercase;
+				}
+			}
+		}
+		h2 {
+			margin-top: 2px;
+			margin-bottom: 20px;
+			font-size: 17px;
+			padding-top: 10px;
+			min-height: 46px;
+		}
+		&:nth-child(1), &:nth-child(3) {
+			margin-top: 32px;
+			.result-inner {
+				//padding-top: 25px;
+				h3 {	
+					text-align: center;
+					background-color: #002e5f;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					color: #fff;
+					margin-top: 0px;
+					margin-bottom: 0px;
+					font-size: 20px;
+				}
+				.product-price-sku-wrap {
+					color: #7f7f7f;
+				}
+			}
+			.product-details {
+				padding-bottom: 22px;
+				padding-left: 25px;
+				padding-right: 25px;
+
+				// border-radius: 5px;
+				// background-image: -webkit-gradient(
+				// 	linear,
+				// 	left top,
+				// 	left bottom,
+				// 	color-stop(0, #EFEFEF),
+				// 	color-stop(0.3, #FFFFFF)
+				// );
+				// background-image: -o-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 50%);
+				// background-image: -moz-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 50%);
+				// background-image: -webkit-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 50%);
+				// background-image: -ms-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 50%);
+				// background-image: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 50%);
+			}
+			.product-features-title {
+				font-family: $AG-Bold-Cnd;
+				font-size: 16px;
+				color: #757575;
+			}
+			.btn {
+				font-family: $AG-stack;
+				font-size: 16px;
+				// Bootstrap mixin
+				@include button-variant(#ffffff, #b7b7b7, #b7b7b7);
+				padding: 3px 18px;
+				margin-top: 4px;
+				.btn-text {
+					font-size: 11px;
+					text-transform: uppercase;
+					vertical-align: middle;
+					letter-spacing: 1px;
+				}
+				.btn-text::after {
+					content: url(../img/cta-arrow.png);
+					margin-left: 10px;
+					padding-bottom: 3px;
+				}
+				.btn-text-email {
+					margin-top: -2px;
+				}
+				.btn-text-email::after {
+					content: '';
+				}
+			}
+			.btn-text {
+				font-size: 17px;
+			}
+		}
+		&:nth-child(2) { // this is for the middle result
+			h3 {	
+				text-align: center;
+				background-color: #002e5f;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				color: #fff;
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+
+			.product-features-title {
+				font-family: $AG-Bold-Cnd;
+				font-size: 20px;
+				color: #4c4c4c;
+			}
+			.product-features-list {
+				
+				li {
+					font-size: 16px;
+				}
+			}
+			.btn {
+				font-family: $AG-stack;
+				font-size: 16px;
+				// Bootstrap mixin
+				@include button-variant(#ffffff, #b7b7b7, #b7b7b7);
+				padding: 3px 18px;
+				margin-top: 4px;
+				.btn-text {
+					font-size: 11px;
+					text-transform: uppercase;
+					vertical-align: middle;
+					letter-spacing: 1px;
+				}
+				.btn-text::after {
+					content: url(../img/cta-arrow.png);
+					margin-left: 10px;
+					padding-bottom: 3px;
+				}
+				.btn-text-email::after {
+					content: '';
+				}
+				.btn-text-email img {
+					margin-top: -2px;
+				}
+			}
+			.result-inner {
+				//padding-top: 31px;
+				
+			}
+			.product-details {
+				//padding-top: 33px;
+				padding-bottom: 21px;
+				padding-left: 35px;
+				padding-right: 35px;
+
+				h3 {
+					text-align: left;
+				}
+				
+			}
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.product-details-wrap {
+			margin: 10px;
+			border-radius: 5px;
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, #EFEFEF),
+				color-stop(0.3, #FFFFFF)
+			);
+			background-image: -o-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
+			background-image: -moz-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
+			background-image: -webkit-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
+			background-image: -ms-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
+			background-image: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 20%);
+		}
+		.sales-feature-spacer {
+			margin: 30px auto;
+			height: 1px;
+			width: 77%;
+			background-color: #AAA;
+		}
+		.sales-feature-spacer.small {
+			margin: 15px auto;
+		}
+		.sales-feature-spacer.smallest {
+			margin: 5px auto;
+		}
+		.product-details {
+			padding-left: 43px;
+			padding-right: 43px;
+
+			.sales-feature-wrapper {
+				padding-top: 10px;
+			}
+
+			h4.sales-feature {
+				position: relative;
+				overflow: visible; // show all of icon even outside boundaries
+				img:first-child {
+					position: absolute;
+					left: 0px;
+					top: 12%;
+					width: 36px;
+					transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
+					-webkit-transform: translateY(-50%);
+				}
+				img:first-child[src="img/icon-capacity.png"] {
+					padding-bottom: 16px;
+				}
+				img.multiline:first-child {
+					top: 35%;
+				}
+
+			}
+			h4.sales-feature-additional {
+				position: relative;
+				overflow: visible; // show all of icon even outside boundaries
+				img:first-child {
+					position: absolute;
+					left: 0px;
+					top: 18%;
+				}
+			}
+			h4.sales-feature {
+			  margin: 23px 0 10px 0;
+			}
+		}
+		.product-img-wrap {
+			width: 250px;
+		}
+			
+		.product-features-list {
+			list-style: none;
+			margin-bottom: 30px;
+			li {
+				font-size: 12px;
+				display: block;
+				&:before {
+				    content:"\2713\0020";
+				    color: #232c52;
+				    padding-right: 5px;
+				}
+			}
+		}
+		.btn-wrap {
+			text-align: center;
+		}
+
+		.product-disclaimers {
+			padding: 0 25px;
+			margin-bottom: 20px;
+
+			> p {
+				color: #c5c5c5;
+				display: inline;
+				font-size: 8pt;
+				margin-right: 5px;
+			}
+		}
+		
+	}
+	.recommended-bottom-gradient {
+		background: url('../img/recommended-bottom-gradient.png') center center no-repeat;
+		width: 456px;
+		height: 96px;
+		display: block;
+		position: absolute;
+		z-index: 0;
+		bottom: 0;
+
+	}
+	span[ng-bind-html="sf.headline"] {
+		font-family: $AG-Bold-Cnd;
+		color: #022d58;
+		font-size: 16px;
+		text-transform: none;
+		display: inline-block;
+		text-align: left;
+		padding-left: 26px;
+	}
+	h4.sales-feature span[ng-bind-html="sf.headline"] {
+	  font-size: 14px;
+		padding-left: 50px;
+		text-transform: uppercase;
+	}
+	h4.sales-feature-additional span[ng-bind-html="sf.headline"] {
+		color: #777;
+		font-family: $AG-stack;
+		font-size: 7pt;
+		vertical-align: middle;
+	}
+
+	span[ng-bind-html="sf.description"] {
+		font-size: 10px;
+		color: #777;
+		text-align: left;
+	}
+}
+
+.product-colour-picker-wrap {
+	text-align: center;
+	span {
+		font-family: $AG-Bold-Cnd;
+		text-transform: uppercase;
+		color: #7f7f7f;
+	}
+}

@@ -1,0 +1,1653 @@
+{
+	"products" : [
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "To bring out intense flavor in whatever you're cookin' up, count on the power of this Gemini\u00ae gas stove. Not only does the 16,000-BTU Power\u2122 burner sear steaks fast, Power Preheat and EvenAir\u2122 true convection make sure cooking starts even and stays even for crispy, juicy and tasty every time. Plus, flaky pies won't have to share the spotlight or temperature with roast beef thanks to the double oven configuration and 6.0 total cu. ft. capacity. And you'll know you're lookin' at the heavy-duty strength of Maytag when you see the stainless steel handles and die-cast metal knobs added to this freestanding oven. Even better, this gas stove boasts a 10-year limited parts warranty1 on the burners, grates and cavity, and is built with American Pride in Cleveland, Tennessee.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGT8820DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Gemini\u00ae Double Oven Gas Stove with EvenAir\u2122 True Convection \u2013 6.0 total cu. ft.", 
+        "price": "$1,899.00 ", 
+        "single": false, 
+        "trueConvection": true, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MGT8820DS]-1111997/MGT8820DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "To bring out intense flavor in whatever you're cookin' up, count on the power of this Gemini\u00ae electric stove. Not only does the 3,200-watt Power\u2122 element sear steaks fast, Power Preheat and EvenAir\u2122 true convection make sure cooking starts even and stays even for crispy, juicy and tasty every time. Plus, flaky pies won't have to share the spotlight or temperature with the roast beef thanks to the double oven configuration and 6.7 total cu. ft. capacity. And you'll know you're lookin' at the heavy-duty strength of Maytag when you see the stainless steel handles and die-cast metal knobs added to this freestanding oven. Even better, this electric stove boasts a 10-year limited parts warranty1 on the glass cooktop, elements and cavity, and is built with American Pride in Cleveland, Tennessee.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MET8820DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Gemini\u00ae Double Oven Electric Stove with EvenAir\u2122 True Convection \u2013 6.7 total cu. ft.", 
+        "price": "$1,799.00 ", 
+        "single": false, 
+        "trueConvection": true, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MET8820DS]-1111983/MET8820DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Maytag means business in the kitchen, and that means powerful heating to make everyday food into a tasty meal with this Gemini\u00ae gas stove.  For searing steaks fast and sealing in flavors, look no further than the 16,000-BTU Power\u2122 burner and EvenAir\u2122 convection to give you crispy and juicy every time.  Plus, flaky pies won't have to share the spotlight or temperature with roast beef when you're cooking with a double oven configuration and 6.0 total cu. ft. capacity.  And you'll know you're lookin' at the heavy-duty strength of Maytag when you see the stainless steel handles and die-cast metal knobs on this freestanding oven.  Even better, this gas stove boasts a 10-year limited parts warranty1 on the burners, grates and cavity, and is built with American Pride in Cleveland, Tennessee.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGT8720DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Gemini\u00ae Double Oven Gas Stove with EvenAir\u2122 Convection \u2013 6.0 total cu. ft.", 
+        "price": "$1,699.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MGT8720DS]-1111996/MGT8720DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Maytag means business in the kitchen, and that means powerful heating to make everyday food into a tasty meal with this Gemini\u00ae electric stove. For searing steaks fast and sealing in flavors, look no further than the 3,200-watt Power\u2122 element and EvenAir\u2122 convection to give you crispy and juicy every time. Plus, flaky pies won't have to share the spotlight or temperature with roast beef when you're cooking with a double oven configuration and 6.7 total cu. ft. capacity. And you'll know you're lookin' at the heavy-duty strength of Maytag when you see the stainless steel handles and die-cast metal knobs on this freestanding oven. Even better, this electric stove boasts a 10-year limited parts warranty1 on the glass cooktop, elements and cavity, and is built with American Pride in Cleveland, Tennessee.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MET8720DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Gemini\u00ae Double Oven Electric Stove with EvenAir\u2122 Convection \u2013 6.7 total cu. ft.", 
+        "price": "$1,599.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MET8720DS]-1111982/MET8720DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "When it comes to cooking, a Maytag\u00ae gas oven has the power to bring out intense taste in any meal. Whether it's searing a steak in 45 seconds with the Power\u2122 burner or starting your roast off the right way with the consistent heat of Power Preheat, you can count on fine flavors from this freestanding oven. EvenAir\u2122\u00a0true convectionroasts faster than a traditional oven for delicious dinners with all the tasty, crispy and juicy sealed in. And the stainless steel handle and die-cast metal knobs on this gas oven help make sure it stays serving up delectable for a decade. If you're looking for an oven with a warming drawer that's made to cook and built to last,aMaytag\u00ae gas freestanding oven can quick-cook a juicy steak, slow-cook your favorite roasts and stand up to the busiest kitchen for years.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGR8850DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Gas Freestanding Oven with Warming Drawer - 5.8 cu. ft.", 
+        "price": "$1,199.00 ", 
+        "single": false, 
+        "trueConvection": true, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MGR8850DS]-1111995/MGR8850DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "Maytag makes one tough cooking machine, and our gas stove with included griddle plate has the power to get your favorites cooking right away.  The Power\u2122 burner uses intense heat that can get steak sizzling fast. Power Preheat and EvenAir\u2122 convection start with even heating and help you enjoy consistent cooking throughout every succulent roast\u2014so you can keep the crusts flaky and the insides juicy with this gas stove.  And just so you can be sure this freestanding stove will keep cooking up delectable for a decade, we added a 10-year limited parts warranty1 on the burners and grates.  And we didn't stop there: the stainless steel handle and die-cast metal knobs let you know this convection oven is just as sturdy as it is strong.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGR8800DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Gas Freestanding Stove with Griddle - 5.8 cu. ft.", 
+        "price": "$1,149.00 ", 
+        "single": false, 
+        "trueConvection": true, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MGR8800DS]-1111994/MGR8800DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "When it comes to cooking, a Maytag\u00ae electric oven has the power to bring out intense taste in any meal. Whether it's searing a steak in 45 seconds with the Power\u2122 element or starting your roast off the right way with the consistent heat of Power Preheat, you can count on fine flavors from this freestanding oven. EvenAir\u2122\u00a0true convection roasts up to 30% faster1** for delicious dinners with all the tasty, crispy and juicy sealed in. And the stainless steel handle and die-cast metal knobs on this electric oven help make sure it stays serving up delectable for a decade. If you're looking for a convection oven that's made to cook and built to last, a Maytag\u00ae electric freestanding oven can quick-cook a juicy steak, slow-cook your favorite roasts and stand up to the busiest kitchen for years.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MER8850DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Electric Freestanding Oven with Convection Heating - 6.2 cu. ft.", 
+        "price": "$1,099.00 ", 
+        "single": false, 
+        "trueConvection": true, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MER8850DS]-1111981/MER8850DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "When it comes to cooking, a Maytag\u00ae electric oven has the power to bring out intense taste in any meal. Whether it's searing a steak in 45 seconds with the Power\u2122 element or starting your roast off the right way with the consistent heat of Power Preheat, you can count on fine flavors from this freestanding oven. EvenAir\u2122\u00a0true convection roasts up to 30% faster1 for delicious dinners with all the tasty, crispy and juicy sealed in. And the stainless steel handle and die-cast metal knobs on this electric oven help make sure it stays serving up delectable for a decade. If you're looking for a convection oven that's made to cook and built to last, a Maytag\u00ae electric freestanding oven can quick-cook a juicy steak, slow-cook your favorite roasts and stand up to the busiest kitchen for years.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MER8800DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Electric Freestanding Oven with Convection Heating - 6.2 cu. ft.", 
+        "price": "$1,049.00 ", 
+        "single": false, 
+        "trueConvection": true, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MER8800DS]-1111980/MER8800DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Maytag is all business when it comes to adding flavor to your favorite dinners. Count on this gas range with a Power\u2122 burner to get the finest flavors out of browning or saut\u00e9ing. Plus, the EvenAir\u2122 convection oven uses intense heat to seal the juices into whatever you're cooking up\u2014and get it all to the table faster than a traditional oven. We made this 5.8 cu. ft. freestanding range with the cooking features to pack flavor into every bite, and then we made it sturdy enough to last for a decade. The 10-year limited parts warranty1 gives you the confidence for cooking up favorites for years. All that and the fact that this gas range is designed, engineered and assembled in the U.S.A. with genuine American pride make it vintage Maytag.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGR8700DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Gas Freestanding Range with Convection Oven - 5.8 cu. ft.", 
+        "price": "$1,049.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MGR8700DS]-1111993/MGR8700DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "description": "Maytag is all business when it comes to adding flavor to your favorite dinners. Count on this gas range with a Power\u2122 burner to get the finest flavors out of browning or saut\u00e9ing. Plus, the EvenAir\u2122 convection oven uses intense heat to seal the juices into whatever you're cooking up\u2014and get it all to the table faster than a traditional oven. We made this 5.8 cu. ft. freestanding range with the cooking features to pack flavor into every bite, and then we made it sturdy enough to last for a decade. The 10-year limited parts warranty1 gives you the confidence for cooking up favorites for years. All that and the fact that this gas range is designed, engineered and assembled in the U.S.A. with genuine American pride make it vintage Maytag.", 
+        "image": "/digitalassets/No Image Available/Standalone_1175X1290.png", 
+        "name": "Gas Freestanding Range with Convection Oven - 5.8 cu. ft.", 
+        "price": "$999.00 ", 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MGR8700DW]-1112124/MGR8700DW/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Maytag is all business when it comes to adding flavor to your favorite dinners.  Count on this electric range with a Power\u2122 element to get the finest flavors out of browning or saut\u00e9ing.  Plus, the EvenAir\u2122 convection oven uses intense heat to seal the juices into whatever you're cooking up\u2014and get it all to the table 30% faster1.We made this 6.2 cu. ft. freestanding range with the cooking features to pack flavor into every bite, and then we made it sturdy enough to last for a decade.  The 10-year limited parts warranty2 gives you the confidence for cooking up favorites for years.  All that and the fact that this electric range is designed, engineered and assembled in the U.S.A. with genuine American pride make it vintage Maytag.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MER8700DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Electric Freestanding Range with Convection Oven - 6.2 cu. ft.", 
+        "price": "$949.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MER8700DS]-1111979/MER8700DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "We combined the power of intense heat with the strength of stainless steel for a gas stove that's made to cook and built to last. The Power\u2122\u00a0burner has the fuel to sear a steak in 45 seconds1\u2014so you can get your favorites sizzling on this freestanding stove faster than you can set the table. Variable broil helps bring the best results out of broiling with just the right temperatures for quick-cooking tasty cuts of meat, succulent sweet peppers and more. Plus, this gas stove is built to last with a stainless steel handle and die-cast metal knobs that will stand up to years of cooking in the busiest kitchen. It's even backed with a 10-year limited parts warranty2 on the burners and grates. And the fact that this single oven is designed, engineered and assembled in the U.S.A. with American pride lets you know it's Maytag the second you see it.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGR8600DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Maytag\u00ae Gas Freestanding Range with Stainless Steel Handles- 5.8 cu. ft.", 
+        "price": "$949.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MGR8600DS]-1111992/MGR8600DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "We combined the power of intense heat with the strength of stainless steel for an electric range that's made to cook and built to last.  The Power\u2122\u00a0element has the juice to sear a steak in 45 seconds1\u2014so you can get your favorites sizzling on this freestanding range faster than you can set the table.  Variable broil helps bring the best results out of broiling with just the right temperatures for quick-cooking tasty cuts of meat, succulent sweet peppers and more.  Plus, this electric range is built to last with a stainless steel handle and die-cast metal knobs that will stand up to years of cooking in the busiest kitchen.  It's even backed with a 10-year limited parts warranty2 on the glass cooktop and elements.  And the fact that this single oven is designed, engineered and assembled in the U.S.A. with American pride lets you know it's Maytag the second you see it.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MER8600DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Electric Freestanding Range with Stainless Steel Handles- 6.2 cu. ft.", 
+        "price": "$849.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Ranges", 
+        "url": "http://www.maytag.com/-[MER8600DS]-1111978/MER8600DS/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Maytag\u00ae top-freezer refrigerators are built to hold the cold with features like stainless steel handles that embody the heavy-duty strength Maytag is known for. The EvenAir\u2122 cooling tower keeps food cool without breaking a sweat, while the PowerCold\u2122 feature chills down the refrigerator to help keep everything cool\u2014even if the whole family's been browsing with the door open. The electronic temperature controls are even up front to make maintaining the coolness of your refrigerator easy with the touch of a button. Inside this 21 cu. ft. top-freezer refrigerator you'll also find BrightSeries\u2122 LED lighting. It casts a bright, white light and uses less energy than incandescent bulbs.", 
+        "ethyleneFilter": false, 
+        "filtered": false, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MRT711BZDM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "Top-Freezer Refrigerator with Electronic Temperature Control", 
+        "price": "$1,199.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "Top-Freezer", 
+        "url": "http://www.maytag.com/-[MRT711BZDM]-1112317/MRT711BZDM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Maytag\u00ae top-freezer refrigerators are built to hold the cold with features like stainless steel handles that embody the heavy-duty strength Maytag is known for. The EvenAir\u2122 cooling tower keeps food cool without breaking a sweat, while the PowerCold\u2122 feature chills down the refrigerator to help keep everything cool with the touch of a button\u2014even if the whole family's been browsing with the door open. The bottom-mounted FreshLock\u2122 crispers even feature humidity controls to prolong the freshness of your fruits and vegetables. Inside this 19 cu. ft. top-freezer refrigerator you'll also find BrightSeries\u2122 LED lighting. It casts a bright, white light and uses less energy than incandescent bulbs.", 
+        "ethyleneFilter": false, 
+        "filtered": false, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MRT519SZDM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "Top-Freezer Refrigerator with Humidity Controlled Crispers", 
+        "price": "$999.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "Top-Freezer", 
+        "url": "http://www.maytag.com/-[MRT519SZDM]-1112320/MRT519SZDM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Maytag\u00ae top-freezer refrigerators are built to hold the cold with features like stainless steel handles that embody the heavy-duty strength Maytag is known for. The EvenAir\u2122 cooling tower keeps food cool without breaking a sweat, while the PowerCold\u2122 feature chills down the refrigerator to help keep everything cool with the touch of a button\u2014even if the whole family's been browsing with the door open. When you need to chill out with a bucket of ice, the optional EZ Connect ice maker removes the hassle of adding an ice maker to your top-freezer refrigerator and can be installed in five minutes or less. Inside this 18 cu. ft. model you'll also find the BrightSeries\u2122 LED lighting. It casts a bright, white light and uses less energy than incandescent bulbs.", 
+        "ethyleneFilter": false, 
+        "filtered": false, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MRT318FZDM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "Top-Freezer Refrigerator, Ice Maker Compatible", 
+        "price": "$899.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "Top-Freezer", 
+        "url": "http://www.maytag.com/-[MRT318FZDM]-1112313/MRT318FZDM/"
+    }, 
+    {
+        "2Racks": false, 
+        "3Racks": false, 
+        "anyWare": false, 
+        "appliance": "Dishwasher", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "controls": false, 
+        "culinaryCaddy": false, 
+        "decibels": "47", 
+        "description": "Our quietest dishwasher ever has all the cleaning power of Maytag without the ruckus. It's built with the most powerful motor on the market3 to handle dried-on egg yolk on plates and peanut butter on knives. Plus, this reliable dishwasher features a 4-blade stainless steel chopper and disposer to chew up scraps and the PowerBlast\u2122 cycle to rinse them all away. And when it comes to loading and unloading, the premium ball-bearing rack glides on the upper rack are built to stand up to a decade of openings and closings and still slide out smooth. We built this large-capacity dishwasher with tough stainless steel to take on the worst messes. Then we made it our quietest ever at only 47 dBA2\u2014even quieter than coffee brewing. This reliable dishwasher also comes backed with a 10-year limited parts warranty41, and it's assembled in Findlay, Ohio at the largest dishwasher manufacturing plant in the world.", 
+        "image": "/digitalassets/MDB8969SDM/Standalone_1175X1290.jpg", 
+        "name": "Our Quietest Dishwasher Ever with Large Capacity", 
+        "price": "$849.00 ", 
+        "proWash": false, 
+        "sensorCycle": false, 
+        "stainlessTub": true, 
+        "type": "Dishwashers", 
+        "url": "http://www.maytag.com/-[MDB8969SDM]-1111962/MDB8969SDM/"
+    }, 
+    {
+        "2Racks": false, 
+        "3Racks": false, 
+        "anyWare": false, 
+        "appliance": "Dishwasher", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "controls": false, 
+        "culinaryCaddy": false, 
+        "decibels": "47", 
+        "description": "Clean up after dinner with a powerful dishwasher made to handle the toughest stuck-on scraps.  It has the most powerful motor on the market3 to handle dried-on egg yolk on plates and peanut butter on knives.  And even with a disposer featuring our 4-blade stainless steel chopper to disintegrate food particles, it's still our quietest dishwasher ever at only 47 dBA1\u2014quieter than coffee brewing.  That means there won't be a ruckus when this powerful dishwasher chews up and rinses away whatever's left on your dishes.  With our 10-year limited parts warranty42 and the washing action of mighty Maytag, you can take pride in buying a stainless steel tub dishwasher that's assembled in Findlay, Ohio at the largest dishwasher manufacturing plant in the world.", 
+        "image": "/digitalassets/MDB7949SDM/Standalone_1175X1290.jpg", 
+        "name": "Powerful Dishwasher at Only 47 dBA1", 
+        "price": "$799.00 ", 
+        "proWash": false, 
+        "sensorCycle": false, 
+        "stainlessTub": true, 
+        "type": "Dishwashers", 
+        "url": "http://www.maytag.com/-[MDB7949SDM]-1111961/MDB7949SDM/"
+    }, 
+    {
+        "2Racks": false, 
+        "3Racks": false, 
+        "anyWare": false, 
+        "appliance": "Dishwasher", 
+        "colours": [
+            "Black", 
+            "Monochromatic Stainless Steel", 
+            "White"
+        ], 
+        "controls": false, 
+        "culinaryCaddy": false, 
+        "decibels": "50", 
+        "description": "When you buy a Maytag\u00ae dishwasher with disposer, you're buying a durable appliance that'll chew up the scraps left on your plates.  This large-capacity dishwasher features sturdy stainless steel wherever we could add it, including at the heart of the disposer in our powerful 4-blade stainless steel chopper.  It has the most powerful motor on the market1, so you can be confident that your dishes will come out sparkling.  And don't forget about the high-pressure spray jets of the PowerBlast\u2122 cycle that remove tough, stuck-on food. Plus, its fully integrated display means it's just as sleek as it is strong.  Best of all, this reliable dishwasher is assembled in Findlay, Ohio at the largest dishwasher manufacturing plant in the world.", 
+        "image": "/digitalassets/MDB5969SDM/Standalone_1175X1290.jpg", 
+        "name": "Durable Dishwasher with Chopper Disposer and Fully Integrated Display", 
+        "price": "$749.00 ", 
+        "proWash": false, 
+        "sensorCycle": false, 
+        "stainlessTub": true, 
+        "type": "Dishwashers", 
+        "url": "http://www.maytag.com/-[MDB5969SDM]-1111959/MDB5969SDM/"
+    }, 
+    {
+        "2Racks": false, 
+        "3Racks": false, 
+        "anyWare": false, 
+        "appliance": "Dishwasher", 
+        "colours": [
+            "Black", 
+            "Monochromatic Stainless Steel", 
+            "White"
+        ], 
+        "controls": false, 
+        "culinaryCaddy": false, 
+        "decibels": "50", 
+        "description": "Maytag\u00ae builds one durable dishwasher, and our full stainless steel tub dishwasher resists stains and is made to handle high heat, so it stays looking its best. It's built with the most powerful motor on the market2 to handle dried-on egg yolk on plates and peanut butter on knives, and the PowerBlast\u2122 cycle to remove stuck-on food.It's also an ENERGY STAR\u00ae qualified dishwasher that uses less energy and water than standard models while keeping all the cleaning power of Maytag. And with a 10-year limited parts warranty31 you can rely on this quiet dishwasher to get rid of your worst messes for years to come. In other words, this stainless steel tub dishwasher is vintage Maytag\u2014assembled in Findlay, Ohio at the largest dishwasher manufacturing plant in the world.", 
+        "image": "/digitalassets/MDB4949SDM/Standalone_1175X1290.jpg", 
+        "name": "Stainless Steel Tub Dishwasher with Large Capacity", 
+        "price": "$699.00 ", 
+        "proWash": false, 
+        "sensorCycle": false, 
+        "stainlessTub": true, 
+        "type": "Dishwashers", 
+        "url": "http://www.maytag.com/-[MDB4949SDM]-1111958/MDB4949SDM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "When it comes to keeping cool, Maytag\u00ae refrigerators get the job done right. This 4-door french door refrigerator is built tough to take on a full load of favorites. Signature Maytag\u00ae steel shelves leave all your groceries in good hands, while the PowerCold\u2122 feature chills the 26 cu. ft. refrigerator compartment down quickly\u2014even if the whole family's been browsing with the door open. And with our adjustable-temperature refrigerated drawer and EasySlide bin, you can store everything your way so your family won't have to go searching when you're not in the kitchen. We even found a whole new way to light up the refrigerator, with steel shelves that feature under-shelf LED lighting to keep your food in the cold but never in the dark. Plus, the 10-year limited parts warranty1 means this 4-door refrigerator is made to cool and built to last.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MFX2876DRM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "4-Door French Door Refrigerator with Steel Shelves - 26 cu. ft.", 
+        "price": "$3,399.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "French-Door", 
+        "url": "http://www.maytag.com/-[MFX2876DRM]-1112329/MFX2876DRM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "This Maytag\u00ae french door refrigerator delivers two kinds of cold. The Dual Cool\u2122 evaporators provide dry, cold air to the freezer and cool, humid air to the large refrigerator to keep food at its best. The PowerCold\u2122 feature brings the temperature back down with the touch of a button after leaving the doors open. Bright white interior LED lighting makes finding favorites easy, while stainless steel handles give you something sturdy to hold onto and Strongbox\u2122 door hinges help seal in cold air. A 10-year limited parts warranty1* on the compressor provides peace of mind that this french door refrigerator is made to last. To top it off, this 27 cu. ft. refrigerator is designed, engineered and assembled in the U.S.A. with genuine American Pride.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MFT2776DEM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "27 cu. ft. French Door Refrigerator with PowerCold\u2122 Feature", 
+        "price": "$2,799.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "French-Door", 
+        "url": "http://www.maytag.com/-[MFT2776DEM]-1112244/MFT2776DEM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Experience a Maytag\u00ae french door refrigerator built for the long haul with a 10-year limited parts warranty1* on the compressor tested to 2X life2 for years of reliability. Bright white interior LED lighting makes finding favorites a snap, while stainless steel handles stand up to constant use. This refrigerator with ice dispenser features Strongbox\u2122 door hinges that help seal in cold air. Maytag\u00ae french door refrigerators are also packed with features like the temperature-controlled Wide-N-Fresh\u2122 deli drawer that's perfect for storing large platters or deli trays and roomy humidity controlled FreshLock\u2122 crispers. To top it off, this 25 cu. ft. refrigerator is designed, engineered and assembled in the U.S.A. with genuine American Pride.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MFT2574DEM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "25 cu. ft. Ice2O\u00ae French Door Refrigerator with Better Built Compressor", 
+        "price": "$2,299.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "French-Door", 
+        "url": "http://www.maytag.com/-[MFT2574DEM]-1112077/MFT2574DEM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "counterDepth": false, 
+        "description": "No matter what paces you put it through, a Maytag\u00ae counter depth refrigerator is tough enough for any kitchen. Strongbox\u2122 door hinges help seal in cold air. A 10-year limited parts warranty1* on the compressor lets you know this 3-door refrigerator is made for the long haul. The PowerCold\u2122 feature uses a blast of cold air to help make sure the temperature is right where it should be, even when the whole family's been browsing with the door open. This 20 cu. ft. refrigerator is designed, engineered and assembled in the U.S.A. with genuine American Pride. And it's ENERGY STAR\u00ae qualified so you know it will help you save on utility bills.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MFC2062DEM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "20 cu. ft. 3-Door French Door Refrigerator with Counter Depth Styling", 
+        "price": "$2,199.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "French-Door", 
+        "url": "http://www.maytag.com/-[MFC2062DEM]-1112110/MFC2062DEM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Have the whole block over for the big game and keep everyone's drink cold with this 22 cu. ft. French door bottom-freezer refrigerator. Bring out the appetizer platter with ease, because fresh food is stored at eye level, it's well-lit with the bright white interior LED lighting, and it's kept nice and cold in the Wide-N-Fresh\u2122 deli drawer. And even if things get a little hectic, spills are easy to clean on the Spill-Catcher\u2122 glass crisper shelf. Now you can concentrate on rooting for your team.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MFI2269DRM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "22 cu. ft. French Door Refrigerator with Wide-N-Fresh\u2122 Deli Drawer", 
+        "price": "$2,199.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "French-Door", 
+        "url": "http://www.maytag.com/-[MFI2269DRM]-1112335/MFI2269DRM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "You can finally fit big French door benefits in your kitchen's slim 30\" wide opening. In the space that was previously reserved for top freezers, this model offers Strongbox\u2122 door bins that are 50x stronger than standard door bins, a full-width fold-away shelf for more organizational flexibility, LED interior lighting and a 10-year limited parts warranty1 on the compressor. Plus, there's a FreshFlow\u2122 produce preserver that extends the freshness of produce by up to 25%2 and a FreshFlow\u2122 air filter that's 15 times more effective than baking soda at reducing common food odors. In other words, all it takes to open up your entire kitchen is this flexible French door refrigerator.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MFW2055DRM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "19.6 cu ft French Door Refrigerator with Strongbox\u2122 Door Bins", 
+        "price": "$1,899.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "French-Door", 
+        "url": "http://www.maytag.com/-[MFW2055DRM]-1112281/MFW2055DRM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "No matter what paces you put it through, a Maytag\u00ae french door refrigerator is tough enough for any kitchen. Stainless steel handles give you something hearty to hold onto, and Strongbox\u2122 door hinges help seal in cold air. A 10-year limited parts warranty1 on the compressor lets you know this 3-door refrigerator is made for the long haul. BrightSeries\u2122 LED lighting and frameless glass shelves add a premium look and feel. Humidity controlled FreshLock\u2122 crispers and a factory-installed ice maker help keep foods fresh and drinks ice cold. Best of all, this 22 cu. ft. refrigerator is designed, engineered and assembled in the U.S.A. with genuine American Pride. And it's ENERGY STAR\u00ae qualified so you know it will help you save on utility bills.", 
+        "ethyleneFilter": false, 
+        "filtered": false, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MFF2258DEM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "22 cu. ft. 3-Door French Door Refrigerator with Strongbox\u2122 Door Hinges", 
+        "price": "$1,799.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "French-Door", 
+        "url": "http://www.maytag.com/-[MFF2258DEM]-1112111/MFF2258DEM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Whether you've got a couple or a crowd, a Maytag\u00ae french door refrigerator is tough enough for any kitchen. Stainless steel handles give you something hearty to hold onto, and Strongbox\u2122 door hinges help seal in cold air. A 10-year limited parts warranty1* on the compressor lets you know this 3-door refrigerator is made for the long haul. BrightSeries\u2122 LED lighting and frameless glass shelves add a premium look and feel. Humidity controlled FreshLock\u2122 crispers and a factory-installed ice maker help keep foods fresh and drinks ice cold. Best of all, this 25 cu. ft. refrigerator is designed, engineered and assembled in the U.S.A. with genuine American Pride. And it's ENERGY STAR\u00ae qualified so you know it will help you save on utility bills.", 
+        "ethyleneFilter": false, 
+        "filtered": false, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MFF2558DEM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "25 cu. ft. 3-Door French Door Refrigerator with Greater Capacity", 
+        "price": "$1,799.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "French-Door", 
+        "url": "http://www.maytag.com/-[MFF2558DEM]-1112076/MFF2558DEM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Monochromatic Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "You can finally fit big French door benefits in your kitchen's slim 30\" wide opening. In the space that was previously reserved for top freezers, this model offers Strongbox\u2122 door bins that are 50x stronger than standard door bins, a full-width fold-away shelf for more organizational flexibility, LED interior lighting and a 10-year limited parts warranty1 on the compressor. Plus, there's a FreshFlow\u2122 produce preserver that extends the freshness of produce by up to 25%2 and a FreshFlow\u2122 air filter that's 15 times more effective than baking soda at reducing common food odors. In other words, all it takes to open up your entire kitchen is this flexible French door refrigerator.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MFF2055DRM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "19.7 cu ft French Door Refrigerator with Strongbox\u2122 Door Bins", 
+        "price": "$1,599.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "French-Door", 
+        "url": "http://www.maytag.com/-[MFF2055DRM]-1112280/MFF2055DRM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Monochromatic Stainless Steel"
+        ], 
+        "counterDepth": false, 
+        "description": "Keep everything you're storing cool with a Maytag\u00ae counter depth refrigerator built to fit the busiest kitchens. This 21 cu. ft. refrigerator uses the PowerCold\u2122 feature to blast the inside with cold air\u2014helping to keep it cool with just the touch of a button. And when it comes to durability, stainless steel handles give you something hardy to grab on to, while the 10-year limited parts warranty1 on the compressor means you can count on it to hold your food for years. Plus, gallon door bins let you load up the side-by-side refrigerator with confidence. This 21 cu. ft. refrigerator will keep it all cool no matter what you put inside.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MSC21C6MDM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "21 cu. ft. Side-by-Side Refrigerator with Counter Depth Styling", 
+        "price": "$1,899.00 ", 
+        "sideBySide": true, 
+        "topFreezer": false, 
+        "type": "Side-by-Side", 
+        "url": "http://www.maytag.com/-[MSC21C6MDM]-1112254/MSC21C6MDM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Our Maytag\u00ae standard depth refrigerators are built tough enough for any kitchen with the space and power to back them up. This 26 cu. ft. refrigerator has a large capacity to hold whatever you're storing, and the PowerCold\u2122 feature blasts cold air to help keep the inside cool. And when it comes to durability, stainless steel handles give you something hardy to grab on to, while the 10-year limited parts warranty1 on the compressor means you can count on it for years to hold your food. Plus, gallon door bins and frameless glass shelves let you load up the side-by-side refrigerator with confidence. This 26 cu. ft. refrigerator will keep it all cool without breaking a sweat.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MSB26C6MDM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "26 cu. ft. Side-by-Side Refrigerator with Standard Depth Styling", 
+        "price": "$1,799.00 ", 
+        "sideBySide": true, 
+        "topFreezer": false, 
+        "type": "Side-by-Side", 
+        "url": "http://www.maytag.com/-[MSB26C6MDM]-1112236/MSB26C6MDM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "When you buy a Maytag\u00ae standard depth refrigerator, you're buying an appliance that's built tough for any kitchen.  This 21 cu. ft. refrigerator features stainless steel handles to give you something hardy to grab on to, and a 10-year limited parts warranty1 on the compressor so you know you can count on it for years to hold your food.  Gallon door bins let you keep your gallon containers in the doors, so there's more space for whatever you're storing inside. And our Spill-Catcher\u2122 adjustable glass shelves help you manage messes by helping to keep spills from spreading over the edges.  This 33\" side-by-side refrigerator will keep it all cool without breaking a sweat.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MSF21D4MDM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "21 cu. ft. Side-by-Side Refrigerator with 33\" Width", 
+        "price": "$1,599.00 ", 
+        "sideBySide": true, 
+        "topFreezer": false, 
+        "type": "Side-by-Side", 
+        "url": "http://www.maytag.com/-[MSF21D4MDM]-1112129/MSF21D4MDM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Our durable 25 cu. ft. refrigerator is built to take the work out of keeping everything cool.  Its large capacity has the space for whatever you're storing, while its stainless steel handles and 10-year limited parts warranty1 on the compressor mean you can count on our 36\" wide, standard depth refrigerator for years.  The sturdy gallon door bins let you store your heaviest jugs and containers with confidence.  And the Spill-Catcher\u2122 adjustable glass shelves in the side-by-side refrigerator help keep spills from running off the edges so it's easier than ever to manage all the food and drinks you're storing.  With the capacity for more and the power to back it up, this 25 cu. ft. refrigerator will keep it all cool for years.", 
+        "ethyleneFilter": false, 
+        "filtered": true, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MSF25D4MDM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "25 cu. ft. Side-by-Side Refrigerator with 36\" Width", 
+        "price": "$1,499.00 ", 
+        "sideBySide": true, 
+        "topFreezer": false, 
+        "type": "Side-by-Side", 
+        "url": "http://www.maytag.com/-[MSF25D4MDM]-1112130/MSF25D4MDM/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "Retractable downdraft systems remain flush with the cooktop surface until needed. A reversible motor box can be installed on either side of the downdraft, freeing up space beneath the cabinet. The 14-inch rise allows for greater smoke and steam capture.", 
+        "image": "/digitalassets/UXD8636DYS/Standalone_1175X1290.jpg", 
+        "name": "36\" Retractable Downdraft System with Interior Blower Motor", 
+        "price": "$1,099.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXD8636DYS]-1107139/UXD8636DYS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "Retractable downdraft systems remain flush with the cooktop surface until needed. A reversible motor box can be installed on either side of the downdraft, freeing up space beneath the cabinet. The 14-inch rise allows for greater smoke and steam capture.", 
+        "image": "/digitalassets/UXD8630DYS/Standalone_1175X1290.jpg", 
+        "name": "30\" Retractable Downdraft System with Interior Blower Motor", 
+        "price": "$1,049.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXD8630DYS]-1106508/UXD8630DYS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This custom hood liner features a hidden ventilation system mounted to the inside of a custom vent cover (which can be made of metal, wood, plaster or tile), offering a uniquely streamlined look. Designed to work with larger cooking appliances, it also offers you a choice of motors for different levels of ventilation power.", 
+        "image": "/digitalassets/UXL6048YSS/Standalone_1175X1290.jpg", 
+        "name": "48\" Custom Hood Liner", 
+        "price": "$1,049.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXL6048YSS]-1101190/UXL6048YSS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This custom hood liner features a hidden ventilation system mounted to the inside of a custom vent cover (which can be made of metal, wood, plaster or tile), offering a uniquely streamlined look. It also offers you a choice of motors for different levels of ventilation power.", 
+        "image": "/digitalassets/UXL6036YSS/Standalone_1175X1290.jpg", 
+        "name": "36\" Custom Hood Liner", 
+        "price": "$949.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXL6036YSS]-1101189/UXL6036YSS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This 1200 CFM in-line blower can be installed remotely in the interior of the home to give you installation flexibility and quiet operation.  Designed to work with commercial hood liners and commercial-style range-hoods.", 
+        "image": "/digitalassets/UXI1200DYS/Standalone_1175X1290.jpg", 
+        "name": "1200 CFM in-line blower", 
+        "price": "$849.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXI1200DYS]-1101188/UXI1200DYS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This 1200 CFM internal blower ensures reliable performance to handle the requirements of high-power gas burners.  Designed to work with commercial hood liners and commercial-style range-hoods.", 
+        "image": "/digitalassets/UXB1200DYS/Standalone_1175X1290.jpg", 
+        "name": "1200 CFM internal blower", 
+        "price": "$599.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXB1200DYS]-1101184/UXB1200DYS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This Jenn-Air\u00ae luxury convertible under-cabinet hood combines stylish design with efficient ventilation. It features a high-performance 400-CFM blower, three speed settings and dual halogen work surface lighting.", 
+        "image": "/digitalassets/UXT5536AAS/Standalone_1175X1290.jpg", 
+        "name": "36\" Convertible Under-Cabinet Hood", 
+        "price": "$549.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT5536AAS]-1101205/UXT5536AAS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This 36-inch convertible wall-mount glass canopy hood not only provides excellent performance, but it simply looks great. It features a powerful 400 CFM motor and has three fan-speed settings and 6-inch round duct to work perfectly with your needs. The dishwasher-safe grease filter is a breeze to clean up, and optional recirculating and chimney extension kits are available. Its sleek glass design brings more elegance to your kitchen.", 
+        "image": "/digitalassets/UXW6536BSS/Standalone_1175X1290.jpg", 
+        "name": "36\" Convertible Wall-Mount 400-CFM Glass Canopy Hood", 
+        "price": "$549.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXW6536BSS]-1106918/UXW6536BSS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This convertible under-cabinet hood, designed to work with smaller cooking appliances, combines stylish design with efficient ventilation. It features a high-performance 400-CFM blower, three speed settings and dual halogen work surface lighting.", 
+        "image": "/digitalassets/UXT5530AAS/Standalone_1175X1290.jpg", 
+        "name": "30\" Convertible Under-Cabinet Hood", 
+        "price": "$499.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT5530AAS]-1101203/UXT5530AAS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This 30-inch convertible wall-mount glass canopy hood not only provides excellent performance, but it simply looks great. It features a powerful 400 CFM motor and has three fan-speed settings and 6-inch round duct to work perfectly with your needs. The dishwasher-safe grease filter is a breeze to clean up, and optional recirculating and chimney extension kits are available. Its sleek glass design brings more elegance to your kitchen.", 
+        "image": "/digitalassets/UXW6530BSS/Standalone_1175X1290.jpg", 
+        "name": "30\" Convertible Wall-Mount 400-CFM Glass Canopy Hood", 
+        "price": "$499.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXW6530BSS]-1106917/UXW6530BSS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "Great meals shouldn't take your breath away until they're being served. This convertible (recirculation or vented) hood liner has multiple dishwasher-safe grease filters and optional recirculation kit/charcoal filters for heightened air quality. The 3-speed push-button controls make adjusting the airflow a breeze, while halogen lights illuminate your cooktop.", 
+        "image": "/digitalassets/UXL5430BSS/Standalone_1175X1290.jpg", 
+        "name": "30\" Hood Liner", 
+        "price": "$499.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXL5430BSS]-1106763/UXL5430BSS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This  30-inch vented hood clears the air with a 400 CFM blower and 6-inch round duct. The stainless steel construction gives it elegance and performance, while incandescent lights ensure you can see your cooktop clearly. Dishwasher-safe grease filters make cleanup a breeze, and it has an optional chimney extension kit.", 
+        "image": "/digitalassets/UXW7230BSS/Standalone_1175X1290.jpg", 
+        "name": "30\" Vented 400-CFM Wall-Mount Canopy Hood", 
+        "price": "$499.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXW7230BSS]-1106919/UXW7230BSS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "This 600 CFM internal blower ensures reliable performance to handle the requirements of high-power gas burners.  Designed to work with commercial hood liners and commercial-style range-hoods.", 
+        "image": "/digitalassets/UXB0600DYS/Standalone_1175X1290.jpg", 
+        "name": "600 CFM internal blower", 
+        "price": "$499.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXB0600DYS]-1101183/UXB0600DYS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "description": "The time consuming ways of installing hoods are now a thing of the past. The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time. Once installed, homeowners enjoy the quiet operation of 7 sones at its highest speed with three fan speeds and recirculation option. This way, the vent hood doesn't disturb family time in the kitchen. And when cooking introduces steam, grease, smoke and odors into the surrounding air, a 350 CFM fan takes care of it. Plus, this model offers halogen lighting to brighten the cooking area.", 
+        "image": "/digitalassets/UXT5236BDS/Standalone_1175X1290.jpg", 
+        "name": "36\" Range Hood with the FIT System", 
+        "price": "$369.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT5236BDS]-1111866/UXT5236BDS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "description": "The time consuming ways of installing hoods are now a thing of the past. The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time. Once installed, homeowners enjoy the quiet operation of 7 sones at its highest speed with three fan speeds and recirculation option. This way, the vent hood doesn't disturb family time in the kitchen. And when cooking introduces steam, grease, smoke and odors into the surrounding air, a 350 CFM fan takes care of it. Plus, this model offers halogen lighting to brighten the cooking area.", 
+        "image": "/digitalassets/UXT5230BDS/Standalone_1175X1290.jpg", 
+        "name": "30\" Range Hood with the FIT System", 
+        "price": "$339.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT5230BDS]-1111865/UXT5230BDS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "description": "The time consuming ways of installing hoods are now a thing of the past. The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time. Once installed, homeowners enjoy the quiet operation of 6.4 sones at its highest speed with variable fan speeds and recirculation option. This way, the vent hood doesn't disturb family time in the kitchen. And when cooking introduces steam, grease, smoke and odors into the surrounding air, a 225 CFM fan\ntakes care of it.", 
+        "image": "/digitalassets/UXT4236ADS/Standalone_1175X1290.jpg", 
+        "name": "36\" Range Hood with the FIT System", 
+        "price": "$169.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT4236ADS]-1111864/UXT4236ADS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "description": "The time consuming ways of installing hoods are now a thing of the past. The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time. Once installed, homeowners enjoy the quiet operation of 6.4 sones at its highest speed with variable fan speeds and recirculation option. This way, the vent hood doesn't disturb family time in the kitchen. And when cooking introduces steam, grease, smoke and odors into the surrounding air, a 225 CFM fan takes care of it.", 
+        "image": "/digitalassets/UXT4230ADS/Standalone_1175X1290.jpg", 
+        "name": "30\" Range Hood with the FIT System", 
+        "price": "$159.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT4230ADS]-1111863/UXT4230ADS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "description": "Time consuming ways of installing hoods are now a thing of the past. The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time.* Once installed, homeowners enjoy the quiet operation of 4.5 sones at highest speed with two fan speeds and recirculation option. This way, the vent hood doesn't disturb family time in the kitchen. And when cooking introduces steam, grease, smoke and odors into the surrounding air, 190 CFM takes care of it.", 
+        "image": "/digitalassets/UXT4136ADS/Standalone_1175X1290.jpg", 
+        "name": "36\" Range Hood with the FIT System", 
+        "price": "$139.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT4136ADS]-1111932/UXT4136ADS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "description": "The time consuming ways of installing hoods are now a thing of the past. The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time. Once installed, homeowners enjoy the quiet operation of 5.3 sones at its highest speed with two fan speeds and recirculation option. This way, the vent hood doesn't disturb family time in the kitchen. And when cooking introduces steam, grease, smoke and odors into the surrounding air, a 190 CFM fan takes care of it.", 
+        "image": "/digitalassets/UXT4130ADS/Standalone_1175X1290.jpg", 
+        "name": "30\" Range Hood with the FIT System", 
+        "price": "$129.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT4130ADS]-1111931/UXT4130ADS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Black", 
+            "Biscuit", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "description": "The time consuming ways of installing hoods are now a thing of the past. The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time. Once installed, homeowners enjoy the quiet operation of 5.3 sones at its highest speed with two fan speeds and recirculation option. This way, the vent hood doesn't disturb family time in the kitchen. And when cooking introduces steam, grease, smoke and odors into the surrounding air, a 190 CFM fan takes care of it.", 
+        "image": "/digitalassets/UXT4030ADS/Standalone_1175X1290.jpg", 
+        "name": "30\" Range Hood with the FIT System", 
+        "price": "$119.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT4030ADS]-1111861/UXT4030ADS/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Black", 
+            "White"
+        ], 
+        "description": "The time consuming ways of installing hoods are now a thing of the past. The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time. Once installed, homeowners enjoy the quiet operation of 5.3 sones at its highest speed with two fan speeds and recirculation option. This way, the vent hood doesn't disturb family time in the kitchen. And when cooking introduces steam, grease, smoke and odors into the surrounding air, a 190 CFM fan takes care of it.", 
+        "image": "/digitalassets/UXT4036ADW/Standalone_1175X1290.jpg", 
+        "name": "36\" Range Hood with the FIT System", 
+        "price": "$89.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT4036ADW]-1111862/UXT4036ADW/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Black", 
+            "White"
+        ], 
+        "description": "The time consuming ways of installing hoods are now a thing of the past.  The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time.  Once installed, homeowners enjoy the quiet operation of 4.5 sones at its highest speed with two fan speeds.  This way, the vent hood doesn't disturb family time in the kitchen.  And when cooking introduces steam, grease, smoke and odors into the surrounding air, a 190 CFM fan takes care of it.", 
+        "image": "/digitalassets/UXT2030ADW/Standalone_1175X1290.jpg", 
+        "name": "30\" Range Hood with the FIT System", 
+        "price": "$79.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT2030ADW]-1111859/UXT2030ADW/"
+    }, 
+    {
+        "appliance": "102120022", 
+        "colours": [
+            "Black", 
+            "White"
+        ], 
+        "description": "The time consuming ways of installing hoods are now a thing of the past. The FIT system eliminates measuring, cutting and filler strips for a perfect fit every time.  Once installed, homeowners enjoy the quiet operation of 5.3 sones at its highest speed with two fan speeds and recirculation option. This way, the vent hood doesn't disturb family time in the kitchen. And when cooking introduces steam, grease, smoke and odors into the surrounding air, a 190 CFM fan takes care of it.", 
+        "image": "/digitalassets/UXT3030ADW/Standalone_1175X1290.jpg", 
+        "name": "30\" Range Hood with the FIT System", 
+        "price": "$79.00 ", 
+        "type": "Hoods", 
+        "url": "http://www.maytag.com/-[UXT3030ADW]-1111860/UXT3030ADW/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Enjoy two cooking systems with this 30-inch combination wall oven. The upper microwave provides sensor cooking control that adjusts time and power level settings for a variety of convenience foods. This oven microwave combo has a total capacity of 6.4 cu. ft., including 5.0 cu. ft. in the lower oven which features the Precision Cooking\u2122 system that delivers the power to keep everything tasting its crispy and juicy best. And that's only the beginning of what makes this 30-inch wall oven such a treat. From Cleveland, Tennessee to you, Maytag\u00ae wall ovens are designed, engineered and assembled in the U.S.A. and are even backed by a 10-year limited parts warranty1 on the oven elements.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MMW7730DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "30-Inch Combination Wall Oven with Precision Cooking\u2122 System", 
+        "price": "$2,899.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[MMW7730DS]-1112002/MMW7730DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "4.3 (Each Oven)", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "Double your cooking pleasure with this convection wall oven that gives you the power to get mouths watering. This double oven has a total capacity of 8.6 cu. ft. so you'll never be left short of space. When you need to serve up something fast, this precision oven gives you features that deliver the goods. Power Preheat lets you get dinner in the oven 25% faster than a traditional oven2, and EvenAir\u2122 true convection delivers the even results you need for everything from turkey to pies. But performance is only part of the story. This 27-inch wall oven features a heavy-duty roll-out rack and stainless steel handles as reminders of the robust craftsmanship that is backed by a 10-year limited parts warranty1 on the oven elements.", 
+        "double": true, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/MEW9627DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "27-Inch Double Wall Oven with EvenAir\u2122 True Convection", 
+        "price": "$2,699.00 ", 
+        "single": false, 
+        "trueConvection": true, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[MEW9627DS]-1111990/MEW9627DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "5.0 (Each Oven)", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "Double your cooking pleasure with this convection wall oven that gives you the power to get mouths watering.  This double oven has a total capacity of 10.0 cu. ft. so you'll never be left short of space.   When you need to serve up something fast, you'll love the Power Preheat feature that lets you get dinner in the oven 25% faster than a traditional oven2.  You'll also get EvenAir\u2122 true convection so everything from turkey to pies will be cooked to a tasty finish.  And because this 30-inch wall oven carries the Maytag name, it doesn't skimp on strength.  A heavy-duty roll-out rack lets you show that turkey who's boss, and stainless steel handles remind you of  the robust craftsmanship that is backed by a 10-year limited parts warranty1 on the oven elements.", 
+        "double": true, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/MEW9630DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "30-Inch Double Wall Oven with EvenAir\u2122 True Convection", 
+        "price": "$2,699.00 ", 
+        "single": false, 
+        "trueConvection": true, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[MEW9630DS]-1111991/MEW9630DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "4.3 (Each Oven)", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Double up on cooking your family's favorites with this wall oven that will leave them comin' back for more. A total capacity of 8.6 cu. ft. makes this double oven an ideal choice when you have to cook multiple dishes at one time. The Precision Cooking\u2122 system delivers the power to keep everything tasting its crispy and juicy best.And that's only the beginning of what makes this 27-inch wall oven a tasty treat. From Cleveland, Tennessee to you, Maytag\u00ae wall ovens are designed, engineered and assembled in the U.S.A. and are even backed by a 10-year limited parts warranty1 on the oven elements.", 
+        "double": true, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/MEW7627DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "27-Inch Double Wall Oven with Precision Cooking\u2122 System", 
+        "price": "$2,149.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[MEW7627DS]-1111986/MEW7627DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "5.0 (Each Oven)", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Double up on cooking your family's favorites with this wall oven that will leave them comin' back for more. A total capacity of 10.0 cu. ft. makes this double oven an ideal choice when you have to cook multiple dishes at one time. The Precision Cooking\u2122 system delivers the power to keep everything tasting its crispy and juicy best. And that's only the beginning of what makes this 30-inch wall oven a tasty treat. From Cleveland, Tennessee to you, Maytag\u00ae wall ovens are designed, engineered and assembled in the U.S.A. and are even backed by a 10-year limited parts warranty1 on the oven elements.", 
+        "double": true, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/MEW7630DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "30-Inch Double Wall Oven with Precision Cooking\u2122 System", 
+        "price": "$2,149.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[MEW7630DS]-1111987/MEW7630DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "4.3", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "With a 4.3 cu. ft. capacity, this built-in oven gives you room for all your favorite recipes.  And when it comes to bringin' out the flavor, this convection oven has the power to get mouths watering.  Need to serve up something fast?  You'll love the Power Preheat feature that lets you get dinner in the oven 25% faster than a traditional oven2.  You'll also get EvenAir\u2122 true convection so everything from turkey to pies will be cooked to a tasty finish.  And because this 27-inch built-in oven carries the Maytag name, it doesn't skimp on strength.  A heavy-duty roll-out rack lets you show that turkey who's boss, and a stainless steel handle reminds you of the robust craftsmanship that is backed by a 10-year limited parts warranty1 on the oven elements.", 
+        "double": false, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/MEW9527DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "27-Inch Single Built-In Oven with EvenAir\u2122 True Convection", 
+        "price": "$1,849.00 ", 
+        "single": true, 
+        "trueConvection": true, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[MEW9527DS]-1111988/MEW9527DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "5.0", 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": true, 
+        "description": "With a 5.0 cu. ft. capacity, this built-in oven gives you room for all your favorite recipes. And when it comes to bringin' out the flavor, this convection oven has the power to get mouths watering. Need to serve up something fast? You'll love the Power Preheat feature that lets you get dinner in the oven 25% faster than a traditional oven2.* You'll also get EvenAir\u2122 true convection so everything from turkey to pies will be cooked to a tasty finish. And because this 30-inch built-in oven carries the Maytag name, it doesn't skimp on strength. A heavy-duty roll-out rack lets you show that turkey who's boss, and a stainless steel handle reminds you of the robust craftsmanship that is backed by a 10-year limited parts warranty1** on the oven elements.", 
+        "double": false, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/MEW9530DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "30-Inch Single Built-In Oven with EvenAir\u2122 True Convection", 
+        "price": "$1,849.00 ", 
+        "single": true, 
+        "trueConvection": true, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[MEW9530DS]-1111989/MEW9530DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "2.8 Upper 2.4 Lower", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Kitchen on the smaller side? No problem. This dependable double wall oven is a mere 24 inches wide, meaning you can fit big performance into a small space. Its Dual Bake\u2122 control/broil elements ensure accurate results, while the Precision Cooking\u2122 system provides dependable, even cooking throughout the oven. The self-cleaning upper oven offers 2.8 cu. ft. of capacity, while the lower oven provides 2.4 cu. ft. Sometimes less is more.", 
+        "double": true, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/CWE5800ACS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Electric Double Wall Oven with Precision Cooking\u2122 System", 
+        "price": "$1,549.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[CWE5800ACS]-1100969/CWE5800ACS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "4.3", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "This 27-inch built-in oven has a 4.3 cu. ft. capacity that gives you room for your favorite recipes. The self-cleaning oven is easy to use and features the Precision Cooking\u2122 system that delivers the power to keep everything tasting its crispy and juicy best. Whether you're baking a rack full of sweet treats or broiling a rack of ribs, you'll have the confidence that it all will taste the way you want. And that's only the beginning of what makes this 27-inch wall oven such a treat. From Cleveland, Tennessee to you, Maytag\u00ae built-in ovens are designed, engineered and assembled in the U.S.A. and are even backed by a 10-year limited parts warranty1 on the oven elements.", 
+        "double": false, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/MEW7527DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "27-Inch Single Built-In Oven with Precision Cooking\u2122 System", 
+        "price": "$1,399.00 ", 
+        "single": true, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[MEW7527DS]-1111984/MEW7527DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "5.0", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "This 30-inch built-in oven has a 5.0 cu. ft. capacity that gives you room for your favorite recipes. The self-cleaning oven is easy to use and features the Precision Cooking\u2122 system that delivers the power to keep everything tasting its crispy and juicy best. Whether you're baking a rack full of sweet treats or broiling a rack of ribs, you'll have the confidence that it all will taste the way you want. And that's only the beginning of what makes this 30-inch wall oven such a treat. From Tulsa, Oklahoma to you, Maytag\u00ae built-in ovens are designed, engineered and assembled in the U.S.A. and are even backed by a 10-year limited parts warranty1 on the oven elements.", 
+        "double": false, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/MEW7530DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "30-Inch Single Built-In Oven with Precision Cooking\u2122 System", 
+        "price": "$1,399.00 ", 
+        "single": true, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[MEW7530DS]-1111985/MEW7530DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "2.7", 
+        "colours": [
+            "Black", 
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Big meals call for big broilers, which is exactly what this 24-inch gas wall oven offers. The extra-large bottom broiler compartment provides the perfect amount of space for chicken, roast, or other larger dishes. And the Delay-Start control lets you cook on your own schedule, so you can take care of other business while your meal cooks to perfection.", 
+        "double": false, 
+        "electric": false, 
+        "gas": true, 
+        "image": "/digitalassets/CWG3600AAS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Gas Wall Oven with Delay-Start Control", 
+        "price": "$1,299.00 ", 
+        "single": true, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[CWG3600AAS]-1100971/CWG3600AAS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "2.8", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Smaller kitchen? No problem. This dependable wall oven is a mere 24 inches wide, meaning you can fit big performance into a small space. Its Dual Bake\u2122 control/broil elements ensure accurate results, while the Precision Cooking\u2122 system provides even baking and browning. And, the Delay-Start control lets you begin your cooking on your schedule. Sometimes less is more.", 
+        "double": false, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/CWE4800ACS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Electric Wall Oven with Precision Cooking\u2122 System", 
+        "price": "$1,249.00 ", 
+        "single": true, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[CWE4800ACS]-1100967/CWE4800ACS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "2.7", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Sometimes you need something that works with your schedule. This 24-inch gas single oven features a bottom broiler and Delay-Start, so you can come home to a hot meal. Electronic touch controls give you full command over your cooking, while the four upper-rack positions in the oven and two lower-rack positions in the broiler let you work with large or small dishes. This oven fits with both your kitchen and your lifestyle.", 
+        "double": false, 
+        "electric": false, 
+        "gas": true, 
+        "image": "/digitalassets/CWG3100AAS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Gas Wall Oven with Delay-Start Control", 
+        "price": "$1,149.00 ", 
+        "single": true, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[CWG3100AAS]-1100970/CWG3100AAS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": "2.8", 
+        "colours": [
+            "Black", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "When space is tight, you can still have an oven that brings top-notch performance. This 24-inch electric single wall oven features the Precision Cooking\u2122 system, which provides dependable, even cooking throughout the oven. The Dual Bake\u2122 control/broil elements provide accurate broiling results, while electronic touch controls ensure you have full command of your cooking. Bigger isn't always better.", 
+        "double": false, 
+        "electric": true, 
+        "gas": false, 
+        "image": "/digitalassets/CWE4100ACB/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "Electric Wall Oven with Precision Cooking\u2122 System", 
+        "price": "$849.00 ", 
+        "single": true, 
+        "trueConvection": false, 
+        "type": "Wall Ovens", 
+        "url": "http://www.maytag.com/-[CWE4100ACB]-1100966/CWE4100ACB/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Take charge of your cooking experience with Maytag\u00ae gas cooktops. The 18,000-BTU Power\u2122 Burner delivers heat on demand to sear flavor and juices into main dishes, while the Power Simmer dual stacked burner on this 36-inch gas cooktop allows for delicate control of savory sauces and soups. And this 5-burner cooktop will clean with ease through years of use thanks to features like the DuraGuard\u2122 protective finish and heavy-duty DuraClean\u2122 continuous cast-iron grates.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGC9536DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "36-inch 5-burner Gas Cooktop with DuraGuard\u2122 Protective Finish", 
+        "price": "$1,149.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Cooktops", 
+        "url": "http://www.maytag.com/-[MGC9536DS]-1112253/MGC9536DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "On this 36-inch electric cooktop you'll enjoy flexible, dependable cooking power with two Dual-Choice\u2122 elements.  These elements give you the flexibility to save energy when cooking for smaller meals, but also the power and expanded capabilities to handle even the largest of cooking challenges.  This all comes backed by a 10-year limited parts warranty on the elements and cooktop.  This powerful cooktop also offers premium features such as heavy-duty die cast metal knobs, a hot surface indicator light and shatter-resistant glass to help prevent mishaps.  You get all of these endurance tested elements, and the best part is that they were designed, engineered and assembled in the U.S.A.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MEC9536BS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "36-inch Electric Cooktop with Two Dual-Choice\u2122 Elements", 
+        "price": "$1,049.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Cooktops", 
+        "url": "http://www.maytag.com/-[MEC9536BS]-1107228/MEC9536BS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Take charge of your cooking experience with Maytag\u00ae gas cooktops. The 18,000-BTU Power\u2122 Burner delivers heat on demand to sear flavor and juices into main dishes, while the simmer burner plus melt cap on this 30-inch gas cooktop allows for delicate control of savory sauces and soups. And this 4-burner cooktop will clean with ease through years of use thanks to features like the DuraGuard\u2122 protective finish and heavy-duty DuraClean\u2122 continuous cast-iron grates.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGC9530DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "30-inch 4-burner Gas Cooktop with DuraGuard\u2122 Protective Finish", 
+        "price": "$999.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Cooktops", 
+        "url": "http://www.maytag.com/-[MGC9530DS]-1112252/MGC9530DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Enjoy flexible, dependable cooking power with this 30-inch electric cooktop.  For home chefs who want flexibility and power, this model features two Dual-Choice\u2122 elements.  These elements give you the flexibility to save energy when cooking for smaller meals, but also the power and expanded capabilities to handle even the largest of cooking challenges.  This all comes backed by a 10-year limited parts warranty on the elements and cooktop.  This powerful cooktop also offers premium features such as heavy-duty die cast metal knobs, a hot surface indicator light and shatter-resistant glass to help prevent mishaps.  You get all of these endurance tested elements, and the best part is that they were designed, engineered and assembled in the U.S.A.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MEC9530BS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "30-inch Electric Cooktop with Two Dual-Choice\u2122 Elements", 
+        "price": "$949.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Cooktops", 
+        "url": "http://www.maytag.com/-[MEC9530BS]-1107227/MEC9530BS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Take charge of your cooking experience with Maytag\u00ae gas cooktops. The 15,000-BTU Power\u2122 Burner delivers heat on demand to sear flavor and juices into main dishes, while the simmer burner on this 36-inch gas cooktop allows for delicate control of savory sauces and soups. And this 5-burner cooktop will clean with ease thanks to features like the dishwasher-safe knobs and heavy-duty DuraClean\u2122 cast-iron cooktop grates.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGC7536DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "36-inch 5-burner Gas Cooktop with Power\u2122 Burner", 
+        "price": "$899.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Cooktops", 
+        "url": "http://www.maytag.com/-[MGC7536DS]-1112251/MGC7536DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Take charge of your cooking experience with Maytag\u00ae gas cooktops. The 15,000-BTU Power\u2122 Burner delivers heat on demand to sear flavor and juices into main dishes, while the simmer burner on this 30-inch gas cooktop allows for delicate control of savory sauces and soups. And this 4-burner cooktop will clean with ease thanks to features like the dishwasher-safe knobs and heavy-duty DuraClean\u2122 cast-iron cooktop grates.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGC7430DS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "30-inch 4-burner Gas Cooktop with Power\u2122 Burner", 
+        "price": "$749.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Cooktops", 
+        "url": "http://www.maytag.com/-[MGC7430DS]-1112250/MGC7430DS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Enjoy dependable cooking power with this 30-inch electric cooktop. It comes with a Dual-Choice\u2122 element and a 3,200-watt Speed Heat\u2122 element designed to rapidly boil water, sear steak or tackle any other tough cooking job you can throw at it. Plus, this cooktop is backed by a 10-year limited parts warranty on the elements and cooktop. This powerful cooktop also offers premium features such as a hot surface indicator light and shatter-resistant glass to help prevent mishaps. You get all of these endurance tested elements, and the best part is that they were designed, engineered and assembled in the U.S.A.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MEC7430BS/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "30-inch Electric Cooktop with Speed Heat\u2122 Element", 
+        "price": "$749.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Cooktops", 
+        "url": "http://www.maytag.com/-[MEC7430BS]-1107226/MEC7430BS/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "Chrome", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "Continue your kitchen mastery with this reliable five-element cooktop that lets you stay in control. It features two 8-inch Power Cook elements for consistent heat when you need it. The porcelain surface is stain-resistant, and cleanup is easy with No-Drip\u2122 chrome bowls and removable cooktop knobs that can be put right in the dishwasher. It's the perfect tool for your kitchen.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MEC4536WB/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "36-inch Electric Cooktop with Two Power Cook  Elements", 
+        "price": "$499.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Cooktops", 
+        "url": "http://www.maytag.com/-[MEC4536WB]-1101022/MEC4536WB/"
+    }, 
+    {
+        "appliance": "Stove", 
+        "aquaLift": false, 
+        "capacity": false, 
+        "colours": [
+            "Black", 
+            "White"
+        ], 
+        "combination": false, 
+        "convection": false, 
+        "description": "You put your kitchen to the test, so you need a cooktop that's easy to use, clean, and maintain. This dependable 36-inch, five-burner cooktop features a porcelain-enamel surface and grate finish, as well as DuraClean\u2122 lift-off burner caps. Plus, it has two Power Cook burners, one 12,500 BTU and one 10,500 BTU.", 
+        "double": false, 
+        "electric": false, 
+        "gas": false, 
+        "image": "/digitalassets/MGC4436BDB/Standalone_1175X1290.jpg", 
+        "induction": false, 
+        "name": "36-inch Gas Cooktop with Two Power Cook Burners", 
+        "price": "$509.00 ", 
+        "single": false, 
+        "trueConvection": false, 
+        "type": "Cooktops", 
+        "url": "http://www.maytag.com/-[MGC4436BDB]-1101077/MGC4436BDB/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": true, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Tough enough for any kitchen, a Maytag\u00ae 30-inch bottom freezer refrigerator is built for the long haul and backed by a 10-year limited parts warranty on the compressor. The stainless steel handles on this 2-door refrigerator give you something hearty to hold onto. BrightSeries\u2122 LED lighting and frameless glass shelves add a premium look and feel. Humidity controlled FreshLock\u2122 crispers and a factory-installed ice maker help keep foods fresh and drinks ice cold. Gallon door bins give you plenty of space for jugs and containers in the doors. Best of all, this 30\" refrigerator is designed, engineered and assembled in the U.S.A. with genuine American Pride. And it's ENERGY STAR\u00ae qualified so you know it will help you save on utility bills.", 
+        "ethyleneFilter": false, 
+        "filtered": false, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MBF1958DEM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "30-inch Bottom Freezer Refrigerator with 10-Year Limited Parts Warranty on the Compressor", 
+        "price": "$1,499.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "Bottom-Freezer", 
+        "url": "http://www.maytag.com/-[MBF1958DEM]-1112070/MBF1958DEM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": true, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Tough enough for any kitchen, a Maytag\u00ae 33-inch bottom freezer refrigerator is built for the long haul and backed by a 10-year limited parts warranty* on the compressor. The stainless steel handles on this 2-door refrigerator give you something hearty to hold onto. BrightSeries\u2122 LED lighting and frameless glass shelves add a premium look and feel. Humidity controlled FreshLock\u2122 crispers and a factory-installed ice maker help keep foods fresh and drinks ice cold. Gallon door bins give you plenty of space for jugs and containers in the doors. Best of all, this 33-inch refrigerator is designed, engineered and assembled in the U.S.A. with genuine American Pride. And it's ENERGY STAR\u00ae qualified so you know it will help you save on utility bills.", 
+        "ethyleneFilter": false, 
+        "filtered": false, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MBF2258DEM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "33-Inch Bottom Freezer Refrigerator with Stainless Steel Handles", 
+        "price": "$1,499.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "Bottom-Freezer", 
+        "url": "http://www.maytag.com/-[MBF2258DEM]-1112071/MBF2258DEM/"
+    }, 
+    {
+        "appliance": "Fridge", 
+        "bottomFreezer": true, 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "counterDepth": false, 
+        "description": "Tough enough for any kitchen, a Maytag\u00ae 30-inch bottom freezer refrigerator is built for the long haul.  Stainless steel handles give you something hearty to hold onto.  A 10-year limited parts warranty on the compressor lets you know this 2-door refrigerator will hold all your food for years to come.  BrightSeries\u2122 LED lighting and frameless glass shelves add a premium look and feel. Humidity controlled FreshLock\u2122 crispers and a factory-installed ice maker help keep foods fresh and drinks ice cold. Best of all, this 30-inch refrigerator is designed, engineered and assembled in the U.S.A. with genuine American Pride.  And it's ENERGY STAR\u00ae qualified so you know it will help you save on utility bills.", 
+        "ethyleneFilter": false, 
+        "filtered": false, 
+        "frenchDoor": false, 
+        "image": "/digitalassets/MBF1953DEM/Standalone_1175X1290.jpg", 
+        "inDoor": false, 
+        "name": "30-inch Bottom Freezer Refrigerator with Ice Maker", 
+        "price": "$1,199.00 ", 
+        "sideBySide": false, 
+        "topFreezer": false, 
+        "type": "Bottom-Freezer", 
+        "url": "http://www.maytag.com/-[MBF1953DEM]-1112069/MBF1953DEM/"
+    }, 
+    {
+        "appliance": "Laundry", 
+        "colours": [
+            "Black", 
+            "Stainless Steel", 
+            "White"
+        ], 
+        "description": "To tackle your dirtiest jobs, this front load washing machine features the PowerWash® cycle. With a combination of extra cleaning action, heated water and a thorough rinse, this large capacity washer helps remove even your toughest stains. Designed to take on your toughest loads with 4.2 cu. ft. capacity, this heavy duty washing machine is also built to last thanks to the Maytag® Commercial Technology we put under the hood. And we're so confident in the reliability of this front load washer that we back the direct drive motor and stainless steel wash basket with a 10-year limited parts warranty1.** Plus, you can take pride in buying a front load washing machine that's assembled right here in the U.S.A. in Clyde, Ohio.", 
+        "image": "/digitalassets/MHW3100DW/Standalone_1175X1290.jpg", 
+        "name": "MAXIMA FRONT LOAD WASHING MACHINE WITH LARGE CAPACITY AND POWERWASH CYCLE – 4.2 CU. FT.", 
+        "url": "http://www.maytag.com/laundry-1/laundry-appliances-2/laundry-pairs-3/-[MHW3100DW]-1112078/MHW3100DW/",
+        "type" : "combo",
+        "msrp" : 1698,
+        "model" : "MHW3100DW/YMED3100DW",
+        "capacity" : 4.8,
+        "powerwash" : true,
+        "directDrive" : true,
+        "speed" : 1200,
+        "wcycles" : 8,
+        "doption" : 4,
+        "heater" : "heater",
+        "wsteam" : false, 
+        "fanfresh" : false, 
+        "wcontrols" : "Capacitive Touch",
+        "vibration" : "Advanced Vibration Control",       
+        "capacity" : 7.3,
+        "dcycles" : 6,
+        "doption" : 4,
+        "dsteam" : false,
+        "baffles" : true,
+        "drum" : "Powder Coated",
+        "dcontrols" : "Capacitive Touch",  
+        "other" : ["Advanced Moisture Sensing"]
+    }
+]
+}

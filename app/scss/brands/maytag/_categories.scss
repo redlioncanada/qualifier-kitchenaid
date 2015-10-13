@@ -1,0 +1,51 @@
+// Specificity for Maytag Categories
+
+$opacityTiming: 0.5s;
+
+.app-answers {
+ 	.category {
+ 		display: inline-block;
+		img.hover {
+			width: 100%;
+			bottom: 47px;
+			left: 0;
+			position: absolute;
+			z-index: -1;
+		}
+		&:hover img.normal {
+			opacity: 0;
+		}
+		img.normal {
+			width: 100%;
+			opacity: 1;
+			-webkit-transition: opacity $opacityTiming ease-in-out;
+			-moz-transition: opacity $opacityTiming ease-in-out;
+			-o-transition: opacity $opacityTiming ease-in-out;
+			transition: opacity $opacityTiming ease-in-out;
+		}
+		&.selected {
+			img.normal {
+				opacity: 0;
+			}
+		}
+	}
+	.sub-category {
+		display: inline-block;
+		img.normal {
+			width: 100%;
+			opacity: 1;
+			-webkit-transition: opacity $opacityTiming ease-in-out;
+			-moz-transition: opacity $opacityTiming ease-in-out;
+			-o-transition: opacity $opacityTiming ease-in-out;
+			transition: opacity $opacityTiming ease-in-out;
+		}
+		&:hover img.normal {
+			opacity: 0.3;
+		}
+		&.selected {
+			img.normal {
+				opacity: 0.3;
+			}
+		}
+	}
+}
