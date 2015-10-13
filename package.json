@@ -1,6 +1,6 @@
 {
   "name": "wp-qualifier-app",
-  "version": "0.0.16",
+  "version": "0.0.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -34,8 +34,7 @@
     "karma-jasmine": "^0.3.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postversion": "cd ./deploy && gulp all && gulp all"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bianca Sayan, Kyle L. McGregor",
   "license": "ISC"
