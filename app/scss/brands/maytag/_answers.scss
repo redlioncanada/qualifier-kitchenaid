@@ -81,7 +81,7 @@
 .label-text {
 	font-family: $AG-Bold-Cnd;
 	font-size: 17px;
-	color: #444;
+	color: #fff;
 	position: relative;
 	line-height: 17px;
 }
@@ -243,6 +243,7 @@
 		background-size: cover;
 		display: block;
 		margin-bottom: 10px;
+        border-radius: 10px;
 		@include boxshadow;
 		// .select-icon {
 		// 	top: 19px;
@@ -283,6 +284,7 @@
 		background-size: cover;
 		display: block;
 		margin-bottom: 10px;
+        border-radius: 10px;
 		@include boxshadow;
 		.label-wrap {
 			position: absolute;

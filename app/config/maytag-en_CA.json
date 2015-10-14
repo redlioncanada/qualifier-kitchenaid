@@ -37,7 +37,7 @@
 							"displayName": "Range",
 							"classes" : "category cooking",
 							"image" : "img/start-stove.png",
-							"hover" : "img/start-stove-hover.png",
+							"hover" : "img/cooking.png",
 							"thumbnail" : "img/walloven-double.jpg",
 							"thumbnail_current" : "img/walloven-double.jpg",
 							"thumbnail_text" : "Cooking",
@@ -53,7 +53,7 @@
 							"displayName": "Dishwasher",
 							"classes" : "category dishwasher",
 							"image" : "img/start-dishwasher.png",
-							"hover" : "img/start-dishwasher-hover.png",
+							"hover" : "img/dishwasher.png",
 							"thumbnail" : "img/cat-dishwasher.jpg",
 							"thumbnail_current" : "img/cat-dishwasher.jpg",
 							"thumbnail_text" : "Dishwasher",
@@ -69,7 +69,7 @@
 							"displayName": "Refrigerator",
 							"classes" : "category fridge",
 							"image" : "img/start-fridge.png",
-							"hover" : "img/start-fridge-hover.png",
+							"hover" : "img/fridge.png",
 							"thumbnail" : "img/cat-fridge.jpg",
 							"thumbnail_current" : "img/cat-fridge.jpg",
 							"thumbnail_text" : "Fridge",
@@ -96,42 +96,12 @@
 					"type" : "categories",
 					"oneAnswer" : true,
 					"answers" : [
-						{
-							"text" : "Ranges",
-							"value" : "free stand range",
-							"displayName": "Range",
-							"classes" : "sub-category ranges",
-							"image" : "img/cooking-range.png",
-							"thumbnail" : "img/cat-cooking-sub-free-range-1-electric.jpg",
-							"thumbnail_current" : "img/cat-cooking-sub-free-range-1-electric.jpg",
-							"thumbnail_text" : "Range",
-							"scoring" : {
-								"type" : "Ranges"
-							},
-							"next" : "Cooking - Ranges - Energy",
-							"order" : 1
-						},
-						{
-							"text" : "Wall Ovens",
-							"value" : "wall oven",
-							"displayName": "Wall Oven",
-							"classes" : "sub-category wallovens",
-							"image" : "img/cooking-walloven.png",
-							"thumbnail" : "img/walloven-single.jpg",
-							"thumbnail_current" : "img/walloven-single.jpg",
-							"thumbnail_text" : "Wall Oven",
-							"scoring" : {
-								"type" : "Ovens"
-							},
-							"next" : "Cooking - Wall Ovens - Size",						
-							"order" : 2
-						},
-						{
+                        {
 							"text" : "Cooktops",
 							"value" : "cooktops",
 							"displayName": "Cooktops",
 							"classes" : "sub-category wallovens",
-							"image" : "img/cooking-walloven.png",
+							"image" : "img/cook-top.png",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Cooktops",
@@ -139,6 +109,36 @@
 								"type" : "Cooktops"
 							},
 							"next" : "Cooking - Cooktops - Size",						
+							"order" : 1
+						},
+						{
+							"text" : "Ranges",
+							"value" : "free stand range",
+							"displayName": "Range",
+							"classes" : "sub-category ranges",
+							"image" : "img/range.png",
+							"thumbnail" : "img/cat-cooking-sub-free-range-1-electric.jpg",
+							"thumbnail_current" : "img/cat-cooking-sub-free-range-1-electric.jpg",
+							"thumbnail_text" : "Range",
+							"scoring" : {
+								"type" : "Ranges"
+							},
+							"next" : "Cooking - Ranges - Energy",
+							"order" : 2
+						},
+						{
+							"text" : "Wall Ovens",
+							"value" : "wall oven",
+							"displayName": "Wall Oven",
+							"classes" : "sub-category wallovens",
+							"image" : "img/walloven.png",
+							"thumbnail" : "img/walloven-single.jpg",
+							"thumbnail_current" : "img/walloven-single.jpg",
+							"thumbnail_text" : "Wall Oven",
+							"scoring" : {
+								"type" : "Ovens"
+							},
+							"next" : "Cooking - Wall Ovens - Size",						
 							"order" : 3
 						},
 						{
@@ -146,7 +146,7 @@
 							"value" : "vents",
 							"displayName": "Vents and Hoods",
 							"classes" : "sub-category wallovens",
-							"image" : "img/cooking-walloven.png",
+							"image" : "img/vents.png",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Vents and Hoods",
@@ -327,7 +327,7 @@
 								  "gas":1,
 								  "5Elements":1,
 								  "5Burners":1,
-								  "6Burners":1,
+								  "6Burners":1
 							},
 							"order" : 1
 						},
@@ -680,7 +680,7 @@
 							"text" : "Yes",
 							"value" : "high speed",
 							"scoring" : {
-								"3400CFMOrHigher" : 1,
+								"3400CFMOrHigher" : 1
 							},
 							"order" : 1
 						},
@@ -2679,7 +2679,7 @@
 							"text" : "Noise Level",
 							"value" : "noise",
 							"scoring" : {
-								"quiet" : 1,
+								"quiet" : 1
 							},
 							"order" : 2
 						},
@@ -2701,7 +2701,7 @@
 							"text" : "Features for Organization",
 							"value" : "organization",
 							"scoring" : {
-								"culinaryCaddy": +1,
+								"culinaryCaddy": 1,
 								"3rdLevelRack" : 1
 							},
 							"order" : 4
