@@ -7,13 +7,13 @@ $opacityTiming: 0.5s;
  		display: inline-block;
 		img.hover {
 			width: 100%;
-			bottom: 47px;
+			top: 0px;
 			left: 0;
 			position: absolute;
 			z-index: -1;
 		}
 		&:hover img.normal {
-			opacity: 0;
+			opacity: 0.3;
 		}
 		img.normal {
 			width: 100%;
@@ -25,9 +25,19 @@ $opacityTiming: 0.5s;
 		}
 		&.selected {
 			img.normal {
-				opacity: 0;
+				opacity: 0.3;
 			}
 		}
+        .category-name {
+            margin-top: 0;
+            top: 50%;
+            position: absolute;
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            font-weight: 100;
+            letter-spacing: 1px;
+            color: white;
+        }
 	}
 	.sub-category {
 		display: inline-block;
@@ -41,6 +51,9 @@ $opacityTiming: 0.5s;
 		}
 		&:hover img.normal {
 			opacity: 0.3;
+		}
+        &:hover > .category-name {
+			border-bottom: thin #ac080f solid;
 		}
 		&.selected {
 			img.normal {

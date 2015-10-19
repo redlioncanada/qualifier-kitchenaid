@@ -27,7 +27,6 @@
 			"text" : [
 				{
 					"question" : "What can we help you find?",
-					"sub_question" : "Select one",
 					"type" : "categories-click",
 					"oneAnswer" : true,
 					"answers" : [
@@ -36,8 +35,8 @@
 							"value" : "Stove",
 							"displayName": "Range",
 							"classes" : "category cooking",
-							"image" : "img/start-stove.png",
-							"hover" : "img/cooking.png",
+							"image" : "img/cooking.png",
+							
 							"thumbnail" : "img/walloven-double.jpg",
 							"thumbnail_current" : "img/walloven-double.jpg",
 							"thumbnail_text" : "Cooking",
@@ -52,8 +51,8 @@
 							"value" : "Dishwasher",
 							"displayName": "Dishwasher",
 							"classes" : "category dishwasher",
-							"image" : "img/start-dishwasher.png",
-							"hover" : "img/dishwasher.png",
+							"image" : "img/dishwasher.png",
+							
 							"thumbnail" : "img/cat-dishwasher.jpg",
 							"thumbnail_current" : "img/cat-dishwasher.jpg",
 							"thumbnail_text" : "Dishwasher",
@@ -68,8 +67,8 @@
 							"value" : "Fridge",
 							"displayName": "Refrigerator",
 							"classes" : "category fridge",
-							"image" : "img/start-fridge.png",
-							"hover" : "img/fridge.png",
+							"image" : "img/fridge.png",
+							
 							"thumbnail" : "img/cat-fridge.jpg",
 							"thumbnail_current" : "img/cat-fridge.jpg",
 							"thumbnail_text" : "Fridge",
@@ -92,7 +91,6 @@
 			"text" : [
 				{
 					"question" : "Which product would you like to explore first?",
-					"sub_question" : "Select one",
 					"type" : "categories",
 					"oneAnswer" : true,
 					"answers" : [
@@ -123,7 +121,7 @@
 							"scoring" : {
 								"type" : "Ranges"
 							},
-							"next" : "Cooking - Ranges - Energy",
+							"next" : "Cooking - Ranges - Size",
 							"order" : 2
 						},
 						{
@@ -709,7 +707,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT VENTILATION?", 
 					"explanation" : "As much as we want to maintain the smell of that simmering pot of soup, proper ventilation is important to keep kitchen air clean.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -1623,7 +1621,7 @@
 					"answer" : 0,
 					"options" : {       
 					    "from": 0,
-					    "to": 3,
+					    "to": 2,
 					    "step": 0.0001,
 					    "dimension": "",
 					    "scale": ["Very often, I'm always experimenting with new roast recipes", "Sometimes, a few times a year", "Never, I use time to figure out if my dish is done"]     
@@ -2011,7 +2009,7 @@
 		},
 		"Fridges - Energy" : {
 			"next" : "Fridges - Capacity",
-			"previous" : "Fridges - Size",
+			"previous" : "Appliance",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"thumbnail_text" : "Energy",
@@ -2071,7 +2069,7 @@
 		},
 		"Fridges - Capacity" : {
 			"next" : "Fridges - Organization",
-			"previous" : "Fridges - Size",
+			"previous" : "Fridges - Energy",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-capacity-current.png",
 			"thumbnail_text" : "Capacity",

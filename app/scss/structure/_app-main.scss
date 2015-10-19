@@ -108,10 +108,11 @@ html, body {
 	// Question
 	h2 {
 		text-transform: uppercase;
-		font-size: 36px;
-		margin-top: 0px;
-		margin-bottom: 10px;
+		font-size: 32px;
+		margin: 0px auto 10px auto;
 		color: #333333;
+        text-align: center;
+        width: 60%;
 	}
 	// Instructions
 	h3 {

@@ -10,10 +10,10 @@ header.header-desktop {
 .app-content-main-top {
 	width: 1160px;
 	margin: 0 auto;
-	height: 128px;
+	height: 200px;
 
 	h2, h3 {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 	}
 	h2 {
 		color: #292929;
@@ -26,15 +26,16 @@ header.header-desktop {
 	h3 {
 		color: #7e7e7e;
 		letter-spacing: 1px;
+        text-align: center;
 	}
 	.app-content-main-top-left {
-		width: 80%;
-		padding-left: 20px;
+		width: 100%;
+		padding-left: 0;
 		padding-right: 0;
 	}
 	.app-content-main-top-right {
 		.btn {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 21px;
 			// Bootstrap mixin
 			@include button-variant(#ffffff, #002e58, #002e58);
@@ -43,14 +44,17 @@ header.header-desktop {
 	}
 	.extra-info-wrap {
 		display: block;
+        text-align: center;
 		.btn-wrap {
 			display: inline-block;
+            width: 250px;
+            margin: 0 auto;
 		}
 		.tooltip {
 			opacity: 1;
 		}
 		.btn-icon {
-			background: #002e58;
+			background: #ac080f;
 			border-radius: 24px;
 			width: 24px;
 			height: 24px;
@@ -83,16 +87,16 @@ header.header-desktop {
 
 .tooltip {
 	&.top .tooltip-arrow {
-		border-top-color: #002e5f;
+		border-top-color: #ac080f;
 	}
 	&.bottom .tooltip-arrow {
-		border-bottom-color: #002e5f;
+		border-bottom-color: #ac080f;
 	}
 	&.left .tooltip-arrow {
-		border-right-color: #002e5f;
+		border-right-color: #ac080f;
 	}
 	&.right .tooltip-arrow {
-		border-left-color: #002e5f;
+		border-left-color: #ac080f;
 	}
 	.tooltip-arrow {
 		margin-left: -5px;
@@ -101,7 +105,7 @@ header.header-desktop {
 	}
 	.tooltip-inner {
 		color: #fff;
-		background: #002e5f;
+		background: #ac080f;
 		font-size: 11px;
 		line-height: 13px;
 		padding: 30px 15px;
@@ -121,6 +125,7 @@ header.header-desktop {
 		&.category, &.sub-category {
 			margin-left: 45px;
 			margin-right: 45px;
+            max-width: 250px;
 		}
 		&:hover {
 			text-decoration: none;
@@ -188,9 +193,20 @@ header.header-desktop {
 			font-size: 19px;
 			text-align: center;
 			width: 100%;
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 		}
 	}
+    .sub-category {
+        .category-name {
+            margin: 20px auto 0 auto;
+            display: block;
+            color: #000000;
+            font-size: 19px;
+            text-align: center;
+            width: 100px;
+            font-family: $AV-Light;
+        }
+    }
 }
 
 .app-content-main-bottom {
@@ -213,7 +229,7 @@ header.header-desktop {
 		}
 	}
 	.btn {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 21px;
 		// Bootstrap mixin
 		@include button-variant(#ffffff, #7d7d7d, #7d7d7d);
@@ -237,13 +253,13 @@ header.header-desktop {
 		background: url('../img/matches-bg.png') center center no-repeat;
 	}	
 	.results-count-number {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 27px;
 		color: #414141;
 		line-height: 27px;
 	}
 	.results-count-label {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 14px;
 		color: #414141;
 	}
@@ -254,7 +270,7 @@ header.header-desktop {
 	}
 
 	.btn-compare {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 21px;
 		@include button-variant(#ffffff, #002e58, #002e58);
 		padding: 3px 18px;
@@ -270,13 +286,13 @@ header.header-desktop {
 
    		div {
    			color: white;
-   			background-color: #002e5f;
+   			background-color: #ac080f;
    			height: 30px;
    			line-height: 30px;
    			margin: 0 auto;
    			position: relative;
    			top: 5px;
-   			font-family: $AG-Bold-Cnd;	   		
+   			font-family: $AV-Light;	   		
    		}
 
    		.backtoresults-mobile div {
@@ -290,7 +306,7 @@ header.header-desktop {
 
 	.backtoresults-btn-wrap {
 		display: inline-block;
-	    border-left: solid 1px #002e58;
+	    border-left: solid 1px #ccc;
 	    padding-left: 20px;
 	    margin-left: 20px;
 		//position: absolute;
@@ -299,10 +315,11 @@ header.header-desktop {
 		text-align: center;	   
 		float: right; 
 		.btn-backtoresults {
-			font-family: $AG-Bold-Cnd;
-			@include button-variant(#ffffff, #002e58, #002e58);
-			width: 44px;
-			height: 40px;
+			font-family: $AV-Light;
+			@include button-variant(#ac080f, #fff, #ac080f);
+            border-radius: 50%;
+			width: 45px;
+			height: 45px;
 			font-size: 10px;
 			text-align: center;
 			//padding: 3px 18px;
@@ -315,7 +332,7 @@ header.header-desktop {
 	}
 	.startover-btn-wrap {
 		display: inline-block;
-	    border-left: solid 1px #002e58;
+	    border-left: solid 1px #ccc;
 	    padding-left: 20px;
 	    margin-left: 20px;
 		//position: absolute;
@@ -324,10 +341,11 @@ header.header-desktop {
 		text-align: center;	 
 		float: right; 
 		.btn-startover {
-			font-family: $AG-Bold-Cnd;
-			@include button-variant(#ffffff, #002e58, #002e58);
-			width: 40px;
-			height: 40px;
+			font-family: $AV-Light;
+			@include button-variant(#ac080f, #fff, #ac080f);
+            border-radius: 50%;
+			width: 45px;
+			height: 45px;
 			font-size: 12px;
 			//padding: 3px 18px;
 			padding-left: 6px;
@@ -541,7 +559,7 @@ div[ng-class="fr_CA"] {
 
 .print-page {
 	* {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		color: #002e62;
 	}
 
@@ -564,7 +582,7 @@ div[ng-class="fr_CA"] {
 		}
 
 		ul {
-			font-family: $AG-Cnd;
+			font-family: $AV-Light;
 
 			li {
 				border-bottom: 1px dashed #002e62;
@@ -600,7 +618,7 @@ div[ng-class="fr_CA"] {
             color: #8b8b8b;
             text-transform: uppercase;
             padding-bottom: 40px;
-            font-family: $AG-Bold-Cnd;
+            font-family: $AV-Light;
             padding-top: 5px;
         }
     }
@@ -630,7 +648,7 @@ div[ng-class="fr_CA"] {
         transform: translate(-50%, 0%);
         border-style: solid;
         border-color: transparent;
-        border-top-color: #002e5f;
+        border-top-color: #ac080f;
         border-width: 10px;
         left: 50%;  
     }  

@@ -79,7 +79,7 @@
 	text-align: left;
 }
 .label-text {
-	font-family: $AG-Bold-Cnd;
+	font-family: $AV-Light;
 	font-size: 17px;
 	color: #fff;
 	position: relative;
@@ -224,7 +224,7 @@
 			color: #ffffff;
 			font-size: 16px;
 			line-height: 16px;
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 		}
 	}
 	
@@ -243,7 +243,7 @@
 		background-size: cover;
 		display: block;
 		margin-bottom: 10px;
-        border-radius: 10px;
+        border-radius: 3px;
 		@include boxshadow;
 		// .select-icon {
 		// 	top: 19px;
@@ -284,7 +284,7 @@
 		background-size: cover;
 		display: block;
 		margin-bottom: 10px;
-        border-radius: 10px;
+        border-radius: 3px;
 		@include boxshadow;
 		.label-wrap {
 			position: absolute;
@@ -446,7 +446,7 @@
 			color: #ffffff;
 			font-size: 16px;
 			line-height: 16px;
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 		}
 	}
 	
@@ -626,7 +626,7 @@ div[ng-class="fr_CA"] {
 			display: table;
 		}
 		.label-text {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 17px;
 			color: #272727;
 			position: relative;

@@ -3,12 +3,12 @@
 #results {
 	.results-top {
 		h1 {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 41px;
 			color: #333333;
 		}
 		.results-adjust-desc {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 23px;
 			line-height: 15px;
 			color: #5c5c5c;
@@ -18,7 +18,7 @@
 
 	h3, h4 {
 		text-transform: uppercase;
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 	}
 	h2, h4 {
 		color: #002e5f;
@@ -63,7 +63,7 @@
 			position: relative;
 		}
 		.product-name {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 16px;
 			color: #022d58; 
 			text-transform: uppercase;
@@ -127,12 +127,12 @@
 				// background-image: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 50%);
 			}
 			.product-features-title {
-				font-family: $AG-Bold-Cnd;
+				font-family: $AV-Light;
 				font-size: 16px;
 				color: #757575;
 			}
 			.btn {
-				font-family: $AG-stack;
+				font-family: $AV-stack;
 				font-size: 16px;
 				// Bootstrap mixin
 				@include button-variant(#ffffff, #b7b7b7, #b7b7b7);
@@ -172,7 +172,7 @@
 			}
 
 			.product-features-title {
-				font-family: $AG-Bold-Cnd;
+				font-family: $AV-Light;
 				font-size: 20px;
 				color: #4c4c4c;
 			}
@@ -183,7 +183,7 @@
 				}
 			}
 			.btn {
-				font-family: $AG-stack;
+				font-family: $AV-stack;
 				font-size: 16px;
 				// Bootstrap mixin
 				@include button-variant(#ffffff, #b7b7b7, #b7b7b7);
@@ -344,7 +344,7 @@
 
 	}
 	span[ng-bind-html="sf.headline"] {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		color: #022d58;
 		font-size: 16px;
 		text-transform: none;
@@ -359,7 +359,7 @@
 	}
 	h4.sales-feature-additional span[ng-bind-html="sf.headline"] {
 		color: #777;
-		font-family: $AG-stack;
+		font-family: $AV-stack;
 		font-size: 7pt;
 		vertical-align: middle;
 	}
@@ -374,7 +374,7 @@
 .product-colour-picker-wrap {
 	text-align: center;
 	span {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		text-transform: uppercase;
 		color: #7f7f7f;
 	}
