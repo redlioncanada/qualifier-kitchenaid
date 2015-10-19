@@ -37,10 +37,14 @@ $opacityTiming: 0.5s;
             font-weight: 100;
             letter-spacing: 1px;
             color: white;
+            text-transform: uppercase;
         }
 	}
 	.sub-category {
 		display: inline-block;
+        .category-name {
+            text-transform: uppercase;
+        }
 		img.normal {
 			width: 100%;
 			opacity: 1;
@@ -53,7 +57,7 @@ $opacityTiming: 0.5s;
 			opacity: 0.3;
 		}
         &:hover > .category-name {
-			border-bottom: thin #ac080f solid;
+			border-bottom: 1.5px #ac080f solid;
 		}
 		&.selected {
 			img.normal {

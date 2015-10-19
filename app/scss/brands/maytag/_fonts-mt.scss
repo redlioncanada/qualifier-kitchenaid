@@ -43,3 +43,9 @@ $AV-Light: 'Avenir-Light', $AV-stack;
 $AV-Medium: 'Avenir-Medium', $AV-stack;
 $AV-Roman: 'Avenir-Roman', $AV-stack;
 
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+

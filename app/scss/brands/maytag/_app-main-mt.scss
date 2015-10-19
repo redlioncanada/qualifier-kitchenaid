@@ -47,7 +47,7 @@ header.header-desktop {
         text-align: center;
 		.btn-wrap {
 			display: inline-block;
-            width: 250px;
+            width: 100%;
             margin: 0 auto;
 		}
 		.tooltip {
@@ -203,7 +203,7 @@ header.header-desktop {
             color: #000000;
             font-size: 19px;
             text-align: center;
-            width: 100px;
+            width: 120px;
             font-family: $AV-Light;
         }
     }
@@ -320,11 +320,11 @@ header.header-desktop {
             border-radius: 50%;
 			width: 45px;
 			height: 45px;
-			font-size: 10px;
+			font-size: 8px;
 			text-align: center;
 			//padding: 3px 18px;
 			padding-left: 5px;
-		    padding-top: 10px;
+		    padding-top: 14px;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
@@ -346,10 +346,10 @@ header.header-desktop {
             border-radius: 50%;
 			width: 45px;
 			height: 45px;
-			font-size: 12px;
+			font-size: 10px;
 			//padding: 3px 18px;
 			padding-left: 6px;
-		    padding-top: 8px;
+		    padding-top: 12px;
 		    text-align: center;
 		    line-height: 1;
 			line-spacing: 1;

@@ -1541,7 +1541,7 @@
 			]
 		},		
 		"Cooking - Ranges - Lifestyle" : {
-			"next" : "Cooking - Ranges - Features",
+			"next" : "Cooking - Ranges - Features2",
 			"previous" : "Cooking - Ranges - Range Style",
 			"thumbnail_text" : "Convection",
 			"thumbnail_current" : "img/icon-convection-current.png",
@@ -1603,7 +1603,7 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Features" : {
+		"Cooking - Ranges - Features2" : {
 			"next" : "Cooking - Ranges - Fuel Type",
 			"previous" : "Cooking - Ranges - Lifestyle",
 			"thumbnail_type" : "image",
@@ -1660,7 +1660,7 @@
 		},
 		"Cooking - Ranges - Fuel Type" : {
 			"next" : null,
-			"previous" : "Cooking - Ranges - Features",
+			"previous" : "Cooking - Ranges - Features2",
 			"thumbnail_text" : "Fuel Type",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
@@ -2089,11 +2089,11 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"Myself – to keep me fueled all week", 
-							"Me and my better half – we like to try new recipes together",
-							"My Family – from Mexican night to smörgåsbord Sundays, we’re a hungry group",
-							"My large family – the cooking never ends but we love creating new family classics",
-							"My dinner party guests - I'm the host with the most"
+							"Myself", 
+							"Me and my better half",
+							"My Family",
+							"My large family",
+							"My dinner party guests"
 					    ]       
 					},
 					"answers" : {
@@ -2101,7 +2101,7 @@
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 1,
-							"text" : "Myself – to keep me fueled all week",
+							"text" : "Myself",
 							"scoring" : {
 							}
 						},
@@ -2109,7 +2109,7 @@
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 2,
-							"text" : "Me and my better half – we like to try new recipes together",
+							"text" : "Me and my better half",
 							"scoring" : {
 								"mediumCapacity" : 1
 							}
@@ -2118,7 +2118,7 @@
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 3,
-							"text" : "My Family – from Mexican night to smörgåsbord Sundays, we’re a hungry group",
+							"text" : "My Family",
 							"scoring" : {
 								"largeCapacity" : 1
 							}
@@ -2127,7 +2127,7 @@
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 4,
-							"text" : "My large family – the cooking never ends but we love creating new family classics",
+							"text" : "My large family",
 							"scoring" : {
 								"largerCapacity" : 1
 							}
@@ -2136,7 +2136,7 @@
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 5,
-							"text" : "My dinner party guests - I'm the host with the most",
+							"text" : "My dinner party guests",
 							"scoring" : {
 								"largestCapacity" : 1
 							}
@@ -2600,7 +2600,7 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"0","5","10","15+<br />I've lost count"
+							"0<br />Maybe every other week","5","10","15+<br />I've lost count"
 					    ]       
 					},
 					"answers" : {
