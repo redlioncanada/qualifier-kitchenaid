@@ -267,7 +267,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
 
           $resource("http://mykitchenaid.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = res.products;
-
+console.log(res.products);
                 var relcodes = {
                   'M1' : 'DC',
                   'WH' : 'DW'
@@ -321,7 +321,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
                           }
 
                       } else if ($rootScope.appliances[key].appliance == "Dishwashers") {
-                        $rootScope.appliances[key]["placeSettings"+$rootScope.appliances[key].placeSettings.toString()] = true
+                        // $rootScope.appliances[key]["placeSettings"+$rootScope.appliances[key].placeSettings.toString()] = true
                         $rootScope.appliances[key].quiet = false
                         if (parseFloat($rootScope.appliances[key].decibels) <= 47) {
                           $rootScope.appliances[key].quiet = true
