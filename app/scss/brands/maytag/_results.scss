@@ -31,7 +31,7 @@
 	}
 	li.result {
 		//box-shadow: inset 0px 0px 5px 0px #002e5f;
-		border: 2px solid #002e5f;
+		border: 1px solid #b8b8b8;
 		.product-details {
 			padding-top: 1px;
 		}
@@ -65,12 +65,12 @@
 		.product-name {
 			font-family: $AV-Light;
 			font-size: 16px;
-			color: #022d58; 
+			color: #ac080f; 
 			text-transform: uppercase;
 			letter-spacing: 1px;
 		}
 		.product-price-sku-wrap {
-			color: #022d58;
+			color: #757575;
 			text-align: center;
 			font-size: 16px;
 			.product-price, .product-sku {
@@ -95,7 +95,7 @@
 				//padding-top: 25px;
 				h3 {	
 					text-align: center;
-					background-color: #002e5f;
+					background-color: #b8b8b8;
 					padding-top: 10px;
 					padding-bottom: 10px;
 					color: #fff;
@@ -163,7 +163,7 @@
 		&:nth-child(2) { // this is for the middle result
 			h3 {	
 				text-align: center;
-				background-color: #002e5f;
+				background-color: #b8b8b8;
 				padding-top: 10px;
 				padding-bottom: 10px;
 				color: #fff;
@@ -345,7 +345,7 @@
 	}
 	span[ng-bind-html="sf.headline"] {
 		font-family: $AV-Light;
-		color: #022d58;
+		color: #ac080f;
 		font-size: 16px;
 		text-transform: none;
 		display: inline-block;

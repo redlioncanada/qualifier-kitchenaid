@@ -194,7 +194,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			width: 860px;
 			height: 40px;
 			background: url('../img/slider-bg.png');
-			margin-left: -30px;
+			margin-left: 0px;
 			z-index: 10;
             background-repeat: no-repeat;
             background-position-y: 12px;
@@ -930,6 +930,11 @@ div[ng-class="fr_CA"] {
 		font-size: 18px;
 		top: 15px;
 	}
+}
+@media(max-width: 1023px) {
+    #results .content-inner .price-slider-wrap .price-slider .jslider .jslider-bg {
+        margin-left: -30px !important;
+    }
 }
 
 @media(max-width: 580px) {

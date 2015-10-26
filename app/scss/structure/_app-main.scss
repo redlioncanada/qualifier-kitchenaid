@@ -85,7 +85,7 @@ html, body {
 .main {
 	min-width: 320px;
 	.main-content {
-		min-height: 125px;
+		min-height: 60px;
 	}
 }
 
@@ -109,10 +109,10 @@ html, body {
 	h2 {
 		text-transform: uppercase;
 		font-size: 32px;
-		margin: 0px auto 10px auto;
-		color: #333333;
+		margin: 20px auto 20px auto;
+		color: #ac080f;
         text-align: center;
-        width: 60%;
+        width: 85%;
 	}
 	// Instructions
 	h3 {
@@ -181,12 +181,12 @@ div.mobile-app-nav-arrows {
 		z-index: 2;
 		top: 33px;
 		width: 100%;
-		background-color: #002e5f;
+		background-color: #ac080f;
 
 		> div {
 			position: absolute;
 			width: 100%;
-			background-color: #002e5f;
+			background-color: #ac080f;
 		}
 
 		.results-menu-tab-wrapper {
@@ -204,7 +204,7 @@ div.mobile-app-nav-arrows {
 		.results-menu-heading {
 			padding: 5px 0;
 			text-align: center;
-			color: #8592a5;
+			color: #ffffff;
 			font-size: 9pt;
 		}
 
@@ -377,8 +377,8 @@ div.mobile-app-nav-arrows {
 		}
 
 		a.answer-box.category, a.answer-box.sub-category {
-			margin-left: 20px;
-			margin-right: 20px;
+			margin-left: 10px;
+			margin-right: 10px;
 
 			.category-image img {
 				width: 80%;
@@ -513,6 +513,14 @@ div.mobile-app-nav-arrows {
 }
 
 @media(max-width:1023px) {
+    
+    .app-answers {
+        .answer-option {
+            &.category, &.sub-category {
+                margin: 5px 25% !important;
+            }
+        }
+    }
 
 	.main {
 		overflow: hidden;
@@ -545,7 +553,7 @@ div.mobile-app-nav-arrows {
 	.app-answers {
 		.answer-option {
 			&.sub-category:first-child {
-				margin-top: 100px !important;
+				/*margin-top: 100px !important;*/
 			}
 		}
 	}
@@ -578,11 +586,18 @@ div.mobile-app-nav-arrows {
 	   }
 
 	   .bottom-nav-wrap {width: 100%;}
-	   .bottom-nav-inner {width: inherit;}
+	   .bottom-nav-inner {
+           width: inherit;
+           .bottom-nav-inner-inner {
+               .icon-nav-wrap {
+                    margin: 11px 1px;
+               }
+           }
+        }
     }
     
 	.app-answers .category, .app-answers .sub-category {
-		width: 80px;
+		width: 210px;
 	}
 
 	.app-answers .category img.normal[ng-src="img/start-laundry.png"] {
@@ -591,7 +606,6 @@ div.mobile-app-nav-arrows {
 	}
 
 	.app-content-main-top-left {
-		width: 87% !important;
 		padding-left: 50px;
 	}
 
@@ -716,7 +730,7 @@ div.mobile-app-nav-arrows {
 				width: 26px;
 				background: url("../img/slider-bg-vertical.jpg");
 				background-size: contain;
-				margin-left: -18px;
+				margin-left: -17px;
 			}
 
 			.jslider-scale {
@@ -890,6 +904,16 @@ div.mobile-app-nav-arrows {
 }
 
 @media(max-width:580px) {
+    .app-answers {
+        .answer-option {
+            &.category, &.sub-category {
+                margin: 5px auto 0 auto !important;
+            }
+        .category-name {
+			font-size: 14px !important;
+		  }
+        }
+    }
 	.slidey {
 		width: 80% !important;
 		min-width: 100% !important;
@@ -946,22 +970,18 @@ div.mobile-app-nav-arrows {
 	.answers-category {
 		.answer-box {
 			width: 100% !important;
-			background-color: #f6f6f6;
 
 			.category-image {
-				width: 15%;
+				width: 60%;
 				margin: 0 auto;
 				position: relative;
 
 				.normal, .hover {
-					width: 138%;
 					bottom: 0 !important;
-					margin-left: -9px;
 				}
 
 				.normal {
 					z-index: 2;
-					position: relative;
 				}
 
 				.hover {
@@ -971,7 +991,6 @@ div.mobile-app-nav-arrows {
 			}
 
 			.category-name {
-				color: #969696 !important;
 				text-transform: uppercase;
 			}
 		}
@@ -991,7 +1010,7 @@ div.mobile-app-nav-arrows {
 		width: 60px;
 		display: block !important;
 		margin: 10px auto !important;
-		padding: 5px 0;
+		padding: 0;
 	}
 
 
@@ -1022,7 +1041,7 @@ div.mobile-app-nav-arrows {
 	}
 
 	a.answer-box.checkbox-4, a.answer-box.radio-2, a.answer-box.radio-3, a.answer-box.radio-4 {
-		width: 90%;
+		width: 98%;
 		height: 55px;
 		margin: 6px auto;
 
