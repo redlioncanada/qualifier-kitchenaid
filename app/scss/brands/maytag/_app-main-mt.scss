@@ -8,7 +8,7 @@ header.header-desktop {
 }
 
 .app-content-main-top {
-	width: 1160px;
+	width: 100%;
 	margin: 0 auto;
 	height: 200px;
 
@@ -598,6 +598,11 @@ div[ng-class="fr_CA"] {
 /* Added by Jacoub Bondre Sept 8th 2015 */
 /* If time allots lets refactor progress bar styles into its own .scss file */
 @media(max-width:1023px) {
+    .sub-category {
+        .category-name {
+            margin: 8px auto 20px auto !important;
+        }
+    }
 	header.header-desktop {
 		display: none;
 	}
@@ -632,7 +637,6 @@ div[ng-class="fr_CA"] {
         letter-spacing: .2px;
     }
     .mobile-results-nav li:nth-child(odd) span {
-        font-family: 'Akzidenz Grotesk Condensed' !important;
         letter-spacing: .2px;
     }
     #results .mobile-results-nav li .active:after{
