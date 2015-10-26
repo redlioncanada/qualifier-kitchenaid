@@ -109,10 +109,10 @@ html, body {
 	h2 {
 		text-transform: uppercase;
 		font-size: 32px;
-		margin: 0px auto 10px auto;
+		margin: 20px auto 20px auto;
 		color: #333333;
         text-align: center;
-        width: 60%;
+        width: 85%;
 	}
 	// Instructions
 	h3 {
@@ -513,6 +513,13 @@ div.mobile-app-nav-arrows {
 }
 
 @media(max-width:1023px) {
+    .app-answers {
+        .answer-option {
+            &.category, &.sub-category {
+                margin: 5px 25% !important;
+            }
+        }
+    }
 
 	.main {
 		overflow: hidden;
@@ -545,7 +552,7 @@ div.mobile-app-nav-arrows {
 	.app-answers {
 		.answer-option {
 			&.sub-category:first-child {
-				margin-top: 100px !important;
+				/*margin-top: 100px !important;*/
 			}
 		}
 	}
@@ -582,7 +589,7 @@ div.mobile-app-nav-arrows {
     }
     
 	.app-answers .category, .app-answers .sub-category {
-		width: 80px;
+		width: 210px;
 	}
 
 	.app-answers .category img.normal[ng-src="img/start-laundry.png"] {
@@ -591,7 +598,6 @@ div.mobile-app-nav-arrows {
 	}
 
 	.app-content-main-top-left {
-		width: 87% !important;
 		padding-left: 50px;
 	}
 
@@ -890,6 +896,16 @@ div.mobile-app-nav-arrows {
 }
 
 @media(max-width:580px) {
+    .app-answers {
+        .answer-option {
+            &.category, &.sub-category {
+                margin: 5px auto 0 auto !important;
+            }
+        .category-name {
+			font-size: 14px !important;
+		  }
+        }
+    }
 	.slidey {
 		width: 80% !important;
 		min-width: 100% !important;
@@ -946,22 +962,18 @@ div.mobile-app-nav-arrows {
 	.answers-category {
 		.answer-box {
 			width: 100% !important;
-			background-color: #f6f6f6;
 
 			.category-image {
-				width: 15%;
+				width: 60%;
 				margin: 0 auto;
 				position: relative;
 
 				.normal, .hover {
-					width: 138%;
 					bottom: 0 !important;
-					margin-left: -9px;
 				}
 
 				.normal {
 					z-index: 2;
-					position: relative;
 				}
 
 				.hover {
@@ -971,7 +983,6 @@ div.mobile-app-nav-arrows {
 			}
 
 			.category-name {
-				color: #969696 !important;
 				text-transform: uppercase;
 			}
 		}
@@ -991,7 +1002,7 @@ div.mobile-app-nav-arrows {
 		width: 60px;
 		display: block !important;
 		margin: 10px auto !important;
-		padding: 5px 0;
+		padding: 0;
 	}
 
 
