@@ -13,7 +13,8 @@ var nglibs = [
   'ui.sortable',
   'angularAwesomeSlider',
   'ngAnimate',
-  'AppstateService'
+  'AppstateService',
+  'ApplianceDataDecoratorService'
 ];
 
 var App = angular.module('App', nglibs);
@@ -197,7 +198,7 @@ App.filter('byPrice', function($rootScope) {
 
 // New byPrice works by re-ranking the results, prices within the range are ranked, then prices without
 
-App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate) {
+App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', '$dataDecorator', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate, $dataDecorator) {
     $location.path('');
 
     $state.go('loading');
@@ -271,103 +272,13 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
           ];
 
           $resource("http://mykitchenaid.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
-                $rootScope.appliances = res.products;
-console.log(res.products);
+                $rootScope.appliances = $dataDecorator(res.products);
+
                 var relcodes = {
                   'M1' : 'DC',
                   'WH' : 'DW'
                 }
-                angular.forEach( $rootScope.appliances, function (item, key) { 
-                  if ($rootScope.brand == "kitchenaid") {
-
-                      if ($rootScope.appliances[key].appliance == "Washers") {
-
-                        for (var i in item.colours) {
-                          for (var j in item.dryers[0].colours) {
-                            if (item.dryers[0].colours[j].colourCode == item.colours[i].colourCode) {
-                              item.colours[i].dryersku = item.dryers[0].colours[j].sku;
-                            }
-                          }
-                        }
-
-                        $rootScope.appliances[key].price = parseFloat(item.colours[0].prices.CAD);
-
-                          if (parseFloat($rootScope.appliances[key].capacity) >= 6.1) {
-                            $rootScope.appliances[key].largestCapacity = true
-                          } 
-                          if (parseFloat($rootScope.appliances[key].capacity) >= 5.2) {
-                            $rootScope.appliances[key].largerCapacity = true
-                          }
-                          if (parseFloat($rootScope.appliances[key].capacity) >= 5) {
-                            $rootScope.appliances[key].largeCapacity = true
-                          }
-                          if (parseFloat($rootScope.appliances[key].capacity) >= 4.8) {
-                            $rootScope.appliances[key].mediumCapacity = true
-                          }                    
-                          if (parseFloat($rootScope.appliances[key].capacity) >= 4.2) {
-                            $rootScope.appliances[key].smallCapacity = true
-                          }
-
-                      } else if ($rootScope.appliances[key].appliance == "Dishwashers") {
-                        //$rootScope.appliances[key]["placeSettings"+$rootScope.appliances[key].placeSettings.toString()] = true
-                        $rootScope.appliances[key].quiet = false
-                        if (parseFloat($rootScope.appliances[key].decibels) <= 47) {
-                          $rootScope.appliances[key].quiet = true
-                        }
-                      } else if ($rootScope.appliances[key].appliance == "Fridges") {
-                        if ($rootScope.appliances[key].height <= 66) {
-                          $rootScope.appliances[key]["height66"] = true
-                        } else if ($rootScope.appliances[key].height <= 67) {
-                          $rootScope.appliances[key]["height67"] = true
-                        } else if ($rootScope.appliances[key].height <= 68) {
-                          $rootScope.appliances[key]["height68"] = true
-                        } else if ($rootScope.appliances[key].height <= 69) {
-                          $rootScope.appliances[key]["height69"] = true
-                        } else if ($rootScope.appliances[key].height <= 70) {
-                          $rootScope.appliances[key]["height70"] = true
-                        } else if ($rootScope.appliances[key].height <= 71) {
-                          $rootScope.appliances[key]["height71"] = true
-                        }
-                        if ($rootScope.appliances[key].width <= 30) {
-                          $rootScope.appliances[key]["width30"] = true
-                        } else if ($rootScope.appliances[key].width <= 31) {
-                          $rootScope.appliances[key]["width31"] = true
-                        } else if ($rootScope.appliances[key].width <= 32) {
-                          $rootScope.appliances[key]["width32"] = true
-                        } else if ($rootScope.appliances[key].width <= 33) {
-                          $rootScope.appliances[key]["width33"] = true
-                        } else if ($rootScope.appliances[key].width <= 34) {
-                          $rootScope.appliances[key]["width34"] = true
-                        } else if ($rootScope.appliances[key].width <= 35) {
-                          $rootScope.appliances[key]["width35"] = true
-                        } else if ($rootScope.appliances[key].width <= 36) {
-                          $rootScope.appliances[key]["width36"] = true
-                        }
-                      } else if ($rootScope.appliances[key].appliance == "Cooking") {
-                        if ($rootScope.appliances[key].type == "Ovens") {
-                          if ($rootScope.appliances[key].width <= 27) {
-                            $rootScope.appliances[key]["width27"] = true
-                          } else if ($rootScope.appliances[key].width <= 30) {
-                            $rootScope.appliances[key]["width30"] = true
-                          } 
-                        } 
-                        else if ($rootScope.appliances[key].type == "Ranges") {
-                          if (parseFloat($rootScope.appliances[key].capacity) >= 6.7) {
-                            $rootScope.appliances[key].largestCapacity = true
-                          } 
-                          if (parseFloat($rootScope.appliances[key].capacity) >= 6.4) {
-                            $rootScope.appliances[key].largerCapacity = true
-                          }
-                          if (parseFloat($rootScope.appliances[key].capacity) >= 6.2) {
-                            $rootScope.appliances[key].largeCapacity = true
-                          }
-                          if (parseFloat($rootScope.appliances[key].capacity) >= 5.8) {
-                            $rootScope.appliances[key].mediumCapacity = true
-                          }
-                        }
-                      } 
-                    }
-                })
+                
 // $appstate.clear();
                 $appstate.restore();
 
