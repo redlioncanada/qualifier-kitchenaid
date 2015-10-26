@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('App')
-  .controller('QuestionsCtrl', function ($scope, $rootScope, $filter, $state, localStorageService, $timeout, $location, $route, $stateParams) {
+  .controller('QuestionsCtrl', function ($scope, $rootScope, $filter, $state, localStorageService, $timeout, $interval, $location, $route, $stateParams, $appstate) {
 
   	$rootScope.$on('resize::resize', function() {
-	    if (window.innerWidth < 1024 && !$scope.isHomePage()){
+	    if (window.innerWidth < 1024){
 	        $scope.resizeElements();
 	    } else if (window.innerWidth >= 1024) {
 	    	//reset header height to it's css value
@@ -13,16 +13,33 @@ angular.module('App')
 	    }
 	});
 
+	$interval(function(){
+		if (window.innerWidth < 1024) {
+			$scope.resizeElements();
+		} else if (window.innerWidth >= 1024) {
+	    	//reset header height to it's css value
+            $('.app-content-main-top').css('height', '');
+            $('.slidey-wrap-all').css('height', '');
+	    }
+	},500);
+
     $scope.$on('$locationChangeSuccess', function(event) {
+    	// console.log('question location change');
     		var q = ($location.path()).toString().replace("/question/","");
 
+    		// console.log($rootScope.controls.lastLocation);
+    		if ($rootScope.controls.lastLocation == 'results' && q == 'Appliance') return;
     		if (q == 'Appliance') {
     			$rootScope.resultsTouched = false;
+    			$location.replace();
+    		} else {
+    			$appstate.store();
     		}
 
     		if (!!$rootScope.questionsData.question) {
-	    		if ($rootScope.questionsData.question.name != q && !!q && q !== '/questions/') {
-		  			if ($rootScope.questionsData.question.order < $rootScope.questionsData.questions[q].order) {
+    			var question = $rootScope.questionsData.question;
+	    		if (question.name != q && !!q && q !== '/questions/' && q !== '/questions') {
+		  			if (question.order < $rootScope.questionsData.questions[q].order) {
 		  				$rootScope.controls.controlClicked = 'next';
 		  			} else {
 		  				$rootScope.controls.controlClicked = 'previous';
@@ -38,7 +55,10 @@ angular.module('App')
 					$rootScope.moveToQuestion(q)
 				}, 100)	
 	  		}
+	  		// console.log(q);
+	  		// console.log($rootScope.questionsData);
 
+	  		$rootScope.controls.lastLocation = q;
     });
 
 
@@ -48,7 +68,7 @@ angular.module('App')
 	        for (var ans in q.show.answers ) {
 	          var a = q.show.answers[ans]
 	          if (qtype == "rank") {
-	          	console.log(a.answer)
+	          	// console.log(a.answer)
 	            if (a.answer == 0) {
 	              return a
 	              break;
@@ -142,6 +162,8 @@ angular.module('App')
 			"electric" : false,
 			"powerBurner" : false,
 			"powerPreheat" : false,
+			"slideIn" : 0,
+			"freestanding" : 0,
 			"mediumCapacity" : 0,
 			"largeCapacity" : 0,
 			"largerCapacity" : 0,
@@ -159,14 +181,15 @@ angular.module('App')
 			"height68" : 0,
 			"height69" : 0,
 			"height70" : 0,
-			"height71" : 0
-
+			"height71" : 0,
+			"frontControl" : false,
+			"rearControl" : false
 		}
 
 
 		for (var question in $rootScope.questionsData.scoringQuestions) {
 			var q = $rootScope.questionsData.scoringQuestions[question]
-			if (q.show.type != "slider-multiple") {
+			if (q.show.type != "slider-multiple" && q.show.type != "slider-buttons") {
 				for (var answers in q.show.answers) {
 					var a = q.show.answers[answers]
 					// If answer isn't null, use it for scoring
@@ -268,12 +291,12 @@ angular.module('App')
 		//}
 		$rootScope.questionsData.question.show = $rootScope.questionsData.question.text[ref];	
 
-		if (window.innerWidth <= 580 && !$scope.isHomePage()) {
+		/*if (window.innerWidth <= 580 && !$scope.isHomePage()) {
 			$timeout(function(){
 				//$(window).scrollTop(0);
 				$scope.resizeElements();
 			},200);
-		}
+		}*/
 	}
 
 	$scope.isHomePage = function() {
@@ -308,28 +331,42 @@ angular.module('App')
 
 
 		var c = $('.slidey.ng-hide-remove').height();
-		if (c < 300) {
-			c = $('.slidey').not('.ng-hide').height();
-			if (c < 300) {
-				var minHeight = 300;
-				$('.slidey').not('.ng-hide').css('paddingTop', (minHeight-c)/2);
-				c = minHeight;
-			}
+
+		if ($scope.lastHeight > c-2 && $scope.lastHeight < c+2 && typeof $scope.lastHeight !== 'undefined') {
+			return;
 		}
-		//var contentHeight = getTotalHeight(c);
-		//console.log('content height: '+contentHeight);
+		$scope.lastHeight = c;
+        
+        if (window.innerWidth > 580) {
+            if (c < 620) {
+                c = $('.slidey.active').height();
+                if (c < 620) {
+                    var minHeight = 620;
+                    $('.slidey.active').css('paddingTop', (minHeight-c)/2);
+                    c = minHeight;
+                }
+            }
+        }
+        else {
+            if (c < 340) {
+                c = $('.slidey.active').height();
+                if (c < 340) {
+                    var minHeight = 340;
+                    $('.slidey.active').css('paddingTop', (minHeight-c)/2);
+                    c = minHeight;
+                }
+            }
+        }
 
 		if (c > 100) {
 			$('.slidey-wrap-all').stop(true).animate({
 				'height': c + 10
 			}, 0);
-		} else {
-			setTimeout(function(){$scope.resizeElements(++depth)},100);
 		}
 
 		function getTotalHeight(el) {
 			if (!el || (typeof el === 'object' && el.length == 0)) return 0;
-			console.log('el height: '+$(el).height());
+			// console.log('el height: '+$(el).height());
 			return parseInt($(el).height()) + parseInt($(el).css('paddingTop')) + parseInt($(el).css('paddingBottom')) + parseInt($(el).css('marginTop')) + parseInt($(el).css('marginBottom'));
 		}
 	}
@@ -340,15 +377,29 @@ angular.module('App')
 		return newq
 	}
 
-	$rootScope.moveToQuestion = function (name, done) {
+	$rootScope.moveToQuestion = function (name, done, suppressLocation) {
+		if (typeof suppressLocation === 'undefined') suppressLocation = false;
 		// Start - Make sure to delete future questions if this answer has changed the path
   		// if this question doesn't set next, then its fine
   		// if this question does, then delete everything after
   		// this should happen when stuff moves
+  		console.log($rootScope.questionsData);
+
+  		var q = ($location.path()).toString().replace("/question/","");
+  		if ($rootScope.controls.lastLocation == 'results' && (q == 'Appliance' || q=='/questions/')) return;
+
+  		if ($rootScope.isTabletWidthOrLess && $rootScope.isMobile) {
+			$("html, body").animate({scrollTop: "51px"}, 400);
+		}
+
+		if (!$rootScope.isTabletWidthOrLess && !$rootScope.isMobile && $location.path().indexOf('Appliance') != -1) {
+			$("html, body").animate({scrollTop: "125px"}, 400);
+		}
+
   		var hasNext = false
-  		if (!!$rootScope.questionsData.question) {
+  		if (!!$rootScope.questionsData && !!$rootScope.questionsData.question) {
 	  		angular.forEach($rootScope.questionsData.scoringQuestions[$rootScope.questionsData.question.name].show.answers, function (item, k) {
-	  			if ('next' in item) 
+	  			if ('next' in item)
 	  				hasNext = true
 	  		})
 	  		if ( !!hasNext ) {
@@ -356,7 +407,7 @@ angular.module('App')
 		  			if (item.order > $rootScope.questionsData.scoringQuestions[$rootScope.questionsData.question.name].order) {
 		  				delete $rootScope.questionsData.scoringQuestions[item.name]
 		  			}
-		  		})  					
+		  		})
 	  		}
 	  	}
 		// End - Make sure to delete future questions if this answer has changed the path
@@ -375,9 +426,15 @@ angular.module('App')
 
   		if (!!$rootScope.questionsData.question) {
 			if ($rootScope.questionsData.question.name == 'Appliance') {
-  					for (var j in $rootScope.questionsData.questions["Appliance"].text[0].answers) {
-  						$rootScope.questionsData.questions["Appliance"].text[0].answers[j].answer = false;
-  					}
+				//homepage
+				for (var j in $rootScope.questionsData.questions["Appliance"].text[0].answers) {
+					$rootScope.questionsData.questions["Appliance"].text[0].answers[j].answer = false;
+				}
+
+				if ($appstate.restored !== 'results') $appstate.clear();
+  				if (!suppressLocation) $location.replace().path("/question/"+name);
+			} else {
+				if (!suppressLocation) $location.path("/question/"+name);
 			}
 
 			$scope.show();
@@ -388,7 +445,7 @@ angular.module('App')
 	  			$rootScope.questionsData.scoringQuestions[$rootScope.questionsData.question.name].order = $rootScope.objSize($rootScope.questionsData.scoringQuestions);  				
   			}
   			$rootScope.questionsData.question.disabled=false
-  			$location.replace().path("/question/"+name);
+  			$appstate.restored = '';
 		} else {
 			$state.go('main.results')
 		}	
@@ -396,8 +453,9 @@ angular.module('App')
 	}
 
   	$rootScope.next = function (done) {
-  		console.log($rootScope.questionsData);
-  		console.log($rootScope.appliances);
+  		// console.log($rootScope.questionsData);
+  		// console.log($rootScope.appliances);
+  		// console.log($rootScope.questionsData.questions);
   		$rootScope.showTooltip = false;
   		$rootScope.questionsData.question.disabled = true;
   		$rootScope.controls.controlClicked = 'next';
@@ -414,6 +472,7 @@ angular.module('App')
 		  		else if ("next" in hasAnswer) {
 		  			var name = hasAnswer.next
 		  		}
+
 		  		$rootScope.moveToQuestion(name,done)
 	  		} 
   		}, 100);
@@ -426,6 +485,7 @@ angular.module('App')
    	$rootScope.previous = function () {
    		$rootScope.questionsData.question.disabled = true;
   		$rootScope.controls.controlClicked = 'previous';
+  		$rootScope.showTooltip = false;
 
         // $timeout is a hacky way to make sure the above assignment propagates before
         // any animation takes place.
@@ -449,69 +509,21 @@ angular.module('App')
 
   	}
 
-  	//set questions to head
-  	if (!$rootScope.questionsData) {
-	 	$rootScope.controls = {}
-		$rootScope.controls.questionHasAnswer = false
-	  	$rootScope.questionsData = {}
-	  	$rootScope.questionsData.scoringQuestions = {};
-	  	$rootScope.questionsData.currentCount = null;
-	  	$rootScope.questionsData.questions = angular.copy($rootScope.brandData.questions)
-	  	
-	  	var count = 0
-
-	  	for(var q in $rootScope.hasanswers) {
-
-	  		if (!!$rootScope.hasanswers[q]) {
-	  			
-	  			var ans = $rootScope.hasanswers[q].split(";");
-
-	  			for (var t in $rootScope.questionsData.questions[q].text) {
-		  			for (var a in $rootScope.questionsData.questions[q].text[t].answers) {
-		  				$rootScope.questionsData.questions[q].text[t].answers[a].answer = false;
-		  				if ($rootScope.questionsData.questions[q].text[t].type != "rank") {
-			  				if (ans.indexOf($rootScope.questionsData.questions[q].text[t].answers[a].value.toString()) != -1 ) {
-			  					// console.log($rootScope.questionsData.questions[q].text[t].answers[a]);
-			  					switch ($rootScope.questionsData.questions[q].text[t].type) {
-			  						case "slider-multiple":
-			  							if (t > 0) break;
-			  							$rootScope.questionsData.questions[q].text[0].answer = $rootScope.questionsData.questions[q].text[0].answers[a].value;
-			  							$rootScope.questionsData.questions[q].text[1].answer = parseInt(ans[1]);
-			  							$rootScope.questionsData.questions[q].text[1].answers[parseInt(ans[1])].answer = true;
-			  							break;
-			  						case "slider":
-			  							console.log($rootScope.questionsData.questions[q])
-			  							$rootScope.questionsData.questions[q].text[t].answer = $rootScope.questionsData.questions[q].text[t].answers[a].value;
-			  							$rootScope.questionsData.questions[q].text[t].answers[a].answer = true;
-			  							break;
-			  						default:
-			  							$rootScope.questionsData.questions[q].text[t].answers[a].answer = true;
-			  							break;
-			  					}
-			  					$rootScope.questionsData.questions[q].text[t].answers[a].answer = true;
-			  				}
-			  			} else {
-			  				$rootScope.questionsData.questions[q].text[t].answers[a].answer = ans.indexOf($rootScope.questionsData.questions[q].text[t].answers[a].value)
-			  			}
-		  			}
-		  		}
-	  		} 
-	  		if ($rootScope.questionsData.questions[q]) {
-		  		$rootScope.questionsData.questions[q].show =  $rootScope.questionsData.questions[q].text[0]
-				$rootScope.questionsData.questions[q].order = count
-		  		$rootScope.questionsData.scoringQuestions[q] = $rootScope.questionsData.questions[q]
-	  		}
-
-	  		count++
-	  	}
-	  	console.log($rootScope.questionsData)
-	  	if ($rootScope.objSize($rootScope.hasanswers) > 0) {
-	  		$scope.recalculateResults()
-	  		//$state.go("main.results");
-	  	} else {
-	  		$rootScope.moveToQuestion("Appliance")
-	  	}
-	  	
+  	if ($rootScope.objSize($rootScope.hasanswers) > 0) {
+  		$scope.recalculateResults()
+  		//$state.go("main.results");
+  	} else {
+  		$rootScope.moveToQuestion("Appliance")
   	}
+
+  	if ($rootScope.restore) {
+  		$scope.moveToQuestion($rootScope.restore);
+  		delete $rootScope.restore;
+  	}
+
+  	//disable tooltip when clicking anywhere on the page
+  	$('html,body').click(function(e) {
+  		if(e.target.id != 'tooltip-glyph') $rootScope.showTooltip = false;
+  	});
 
 });

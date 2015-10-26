@@ -6,12 +6,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Whirlpool Qualifier Consumer App</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=1460, initial-scale=.6">
+        <meta name="description" content="">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
         <meta name="msapplication-tap-highlight" content="no" />
         <meta content="True" name="HandheldFriendly">
+        <title>Whirlpool Qualifier Consumer App</title>
 
         <link rel="apple-touch-icon" href="./apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -20,32 +20,24 @@
         <link rel="stylesheet" type="text/css" href="./components/ng-sortable/dist/ng-sortable.css">
         <link rel="stylesheet" type="text/css" href="./components/ng-sortable/dist/ng-sortable.style.min.css">
         <link rel="stylesheet" type="text/css" href="./components/ng-slider/src/css/ng-slider.css">
-
         <link rel="stylesheet" href="./css/qualifier-app.css">
         <link rel="stylesheet" href="./css/maytag.css">
+        <!-- @if ENV='development' -->
+        <link rel="stylesheet" href="./css/development.css">
+        <!-- @endif -->
     
     </head>
     <body ng-app="App">
-    <!-- #LASTUPDATED -->
-    <!--<script src="./http://jsconsole.com/remote.js?939F96B9-CED2-4292-9C54-A67CCC0649F8"></script>-->
+        <!-- @if ENV='development' -->
+        <p class="lastupdated">Last updated: #DATETIME</p>
+        <!-- @endif -->
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="./http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Header -->
         <div ng-include src="'./views/header.html'"></div>
-
-        <!-- Initial Maytag UI -->
-        <!--<div ng-include src="./'views/maytag-subcat-cooking.html'"></div>-->
-        <!--<div ng-include src="./'views/answers_examples/boxes-picture-carousel_example.html'"></div>-->
-        <!--<div ng-include src="./'views/answers_examples/boxes-picture_example.html'"></div>-->
-        <!--<div ng-include src="./'views/answers_examples/boxes_example.html'"></div>-->
-        <!--<div ng-include src="./'views/answers_examples/checkbox_example.html'"></div>-->
-        <!--<div ng-include src="./'views/answers_examples/radio_example.html'"></div>-->
-        <!--<div ng-include src="./'views/answers_examples/rank.html'"></div> -->
-        <!--<div ng-include src="./'views/answers_examples/slider-multiple_example.html'"></div>-->
-        <!--<div ng-include src="./'views/answers_examples/slider_example.html'"></div>-->
-
         <div class="main" bindonce ui-view></div> 
 
         <!-- Footer -->
@@ -57,19 +49,20 @@
         <script src="./components/jquery/dist/jquery.min.js"></script>
         <script src="./components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
         <script src="./components/angular-ui-router/release/angular-ui-router.js"></script>
-        <script src="./components/imagesloaded/imagesloaded.pkgd.js"></script>
-        <script src="./components/angular-images-loaded/angular-images-loaded.js"></script>
         <script src="./components/angular-cookies/angular-cookies.js"></script>
         <script src="./components/angular-sanitize/angular-sanitize.js"></script>
         <script src="./components/angular-touch/angular-touch.js"></script>
         <script src="./components/angular-route/angular-route.js"></script>
         <script src="./components/angular-resource/angular-resource.js"></script>
+        <script src="./components/angular-base64/angular-base64.js"></script>
         <script src="./components/angular-bindonce/bindonce.js"></script>
         <script src="./components/underscore/underscore.js"></script>
         <script src="./components/angular-local-storage/dist/angular-local-storage.min.js"></script>
         <script src="./components/ng-slider/dist/ng-slider.min.js"></script>
         <script src="./components/ng-sortable/dist/ng-sortable.js"></script>
         <script src="./components/angular-animate/angular-animate.min.js"></script>
+        <!-- @if ENV='development' -->
+        <script src="./js/services/appstate.js"></script>
         <script src="./js/app.js"></script>
         <script src="./js/loading.js"></script>
         <script src="./js/navigation.js"></script>
@@ -84,7 +77,12 @@
         <script src="./js/modal.js"></script>
         <script src="./js/print.js"></script>
         <script src="./js/slider-multiple.js"></script>
-
+        <script src="./js/slider-buttons.js"></script>
+        <!-- @endif -->
+        <!-- @if ENV='production' -->
+        <script src="./js/qualifier.js"></script>
+        <!-- @endif -->
+        
         <script>
             //mobile nav button/menu toggle
             $(document).on('click', '.navbar-btn-wrapper li', function(e) {

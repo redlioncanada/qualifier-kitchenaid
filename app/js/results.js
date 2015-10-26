@@ -1,8 +1,7 @@
 'use strict';
 
 angular.module('App')
-  .controller('ResultsCtrl', function ($scope, $rootScope, $state, $location, $timeout, $modal) {
-
+  .controller('ResultsCtrl', function ($scope, $rootScope, $state, $location, $timeout, $modal, $appstate) {
     if (window.innerWidth < 1024){
             $scope.useMobileTemplates = true;
         }else{
@@ -13,6 +12,7 @@ angular.module('App')
         if (window.innerWidth < 1024){
             $scope.$apply(function(){
                 $scope.useMobileTemplates = true;
+                console.log('usemobiletemplates');
             });
         }else{
             $scope.$apply(function(){
@@ -21,38 +21,50 @@ angular.module('App')
         }
       });
 
+    $scope.$on('$locationChangeStart', function(event) {
+
+    });
+
     $scope.$on('$locationChangeSuccess', function(event) {
+      // console.log('results location change')
+      if (!$rootScope.questionsData && !$rootScope.questionsData.scoringQuestions) console.log('no init');
+      $appstate.store();
+
+      if (!$rootScope.isTabletWidthOrLess && !$rootScope.isMobile && $location.path().indexOf('results') != -1) {
+        $("html, body").animate({scrollTop: "125px"}, 400);
+      }
+
     		if ( ($location.path()).toString().search("question") != -1) {
+
     			var q = ($location.path()).toString().replace("/question/","");
 		  		$rootScope.controls.controlClicked = 'previous';
-		  		
+		  		$rootScope.controls.lastLocation = 'results';
 		  		$timeout(function() {
-		  			$state.go('main.questions')
-					$rootScope.moveToQuestion(q)
-				}, 100)
+  		  			$state.go('main.questions')
+  					 $rootScope.moveToQuestion(q)
+  				}, 100)
 		  	}
     });
 
-
+      if (!!!$rootScope.questionsData || !!!$rootScope.questionsData.scoringQuestions) $state.go('main.questions');
       $rootScope.resultsTouched = true;
       var d = $rootScope.isFrench ? ' $' : '';
       $rootScope.resultsOptions = {
         "from": 0,
         "to": 3000,
-        "fakestep": 250,
+        "fakestep": 50,
         "smooth" : false,
         "step" : 1,
         "threshold" : 250,
         "dimension": d,
         "callback" : function(value, released) {  
 
-          if (!!released) {
+          if (!!released && !!value) {
             var range = value.split(";")
 
             for (var r in range) {
               var m = range[r] % $rootScope.resultsOptions.fakestep
               if (m != 0) {
-                  //console.log(m, Math.floor(range[r] / $rootScope.resultsOptions.fakestep), Math.floor(range[r] / $rootScope.resultsOptions.fakestep)+1, ((Math.floor(range[r] / $rootScope.resultsOptions.fakestep)+1)*$rootScope.resultsOptions.fakestep)-range[r])
                   if (m < ((Math.floor(range[r] / $rootScope.resultsOptions.fakestep)+1)*$rootScope.resultsOptions.fakestep)-range[r]) {
                       range[r] = (Math.floor(range[r] / $rootScope.resultsOptions.fakestep))*$rootScope.resultsOptions.fakestep
                   } else {
@@ -63,8 +75,8 @@ angular.module('App')
 
             $rootScope.controls.price = range.join(";")
             $rootScope.safeApply()
+            $scope.swipeDetails(1);
           } 
-
         } 
 
       }
@@ -81,52 +93,12 @@ angular.module('App')
   }
 
   $rootScope.emailOpen = function () {
-    //var modalInstance = 
-    //size: size,
-    /*var modalInstance = $modal.open({
-      animation: true,
-      templateUrl: 'views/result-templates/email-results.html',
-      controller: 'ModalCtrl',
-
-      resolve: {
-        items: function () {
-          //return $scope.items;
-        }
-      }
-    });
-    modalInstance.result.then(function (selectedItem) {
-      //$scope.selected = selectedItem;
-    }, function () {
-      //$log.info('Modal dismissed at: ' + new Date());
-    });*/
-
-    var link = "?";
-
-      for (var sq in $rootScope.questionsData.scoringQuestions) {
-        var answer = [];
-        console.log($rootScope.questionsData.scoringQuestions[sq]);
-        for (var t in $rootScope.questionsData.scoringQuestions[sq].text) {
-          if (typeof $rootScope.questionsData.scoringQuestions[sq].text[t].answer !== 'undefined' && $rootScope.questionsData.scoringQuestions[sq].text[t].type == 'slider') {
-            answer.push($rootScope.questionsData.scoringQuestions[sq].text[t].answer);
-            continue;
-          }
-          for (var ans in $rootScope.questionsData.scoringQuestions[sq].text[t].answers) {
-
-            console.log($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer, $rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer == true, !isNaN($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer));
-            if ($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer == true) {
-              answer.push($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].value)
-            }
-            else if (!isNaN($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer)) {
-              answer[$rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer] = $rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].value
-            }
-          }
-        }
-        link += sq + "=" + answer.join(";") + "&"
-      }
-      window.location.href = "mailto:?subject=Yo,%20Qualify&body=http://maytagqualifier.com"+encodeURIComponent(link).replace(/%20/g, '+');
-      console.log("mailto:?subject=Yo,%20Qualify&body=<http://maytagqualifier.com"+encodeURIComponent(link)+">");
+    console.log($appstate.generateEmailURL());
   };
 
+$scope.print = function(sku) {
+  window.open($appstate.generatePrintURL(sku));
+}
 
 $scope.setPriceRange = function () {
        var minPrice = null, maxPrice = null
@@ -149,12 +121,13 @@ $scope.setPriceRange = function () {
        }
 
        if (!minPrice || !maxPrice) return;
-       $rootScope.resultsOptions.from = minPrice;
-        $rootScope.resultsOptions.to = maxPrice;
-       $rootScope.controls.price = minPrice.toString() + ";" + maxPrice.toString();
+       $rootScope.resultsOptions.from = Math.floor(minPrice/50)*50;
+        $rootScope.resultsOptions.to = Math.round(maxPrice/50)*50;
+       $rootScope.controls.price = $rootScope.resultsOptions.from.toString() + ";" + $rootScope.resultsOptions.to.toString();
 }
 
       $scope.expandPriceRange = function (price) {
+        if (!!!$rootScope.controls.price) return;
         var range = $rootScope.controls.price.split(";")
         price = parseFloat(price)
         range[0] = parseFloat(range[0])
@@ -164,8 +137,7 @@ $scope.setPriceRange = function () {
         } else if (price>range[1]) {
           range[1] = price
         }
-        $rootScope.controls.price = range[0].toString() + ";" + range[1].toString()
-
+        $rootScope.controls.price = (Math.floor(range[0]/50)*50).toString() + ";" + (Math.round(range[1]/50)*50).toString()
 
       }
 
@@ -175,13 +147,15 @@ $scope.setPriceRange = function () {
         return ($rootScope.brandData.apptext.oneLastStep + " " + suffix).trim();
       }
 
+      $scope.startOver = function() {
+        $appstate.reload();
+      };
+
       $scope.setPriceRange()
 })
 .directive('desktopResults', function(){
     return {
         restrict: "EA",
-        scope: false,
-        transclude: true,
         templateUrl: 'views/result-templates/desktop-results.html',
         link: function(scope, element, attrs) {
             //this.lrgBtn = $( "#large-button" );
@@ -191,8 +165,6 @@ $scope.setPriceRange = function () {
 .directive('mobileResults', ['$timeout', function($timeout){
     return {
         restrict: "EA",
-        scope: false,
-        transclude: true,
         templateUrl: 'views/result-templates/mobile-results.html',
         link: function(scope, element, attrs) {
             scope.currentId = 1;
@@ -219,8 +191,6 @@ $scope.setPriceRange = function () {
             if(idClicked == 'result-selector-0') {
                         $('#mobile-results-holder').height($('#result-column-0').height() + 25);
                         $('#result-column-0').css('left','0px');
-                        //$('#result-header-0').css('font-size','14px');
-                        //$('#result-header-0').css('text-decoration','underline');
                         $('#result-column-1').css('left','480px');
                         $('#result-column-2').css('left','960px');
                     //

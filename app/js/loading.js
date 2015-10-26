@@ -2,7 +2,7 @@
 
 angular.module('App')
   .controller('LoadingCtrl', function ($scope, $rootScope, $state) {
-  	console.log('loading');
+  	// console.log('loading');
 
   	/*var ctrl = this;
   	ctrl.imgLoadedEvents = {

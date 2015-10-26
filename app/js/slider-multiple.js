@@ -45,13 +45,12 @@ angular.module('App')
           qs.text[t].options.answers = qs.text[t].answers
           qs.text[t].options.iterator = t
           qs.text[t].options.callback = angular.copy(function(value, released) {  
-            console.log(this)
             if (!!$rootScope.questionsData.question) {
               if (qs.name == $rootScope.questionsData.question.name) {    
                 if (!!released) {
                   for (var a in this.answers) {
                         //console.log( $rootScope.questionsData.question.text[0].answer , $rootScope.questionsData.question.text[0].options.halfway,  parseFloat($rootScope.questionsData.question.text[0].answers[a].value)- $rootScope.questionsData.question.text[0].options.halfway , parseFloat($rootScope.questionsData.question.text[0].answers[a].value)+$rootScope.questionsData.question.text[0].options.halfway   )
-                        console.log($rootScope.questionsData.question.text[this.iterator].answer , (parseFloat(this.answers[a].value)- this.halfway), (parseFloat(this.answers[a].value)+this.halfway))
+                        //console.log($rootScope.questionsData.question.text[this.iterator].answer , (parseFloat(this.answers[a].value)- this.halfway), (parseFloat(this.answers[a].value)+this.halfway))
                         if ($rootScope.questionsData.question.text[this.iterator].answer > (parseFloat(this.answers[a].value)- this.halfway) &&  $rootScope.questionsData.question.text[this.iterator].answer < (parseFloat(this.answers[a].value)+this.halfway)) {
                           $rootScope.questionsData.question.text[this.iterator].answer = this.answers[a].value
                           break

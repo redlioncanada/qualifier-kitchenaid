@@ -1,10 +1,10 @@
 <!-- 3 Picture box answers -->
 <div class="answers-main-content picture-3-container" ng-controller="RadioCtrl">
-	<a href="" ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box picture-3 {{answer.classes}} col-md-{{boxWidth}}" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mousedown="buttonState='down'"ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDownNoShadow : buttonState=='down', toggleButtonUpNoShadow : buttonState=='up', selected : answer.answer}">
+	<a href="" ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box picture-3 {{answer.classes}} col-md-{{boxWidth}}" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDownNoShadow : buttonState=='down', toggleButtonUpNoShadow : buttonState=='up'}">
 		<div class="img-wrap">
-			<img ng-src="{{answer.image}}" />
+			<img ng-src="{{answer.image}}" alt="{{answer.image_alt}}" />
 		</div>
-		<div class="select-label-wrap">
+		<div class="select-label-wrap" ng-class="{selected : answer.answer}">
 			<div class="select-icon"></div>
 			<div class="label-wrap">
 				<div class="label-text" ng-bind-html="answer.text"></div>

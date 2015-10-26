@@ -24,7 +24,6 @@ angular.module('App')
       			var contentHeight = $('.print-page').height();
       			var pageHeight = 980;
       			var pad = pageHeight - (((contentHeight / pageHeight) - Math.floor(contentHeight / pageHeight)) * pageHeight);
-      			console.log(contentHeight, pad);
       			$('.print-page-footer').css('marginTop', pad - $('.print-page-footer').height());
       			window.print();
       		},300);

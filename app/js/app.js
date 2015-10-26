@@ -13,7 +13,7 @@ var nglibs = [
   'ui.sortable',
   'angularAwesomeSlider',
   'ngAnimate',
-  'angular-images-loaded'
+  'AppstateService'
 ];
 
 var App = angular.module('App', nglibs);
@@ -22,7 +22,7 @@ App.constant('Modernizr', Modernizr);
 App.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', '$httpProvider', 'localStorageServiceProvider', function ($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, localStorageServiceProvider) {
     $locationProvider.html5Mode(false);
     //$urlRouterProvider.otherwise("/");
-    localStorageServiceProvider.setPrefix("MaytagQualifier_");
+    localStorageServiceProvider.setPrefix("KitchenaidQualifier_");
 
     $stateProvider
       .state('loading', {
@@ -73,16 +73,15 @@ App.filter('orderByOrder', function() {
 
 App.filter('rearrange', function() {
   return function(items, num) {
-    console.log(items);
       if (typeof items === 'undefined') return;
       var temp = items[0];
       items[0] = items[1];
       items[1] = temp;     
-      if (items[0].price > items[2].price) {
-        temp = items[0].price;
-        items[0].price = items[2].price;
-        items[2].price = temp;
-        items[2].price = temp;
+
+      if (items[0].colours[items[0].colours.length-1].prices.CAD > items[2].colours[items[2].colours.length-1].prices.CAD) {
+        temp = items[0];
+        items[0] = items[2];
+        items[2] = temp;
       }
       return items;
   };
@@ -127,13 +126,14 @@ App.filter('nextQuestions', function($rootScope, $filter) {
     }
     var nextQuestions = []
     var t = null
-    if (!$rootScope.questionsData.scoringQuestions) return;
-    var l = $rootScope.objSize($rootScope.questionsData.scoringQuestions)
-    angular.forEach($rootScope.questionsData.scoringQuestions, function (item, k) {
-      if (item.order == l) {
-        t = item
-      }
-    })
+    var l = !$rootScope.questionsData ? 0 : $rootScope.objSize($rootScope.questionsData.scoringQuestions);
+    if (l) {
+      angular.forEach($rootScope.questionsData.scoringQuestions, function (item, k) {
+        if (item.order == l) {
+          t = item
+        }
+      })
+    }
     while (!!t) {
       var nn = null
       if ('next' in t) {
@@ -197,12 +197,17 @@ App.filter('byPrice', function($rootScope) {
 
 // New byPrice works by re-ranking the results, prices within the range are ranked, then prices without
 
-App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location) {
+App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate) {
+    $location.path('');
 
     $state.go('loading');
-    localStorageService.clearAll();
 
     $rootScope.resultsTouched = false;
+
+    $rootScope.atResultsPage = false;
+    $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+      $rootScope.atResultsPage = toState.name.indexOf('results') != -1;
+    });
 
     $rootScope.safeApply = function(fn) {
       var phase = this.$root.$$phase;
@@ -267,42 +272,25 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
 
           $resource("http://mykitchenaid.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = res.products;
-console.log(res.products);
+
                 var relcodes = {
                   'M1' : 'DC',
                   'WH' : 'DW'
                 }
                 angular.forEach( $rootScope.appliances, function (item, key) { 
                   if ($rootScope.brand == "kitchenaid") {
-                      if ($rootScope.appliances[key].appliance == "Laundry") {
 
-                        $rootScope.appliances[key].sku = $rootScope.appliances[key].washerSku + "/" + $rootScope.appliances[key].dryerSku
+                      if ($rootScope.appliances[key].appliance == "Washers") {
+
                         for (var i in item.colours) {
-                          //$rootScope.appliances[key].colours[i].image = setColourURL($rootScope.appliances[key].appliance,$rootScope.appliances[key].image, $rootScope.appliances[key].colours[i].colourCode);
-                          $rootScope.appliances[key].colours[i].colourCode = $rootScope.appliances[key].colours[i].code;
-                          if ($rootScope.appliances[key].image.search(relcodes[$rootScope.appliances[key].colours[i].colourCode]) != -1) {
-                            $rootScope.appliances[key].colours[i].image = $rootScope.appliances[key].image
-                          } else {
-                            $rootScope.appliances[key].colours[i].image = "digitalassets/No%20Image%20Available/Standalone_1100X1275.png"
+                          for (var j in item.dryers[0].colours) {
+                            if (item.dryers[0].colours[j].colourCode == item.colours[i].colourCode) {
+                              item.colours[i].dryersku = item.dryers[0].colours[j].sku;
+                            }
                           }
-                          $rootScope.appliances[key].colours[i].prices = {}
-                          $rootScope.appliances[key].colours[i].prices.CAD = parseFloat(item.colours[0].dryerPrices.CAD) + parseFloat(item.colours[0].washerPrices.CAD)
-                          $rootScope.appliances[key].colours[i].sku = $rootScope.appliances[key].colours[i].washerSku
                         }
-                        $rootScope.appliances[key].price = parseFloat(item.colours[0].dryerPrices.CAD) + parseFloat(item.colours[0].washerPrices.CAD)
-                      } else {
-                        $rootScope.appliances[key].price = parseFloat(item.colours[0].prices.CAD)
-                      }
 
-
-                      if ($rootScope.appliances[key].appliance == "Laundry") {
-                          $rootScope.appliances[key].capacity = Math.min($rootScope.appliances[key].washerCapacity,$rootScope.appliances[key].dryerCapacity)
-
-                          if (parseFloat($rootScope.appliances[key].dryerCycleOptions) <= 10) {
-                            $rootScope.appliances[key].minCycles = true
-                          } else {
-                            $rootScope.appliances[key].maxCycles = true
-                          }
+                        $rootScope.appliances[key].price = parseFloat(item.colours[0].prices.CAD);
 
                           if (parseFloat($rootScope.appliances[key].capacity) >= 6.1) {
                             $rootScope.appliances[key].largestCapacity = true
@@ -321,7 +309,7 @@ console.log(res.products);
                           }
 
                       } else if ($rootScope.appliances[key].appliance == "Dishwashers") {
-                        // $rootScope.appliances[key]["placeSettings"+$rootScope.appliances[key].placeSettings.toString()] = true
+                        $rootScope.appliances[key]["placeSettings"+$rootScope.appliances[key].placeSettings.toString()] = true
                         $rootScope.appliances[key].quiet = false
                         if (parseFloat($rootScope.appliances[key].decibels) <= 47) {
                           $rootScope.appliances[key].quiet = true
@@ -375,27 +363,15 @@ console.log(res.products);
                           }
                           if (parseFloat($rootScope.appliances[key].capacity) >= 5.8) {
                             $rootScope.appliances[key].mediumCapacity = true
-                          }                    
+                          }
                         }
                       } 
-                    } else if ($rootScope.brand == "kitchenaid") {
-
                     }
                 })
-                $rootScope.hasanswers = {};
-                var httpparams = (decodeURI($location.$$absUrl)).replace(/\+/g, ' ').split("?");
-                if (1 in httpparams) {
-                  var loophttpparams = httpparams[1].split("&");
-                  for (var l in loophttpparams) {
-                    var inst = loophttpparams[l].split("=");
-                    $rootScope.hasanswers[inst[0]] = inst[1];
-                  }
-                }
-                  if ('sku' in $rootScope.hasanswers) {
-                    $state.go('print',{"sku": $rootScope.hasanswers['sku']});
-                  } else {
-                    $state.go('main.questions');
-                  }
+// $appstate.clear();
+                $appstate.restore();
+
+                // console.log($rootScope.questionsData);
           }, function () {
               $rootScope.errorMessage = "We're having connectivity issues. Please reload."
           });

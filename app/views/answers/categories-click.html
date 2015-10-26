@@ -3,8 +3,8 @@
 
 	<a href="" ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box categories {{answer.classes}} col-md-{{boxWidth}}" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); setAppliance(answer.displayName)" ng-init="answer.activeImage=answer.image" ng-class="{noanswer : !controls.questionHasAnswer}">
 		<div class="category-image">
-			<img class="normal" ng-class="{'hiddenViaOpacity':controls.questionHasAnswer}" ng-src="{{answer.image}}" />
-			<img class="hover" ng-if="!!answer.hover" ng-src="{{answer.hover}}" />
+			<img class="normal" ng-class="{'hiddenViaOpacity':controls.questionHasAnswer}" ng-src="{{answer.image}}" alt="{{answer.image_alt}}" />
+			<img class="hover" ng-if="!!answer.hover" ng-src="{{answer.hover}}" alt="{{answer.image_hover_alt}}" />
 		</div>
 
 		<div class="category-name" ng-bind="answer.text"></div>

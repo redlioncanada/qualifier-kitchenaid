@@ -1,14 +1,12 @@
 'use strict';
 
 angular.module('App')
-  .controller('NavigationCtrl', function ($scope, $state, $rootScope, $filter, $location, $window, $timeout) {
-    $scope.atResultsPage = false;
-
-    $scope.$on('$locationChangeSuccess', function(event) {
-        if ( ($location.path()).toString().indexOf("results") != -1) {
-          $scope.atResultsPage = true;
+  .controller('NavigationCtrl', function ($scope, $state, $rootScope, $filter, $location, $window, $timeout, $appstate) {
+    $rootScope.$on('$locationChangeSuccess', function(event) {
+        if ( ($location.path()).toString().indexOf("results") != -1 || $rootScope.restore == 'results') {
+          $rootScope.atResultsPage = true;
         } else {
-          $scope.atResultsPage = false;
+          $rootScope.atResultsPage = false;
         }
     });
 
@@ -21,7 +19,7 @@ angular.module('App')
     //
 
   	$scope.setType = function (q,a) {
-  		if (!!q) {
+  		if (!!q && !!a) {
 	  		if (!a.thumbnail_type) {
 	  			return q.thumbnail_type
 	  		} 
@@ -55,29 +53,7 @@ angular.module('App')
 	};
 
 	$scope.startOver = function () {
-    /*$rootScope.showTooltip = false;
-    $rootScope.resultsTouched = false;
-
-    var oldQs = $rootScope.questionsData.questions;
-    var newQs = angular.copy($rootScope.brandData.questions);
-
-    for (var i in oldQs) {
-      for (var j in oldQs[i].text) {
-        newQs[i].text[j].options = oldQs[i].text[j].options;
-        //if (newQs[i].text[j].answer) delete newQs[i].text[j].answer;
-        for (var k in oldQs[i].text[j].answers) {
-          oldQs[i].text[j].answers[k].answer = false;
-        }
-      }
-    }
-    $rootScope.questionsData.questions = newQs;
-    $rootScope.questionsData.question = $rootScope.questionsData.questions["Appliance"];
-
-    $rootScope.controls = {};
-    $rootScope.controls.questionHasAnswer = false;
-		$rootScope.show();
-		$rootScope.moveToQuestion("Appliance");*/
-    $window.location.reload();
+    $appstate.reload();
 	}
 })
 .directive('resultsmenu', ['$timeout', '$rootScope', '$location', function($timeout, $rootScope, $location) {

@@ -2,8 +2,7 @@
 <ul class="mobile-results-nav" ng-if="questionsData.currentCount !=0">
     <li ng-repeat="a in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange" class="mobile-result-selector" ng-click="selectorClicked($event);" id="result-selector-{{$index}}">
         <div class="product-img-wrap" ng-init="a.picker=setFirstColour(a)">
-            <img ng-if="a.appliance!='Laundry'" ng-src="http://maytag.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" class="mobile-selector-img">
-            <img ng-if="a.appliance=='Laundry'" ng-src="http://maytag.com/{{a.picker.image}}" class="mobile-selector-img">
+            <img ng-src="http://maytag.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" class="mobile-selector-img">
         </div>
         <span ng-if="$index==1" bo-text="brandData.apptext.yourBestMatch" ng-class="{'active': $index==1}" class="mobile-results-header" id="result-header-{{$index}}"></span>
         <span ng-if="$index!=1" bo-text="brandData.apptext.otherSuggestion" class="mobile-results-header" id="result-header-{{$index}}" ></span>
@@ -28,23 +27,18 @@
 						
 						<!--<div class="product-details-wrap" hm-swipeleft="swipeLeft()" hm-swiperight="swipeRight()">-->
                           <div class="product-details-wrap" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()">
-							<h2 ng-if="a.appliance!='Laundry'"><span class="product-name" ng-bind-html="a.name"></span> </h2>
-							<h2 ng-if="a.appliance=='Laundry'" ><span class="product-name" ng-bind-html="a.washerName"></span> </h2>
-							<h2 ng-if="a.appliance=='Laundry'"><span class="product-name" ng-bind-html="a.dryerName"></span> </h2>
+							<h2><span class="product-name" ng-bind-html="a.name"></span> </h2>
                             <div class="sales-feature-spacer smallest"></div>
 							<!-- Product Price Wrap -->
                              <div class="product-price-sku-wrap">
 							<span class="product-price">
 								<span bo-text="brandData.apptext.msrp"></span>:&nbsp;
-								<span ng-if="a.appliance!='Laundry' && isEnglish">${{a.picker.prices.CAD}}</span>
-								<span ng-if="a.appliance=='Laundry' && isEnglish">${{a.picker.washerPrices.CAD}}/{{a.picker.dryerPrices.CAD}}</span>
-								<span ng-if="a.appliance!='Laundry' && isFrench">{{a.picker.prices.CAD.replace('.',',')}} $</span>
-								<span ng-if="a.appliance=='Laundry' && isFrench">{{a.picker.washerPrices.CAD.replace('.',',')}}/{{a.picker.dryerPrices.CAD.replace('.',',')}} $</span>
+								<span ng-if="isEnglish">${{a.picker.prices.CAD}}</span>
+								<span ng-if="isFrench">{{a.picker.prices.CAD.replace('.',',')}} $</span>
 							</span>
 							<span class="product-sku">
 								<span bo-text="brandData.apptext.model"></span>:&nbsp; 
-								<span ng-if="a.appliance!='Laundry'">{{a.picker.sku}}</span> 
-								<span ng-if="a.appliance=='Laundry'">{{a.picker.washerSku}}/{{a.picker.dryerSku}}</span> 
+								<span>{{a.picker.sku}}</span> 
 							</span>
 
 						</div> 
@@ -82,6 +76,9 @@
 										<img src="img/icon-email.png"/>
 									</a>
 
+									<a href="#" ng-click="startOver()" class="btn btn-default" target="_blank">
+										<span style="text-align:center;" class="btn-text btn-text-startover" bo-html="brandData.apptext.startover.replace('<br />',' ')"></span>
+									</a>
 								</div>
 
 							<div ng-if="!!a.disclaimers && a.disclaimers.length > 0" class="sales-feature-spacer"></div>

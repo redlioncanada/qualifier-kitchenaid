@@ -1,5 +1,9 @@
 #results {
-	padding-top: 25px;
+	.price-slider {
+		.jslider {
+			width: 100%; 
+		}
+	}
 	.results-top {
 		h1 {
 			// display: inline-block;
@@ -67,7 +71,9 @@
 		list-style: none;
 		clear: both;
 		-webkit-padding-start: 0;
-		padding: 25px 40px;
+		padding: 0px 40px;
+        max-width: 1400px;
+        margin: 0 auto;
 		li.result {
 			display: inline-block;
 			float: left;
@@ -106,10 +112,9 @@
 			  	width: 100%;
 				text-align: center;
 				margin-top: 30px;
-				margin-bottom: 3px;
+				margin-bottom: 20px;
 				img {
 					width: 220px;
-					display: block;
 					margin-left: auto;
 					margin-right: auto;
 				}
@@ -163,6 +168,12 @@ by Jacoub Bondre */
 @media(max-width:1023px) {
     #results {
 	padding-top: 25px;
+    .price-slider {
+        margin-bottom: 25px;
+		.jslider {
+			width: 91.5%; 
+		}
+	}
     .share-wrapper{
         display: none;
     }
@@ -275,6 +286,7 @@ by Jacoub Bondre */
             position: relative;
             overflow: hidden;
             width: 480px;
+            clear: both;
             margin-left: auto;
             margin-right: auto;
             /* For Safari 3.1 to 6.0 */
@@ -296,6 +308,8 @@ by Jacoub Bondre */
 		clear: both;
 		-webkit-padding-start: 0;
 		padding: 0px 0px;
+        max-width: 1400px;
+        margin: 0 auto;
 		li.result {
 			display: inline-block;
 			position:absolute;
