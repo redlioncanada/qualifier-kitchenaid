@@ -272,7 +272,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
 
           $resource("http://mykitchenaid.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = res.products;
-
+console.log(res.products);
                 var relcodes = {
                   'M1' : 'DC',
                   'WH' : 'DW'
