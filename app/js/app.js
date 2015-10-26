@@ -309,7 +309,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
                           }
 
                       } else if ($rootScope.appliances[key].appliance == "Dishwashers") {
-                        $rootScope.appliances[key]["placeSettings"+$rootScope.appliances[key].placeSettings.toString()] = true
+                        //$rootScope.appliances[key]["placeSettings"+$rootScope.appliances[key].placeSettings.toString()] = true
                         $rootScope.appliances[key].quiet = false
                         if (parseFloat($rootScope.appliances[key].decibels) <= 47) {
                           $rootScope.appliances[key].quiet = true
