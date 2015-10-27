@@ -41,7 +41,7 @@
 
 	// Two boxes icons or two split
 	&.boxes-icon-2-container {
-		width: 398px;
+		width: 100%;
 
 	}
 	// &.boxes-icon-5-container {
@@ -393,32 +393,34 @@
 	// Single select with icons - 2 answers
 	&.boxes-icon-2, &.boxes-icon-5, &.boxes-icon-split { // + Multiselect with icons - 5 answers
 		// @include make-md-column(6);
-		width: 172px;
-		height: 205px;
-		background: url('../img/boxes-icon-bg-new.png');
+		width: 250px;
+		height: 220px;
 		display: inline-block;
-		@include boxshadow;
 		.icon-wrap {
-			img {
+            background: url('../img/icon-bg-big.png') no-repeat;
+            background-size: contain;
+            height: 222px;
+            width:  215px;
+			img.normal, img.hover {
 				position: relative;
-				top: 12px;
+                top: 46%;
+                -webkit-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
 			}
+            img.hover {
+                opacity: 0;
+                top: -28px;
+            }
 		}
 		.select-icon {
 			top: 161px;
 			left: 15px;
+            display: none;
 		}
 		.label-wrap {
 			position: absolute;
 			bottom: 18px;
 			left: 60px;
-		}
-
-		img.hover {
-			top: 12px;
-			left: 20px;
-			position: absolute;
-			opacity: 0;
 		}
 		
 		// img.normal,  {
