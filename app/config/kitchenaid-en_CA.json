@@ -578,7 +578,7 @@
 					"sub_question" : "Select One",
 					"explanation_title" : "WHY ARE YOU ASKING ME WHERE I COOK?",
 					"explanation" : "We know that every kitchen is unique. By understanding where your cooking surface is, we can recommend the perfect vent.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -623,7 +623,7 @@
 					"sub_question" : "Select One",
 					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT MY CABINETS?",
 					"explanation" : "Some of the by-products of cooking (steam, moisture and grease) can be destructive without the right ventilation. By understanding your specific needs we can find the perfect system for your kitchen.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -818,7 +818,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT A WARMING LAMP?", 
 					"explanation" : "Some of our models come equipped with warming lamps. If we have a better idea of your needs, we can better recommend the perfect hood.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
