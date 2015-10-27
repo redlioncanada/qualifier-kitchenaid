@@ -2206,7 +2206,7 @@
                      "thumbnail": "img/icon-noise.png",
                      "thumbnail_current": "img/icon-noise-current.png",
                      "text": "Oui – Ma cuisine donne sur une autre pièce",
-                     "image": "/img/Dishwasher_Q5_MT-open-concept-yes.png",
+                     "image": "img/Dishwasher_Q5_MT-open-concept-yes.png",
                      "value": "yes",
                      "scoring": {
                          "quiet": 1
@@ -2216,7 +2216,7 @@
                      "thumbnail": "img/icon-noise.png",
                      "thumbnail_current": "img/icon-noise-current.png",
                      "text": "Non – Ma cuisine est une pièce à part",
-                     "image": "/img/Dishwasher_Q5_MT-open-concept-no.png",
+                     "image": "img/Dishwasher_Q5_MT-open-concept-no.png",
                      "value": "no",
                      "scoring": {},
                      "order": 2
