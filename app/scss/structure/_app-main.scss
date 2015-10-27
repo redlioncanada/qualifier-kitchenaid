@@ -1196,6 +1196,56 @@ div.mobile-app-nav-arrows {
     .ng-binding::first-letter {
         text-transform: capitalize;        
     }
+    // Ranking
+    .ranking {
+        text-align: left;
+        width: 98%;
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .rank-numbers-list {
+            display: inline-block;
+            height: 100% !important;
+            width: 13%;
+            text-align: center;
+            li {
+                .rank-number-wrap {
+                    height: 41px;
+                    width: 41px;
+                    span {
+                        top: 3px;
+                        color: #9f9f9f;
+                    }
+                }
+            }
+        }
+        .rank-answers-list {
+            display: inline-block;
+            padding-left: 0;
+            height: 100% !important;
+            position: relative;
+            top: -13px;
+            width: 85%;
+            li {
+                height: 42px !important;
+                margin-bottom: 0;
+                margin: 0px 2px 4.1px 1px;
+                width: 100%;
+            }
+        }
+        .label-wrap {
+            display: inline-block;
+            width: 100% !important;
+            height: 41px !important;
+            background-position: 0 0 !important;
+            background-size: contain 100% !important;
+        }
+        .label-text {
+            top: 25% !important;
+            font-size: 9px !important
+        }
+    }
 }
 
 .print-page {

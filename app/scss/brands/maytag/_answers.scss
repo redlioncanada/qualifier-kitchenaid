@@ -552,14 +552,23 @@
 	}
 	ul {
 		list-style: none;
+        padding-left: 0;
 	}
 	.rank-numbers-list {
 		display: inline-block;
+        height: 100% !important;
 	}
 	.rank-answers-list {
 		display: inline-block;
+        padding-left: 0;
+        height: 100% !important;
+        position: relative;
+        top: -13px;
 		li {
-			height: 61px;
+			height: 62px;
+            margin-bottom: 0;
+            margin: 0px 2px 4.1px 1px;
+            text-align: center;
 		}
 	}
 	.rank-number-wrap {
@@ -570,13 +579,19 @@
 	}
 	.label-wrap {
 		display: inline-block;
-		width: 532px;
-		height: 49px;
-		background: url('../img/ranking-bg.png');
+		width: 566px;
+		height: 61px;
+		background: url('../img/ranking-bg.png') no-repeat;
+        background-position: 0 -2px;
+        background-size: cover;
+        border-radius: 6px;
+        padding-left: 0 !important;
+        text-align: center;
 	}
 	.label-text {
-		top: 10px;
-		left: 80px;
+		top: 17px;
+        text-transform: uppercase;
+        text-align: center;
 	}
 	
 }
