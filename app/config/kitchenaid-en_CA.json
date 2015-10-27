@@ -495,7 +495,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why Are You Asking Me About Gas?", 
 					"explanation" : "Some kitchens are equipped for gas and others are not. We need to know this information to recommend the perfect range.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -818,7 +818,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT A WARMING LAMP?", 
 					"explanation" : "Some of our models come equipped with warming lamps. If we have a better idea of your needs, we can better recommend the perfect hood.",
-					"type" : "radio-2",
+					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -1670,7 +1670,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why Are You Asking Me About Fuel Type?", 
 					"explanation" : "Some kitchens are equipped with a gas line. We need to know this information to recommend the perfect range.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -2705,7 +2705,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about my space?",
 					"explanation" : "If you live in an open concept space, we want to take that into consideration to recommend the perfect machine to keep the noise at a minimum.",
-					"type" : "radio-2",
+					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
