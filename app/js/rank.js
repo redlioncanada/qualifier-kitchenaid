@@ -8,7 +8,7 @@ angular.module('App')
             if (!isNaN(qs.text[0].answers[i].answer)) {
                 qs.text[0].answers[i].order = qs.text[0].answers[i].answer
             }
-            // console.log(qs.text[0].answers[i].order);           
+            // console.log(qs.text[0].answers[i].order);
         }
     }
 

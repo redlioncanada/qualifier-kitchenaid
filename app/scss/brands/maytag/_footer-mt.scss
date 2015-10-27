@@ -4,34 +4,11 @@
 	width: 100%;
 }
 
-footer.maytag-mobile {display: none;}
-footer.maytag-desktop {display: block;}
-
-#footer-wrap{background:#F6F6F6;width:100%;margin:20px 0 0 0;padding:0;text-align:left;height:100%;overflow:hidden;border-top:1px solid #d8d7d6;}
-#footer-wrap{margin-top:0;}
-#footer{background:#f6f6f6;width:960px;margin:0 auto;padding:35px 0;color:#ccc;font-size:9px}
-#footer a{color:#ccc;text-decoration:none;font-size:9px}
-#footer a:hover,#footer a:focus{text-decoration:underline}
-#footer-menu{height:1%;overflow:hidden}
-#footer ul{width:119px;float:left;margin:0 0 -2000px;padding:0 0 2030px;border-right:1px solid #CECECE;list-style:none}
-#footer ul.first{margin-right:0}
-#footer ul.last{width:120px;border-right:0}
-#footer li{line-height:1.8em}
-#footer li.divider{border-bottom:1px solid #CECECE;padding:0 0 10px;margin:0 0 10px}
-#footer li.header a{font-weight:bold}
-#footer-menu li a{padding:0 10px;display:inline-block;line-height:1.8em}
-#footer-menu ul.first li a{padding-left:0}
-#footer-menu ul.lastst li a{padding-right:0}
-#footer-legal{border-top:1px solid #CECECE;padding-top:10px}
-#footer-trademark{float:left;width:720px;color:#ccc;padding-bottom: 15px;}
-#footer-legal-links{float:left;width:240px;text-align:right}
-#footer-legal-links span{padding:0 5px;color:#ccc}
-#footer, #footer a, #footer-trademark{color:#8d8d8d;}
-
-#footer a:hover, #footer-menu ul li a:hover{color: #002855 !important;}
+footer.mobile {display: none;}
+footer.desktop {display: block;}
 
 /*mobile footer begin*/
-footer.maytag-mobile {
+footer.mobile {
 	background-color: #333;
 	height: 300px;
 	font-size: 7pt;
@@ -73,6 +50,76 @@ footer.maytag-mobile {
 	}
 }
 /*mobile footer end*/
+
+footer.desktop {
+	width: 100%;
+	color: #333;
+
+	#footer-wrap {
+		width: 944px;
+		margin: 0 auto;
+		border-top: 1px solid #BBB;
+		padding: 5px 0 10px 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: #333;
+	}
+
+	ul {
+		float: left;
+		width: 140px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	//title
+	ul li {
+		font-size: 7pt;
+		width: 100%;
+		margin-top: 5px;
+
+		a:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		&.split {
+			padding-top: 15px;
+		}
+
+		&.split span:first-child {
+			padding-right: 3px;
+		}
+
+		&.split span:last-child {
+			margin-left: 3px;
+		}
+
+		&:first-child {
+			text-transform: uppercase;
+			color: black;
+			font-weight: 500;
+			padding-bottom: 5px;
+			border-bottom: 1px dotted black;
+		}
+
+		&:nth-child(2) {
+			margin-top: 8px;
+		}
+
+		//normal link
+		&:not(:first-child) {
+
+		}
+	}
+}
 
 footer {
 	// position: absolute;

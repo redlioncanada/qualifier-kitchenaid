@@ -96,10 +96,8 @@ angular.module('App')
 	        for (var ans in q.show.answers ) {
 	          var a = q.show.answers[ans]
 	          if (qtype == "rank") {
-	            if (a.answer == 0) {
 	              return true
 	              break;
-	            }              
 	          } else if (qtype == "slider" || qtype == "slider-people" || qtype == "slider-multiple") {
 	            if (a.value == q.show.answer) {
 	              return true
