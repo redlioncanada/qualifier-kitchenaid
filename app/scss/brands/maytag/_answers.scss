@@ -570,15 +570,20 @@
 	.rank-numbers-list {
 		display: inline-block;
         height: 100% !important;
+        background-color: #ececec;
+        padding: 5px;
+        margin-right: -4px;
 	}
 	.rank-answers-list {
 		display: inline-block;
         padding-left: 0;
         height: 100% !important;
         position: relative;
-        top: -13px;
+        top: -14.5px;
+        background-color: #ececec;
+        padding: 5px;
 		li {
-			height: 62px;
+			height: 62.1px;
             margin-bottom: 0;
             margin: 0px 2px 4.1px 1px;
             text-align: center;
@@ -593,10 +598,10 @@
 	.label-wrap {
 		display: inline-block;
 		width: 566px;
-		height: 61px;
+		height: 62.2px;
 		background: url('../img/ranking-bg.png') no-repeat;
         background-position: 0 -2px;
-        background-size: cover;
+        background-size: 100% 102%;
         border-radius: 6px;
         padding-left: 0 !important;
         text-align: center;

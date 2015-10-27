@@ -817,9 +817,11 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	//top: -7px;
 	.slider-large-label {
 		@include large-square-label;
-		margin-right: -145px;
-		font-size: 24px;
+        top: 21px;
+		margin-right: -143px;
+		font-size: 14px;
     	z-index: 11;
+        color: #a0a0a0;
 	}
 
 	//display: none;

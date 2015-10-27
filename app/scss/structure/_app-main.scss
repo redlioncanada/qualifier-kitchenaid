@@ -280,9 +280,11 @@ div.mobile-app-nav-arrows {
 	}
 	.btn-prev {
 		left: 25px;
+        z-index: 15;
 	}
 	.btn-next {
 		right: 25px;
+        z-index: 15;
 	}
 	.btn {
 		padding: 3px 18px;
@@ -551,7 +553,7 @@ a.answer-box.picture-4 {
 		width: 0px !important;
 
 		.slider-large-label {
-            left: -8px;
+            left: -28px;
 			margin-right: 0px !important;
 		}
 	}
@@ -977,7 +979,7 @@ a.answer-box.picture-4 {
 		font-size: 13pt !important;
         color: #999C9C !important;
         top: -23px !important;
-        margin-right: -9px !important;
+        margin-right: -40px !important;
 	}
     div.category-image > img.hover {
         opacity: 0 !important;
@@ -1074,7 +1076,7 @@ a.answer-box.picture-4 {
 	.slider-large-label-wrap {
 
 		span.slider-large-label {
-			margin-right: 3px !important;
+			margin-right: -34px !important;
 		}
 	}
 
@@ -1083,7 +1085,7 @@ a.answer-box.picture-4 {
 	}
 
 	.slider-large-label-wrap .slider-large-label {
-		font-size: 18px !important;
+		font-size: 12px !important;
 	}
 
 	.answers-category {
@@ -1264,7 +1266,7 @@ a.answer-box.picture-4 {
         }
 	}
     .regular-2-container {
-        width: 90% !important;
+        width: 100% !important;
     }
     a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4, .boxes-icon-split {
         margin-top: 8px;
@@ -1329,6 +1331,7 @@ a.answer-box.picture-4 {
             width: 13%;
             text-align: center;
             li {
+                background-color: transparent;
                 .rank-number-wrap {
                     height: 41px;
                     width: 41px;
@@ -1344,8 +1347,8 @@ a.answer-box.picture-4 {
             padding-left: 0;
             height: 100% !important;
             position: relative;
-            top: -13px;
-            width: 85%;
+            top: -15.5px !important;
+            width: 87%;
             li {
                 height: 42px !important;
             }
@@ -1365,7 +1368,7 @@ a.answer-box.picture-4 {
         height: 30px !important;
     }
     .slider-large-label-wrap .slider-large-label {
-        top: -12px !important;
+        top: -11px !important;
         margin-right: -1px !important;
 	}
     div.app-content-main-top {
