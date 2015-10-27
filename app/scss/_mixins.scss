@@ -10,8 +10,8 @@
 @mixin large-square-label-wrap {
 	display: inline-block;
 	border-radius: 2px;
-	background-color: rgba(76, 76, 76, 0.161);
-	box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
+	background-color: #dedede;
+	/*box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);*/
 	width: 63px;
 	height: 61px;
 }

@@ -281,9 +281,11 @@ div.mobile-app-nav-arrows {
 	}
 	.btn-prev {
 		left: 25px;
+        z-index: 15;
 	}
 	.btn-next {
 		right: 25px;
+        z-index: 15;
 	}
 	.btn {
 		padding: 3px 18px;
@@ -463,7 +465,7 @@ a.answer-box.picture-4 {
 			}
 		}
 
-		a.answer-box.boxes-icon-5, a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-split {
+		a.answer-box.boxes-icon-5, a.answer-box.boxes-icon-2 {
 			background-size: cover;
 			width: 135px;
 			height: 160px;
@@ -552,7 +554,7 @@ a.answer-box.picture-4 {
 		width: 0px !important;
 
 		.slider-large-label {
-            left: -8px;
+            left: -28px;
 			margin-right: 0px !important;
 		}
 	}
@@ -850,7 +852,7 @@ a.answer-box.picture-4 {
 	}
 
 	.boxes-icon-2-container {
-		width: 100% !important;
+		width: 25% !important;
 	}
 
 	a.boxes-icon-5 {
@@ -871,7 +873,7 @@ a.answer-box.picture-4 {
 		}
 	}
 
-	a.answer-box.boxes-icon-split, a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
+	a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
 		width: 145px;
 		height: 174px;
 		background-size: cover;
@@ -978,7 +980,7 @@ a.answer-box.picture-4 {
 		font-size: 13pt !important;
         color: #999C9C !important;
         top: -23px !important;
-        margin-right: -9px !important;
+        margin-right: -40px !important;
 	}
     div.category-image > img.hover {
         opacity: 0 !important;
@@ -1075,7 +1077,7 @@ a.answer-box.picture-4 {
 	.slider-large-label-wrap {
 
 		span.slider-large-label {
-			margin-right: 3px !important;
+			margin-right: -34px !important;
 		}
 	}
 
@@ -1084,7 +1086,7 @@ a.answer-box.picture-4 {
 	}
 
 	.slider-large-label-wrap .slider-large-label {
-		font-size: 18px !important;
+		font-size: 12px !important;
 	}
 
 	.answers-category {
@@ -1260,12 +1262,12 @@ a.answer-box.picture-4 {
         }
         .label-wrap {
             .label-text {
-                font-size: 11px;   
+                font-size: 11px !important;   
             }
         }
 	}
     .regular-2-container {
-        width: 90% !important;
+        width: 100% !important;
     }
     a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4, .boxes-icon-split {
         margin-top: 8px;
@@ -1330,6 +1332,7 @@ a.answer-box.picture-4 {
             width: 13%;
             text-align: center;
             li {
+                background-color: transparent;
                 .rank-number-wrap {
                     height: 41px;
                     width: 41px;
@@ -1345,8 +1348,8 @@ a.answer-box.picture-4 {
             padding-left: 0;
             height: 100% !important;
             position: relative;
-            top: -13px;
-            width: 85%;
+            top: -15.5px !important;
+            width: 87%;
             li {
                 height: 42px !important;
             }
@@ -1359,25 +1362,52 @@ a.answer-box.picture-4 {
         }
         .label-text {
             top: 25% !important;
-            font-size: 9px !important
+            font-size: 11px !important
         }
     }
     .price-slider {
         height: 30px !important;
     }
     .slider-large-label-wrap .slider-large-label {
-			top: -12px !important;
-			margin-right: -1px !important;
+        top: -11px !important;
+        margin-right: -1px !important;
 	}
     div.app-content-main-top {
         min-height: 60px !important;        
     }
-    a.answer-box.boxes-icon-split, a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
+    a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
         .label-wrap {
 			top: 128px;
             left: 40px;
 		}
 	}
+    .boxes-icon-2-container {
+		width: 50% !important;
+        
+        > a:nth-child(1) {
+            margin-bottom: 40px !important;
+        }
+
+        .answer-box.boxes-icon-split {
+            width: 148px;
+            height: 143px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            
+            .icon-wrap {
+                width: 150px;
+                height: 150px;
+                
+                img.normal, img.hover {
+                    width: 80px;
+                }
+                
+                img.hover {
+                    top: -10px;
+                }
+            }
+        }
+    }
 }
 
 .print-page {
