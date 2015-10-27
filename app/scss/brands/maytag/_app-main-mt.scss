@@ -358,6 +358,29 @@ header.header-desktop {
 	}
 }
 
+.buttonnav-mobile {
+   		width: 100%;
+   		text-transform: uppercase;
+   		margin: 40px 0 15px 0;
+
+   		div {
+   			color: white;
+   			background-color: #002e5f;
+   			height: 30px;
+   			line-height: 30px;
+   			margin: 0 auto;
+   			position: relative;
+   			top: 5px;
+   			font-family: $AV-Light;
+   			text-align: center;
+   		}
+
+   		.backtoresults-mobile div {
+   			margin-bottom: 4px;
+   		}
+
+   }
+
 //popover styles
 .popover-title {
 	text-transform: uppercase;
@@ -434,6 +457,12 @@ header.header-desktop {
 	}
 
 	div[ng-controller="SliderMultipleCtrl"] .answers-main-content {
+		&.answer-slider {
+			margin-top: 40px;
+		}
+	}
+
+	div[ng-controller="SliderButtonsCtrl"] .answers-main-content {
 		&.answer-slider {
 			margin-top: 40px;
 		}

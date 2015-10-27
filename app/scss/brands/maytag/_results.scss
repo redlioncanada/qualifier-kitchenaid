@@ -379,3 +379,11 @@
 		color: #7f7f7f;
 	}
 }
+
+@media(max-width:580px) {
+	li.result {
+		.btn {
+			padding: 3px 8px !important;
+		}
+	}
+}
