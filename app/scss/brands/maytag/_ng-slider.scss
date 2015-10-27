@@ -12,7 +12,7 @@
 }
 
 div.people1 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-1.png') no-repeat !important;
+    background: url('../img/family-1.png') !important;
 	background-size: contain !important;
 	width: 28px;
 	height: 50px;
@@ -21,7 +21,7 @@ div.people1 .jslider .jslider-value:not(.jslider-value-to) {
 }
 
 div.people2 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-2.png') no-repeat !important;
+    background: url('../img/family-2.png') !important;
 	background-size: contain !important;
 	width: 36px;
 	height: 50px;
@@ -30,7 +30,7 @@ div.people2 .jslider .jslider-value:not(.jslider-value-to) {
 }
 
 div.people3 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-3.png') no-repeat !important;
+    background: url('../img/family-3.png') !important;
 	background-size: contain !important;
 	width: 59px;
 	height: 50px;
@@ -39,20 +39,20 @@ div.people3 .jslider .jslider-value:not(.jslider-value-to) {
 }
 
 div.people4 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-4.png') no-repeat !important;
+    background: url('../img/family-4.png') !important;
 	background-size: contain !important;
-	width: 85px;
+	width: 70px;
 	height: 50px;
 	display: block;
-	margin-left: -40px !important;
+	margin-left: -35px !important;
 }
 div.people5 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-5.png') no-repeat !important;
+    background: url('../img/family-5.png') !important;
 	background-size: contain !important;
-	width: 85px;
+	width: 102px;
 	height: 50px;
 	display: block;
-	margin-left: -46px !important;
+	margin-left: -43.5px !important;
 }
 
 div.people6 .jslider .jslider-value:not(.jslider-value-to) {
@@ -62,35 +62,34 @@ div.people6 .jslider .jslider-value:not(.jslider-value-to) {
 	height: 50px;
 	display: block;
 	margin-left: -63px !important; //opposite as it's the last one
-    margin-right: -55px;
 }
 
 
 div.people1 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 28px;
+	width: 34px;
 	margin-left: -14px !important; // half of width to center it
 }
 
 div.people2 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 36px;
+	width: 42px;
 	margin-left: -18px !important;
 }
 
 div.people3 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 59px;
+	width: 68px;
 	margin-left: -29.5px !important;
 }
 
 div.people4 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 70px;
+	width: 80px;
 	margin-left: -35px !important;
 }
 div.people5 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 85px;
-	margin-left: -40px !important;
+	width: 117px;
+	margin-left: -64.5px !important;
 }
 div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	margin-left: -75px !important;
+	margin-left: -71px !important;
 }
 
 
@@ -129,7 +128,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 	.jslider {
 		cursor: pointer; 
 		display: block; 
-		width: 94.5%; 
+		width: 95%; 
 		height: 1em; 
 		position: relative; 
 		top: 0.6em; 
@@ -195,8 +194,11 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			width: 860px;
 			height: 40px;
 			background: url('../img/slider-bg.png');
-			margin-left: -30px;
+			margin-left: 0px;
 			z-index: 10;
+            background-repeat: no-repeat;
+            background-position-y: 12px;
+            background-size: contain;
 			i { 
 				height: 5px; 
 				position: absolute; 
@@ -399,7 +401,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			top: -30px; 
 			left: 0px; 
 
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 20px;
 		}	
 		.jslider-label-to { 
@@ -438,12 +440,12 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 		}
 		.jslider-scale { 
 			position: relative; 
-			top: 17px;
-			width: 97%;
+			top: 32px;
+			width: 98%;
 			//margin-left: 20px;
 
 			& > :first-child, & > :last-child {
-				border-left: 1px solid #999 !important;
+				border-left: 1px solid #999 !important;;
 			}
 			span { 
 				position: absolute; 
@@ -452,19 +454,18 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 				font-size: 0; 
 			}
 			ins { 
-				font-family: $AG-Bold-Cnd;
+				font-family: $AV-Light;
 				text-transform: uppercase;
-				font-size: 17px; 
+				font-size: 14px; 
 				text-decoration: none; 
 				position: absolute; 
 				left: 0px; 
-				top: 30px;
+				top: 47px;
 				color: #999;
-                letter-spacing: 0.4px;
+
 				width: 200px;
 				left: -100px;
 				text-align: center;
-                line-height: 20px;
 			}
 		}
 		.jslider-label, .jslider-value {
@@ -539,17 +540,17 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 			width: 63px;
 			height: 61px;
 			margin-top: -48px;
-			margin-left: -32px !important;
+			margin-left: -30px !important;
 			display: block;
 			padding-top: 10px;
 			text-align: center;
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 20px;
 			text-transform: uppercase;
 			color: #999;
 			z-index: 5;
 			span {
-				font-family: $AG-Bold-Cnd;
+				font-family: $AV-Light;
 				font-size: 28px;
 				text-transform: uppercase;
 				color: #999;
@@ -792,7 +793,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 // answer.text
 .slider-answer-label {
 	display: inline-block;
-	font-family: $AG-Bold-Cnd;
+	font-family: $AV-Light;
 	font-size: 20px;
 	color: #999;
 	text-transform: uppercase;
@@ -816,10 +817,9 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	//top: -7px;
 	.slider-large-label {
 		@include large-square-label;
-		margin-right: -157px;
-		font-size: 18px;
+		margin-right: -145px;
+		font-size: 24px;
     	z-index: 11;
-        top: 15px;
 	}
 
 	//display: none;
@@ -882,14 +882,13 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	.price-slider {
 		margin-top: 60px;
 		margin-bottom: 20px;
-        width: 609px;
+			width: 609px;
 		.jslider-bg {
 			position: relative; 
-			width: 670px;
+			width: 609px;
 			height: 28px;
 			background: url('../img/slider-results-bg.png');
-			background-size: 100% 100%;
-            background-repeat: no-repeat;
+			background-size: contain;
 		}
 	}
 	.price-slider.pointer-labels {
@@ -903,17 +902,17 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 				width: 63px;
 				height: 61px;
 				margin-top: -48px;
-				margin-left: -32px !important;
+				margin-left: -30px !important;
 				display: block;
 				padding-top: 10px;
 				text-align: center;
-				font-family: $AG-Bold-Cnd;
+				font-family: $AV-Light;
 				font-size: 20px;
 				text-transform: uppercase;
 				color: #999;
 				z-index: 5;
 				span {
-					font-family: $AG-Bold-Cnd;
+					font-family: $AV-Light;
 					font-size: 28px;
 					text-transform: uppercase;
 					color: #999;
@@ -924,7 +923,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	}
 }
 
-[class$="val26"].min26, [class$="val27"].min27, [class$="val28"].min28, [class$="val29"].min29, [class$="val30"].min30, [class$="val31"].min31, [class$="val32"].min32, [class$="val33"].min33, [class$="val34"].min34, [class$="val35"].min35 {
+[class*="val26"].min26, [class*="val27"].min27, [class*="val28"].min28, [class*="val29"].min29, [class*="val30"].min30, [class*="val31"].min31, [class*="val32"].min32, [class*="val33"].min33, [class*="val34"].min34, [class*="val35"].min35 {
 	.jslider-value span {
 		opacity: 0 !important;
 	}
@@ -1087,7 +1086,7 @@ div[ng-class="fr_CA"] {
 	#results div.price-slider.pointer-labels .jslider {
 		div.jslider-value {
 			width: 54px;
-			height: 45px;
+			height: 48px;
 			margin-top: -36px;
 			margin-left: -28px !important;
 

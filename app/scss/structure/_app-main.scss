@@ -1,6 +1,5 @@
 html, body {
 	min-width: 320px;
-	overflow-x: hidden;
 }
 
 .main-content {
@@ -16,25 +15,19 @@ html, body {
 		// padding-bottom: 25px;
 
 		.buttons-top-right-btns {
-			display: block;
-            margin-right: 50px;
-            width: 100%;
-            max-width: 1400px;
-            height: 0px;
-            margin: 0 auto !important;
+			display: inline-block;
+			float: right;
+			margin-right: 50px;
 
 			.share-wrapper {
-                height: 30px;
-                text-align: center;
-                display: inline-block;
-                margin-left: 1px;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 3px;
-                position: relative;
-                float: right;
-                margin-right: 50px;
-            
+				height: 30px;
+				text-align: center;
+				display: inline-block;
+				margin-left: 1px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				position: relative;
 
 				> span {
 					z-index: 3;
@@ -115,10 +108,11 @@ html, body {
 	// Question
 	h2 {
 		text-transform: uppercase;
-		font-size: 31px;
-		margin-top: 0px;
-		margin-bottom: 10px;
-		color: #333333;
+		font-size: 32px;
+		margin: 20px auto 20px auto;
+		color: #ac080f;
+        text-align: center;
+        width: 85%;
 	}
 	// Instructions
 	h3 {
@@ -149,7 +143,8 @@ html, body {
 }
 div.mobile-app-nav-arrows {
 	position: relative;
-	height: 25px;
+	height: 50px;
+	margin-bottom: 10px;
 
 	.btn-next, .btn-prev {bottom: initial;}
 	.btn-next {right: 35px;}
@@ -186,12 +181,12 @@ div.mobile-app-nav-arrows {
 		z-index: 2;
 		top: 33px;
 		width: 100%;
-		background-color: #002e5f;
+		background-color: #ac080f;
 
 		> div {
 			position: absolute;
 			width: 100%;
-			background-color: #002e5f;
+			background-color: #ac080f;
 		}
 
 		.results-menu-tab-wrapper {
@@ -209,7 +204,7 @@ div.mobile-app-nav-arrows {
 		.results-menu-heading {
 			padding: 5px 0;
 			text-align: center;
-			color: #eeeeee;
+			color: #ffffff;
 			font-size: 9pt;
 		}
 
@@ -285,11 +280,9 @@ div.mobile-app-nav-arrows {
 	}
 	.btn-prev {
 		left: 25px;
-        z-index: 10;
 	}
 	.btn-next {
 		right: 25px;
-        z-index: 10;
 	}
 	.btn {
 		padding: 3px 18px;
@@ -330,8 +323,9 @@ div.mobile-app-nav-arrows {
 	.icon-nav-wrap {
 		display: inline-block;
 		float: left;
+        margin: 0 9px;
 		a {
-			/*cursor: pointer;*/
+			cursor: pointer;
 		}
 	}
     .selected {
@@ -342,7 +336,6 @@ div.mobile-app-nav-arrows {
 	.icon-img {
 		max-width: 41px;
 		max-height: 41px;
-        cursor: auto;
 		// &.current {
 		// 	display: none;
 		// }
@@ -351,12 +344,13 @@ div.mobile-app-nav-arrows {
 		// display: none;
 		max-width: 52px;
 		max-height: 53px;
-        cursor: pointer;
 		// &.current {
 		// 	display: inline-block;
 		// }
 	}
+
 }
+
 .mobile-nav {
 	position: absolute;
 	width: 110%;
@@ -364,6 +358,7 @@ div.mobile-app-nav-arrows {
 	left: -10px;
 	z-index: 2;
 }
+
 .picture-3-container {
     .answer-box {
         float: none !important;   
@@ -409,8 +404,8 @@ a.answer-box.picture-4 {
 		}
 
 		a.answer-box.category, a.answer-box.sub-category {
-			margin-left: 20px;
-			margin-right: 20px;
+			margin-left: 10px;
+			margin-right: 10px;
 
 			.category-image img {
 				width: 80%;
@@ -424,7 +419,7 @@ a.answer-box.picture-4 {
 
 		div[ng-controller="SliderCtrl"] {
 			.slider-wrap {
-				/*margin-left: 50px;*/
+				margin-left: 50px;
 			}
 		}
 
@@ -440,9 +435,9 @@ a.answer-box.picture-4 {
 			}
 
 			.slider-large-label {
-				margin-left: -115px;
+				margin-left: -148px;
 				margin-right: initial;
-				top: 72px;
+				top: 75px;
 			}
 
 			.slider-wrap {
@@ -459,12 +454,11 @@ a.answer-box.picture-4 {
 		}
 
 		a.answer-box.checkbox-4, a.answer-box.radio-2, a.answer-box.radio-3, a.answer-box.radio-4 {
-			border-right: 4px solid #999999;
 			width: 445px;
 
 			.label-wrap {
 				left: 72px;
-				max-width: 80%;
+				max-width: 82%;
 			}
 		}
 
@@ -498,7 +492,7 @@ a.answer-box.picture-4 {
 			}
 		}
 
-		a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2 {
+		a.answer-box.picture-3, a.answer-box.picture-2 {
 			width: 290px;
 
 			.select-label-wrap {
@@ -520,15 +514,15 @@ a.answer-box.picture-4 {
         width: 100% !important;   
         
         .answer-box {
-            width: 219px !important;
+            width: 200px !important;
                 
             .img-wrap {
                 width: 100% !important;
                 height: 100% !important;
                 
                 img {
-                    width: 100%;
-                    height: 100%;
+                    width: 96%;
+                    height: 96%;
                 }
             }
             .select-label-wrap {
@@ -572,15 +566,17 @@ a.answer-box.picture-4 {
 			right: 10%;
 		}
 	}
+    }    
 }
 
 @media(max-width:1023px) {
-    .slidey-wrap-all {
-		/*min-height: 586px !important;*/
-	}
     
- .left-tag.no-jslider-value.four.scale-left > div > span > table > tbody > tr > td > div.jslider-scale > span {
-        left: -19px !important;
+    .app-answers {
+        .answer-option {
+            &.category, &.sub-category {
+                margin: 5px 25% !important;
+            }
+        }
     }
 
 	.main {
@@ -647,11 +643,18 @@ a.answer-box.picture-4 {
 	   }
 
 	   .bottom-nav-wrap {width: 100%;}
-	   .bottom-nav-inner {width: inherit;}
+	   .bottom-nav-inner {
+           width: inherit;
+           .bottom-nav-inner-inner {
+               .icon-nav-wrap {
+                    margin: 11px 1px;
+               }
+           }
+        }
     }
     
 	.app-answers .category, .app-answers .sub-category {
-		width: 80px;
+		width: 210px;
 	}
 
 	.app-answers .category img.normal[ng-src="img/start-laundry.png"] {
@@ -674,7 +677,6 @@ a.answer-box.picture-4 {
 	}
 
 	.app-content-main-top-left {
-		width: 87% !important;
 		padding-left: 50px;
 	}
 
@@ -687,7 +689,6 @@ a.answer-box.picture-4 {
 	}
 
 	div.slidey-wrap-all {
-
 		height: 600px;
 		margin-top: initial !important;
 	}
@@ -705,14 +706,14 @@ a.answer-box.picture-4 {
 		position: absolute;
 
 		.slider-large-label {
-			top: -30px !important;
-			margin-right: -13px !important;
+			top: -15px !important;
+			margin-right: 98px !important;
 		}
 	}
 
 	.people-slider {
 		div.jslider-value {
-			left: -100px !important;
+			left: -85px !important;
 			height: 60px !important;
 		}
 	}
@@ -763,6 +764,8 @@ a.answer-box.picture-4 {
 			}
 		}
 	}
+
+
 	.slidey .app-answers, .slidey .answers-main-content.answer-slider, .slidey .answers-main-content.price-slider {
 		width: 100px;
 		height: 500px;
@@ -770,7 +773,7 @@ a.answer-box.picture-4 {
 		.slider-wrap {
 			width: initial;
 			height: inherit;
-			left: -15%;
+			/*left: -45%;*/
 			float: none !important;
 			position: relative;
 		}
@@ -798,8 +801,7 @@ a.answer-box.picture-4 {
 				width: 26px;
 				background: url("../img/slider-bg-vertical.jpg");
 				background-size: contain;
-                background-repeat: no-repeat;
-				margin-left: -18px;
+				margin-left: -17px;
 			}
 
 			.jslider-scale {
@@ -809,7 +811,7 @@ a.answer-box.picture-4 {
 
 				span {
 					border-left: none !important;
-					left: 35px;
+					left: 20px;
 					width: 10px;
 					display: table;
 				}
@@ -819,7 +821,7 @@ a.answer-box.picture-4 {
 					left: 20px;
 					width: 90px;
 					text-align: left;
-					font-size: 8pt;
+					font-size: 10pt;
 					height: 45px;
 					display: table-cell;
 					vertical-align: middle;
@@ -879,6 +881,7 @@ a.answer-box.picture-4 {
 			
 			.label-text {
 				font-size: 14px !important;
+				max-width: 87px !important;
 			}
 		}
 
@@ -896,17 +899,17 @@ a.answer-box.picture-4 {
 		}
 	}
 
-	a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2 {
+	a.answer-box.picture-3, a.answer-box.picture-2 {
 		width: 280px;
 	}
 
-	a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4 {
+	a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4 {
 		float: none;
 		margin: 14px auto;
 		display: block !important;
 	}
 
-	a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2 {
+	a.answer-box.picture-3, a.answer-box.picture-2 {
 		.img-wrap {
 			height: initial;
 		}
@@ -929,25 +932,26 @@ a.answer-box.picture-4 {
 		float: initial !important;
 	}
     .picture-4-container {
-        width: 280px !important;   
+        width: 200px !important;   
         
         .answer-box {
-            width: 100% !important;
-
+            width: 200px !important;
+            margin: 5px 0 !important;
+                
             .img-wrap {
                 width: 100% !important;
                 height: 100% !important;
                 
                 img {
-                    width: 100%;
-                    height: 100%;
+                    width: 96%;
+                    height: 96%;
                 }
             }
             .select-label-wrap {
                 width: 100% !important;
                 
                 .select-icon {
-                    top: initial;   
+                    top: 132px !important;   
                 }
             }
         }
@@ -984,11 +988,21 @@ a.answer-box.picture-4 {
 @media(max-width:750px) {
 	.app-content-main-top-left {
 		h2 {font-size: 18pt;}
-		h3 {font-size: 10pt;}
+		h3 {font-size: 11pt;}
 	}
 }
 
 @media(max-width:580px) {
+    .app-answers {
+        .answer-option {
+            &.category, &.sub-category {
+                margin: 5px auto 0 auto !important;
+            }
+        .category-name {
+			font-size: 14px !important;
+		  }
+        }
+    }
 	.slidey {
 		width: 80% !important;
 		min-width: 100% !important;
@@ -996,12 +1010,16 @@ a.answer-box.picture-4 {
         /*min-height: 370px !important;*/
 	}
 
+	div.slidey-wrap-all {
+		height: 770px;
+	}
+
 	div.slidey .app-answers, .slidey .answers-main-content.answer-slider, .slidey .answers-main-content.price-slider {
-		height: 270px;
+		height: 330px;
 
 		.jslider {
 			div.jslider-pointer {
-				left: 11.5px;
+				left: 13px;
 				width: 43px;
 				height: 37px;
 				background: url("../img/slider-pointer-small.png") !important;
@@ -1066,31 +1084,24 @@ a.answer-box.picture-4 {
 	}
 
 	.slider-large-label-wrap .slider-large-label {
-		font-size: 11pt !important;
-        color: #999C9C !important;
-        top: -30px !important;
-        margin-right: -13px !important;
+		font-size: 18px !important;
 	}
 
 	.answers-category {
 		.answer-box {
 			width: 100% !important;
-			background-color: #f6f6f6;
 
 			.category-image {
-				width: 19%;
+				width: 60%;
 				margin: 0 auto;
 				position: relative;
 
 				.normal, .hover {
-					width: 138%;
 					bottom: 0 !important;
-					margin-left: -14px;
 				}
 
 				.normal {
 					z-index: 2;
-					position: relative;
 				}
 
 				.hover {
@@ -1100,7 +1111,6 @@ a.answer-box.picture-4 {
 			}
 
 			.category-name {
-				color: #969696 !important;
 				text-transform: uppercase;
 			}
 		}
@@ -1111,8 +1121,7 @@ a.answer-box.picture-4 {
 	.app-answers {
 		.answer-option {
 			&.category, &.sub-category {
-				min-height: 200px;
-                overflow: hidden;
+				min-height: 155px;
 			}
 		}
 	}
@@ -1121,7 +1130,7 @@ a.answer-box.picture-4 {
 		width: 60px;
 		display: block !important;
 		margin: 10px auto !important;
-		padding: 5px 0;
+		padding: 0;
 	}
 
 
@@ -1130,10 +1139,7 @@ a.answer-box.picture-4 {
 	}
 
 	.app-content-main-top-left {
-		/*min-height: 62px !important;*/
-		h2 {
-			font-size: 11pt;
-		}
+		h2 {font-size: 12pt;}
 	}
 
 	a.answer-box.boxes-icon-5 {
@@ -1155,9 +1161,8 @@ a.answer-box.picture-4 {
 	}
 
 	a.answer-box.checkbox-4, a.answer-box.radio-2, a.answer-box.radio-3, a.answer-box.radio-4 {
-		width: 90%;
+		width: 98%;
 		height: 55px;
-		border-right: 4px solid #999999;
 		margin: 6px auto;
 
 		.selected .select-icon {
@@ -1180,7 +1185,7 @@ a.answer-box.picture-4 {
 
 		.label-wrap .label-text {
 			font-size: 14px;
-			line-height: 12px;
+			line-height: 16px;
 		}
 	}
 
@@ -1225,15 +1230,12 @@ a.answer-box.picture-4 {
 	div.bottom-nav-intructions {
 		position: absolute;
 		width: 100%;
-		top: 9px;
-		height: 1px;
+		top: 13px;
 	}
 
 	div.mobile-app-nav-arrows {
-		height: 0px; 
-		
 		a.btn-prev img, a.btn-next img {
-			height: 25px;
+			height: 20px;
 		}
 
 		a.btn-prev {
@@ -1258,28 +1260,21 @@ a.answer-box.picture-4 {
         }
         .label-wrap {
             .label-text {
-                font-size: 11px !important;   
+                font-size: 11px;   
             }
         }
 	}
-    a.answer-box.radio-2 {
-        margin: 1px auto;   
-    }
     .regular-2-container {
-        width: 100% !important;
+        width: 90% !important;
     }
-    a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4, .boxes-icon-split {
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-    a.answer-box.checkbox-4 {
-        margin-top: 2.9px;
-        margin-bottom: 2.9px;
+    a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4, .boxes-icon-split {
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
     .boxes-icon-5-container {
         width: 320px;
     }
-    a.answer-box.boxes-icon-5 {
+        a.answer-box.boxes-icon-5 {
         width: 105px;
         height: 125px;
         background-size: cover;
@@ -1289,6 +1284,9 @@ a.answer-box.picture-4 {
             .normal, .hover {
                 top: -20px;
                 left: -10px;
+                -ms-transform: scale(0.7);
+                -o-transform: scale(0.7);
+                -moz-transform: scale(0.7);
                 -webkit-transform: scale(0.7);
                 transform: scale(0.7);
             }
@@ -1297,6 +1295,9 @@ a.answer-box.picture-4 {
         .select-icon {
             top: 90px;
             left: 7px;
+            -ms-transform: scale(0.8);
+            -o-transform: scale(0.8);
+            -moz-transform: scale(0.8);
             -webkit-transform: scale(0.8);
             transform: scale(0.8);
         }
@@ -1305,58 +1306,64 @@ a.answer-box.picture-4 {
                 top: 4px;
                 left: -8px;
                 font-size: 10px !important;
+                max-width: 87px !important;
             }
         }
     }
-    a.answer-box.picture-4, a.answer-box.picture-3 {
-        width: 155px !important;
-        background-size: cover;
-        margin-top: 1px;
-        margin-bottom: 0px;
-        margin-right: auto !important;
-        margin-left: auto !important;
-        
-        .select-label-wrap {
-            height: 30px;
+    .price-slider {
+        height: 30px !important;
+    }
+    .ng-binding::first-letter {
+        text-transform: capitalize;        
+    }
+    // Ranking
+    .ranking {
+        text-align: left;
+        width: 98%;
+        ul {
+            list-style: none;
+            padding-left: 0;
         }
-        
-        .select-icon {
-            top: 75px;
-            left: 4px;
-            -webkit-transform: scale(0.65);
-            transform: scale(0.65);
+        .rank-numbers-list {
+            display: inline-block;
+            height: 100% !important;
+            width: 13%;
+            text-align: center;
+            li {
+                .rank-number-wrap {
+                    height: 41px;
+                    width: 41px;
+                    span {
+                        top: 3px;
+                        color: #9f9f9f;
+                    }
+                }
+            }
+        }
+        .rank-answers-list {
+            display: inline-block;
+            padding-left: 0;
+            height: 100% !important;
+            position: relative;
+            top: -13px;
+            width: 85%;
+            li {
+                height: 42px !important;
+                margin-bottom: 0;
+                margin: 0px 2px 4.1px 1px;
+                width: 100%;
+            }
         }
         .label-wrap {
-            width: 100%;
-            
-            .label-text {
-                top: 8px;
-                left: -31px;
-                font-size: 10px !important;
-            }
+            display: inline-block;
+            width: 100% !important;
+            height: 41px !important;
+            background-position: 0 0 !important;
+            background-size: contain 100% !important;
         }
-    }
-    .boxes-icon-2-container {
-        a.answer-box {
-            width: 143px;
-            height: 159px;
-            background-size: 100% 100%;
-            
-            .select-icon {
-                top: 121px;
-                left: 7px;
-                -webkit-transform: scale(0.65);
-                transform: scale(0.65);
-             } 
-        }
-    }
-    a.answer-box.picture-4 {
-        .select-label-wrap {
-            background-size: cover;
-            
-                .select-icon {
-                    top: 70px !important;
-                } 
+        .label-text {
+            top: 25% !important;
+            font-size: 9px !important
         }
     }
     .price-slider {
@@ -1444,7 +1451,7 @@ a.answer-box.picture-4 {
 			margin: 0;
 			padding: 0;
 			text-align: center;
-			margin-top: 5px;
+			margin-top: 10px;
 		}
  	}
  	.print-page-content-wrapper {

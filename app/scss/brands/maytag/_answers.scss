@@ -79,9 +79,9 @@
 	text-align: left;
 }
 .label-text {
-	font-family: $AG-Bold-Cnd;
+	font-family: $AV-Light;
 	font-size: 17px;
-	color: #444;
+	color: #fff;
 	position: relative;
 	line-height: 17px;
 }
@@ -142,17 +142,20 @@
 		display: block;
 		width: 532px;
 		height: 70px;
-
+        border-radius: 6px;
 		background: url('../img/radio-bg.png');
 		background-size: cover;
 		margin-bottom: 10px;
 		@include boxshadow;
 		.label-wrap {
 			position: absolute;
-			left: 88px;
-			max-width: 80%;
+			left: 70px;
+			max-width: 83%;
+            width: 83%; 
+            text-align: center; 
 			display: table;
 			height: 70px;
+            text-transform: uppercase;
 
 			.label-text {
 				line-height: 20px;
@@ -197,10 +200,13 @@
 		float: left;
 		.label-wrap {
 			position: absolute;
-			left: 88px;
-			max-width: 80%;
+			left: 70px;
+			max-width: 83%;
+            width: 83%;
+            text-align: center; 
 			display: table;
 			height: 70px;
+            text-transform: uppercase;
 
 			.label-text {
 				line-height: 20px;
@@ -224,7 +230,7 @@
 			color: #ffffff;
 			font-size: 16px;
 			line-height: 16px;
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 		}
 	}
 	
@@ -243,6 +249,7 @@
 		background-size: cover;
 		display: block;
 		margin-bottom: 10px;
+        border-radius: 3px;
 		@include boxshadow;
 		// .select-icon {
 		// 	top: 19px;
@@ -251,10 +258,13 @@
 
 		.label-wrap {
 			position: absolute;
-			left: 88px;
-			max-width: 80%;
+			left: 70px;
+			max-width: 83%;
+            width: 83%;
+            text-align: center; 
 			display: table;
 			height: 70px;
+            text-transform: uppercase;
 
 			.label-text {
 				line-height: 20px;
@@ -283,12 +293,16 @@
 		background-size: cover;
 		display: block;
 		margin-bottom: 10px;
+        border-radius: 3px;
 		@include boxshadow;
 		.label-wrap {
 			position: absolute;
 			top: 22px;
 			left: 100px;
-			max-width: 80%;
+			max-width: 83%;
+            width: 83%;
+            text-align: center; 
+            text-transform: uppercase;
 
 			.label-text {
 				height: 70px;
@@ -362,7 +376,7 @@
 			display: block;
 			width: 277px;
 			height: 50px;
-			background: url('../img/boxes-picture-bg-bottom.png');
+			background: url('../img/boxes-picture-4-bg-bottom.png');
 			@include boxshadow;
 		}
 		.select-icon {
@@ -380,10 +394,9 @@
 	&.boxes-icon-2, &.boxes-icon-5, &.boxes-icon-split { // + Multiselect with icons - 5 answers
 		// @include make-md-column(6);
 		width: 172px;
-		height: 204px;
+		height: 205px;
 		background: url('../img/boxes-icon-bg-new.png');
 		display: inline-block;
-        background-repeat: no-repeat;
 		@include boxshadow;
 		.icon-wrap {
 			img {
@@ -430,8 +443,8 @@
 		}
 		.label-wrap {
 			position: absolute;
-			bottom: 15px !important;
-			left: 55px;
+			bottom: 15px;
+			left: 57px;
 		}
 		.label-more-wrap {
 			display: inline-block;
@@ -445,7 +458,7 @@
 			color: #ffffff;
 			font-size: 16px;
 			line-height: 16px;
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 		}
 	}
 	
@@ -539,14 +552,23 @@
 	}
 	ul {
 		list-style: none;
+        padding-left: 0;
 	}
 	.rank-numbers-list {
 		display: inline-block;
+        height: 100% !important;
 	}
 	.rank-answers-list {
 		display: inline-block;
+        padding-left: 0;
+        height: 100% !important;
+        position: relative;
+        top: -13px;
 		li {
-			height: 61px;
+			height: 62px;
+            margin-bottom: 0;
+            margin: 0px 2px 4.1px 1px;
+            text-align: center;
 		}
 	}
 	.rank-number-wrap {
@@ -557,13 +579,19 @@
 	}
 	.label-wrap {
 		display: inline-block;
-		width: 532px;
-		height: 49px;
-		background: url('../img/ranking-bg.png');
+		width: 566px;
+		height: 61px;
+		background: url('../img/ranking-bg.png') no-repeat;
+        background-position: 0 -2px;
+        background-size: cover;
+        border-radius: 6px;
+        padding-left: 0 !important;
+        text-align: center;
 	}
 	.label-text {
-		top: 10px;
-		left: 80px;
+		top: 17px;
+        text-transform: uppercase;
+        text-align: center;
 	}
 	
 }
@@ -625,7 +653,7 @@ div[ng-class="fr_CA"] {
 			display: table;
 		}
 		.label-text {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 17px;
 			color: #272727;
 			position: relative;

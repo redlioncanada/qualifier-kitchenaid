@@ -1,7 +1,3 @@
-#results > div > desktop-results > ul > li:nth-child(2) > div > div > div.product-img-wrap > img {
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
-}
 header.header-desktop {
 	display: block;
 }
@@ -12,12 +8,12 @@ header.header-desktop {
 }
 
 .app-content-main-top {
-	width: 1160px;
+	width: 100%;
 	margin: 0 auto;
-	height: 128px;
+	height: 200px;
 
 	h2, h3 {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 	}
 	h2 {
 		color: #292929;
@@ -30,15 +26,16 @@ header.header-desktop {
 	h3 {
 		color: #7e7e7e;
 		letter-spacing: 1px;
+        text-align: center;
 	}
 	.app-content-main-top-left {
-		width: 80%;
-		padding-left: 20px;
+		width: 100%;
+		padding-left: 0;
 		padding-right: 0;
 	}
 	.app-content-main-top-right {
 		.btn {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 21px;
 			// Bootstrap mixin
 			@include button-variant(#ffffff, #002e58, #002e58);
@@ -47,20 +44,22 @@ header.header-desktop {
 	}
 	.extra-info-wrap {
 		display: block;
+        text-align: center;
 		.btn-wrap {
 			display: inline-block;
+            width: 100%;
+            margin: 0 auto;
 		}
 		.tooltip {
 			opacity: 1;
 		}
 		.btn-icon {
-			background: #002e58;
+			background: #ac080f;
 			border-radius: 24px;
 			width: 24px;
 			height: 24px;
 			text-align: center;
 			display: inline-block;
-            cursor: pointer;
 			span {
 				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				color: #fff;
@@ -77,7 +76,7 @@ header.header-desktop {
 		.btn-text {
 			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 			color: #000;
-			font-size: 9px;
+			font-size: 8px;
 			position: relative;
 			left: 5px;
 			bottom: 9px;
@@ -88,16 +87,16 @@ header.header-desktop {
 
 .tooltip {
 	&.top .tooltip-arrow {
-		border-top-color: #002e5f;
+		border-top-color: #ac080f;
 	}
 	&.bottom .tooltip-arrow {
-		border-bottom-color: #002e5f;
+		border-bottom-color: #ac080f;
 	}
 	&.left .tooltip-arrow {
-		border-right-color: #002e5f;
+		border-right-color: #ac080f;
 	}
 	&.right .tooltip-arrow {
-		border-left-color: #002e5f;
+		border-left-color: #ac080f;
 	}
 	.tooltip-arrow {
 		margin-left: -5px;
@@ -106,7 +105,7 @@ header.header-desktop {
 	}
 	.tooltip-inner {
 		color: #fff;
-		background: #002e5f;
+		background: #ac080f;
 		font-size: 11px;
 		line-height: 13px;
 		padding: 30px 15px;
@@ -116,15 +115,17 @@ header.header-desktop {
 }
 
 
+
 .app-answers {
 	float: left;
 	.answer-option {
 		&.sub-category {
-			margin-top: 100px;
+			margin-top: 0px;
 		}
 		&.category, &.sub-category {
 			margin-left: 45px;
 			margin-right: 45px;
+            max-width: 250px;
 		}
 		&:hover {
 			text-decoration: none;
@@ -192,9 +193,20 @@ header.header-desktop {
 			font-size: 19px;
 			text-align: center;
 			width: 100%;
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 		}
 	}
+    .sub-category {
+        .category-name {
+            margin: 20px auto 0 auto;
+            display: block;
+            color: #000000;
+            font-size: 19px;
+            text-align: center;
+            width: 120px;
+            font-family: $AV-Light;
+        }
+    }
 }
 
 .app-content-main-bottom {
@@ -217,7 +229,7 @@ header.header-desktop {
 		}
 	}
 	.btn {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 21px;
 		// Bootstrap mixin
 		@include button-variant(#ffffff, #7d7d7d, #7d7d7d);
@@ -241,13 +253,13 @@ header.header-desktop {
 		background: url('../img/matches-bg.png') center center no-repeat;
 	}	
 	.results-count-number {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 27px;
 		color: #414141;
 		line-height: 27px;
 	}
 	.results-count-label {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 14px;
 		color: #414141;
 	}
@@ -258,7 +270,7 @@ header.header-desktop {
 	}
 
 	.btn-compare {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 21px;
 		@include button-variant(#ffffff, #002e58, #002e58);
 		padding: 3px 18px;
@@ -267,14 +279,34 @@ header.header-desktop {
 		float: right;
 		margin-top: 20px;
 	}
-	
+	.buttonnav-mobile {
+   		width: 100%;
+   		text-transform: uppercase;
+   		margin: 40px 0 15px 0;
+
+   		div {
+   			color: white;
+   			background-color: #ac080f;
+   			height: 30px;
+   			line-height: 30px;
+   			margin: 0 auto;
+   			position: relative;
+   			top: 5px;
+   			font-family: $AV-Light;	   		
+   		}
+
+   		.backtoresults-mobile div {
+   			margin-bottom: 4px;
+   		}
+
+   }
    div.startover-mobile {
    		margin: 5px 0 15px 0;
    }
 
 	.backtoresults-btn-wrap {
 		display: inline-block;
-	    border-left: solid 1px #002e58;
+	    border-left: solid 1px #ccc;
 	    padding-left: 20px;
 	    margin-left: 20px;
 		//position: absolute;
@@ -283,15 +315,16 @@ header.header-desktop {
 		text-align: center;	   
 		float: right; 
 		.btn-backtoresults {
-			font-family: $AG-Bold-Cnd;
-			@include button-variant(#ffffff, #002e58, #002e58);
-			width: 44px;
-			height: 40px;
-			font-size: 10px;
+			font-family: $AV-Light;
+			@include button-variant(#ac080f, #fff, #ac080f);
+            border-radius: 50%;
+			width: 45px;
+			height: 45px;
+			font-size: 8px;
 			text-align: center;
 			//padding: 3px 18px;
 			padding-left: 5px;
-		    padding-top: 10px;
+		    padding-top: 14px;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
@@ -299,7 +332,7 @@ header.header-desktop {
 	}
 	.startover-btn-wrap {
 		display: inline-block;
-	    border-left: solid 1px #002e58;
+	    border-left: solid 1px #ccc;
 	    padding-left: 20px;
 	    margin-left: 20px;
 		//position: absolute;
@@ -308,14 +341,15 @@ header.header-desktop {
 		text-align: center;	 
 		float: right; 
 		.btn-startover {
-			font-family: $AG-Bold-Cnd;
-			@include button-variant(#ffffff, #002e58, #002e58);
-			width: 40px;
-			height: 40px;
-			font-size: 12px;
+			font-family: $AV-Light;
+			@include button-variant(#ac080f, #fff, #ac080f);
+            border-radius: 50%;
+			width: 45px;
+			height: 45px;
+			font-size: 10px;
 			//padding: 3px 18px;
 			padding-left: 6px;
-		    padding-top: 8px;
+		    padding-top: 12px;
 		    text-align: center;
 		    line-height: 1;
 			line-spacing: 1;
@@ -350,6 +384,7 @@ header.header-desktop {
 //popover styles
 .popover-title {
 	text-transform: uppercase;
+	border-bottom: 1px solid #FFF;
 }
 .popover {
 	border: 0;
@@ -357,7 +392,7 @@ header.header-desktop {
 	margin-top: -4px !important;
 
 	* {
-		font-size: 11px;
+		font-size: 9px;
 		color: #FFF;
 	}
 }
@@ -464,12 +499,14 @@ header.header-desktop {
 			margin-top: 68px;
 		}
 	}
+
+
 }
 
 .slidey.animateLeft {
 	&.ng-hide-remove {
-		transition: all ease-in-out 1s, padding-top 1ms;
-		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
+		transition: all ease-in-out 1s;
+		-webkit-transition: all ease-in-out 1s;
 	    transform: translateX(200%);
 	    -webkit-transform: translateX(200%);
 	    opacity: 0;
@@ -481,8 +518,8 @@ header.header-desktop {
 	}
 
 	&.ng-hide-add {
-		transition: all ease-in-out 1s, padding-top 1ms;
-		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
+		transition: all ease-in-out 1s;
+		-webkit-transition: all ease-in-out 1s;
 	    transform: translateX(0%);
 	    -webkit-transform: translateX(0%);
 	    opacity: 1;
@@ -496,8 +533,8 @@ header.header-desktop {
 
 .slidey.animateRight {
 	&.ng-hide-remove {
-		transition: all ease-in-out 1s, padding-top 1ms;
-		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
+		transition: all ease-in-out 1s;
+		-webkit-transition: all ease-in-out 1s;
 	    transform: translateX(-200%);
 	    -webkit-transform: translateX(-200%);
 	    opacity: 0;
@@ -509,8 +546,8 @@ header.header-desktop {
 	}
 
 	&.ng-hide-add {
-		transition: all ease-in-out 1s, padding-top 1ms;
-		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
+		transition: all ease-in-out 1s;
+		-webkit-transition: all ease-in-out 1s;
 	    transform: translateX(0%);
 	    -webkit-transform: translateX(0%);
 	    opacity: 1;
@@ -551,7 +588,7 @@ div[ng-class="fr_CA"] {
 
 .print-page {
 	* {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		color: #002e62;
 	}
 
@@ -561,7 +598,7 @@ div[ng-class="fr_CA"] {
 
 	.print-page-callout .print-page-title {
 		.sku {
-			color: #AAA;
+			color: #CCC;
 		}
 	}
 
@@ -574,7 +611,7 @@ div[ng-class="fr_CA"] {
 		}
 
 		ul {
-			font-family: $AG-Cnd;
+			font-family: $AV-Light;
 
 			li {
 				border-bottom: 1px dashed #002e62;
@@ -590,6 +627,11 @@ div[ng-class="fr_CA"] {
 /* Added by Jacoub Bondre Sept 8th 2015 */
 /* If time allots lets refactor progress bar styles into its own .scss file */
 @media(max-width:1023px) {
+    .sub-category {
+        .category-name {
+            margin: 8px auto 20px auto !important;
+        }
+    }
 	header.header-desktop {
 		display: none;
 	}
@@ -610,7 +652,7 @@ div[ng-class="fr_CA"] {
             color: #8b8b8b;
             text-transform: uppercase;
             padding-bottom: 40px;
-            font-family: $AG-Bold-Cnd;
+            font-family: $AV-Light;
             padding-top: 5px;
         }
     }
@@ -619,18 +661,12 @@ div[ng-class="fr_CA"] {
 		display: none !important;
 	}
     .mobile-results-nav li:nth-child(2) img {
-        -webkit-transform:scale(1.2);
         transform:scale(1.2);
+        margin-bottom: 10px;
         letter-spacing: .2px;
-        padding: 3% 8% 12% 8% !important;
     }
     .mobile-results-nav li:nth-child(odd) span {
-        font-family: 'Akzidenz Grotesk Condensed' !important;
         letter-spacing: .2px;
-    }
-    .mobile-results-nav li span {
-        font-size: 12px !important;
-        margin-top: 2px !important;
     }
     #results .mobile-results-nav li .active:after{
         content: " ";
@@ -638,15 +674,19 @@ div[ng-class="fr_CA"] {
         height: 22px;
         width: 10px;
         margin: 25px 0 0 0;
+        -ms-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
         -webkit-transform: translate(-50%, 0%);
         transform: translate(-50%, 0%);
         border-style: solid;
         border-color: transparent;
-        border-top-color: #002e5f;
+        border-top-color: #ac080f;
         border-width: 10px;
         left: 50%;  
     }  
     .active {
+        font-size: 12px;
         width: 80%;
         margin: 0 auto;
     }
