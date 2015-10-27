@@ -12,7 +12,7 @@
 }
 
 div.people1 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-1.png') !important;
+    background: url('../img/family-1.png') no-repeat !important;
 	background-size: contain !important;
 	width: 28px;
 	height: 50px;
@@ -21,7 +21,7 @@ div.people1 .jslider .jslider-value:not(.jslider-value-to) {
 }
 
 div.people2 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-2.png') !important;
+    background: url('../img/family-2.png') no-repeat !important;
 	background-size: contain !important;
 	width: 36px;
 	height: 50px;
@@ -30,7 +30,7 @@ div.people2 .jslider .jslider-value:not(.jslider-value-to) {
 }
 
 div.people3 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-3.png') !important;
+    background: url('../img/family-3.png') no-repeat !important;
 	background-size: contain !important;
 	width: 59px;
 	height: 50px;
@@ -39,20 +39,20 @@ div.people3 .jslider .jslider-value:not(.jslider-value-to) {
 }
 
 div.people4 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-4.png') !important;
+    background: url('../img/family-4.png') no-repeat !important;
 	background-size: contain !important;
-	width: 70px;
+	width: 85px;
 	height: 50px;
 	display: block;
-	margin-left: -35px !important;
+	margin-left: -40px !important;
 }
 div.people5 .jslider .jslider-value:not(.jslider-value-to) {
-    background: url('../img/family-5.png') !important;
+    background: url('../img/family-5.png') no-repeat !important;
 	background-size: contain !important;
-	width: 102px;
+	width: 85px;
 	height: 50px;
 	display: block;
-	margin-left: -43.5px !important;
+	margin-left: -46px !important;
 }
 
 div.people6 .jslider .jslider-value:not(.jslider-value-to) {
@@ -62,34 +62,35 @@ div.people6 .jslider .jslider-value:not(.jslider-value-to) {
 	height: 50px;
 	display: block;
 	margin-left: -63px !important; //opposite as it's the last one
+    margin-right: -55px;
 }
 
 
 div.people1 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 34px;
+	width: 28px;
 	margin-left: -14px !important; // half of width to center it
 }
 
 div.people2 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 42px;
+	width: 36px;
 	margin-left: -18px !important;
 }
 
 div.people3 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 68px;
+	width: 59px;
 	margin-left: -29.5px !important;
 }
 
 div.people4 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 80px;
+	width: 70px;
 	margin-left: -35px !important;
 }
 div.people5 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	width: 117px;
-	margin-left: -64.5px !important;
+	width: 85px;
+	margin-left: -40px !important;
 }
 div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
-	margin-left: -71px !important;
+	margin-left: -75px !important;
 }
 
 
@@ -128,7 +129,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 	.jslider {
 		cursor: pointer; 
 		display: block; 
-		width: 95%; 
+		width: 94.5%; 
 		height: 1em; 
 		position: relative; 
 		top: 0.6em; 
@@ -194,11 +195,8 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			width: 860px;
 			height: 40px;
 			background: url('../img/slider-bg.png');
-			margin-left: 0px;
+			margin-left: -30px;
 			z-index: 10;
-            background-repeat: no-repeat;
-            background-position-y: 12px;
-            background-size: contain;
 			i { 
 				height: 5px; 
 				position: absolute; 
@@ -401,7 +399,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			top: -30px; 
 			left: 0px; 
 
-			font-family: $AV-Light;
+			font-family: $AG-Bold-Cnd;
 			font-size: 20px;
 		}	
 		.jslider-label-to { 
@@ -440,12 +438,12 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 		}
 		.jslider-scale { 
 			position: relative; 
-			top: 32px;
-			width: 98%;
+			top: 17px;
+			width: 97%;
 			//margin-left: 20px;
 
 			& > :first-child, & > :last-child {
-				border-left: 1px solid #999 !important;;
+				border-left: 1px solid #999 !important;
 			}
 			span { 
 				position: absolute; 
@@ -454,18 +452,19 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 				font-size: 0; 
 			}
 			ins { 
-				font-family: $AV-Light;
+				font-family: $AG-Bold-Cnd;
 				text-transform: uppercase;
-				font-size: 14px; 
+				font-size: 17px; 
 				text-decoration: none; 
 				position: absolute; 
 				left: 0px; 
-				top: 47px;
+				top: 30px;
 				color: #999;
-
+                letter-spacing: 0.4px;
 				width: 200px;
 				left: -100px;
 				text-align: center;
+                line-height: 20px;
 			}
 		}
 		.jslider-label, .jslider-value {
@@ -540,17 +539,17 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 			width: 63px;
 			height: 61px;
 			margin-top: -48px;
-			margin-left: -30px !important;
+			margin-left: -32px !important;
 			display: block;
 			padding-top: 10px;
 			text-align: center;
-			font-family: $AV-Light;
+			font-family: $AG-Bold-Cnd;
 			font-size: 20px;
 			text-transform: uppercase;
 			color: #999;
 			z-index: 5;
 			span {
-				font-family: $AV-Light;
+				font-family: $AG-Bold-Cnd;
 				font-size: 28px;
 				text-transform: uppercase;
 				color: #999;
@@ -663,6 +662,17 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	.jslider-scale {
 		& > :nth-child(2), & > :nth-child(3), & > :nth-child(4) {
 			border-left: 1px solid #999 !important;
+		}
+	}
+}
+
+.slider-labels.seven {
+
+	.jslider-scale {
+		& > span {border-left: 1px solid #999 !important;}
+
+		& > :nth-child(2), & > :nth-child(4), & > :nth-child(6) {
+			height: 15px;
 		}
 	}
 }
@@ -782,7 +792,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 // answer.text
 .slider-answer-label {
 	display: inline-block;
-	font-family: $AV-Light;
+	font-family: $AG-Bold-Cnd;
 	font-size: 20px;
 	color: #999;
 	text-transform: uppercase;
@@ -806,9 +816,10 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	//top: -7px;
 	.slider-large-label {
 		@include large-square-label;
-		margin-right: -145px;
-		font-size: 24px;
+		margin-right: -157px;
+		font-size: 18px;
     	z-index: 11;
+        top: 15px;
 	}
 
 	//display: none;
@@ -836,6 +847,17 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	display: none;
 }
 
+.scale-left .vertical {
+	.jslider-scale {
+		margin-left: -45px;
+
+		span ins {
+			margin-left: -116px !important;
+			text-align: right !important;
+		}
+	}
+}
+
 .last-answer-active {
 	.jslider-value {
 		right: -32px !important;
@@ -849,18 +871,25 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	}
 }
 
+.answer-slider.no-jslider-value {
+	.jslider .jslider-value {
+		display: none !important;
+	}
+}
+
 // Results Page
 #results {
 	.price-slider {
 		margin-top: 60px;
 		margin-bottom: 20px;
-			width: 609px;
+        width: 609px;
 		.jslider-bg {
 			position: relative; 
-			width: 609px;
+			width: 670px;
 			height: 28px;
 			background: url('../img/slider-results-bg.png');
-			background-size: contain;
+			background-size: 100% 100%;
+            background-repeat: no-repeat;
 		}
 	}
 	.price-slider.pointer-labels {
@@ -874,17 +903,17 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 				width: 63px;
 				height: 61px;
 				margin-top: -48px;
-				margin-left: -30px !important;
+				margin-left: -32px !important;
 				display: block;
 				padding-top: 10px;
 				text-align: center;
-				font-family: $AV-Light;
+				font-family: $AG-Bold-Cnd;
 				font-size: 20px;
 				text-transform: uppercase;
 				color: #999;
 				z-index: 5;
 				span {
-					font-family: $AV-Light;
+					font-family: $AG-Bold-Cnd;
 					font-size: 28px;
 					text-transform: uppercase;
 					color: #999;
@@ -895,13 +924,94 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	}
 }
 
-[class*="val26"].min26, [class*="val27"].min27, [class*="val28"].min28, [class*="val29"].min29, [class*="val30"].min30, [class*="val31"].min31, [class*="val32"].min32, [class*="val33"].min33, [class*="val34"].min34, [class*="val35"].min35 {
+[class$="val26"].min26, [class$="val27"].min27, [class$="val28"].min28, [class$="val29"].min29, [class$="val30"].min30, [class$="val31"].min31, [class$="val32"].min32, [class$="val33"].min33, [class$="val34"].min34, [class$="val35"].min35 {
 	.jslider-value span {
 		opacity: 0 !important;
 	}
 
 	.jslider-value div {
 		opacity: 1 !important;
+	}
+}
+
+/*slider-buttons*/
+.answers-main-content.answer-buttons {
+	padding-top: 40px;
+	font-family: $AG-Bold-Cnd;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.answer-button-wrapper {
+		display: inline-block;
+	}
+
+	.answer-button-wrapper:not(:last-child) {
+		margin-right: 70px;
+	}
+
+	.answer-button {
+		width: 60px;
+		height: 60px;
+		background-color: #e2e2e2;
+		border-radius: 4px;
+		opacity: 0.3;
+		color: #7e7e7e;
+		cursor: default;
+
+		-webkit-box-shadow: inset 0px 0px 18px -2px rgba(0,0,0,0.5);
+		-moz-box-shadow: inset 0px 0px 18px -2px rgba(0,0,0,0.5);
+		box-shadow: inset 0px 0px 18px -2px rgba(0,0,0,0.5);
+	}
+
+	.answer-button.selected {
+		background-color: #67839b;
+		cursor: default;
+		color: white;
+	}
+
+	.answer-button.enabled {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.answer-button-content-wrapper {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		.answer-button-answer {
+			font-size: 14pt;
+			height: 21px;
+		}
+
+		.answer-button-label {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.answer-buttons.label-inches {
+	.answer-button-wrapper:not(:first-child) .answer-button-answer::after {
+		content: ' "';
+		position: absolute;
+		top: 1px;
+	}
+	.answer-button-wrapper:first-child .answer-button-answer {
+		text-transform: uppercase;
+		font-size: initial;
+		padding-top: 3px;
+		font-size: 14px;
 	}
 }
 
@@ -931,10 +1041,27 @@ div[ng-class="fr_CA"] {
 		top: 15px;
 	}
 }
-@media(max-width: 1023px) {
-    #results .content-inner .price-slider-wrap .price-slider .jslider .jslider-bg {
-        margin-left: -30px !important;
-    }
+
+@media(max-width:1023px) {
+	.answers-main-content.answer-buttons {
+		position: absolute;
+		top: -25px;
+		width: 50%;
+		left: 50%;
+		padding-top: 0px;
+
+		li.answer-button-wrapper {
+			margin-right: 0 !important;
+			margin-top: 50px;
+            margin-left: 40px;
+			width: 100%;
+		}
+
+		.answer-button {
+			float: left;
+			margin-left: 45px;
+		}
+	}
 }
 
 @media(max-width: 580px) {
@@ -960,7 +1087,7 @@ div[ng-class="fr_CA"] {
 	#results div.price-slider.pointer-labels .jslider {
 		div.jslider-value {
 			width: 54px;
-			height: 48px;
+			height: 45px;
 			margin-top: -36px;
 			margin-left: -28px !important;
 
@@ -970,4 +1097,15 @@ div[ng-class="fr_CA"] {
 		}
 	}
 
+	div.answers-main-content.answer-buttons {
+		top: -9px;
+
+		li.answer-button-wrapper {
+			margin-top: 1.2px !important;
+            margin-left: 0px !important;
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+		}
+	}
+    
 }

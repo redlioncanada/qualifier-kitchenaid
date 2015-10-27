@@ -12,40 +12,27 @@
 // }
 
 @font-face {
-	font-family: 'Avenir-Black';
-    src: url('../fonts/Avenir-Black.ttf') format('truetype');
+	font-family: 'Akzidenz Grotesk Bold Condensed';
+    src: url('../fonts/AkzidGroStdBolCnd.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-	font-family: 'Avenir-Light';
-    src: url('../fonts/Avenir-Light.ttf') format('truetype');
+	font-family: 'Akzidenz Grotesk Bold';
+    src: url('../fonts/AkzidGroStdBol.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-	font-family: 'Avenir-Medium';
-    src: url('../fonts/Avenir-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-	font-family: 'Avenir-Roman';
-    src: url('../fonts/Avenir-Roman.ttf') format('truetype');
+	font-family: 'Akzidenz Grotesk Condensed';
+    src: url('../fonts/AkzidGroStdCnd.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-$AV-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$AG-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$AV-Black: 'Avenir-Black', $AV-stack;
-$AV-Light: 'Avenir-Light', $AV-stack;
-$AV-Medium: 'Avenir-Medium', $AV-stack;
-$AV-Roman: 'Avenir-Roman', $AV-stack;
-
-* {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-}
+$AG-Bold-Cnd: 'Akzidenz Grotesk Bold Condensed', $AG-stack;
+$AG-Bold: 'Akzidenz Grotesk Bold', $AG-stack;
+$AG-Cnd: 'Akzidenz Grotesk Condensed', $AG-stack;
 

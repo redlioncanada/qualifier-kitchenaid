@@ -3,12 +3,12 @@
 #results {
 	.results-top {
 		h1 {
-			font-family: $AV-Light;
+			font-family: $AG-Bold-Cnd;
 			font-size: 41px;
 			color: #333333;
 		}
 		.results-adjust-desc {
-			font-family: $AV-Light;
+			font-family: $AG-Bold-Cnd;
 			font-size: 23px;
 			line-height: 15px;
 			color: #5c5c5c;
@@ -18,7 +18,7 @@
 
 	h3, h4 {
 		text-transform: uppercase;
-		font-family: $AV-Light;
+		font-family: $AG-Bold-Cnd;
 	}
 	h2, h4 {
 		color: #002e5f;
@@ -31,7 +31,7 @@
 	}
 	li.result {
 		//box-shadow: inset 0px 0px 5px 0px #002e5f;
-		border: 1px solid #b8b8b8;
+		border: 2px solid #002e5f;
 		.product-details {
 			padding-top: 1px;
 		}
@@ -63,16 +63,19 @@
 			position: relative;
 		}
 		.product-name {
-			font-family: $AV-Light;
+			font-family: $AG-Bold-Cnd;
 			font-size: 16px;
-			color: #ac080f; 
+			color: #022d58; 
 			text-transform: uppercase;
 			letter-spacing: 1px;
 		}
 		.product-price-sku-wrap {
-			color: #757575;
+			color: #022d58;
 			text-align: center;
 			font-size: 16px;
+            font-family: "Arial Narrow", Helvetica, Arial, sans-serif;
+            font-weight: 100;
+            letter-spacing: 0.5px;
 			.product-price, .product-sku {
 				display: block;
 				margin: 0 auto;
@@ -95,7 +98,7 @@
 				//padding-top: 25px;
 				h3 {	
 					text-align: center;
-					background-color: #b8b8b8;
+					background-color: #002e5f;
 					padding-top: 10px;
 					padding-bottom: 10px;
 					color: #fff;
@@ -127,12 +130,12 @@
 				// background-image: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 50%);
 			}
 			.product-features-title {
-				font-family: $AV-Light;
+				font-family: $AG-Bold-Cnd;
 				font-size: 16px;
 				color: #757575;
 			}
 			.btn {
-				font-family: $AV-stack;
+				font-family: $AG-stack;
 				font-size: 16px;
 				// Bootstrap mixin
 				@include button-variant(#ffffff, #b7b7b7, #b7b7b7);
@@ -155,6 +158,9 @@
 				.btn-text-email::after {
 					content: '';
 				}
+				.btn-text-startover::after {
+					content: initial !important;
+				}
 			}
 			.btn-text {
 				font-size: 17px;
@@ -163,7 +169,7 @@
 		&:nth-child(2) { // this is for the middle result
 			h3 {	
 				text-align: center;
-				background-color: #b8b8b8;
+				background-color: #002e5f;
 				padding-top: 10px;
 				padding-bottom: 10px;
 				color: #fff;
@@ -172,7 +178,7 @@
 			}
 
 			.product-features-title {
-				font-family: $AV-Light;
+				font-family: $AG-Bold-Cnd;
 				font-size: 20px;
 				color: #4c4c4c;
 			}
@@ -183,7 +189,7 @@
 				}
 			}
 			.btn {
-				font-family: $AV-stack;
+				font-family: $AG-stack;
 				font-size: 16px;
 				// Bootstrap mixin
 				@include button-variant(#ffffff, #b7b7b7, #b7b7b7);
@@ -205,6 +211,9 @@
 				}
 				.btn-text-email img {
 					margin-top: -2px;
+				}
+				.btn-text-startover::after {
+					content: initial !important;
 				}
 			}
 			.result-inner {
@@ -250,7 +259,7 @@
 			margin: 30px auto;
 			height: 1px;
 			width: 77%;
-			background-color: #AAA;
+			border-top: thin #AAA solid;
 		}
 		.sales-feature-spacer.small {
 			margin: 15px auto;
@@ -344,8 +353,8 @@
 
 	}
 	span[ng-bind-html="sf.headline"] {
-		font-family: $AV-Light;
-		color: #ac080f;
+		font-family: $AG-Bold-Cnd;
+		color: #022d58;
 		font-size: 16px;
 		text-transform: none;
 		display: inline-block;
@@ -359,7 +368,7 @@
 	}
 	h4.sales-feature-additional span[ng-bind-html="sf.headline"] {
 		color: #777;
-		font-family: $AV-stack;
+		font-family: $AG-stack;
 		font-size: 7pt;
 		vertical-align: middle;
 	}
@@ -374,8 +383,16 @@
 .product-colour-picker-wrap {
 	text-align: center;
 	span {
-		font-family: $AV-Light;
+		font-family: $AG-Bold-Cnd;
 		text-transform: uppercase;
 		color: #7f7f7f;
+	}
+}
+
+@media(max-width:580px) {
+	li.result {
+		.btn {
+			padding: 3px 8px !important;
+		}
 	}
 }

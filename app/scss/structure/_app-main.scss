@@ -1,5 +1,6 @@
 html, body {
 	min-width: 320px;
+	overflow-x: hidden;
 }
 
 .main-content {
@@ -15,19 +16,25 @@ html, body {
 		// padding-bottom: 25px;
 
 		.buttons-top-right-btns {
-			display: inline-block;
-			float: right;
-			margin-right: 50px;
+			display: block;
+            margin-right: 50px;
+            width: 100%;
+            max-width: 1400px;
+            height: 0px;
+            margin: 0 auto !important;
 
 			.share-wrapper {
-				height: 30px;
-				text-align: center;
-				display: inline-block;
-				margin-left: 1px;
-				-webkit-border-radius: 3px;
-				-moz-border-radius: 3px;
-				border-radius: 3px;
-				position: relative;
+                height: 30px;
+                text-align: center;
+                display: inline-block;
+                margin-left: 1px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                position: relative;
+                float: right;
+                margin-right: 50px;
+            
 
 				> span {
 					z-index: 3;
@@ -108,11 +115,10 @@ html, body {
 	// Question
 	h2 {
 		text-transform: uppercase;
-		font-size: 32px;
-		margin: 20px auto 20px auto;
-		color: #ac080f;
-        text-align: center;
-        width: 85%;
+		font-size: 31px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		color: #333333;
 	}
 	// Instructions
 	h3 {
@@ -143,8 +149,7 @@ html, body {
 }
 div.mobile-app-nav-arrows {
 	position: relative;
-	height: 50px;
-	margin-bottom: 10px;
+	height: 25px;
 
 	.btn-next, .btn-prev {bottom: initial;}
 	.btn-next {right: 35px;}
@@ -181,12 +186,12 @@ div.mobile-app-nav-arrows {
 		z-index: 2;
 		top: 33px;
 		width: 100%;
-		background-color: #ac080f;
+		background-color: #002e5f;
 
 		> div {
 			position: absolute;
 			width: 100%;
-			background-color: #ac080f;
+			background-color: #002e5f;
 		}
 
 		.results-menu-tab-wrapper {
@@ -204,7 +209,7 @@ div.mobile-app-nav-arrows {
 		.results-menu-heading {
 			padding: 5px 0;
 			text-align: center;
-			color: #ffffff;
+			color: #eeeeee;
 			font-size: 9pt;
 		}
 
@@ -280,9 +285,11 @@ div.mobile-app-nav-arrows {
 	}
 	.btn-prev {
 		left: 25px;
+        z-index: 10;
 	}
 	.btn-next {
 		right: 25px;
+        z-index: 10;
 	}
 	.btn {
 		padding: 3px 18px;
@@ -323,14 +330,19 @@ div.mobile-app-nav-arrows {
 	.icon-nav-wrap {
 		display: inline-block;
 		float: left;
-        margin: 0 9px;
 		a {
-			cursor: pointer;
+			/*cursor: pointer;*/
 		}
 	}
+    .selected {
+        .icon-img {
+            cursor: pointer;
+        }
+    }
 	.icon-img {
 		max-width: 41px;
 		max-height: 41px;
+        cursor: auto;
 		// &.current {
 		// 	display: none;
 		// }
@@ -339,13 +351,12 @@ div.mobile-app-nav-arrows {
 		// display: none;
 		max-width: 52px;
 		max-height: 53px;
+        cursor: pointer;
 		// &.current {
 		// 	display: inline-block;
 		// }
 	}
-
 }
-
 .mobile-nav {
 	position: absolute;
 	width: 110%;
@@ -353,11 +364,32 @@ div.mobile-app-nav-arrows {
 	left: -10px;
 	z-index: 2;
 }
-
 .picture-3-container {
     .answer-box {
         float: none !important;   
     }
+}
+.picture-4-container {
+    margin-top: 70px;
+}
+
+a.answer-box.picture-4 {
+    .img-wrap {
+        height: auto;
+        
+        img {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+    .select-label-wrap {
+        .select-icon {
+            top: 138px;
+        }
+    }
+}
+.regular-3-container {
+    width: 1100px;
 }
 
 @media(max-width:1180px) and (min-width:1024px) {
@@ -377,8 +409,8 @@ div.mobile-app-nav-arrows {
 		}
 
 		a.answer-box.category, a.answer-box.sub-category {
-			margin-left: 10px;
-			margin-right: 10px;
+			margin-left: 20px;
+			margin-right: 20px;
 
 			.category-image img {
 				width: 80%;
@@ -392,7 +424,7 @@ div.mobile-app-nav-arrows {
 
 		div[ng-controller="SliderCtrl"] {
 			.slider-wrap {
-				margin-left: 50px;
+				/*margin-left: 50px;*/
 			}
 		}
 
@@ -408,9 +440,9 @@ div.mobile-app-nav-arrows {
 			}
 
 			.slider-large-label {
-				margin-left: -148px;
+				margin-left: -115px;
 				margin-right: initial;
-				top: 75px;
+				top: 72px;
 			}
 
 			.slider-wrap {
@@ -427,11 +459,12 @@ div.mobile-app-nav-arrows {
 		}
 
 		a.answer-box.checkbox-4, a.answer-box.radio-2, a.answer-box.radio-3, a.answer-box.radio-4 {
+			border-right: 4px solid #999999;
 			width: 445px;
 
 			.label-wrap {
 				left: 72px;
-				max-width: 82%;
+				max-width: 80%;
 			}
 		}
 
@@ -465,7 +498,7 @@ div.mobile-app-nav-arrows {
 			}
 		}
 
-		a.answer-box.picture-3, a.answer-box.picture-2 {
+		a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2 {
 			width: 290px;
 
 			.select-label-wrap {
@@ -487,15 +520,15 @@ div.mobile-app-nav-arrows {
         width: 100% !important;   
         
         .answer-box {
-            width: 200px !important;
+            width: 219px !important;
                 
             .img-wrap {
                 width: 100% !important;
                 height: 100% !important;
                 
                 img {
-                    width: 96%;
-                    height: 96%;
+                    width: 100%;
+                    height: 100%;
                 }
             }
             .select-label-wrap {
@@ -509,17 +542,45 @@ div.mobile-app-nav-arrows {
     }
     .picture-3-container {
         width: 100% !important;
-    }    
+    }
+    .label-text {
+        font-size: 15px !important;
+    }
+    a.answer-box.picture-4 {
+        .select-label-wrap {
+            .select-icon {
+                top: 110px !important;
+            }
+        }
+    }
+    .slider-large-label-wrap {
+		width: 0px !important;
+
+		.slider-large-label {
+            left: -8px;
+			margin-right: 0px !important;
+		}
+	}
+}
+
+@media(min-width:1600px) {
+	.app-nav-arrows {
+		.btn-prev {
+			left: 10%;
+		}
+		.btn-next {
+			right: 10%;
+		}
+	}
 }
 
 @media(max-width:1023px) {
+    .slidey-wrap-all {
+		/*min-height: 586px !important;*/
+	}
     
-    .app-answers {
-        .answer-option {
-            &.category, &.sub-category {
-                margin: 5px 25% !important;
-            }
-        }
+ .left-tag.no-jslider-value.four.scale-left > div > span > table > tbody > tr > td > div.jslider-scale > span {
+        left: -19px !important;
     }
 
 	.main {
@@ -586,26 +647,34 @@ div.mobile-app-nav-arrows {
 	   }
 
 	   .bottom-nav-wrap {width: 100%;}
-	   .bottom-nav-inner {
-           width: inherit;
-           .bottom-nav-inner-inner {
-               .icon-nav-wrap {
-                    margin: 11px 1px;
-               }
-           }
-        }
+	   .bottom-nav-inner {width: inherit;}
     }
     
 	.app-answers .category, .app-answers .sub-category {
-		width: 210px;
+		width: 80px;
 	}
 
 	.app-answers .category img.normal[ng-src="img/start-laundry.png"] {
-		width: 160%;
-		margin-left: -17px;
+		width: 190%;
+		margin-left: -32px;
+	}
+    .app-answers .category img.normal[ng-src="img/start-fridge.png"] {
+		width: 125%;
+        padding-top: 10px;
+        margin-left: -8px;
+	}
+    .app-answers .category img.normal[ng-src="img/start-dishwasher.png"] {
+		width: 110%;
+        margin-top: -42px;
+        margin-left: -5px;
+	}
+    .app-answers .category img.normal[ng-src="img/start-stove.png"] {
+        width: 120%;
+        margin-left: -5px;
 	}
 
 	.app-content-main-top-left {
+		width: 87% !important;
 		padding-left: 50px;
 	}
 
@@ -618,6 +687,7 @@ div.mobile-app-nav-arrows {
 	}
 
 	div.slidey-wrap-all {
+
 		height: 600px;
 		margin-top: initial !important;
 	}
@@ -635,14 +705,14 @@ div.mobile-app-nav-arrows {
 		position: absolute;
 
 		.slider-large-label {
-			top: -15px !important;
-			margin-right: 98px !important;
+			top: -30px !important;
+			margin-right: -13px !important;
 		}
 	}
 
 	.people-slider {
 		div.jslider-value {
-			left: -85px !important;
+			left: -100px !important;
 			height: 60px !important;
 		}
 	}
@@ -693,8 +763,6 @@ div.mobile-app-nav-arrows {
 			}
 		}
 	}
-
-
 	.slidey .app-answers, .slidey .answers-main-content.answer-slider, .slidey .answers-main-content.price-slider {
 		width: 100px;
 		height: 500px;
@@ -702,7 +770,7 @@ div.mobile-app-nav-arrows {
 		.slider-wrap {
 			width: initial;
 			height: inherit;
-			/*left: -45%;*/
+			left: -15%;
 			float: none !important;
 			position: relative;
 		}
@@ -730,7 +798,8 @@ div.mobile-app-nav-arrows {
 				width: 26px;
 				background: url("../img/slider-bg-vertical.jpg");
 				background-size: contain;
-				margin-left: -17px;
+                background-repeat: no-repeat;
+				margin-left: -18px;
 			}
 
 			.jslider-scale {
@@ -740,7 +809,7 @@ div.mobile-app-nav-arrows {
 
 				span {
 					border-left: none !important;
-					left: 20px;
+					left: 35px;
 					width: 10px;
 					display: table;
 				}
@@ -750,7 +819,7 @@ div.mobile-app-nav-arrows {
 					left: 20px;
 					width: 90px;
 					text-align: left;
-					font-size: 10pt;
+					font-size: 8pt;
 					height: 45px;
 					display: table-cell;
 					vertical-align: middle;
@@ -810,7 +879,6 @@ div.mobile-app-nav-arrows {
 			
 			.label-text {
 				font-size: 14px !important;
-				max-width: 87px !important;
 			}
 		}
 
@@ -828,17 +896,17 @@ div.mobile-app-nav-arrows {
 		}
 	}
 
-	a.answer-box.picture-3, a.answer-box.picture-2 {
+	a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2 {
 		width: 280px;
 	}
 
-	a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4 {
+	a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4 {
 		float: none;
 		margin: 14px auto;
 		display: block !important;
 	}
 
-	a.answer-box.picture-3, a.answer-box.picture-2 {
+	a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2 {
 		.img-wrap {
 			height: initial;
 		}
@@ -861,26 +929,25 @@ div.mobile-app-nav-arrows {
 		float: initial !important;
 	}
     .picture-4-container {
-        width: 200px !important;   
+        width: 280px !important;   
         
         .answer-box {
-            width: 200px !important;
-            margin: 5px 0 !important;
-                
+            width: 100% !important;
+
             .img-wrap {
                 width: 100% !important;
                 height: 100% !important;
                 
                 img {
-                    width: 96%;
-                    height: 96%;
+                    width: 100%;
+                    height: 100%;
                 }
             }
             .select-label-wrap {
                 width: 100% !important;
                 
                 .select-icon {
-                    top: 132px !important;   
+                    top: initial;   
                 }
             }
         }
@@ -894,26 +961,34 @@ div.mobile-app-nav-arrows {
     .boxes-icon-5-container {
         width: 400px;   
     }
+    .label-text {
+        font-size: 15px !important;
+    }
+    .ng-binding::first-letter {
+        text-transform: capitalize;        
+    }
+    .regular-3-container {
+        width: 100%;
+    }
+    .slider-large-label-wrap .slider-large-label {
+		font-size: 13pt !important;
+        color: #999C9C !important;
+        top: -23px !important;
+        margin-right: -9px !important;
+	}
+    div.category-image > img.hover {
+        opacity: 0 !important;
+    }
 }
 
 @media(max-width:750px) {
 	.app-content-main-top-left {
 		h2 {font-size: 18pt;}
-		h3 {font-size: 11pt;}
+		h3 {font-size: 10pt;}
 	}
 }
 
 @media(max-width:580px) {
-    .app-answers {
-        .answer-option {
-            &.category, &.sub-category {
-                margin: 5px auto 0 auto !important;
-            }
-        .category-name {
-			font-size: 14px !important;
-		  }
-        }
-    }
 	.slidey {
 		width: 80% !important;
 		min-width: 100% !important;
@@ -921,16 +996,12 @@ div.mobile-app-nav-arrows {
         /*min-height: 370px !important;*/
 	}
 
-	div.slidey-wrap-all {
-		height: 770px;
-	}
-
 	div.slidey .app-answers, .slidey .answers-main-content.answer-slider, .slidey .answers-main-content.price-slider {
-		height: 330px;
+		height: 270px;
 
 		.jslider {
 			div.jslider-pointer {
-				left: 13px;
+				left: 11.5px;
 				width: 43px;
 				height: 37px;
 				background: url("../img/slider-pointer-small.png") !important;
@@ -955,7 +1026,38 @@ div.mobile-app-nav-arrows {
 				 	line-height: 14px;
 				 }
 			}
+		}
+	}
+	.app-answers .category img.normal[ng-src="img/start-laundry.png"] {
+		width: 190%;
+		margin-left: -25px;
+	}
+    .app-answers .category img.normal[ng-src="img/start-fridge.png"] {
+		width: 125%;
+        padding-top: 10px;
+        margin-left: -7px;
+	}
+    .app-answers .category img.normal[ng-src="img/start-dishwasher.png"] {
+		width: 110%;
+        margin-top: -27px;
+        margin-left: -0px;
+	}
+    .app-answers .category img.normal[ng-src="img/start-stove.png"] {
+        width: 150%;
+        margin-left: -13px;
+	}
+    
+    .jslider .jslider-scale span {
+        left: 15px!important;
+    }
+    .left-tag.no-jslider-value.four.scale-left > div > span > table > tbody > tr > td > div.jslider-scale > span {
+        left: 0 !important;
+    }
 
+	.slider-large-label-wrap {
+
+		span.slider-large-label {
+			margin-right: 3px !important;
 		}
 	}
 
@@ -964,24 +1066,31 @@ div.mobile-app-nav-arrows {
 	}
 
 	.slider-large-label-wrap .slider-large-label {
-		font-size: 18px !important;
+		font-size: 11pt !important;
+        color: #999C9C !important;
+        top: -30px !important;
+        margin-right: -13px !important;
 	}
 
 	.answers-category {
 		.answer-box {
 			width: 100% !important;
+			background-color: #f6f6f6;
 
 			.category-image {
-				width: 60%;
+				width: 19%;
 				margin: 0 auto;
 				position: relative;
 
 				.normal, .hover {
+					width: 138%;
 					bottom: 0 !important;
+					margin-left: -14px;
 				}
 
 				.normal {
 					z-index: 2;
+					position: relative;
 				}
 
 				.hover {
@@ -991,6 +1100,7 @@ div.mobile-app-nav-arrows {
 			}
 
 			.category-name {
+				color: #969696 !important;
 				text-transform: uppercase;
 			}
 		}
@@ -1001,7 +1111,8 @@ div.mobile-app-nav-arrows {
 	.app-answers {
 		.answer-option {
 			&.category, &.sub-category {
-				min-height: 155px;
+				min-height: 200px;
+                overflow: hidden;
 			}
 		}
 	}
@@ -1010,7 +1121,7 @@ div.mobile-app-nav-arrows {
 		width: 60px;
 		display: block !important;
 		margin: 10px auto !important;
-		padding: 0;
+		padding: 5px 0;
 	}
 
 
@@ -1019,7 +1130,10 @@ div.mobile-app-nav-arrows {
 	}
 
 	.app-content-main-top-left {
-		h2 {font-size: 12pt;}
+		/*min-height: 62px !important;*/
+		h2 {
+			font-size: 11pt;
+		}
 	}
 
 	a.answer-box.boxes-icon-5 {
@@ -1041,8 +1155,9 @@ div.mobile-app-nav-arrows {
 	}
 
 	a.answer-box.checkbox-4, a.answer-box.radio-2, a.answer-box.radio-3, a.answer-box.radio-4 {
-		width: 98%;
+		width: 90%;
 		height: 55px;
+		border-right: 4px solid #999999;
 		margin: 6px auto;
 
 		.selected .select-icon {
@@ -1065,7 +1180,7 @@ div.mobile-app-nav-arrows {
 
 		.label-wrap .label-text {
 			font-size: 14px;
-			line-height: 16px;
+			line-height: 12px;
 		}
 	}
 
@@ -1110,12 +1225,15 @@ div.mobile-app-nav-arrows {
 	div.bottom-nav-intructions {
 		position: absolute;
 		width: 100%;
-		top: 13px;
+		top: 9px;
+		height: 1px;
 	}
 
 	div.mobile-app-nav-arrows {
+		height: 0px; 
+		
 		a.btn-prev img, a.btn-next img {
-			height: 20px;
+			height: 25px;
 		}
 
 		a.btn-prev {
@@ -1140,21 +1258,28 @@ div.mobile-app-nav-arrows {
         }
         .label-wrap {
             .label-text {
-                font-size: 11px;   
+                font-size: 11px !important;   
             }
         }
 	}
-    .regular-2-container {
-        width: 90% !important;
+    a.answer-box.radio-2 {
+        margin: 1px auto;   
     }
-    a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4, .boxes-icon-split {
-        margin-top: 8px;
-        margin-bottom: 8px;
+    .regular-2-container {
+        width: 100% !important;
+    }
+    a.answer-box.picture-4, a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4, .boxes-icon-split {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    a.answer-box.checkbox-4 {
+        margin-top: 2.9px;
+        margin-bottom: 2.9px;
     }
     .boxes-icon-5-container {
         width: 320px;
     }
-        a.answer-box.boxes-icon-5 {
+    a.answer-box.boxes-icon-5 {
         width: 105px;
         height: 125px;
         background-size: cover;
@@ -1164,9 +1289,6 @@ div.mobile-app-nav-arrows {
             .normal, .hover {
                 top: -20px;
                 left: -10px;
-                -ms-transform: scale(0.7);
-                -o-transform: scale(0.7);
-                -moz-transform: scale(0.7);
                 -webkit-transform: scale(0.7);
                 transform: scale(0.7);
             }
@@ -1175,9 +1297,6 @@ div.mobile-app-nav-arrows {
         .select-icon {
             top: 90px;
             left: 7px;
-            -ms-transform: scale(0.8);
-            -o-transform: scale(0.8);
-            -moz-transform: scale(0.8);
             -webkit-transform: scale(0.8);
             transform: scale(0.8);
         }
@@ -1186,66 +1305,76 @@ div.mobile-app-nav-arrows {
                 top: 4px;
                 left: -8px;
                 font-size: 10px !important;
-                max-width: 87px !important;
             }
+        }
+    }
+    a.answer-box.picture-4, a.answer-box.picture-3 {
+        width: 155px !important;
+        background-size: cover;
+        margin-top: 1px;
+        margin-bottom: 0px;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        
+        .select-label-wrap {
+            height: 30px;
+        }
+        
+        .select-icon {
+            top: 75px;
+            left: 4px;
+            -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+        }
+        .label-wrap {
+            width: 100%;
+            
+            .label-text {
+                top: 8px;
+                left: -31px;
+                font-size: 10px !important;
+            }
+        }
+    }
+    .boxes-icon-2-container {
+        a.answer-box {
+            width: 143px;
+            height: 159px;
+            background-size: 100% 100%;
+            
+            .select-icon {
+                top: 121px;
+                left: 7px;
+                -webkit-transform: scale(0.65);
+                transform: scale(0.65);
+             } 
+        }
+    }
+    a.answer-box.picture-4 {
+        .select-label-wrap {
+            background-size: cover;
+            
+                .select-icon {
+                    top: 70px !important;
+                } 
         }
     }
     .price-slider {
         height: 30px !important;
     }
-    .ng-binding::first-letter {
-        text-transform: capitalize;        
+    .slider-large-label-wrap .slider-large-label {
+			top: -12px !important;
+			margin-right: -1px !important;
+	}
+    div.app-content-main-top {
+        min-height: 60px !important;        
     }
-    // Ranking
-    .ranking {
-        text-align: left;
-        width: 98%;
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .rank-numbers-list {
-            display: inline-block;
-            height: 100% !important;
-            width: 13%;
-            text-align: center;
-            li {
-                .rank-number-wrap {
-                    height: 41px;
-                    width: 41px;
-                    span {
-                        top: 3px;
-                        color: #9f9f9f;
-                    }
-                }
-            }
-        }
-        .rank-answers-list {
-            display: inline-block;
-            padding-left: 0;
-            height: 100% !important;
-            position: relative;
-            top: -13px;
-            width: 85%;
-            li {
-                height: 42px !important;
-                margin-bottom: 0;
-                margin: 0px 2px 4.1px 1px;
-                width: 100%;
-            }
-        }
+    a.answer-box.boxes-icon-split, a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
         .label-wrap {
-            display: inline-block;
-            width: 100% !important;
-            height: 41px !important;
-            background-position: 0 0 !important;
-            background-size: contain 100% !important;
-        }
-        .label-text {
-            top: 25% !important;
-            font-size: 9px !important
-        }
-    }
+			top: 128px;
+            left: 40px;
+		}
+	}
 }
 
 .print-page {
@@ -1315,7 +1444,7 @@ div.mobile-app-nav-arrows {
 			margin: 0;
 			padding: 0;
 			text-align: center;
-			margin-top: 10px;
+			margin-top: 5px;
 		}
  	}
  	.print-page-content-wrapper {
