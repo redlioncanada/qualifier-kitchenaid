@@ -462,7 +462,7 @@ a.answer-box.picture-4 {
 			}
 		}
 
-		a.answer-box.boxes-icon-5, a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-split {
+		a.answer-box.boxes-icon-5, a.answer-box.boxes-icon-2 {
 			background-size: cover;
 			width: 135px;
 			height: 160px;
@@ -849,7 +849,7 @@ a.answer-box.picture-4 {
 	}
 
 	.boxes-icon-2-container {
-		width: 100% !important;
+		width: 25% !important;
 	}
 
 	a.boxes-icon-5 {
@@ -870,7 +870,7 @@ a.answer-box.picture-4 {
 		}
 	}
 
-	a.answer-box.boxes-icon-split, a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
+	a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
 		width: 145px;
 		height: 174px;
 		background-size: cover;
@@ -1259,7 +1259,7 @@ a.answer-box.picture-4 {
         }
         .label-wrap {
             .label-text {
-                font-size: 11px;   
+                font-size: 11px !important;   
             }
         }
 	}
@@ -1358,25 +1358,52 @@ a.answer-box.picture-4 {
         }
         .label-text {
             top: 25% !important;
-            font-size: 9px !important
+            font-size: 11px !important
         }
     }
     .price-slider {
         height: 30px !important;
     }
     .slider-large-label-wrap .slider-large-label {
-			top: -12px !important;
-			margin-right: -1px !important;
+        top: -12px !important;
+        margin-right: -1px !important;
 	}
     div.app-content-main-top {
         min-height: 60px !important;        
     }
-    a.answer-box.boxes-icon-split, a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
+    a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
         .label-wrap {
 			top: 128px;
             left: 40px;
 		}
 	}
+    .boxes-icon-2-container {
+		width: 50% !important;
+        
+        > a:nth-child(1) {
+            margin-bottom: 40px !important;
+        }
+
+        .answer-box.boxes-icon-split {
+            width: 148px;
+            height: 143px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            
+            .icon-wrap {
+                width: 150px;
+                height: 150px;
+                
+                img.normal, img.hover {
+                    width: 80px;
+                }
+                
+                img.hover {
+                    top: -10px;
+                }
+            }
+        }
+    }
 }
 
 .print-page {

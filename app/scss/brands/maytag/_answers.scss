@@ -393,9 +393,11 @@
 	// Single select with icons - 2 answers
 	&.boxes-icon-2, &.boxes-icon-5, &.boxes-icon-split { // + Multiselect with icons - 5 answers
 		// @include make-md-column(6);
-		width: 250px;
-		height: 220px;
+		width: 213px;
+		height: 205px;
 		display: inline-block;
+        border-radius: 50%;
+        margin-bottom: 60px;
 		.icon-wrap {
             background: url('../img/icon-bg-big.png') no-repeat;
             background-size: contain;
@@ -445,8 +447,17 @@
 		}
 		.label-wrap {
 			position: absolute;
-			bottom: 15px;
-			left: 57px;
+			bottom: -15px;
+			left: 0;
+            width: 100%;
+            span {
+                color: #737373;
+                text-align: center;
+                position: inherit;
+                width: 100%;
+                font-weight: 800;
+                font-size: 25px;
+            }
 		}
 		.label-more-wrap {
 			display: inline-block;
