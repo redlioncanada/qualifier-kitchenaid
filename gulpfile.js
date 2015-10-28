@@ -45,7 +45,7 @@ gulp.task('js-prod', function () {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/js'))
         .pipe(replace('.locale = "en_CA", ".locale = "fr_CA"'))
-        .pipe(gulp.dest('build/fr'));
+        .pipe(gulp.dest('build/fr/js'));
 });
 
 // process Components JS files and return the stream.
@@ -83,13 +83,12 @@ gulp.task('views', function() {
     .pipe(gulp.dest('build/'))
     .pipe(replace('footer.html', 'footer_fr.html'))
     .pipe(replace('header.html', 'header_fr.html'))
+    .pipe(replace('"en"', '"fr"'))
     .pipe(gulp.dest('build/fr/'));
 
-    // Do the same for French
-    // Move /fr/index.html to / to deploy as French
     gulp.src('app/js/app.js')
     .pipe(replace(".locale = 'en_CA'", ".locale = 'fr_CA'"))
-    .pipe(gulp.dest('build/fr'));
+    .pipe(gulp.dest('build/fr/js'));
 
     // Any other view files from app/views
     gulp.src('app/views/**/*')
@@ -108,13 +107,14 @@ gulp.task('views-prod', function() {
     .pipe(gulp.dest('build/'))
     .pipe(replace('footer.html', 'footer_fr.html'))
     .pipe(replace('header.html', 'header_fr.html'))
+    .pipe(replace('"en"', '"fr"'))
     .pipe(gulp.dest('build/fr/'));
 
     // Do the same for French
     // Move /fr/index.html to / to deploy as French
     gulp.src('app/js/app.js')
     .pipe(replace(".locale = 'en_CA'", ".locale = 'fr_CA'"))
-    .pipe(gulp.dest('build/fr'));
+    .pipe(gulp.dest('build/fr/js'));
 
     // Any other view files from app/views
     gulp.src('app/views/**/*')
