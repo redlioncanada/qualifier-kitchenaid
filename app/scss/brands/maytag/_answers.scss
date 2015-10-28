@@ -406,6 +406,7 @@
         margin-bottom: 60px;
 		.icon-wrap, .img-wrap {
             background: url('../img/icon-bg-big.png') no-repeat;
+            background-position: 50% 0;
             background-size: contain;
             height: 100%;
             width:  100%;
@@ -435,7 +436,7 @@
             .label-text {
                 color: #747474;
                 font-weight: 800;
-                width: 118px;
+                width: 175px;
                 text-align: center;
             }
 		}
