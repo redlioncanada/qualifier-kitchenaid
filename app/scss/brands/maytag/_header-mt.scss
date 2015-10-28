@@ -109,6 +109,18 @@
      }
 }
 
+.header-desktop:lang(fr) {
+    #header-wrap {
+         .header-content-wrap {
+            .lower .menu {
+                li:not(:last-child) {
+                    margin-right: 9px;
+                }
+            }
+        }
+    }
+}
+
 .header-mobile {
   position: relative;
 
