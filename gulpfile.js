@@ -80,7 +80,10 @@ gulp.task('views', function() {
     gulp.src('app/index.html')
     .pipe(preprocess({context: {ENV: env}}))
     // And put it in the build folder
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('build/'))
+    .pipe(replace('footer.html', 'footer_fr.html'))
+    .pipe(replace('header.html', 'header_fr.html'))
+    .pipe(gulp.dest('build/fr/'));
 
     // Do the same for French
     // Move /fr/index.html to / to deploy as French
@@ -102,7 +105,10 @@ gulp.task('views-prod', function() {
     gulp.src('app/index.html')
     .pipe(preprocess({context: {ENV: env}}))
     // And put it in the build folder
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('build/'))
+    .pipe(replace('footer.html', 'footer_fr.html'))
+    .pipe(replace('header.html', 'header_fr.html'))
+    .pipe(gulp.dest('build/fr/'));
 
     // Do the same for French
     // Move /fr/index.html to / to deploy as French
