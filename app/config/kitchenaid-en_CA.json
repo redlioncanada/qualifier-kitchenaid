@@ -810,8 +810,8 @@
 		"Cooking - Vents - Warming" : {
 			"next" : null,
 			"previous" : "Cooking - Vents - Auto",
-			"thumbnail_text" : "Fuel Type",
-			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"thumbnail_text" : "Features",
+			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
@@ -826,8 +826,8 @@
 							"text" : "Yes - I need ducted ventilation",
 							"image" : "img/icon-thumb-yes.png",
 							"hover" : "img/icon-thumb-yes-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : "yes",
 							"scoring" : {
 								 "warmingLamps": 1
@@ -838,8 +838,8 @@
 							"text" : "No - I need non-ducted ventilation",
 							"image" : "img/icon-thumb-no.png",
 							"hover" : "img/icon-thumb-no-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : "no",
 							"scoring" : {
 							},
@@ -931,8 +931,8 @@
 			"next" : "Cooking - Wall Ovens - Features",
 			"previous" : "Cooking - Wall Ovens - Size",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Features",
-			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Orientation",
+			"thumbnail_current" : "img/icon-orientation-current.png",
 			"text" : [
 				{
 					"question" : "WHAT PREFERENCE DO YOU HAVE FOR YOUR WALL OVEN?",
@@ -944,7 +944,7 @@
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-features.png",
-							"thumbnail_current" : "img/icon-features-current.png",
+							"thumbnail_current" : "img/icon-orientation-current.png",
 							"text" : "Single Oven",
 							"value" : "single",
 							"image" : "img/Cooking-Q2-single.png",
@@ -957,7 +957,7 @@
 						},
 						{
 							"thumbnail" : "img/icon-features.png",
-							"thumbnail_current" : "img/icon-features-current.png",
+							"thumbnail_current" : "img/icon-orientation-current.png",
 							"text" : "Microwave Oven Combo",
 							"value" : "combo",
 							"image" : "img/Cooking-Q2-combo.png",
@@ -1480,7 +1480,7 @@
 			]
 		},
 		"Cooking - Ranges - Range Style" : {
-			"next" : "Cooking - Ranges - Lifestyle",
+			"next" : "Cooking - Ranges - Range Style2",
 			"previous" : "Cooking - Ranges - Capacity",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
@@ -1540,12 +1540,71 @@
 					]
 				}
 			]
-		},		
+		},
+        "Cooking - Ranges - Range Style2" : {
+			"next" : "Cooking - Ranges - Lifestyle",
+			"previous" : "Cooking - Ranges - Range Style",
+			"thumbnail_text" : "Style",
+			"thumbnail_current" : "img/icon-style-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "What style range do you prefer?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why Are You Asking Me Style?", 
+					"explanation" : "NEED COPY!",
+					"type" : "boxes-icon-2",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Gas",
+							"text_more" : "We’re cooking with fire now",
+							"image" : "img/icon-thumb-gas.png",
+							"hover" : "img/icon-thumb-gas-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "yes",
+							"scoring" : {
+								"gas" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Electric",
+							"text_more" : "We just plug-in and go",
+							"image" : "img/icon-thumb-electric.png",
+							"hover" : "img/icon-thumb-electric-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "no",
+							"scoring" : {
+								"gas" : -30
+							},
+							"order" : 2
+						}
+                        ,
+						{
+							"text" : "Electric",
+							"text_more" : "We just plug-in and go",
+							"image" : "img/icon-thumb-electric.png",
+							"hover" : "img/icon-thumb-electric-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "no",
+							"scoring" : {
+								"gas" : -30
+							},
+							"order" : 3
+						}
+					]
+				}
+			]
+		},
 		"Cooking - Ranges - Lifestyle" : {
 			"next" : "Cooking - Ranges - Features2",
-			"previous" : "Cooking - Ranges - Range Style",
-			"thumbnail_text" : "Convection",
-			"thumbnail_current" : "img/icon-convection-current.png",
+			"previous" : "Cooking - Ranges - Range Style2",
+			"thumbnail_text" : "Lifestyle",
+			"thumbnail_current" : "img/icon-lifestyle-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
@@ -1558,7 +1617,7 @@
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail_current" : "img/icon-lifestyle-current.png",
 							"text" : "A baker – I’m usually covered in flour",
 							"value" : "baker",
 							"scoring" : {
@@ -1569,7 +1628,7 @@
 						},
 						{
 							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail_current" : "img/icon-lifestyle-current.png",
 							"text" : "A home chef – scallop ceviche and naan pizzas, I love trying new recipes",
 							"value" : "home chef",
 							"scoring" : {
@@ -1580,7 +1639,7 @@
 						},
 						{
 							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail_current" : "img/icon-lifestyle-current.png",
 							"text" : "I’m both – I should probably start my own food blog",
 							"value" : "both",
 							"scoring" : {
@@ -1593,7 +1652,7 @@
 						},
 						{
 							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail_current" : "img/icon-lifestyle-current.png",
 							"text" : "I’m neither – my stack of take-out menus is impressive",
 							"value" : "neither",
 							"scoring" : {
@@ -1608,8 +1667,8 @@
 			"next" : "Cooking - Ranges - Fuel Type",
 			"previous" : "Cooking - Ranges - Lifestyle",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Capacity",
-			"thumbnail_current" : "img/icon-capacity-current.png",
+			"thumbnail_text" : "Features",
+			"thumbnail_current" : "img/icon-features-current.png",
 			"text" : [
 				{
 					"question" : "HOW OFTEN DO YOU FIND YOURSELF COOKING A MEAT DISH THAT REQUIRES A PRECISE TEMPERATURE?",
@@ -1629,8 +1688,8 @@
 					},
 					"answers" : {
 						"0" : {
-							"thumbnail" : "img/icon-capacity.png",
-							"thumbnail_current" : "img/icon-capacity-current.png",
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 0,
 							"text" : "Very often",
 							"scoring" : {			
@@ -1639,8 +1698,8 @@
 							}
 						},
 						"1" : {
-							"thumbnail" : "img/icon-capacity.png",
-							"thumbnail_current" : "img/icon-capacity-current.png",
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 1,
 							"text" : "Sometimes",
 							"scoring" : {
@@ -1648,8 +1707,8 @@
 							}
 						},
 						"2" : {
-							"thumbnail" : "img/icon-capacity.png",
-							"thumbnail_current" : "img/icon-capacity-current.png",
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 2,
 							"text" : "Never",
 							"scoring" : {
