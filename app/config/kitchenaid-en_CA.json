@@ -253,8 +253,8 @@
 			"next" : "Cooking - Cooktops - Features",
 			"previous" : "Cooking - Cooktops - Size",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Features",
-			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Style",
+			"thumbnail_current" : "img/icon-style-current.png",
 			"text" : [
 				{
 					"question" : "HOW WOULD YOU DESCRIBE YOUR KITCHEN'S STYLE?",
@@ -265,8 +265,8 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"thumbnail" : "img/icon-features.png",
-							"thumbnail_current" : "img/icon-features-current.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Modern",
 							"value" : "modern",
 							"image" : "img/Cooking-Q2-single.png",
@@ -276,8 +276,8 @@
 							"order" : 1
 						},
 						{
-							"thumbnail" : "img/icon-features.png",
-							"thumbnail_current" : "img/icon-features-current.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Classic",
 							"value" : "classic",
 							"image" : "img/Cooking-Q2-combo.png",
@@ -287,8 +287,8 @@
 							"order" : 2
 						},
 						{
-							"thumbnail" : "img/icon-features.png",
-							"thumbnail_current" : "img/icon-features-current.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Professional",
 							"value" : "professional",
 							"image" : "img/Cooking-Q2-double.png",
@@ -2123,22 +2123,22 @@
 			]
 		},
 		"Fridges - Water" : {
-			"next" : "Fridges - Ice",
+			"next" : "Fridges - Style",
 			"previous" : "Fridges - Organization",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-water-current.png",
 			"thumbnail_text" : "Water",
 			"text" : [
 				{
-					"question" : "You wake up thirsty in the middle of the night, so you grab...",
-					"sub_question" : "Select all that apply",
+					"question" : "Does your kitchen have an existing waterline?",
+					"sub_question" : "Select one",
 					"explanation_title" : "Why Are You Asking Me About Water?",
 					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
 					"type" : "checkbox-4",
-					"oneAnswer" : false,
+					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "A cold bottle of water",
+							"text" : "Yes - my kitchen has a waterline and my fridge dispenses water and ice",
 							"value" : "bottle of water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2149,7 +2149,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "A glass of tap water",
+							"text" : "No - I dont have a waterline and don't need one",
 							"value" : "glass of tap water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2159,7 +2159,7 @@
 							"order" : 2
 						},
 						{
-							"text" : "A glass of filtered water",
+							"text" : "No - I don't have a waterline but would consider installing one so our fridge could dispense water",
 							"value" : "glass of filtered water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2170,7 +2170,7 @@
 							"order" : 3
 						},
 						{
-							"text" : "I prefer milk or juice",
+							"text" : "Im not sure",
 							"value" : "glass of milk or juice",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2274,7 +2274,7 @@
 		},
 		"Fridges - Style" : {
 			"next" : "Fridges - Features",
-			"previous" : "Fridges - Ice",
+			"previous" : "Fridges - Water",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_text" : "Style",
@@ -2554,8 +2554,8 @@
 			"next" : "Dishwashers - Energy",
 			"previous" : "Dishwashers - Capacity",
 			"thumbnail_type" : "image",
-			"thumbnail_current" : "img/icon-noise-current.png",
-			"thumbnail_text" : "Noise",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Features",
 			"text" : [
 				{
 					"question" : "WHEN SHOPPING FOR A DISHWASHER, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION? ",
@@ -2695,8 +2695,8 @@
 				}											
 			]
 		},
-		"Dishwashers - Noise 1" : {
-			"next" : "Dishwashers - Noise 2",
+		"Dishwashers - Noise1" : {
+			"next" : "Dishwashers - Noise2",
 			"previous" : "Dishwashers - Energy",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-noise-current.png",
@@ -2753,9 +2753,9 @@
 				}
 			]
 		},
-		"Dishwashers - Noise 2" : {
+		"Dishwashers - Noise2" : {
 			"next" : "Dishwashers - Flexibility",
-			"previous" : "Dishwashers - Noise 1",
+			"previous" : "Dishwashers - Noise1",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-noise-current.png",
 			"thumbnail_text" : "Noise",
@@ -2765,7 +2765,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about my space?",
 					"explanation" : "If you live in an open concept space, we want to take that into consideration to recommend the perfect machine to keep the noise at a minimum.",
-					"type" : "boxes-icon-2",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -2795,7 +2795,7 @@
 		},
 		"Dishwashers - Flexibility" : {
 			"next" : "Dishwashers - Style",
-			"previous" : "Dishwashers - Noise 2",
+			"previous" : "Dishwashers - Noise2",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-organization-current.png",
 			"thumbnail_text" : "Organization",
