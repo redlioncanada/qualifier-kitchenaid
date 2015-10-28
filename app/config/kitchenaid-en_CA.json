@@ -2713,7 +2713,7 @@
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"text" : "Yes - My kitchen opens on to another room",
-							"image" : "/img/Dishwasher_Q5_MT-open-concept-yes.png",
+							"image" : "img/Dishwasher_Q5_MT-open-concept-yes.png",
 							"value" : "yes",
 							"scoring" : {
 								 "quiet" : 1
@@ -2724,7 +2724,7 @@
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"text" : "No - My kitchen is its own room",
-							"image" : "/img/Dishwasher_Q5_MT-open-concept-no.png",
+							"image" : "img/Dishwasher_Q5_MT-open-concept-no.png",
 							"value" : "no",
 							"scoring" : {
 							},

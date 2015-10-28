@@ -614,6 +614,31 @@
 	
 }
 
+li.dragging-rank {
+	height: 62.1px;
+    margin-bottom: 0;
+    margin: 0px 2px 4.1px 1px;
+    text-align: center;
+    list-style: none;
+
+    .label-wrap {
+		display: inline-block;
+		width: 566px;
+		height: 62.2px;
+		background: url('../img/ranking-bg.png') no-repeat;
+        background-position: 0 -2px;
+        background-size: 100% 102%;
+        border-radius: 6px;
+        padding-left: 0 !important;
+        text-align: center;
+	}
+	.label-text {
+		top: 17px;
+        text-transform: uppercase;
+        text-align: center;
+	}
+}
+
 // Slider labels
 
 .slider-label-wrap {
