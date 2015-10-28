@@ -9,45 +9,8 @@ footer.desktop {display: block;}
 
 /*mobile footer begin*/
 footer.mobile {
-	background-color: #333;
-	height: 300px;
 	font-size: 7pt;
 	width: 100%;
-
-	.footer-links {
-	    margin: 0;
-	    padding: 10px;
-	}
-
-	.footer-menu-wrapper .footer-menu-item {
-	    width: 100%;
-	    float: left;
-	    border-top: 1px solid #D9D9D9;
-	    background: #FFFFFF;
-	    padding: 20px 0;
-	    font-size: 150%;
-	    text-transform: capitalize;
-	    font-weight: normal;
-	}
-
-	.footer-links li {
-	    width: 100%;
-	    display: block;
-	    text-align: center;
-	    padding: 0;
-	    margin: 20px 0;
-	    color: #FFFFFF;
-	    padding: 0 10px;
-	}
-
-	.footer-links li a {
-		color: #FFFFFF;
-		padding: 0 4px;
-	}
-
-	.footer-links li.legal {
-	    color: #ABABAB;
-	}
 }
 /*mobile footer end*/
 
@@ -128,10 +91,10 @@ footer {
 }
 
 @media(max-width:1023px) {
-  footer.maytag-mobile {
+  footer.mobile {
     display: block;
   }
-  footer.maytag-desktop {
+  footer.desktop {
     display: none;
   }
 }
