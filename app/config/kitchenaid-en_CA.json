@@ -623,7 +623,7 @@
 					"sub_question" : "Select One",
 					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT MY CABINETS?",
 					"explanation" : "Some of the by-products of cooking (steam, moisture and grease) can be destructive without the right ventilation. By understanding your specific needs we can find the perfect system for your kitchen.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -671,7 +671,7 @@
 					"sub_question" : "Select One",
 					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT HEAT?",
 					"explanation" : "We know that everybody has a different cooking style. If you like to turn up the heat, we’ll find you a vent with a stronger fan.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -823,7 +823,7 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Yes - I need ducted ventilation",
+							"text" : "",
 							"image" : "img/icon-thumb-yes.png",
 							"hover" : "img/icon-thumb-yes-active.png",
 							"thumbnail" : "img/icon-features.png",
@@ -835,7 +835,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "No - I need non-ducted ventilation",
+							"text" : "",
 							"image" : "img/icon-thumb-no.png",
 							"hover" : "img/icon-thumb-no-active.png",
 							"thumbnail" : "img/icon-features.png",

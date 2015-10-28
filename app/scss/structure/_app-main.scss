@@ -390,6 +390,19 @@ a.answer-box.picture-4 {
     width: 1100px;
 }
 
+ a.boxes-icon-split.selected, a.boxes-icon-2.selected{
+    .icon-wrap {
+        background: url("../img/icon-bg-big-active.png") no-repeat;
+        background-size: contain;
+    }
+}
+a.boxes-icon-split:hover, a.boxes-icon-2:hover {
+    .icon-wrap {
+        background: url("../img/icon-bg-big-active.png") no-repeat;
+        background-size: contain;
+    }
+}
+
 @media(max-width:1180px) and (min-width:1024px) {
 	.slidey {
 		width: 927px !important;
@@ -465,7 +478,7 @@ a.answer-box.picture-4 {
 			}
 		}
 
-		a.answer-box.boxes-icon-5, a.answer-box.boxes-icon-2 {
+		a.answer-box.boxes-icon-5 {
 			background-size: cover;
 			width: 135px;
 			height: 160px;
@@ -867,13 +880,7 @@ a.answer-box.picture-4 {
 		margin-top: 0px !important;
 	}
 
-	a.answer-box.boxes-icon-5, a.answer-box.boxes-icon-2 {
-		.label-wrap {
-			left: 55px;
-		}
-	}
-
-	a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
+	a.answer-box.boxes-icon-5 {
 		width: 145px;
 		height: 174px;
 		background-size: cover;
@@ -1149,11 +1156,6 @@ a.answer-box.picture-4 {
 		margin-right: 6px;
 	}
 
-	a.answer-box.boxes-icon-2 {
-		display: block;
-		margin: 10px auto;
-	}
-
 	a.answer-box.picture-3, a.answer-box.picture-4 {
 		width: 230px;
 
@@ -1375,38 +1377,33 @@ a.answer-box.picture-4 {
     div.app-content-main-top {
         min-height: 60px !important;        
     }
-    a.answer-box.boxes-icon-2, a.answer-box.boxes-icon-5 {
-        .label-wrap {
-			top: 128px;
-            left: 40px;
-		}
-	}
+
     .boxes-icon-2-container {
 		width: 50% !important;
         
-        > a:nth-child(1) {
+        .boxes-icon-2, .answer-box.boxes-icon-split {
+            width: 150px !important;
+            height: 143px !important;
             margin-bottom: 40px !important;
-        }
-
-        .answer-box.boxes-icon-split {
-            width: 148px;
-            height: 143px;
-            margin-top: 0px;
-            margin-bottom: 20px;
-            
+                        
             .icon-wrap {
-                width: 150px;
-                height: 150px;
+                width: 150px !important;
+                height: 150px !important;
                 
                 img.normal, img.hover {
-                    width: 80px;
+                    width: 100px;
                 }
-                
                 img.hover {
-                    top: -10px;
+                    top: -31px !important;
                 }
             }
+            .label-wrap {
+                bottom: -25px !important;
+            }
         }
+    }
+    .boxes-icon-2:last-child {
+        margin-bottom: 20px !important;
     }
 }
 
