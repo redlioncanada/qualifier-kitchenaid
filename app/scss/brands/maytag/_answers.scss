@@ -44,7 +44,7 @@
 		width: 100%;
 
 	}
-	// &.boxes-icon-5-container {
+	// &.picture-3-container {
 	// 	width: 995px;
 	// }
 
@@ -60,6 +60,12 @@
 	position: absolute;
 	top: 20px;
 	left: 24px;
+}
+
+.picture-3 {
+    .select-icon {
+        display: none;
+    }
 }
 
 
@@ -115,7 +121,7 @@
 
 .no-touch {
 	.answer-box {
-		&.boxes-icon-2, &.boxes-icon-5, &.boxes-icon-split {
+		&.boxes-icon-2, &.picture-3, &.boxes-icon-split {
 			&:hover {
 				img.normal {
 					visibility: hidden;
@@ -325,15 +331,15 @@
 		.img-wrap {
 			display: block;
 			width: 100%;
-			@include boxshadow;
 			img {
-				margin-top: 4px;
-				width: 100%;
-				// position: relative;
-				// top: 25px;
+                position: absolute;
+                width: 93.5%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
 			}
 		}
-		.select-label-wrap {
+		/*.select-label-wrap {
 			margin-top: 0px;
 			display: block;
 			width: 100%;
@@ -342,7 +348,7 @@
 			background: url('../img/boxes-picture-bg-bottom.png');
 			background-size: cover;
 			@include boxshadow;
-		}
+		}*/
 		.select-icon {
 			top: 180px;
 			left: 19px;
@@ -391,18 +397,18 @@
 		}
 	}
 	// Single select with icons - 2 answers
-	&.boxes-icon-2, &.boxes-icon-5, &.boxes-icon-split { // + Multiselect with icons - 5 answers
+	&.boxes-icon-2, &.picture-3, &.boxes-icon-split { // + Multiselect with icons - 5 answers
 		// @include make-md-column(6);
 		width: 213px;
 		height: 205px;
 		display: inline-block;
         border-radius: 50%;
         margin-bottom: 60px;
-		.icon-wrap {
+		.icon-wrap, .img-wrap {
             background: url('../img/icon-bg-big.png') no-repeat;
             background-size: contain;
-            height: 222px;
-            width:  215px;
+            height: 100%;
+            width:  100%;
 			img.normal, img.hover {
 				position: relative;
                 top: 46%;
@@ -429,8 +435,24 @@
             .label-text {
                 color: #747474;
                 font-weight: 800;
+                width: 118px;
+                text-align: center;
             }
 		}
+        
+        &.picture-3 {
+            .img-wrap {
+                .normal, .hover {
+                    width: 93.5%;
+                    top: 47.1%;
+                    left: 1.8px;
+                    visibility: visible !important;
+                }
+                .normal:hover {
+                    visibility: visible !important;
+                }
+            }
+        }
 		
 		// img.normal,  {
 		// 	display: block;
@@ -482,7 +504,7 @@
 		}
 	}
 	
-	// &.boxes-icon-5 {
+	// &.picture-3 {
 		// // @include make-md-column(6);
 		// width: 183px;
 		// height: 217px;
@@ -710,7 +732,7 @@ li.dragging-rank {
 
 //french css begin
 div[ng-class="fr_CA"] {
-	.boxes-icon-5-container {
+	.picture-3-container {
 		.label-wrap {
 			display: inline-block;
 			text-align: left;
