@@ -574,6 +574,12 @@
 		list-style: none;
         padding-left: 0;
 	}
+	li {
+		background-color: #ececec;
+	}
+	li:last-child {
+		margin-bottom: 0 !important;
+	}
 	.rank-numbers-list {
 		display: inline-block;
         height: 100% !important;
@@ -586,7 +592,6 @@
         padding-left: 0;
         height: 100% !important;
         position: relative;
-        top: -14.5px;
         background-color: #ececec;
         padding: 5px;
 		li {
@@ -597,6 +602,8 @@
 		}
 	}
 	.rank-number-wrap {
+		float: left;
+		margin-right: 4px;
 		@include large-square-label-wrap;
 		.rank-number {
 			@include large-square-label;
@@ -614,7 +621,7 @@
         text-align: center;
 	}
 	.label-text {
-		top: 17px;
+		top: 22px;
         text-transform: uppercase;
         text-align: center;
 	}
@@ -627,12 +634,21 @@ li.dragging-rank {
     margin: 0px 2px 4.1px 1px;
     text-align: center;
     list-style: none;
+    pointer-events: none;
+    -webkit-box-shadow: -12px -10px 11px 3px rgba(51,51,51,0.3);
+	-moz-box-shadow: -12px -10px 11px 3px rgba(51,51,51,0.3);
+	box-shadow: -12px -10px 11px 3px rgba(51,51,51,0.3);
+	background-color: transparent;
 
+    .rank-number-wrap {
+    	display: none;
+    }
     .label-wrap {
 		display: inline-block;
 		width: 566px;
 		height: 62.2px;
 		background: url('../img/ranking-bg.png') no-repeat;
+		background-color: transparent;
         background-position: 0 -2px;
         background-size: 100% 102%;
         border-radius: 6px;
