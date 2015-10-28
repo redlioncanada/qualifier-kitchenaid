@@ -1553,16 +1553,15 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why Are You Asking Me Style?", 
 					"explanation" : "NEED COPY!",
-					"type" : "boxes-icon-2",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Gas",
+							"text" : "Front Control",
 							"text_more" : "We’re cooking with fire now",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"image" : "img/front-control.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "yes",
 							"scoring" : {
 								"gas" : 1
@@ -1570,12 +1569,11 @@
 							"order" : 1
 						},
 						{
-							"text" : "Electric",
+							"text" : "Rear Control",
 							"text_more" : "We just plug-in and go",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"image" : "img/rear-control.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "no",
 							"scoring" : {
 								"gas" : -30
@@ -1584,12 +1582,11 @@
 						}
                         ,
 						{
-							"text" : "Electric",
+							"text" : "No Preference",
 							"text_more" : "We just plug-in and go",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"image" : "img/no-preference-control.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "no",
 							"scoring" : {
 								"gas" : -30
@@ -2869,7 +2866,7 @@
 					"sub_question" : "Select One",
 					"explanation_title" : "Why are you asking me about style?",
 					"explanation" : "Finding the perfect fit for your home's style is as important for us as it is for you.",
-					"type" : "boxes-picture-2-radio",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{ 
@@ -2877,7 +2874,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Pocket Handle",
 							"value" : "Pocket Handle",
-							"image" : "img/Dishwasher-Q6-traditional.jpg",
+							"image" : "img/pocket-handle.png",
 							"scoring" : {
 								"pocketHandleConsole" : 1
 							},
@@ -2888,7 +2885,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Exterior Handle",
 							"value" : "Exterior Handle",
-							"image" : "img/Dishwasher-Q6-commercial.jpg",
+							"image" : "img/exterior-handle.png",
 							"scoring" : {	
 								"FID" : 1					
 							},
@@ -2899,7 +2896,18 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Custom Panel",
 							"value" : "Custom Panel",
-							"image" : "img/Dishwasher-Q6-commercial.jpg",
+							"image" : "img/custom-panel.png",
+							"scoring" : {	
+								"panelReady" : 1					
+							},
+							"order" : 3
+						},
+                        {
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "No Preference",
+							"value" : "No Preference",
+							"image" : "img/no-preference-panel.png",
 							"scoring" : {	
 								"panelReady" : 1					
 							},
