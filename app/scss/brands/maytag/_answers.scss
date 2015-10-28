@@ -421,8 +421,15 @@
 		}
 		.label-wrap {
 			position: absolute;
-			bottom: 18px;
-			left: 60px;
+			bottom: -40px;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+            
+            .label-text {
+                color: #747474;
+                font-weight: 800;
+            }
 		}
 		
 		// img.normal,  {
