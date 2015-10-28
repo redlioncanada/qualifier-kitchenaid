@@ -528,7 +528,7 @@
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
-			"thumbnail_current" : "img/icon-capacity-current.png",
+			"thumbnail_current" : "img/icon-size-current.png",
 			"text" : [
 				{
 					"question" : "WHAT IS THE WIDTH OF YOUR COOKTOP OR RANGE?",
@@ -541,7 +541,7 @@
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-capacity.png",
-							"thumbnail_current" : "img/icon-capacity-current.png",
+							"thumbnail_current" : "img/icon-size-current.png",
 							"text" : "30\" or less",
 							"value" : "30",
 							"scoring" : {
@@ -553,7 +553,7 @@
 
 						{
 							"thumbnail" : "img/icon-capacity.png",
-							"thumbnail_current" : "img/icon-capacity-current.png",
+							"thumbnail_current" : "img/icon-size-current.png",
 							"text" : "36\" or more",
 							"value" : "36",
 							"scoring" : {
@@ -570,8 +570,8 @@
 			"next" : "Cooking - Vents - Type",
 			"previous" : "Cooking - Vents - Size",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Style",
-			"thumbnail_current" : "img/icon-style-current.png",
+			"thumbnail_text" : "Location",
+			"thumbnail_current" : "img/icon-location-current.png",
 			"text" : [
 				{
 					"question" : "WHERE IN YOUR KITCHEN CAN WE FIND YOUR COOKING SURFACE?",
@@ -583,8 +583,8 @@
 					"classes" : "vents  singleAns",
 					"answers" : [
 						{     
-							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail" : "img/icon-location.png",
+							"thumbnail_current" : "img/icon-location-current.png",
 							"text" : "Against a wall",
 							"value" : "wall",
 							"scoring" : {
@@ -596,8 +596,8 @@
 						},
 
 						{ 
-							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail" : "img/icon-location.png",
+							"thumbnail_current" : "img/icon-location-current.png",
 							"text" : "On an island",
 							"value" : "island",
 							"scoring" : {
@@ -629,8 +629,8 @@
 					"answers" : [
 						{   "image" : "img/icon-thumb-yes.png",
 							"hover" : "img/icon-thumb-yes-active.png",
-							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "",
 							"value" : "under",
 							"scoring" : {
@@ -644,8 +644,8 @@
 						{
                             "image" : "img/icon-thumb-no.png",
 							"hover" : "img/icon-thumb-no-active.png",
-							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "",
 							"value" : "notUnder",
 							"scoring" : {
@@ -663,8 +663,8 @@
 			"next" : "Cooking - Vents - Ventilation",
 			"previous" : "Cooking - Vents - Type",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Features",
-			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Speed",
+			"thumbnail_current" : "img/icon-speed-current.png",
 			"text" : [
 				{
 					"question" : "DO YOU OFTEN FIND YOURSELF PREPARING A HIGH-HEAT SAUCE, SAUTÉ OR STIR-FRY?",
@@ -678,8 +678,8 @@
 						{
                             "image" : "img/icon-thumb-yes.png",
 							"hover" : "img/icon-thumb-yes-active.png",
-							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail" : "img/icon-speed.png",
+							"thumbnail_current" : "img/icon-speed-current.png",
 							"text" : "",
 							"value" : "high speed",
 							"scoring" : {
@@ -690,8 +690,8 @@
 						{
                             "image" : "img/icon-thumb-no.png",
 							"hover" : "img/icon-thumb-no-active.png",
-							"thumbnail" : "img/icon-convection.png",
-							"thumbnail_current" : "img/icon-convection-current.png",
+							"thumbnail" : "img/icon-speed.png",
+							"thumbnail_current" : "img/icon-speed-current.png",
 							"text" : "",
 							"value" : "no speed",
 							"scoring" : {
@@ -703,10 +703,10 @@
 			]
 		},
 		"Cooking - Vents - Ventilation" : {
-			"next" : "Cooking - Ranges - Auto",
-			"previous" : "Cooking - Ranges - Speed",
-			"thumbnail_text" : "Fuel Type",
-			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"next" : "Cooking - Vents - Auto",
+			"previous" : "Cooking - Vents - Speed",
+			"thumbnail_text" : "Convection",
+			"thumbnail_current" : "img/icon-convection-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
@@ -721,8 +721,8 @@
 							"text" : "Yes - I need ducted ventilation",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-convection-current.png",
 							"value" : "yes",
 							"scoring" : {
 								 "exterior": 1
@@ -733,8 +733,8 @@
 							"text" : "No - I need non-ducted ventilation",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-convection-current.png",
 							"value" : "no",
 							"scoring" : {
 								 "nonVented": 1,
@@ -760,10 +760,10 @@
 			]
 		},
 		"Cooking - Vents - Auto" : {
-			"next" : "Cooking - Ranges - Warming",
-			"previous" : "Cooking - Ranges - Ventilation",
-			"thumbnail_text" : "Fuel Type",
-			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"next" : "Cooking - Vents - Warming",
+			"previous" : "Cooking - Vents - Ventilation",
+			"thumbnail_text" : "Convection",
+			"thumbnail_current" : "img/icon-convection-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
@@ -771,13 +771,11 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT MY HABITS?", 
 					"explanation" : "Some of our vents are automatic which means if you need us to, we can give you a hand turning it on.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"text" : "Too often",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "often",
@@ -788,8 +786,6 @@
 						},
 						{
 							"text" : "Sometimes",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "sometimes",
@@ -800,8 +796,6 @@
 						},
 						{
 							"text" : "Never",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "never",
@@ -815,7 +809,7 @@
 		},
 		"Cooking - Vents - Warming" : {
 			"next" : null,
-			"previous" : "Cooking - Ranges - Auto",
+			"previous" : "Cooking - Vents - Auto",
 			"thumbnail_text" : "Fuel Type",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
