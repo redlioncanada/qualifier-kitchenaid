@@ -269,7 +269,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Modern",
 							"value" : "modern",
-							"image" : "img/Cooking-Q2-single.png",
+							"image" : "img/modern.png",
 							"scoring" : {
 								"induction" : 1
 							},
@@ -280,7 +280,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Classic",
 							"value" : "classic",
-							"image" : "img/Cooking-Q2-combo.png",
+							"image" : "img/classic.png",
 							"scoring" : {
 								"electric" : 1
 							},
@@ -291,7 +291,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Professional",
 							"value" : "professional",
-							"image" : "img/Cooking-Q2-double.png",
+							"image" : "img/professional.png",
 							"scoring" : {
 								"gas" : 1
 							},
@@ -945,9 +945,9 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"text" : "Single Oven",
+							"text" : "Single Wall Oven",
 							"value" : "single",
-							"image" : "img/Cooking-Q2-single.png",
+							"image" : "img/single-wall-oven.png",
 							"scoring" : {
 								"single" : 1,
 								"combination" : -30,
@@ -960,7 +960,7 @@
 							"thumbnail_current" : "img/icon-orientation-current.png",
 							"text" : "Microwave Oven Combo",
 							"value" : "combo",
-							"image" : "img/Cooking-Q2-combo.png",
+							"image" : "img/microwave-oven-combo.png",
 							"scoring" : {
 								"single" : -30,
 								"combination" : 1,
@@ -971,15 +971,28 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "Double Oven",
+							"text" : "Double Wall Oven",
 							"value" : "double",
-							"image" : "img/Cooking-Q2-double.png",
+							"image" : "img/double-wall-oven.png",
 							"scoring" : {
 								"single" : -30,
 								"combination" : -30,
 								"double" : 1
 							},
 							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "No Preference",
+							"value" : "nopref",
+							"image" : "img/no-preference-oven.png",
+							"scoring" : {
+								"single" : -30,
+								"combination" : -30,
+								"double" : 1
+							},
+							"order" : 4
 						}
 					]
 				}
@@ -2281,14 +2294,15 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why Are You Asking Me About Style?",
 					"explanation" : "Since some fridges are built deeper than typical counter depth, we need to know how important having a fridge that's in-line with your counters is to your purchasing decision.",
-					"type" : "checkbox-4",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : false,
 					"classes" : "three form-function",
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Standard Depth – I don’t care if my fridge is in-line with my counters ",
+                            "text" : "Standard Depth – I don’t care if my fridge is in-line with my counters ",
+                            "image" : "img/standard-depth.png",
 							"value" : 0,
 							"scoring" : {
 								"standardDepth" : 1
@@ -2299,6 +2313,7 @@
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Counter Depth – I want my fridge to be in-line with my counters ",
+                            "image" : "img/counter-depth.png",
 							"value" : 1,
 							"scoring" : {
 								"counterDepth" : 1
@@ -2309,6 +2324,7 @@
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Built-In – I want to be able to customize the exterior of my fridge",
+                            "image" : "img/built-in.png",
 							"value" : 2,
 							"scoring" : {
 								"builtIn" : 1
