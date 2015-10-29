@@ -173,11 +173,11 @@
 					"explanation" : "Our cooktops come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider",
 					"oneAnswer" : false,
-					"classes" : "slider-labels left-tag label-inches",
-					"answer" : 0,
+					"classes" : "slider-labels show-ticks left-tag label-inches",
+					"answer" : 1,
 					"options" : { 
-						"from" : 0,
-						"to" : 4,      
+						"from" : 1,
+						"to" : 5,      
 					    "step": 0.0001,
 					    "dimension_label" : "WIDTH",
 					    "scale": ["Any size","15","30","36","48"]       
@@ -186,7 +186,7 @@
 						"1" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 4,
+							"value" : 1,
 							"text" : "Any Size",
 							"scoring" : {
 							}
@@ -194,7 +194,7 @@
 						"2" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 0,
+							"value" : 2,
 							"text" : "15\"",
 							"scoring" : {
 								"width15" : 1,
@@ -206,7 +206,7 @@
 						"3" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 1,
+							"value" : 3,
 							"text" : "30\"",
 							"scoring" : {
 								"width15" : -30,
@@ -218,7 +218,7 @@
 						"4" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 2,
+							"value" : 4,
 							"text" : "36\"",
 							"scoring" : {
 								"width15" : -30,
@@ -230,7 +230,7 @@
 						"5" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 3,
+							"value" : 5,
 							"text" : "48\"",
 							"scoring" : {
 								"width15" : -30,
@@ -863,8 +863,8 @@
 					"explanation" : "Our wall ovens come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider",
 					"oneAnswer" : false,
-					"classes" : "slider-labels left-tag label-inches",
-					"answer" : 27,
+					"classes" : "slider-labels show-ticks left-tag label-inches",
+					"answer" : 1,
 					"options" : { 
 						"from" : 1,
 						"to" : 4,      
@@ -876,7 +876,7 @@
 						"1" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : "Any",
+							"value" : 1,
 							"text" : "No Restrictions",
 							"scoring" : {
 								"width24" : 1,
@@ -887,7 +887,7 @@
 						"2" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 24,
+							"value" : 2,
 							"text" : "24\"",
 							"scoring" : {
 								"width24" : 1,
@@ -898,7 +898,7 @@
 						"3" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 27,
+							"value" : 3,
 							"text" : "27\"",
 							"scoring" : {
 								"width24" : -30,
@@ -909,7 +909,7 @@
 						"4" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 30,
+							"value" : 4,
 							"text" : "30\"",
 							"scoring" : {
 								"width24" : -30,
