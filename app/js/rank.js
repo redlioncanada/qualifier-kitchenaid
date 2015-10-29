@@ -48,6 +48,12 @@ angular.module('App')
         }
     }
 
+    $scope.sortable.disabledDragControlListeners = {
+        accept: function(source, dest) {
+            return false;
+        }
+    };
+
 	$scope.sortable.dragControlListeners = {
     	orderChanged: function(event) {
             $rootScope.controls.questionHasAnswer = true

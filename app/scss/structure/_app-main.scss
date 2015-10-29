@@ -1275,9 +1275,12 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             text-align: center;
             li {
                 background-color: transparent;
+                height: 41px;
+                width: 41px;
+
                 .rank-number-wrap {
-                    height: 41px;
-                    width: 41px;
+                    height: inherit;
+                    width: inherit;
                     span {
                         top: 3px;
                         color: #9f9f9f;

@@ -585,6 +585,7 @@
 	border: none;
 }
 .ranking {
+	position:relative;
 	ul, li, a {
 		-webkit-touch-callout: none;
 	    -webkit-user-select: none;
@@ -605,8 +606,8 @@
 	}
 	.rank-numbers-list {
 		display: inline-block;
-        height: 100% !important;
         background-color: #ececec;
+        position:absolute;
         padding: 5px;
         margin-right: -4px;
 	}
@@ -617,12 +618,17 @@
         position: relative;
         background-color: #ececec;
         padding: 5px;
+        margin-left: 76px;
 		li {
 			height: 62.1px;
             margin-bottom: 0;
             margin: 0px 2px 4.1px 1px;
             text-align: center;
 		}
+	}
+	.rank-numbers-list li {
+		width: 63px;
+		height: 61px;
 	}
 	.rank-number-wrap {
 		float: left;
