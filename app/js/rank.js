@@ -10,6 +10,14 @@ angular.module('App')
         $.each($($element).find('li .label-wrap'), function(key, value) {
             $scope.labelElements.push(value);
         });
+
+        $scope.clonedElement = $($element).find('.rank-answers-list li').first().clone()
+                .addClass('dragging-rank')
+                .removeClass('as-sortable-item')
+                .attr('as-sortable-item', '')
+                .hide()
+                .appendTo('body');
+
         $scope.toggleMouseMove(true);
     },0);
 
@@ -23,20 +31,18 @@ angular.module('App')
 
     $scope.draggingListener = function(e) {
         // console.log('drag');
-        if (!$($scope.clonedElement)[0].parentElement) {
-            $scope.clonedElement.appendTo('body').show();
-        }
         $($scope.clonedElement).css({
             position: 'absolute',
             top: e.pageY - $scope.localY,
-            left: e.pageX - $scope.localX
+            left: e.pageX - $scope.localX,
+            display: 'block'
         })
     };
 
     $scope.mouseMoveListener = function(e) {
         var parentOffset = $(this).parent().offset();
-        $scope.localX = e.pageX - parentOffset.left - 67;
-        $scope.localY = e.pageY - parentOffset.top - 17;
+        $scope.localX = e.pageX - parentOffset.left;
+        $scope.localY = e.pageY - parentOffset.top - 20;
         // console.log('mousemove');
     };
 
@@ -48,6 +54,12 @@ angular.module('App')
         }
     }
 
+    $scope.sortable.disabledDragControlListeners = {
+        accept: function(source, dest) {
+            return false;
+        }
+    };
+
 	$scope.sortable.dragControlListeners = {
     	orderChanged: function(event) {
             $rootScope.controls.questionHasAnswer = true
@@ -56,20 +68,14 @@ angular.module('App')
     		}
     	},
         dragStart: function(e) {
-            $scope.toggleMouseMove(false);
-
-           $scope.clonedElement = $(e.source.itemScope.element[0]).clone()
-                .addClass('dragging-rank')
-                .removeClass('as-sortable-item')
-                .attr('as-sortable-item', '');
+           $($scope.clonedElement).find('span').text($(e.source.itemScope.element[0]).find('span').text());
            $(document).on('mousemove', $scope.draggingListener);
+           $scope.toggleMouseMove(false);
         },
         dragEnd: function(e) {
-            $scope.toggleMouseMove(true);
-
-            $($scope.clonedElement).remove();
-            $scope.clonedElement = undefined;
+            $($scope.clonedElement).hide();
             $(document).off('mousemove', $scope.draggingListener);
+            $scope.toggleMouseMove(true);
         },
 	    containment: '.answers-main-content'
 	};
