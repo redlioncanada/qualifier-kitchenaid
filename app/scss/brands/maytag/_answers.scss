@@ -22,7 +22,7 @@
 	}
 	// Radio, checkbox 4 and up as well as split
 	&.regular-4-container {
-		width: 100%;
+		width: 1100px;
 	}
 	&.picture-2-container {
 		width: 770px;
@@ -136,8 +136,8 @@
 
 .answer-box {
 	transition: all 1s ease;
-	margin-left: 22px;
-	margin-right: 22px;
+	margin-left: 3px;
+	margin-right: 3px;
 	position: relative;
 	// Single select answers
 	&.radio {
@@ -176,8 +176,8 @@
 	}
 	// 4 or more = 2 columns
 	&.radio-2 {
-		display: inline-block;
-		float: left;
+        margin-left: auto !important;
+        margin-right: auto !important;
 		.select-icon {
 			left: 24px;
 		}

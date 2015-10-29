@@ -535,7 +535,7 @@
 					"sub_question" : "Select One",
 					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT WIDTH?",
 					"explanation" : "When it comes to cooktops, size matters. It is only once we know the width of your cooktop/range we can find the best vent for you.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -578,7 +578,7 @@
 					"sub_question" : "Select One",
 					"explanation_title" : "WHY ARE YOU ASKING ME WHERE I COOK?",
 					"explanation" : "We know that every kitchen is unique. By understanding where your cooking surface is, we can recommend the perfect vent.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
