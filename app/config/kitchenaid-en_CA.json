@@ -2307,7 +2307,8 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-                            "text" : "Standard Depth – I don’t care if my fridge is in-line with my counters ",
+                            "text" : "Standard Depth",
+                            "subtext" : "I don’t care if my fridge is in-line with my counters ",
                             "image" : "img/standard-depth.png",
 							"value" : 0,
 							"scoring" : {
@@ -2318,7 +2319,8 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Counter Depth – I want my fridge to be in-line with my counters ",
+							"text" : "Counter Depth",
+                            "subtext" : "I want my fridge to be in-line with my counters ",
                             "image" : "img/counter-depth.png",
 							"value" : 1,
 							"scoring" : {
@@ -2329,7 +2331,8 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Built-In – I want to be able to customize the exterior of my fridge",
+							"text" : "Built-In",
+                            "subtext" : "I want to be able to customize the exterior of my fridge",
                             "image" : "img/built-in.png",
 							"value" : 2,
 							"scoring" : {

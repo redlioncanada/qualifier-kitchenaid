@@ -428,7 +428,7 @@
 		}
 		.label-wrap {
 			position: absolute;
-			bottom: -40px;
+			bottom: -50px;
             left: 50%;
             -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
@@ -438,6 +438,12 @@
                 font-weight: 800;
                 width: 175px;
                 text-align: center;
+            }
+            .label-sub-text {
+                color: #747474;
+                width: 175px;
+                text-align: center;
+                font-size: 10px;
             }
 		}
         
