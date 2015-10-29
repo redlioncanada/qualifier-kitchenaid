@@ -394,16 +394,19 @@ a.answer-box.picture-4 {
     .icon-wrap {
         background: url("../img/icon-bg-big-active.png") no-repeat;
         background-size: contain;
+        background-position: 50% 0;
     }
 }
 a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
     .icon-wrap {
         background: url("../img/icon-bg-big-active.png") no-repeat;
         background-size: contain;
+        background-position: 50% 0;
     }
     .img-wrap {
         background: url("../img/icon-bg-big-active.png") no-repeat;
         background-size: contain;
+        background-position: 50% 0;
     }
 }
 
@@ -1342,6 +1345,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             .icon-wrap, img-wrap {
                 width: 150px !important;
                 height: 150px !important;
+                margin: 0 auto;
                 
                 img.normal, img.hover {
                     width: 100px;
