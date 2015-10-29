@@ -854,7 +854,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 
 .scale-left .vertical {
 	.jslider-scale {
-		margin-left: -45px;
+		margin-left: -60px;
 
 		span ins {
 			margin-left: -116px !important;
@@ -1042,7 +1042,7 @@ div[ng-class="fr_CA"] {
 @media(max-width:1023px) {
 	.answers-main-content.answer-buttons {
 		position: absolute;
-		top: -25px;
+		top: 75px;
 		width: 50%;
 		left: 50%;
 		padding-top: 0px;
@@ -1097,7 +1097,7 @@ div[ng-class="fr_CA"] {
 	}
 
 	div.answers-main-content.answer-buttons {
-		top: -9px;
+		top: 75px;
 
 		li.answer-button-wrapper {
 			margin-top: 1.2px !important;
