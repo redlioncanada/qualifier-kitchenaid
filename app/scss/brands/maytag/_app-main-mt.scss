@@ -27,6 +27,7 @@ header.header-desktop {
 		color: #7e7e7e;
 		letter-spacing: 1px;
         text-align: center;
+        font-weight: 700;
 	}
 	h3 span {
 		color: #ac080f;
@@ -103,7 +104,7 @@ header.header-desktop {
 			}
 			.btn-text {
 				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				color: #000;
+				color: #7e7e7e;
 				font-size: 10px;
 				position: relative;
 				left: 5px;
@@ -130,7 +131,7 @@ header.header-desktop {
 	max-width: 340px;
 	left: 50%;
 	opacity: 0;
-
+	
 	&.top .tooltip-arrow {
 		border-top-color: #ac080f;
 	}
