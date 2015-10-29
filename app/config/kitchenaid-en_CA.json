@@ -1786,7 +1786,7 @@
 					"explanation_title" : "Why Are You Asking Me About Size?",
 					"explanation" : "Our fridges come in many sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider-buttons",
-					"classes" : "slider-labels left-tag no-jslider-value four scale-left",
+					"classes" : "slider-labels left-tag no-jslider-value show-ticks scale-left",
 					"oneAnswer" : false,
 					"answer" : 0,
 					"options" : { 
@@ -1894,7 +1894,7 @@
 							"value" : 70,
 							"text" : "70",
 							"enabled" : true,
-							"enabledWhen" : [1,2,3],
+							"enabledWhen" : [0,1,2,3],
 							"scoring" : {
 								 "height66" : 1
 							}
@@ -1903,7 +1903,7 @@
 							"value" : 71,
 							"text" : "71",
 							"enabled" : true,
-							"enabledWhen" : [3],
+							"enabledWhen" : [0,3],
 							"scoring" : {
 								 "height68" : 1,
 								 "height69" : 1
@@ -1913,7 +1913,7 @@
 							"value" : 83,
 							"text" : "83",
 							"enabled" : true,
-							"enabledWhen" : [3,4,5],
+							"enabledWhen" : [0,3,4,5],
 							"scoring" : {
 								 "height67" : 1
 							}
