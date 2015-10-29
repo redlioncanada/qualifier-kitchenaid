@@ -12,9 +12,11 @@
 							<span bo-text="brandData.apptext.colourPreference"></span>
 							<div class="colourBar">
 								<ul class="color-wrapper">
-									<li ng-repeat="colour in a.colours" ng-click="expandPriceRange(colour.prices.CAD);a.picker=colour;selectPicker(a,colour);" ng-class="{selected: a.picker.colourCode==colour.colourCode}">
-										<img ng-src="http://kitchenaid.com/digitalassets/ColorBars/{{colour.colourCode}}-off.gif"  />
-									</li>
+                                    <li ng-repeat="colour in a.colours" ng-click="expandPriceRange(colour.prices.CAD);a.picker=colour;selectPicker(a,colour);" ng-class="{selected: a.picker.colourCode==colour.colourCode}">
+                                        <div class="color-border-radius">
+                                            <img ng-src="http://kitchenaid.com/digitalassets/ColorBars/{{colour.colourCode}}-off.gif"  />
+                                        </div>        
+                                    </li>
 								</ul>
 							</div>
 						</div>

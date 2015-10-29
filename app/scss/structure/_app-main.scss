@@ -11,7 +11,9 @@ html, body {
 	@include noselect;
 	.content-inner {
 		width: 100%;
+        max-width: 1400px;
 		padding-top: 25px;
+        margin: 0 auto;
 		@include noselect;
 		// padding-bottom: 25px;
 
