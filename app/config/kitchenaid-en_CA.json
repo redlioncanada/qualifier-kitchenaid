@@ -310,7 +310,7 @@
 			"text" : [
 				{
 					"question" : "WHEN SHOPPING FOR A COOKTOP, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION?",
-					"sub_question" : "DRAG TO REORDER. 1 IS MOST IMPORTANT AND 5 IS LEAST",
+					"sub_question" : "DRAG TO REORDER. <span>1</span> IS MOST IMPORTANT AND <span>5</span> IS LEAST",
 					"explanation_title" : "Why are you asking me about preference?",
 					"explanation" : "By understanding your cooking priorities, we can better recommend the perfect cooktop for your lifestyle.",
 					"type" : "rank",

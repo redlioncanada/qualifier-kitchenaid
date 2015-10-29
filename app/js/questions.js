@@ -19,7 +19,6 @@ angular.module('App')
 			if ($rootScope.showTooltip) {
 				var width = $('.extra-info-wrap .tooltip-inner').width();
 				var top = $('.app-content-main-top-left h2').height() - 35;
-				console.log(width);
 				var el = $('.extra-info-wrap .tooltip');
 				if (width > 0) el.css({
 					'margin-left': -width/2,

@@ -13,7 +13,7 @@
 			<div class="app-content-main-top-left">
 				<h2 ng-if="(falsey('questionHideOnMobile', questionsData.question.show) && isTabletWidthOrLess) || !isTabletWidthOrLess" ng-bind-html="questionsData.question.show.question"></h2>
 				<h2 class="main-question-more" ng-if="!!questionsData.question.show.question_more"  ng-bind="questionsData.question.show.question_more"></h2>
-				<h3 ng-if="!!questionsData.question.show.sub_question" ng-bind="questionsData.question.show.sub_question"></h3>
+				<h3 ng-if="!!questionsData.question.show.sub_question" ng-bind-html="questionsData.question.show.sub_question"></h3>
 
 				<div class="extra-info-wrap">
 					<a class="btn-wrap" ng-class="{'tooltip-open':$root.showTooltip}" ng-if="!!questionsData.question.show.explanation_title" ng-click="$root.showTooltip = !$root.showTooltip;">
