@@ -4,8 +4,8 @@
 		<div class="print-page-callout print-page-callout-left">
 			<div>
 				<div class="print-page-image">
-					<img ng-if="a.appliance!='Laundry'" ng-src="http://maytag.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg">
-					<img ng-if="a.appliance=='Laundry'" ng-src="http://maytag.com/{{a.image}}">
+					<img ng-if="a.appliance!='Laundry'" ng-src="http://kitchenaid.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg">
+					<img ng-if="a.appliance=='Laundry'" ng-src="http://kitchenaid.com/{{a.image}}">
 				</div>
 				<div class="print-page-title">
 					<span class="name">{{a.name}}</span>
@@ -76,20 +76,20 @@
 					<div class="result-inner">
 						<h3 ng-if="$index==1" bo-text="brandData.apptext.yourBestMatch"></h3>
 						<div class="product-img-wrap" ng-init="a.picker=a.colours[0]">
-							<img ng-if="a.appliance!='Laundry'" ng-src="http://maytag.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" style="width: 220px">
-							<img ng-if="a.appliance=='Laundry'" ng-src="http://maytag.com/{{a.image}}" style="width: 220px; height: 280px">
+							<img ng-if="a.appliance!='Laundry'" ng-src="http://kitchenaid.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" style="width: 220px">
+							<img ng-if="a.appliance=='Laundry'" ng-src="http://kitchenaid.com/{{a.image}}" style="width: 220px; height: 280px">
 						</div>
 						<div class="product-colour-picker-wrap">
 							<span bo-text="brandData.apptext.colourPreference"></span>
 							<div class="colourBar">
 								<ul class="color-wrapper" ng-if="a.appliance!='Laundry'">
 									<li ng-repeat="colour in a.colours" ng-click="expandPriceRange(colour.prices.CAD);a.picker=colour;selectPicker(a,colour);" ng-class="{selected: a.picker.colourCode==colour.colourCode}">
-										<img ng-src="http://www.maytag.com/digitalassets/ColorBars/{{colour.colourCode}}-MT.png" />
+										<img ng-src="http://kitchenaid.com/digitalassets/ColorBars/{{colour.colourCode}}-off.gif" />
 									</li>
 								</ul>
 								<ul class="color-wrapper" ng-if="a.appliance=='Laundry'">
 									<li ng-repeat="colour in a.colours">
-										<img ng-src="http://www.maytag.com/digitalassets/ColorBars/{{colour.colourCode}}-MT.png" />
+										<img ng-src="http://kitchenaid.com/digitalassets/ColorBars/{{colour.colourCode}}-off.gif" />
 									</li>
 								</ul>
 							</div>

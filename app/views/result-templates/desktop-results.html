@@ -5,15 +5,15 @@
 						<h3 ng-if="$index==1" bo-text="brandData.apptext.yourBestMatch"></h3>
 						<h3 ng-if="$index!=1" bo-text="brandData.apptext.otherSuggestion"></h3>
 						<div class="product-img-wrap" ng-init="a.picker=setFirstColour(a)">
-							<img ng-src="http://maytag.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" style="width: 127px">
-							<img ng-if="a.appliance=='Washers'" ng-src="http://maytag.com/digitalassets/{{a.picker.dryersku}}/Standalone_1175X1290.jpg" style="width: 127px;">
+							<img ng-src="http://kitchenaid.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" style="width: 127px">
+							<img ng-if="a.appliance=='Washers'" ng-src="http://kitchenaid.com/digitalassets/{{a.picker.dryersku}}/Standalone_1175X1290.jpg" style="width: 127px;">
 						</div>
 						<div class="product-colour-picker-wrap">
 							<span bo-text="brandData.apptext.colourPreference"></span>
 							<div class="colourBar">
 								<ul class="color-wrapper">
 									<li ng-repeat="colour in a.colours" ng-click="expandPriceRange(colour.prices.CAD);a.picker=colour;selectPicker(a,colour);" ng-class="{selected: a.picker.colourCode==colour.colourCode}">
-										<img ng-src="http://www.maytag.com/digitalassets/ColorBars/{{colour.colourCode}}-MT.png"  />
+										<img ng-src="http://kitchenaid.com/digitalassets/ColorBars/{{colour.colourCode}}-off.gif"  />
 									</li>
 								</ul>
 							</div>

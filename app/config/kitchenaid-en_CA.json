@@ -2144,7 +2144,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why Are You Asking Me About Water?",
 					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
-					"type" : "checkbox-4",
+					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
