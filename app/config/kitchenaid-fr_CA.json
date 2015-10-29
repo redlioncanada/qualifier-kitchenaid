@@ -1662,7 +1662,7 @@
                  "sub_question": "SÉLECTIONNEZ TOUTES LES RÉPONSES PERTINENTES",
                  "explanation_title": "POURQUOI ME POSEZ-VOUS UNE QUESTION AU SUJET DE L’EAU?",
                  "explanation": "Certains de nos modèles comportent un distributeur d’eau. En comprenant quelle est votre consommation d’eau, nous pouvons recommander le réfrigérateur qui répondra le mieux à vos besoins.",
-                 "type": "checkbox-4",
+                 "type": "radio-4",
                  "oneAnswer": false,
                  "answers": [{
                      "text": "Une bonne bouteille d’eau froide",

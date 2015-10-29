@@ -2,7 +2,7 @@
 <ul class="mobile-results-nav" ng-if="questionsData.currentCount !=0">
     <li ng-repeat="a in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange" class="mobile-result-selector" ng-click="selectorClicked($event);" id="result-selector-{{$index}}">
         <div class="product-img-wrap" ng-init="a.picker=setFirstColour(a)">
-            <img ng-src="http://maytag.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" class="mobile-selector-img">
+            <img ng-src="http://kitchenaid.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" class="mobile-selector-img">
         </div>
         <span ng-if="$index==1" bo-text="brandData.apptext.yourBestMatch" ng-class="{'active': $index==1}" class="mobile-results-header" id="result-header-{{$index}}"></span>
         <span ng-if="$index!=1" bo-text="brandData.apptext.otherSuggestion" class="mobile-results-header" id="result-header-{{$index}}" ></span>
@@ -19,7 +19,7 @@
 							<div class="colourBar">
 								<ul class="color-wrapper">
 									<li ng-repeat="colour in a.colours" ng-click="expandPriceRange(colour.prices.CAD);a.picker=colour;selectPicker(a,colour);" ng-class="{selected: a.picker.colourCode==colour.colourCode}">
-										<img ng-src="http://www.maytag.com/digitalassets/ColorBars/{{colour.colourCode}}-MT.png" />
+										<img ng-src="http://kitchenaid.com/digitalassets/ColorBars/{{colour.colourCode}}-off.gif" />
 									</li>
 								</ul>
 							</div>
