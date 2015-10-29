@@ -11,7 +11,7 @@ angular.module('App')
             $scope.labelElements.push(value);
         });
 
-        $scope.clonedElement = $($element).find('li').first().clone()
+        $scope.clonedElement = $($element).find('.rank-answers-list li').first().clone()
                 .addClass('dragging-rank')
                 .removeClass('as-sortable-item')
                 .attr('as-sortable-item', '')
@@ -34,7 +34,8 @@ angular.module('App')
         $($scope.clonedElement).css({
             position: 'absolute',
             top: e.pageY - $scope.localY,
-            left: e.pageX - $scope.localX
+            left: e.pageX - $scope.localX,
+            display: 'block'
         })
     };
 
@@ -67,17 +68,14 @@ angular.module('App')
     		}
     	},
         dragStart: function(e) {
-            $scope.toggleMouseMove(false);
-
            $($scope.clonedElement).find('span').text($(e.source.itemScope.element[0]).find('span').text());
-           $($scope.clonedElement).show();
            $(document).on('mousemove', $scope.draggingListener);
+           $scope.toggleMouseMove(false);
         },
         dragEnd: function(e) {
-            $scope.toggleMouseMove(true);
-
             $($scope.clonedElement).hide();
             $(document).off('mousemove', $scope.draggingListener);
+            $scope.toggleMouseMove(true);
         },
 	    containment: '.answers-main-content'
 	};
