@@ -16,11 +16,19 @@
 				<h3 ng-if="!!questionsData.question.show.sub_question" ng-bind="questionsData.question.show.sub_question"></h3>
 
 				<div class="extra-info-wrap">
-					<a class="btn-wrap" ng-if="!!questionsData.question.show.explanation_title" ng-click="$root.showTooltip = !$root.showTooltip;">
-						<span class="btn-icon" tooltip-append-to-body="true" tooltip-trigger="none" tooltip-is-open="$root.showTooltip" tooltip-placement="{{isTabletWidthOrLess ? 'left' : 'bottom'}}" tooltip="{{questionsData.question.show.explanation}}">
-							<span id="tooltip-glyph">?</span>
-						</span>
+					<a class="btn-wrap" ng-class="{'tooltip-open':$root.showTooltip}" ng-if="!!questionsData.question.show.explanation_title" ng-click="$root.showTooltip = !$root.showTooltip;">
+						<div class="btn-icon-wrapper">
+							<span class="btn-icon" ng-if="!$root.showTooltip">
+								<span id="tooltip-glyph">?</span>
+							</span>
+							<span class="btn-icon inverted x"ng-if="$root.showTooltip">
+								<span id="tooltip-glyph" >+</span>
+							</span>
+						</div>
 						<span class="btn-text" ng-if="!isTabletWidthOrLess" ng-bind="questionsData.question.show.explanation_title"></span>
+						<div class="tooltip">
+							<div class="tooltip-inner" ng-bind="questionsData.question.show.explanation"></div>
+						</div>
 					</a>
 					<a class="btn-wrap" ng-if="!!questionsData.question.show.info_title" tooltip-append-to-body="true" ng-click="$root.showTooltip = !$root.showTooltip" tooltip-trigger="none" tooltip-placement="{{isTabletWidthOrLess ? 'left' : 'bottom'}}" tooltip-toggle="$root.showTooltip" tooltip="{{questionsData.question.show.info}}">
 						<span class="btn-icon">
