@@ -1924,7 +1924,7 @@
 		},
 		"Fridges - Energy" : {
 			"next" : "Fridges - Capacity",
-			"previous" : "Appliance",
+			"previous" : "Fridges - Size",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"thumbnail_text" : "Energy",
