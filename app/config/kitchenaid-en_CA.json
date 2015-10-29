@@ -1203,41 +1203,47 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Our ranges come in different sizes, we want to make sure that we recommend the perfect one for your space.",
-					"type" : "radio-4",
-					"oneAnswer" : true,
-					"answers" : [
-						{
-							"thumbnail" : "img/icon-style.png",
-							"thumbnail_current" : "img/icon-style-current.png",
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels four show-ticks",
+					"answer" : 0,
+					"options" : {
+					    "from": 0,
+					    "to": 2,
+					    "step": 0.0001,
+					    "dimension": "",
+					    "scale": ["No Preference","30\"","36\""]       
+					},
+					"answers" : {
+						"0" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 0,
+							"text" : "No Preference",
+							"scoring" : {
+							}
+						},
+						"1" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 1,
 							"text" : "30\"",
-							"value" : "30",
 							"scoring" : {
 								"width30" : 1,
 								"width36" : -30
-							},
-							"order" : 1
+							}
 						},
-						{
-							"thumbnail" : "img/icon-style.png",
-							"thumbnail_current" : "img/icon-style-current.png",
+						"2" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 2,
 							"text" : "36\"",
-							"value" : "36",
 							"scoring" : {
-								"width30" : -30,
-								"width36" : 1
-							},
-							"order" : 2
-						},
-						{
-							"thumbnail" : "img/icon-style.png",
-							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "No Restrictions",
-							"value" : "any",
-							"scoring" : {
-							},
-							"order" : 3
+								"width36" : 1,
+								"width30" : -30
+							}
 						}
-					]
+					}
 				}
 			]
 		},
