@@ -873,7 +873,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 
 	a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4 {
 		float: none;
-		margin: 14px auto;
+		margin: 3px auto;
 		display: block !important;
 	}
     a.answer-box.picture-3 {
@@ -896,7 +896,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 		margin: 10px auto;
 	}
 
-	a.answer-box.radio, a.answer-box.radio-2, a.answer-box.radio-4 {
+	a.answer-box.radio, a.answer-box.radio-4 {
 		float: initial !important;
 	}
     .picture-4-container {
@@ -1230,8 +1230,8 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
         width: 100% !important;
     }
     a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4, .boxes-icon-split {
-        margin-top: 8px;
-        margin-bottom: 8px;
+        margin-top: 0px;
+        margin-bottom: 3px;
     }
     .picture-3-container {
         width: 320px;
