@@ -506,6 +506,10 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 	}
 }
 
+.show-ticks .jslider .jslider-scale span {
+	border-left: 1px solid #999 !important;
+}
+
 // Specific case
 .answer-slider .family-size {
 	.jslider {
