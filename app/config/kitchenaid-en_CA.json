@@ -169,15 +169,15 @@
 				{
 					"question" : "WHAT SIZE OF COOKTOP DO YOU NEED?",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why Are You Asking Me About Size?",
+					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Our cooktops come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider",
 					"oneAnswer" : false,
-					"classes" : "slider-labels left-tag label-inches",
-					"answer" : 0,
+					"classes" : "slider-labels show-ticks left-tag label-inches",
+					"answer" : 1,
 					"options" : { 
-						"from" : 0,
-						"to" : 4,      
+						"from" : 1,
+						"to" : 5,      
 					    "step": 0.0001,
 					    "dimension_label" : "WIDTH",
 					    "scale": ["Any size","15","30","36","48"]       
@@ -186,7 +186,7 @@
 						"1" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 4,
+							"value" : 1,
 							"text" : "Any Size",
 							"scoring" : {
 							}
@@ -194,7 +194,7 @@
 						"2" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 0,
+							"value" : 2,
 							"text" : "15\"",
 							"scoring" : {
 								"width15" : 1,
@@ -206,7 +206,7 @@
 						"3" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 1,
+							"value" : 3,
 							"text" : "30\"",
 							"scoring" : {
 								"width15" : -30,
@@ -218,7 +218,7 @@
 						"4" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 2,
+							"value" : 4,
 							"text" : "36\"",
 							"scoring" : {
 								"width15" : -30,
@@ -230,7 +230,7 @@
 						"5" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 3,
+							"value" : 5,
 							"text" : "48\"",
 							"scoring" : {
 								"width15" : -30,
@@ -259,7 +259,7 @@
 				{
 					"question" : "HOW WOULD YOU DESCRIBE YOUR KITCHEN'S STYLE?",
 					"sub_question" : "Select One",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT STYLE?",
+					"explanation_title" : "Why are you asking me about style?",
 					"explanation" : "Our cooktops come in different styles. By understanding your preference, we can better recommend the perfect one for you.",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
@@ -310,8 +310,8 @@
 			"text" : [
 				{
 					"question" : "WHEN SHOPPING FOR A COOKTOP, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION?",
-					"sub_question" : "DRAG TO REORDER. 1 IS MOST IMPORTANT AND 5 IS LEAST",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT PREFERENCE?",
+					"sub_question" : "DRAG TO REORDER. <span>1</span> IS MOST IMPORTANT AND <span>5</span> IS LEAST",
+					"explanation_title" : "Why are you asking me about preference?",
 					"explanation" : "By understanding your cooking priorities, we can better recommend the perfect cooktop for your lifestyle.",
 					"type" : "rank",
 					"oneAnswer" : false,
@@ -389,7 +389,7 @@
 				{
 					"question" : "WHAT COOKING TECHNIQUES DO YOU USE OFTEN?",
 					"sub_question" : "Select all that apply",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT COOKING TECHNIQUES?",
+					"explanation_title" : "Why are you asking me about cooking techniques?",
 					"explanation" : "Our cooktops are equipped with heat technology to go from simmer to rolling boil quickly. By understanding how you cook, we can better recommend the perfect cooktop for your lifestyle.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
@@ -493,7 +493,7 @@
 				{
 					"question" : "Is your kitchen equipped for gas or electric?",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why Are You Asking Me About Gas?", 
+					"explanation_title" : "Why are you asking me about gas?", 
 					"explanation" : "Some kitchens are equipped for gas and others are not. We need to know this information to recommend the perfect range.",
 					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
@@ -533,7 +533,7 @@
 				{
 					"question" : "WHAT IS THE WIDTH OF YOUR COOKTOP OR RANGE?",
 					"sub_question" : "Select One",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT WIDTH?",
+					"explanation_title" : "Why are you asking me about width?",
 					"explanation" : "When it comes to cooktops, size matters. It is only once we know the width of your cooktop/range we can find the best vent for you.",
 					"type" : "radio-2",
 					"oneAnswer" : true,
@@ -576,7 +576,7 @@
 				{
 					"question" : "WHERE IN YOUR KITCHEN CAN WE FIND YOUR COOKING SURFACE?",
 					"sub_question" : "Select One",
-					"explanation_title" : "WHY ARE YOU ASKING ME WHERE I COOK?",
+					"explanation_title" : "Why are you asking me where I cook?",
 					"explanation" : "We know that every kitchen is unique. By understanding where your cooking surface is, we can recommend the perfect vent.",
 					"type" : "radio-2",
 					"oneAnswer" : true,
@@ -621,7 +621,7 @@
 				{
 					"question" : "ARE THERE CABINETS ABOVE YOUR COOKING SURFACE?",
 					"sub_question" : "Select One",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT MY CABINETS?",
+					"explanation_title" : "Why are you asking me about my cabinets?",
 					"explanation" : "Some of the by-products of cooking (steam, moisture and grease) can be destructive without the right ventilation. By understanding your specific needs we can find the perfect system for your kitchen.",
 					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
@@ -669,7 +669,7 @@
 				{
 					"question" : "DO YOU OFTEN FIND YOURSELF PREPARING A HIGH-HEAT SAUCE, SAUTÉ OR STIR-FRY?",
 					"sub_question" : "Select One",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT HEAT?",
+					"explanation_title" : "Why are you asking me about heat?",
 					"explanation" : "We know that everybody has a different cooking style. If you like to turn up the heat, we’ll find you a vent with a stronger fan.",
 					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
@@ -712,7 +712,7 @@
 				{
 					"question" : "DOES YOUR VENTILATION LEAD TO YOUR HOME EXTERIOR?",
 					"sub_question" : "Select one",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT VENTILATION?", 
+					"explanation_title" : "Why are you asking me about ventilation?", 
 					"explanation" : "As much as we want to maintain the smell of that simmering pot of soup, proper ventilation is important to keep kitchen air clean.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
@@ -769,7 +769,7 @@
 				{
 					"question" : "DO YOU EVER FORGET TO TURN ON YOUR FAN?",
 					"sub_question" : "Select one",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT MY HABITS?", 
+					"explanation_title" : "Why are you asking me about my habits?", 
 					"explanation" : "Some of our vents are automatic which means if you need us to, we can give you a hand turning it on.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
@@ -817,7 +817,7 @@
 				{
 					"question" : "WOULD YOU LIKE YOUR HOOD TO HAVE A WARMING LAMP?",
 					"sub_question" : "Select one",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT A WARMING LAMP?", 
+					"explanation_title" : "Why are you asking me about a warming lamp?", 
 					"explanation" : "Some of our models come equipped with warming lamps. If we have a better idea of your needs, we can better recommend the perfect hood.",
 					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
@@ -859,12 +859,12 @@
 				{
 					"question" : "WHAT SIZE OF WALL OVEN DO YOU NEED?",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why Are You Asking Me About Size?",
+					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Our wall ovens come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider",
 					"oneAnswer" : false,
-					"classes" : "slider-labels left-tag label-inches",
-					"answer" : 27,
+					"classes" : "slider-labels show-ticks left-tag label-inches",
+					"answer" : 1,
 					"options" : { 
 						"from" : 1,
 						"to" : 4,      
@@ -876,7 +876,7 @@
 						"1" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : "Any",
+							"value" : 1,
 							"text" : "No Restrictions",
 							"scoring" : {
 								"width24" : 1,
@@ -887,7 +887,7 @@
 						"2" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 24,
+							"value" : 2,
 							"text" : "24\"",
 							"scoring" : {
 								"width24" : 1,
@@ -898,7 +898,7 @@
 						"3" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 27,
+							"value" : 3,
 							"text" : "27\"",
 							"scoring" : {
 								"width24" : -30,
@@ -909,7 +909,7 @@
 						"4" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 30,
+							"value" : 4,
 							"text" : "30\"",
 							"scoring" : {
 								"width24" : -30,
@@ -1008,7 +1008,7 @@
 				{
 					"question" : "I use my oven to...",
 					"sub_question" : "Select all that apply",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT COOKING?",
+					"explanation_title" : "Why are you asking me about cooking?",
 					"explanation" : "Our wall ovens all have unique features. We want to get a better idea of how you use yours so we can recommend the perfect one for your needs.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
@@ -1080,7 +1080,7 @@
 				{
 					"question" : "HOW WOULD YOUR FRIENDS DESCRIBE YOU?",
 					"sub_question" : "Select One",
-					"explanation_title" : "Why Are You Asking Me About Cooking?",
+					"explanation_title" : "Why are you asking me about cooking?",
 					"explanation" : "Our wall ovens all have unique features. We want to get a better idea of how you use it so we can recommend the perfect wall oven for your cooking needs.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
@@ -1141,7 +1141,7 @@
 				{
 					"question" : "Is being energy efficient important to your family?",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why Are You Asking Me About Energy?",
+					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our machines are different, just like the families they're for. If we can understand your energy usage, then we can better recommend the perfect wall oven to fit your needs.",
 					"type" : "slider",
 					"oneAnswer" : false,
@@ -1201,7 +1201,7 @@
 				{
 					"question" : "WHAT SIZE OF RANGE DO YOU NEED?",
 					"sub_question" : "Select one",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT SIZE?",
+					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Our ranges come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
@@ -1251,7 +1251,7 @@
 				{
 					"question" : "I use my range to...",
 					"sub_question" : "Select all that apply",
-					"explanation_title" : "Why Are You Asking Me About Cooking?",
+					"explanation_title" : "Why are you asking me about cooking?",
 					"explanation" : "Our ranges all have unique features. We want to get a better idea of how you use yours so we can recommend the perfect one for your needs.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
@@ -1333,7 +1333,7 @@
 				{
 					"question" : "What cooking techniques do you use often?",
 					"sub_question" : "Select all that apply",
-					"explanation_title" : "Why Are You Asking Me About Cooking Performance?",
+					"explanation_title" : "Why are you asking me about cooking performance?",
 					"explanation" : "Our ranges are equipped with heat technology to go from simmer to rolling boil quickly. By understanding how you cook, we can better recommend the perfect range for your lifestyle.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
@@ -1437,7 +1437,7 @@
 				{
 					"question" : "WHAT IS THE LARGEST ITEM THAT YOU REGULARLY COOK?",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why Are You Asking Me About Capacity?",
+					"explanation_title" : "Why are you asking me about capacity?",
 					"explanation" : "Our ranges come in different sizes and also have unique capacities. If we can understand how you use your range, we can better recommend the perfect one for your lifestyle.",
 					"type" : "slider",
 					"oneAnswer" : false,
@@ -1502,7 +1502,7 @@
 				{
 					"question" : "Why do you cook?",
 					"sub_question" : "Select all that apply",
-					"explanation_title" : "Why Are You Asking Me About Cooking?",
+					"explanation_title" : "Why are you asking me about cooking?",
 					"explanation" : "All our ranges have unique features. We want to get a better idea of how you use your range so we can recommend the perfect one for your lifestyle.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
@@ -1564,7 +1564,7 @@
 				{
 					"question" : "What style range do you prefer?",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why Are You Asking Me Style?", 
+					"explanation_title" : "Why are you asking me style?", 
 					"explanation" : "NEED COPY!",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
@@ -1620,7 +1620,7 @@
 				{
 					"question" : "HOW WOULD YOUR FRIENDS DESCRIBE YOU?",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why Are You Asking Me About Cooking?",
+					"explanation_title" : "Why are you asking me about cooking?",
 					"explanation" : "Our ranges all have unique features. We want to get a better idea of how you use it so we can recommend the perfect range for your cooking needs.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
@@ -1683,7 +1683,7 @@
 				{
 					"question" : "HOW OFTEN DO YOU FIND YOURSELF COOKING A MEAT DISH THAT REQUIRES A PRECISE TEMPERATURE?",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT TEMPERATURE PRECISION?",
+					"explanation_title" : "Why are you asking me about temperature precision?",
 					"explanation" : "Did you know that some of our ranges are equipped with thermometer probes? The technology gives you precision results to notify you when your dish has reached completion.",
 					"type" : "slider",
 					"oneAnswer" : false,
@@ -1738,7 +1738,7 @@
 				{
 					"question" : "Is your kitchen equipped for gas or electric?",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why Are You Asking Me About Fuel Type?", 
+					"explanation_title" : "Why are you asking me about fuel type?", 
 					"explanation" : "Some kitchens are equipped with a gas line. We need to know this information to recommend the perfect range.",
 					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
@@ -1783,7 +1783,7 @@
 				{
 					"question" : "WHAT ARE YOUR REFRIGERATOR'S HEIGHT AND WIDTH RESTRICTIONS?",
 					"sub_question" : "Please slide and click to answer",
-					"explanation_title" : "Why Are You Asking Me About Size?",
+					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Our fridges come in many sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider-buttons",
 					"classes" : "slider-labels left-tag no-jslider-value show-ticks scale-left",
@@ -1992,7 +1992,7 @@
 				{
 					"question" : "I COUNT ON MY FRIDGE TO HOLD FOOD FOR…",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why Are You Asking Me About Capacity?",
+					"explanation_title" : "Why are you asking me about capacity?",
 					"explanation" : "We want to get a better idea of how you use your fridge and what you put in it so we can find you the one that fits your lifestyle.",
 					"type" : "slider-people",
 					"oneAnswer" : false,
@@ -2070,7 +2070,7 @@
 				{
 					"question" : "I count on my fridge to… ",
 					"sub_question" : "Select all the apply",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT HOW I USE MY FRIDGE?",
+					"explanation_title" : "Why are you asking me about how I use my fridge?",
 					"explanation" : "Our fridges are carefully designed from the inside out. By better learning what you put in your fridge, it will help us recommend the right one for your lifestyle.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
@@ -2142,7 +2142,7 @@
 				{
 					"question" : "Does your kitchen have an existing waterline?",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why Are You Asking Me About Water?",
+					"explanation_title" : "Why are you asking me about water?",
 					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
@@ -2202,7 +2202,7 @@
 				{
 					"question" : "I like to add ice to...",
 					"sub_question" : "Select all that apply",
-					"explanation_title" : "Why Are You Asking Me About Ice?",
+					"explanation_title" : "Why are you asking me about ice?",
 					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense ice? Some of our models provide ice-dispensing features. By understanding how you consume ice, we can recommend a fridge that will fit your lifestyle.",
 					"type" : "boxes-icon-5-checkbox",
 					"oneAnswer" : false,
@@ -2292,7 +2292,7 @@
 				{
 					"question" : "I choose form over function...",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why Are You Asking Me About Style?",
+					"explanation_title" : "Why are you asking me about style?",
 					"explanation" : "Since some fridges are built deeper than typical counter depth, we need to know how important having a fridge that's in-line with your counters is to your purchasing decision.",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : false,
@@ -2348,7 +2348,7 @@
 				{
 					"question" : "How do you shop for your groceries?",
 					"sub_question" : "Select all that apply",
-					"explanation_title" : "Why Are You Ask Me About Groceries?",
+					"explanation_title" : "Why are you ask me about groceries?",
 					"explanation" : "Our fridges are designed with unique features. By understanding how you shop, we learn more about how you use your fridge and can better recommend the perfect one for your lifestyle.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
@@ -2509,7 +2509,7 @@
 				{
 					"question" : "How many times a week do you run the dishwasher?",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why Are You Asking Me About Capacity?",
+					"explanation_title" : "Why are you asking me about capacity?",
 					"explanation" : "When it comes to washing your dishes there is no job too big or too small. Understanding what goes into your dishwasher will allow us to find the perfect fit for you.",
 					"type" : "slider",
 					"oneAnswer" : false,
@@ -2576,7 +2576,7 @@
 				{
 					"question" : "WHEN SHOPPING FOR A DISHWASHER, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION? ",
 					"sub_question" : "DRAG TO REORDER. 1 IS MOST IMPORTANT AND 6 IS LEAST",
-					"explanation_title" : "WHY ARE YOU ASKING ME ABOUT PREFERENCE?",
+					"explanation_title" : "Why are you asking me about preference?",
 					"explanation" : "By understanding your dishwashing priorities, we can better recommend a dishwasher with features that suit your lifestyle.",
 					"type" : "rank",
 					"oneAnswer" : true,
@@ -2658,7 +2658,7 @@
 				{
 					"question" : "HOW IMPORTANT IS ENERGY EFFICIENCY TO YOUR HOUSEHOLD?",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why Are You Asking Me About Energy?",
+					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our machines use energy differently. By understanding your energy use, it will help us find the machine that best fits your lifestyle.",
 					"answer" : 0,
 					"type" : "slider",

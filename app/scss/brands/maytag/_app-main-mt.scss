@@ -27,6 +27,10 @@ header.header-desktop {
 		color: #7e7e7e;
 		letter-spacing: 1px;
         text-align: center;
+        font-weight: 700;
+	}
+	h3 span {
+		color: #ac080f;
 	}
 	.app-content-main-top-left {
 		width: 100%;
@@ -47,45 +51,87 @@ header.header-desktop {
         text-align: center;
 		.btn-wrap {
 			display: inline-block;
-            width: 100%;
             margin: 0 auto;
-		}
-		.tooltip {
-			opacity: 1;
-		}
-		.btn-icon {
-			background: #ac080f;
-			border-radius: 24px;
-			width: 24px;
-			height: 24px;
-			text-align: center;
-			display: inline-block;
-			span {
-				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				color: #fff;
-				font-size: 20px;
-				position: relative;
-				bottom: 2px;
-				display: block;
-				float: left;
-				text-align: center;
-				width: 100%;
-			}
 
+			.btn-icon-wrapper {
+				position: relative;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				z-index:2;
+				margin-left: 6px;
+			}
+			.btn-icon {
+				position: absolute;
+				background: #ac080f;
+				border-radius: 20px;
+				width: inherit;
+				height: inherit;
+				text-align: center;
+				cursor: pointer;
+				left: 0;
+				
+				span {
+					font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+					color: #fff;
+					font-size: 16px;
+					position: relative;
+					bottom: 1px;
+					display: block;
+					float: left;
+					text-align: center;
+					width: 100%;
+				}
+
+			}
+			.btn-icon.inverted {
+				background: #fff;
+				span {
+					color: #ac080f;
+				}
+
+			}
+			.btn-icon.x {
+				span {
+					transform: rotate(45deg) ;
+					-webkit-transform: rotate(45deg) ;
+					-moz-transform: rotate(45deg) ;
+					-o-transform: rotate(45deg) ;
+					-ms-transform: rotate(45deg) ;
+					margin-top: -2px;
+					margin-left: 1px;
+				}
+			}
+			.btn-text {
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				color: #7e7e7e;
+				font-size: 10px;
+				position: relative;
+				left: 5px;
+				bottom: 7px;
+				z-index: 2;
+				border-bottom: 1px solid white;
+				padding-bottom: 2px;
+			}
 		}
-		.btn-text {
-			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-			color: #000;
-			font-size: 8px;
-			position: relative;
-			left: 5px;
-			bottom: 9px;
-			text-transform: uppercase;
+		.btn-wrap.tooltip-open {
+			.btn-text {
+				color: white;
+			}
 		}
 	}
 }
 
+.tooltip-open .tooltip {
+	opacity: 1;
+}
 .tooltip {
+	top: 105px;
+	z-index:1;
+	max-width: 340px;
+	left: 50%;
+	opacity: 0;
+	
 	&.top .tooltip-arrow {
 		border-top-color: #ac080f;
 	}
@@ -104,13 +150,14 @@ header.header-desktop {
 		border-radius: 0px;
 	}
 	.tooltip-inner {
+		max-width: initial !important;
 		color: #fff;
-		background: #ac080f;
-		font-size: 11px;
+		background-color: black;
+		opacity: 0.75;
+		font-size: 10px;
 		line-height: 13px;
-		padding: 30px 15px;
+		padding: 38px 15px 15px 15px;
 		border-radius: 0px;
-		opacity: 1;
 	}
 }
 

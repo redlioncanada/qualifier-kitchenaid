@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('App')
-  .controller('QuestionsCtrl', function ($scope, $rootScope, $filter, $state, localStorageService, $timeout, $interval, $location, $route, $stateParams, $appstate) {
+  .controller('QuestionsCtrl', function ($element, $scope, $rootScope, $filter, $state, localStorageService, $timeout, $interval, $location, $route, $stateParams, $appstate) {
 
   	$rootScope.$on('resize::resize', function() {
 	    if (window.innerWidth < 1024){
@@ -11,6 +11,22 @@ angular.module('App')
             $('.app-content-main-top').css('height', '');
             $('.slidey-wrap-all').css('height', '');
 	    }
+	});
+
+	$rootScope.$watch('showTooltip', function() {
+		//position tooltip
+		// $timeout(function() {
+			if ($rootScope.showTooltip) {
+				var width = $('.extra-info-wrap .tooltip-inner').width();
+				var top = $('.app-content-main-top-left h2').height() - 35;
+				var el = $('.extra-info-wrap .tooltip');
+				if (width > 0) el.css({
+					'margin-left': -width/2,
+					'margin-top': top
+				});
+				// el.show();
+			}
+		// },0);
 	});
 
 	$interval(function(){
