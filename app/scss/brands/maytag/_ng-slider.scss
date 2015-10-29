@@ -532,11 +532,10 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 .answer-slider.pointer-labels {
 	.jslider {
 		.jslider-value {
+             background: url('../img/slider-tab.png') no-repeat center !important;
 			// top: -52px;
 			top: 0;
 			opacity: 1 !important;
-			background: rgba(76, 76, 76, 0.161) !important;
-			box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
 			width: 63px;
 			height: 61px;
 			margin-top: -48px;
@@ -551,7 +550,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 			z-index: 5;
 			span {
 				font-family: $AV-Light;
-				font-size: 28px;
+				font-size: 19px;
 				text-transform: uppercase;
 				color: #999;
 				opacity: 1;
@@ -896,11 +895,10 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	.price-slider.pointer-labels {
 		.jslider {
 			.jslider-value {
+                background: url('../img/slider-tab.png') no-repeat center !important;
 				// top: -52px;
 				top: 0;
 				opacity: 1 !important;
-				background: rgba(76, 76, 76, 0.161) !important;
-				box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
 				width: 63px;
 				height: 61px;
 				margin-top: -48px;
@@ -915,7 +913,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 				z-index: 5;
 				span {
 					font-family: $AV-Light;
-					font-size: 28px;
+					font-size: 19px;
 					text-transform: uppercase;
 					color: #999;
 					opacity: 1;
@@ -1088,6 +1086,8 @@ div[ng-class="fr_CA"] {
 
 			span {
 				font-size: 20px !important;
+                top: -5px;
+                position: relative;
 			}
 		}
 	}
