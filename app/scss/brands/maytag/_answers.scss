@@ -22,7 +22,7 @@
 	}
 	// Radio, checkbox 4 and up as well as split
 	&.regular-4-container {
-		width: 1100px;
+		width: 100%;
 	}
 	&.picture-2-container {
 		width: 770px;
@@ -136,8 +136,8 @@
 
 .answer-box {
 	transition: all 1s ease;
-	margin-left: 9px;
-	margin-right: 9px;
+	margin-left: 22px;
+	margin-right: 22px;
 	position: relative;
 	// Single select answers
 	&.radio {
@@ -146,12 +146,12 @@
 	}
 	&.radio, &.radio-2, &.radio-3, &.radio-4 {
 		display: block;
-		width: 532px;
+		width: 530px;
 		height: 70px;
         border-radius: 6px;
 		background: url('../img/radio-bg.png');
 		background-size: cover;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 		@include boxshadow;
 		.label-wrap {
 			position: absolute;
@@ -248,13 +248,13 @@
 	}
 
 	&.checkbox, &.checkbox-4 {
-		width: 532px;
+		width: 530px;
 		height: 70px;
 		// background: url('../img/checkbox-bg.png');
 		background: url('../img/radio-bg.png');
 		background-size: cover;
 		display: block;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
         border-radius: 3px;
 		@include boxshadow;
 		// .select-icon {
@@ -298,7 +298,7 @@
 		background: url('../img/radio-bg.png');
 		background-size: cover;
 		display: block;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
         border-radius: 3px;
 		@include boxshadow;
 		.label-wrap {
@@ -412,13 +412,13 @@
             width:  100%;
 			img.normal, img.hover {
 				position: relative;
-                top: 46%;
+                top: 50%;
                 -webkit-transform: translate(0%, -50%);
                 transform: translate(0%, -50%);
 			}
             img.hover {
                 opacity: 0;
-                top: -36px;
+                top: -27px;
             }
 		}
 		.select-icon {

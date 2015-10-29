@@ -264,6 +264,17 @@
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
+                        {
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Classic",
+							"value" : "classic",
+							"image" : "img/classic.png",
+							"scoring" : {
+								"electric" : 1
+							},
+							"order" : 1
+						},
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
@@ -272,17 +283,6 @@
 							"image" : "img/modern.png",
 							"scoring" : {
 								"induction" : 1
-							},
-							"order" : 1
-						},
-						{
-							"thumbnail" : "img/icon-style.png",
-							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Classic",
-							"value" : "classic",
-							"image" : "img/classic.png",
-							"scoring" : {
-								"electric" : 1
 							},
 							"order" : 2
 						},
@@ -485,7 +485,7 @@
 		},
 		"Cooking - Cooktops - Gas" : {
 			"next" : null,
-			"previous" : "Cooking - Ranges - Usage",
+			"previous" : "Cooking - Cooktops - Performance",
 			"thumbnail_text" : "Fuel Type",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
