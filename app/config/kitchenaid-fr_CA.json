@@ -650,8 +650,8 @@
                     "oneAnswer" : true,
                     "classes" : "vents  singleAns",
                     "answers" : [
-                        {   "image" : "img/icon-thumb-yes.png",
-                            "hover" : "img/icon-thumb-yes-active.png",
+                        {   "image" : "img/icon-thumb-oui.png",
+                            "hover" : "img/icon-thumb-oui-active.png",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
                             "text" : "",
@@ -665,8 +665,8 @@
                         },
 
                         {
-                            "image" : "img/icon-thumb-no.png",
-                            "hover" : "img/icon-thumb-no-active.png",
+                            "image" : "img/icon-thumb-non.png",
+                            "hover" : "img/icon-thumb-non-active.png",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
                             "text" : "",
@@ -700,8 +700,8 @@
                     "classes" : "vents  singleAns",
                     "answers" : [
                         {
-                            "image" : "img/icon-thumb-yes.png",
-                            "hover" : "img/icon-thumb-yes-active.png",
+                            "image" : "img/icon-thumb-oui.png",
+                            "hover" : "img/icon-thumb-oui-active.png",
                             "thumbnail" : "img/icon-speed.png",
                             "thumbnail_current" : "img/icon-speed-current.png",
                             "text" : "",
@@ -712,8 +712,8 @@
                             "order" : 1
                         },
                         {
-                            "image" : "img/icon-thumb-no.png",
-                            "hover" : "img/icon-thumb-no-active.png",
+                            "image" : "img/icon-thumb-non.png",
+                            "hover" : "img/icon-thumb-non-active.png",
                             "thumbnail" : "img/icon-speed.png",
                             "thumbnail_current" : "img/icon-speed-current.png",
                             "text" : "",
@@ -851,8 +851,8 @@
                     "answers" : [
                         {
                             "text" : "",
-                            "image" : "img/icon-thumb-yes.png",
-                            "hover" : "img/icon-thumb-yes-active.png",
+                            "image" : "img/icon-thumb-oui.png",
+                            "hover" : "img/icon-thumb-oui-active.png",
                             "thumbnail" : "img/icon-features.png",
                             "thumbnail_current" : "img/icon-features-current.png",
                             "value" : "yes",
@@ -863,8 +863,8 @@
                         },
                         {
                             "text" : "",
-                            "image" : "img/icon-thumb-no.png",
-                            "hover" : "img/icon-thumb-no-active.png",
+                            "image" : "img/icon-thumb-non.png",
+                            "hover" : "img/icon-thumb-non-active.png",
                             "thumbnail" : "img/icon-features.png",
                             "thumbnail_current" : "img/icon-features-current.png",
                             "value" : "no",
