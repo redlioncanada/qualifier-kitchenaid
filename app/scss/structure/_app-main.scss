@@ -1297,29 +1297,37 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             list-style: none;
             padding-left: 0;
         }
-        .rank-numbers-list {
-            display: inline-block;
-            height: 100% !important;
+        ul.rank-numbers-list {
             width: 13%;
             text-align: center;
+            height: initial !important;
+
             li {
                 background-color: transparent;
+                width: 43px;
+            	height: 41px;
+            	margin-left: -1px;
+
                 .rank-number-wrap {
-                    height: 41px;
-                    width: 41px;
+                	height: inherit;
+                    width: inherit;
+
                     span {
+                    	height: inherit;
+                    	width: inherit;
                         top: 3px;
                         color: #9f9f9f;
                     }
                 }
             }
         }
-        .rank-answers-list {
+        ul.rank-answers-list {
             display: inline-block;
             padding-left: 0;
             height: 100% !important;
             position: relative;
-            top: -15.5px !important;
+            top: 0px !important;
+            margin-left: 48px;
             width: 87%;
             li {
                 height: 42px !important;
