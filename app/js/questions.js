@@ -17,12 +17,11 @@ angular.module('App')
 		//position tooltip
 		// $timeout(function() {
 			if ($rootScope.showTooltip) {
-				var width = $('.extra-info-wrap .tooltip-inner').width();
-				var top = $('.app-content-main-top-left h2').height() - 35;
+				var width = $('.extra-info-wrap .btn-wrap').width();
 				var el = $('.extra-info-wrap .tooltip');
 				if (width > 0) el.css({
-					'margin-left': -width/2,
-					'margin-top': top
+					'width': width + 10,
+					'margin-left': -width/2
 				});
 				// el.show();
 			}

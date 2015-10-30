@@ -49,6 +49,7 @@ header.header-desktop {
 	.extra-info-wrap {
 		display: block;
         text-align: center;
+        position: relative;
 		.btn-wrap {
 			display: inline-block;
             margin: 0 auto;
@@ -126,11 +127,10 @@ header.header-desktop {
 	opacity: 1;
 }
 .tooltip {
-	top: 105px;
 	z-index:1;
-	max-width: 340px;
 	left: 50%;
 	opacity: 0;
+	top: -5px;
 	
 	&.top .tooltip-arrow {
 		border-top-color: #ac080f;
