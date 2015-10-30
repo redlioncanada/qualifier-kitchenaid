@@ -717,8 +717,9 @@ div[ng-class="fr_CA"] {
 	}
     .mobile-results-nav li:nth-child(2) img {
         transform:scale(1.2);
-        margin-bottom: 10px;
         letter-spacing: .2px;
+        position: relative;
+        top: -15px;
     }
     .mobile-results-nav li:nth-child(odd) span {
         letter-spacing: .2px;
