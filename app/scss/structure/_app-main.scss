@@ -644,8 +644,6 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 
 	.app-content-main-top .extra-info-wrap {
 		position: absolute;
-		top: 10px;
-		right: -32px;
 
 		.btn-text {
 			display: none;
@@ -845,10 +843,10 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 
 				ins {
 					top: -7px;
-					left: -10px;
+					left: 20px;
 					width: 108px;
 					text-align: left;
-					font-size: 10pt;
+					font-size: 8pt;
 					height: 45px;
 					display: table-cell;
 					vertical-align: middle;
@@ -863,7 +861,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 	}
 
 	.answers-main-content {
-		margin-top: 5px !important;
+		margin-top: 10px !important;
 	}
 
 	.regular-4-container {
@@ -982,6 +980,15 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 }
 
 @media(max-width:580px) {
+    .app-content-main-top {
+        h2 {
+            margin: 0px auto 15px auto;
+        }
+    }
+    .app-content-main-top-left {
+		h2 {font-size: 18pt; font-weight: 800 !important;}
+		h3 {font-size: 9pt !important; letter-spacing: 0pz !important; margin: 5px 0;}
+	}
     .app-answers {
         .answer-option {
             &.category, &.sub-category {
@@ -1060,13 +1067,6 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
     .left-tag.no-jslider-value.four.scale-left > div > span > table > tbody > tr > td > div.jslider-scale > span {
         left: 0 !important;
     }
-
-	.slider-large-label-wrap {
-
-		span.slider-large-label {
-			margin-right: -34px !important;
-		}
-	}
 
 	.jslider.vertical .jslider-value:not(.jslider-value-to) {
 		margin-top: -3px !important;

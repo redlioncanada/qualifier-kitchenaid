@@ -605,7 +605,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	width: 853px;
 	position: relative;
 	display: inline-block;
-	margin-left: 60px;
+	margin-left: 34px;
 }
 
 .has-dimension-label {
@@ -1128,5 +1128,15 @@ div[ng-class="fr_CA"] {
             transform: scale(0.8);
 		}
 	}
+    .scale-left .vertical {
+	.jslider-scale {
+		margin-left: -60px;
+
+		span ins {
+			margin-left: -140px !important;
+			text-align: right !important;
+		}
+	}
+}
     
 }
