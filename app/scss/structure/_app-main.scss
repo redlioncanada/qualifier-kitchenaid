@@ -488,7 +488,8 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 		}
 
 		a.answer-box.checkbox-4, a.answer-box.radio-2, a.answer-box.radio-3, a.answer-box.radio-4 {
-			width: 413px;
+			width: 463px;
+            border-radius: 5px !important;
 
 			.label-wrap {
 				left: 72px;

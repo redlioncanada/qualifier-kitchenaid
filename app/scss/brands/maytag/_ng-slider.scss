@@ -1,4 +1,3 @@
-
 // Slider
 
 .jslider-value span {
@@ -490,6 +489,27 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 	// 		background: url('../img/slider-pointer-bottom.png') !important;
 	// 	}
 	// }
+}
+
+.slider-notes {
+    margin-top: 75px;
+    .slider-notes-title,  .slider-notes-text {
+        width: 200px;
+        height: 30px;
+        border: 1px #aaa solid;
+        padding: 5px;
+        text-align: center;
+        margin: 15px auto 0 auto;
+        color: #aaa;
+        font-family: $AV-Light;
+        font-size: 14px;
+    }
+    .slider-notes-text {
+        border: 0px #ccc solid;
+    }
+    .slider-notes-title {
+        cursor: pointer;
+    }
 }
 
 .left-tag .jslider .jslider-bg {
@@ -1058,6 +1078,9 @@ div[ng-class="fr_CA"] {
 			margin-left: 45px;
 		}
 	}
+    .slider-notes {
+        display: none;
+    }
 }
 
 @media(max-width: 580px) {

@@ -20,5 +20,8 @@ https://www.npmjs.com/package/ng-slider -->
           <input ng-model="qs.text[0].answer" ng-change="setAnswer()"  type="text" id="answerSlider" slider options="qs.text[0].verticalOptions" />
         </div>
     </div>
-
+    <div class="slider-notes" ng-if="!!qs.notes[0]">
+        <div class="slider-notes-title" bo-text="qs.notes[0].title"></div>
+        <div class="slider-notes-text" bo-text="qs.notes[0].text"></div>
+    </div>
 </div>
