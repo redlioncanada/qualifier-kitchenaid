@@ -1,7 +1,7 @@
 <!-- Icon box answers with blue background and hover / active state -->
 <div class="answers-main-content boxes-icon-2-container" ng-controller="RadioCtrl" ng-class="{'answersize34' : objSize(qs.text[0].answers) == 3 || objSize(qs.text[0].answers) == 4, 'answersize56' :  objSize(qs.text[0].answers) == 5 || objSize(qs.text[0].answers) == 6, 'answersize78' : objSize(qs.text[0].answers) == 7 || objSize(qs.text[0].answers) == 8}">
 	<a href="" ng-repeat="answer in qs.text[0].answers" 
-	class="answer answer-option answer-box boxes-icon-split {{answer.classes}}" ng-init="answer.activeImage=answer.image" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mousedown="buttonState='down'"ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDown : buttonState=='down', toggleButtonUp : buttonState=='up', selected : answer.answer}">
+	class="answer answer-option answer-box boxes-icon-split {{answer.classes}}" ng-init="answer.activeImage=answer.image" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mousedown="buttonState='down'"ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, selected : answer.answer}">
 		<div class="icon-wrap">
 			<img class="normal" ng-src="{{answer.image}}" />
 			<img class="hover" ng-if="!!answer.hover" ng-src="{{answer.hover}}" />
