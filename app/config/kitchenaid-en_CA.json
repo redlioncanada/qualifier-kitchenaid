@@ -870,7 +870,7 @@
 						"to" : 4,      
 					    "step": 0.0001,
 					    "dimension_label" : "WIDTH",
-					    "scale": ["No Restrictions","24","27","30"]       
+					    "scale": ["No Restrictions","24<br>Inches","27<br>Inches","30<br>Inches"]       
 					},
 					"answers" : {
 						"1" : {
@@ -899,7 +899,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 3,
-							"text" : "27\"",
+							"text" : "27\"Inches",
 							"scoring" : {
 								"width24" : -30,
 								"width27" : 1,
@@ -910,7 +910,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 4,
-							"text" : "30\"",
+							"text" : "30\"Inches",
 							"scoring" : {
 								"width24" : -30,
 								"width27" : -30,
@@ -2186,7 +2186,7 @@
 							"order" : 3
 						},
 						{
-							"text" : "Im not sure",
+							"text" : "I'm not sure",
 							"value" : "glass of milk or juice",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2304,15 +2304,15 @@
 					"oneAnswer" : false,
 					"classes" : "three form-function",
 					"answers" : [
-						{
+                        {
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-                            "text" : "Standard Depth",
-                            "subtext" : "I don’t care if my fridge is in-line with my counters ",
-                            "image" : "img/standard-depth.png",
-							"value" : 0,
+							"text" : "Built-In",
+                            "subtext" : "I want to be able to customize the exterior of my fridge",
+                            "image" : "img/built-in.png",
+							"value" : 2,
 							"scoring" : {
-								"standardDepth" : 1
+								"builtIn" : 1
 							},
 							"order" : 1
 						},
@@ -2328,15 +2328,15 @@
 							},
 							"order" : 2
 						},
-						{
+                        {
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Built-In",
-                            "subtext" : "I want to be able to customize the exterior of my fridge",
-                            "image" : "img/built-in.png",
-							"value" : 2,
+                            "text" : "Standard Depth",
+                            "subtext" : "I don’t care if my fridge is in-line with my counters ",
+                            "image" : "img/standard-depth.png",
+							"value" : 0,
 							"scoring" : {
-								"builtIn" : 1
+								"standardDepth" : 1
 							},
 							"order" : 3
 						}
@@ -2581,7 +2581,7 @@
 			"text" : [
 				{
 					"question" : "WHEN SHOPPING FOR A DISHWASHER, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION? ",
-					"sub_question" : "DRAG TO REORDER. 1 IS MOST IMPORTANT AND 6 IS LEAST",
+					"sub_question" : "DRAG TO REORDER. <span>1</span> IS MOST IMPORTANT AND <span>6</span> IS LEAST",
 					"explanation_title" : "Why are you asking me about preference?",
 					"explanation" : "By understanding your dishwashing priorities, we can better recommend a dishwasher with features that suit your lifestyle.",
 					"type" : "rank",
@@ -2894,17 +2894,6 @@
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
-						{ 
-							"thumbnail" : "img/icon-style.png",
-							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Pocket Handle",
-							"value" : "Pocket Handle",
-							"image" : "img/pocket-handle.png",
-							"scoring" : {
-								"pocketHandleConsole" : 1
-							},
-							"order" : 1
-						},
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
@@ -2913,6 +2902,17 @@
 							"image" : "img/exterior-handle.png",
 							"scoring" : {	
 								"FID" : 1					
+							},
+							"order" : 1
+						},
+                        { 
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Pocket Handle",
+							"value" : "Pocket Handle",
+							"image" : "img/pocket-handle.png",
+							"scoring" : {
+								"pocketHandleConsole" : 1
 							},
 							"order" : 2
 						},
