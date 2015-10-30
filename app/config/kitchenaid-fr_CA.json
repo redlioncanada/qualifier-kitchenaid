@@ -2192,7 +2192,7 @@
             "thumbnail_text_fr" : "Eau",
             "text" : [
                 {
-                    "question" : "Does your kitchen have an existing waterline?(FR)",
+                    "question" : "Votre cuisine est-elle actuellement équipée d’une conduite d'eau?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de l’eau?",
                     "explanation" : "Saviez-vous que votre cuisine a besoin d’une conduite d’eau pour permettre au réfrigérateur de distribuer de l’eau? Certains de nos modèles comportent un distributeur d’eau. En comprenant votre consommation d’eau, nous pouvons recommander le réfrigérateur qui répondra le mieux à vos besoins.",
