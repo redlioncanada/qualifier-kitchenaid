@@ -1830,7 +1830,7 @@
             "text" : [
                 {
                     "question" : "QUELLES SONT LES RESTRICTIONS DE HAUTEUR ET DE LARGEUR DE VOTRE RÉFRIGÉRATEUR? ",
-                    "sub_question" : "Please slide and click to answer(FR)",
+                    "sub_question" : "Faites glisser et cliquez pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
                     "explanation" : "Nos réfrigérateurs sont offerts en de nombreuses tailles; nous voulons nous assurer de recommander celui qui convient parfaitement à votre espace.",
                     "type" : "slider-buttons",
