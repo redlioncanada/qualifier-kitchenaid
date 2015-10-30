@@ -68,9 +68,11 @@ angular.module('App')
     		}
     	},
         dragStart: function(e) {
-           $($scope.clonedElement).find('span').text($(e.source.itemScope.element[0]).find('span').text());
-           $(document).on('mousemove', $scope.draggingListener);
-           $scope.toggleMouseMove(false);
+           if (!$rootScope.isTabletWidthOrLess) {
+                $($scope.clonedElement).find('span').text($(e.source.itemScope.element[0]).find('span').text());
+                $(document).on('mousemove', $scope.draggingListener);
+                $scope.toggleMouseMove(false);
+            }
         },
         dragEnd: function(e) {
             $($scope.clonedElement).hide();
