@@ -6,14 +6,19 @@
 			font-family: $AV-Light;
 			font-size: 41px;
 			color: #333333;
+            font-weight: 600;
 		}
 		.results-adjust-desc {
-			font-family: $AV-Light;
+			font-family: $AV-Roman;
 			font-size: 23px;
 			line-height: 15px;
-			color: #5c5c5c;
+			color: #333333;
 			margin-top: 0;
+            text-transform: lowercase;
 		}
+        .results-adjust-desc::first-letter {
+            text-transform: uppercase;
+        }
 	}
 
 	h3, h4 {
@@ -81,24 +86,34 @@
 			position: relative;
 		}
 		.product-name {
-			font-family: $AV-Light;
-			font-size: 16px;
-			color: #ac080f; 
+			font-family: $AV-Black;
+			font-size: 10px;
+			color: black; 
 			text-transform: uppercase;
 			letter-spacing: 1px;
 		}
 		.product-price-sku-wrap {
 			color: #757575;
 			text-align: center;
-			font-size: 16px;
+			font-size: 13px;
+            height: 15px;
+            font-family: $AV-Black;
+            color: #a3a3a3;
 			.product-price, .product-sku {
-				display: block;
+				display: inline-block;
 				margin: 0 auto;
+                width: auto;
 
 				> span {
 					text-transform: uppercase;
 				}
 			}
+            .product-price {
+                padding-right: 1%;
+            }
+            .product-sku { 
+                padding-left: 1%;
+            }
 		}
 		h2 {
 			margin-top: 2px;
@@ -122,7 +137,7 @@
 					font-size: 20px;
 				}
 				.product-price-sku-wrap {
-					color: #7f7f7f;
+                    height: 15px;
 				}
 			}
 			.product-details {
@@ -274,6 +289,10 @@
 			background-image: -webkit-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
 			background-image: -ms-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
 			background-image: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 20%);
+            h2 {
+            margin: 0 auto;
+            width: 88%;
+            }
 		}
 		.sales-feature-spacer {
 			margin: 30px auto;
@@ -321,7 +340,7 @@
 				img:first-child {
 					position: absolute;
 					left: 0px;
-					top: 18%;
+					top: 0;
 				}
 			}
 			h4.sales-feature {
@@ -406,6 +425,8 @@
 		font-family: $AV-Light;
 		text-transform: uppercase;
 		color: #7f7f7f;
+        font-size: 10px;
+        letter-spacing: 0.1px;
 	}
 }
 

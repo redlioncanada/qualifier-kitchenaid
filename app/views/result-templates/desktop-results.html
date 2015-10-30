@@ -20,24 +20,22 @@
 								</ul>
 							</div>
 						</div>
+                        
+                        <div class="product-price-sku-wrap">
+                            <span class="product-price">
+                                <span bo-text="brandData.apptext.msrp"></span>:&nbsp;
+                                <span ng-if="isEnglish">${{a.picker.prices.CAD}}</span>
+                                <span ng-if="!isEnglish">{{a.picker.prices.CAD.replace('.',',')}} $</span>
+                            </span>
+                            <span class="product-sku">
+                                <span bo-text="brandData.apptext.model"></span>:&nbsp; 
+                                <span>{{a.picker.sku}}</span>  
+                            </span>
+
+                        </div>
 						
 						<div class="product-details-wrap">
 							<h2><span class="product-name" ng-bind-html="a.name"></span> </h2>
-							
-							<div class="sales-feature-spacer smallest"></div>
-							<div class="product-price-sku-wrap">
-								<span class="product-price">
-									<span bo-text="brandData.apptext.msrp"></span>:&nbsp;
-									<span ng-if="isEnglish">${{a.picker.prices.CAD}}</span>
-									<span ng-if="!isEnglish">{{a.picker.prices.CAD.replace('.',',')}} $</span>
-								</span>
-								<span class="product-sku">
-									<span bo-text="brandData.apptext.model"></span>:&nbsp; 
-									<span>{{a.picker.sku}}</span>  
-								</span>
-
-							</div>
-							<div class="sales-feature-spacer smallest"></div>
 
 							<div class="product-details">
 								<div class="sales-feature-wrapper" ng-repeat="sf in a.salesFeatures | assignScore:a | orderBy:'-score' | limitTo:3"> 
