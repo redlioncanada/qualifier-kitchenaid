@@ -363,7 +363,8 @@ header.header-desktop {
 		float: right; 
 		.btn-backtoresults {
 			font-family: $AV-Light;
-			@include button-variant(#ac080f, #fff, #ac080f);
+            background-color: white;
+            color: #747474;
             border-radius: 50%;
 			width: 45px;
 			height: 45px;
@@ -375,6 +376,9 @@ header.header-desktop {
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
+		}
+        .btn-backtoresults:hover {
+            border-color: #ac080f;
 		}
 	}
 	.startover-btn-wrap {
@@ -389,7 +393,8 @@ header.header-desktop {
 		float: right; 
 		.btn-startover {
 			font-family: $AV-Light;
-			@include button-variant(#ac080f, #fff, #ac080f);
+            background-color: white;
+            color: #747474;
             border-radius: 50%;
 			width: 45px;
 			height: 45px;
@@ -401,6 +406,9 @@ header.header-desktop {
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
+		}
+        .btn-startover:hover {
+           border-color: #ac080f;
 		}
 	}
 }
