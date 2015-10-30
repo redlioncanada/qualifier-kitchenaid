@@ -142,9 +142,15 @@ $scope.setPriceRange = function () {
       }
 
       $scope.constructPageTitle = function() {
-        var suffix = typeof $rootScope.applianceType !== 'undefined' ? $rootScope.applianceType : '';
-        if ($rootScope.isFrench) suffix = suffix.toUpperCase();
-        return ($rootScope.brandData.apptext.oneLastStep + " " + suffix).trim();
+        for (var i in $rootScope.questionsData.scoringQuestions.Appliance.text[0].answers) {
+          var value = $rootScope.questionsData.scoringQuestions.Appliance.text[0].answers[i];
+
+          if (!!value.answer) {
+            var suffix = value.displayName;
+            if ($rootScope.isFrench) suffix = suffix.toUpperCase();
+            return ($rootScope.brandData.apptext.oneLastStep + " " + suffix).trim();
+          }
+        }
       }
 
       $scope.startOver = function() {
