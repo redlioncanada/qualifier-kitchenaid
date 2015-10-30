@@ -1,4 +1,3 @@
-
 // Slider
 
 .jslider-value span {
@@ -492,6 +491,27 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 	// }
 }
 
+.slider-notes {
+    margin-top: 75px;
+    .slider-notes-title,  .slider-notes-text {
+        width: 200px;
+        height: 30px;
+        border: 1px #aaa solid;
+        padding: 5px;
+        text-align: center;
+        margin: 15px auto 0 auto;
+        color: #aaa;
+        font-family: $AV-Light;
+        font-size: 14px;
+    }
+    .slider-notes-text {
+        border: 0px #ccc solid;
+    }
+    .slider-notes-title {
+        cursor: pointer;
+    }
+}
+
 .left-tag .jslider .jslider-bg {
 	background: url('../img/slider-gradient-bg.png');
 	margin-left: -100px;
@@ -585,7 +605,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	width: 853px;
 	position: relative;
 	display: inline-block;
-	margin-left: 60px;
+	margin-left: 34px;
 }
 
 .has-dimension-label {
@@ -1058,6 +1078,9 @@ div[ng-class="fr_CA"] {
 			margin-left: 45px;
 		}
 	}
+    .slider-notes {
+        display: none;
+    }
 }
 
 @media(max-width: 580px) {
@@ -1105,5 +1128,15 @@ div[ng-class="fr_CA"] {
             transform: scale(0.8);
 		}
 	}
+    .scale-left .vertical {
+	.jslider-scale {
+		margin-left: -60px;
+
+		span ins {
+			margin-left: -140px !important;
+			text-align: right !important;
+		}
+	}
+}
     
 }
