@@ -13,7 +13,7 @@ angular.module('App')
 	    }
 	});
 
-  	$timeout(function(){$('.extra-info-wrap .tooltip').css('display','block')},0);
+  	$timeout(function(){$('.extra-info-wrap .tooltip').css('display','none')},0);
 	$rootScope.$watch('showTooltip', function() {
 		//position tooltip
 			var el = $('.extra-info-wrap .tooltip');
@@ -24,7 +24,7 @@ angular.module('App')
 					el.css('display','block');
 					el.css({
 						'width': width + 10,
-						'margin-left': -width/2
+						'margin-left': $rootScope.isTabletWidthOrLess ? -width-20 : -width/2
 					});
 				}
 			} else {

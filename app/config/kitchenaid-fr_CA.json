@@ -1644,7 +1644,7 @@
                             "image" : "img/no-preference-control.png",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
-                            "value" : "no",
+                            "value" : "nopref",
                             "scoring" : {
                                 "gas" : -30
                             },
