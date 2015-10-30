@@ -560,8 +560,8 @@ header.header-desktop {
 
 .slidey.animateLeft {
 	&.ng-hide-remove {
-		transition: all ease-in-out 1s;
-		-webkit-transition: all ease-in-out 1s;
+		transition: all ease-in-out 1s, padding-top 1ms;
+		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
 	    transform: translateX(200%);
 	    -webkit-transform: translateX(200%);
 	    opacity: 0;
@@ -573,8 +573,8 @@ header.header-desktop {
 	}
 
 	&.ng-hide-add {
-		transition: all ease-in-out 1s;
-		-webkit-transition: all ease-in-out 1s;
+		transition: all ease-in-out 1s, padding-top 1ms;
+		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
 	    transform: translateX(0%);
 	    -webkit-transform: translateX(0%);
 	    opacity: 1;
@@ -588,8 +588,8 @@ header.header-desktop {
 
 .slidey.animateRight {
 	&.ng-hide-remove {
-		transition: all ease-in-out 1s;
-		-webkit-transition: all ease-in-out 1s;
+		transition: all ease-in-out 1s, padding-top 1ms;
+		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
 	    transform: translateX(-200%);
 	    -webkit-transform: translateX(-200%);
 	    opacity: 0;
@@ -601,8 +601,8 @@ header.header-desktop {
 	}
 
 	&.ng-hide-add {
-		transition: all ease-in-out 1s;
-		-webkit-transition: all ease-in-out 1s;
+		transition: all ease-in-out 1s, padding-top 1ms;
+		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
 	    transform: translateX(0%);
 	    -webkit-transform: translateX(0%);
 	    opacity: 1;

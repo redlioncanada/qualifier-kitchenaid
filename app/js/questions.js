@@ -13,19 +13,23 @@ angular.module('App')
 	    }
 	});
 
+  	$timeout(function(){$('.extra-info-wrap .tooltip').css('display','block')},0);
 	$rootScope.$watch('showTooltip', function() {
 		//position tooltip
-		// $timeout(function() {
+			var el = $('.extra-info-wrap .tooltip');
+
 			if ($rootScope.showTooltip) {
 				var width = $('.extra-info-wrap .btn-wrap').width();
-				var el = $('.extra-info-wrap .tooltip');
-				if (width > 0) el.css({
-					'width': width + 10,
-					'margin-left': -width/2
-				});
-				// el.show();
+				if (width > 0) {
+					el.css('display','block');
+					el.css({
+						'width': width + 10,
+						'margin-left': -width/2
+					});
+				}
+			} else {
+				el.css('display', 'none');
 			}
-		// },0);
 	});
 
 	$interval(function(){
@@ -372,7 +376,7 @@ angular.module('App')
         }
 
 		if (c > 100) {
-			$('.slidey-wrap-all').stop(true).animate({
+			$('.slidey-wrap-all').css({
 				'height': c + 10
 			}, 0);
 		}
