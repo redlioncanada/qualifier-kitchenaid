@@ -112,7 +112,7 @@ html, body {
 	h2 {
 		text-transform: uppercase;
 		font-size: 32px;
-		margin: 20px auto 10px auto;
+		margin: 20px auto 15px auto;
 		color: #ac080f;
         text-align: center;
         width: 85%;
@@ -368,7 +368,9 @@ div.mobile-app-nav-arrows {
 
 .picture-3-container {
     .answer-box {
-        float: none !important;   
+        float: none !important; 
+        margin-left: 33px;
+        margin-right: 33px;
     }
 }
 .picture-4-container {
@@ -538,6 +540,11 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
     }
     .picture-3-container {
         width: 100% !important;
+        .answer-box {
+            float: none !important; 
+            margin-left: 15px;
+            margin-right: 15px;
+        }
     }
     .label-text {
         font-size: 15px !important;
