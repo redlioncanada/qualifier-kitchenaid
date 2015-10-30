@@ -1,7 +1,7 @@
  {
 	"brand" : "kitchenaid",
 	"apptext" :{
-		"apptitle" : "Kitchaid",
+		"apptitle" : "Kitchenaid",
 		"appdescription" : "Welcome to the KitchenAid Qualifier tool!",
 		"previous" : "Previous",
 		"next" : "Next",
@@ -17,7 +17,13 @@
 		"model" : "model",
 		"changeYourAnswer" : "Click on an icon to change your answer",
 		"startover" : "Start<br />&nbsp;Over",
-		"backtoresults" : "Back to<br />Results"
+		"backtoresults" : "Back to<br />Results",
+		"emailAddress" : "Email Address",
+        "personalMessage" : "Personal Message",
+        "submit" : "Submit",
+        "close" : "Close",
+        "emailModalTitle" : "Email Your Results",
+        "friendsName" : "Your Friend's Name"
 	},
 	"questions" : {
 		"Appliance" : {
@@ -705,7 +711,7 @@
 		"Cooking - Vents - Ventilation" : {
 			"next" : "Cooking - Vents - Auto",
 			"previous" : "Cooking - Vents - Speed",
-			"thumbnail_text" : "Convection",
+			"thumbnail_text" : "Ventilation",
 			"thumbnail_current" : "img/icon-convection-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
@@ -762,7 +768,7 @@
 		"Cooking - Vents - Auto" : {
 			"next" : "Cooking - Vents - Warming",
 			"previous" : "Cooking - Vents - Ventilation",
-			"thumbnail_text" : "Convection",
+			"thumbnail_text" : "Automatic Fan",
 			"thumbnail_current" : "img/icon-convection-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
@@ -810,7 +816,7 @@
 		"Cooking - Vents - Warming" : {
 			"next" : null,
 			"previous" : "Cooking - Vents - Auto",
-			"thumbnail_text" : "Features",
+			"thumbnail_text" : "Warming",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
@@ -1570,7 +1576,7 @@
 				{
 					"question" : "What style range do you prefer?",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why are you asking me style?", 
+					"explanation_title" : "Why are you asking me about style?", 
 					"explanation" : "NEED COPY!",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
@@ -2296,7 +2302,7 @@
 			"thumbnail_text" : "Style",
 			"text" : [
 				{
-					"question" : "I choose form over function...",
+					"question" : "I want my kitchen to look like this...",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about style?",
 					"explanation" : "Since some fridges are built deeper than typical counter depth, we need to know how important having a fridge that's in-line with your counters is to your purchasing decision.",
