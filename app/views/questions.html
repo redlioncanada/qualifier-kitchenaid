@@ -16,12 +16,12 @@
 				<h3 ng-if="!!questionsData.question.show.sub_question" ng-bind-html="questionsData.question.show.sub_question"></h3>
 
 				<div class="extra-info-wrap">
-					<a class="btn-wrap" ng-class="{'tooltip-open':$root.showTooltip}" ng-if="!!questionsData.question.show.explanation_title" ng-click="$root.showTooltip = !$root.showTooltip;">
+					<a class="btn-wrap" ng-class="{'tooltip-open':$root.showTooltip}" ng-if="!!questionsData.question.show.explanation_title">
 						<div class="btn-icon-wrapper">
-							<span class="btn-icon" ng-if="!$root.showTooltip">
+							<span class="btn-icon" ng-if="!$root.showTooltip" ng-click="$root.showTooltip = !$root.showTooltip;">
 								<span id="tooltip-glyph">?</span>
 							</span>
-							<span class="btn-icon inverted x"ng-if="$root.showTooltip">
+							<span class="btn-icon inverted x"ng-if="$root.showTooltip" ng-click="$root.showTooltip = !$root.showTooltip;">
 								<span id="tooltip-glyph" >+</span>
 							</span>
 						</div>
