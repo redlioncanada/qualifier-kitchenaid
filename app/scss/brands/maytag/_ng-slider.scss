@@ -1127,13 +1127,14 @@ div[ng-class="fr_CA"] {
 	}
 
 	div.answers-main-content.answer-buttons {
-		top: 50px;
+		top: -10px;
 
 		li.answer-button-wrapper {
-			margin-top: 1.2px !important;
+			margin-top: -5px !important;
+            margin-bottom: -5px;
             margin-left: 0px !important;
-            -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+            -webkit-transform: scale(0.7);
+            transform: scale(0.7);
 		}
 	}
 
