@@ -841,7 +841,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	.slider-large-label {
 		@include large-square-label;
         top: 21px;
-		margin-right: -143px;
+		left: 54px;
 		font-size: 14px;
     	z-index: 11;
         color: #a0a0a0;
@@ -874,7 +874,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 
 .scale-left .vertical {
 	.jslider-scale {
-		margin-left: -60px;
+		margin-left: -90px;
 
 		span ins {
 			margin-left: -116px !important;
@@ -1081,10 +1081,13 @@ div[ng-class="fr_CA"] {
     .slider-notes {
         display: none;
     }
+    .scale-left > div > span > table > tbody > tr > td > div.jslider-scale > span > ins {
+        left: -16px !important;
+    }  
 }
 
 @media(max-width: 580px) {
-	div.price-slider .jslider {
+	.jslider {
 		.jslider-bg {
 			margin-left: -16px;
 		}
@@ -1097,6 +1100,10 @@ div[ng-class="fr_CA"] {
 			top: -8px;
 			margin-left: -23px;
 		}
+        
+        .jslider-scale {
+            left: 0 !important;
+        }
 
 		.jslider-value-to {
 			margin-right: -26px !important;
@@ -1129,15 +1136,18 @@ div[ng-class="fr_CA"] {
             transform: scale(0.8);
 		}
 	}
-    .scale-left .vertical {
-	.jslider-scale {
-		margin-left: -60px;
 
-		span ins {
-			margin-left: -140px !important;
-			text-align: right !important;
-		}
-	}
-}
-    
+ 
+    .jslider {
+        ins {
+                left: 20px !important;
+        }
+    }
+        
+    .scale-left > div > span > table > tbody > tr > td > div.jslider-scale > span {
+        left: 45px !important;
+        ins {
+            left: 0px !important;
+        }
+    }
 }
