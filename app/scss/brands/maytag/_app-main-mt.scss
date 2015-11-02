@@ -718,10 +718,11 @@ div[ng-class="fr_CA"] {
 		display: none !important;
 	}
     .mobile-results-nav li:nth-child(2) img {
+        -webkit-transform:scale(1.2);
         transform:scale(1.2);
         letter-spacing: .2px;
         position: relative;
-        top: -15px;
+        top: -8px;
     }
     .mobile-results-nav li:nth-child(odd) span {
         letter-spacing: .2px;

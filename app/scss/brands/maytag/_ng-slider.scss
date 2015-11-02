@@ -118,7 +118,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 	// float: left;
 	height: 100px;
 	margin-top: 75px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	// @include make-md-column(8);
 	position: relative;
 	margin-left: auto;
@@ -1113,6 +1113,7 @@ div[ng-class="fr_CA"] {
 			span {
 				font-size: 20px !important;
                 top: -5px;
+                left: -5px;
                 position: relative;
 			}
 		}
