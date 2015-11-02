@@ -12,7 +12,6 @@ header.header-desktop {
 	margin: 0 auto;
 	height: 200px;
 	position: relative;
-	z-index: 200;
 
 	h2, h3 {
 		font-family: $AV-Light;
@@ -61,7 +60,7 @@ header.header-desktop {
 				display: inline-block;
 				width: 20px;
 				height: 20px;
-				z-index:2;
+				z-index: 52;
 				margin-left: 6px;
 			}
 			.btn-icon {
@@ -129,7 +128,7 @@ header.header-desktop {
 	opacity: 1;
 }
 .tooltip {
-	z-index:1;
+	z-index: 51;
 	left: 50%;
 	opacity: 0;
 	top: -5px;

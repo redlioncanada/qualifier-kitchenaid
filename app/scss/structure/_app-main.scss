@@ -401,13 +401,11 @@ a.answer-box.picture-4 {
         background: url("../img/icon-bg-big-active.png") no-repeat;
         background-size: contain;
         background-position: 50% 50%;
-        background-size: 89%;
     }
     .img-wrap {
         background: url("../img/icon-bg-big-active.png") no-repeat;
         background-size: contain;
         background-position: 50% 50%;
-        background-size: 89%;
     }
 }
 a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
@@ -415,13 +413,11 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
         background: url("../img/icon-bg-big-active.png") no-repeat;
         background-size: contain;
         background-position: 50% 50%;
-        background-size: 89%;
     }
     .img-wrap {
         background: url("../img/icon-bg-big-active.png") no-repeat;
         background-size: contain;
         background-position: 50% 50%;
-        background-size: 89%;
     }
 }
 
@@ -1310,13 +1306,14 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
     // Ranking
     .ranking {
         text-align: left;
-        width: 98%;
+        width: 96%;
+        margin-top: 0 !important;
         ul {
             list-style: none;
             padding-left: 0;
         }
         ul.rank-numbers-list {
-            width: 13%;
+            width: 16%;
             text-align: center;
             height: initial !important;
 
@@ -1346,7 +1343,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             position: relative;
             top: 0px !important;
             margin-left: 48px;
-            width: 87%;
+            width: 84%;
             li {
                 height: 42px !important;
             }
@@ -1412,6 +1409,27 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
         }
         .boxes-icon-2 {
             margin-bottom: 20px !important;
+        }
+    }
+    a.boxes-icon-split.selected, a.boxes-icon-2.selected, a.picture-3.selected {
+        .icon-wrap {
+            background-size: 89% !important;
+        }
+        .img-wrap {
+            background-size: 89% !important;
+        }
+    }
+    a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
+        .icon-wrap {
+            background-size: 89% !important;
+        }
+        .img-wrap {
+            background-size: 89% !important;
+        }
+    }
+    &.boxes-icon-2, &.picture-3, &.boxes-icon-split {
+		.icon-wrap, .img-wrap {
+            background-size: 89% !important;
         }
     }
 }
