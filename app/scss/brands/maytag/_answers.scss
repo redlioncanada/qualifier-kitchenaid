@@ -86,7 +86,7 @@
 }
 .label-text {
 	font-family: $AV-Light;
-	font-size: 17px;
+	font-size: 15px;
 	color: #fff;
 	position: relative;
 	line-height: 17px;
@@ -408,7 +408,7 @@
 		.icon-wrap, .img-wrap {
             background: url('../img/icon-bg-big.png') no-repeat;
             background-position: 50% 50%;
-            background-size: 89%;
+            background-size: contain;
             height: 100%;
             width:  100%;
 			img.normal, img.hover {
@@ -651,7 +651,7 @@
 		height: 62.2px;
 		background: url('../img/ranking-bg.png') no-repeat;
         background-position: 0 -2px;
-        background-size: 100% 102%;
+        background-size: 100% 100%;
         border-radius: 6px;
         padding-left: 0 !important;
         text-align: center;
@@ -686,7 +686,7 @@ li.dragging-rank {
 		background: url('../img/ranking-bg.png') no-repeat;
 		background-color: transparent;
         background-position: 0 -2px;
-        background-size: 100% 102%;
+        background-size: 100% 100%;
         border-radius: 6px;
         padding-left: 0 !important;
         text-align: center;

@@ -187,7 +187,7 @@
 						"to" : 5,      
 					    "step": 0.0001,
 					    "dimension_label" : "WIDTH",
-					    "scale": ["Any size","15","30","36","48"]       
+					    "scale": ["Any size","15\"","30\"","36\"","48\""]       
 					},
 					"answers" : {
 						"1" : {
@@ -248,13 +248,7 @@
 						}
 					}								
 				}					
-			],
-			"notes" : [
-				{
-					"title" : "View Measurement Guide",
-					"text" : "Note: Industry standard is 30\""
-				}
-			]
+			]          
 		},
 		"Cooking - Cooktops - Style" : {
 			"next" : "Cooking - Cooktops - Features",
