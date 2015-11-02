@@ -567,8 +567,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 		width: 0px !important;
 
 		.slider-large-label {
-            left: -28px;
-			margin-right: 0px !important;
+            left: -34px !important;
 		}
 	}
     .picture-3 {
@@ -644,7 +643,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 
 	.app-content-main-top .extra-info-wrap {
 		position: absolute;
-        top: -20px;
+        top: -2px;
 
 		.btn-text {
 			display: none;
@@ -834,6 +833,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 				height: 99%;
 				top: 32px;
 				position: absolute;
+                left: 30px;
 
 				span {
 					border-left: none !important;
@@ -844,10 +844,10 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 
 				ins {
 					top: -7px;
-					left: 20px;
+					left: 30px;
 					width: 108px;
 					text-align: left;
-					font-size: 7px;
+					font-size: 11px;
 					height: 45px;
 					display: table-cell;
 					vertical-align: middle;
@@ -966,7 +966,8 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 		font-size: 13pt !important;
         color: #999C9C !important;
         top: -23px !important;
-        margin-right: -40px !important;
+        margin-right: 0 !important;
+        left: 7px !important;
 	}
     div.category-image > img.hover {
         opacity: 0 !important;
@@ -1364,7 +1365,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
     }
     .slider-large-label-wrap .slider-large-label {
         top: -11px !important;
-        margin-right: -1px !important;
+        left: -3px !important;
 	}
 
     .boxes-icon-2-container, .picture-3-container {
@@ -1432,6 +1433,15 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             background-size: 89% !important;
         }
     }
+    .app-content-main-top .extra-info-wrap {
+		position: absolute;
+        top: -20px;
+        left: -2px !important; 
+
+		.btn-text {
+			display: none;
+		}
+	}
 }
 
 .print-page {
