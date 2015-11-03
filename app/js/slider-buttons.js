@@ -63,6 +63,16 @@ angular.module('App')
               }
               $rootScope.safeApply();
               $scope.toggleButtons(qs.text[1],$rootScope.questionsData.question.show.answer);
+
+              for (var t in qs.text) {        
+                for (var i in qs.text[t].answers) {
+                  if (qs.text[t].answers[i].value == qs.text[t].answer) {
+                    qs.text[t].answers[i].answer = true
+                  } else {
+                    qs.text[t].answers[i].answer = false
+                  }
+                }
+              }
             } else {
               //released
             } 
