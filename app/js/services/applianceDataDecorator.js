@@ -3,11 +3,7 @@ var applianceDataDecorator = angular.module('ApplianceDataDecoratorService', [])
 applianceDataDecorator.factory('$dataDecorator', function() {
 	return function(data) {
 		// console.log(data);
-		var relcodes = {
-          'M1' : 'DC',
-          'WH' : 'DW'
-        }
-                
+
 		angular.forEach(data, function(item, key) {
 			switch (item.appliance) {
 				case "Cooktops":

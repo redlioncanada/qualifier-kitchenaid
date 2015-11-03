@@ -213,39 +213,9 @@
                             "value" : 2,
                             "text" : "15\"",
                             "scoring" : {
-                                "width15" : 5,
-                                "width16" : -30,
-                                "width17" : -30,
-                                "width18" : -30,
-                                "width19" : -30,
-                                "width20" : -30,
-                                "width21" : -30,
-                                "width22" : -30,
-                                "width23" : -30,
-                                "width24" : -30,
-                                "width25" : -30,
-                                "width26" : -30,
-                                "width27" : -30,
-                                "width28" : -30,
-                                "width29" : -30,
+                                "width15" : 1,
                                 "width30" : -30,
-                                "width31" : -30,
-                                "width32" : -30,
-                                "width33" : -30,
-                                "width34" : -30,
-                                "width35" : -30,
                                 "width36" : -30,
-                                "width37" : -30,
-                                "width38" : -30,
-                                "width39" : -30,
-                                "width40" : -30,
-                                "width41" : -30,
-                                "width42" : -30,
-                                "width43" : -30,
-                                "width44" : -30,
-                                "width45" : -30,
-                                "width46" : -30,
-                                "width47" : -30,
                                 "width48" : -30
                             }
                         },
@@ -255,24 +225,9 @@
                             "value" : 3,
                             "text" : "30\"",
                             "scoring" : {
-                                "width30" : 5,
-                                "width31" : -30,
-                                "width32" : -30,
-                                "width33" : -30,
-                                "width34" : -30,
-                                "width35" : -30,
+                                "width15" : -30,
+                                "width30" : 1,
                                 "width36" : -30,
-                                "width37" : -30,
-                                "width38" : -30,
-                                "width39" : -30,
-                                "width40" : -30,
-                                "width41" : -30,
-                                "width42" : -30,
-                                "width43" : -30,
-                                "width44" : -30,
-                                "width45" : -30,
-                                "width46" : -30,
-                                "width47" : -30,
                                 "width48" : -30
                             }
                         },
@@ -282,18 +237,9 @@
                             "value" : 4,
                             "text" : "36\"",
                             "scoring" : {
-                                "width36" : 5,
-                                "width37" : -30,
-                                "width38" : -30,
-                                "width39" : -30,
-                                "width40" : -30,
-                                "width41" : -30,
-                                "width42" : -30,
-                                "width43" : -30,
-                                "width44" : -30,
-                                "width45" : -30,
-                                "width46" : -30,
-                                "width47" : -30,
+                                "width15" : -30,
+                                "width30" : -30,
+                                "width36" : 1,
                                 "width48" : -30
                             }
                         },
@@ -303,12 +249,21 @@
                             "value" : 5,
                             "text" : "48\"",
                             "scoring" : {
-                                "width48" : 5
+                                "width15" : -30,
+                                "width30" : -30,
+                                "width36" : -30,
+                                "width48" : 1
                             }
                         }
                     }                               
                 }                   
-            ]          
+            ],
+            "notes" : [
+                {
+                    "title" : "Remarque",
+                    "text" : "La norme de l’industrie est 30 po"
+                }
+            ]
         },
         "Cooking - Cooktops - Style" : {
             "next" : "Cooking - Cooktops - Features",
@@ -611,12 +566,7 @@
                             "text" : "30\" po ou moins",
                             "value" : "30",
                             "scoring" : {
-                                "width30" : 5,
-                                "width31": -30,
-                                "width32": -30,
-                                "width33": -30,
-                                "width34": -30,
-                                "width35": -30,
+                                "width30" : 1,
                                 "width36": -30
                             },
                             "order" : 1
@@ -628,7 +578,8 @@
                             "text" : "36\" po ou plus",
                             "value" : "36",
                             "scoring" : {
-                                "width36": 5
+                                "width30" : -30,
+                                "width36": 1
                             },
                             "order" : 2
                         }
@@ -956,6 +907,9 @@
                             "value" : 1,
                             "text" : "Aucune restriction",
                             "scoring" : {
+                                "width24" : 1,
+                                "width27" : 1,
+                                "width30" : 1
                             }
                         },
                         "2" : {
@@ -964,12 +918,8 @@
                             "value" : 2,
                             "text" : "24\"",
                             "scoring" : {
-                                "width24" : 5,
-                                "width25" : -30,
-                                "width26" : -30,
+                                "width24" : 1,
                                 "width27" : -30,
-                                "width28" : -30,
-                                "width29" : -30,
                                 "width30" : -30
                             }
                         },
@@ -979,9 +929,8 @@
                             "value" : 3,
                             "text" : "27\"",
                             "scoring" : {
-                                "width27" : 5,
-                                "width28" : -30,
-                                "width29" : -30,
+                                "width24" : -30,
+                                "width27" : 1,
                                 "width30" : -30
                             }
                         },
@@ -991,7 +940,9 @@
                             "value" : 4,
                             "text" : "30\"",
                             "scoring" : {
-                               "width30" : 5
+                                "width24" : -30,
+                                "width27" : -30,
+                                "width30" : 1
                             }
                         }
                     }                               
@@ -1311,12 +1262,7 @@
                             "value" : 1,
                             "text" : "30\"",
                             "scoring" : {
-                                "width30" : 5,
-                                "width31" : -30,
-                                "width32" : -30,
-                                "width33" : -30,
-                                "width34" : -30,
-                                "width35" : -30,
+                                "width30" : 1,
                                 "width36" : -30
                             }
                         },
@@ -1326,7 +1272,8 @@
                             "value" : 2,
                             "text" : "36\"",
                             "scoring" : {
-                                "width36" : -30,
+                                "width36" : 1,
+                                "width30" : -30
                             }
                         }
                     }
@@ -1912,7 +1859,8 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width22" : 5,
+                                "width21" : 1,
+                                "width22" : 1,
                                 "width23" : -30,
                                 "width24" : -30,
                                 "width25" : -30,
@@ -1948,7 +1896,17 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width31" : 5,
+                                "width21" : -30,
+                                "width22" : -30,
+                                "width23" : 1,
+                                "width24" : 1,
+                                "width25" : 1,
+                                "width26" : 1,
+                                "width27" : 1,
+                                "width28" : 1,
+                                "width29" : 1,
+                                "width30" : 1,
+                                "width31" : 1,
                                 "width32" : -30,
                                 "width33" : -30,
                                 "width34" : -30,
@@ -1975,7 +1933,19 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width33" : 5,
+                                "width21" : -30,
+                                "width22" : -30,
+                                "width23" : -30,
+                                "width24" : -30,
+                                "width25" : -30,
+                                "width26" : -30,
+                                "width27" : -30,
+                                "width28" : -30,
+                                "width29" : -30,
+                                "width30" : -30,
+                                "width31" : -30,
+                                "width32" : 1,
+                                "width33" : 1,
                                 "width34" : -30,
                                 "width35" : -30,
                                 "width36" : -30,
@@ -2000,7 +1970,22 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width36" : 5,
+                                "width21" : -30,
+                                "width22" : -30,
+                                "width23" : -30,
+                                "width24" : -30,
+                                "width25" : -30,
+                                "width26" : -30,
+                                "width27" : -30,
+                                "width28" : -30,
+                                "width29" : -30,
+                                "width30" : -30,
+                                "width31" : -30,
+                                "width32" : -30,
+                                "width33" : -30,
+                                "width34" : 1,
+                                "width35" : 1,
+                                "width36" : 1,
                                 "width37" : -30,
                                 "width38" : -30,
                                 "width39" : -30,
@@ -2022,7 +2007,23 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width37" : 5,
+                                "width21" : -30,
+                                "width22" : -30,
+                                "width23" : -30,
+                                "width24" : -30,
+                                "width25" : -30,
+                                "width26" : -30,
+                                "width27" : -30,
+                                "width28" : -30,
+                                "width29" : -30,
+                                "width30" : -30,
+                                "width31" : -30,
+                                "width32" : -30,
+                                "width33" : -30,
+                                "width34" : -30,
+                                "width35" : -30,
+                                "width36" : -30,
+                                "width37" : 1,
                                 "width38" : -30,
                                 "width39" : -30,
                                 "width40" : -30,
@@ -2043,7 +2044,29 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width43" : 5,
+                                "width21" : -30,
+                                "width22" : -30,
+                                "width23" : -30,
+                                "width24" : -30,
+                                "width25" : -30,
+                                "width26" : -30,
+                                "width27" : -30,
+                                "width28" : -30,
+                                "width29" : -30,
+                                "width30" : -30,
+                                "width31" : -30,
+                                "width32" : -30,
+                                "width33" : -30,
+                                "width34" : -30,
+                                "width35" : -30,
+                                "width36" : -30,
+                                "width37" : -30,
+                                "width38" : 1,
+                                "width39" : 1,
+                                "width40" : 1,
+                                "width41" : 1,
+                                "width42" : 1,
+                                "width43" : 1,
                                 "width44" : -30,
                                 "width45" : -30,
                                 "width46" : -30,
@@ -2058,7 +2081,35 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width49" : 5
+                                "width21" : -30,
+                                "width22" : -30,
+                                "width23" : -30,
+                                "width24" : -30,
+                                "width25" : -30,
+                                "width26" : -30,
+                                "width27" : -30,
+                                "width28" : -30,
+                                "width29" : -30,
+                                "width30" : -30,
+                                "width31" : -30,
+                                "width32" : -30,
+                                "width33" : -30,
+                                "width34" : -30,
+                                "width35" : -30,
+                                "width36" : -30,
+                                "width37" : -30,
+                                "width38" : -30,
+                                "width39" : -30,
+                                "width40" : -30,
+                                "width41" : -30,
+                                "width42" : -30,
+                                "width43" : -30,
+                                "width44" : 1,
+                                "width45" : 1,
+                                "width46" : 1,
+                                "width47" : 1,
+                                "width48" : 1,
+                                "width49" : 1
                             }
                         }
                     }                               
@@ -2082,7 +2133,8 @@
                             "enabled" : true,
                             "enabledWhen" : [0,2],
                             "scoring" : {
-                                 "height67" : 5,
+                                 "height66" : 1,
+                                 "height67" : 1,
                                  "height68" : -30,
                                  "height69" : -30,
                                  "height70" : -30,
@@ -2106,9 +2158,13 @@
                             "value" : 70,
                             "text" : "70",
                             "enabled" : true,
-                            "enabledWhen" : [0,1,2,3,4],
+                            "enabledWhen" : [0,1,2,4],
                             "scoring" : {
-                                 "height70" : 5,
+                                 "height66" : -30,
+                                 "height67" : -30,
+                                 "height68" : 1,
+                                 "height69" : 1,
+                                 "height70" : 1,
                                  "height71" : -30,
                                  "height72" : -30,
                                  "height73" : -30,
@@ -2131,7 +2187,12 @@
                             "enabled" : true,
                             "enabledWhen" : [0,3,4],
                             "scoring" : {
-                                 "height71" : 5,
+                                 "height66" : -30,
+                                 "height67" : -30,
+                                 "height68" : -30,
+                                 "height69" : -30,
+                                 "height70" : -30,
+                                 "height71" : 1,
                                  "height72" : -30,
                                  "height73" : -30,
                                  "height74" : -30,
@@ -2153,7 +2214,13 @@
                             "enabled" : true,
                             "enabledWhen" : [0,4],
                             "scoring" : {
-                                 "height72" : 5,
+                                 "height66" : -30,
+                                 "height67" : -30,
+                                 "height68" : -30,
+                                 "height69" : -30,
+                                 "height70" : -30,
+                                 "height71" : -30,
+                                 "height72" : 1,
                                  "height73" : -30,
                                  "height74" : -30,
                                  "height75" : -30,
@@ -2174,7 +2241,25 @@
                             "enabled" : true,
                             "enabledWhen" : [0,4,5,6,7],
                             "scoring" : {
-                                 "height84" : 5
+                                 "height66" : -30,
+                                 "height67" : -30,
+                                 "height68" : -30,
+                                 "height69" : -30,
+                                 "height70" : -30,
+                                 "height71" : -30,
+                                 "height72" : -30,
+                                 "height73" : 1,
+                                 "height74" : 1,
+                                 "height75" : 1,
+                                 "height76" : 1,
+                                 "height77" : 1,
+                                 "height78" : 1,
+                                 "height79" : 1,
+                                 "height80" : 1,
+                                 "height81" : 1,
+                                 "height82" : 1,
+                                 "height83" : 1,
+                                 "height84" : 1
                             }
                         }
                     }                               
