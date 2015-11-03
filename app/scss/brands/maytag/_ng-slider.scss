@@ -376,7 +376,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			z-index: 50;
 			width: 86px;
 			height: 74px;
-			background: url('../img/slider-pointer.png') center center no-repeat !important;
+			background: url('../img/slider-pointer.png') center center no-repeat;
 			background-size: 86px 74px;
 			// &:hover {
 
@@ -1092,12 +1092,12 @@ div[ng-class="fr_CA"] {
 		}
 
 		div.jslider-pointer { 
-			width: 43px;
-			height: 37px;
+			width: 43px !important;
+			height: 37px !important;
 			background: url('../img/slider-pointer-small.png') center center no-repeat !important;
-			background-size: 43px 37px;
-			top: -8px;
-			margin-left: -23px;
+			background-size: 43px 37px !important;
+			top: -8px !important;
+			margin-left: -23px !important;
 		}
         
         .jslider-scale {
