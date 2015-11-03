@@ -361,9 +361,6 @@
 			text-align: left;
 		}
 	}
-	&.picture-3 {
-		float: left;
-	}
 	&.picture-4 {
 		display: inline-block;
 		.img-wrap {
@@ -400,14 +397,11 @@
 	// Single select with icons - 2 answers
 	&.boxes-icon-2, &.picture-3, &.boxes-icon-split { // + Multiselect with icons - 5 answers
 		// @include make-md-column(6);
-		width: 45% !important;
+		width: 213px;
 		height: 205px;
 		display: inline-block;
         border-radius: 50%;
         margin-bottom: 60px;
-        float: left !important;
-        margin-left: 10px !important;
-        margin-right:  10px !important;
 		.icon-wrap, .img-wrap {
             background: url('../img/icon-bg-big.png') no-repeat;
             background-position: 50% 50%;
