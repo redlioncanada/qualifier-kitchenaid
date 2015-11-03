@@ -284,21 +284,21 @@
 				color-stop(0, #EFEFEF),
 				color-stop(0.3, #FFFFFF)
 			);
-			background-image: -o-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
-			background-image: -moz-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
-			background-image: -webkit-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
-			background-image: -ms-linear-gradient(bottom, #EFEFEF 0%, #FFFFFF 20%);
-			background-image: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 20%);
+                background-image: -webkit-gradient(linear, 0 0, 0 772.125, color-stop(0.024, #f7f7f7), color-stop(0.449, #fff));
+                background-image: -webkit-linear-gradient(#f7f7f7 2.4%, #fff 44.9%);
+                background-image: -moz-linear-gradient(#f7f7f7 2.4%, #fff 44.9%);
+                background-image: -o-linear-gradient(#f7f7f7 2.4%, #fff 44.9%);
+                background-image: linear-gradient(#f7f7f7 2.4%, #fff 44.9%)
             h2 {
             margin: 0 auto;
             width: 88%;
             }
 		}
 		.sales-feature-spacer {
-			margin: 30px auto;
+			margin: 5px auto;
 			height: 1px;
 			width: 77%;
-			background-color: #AAA;
+			background-color: transparent;
 		}
 		.sales-feature-spacer.small {
 			margin: 15px auto;
@@ -392,7 +392,7 @@
 
 	}
 	span[ng-bind-html="sf.headline"] {
-		font-family: $AV-Light;
+		font-family: $AV-Black;
 		color: #ac080f;
 		font-size: 16px;
 		text-transform: none;
@@ -406,9 +406,9 @@
 		text-transform: uppercase;
 	}
 	h4.sales-feature-additional span[ng-bind-html="sf.headline"] {
-		color: #777;
-		font-family: $AV-stack;
-		font-size: 7pt;
+		color: #999;
+		font-family: $AV-Black;
+		font-size: 8pt;
 		vertical-align: middle;
 	}
 
