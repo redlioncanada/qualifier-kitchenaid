@@ -257,12 +257,6 @@
                         }
                     }                               
                 }                   
-            ],
-            "notes" : [
-                {
-                    "title" : "Remarque",
-                    "text" : "La norme de l’industrie est 30 po"
-                }
             ]
         },
         "Cooking - Cooktops - Style" : {
@@ -947,12 +941,6 @@
                         }
                     }                               
                 }                   
-            ],
-            "notes" : [
-                {
-                    "title" : "Note",
-                    "text" : "Industry standard is 30"
-                }
             ]
         },
         "Cooking - Wall Ovens - Style" : {

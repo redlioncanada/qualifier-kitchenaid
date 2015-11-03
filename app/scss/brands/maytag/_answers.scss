@@ -750,17 +750,10 @@ div[ng-class="fr_CA"] {
 			height: 48px;
 			bottom: 4px;
 			display: table;
+            width: 180px !important;
 		}
-		.label-text {
-			font-family: $AV-Light;
-			font-size: 17px;
-			color: #272727;
-			position: relative;
-			line-height: 17px;
-			display: table-cell;
-			vertical-align: middle;
-			max-width: 108px;
-			font-size: 12pt;
-		}
+        .label-sub-text {
+            width: 190px !important;
+        }
 	}
 }
