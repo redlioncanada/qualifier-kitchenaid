@@ -1051,8 +1051,6 @@ div[ng-class="fr_CA"] {
 
 	.price-slider.pointer-labels {
 		.jslider {
-			padding-top: 11px !important;
-
 			.jslider-value, .jslider-value * {
 				font-size: 24px !important;
 			}
@@ -1103,7 +1101,6 @@ div[ng-class="fr_CA"] {
 			height: 37px !important;
 			background: url('../img/slider-pointer-small.png') center center no-repeat !important;
 			background-size: 43px 37px !important;
-			top: -8px !important;
 			margin-left: -23px !important;
 		}
         

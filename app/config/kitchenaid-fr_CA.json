@@ -2059,12 +2059,12 @@
                 },
                 {
                     "classes": "label-inches",
-                    "dimension_label" : "height",
+                    "dimension_label" : "HAUTEUR",
                     "answer" : 0,
                     "answers" : {
                         "0" : {
                             "value" : 0,
-                            "text" : "Any",
+                            "text" : "Toute",
                             "enabled" : true,
                             "enabledWhen" : [0,1,2,3,4,5,6,7],
                             "scoring" : {

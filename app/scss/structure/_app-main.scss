@@ -1598,7 +1598,23 @@ div[ng-class="fr_CA"] {
             font-size: 12px !important;
         }
     }
+    .app-content-main-top {
+        h2 {
+            font-size: 23px;
+        }
+    }
+    .answer-button-content-wrapper {
+        font-size: 10px !important;
+    }
 }
+@media(max-width:1180px) and (min-width:1024px) {
+    div[ng-class="fr_CA"] {
+        .slider-large-label {
+            //left: -21px !important;
+        }   
+    }
+}
+
 @media(max-width:1023px) {
     div[ng-class="fr_CA"] {
         .category {
@@ -1619,6 +1635,32 @@ div[ng-class="fr_CA"] {
                 font-size: 12px !important;
                 -webkit-transform: translate(50%, -50%) !important;
                 transform: translate(50%, -50%) !important;
+            }
+        }
+ 
+        .app-content-main-top {
+            h2 {
+                font-size: 12px !important;
+            }
+        }
+        div.slidey .app-answers, .slidey .answers-main-content.answer-slider, .slidey .answers-main-content.price-slider {
+            .jslider {
+                div.jslider-pointer { 
+                    width: 43px !important;
+                    height: 37px !important;
+                    background: url('../img/slider-pointer-small.png') center center no-repeat !important;
+                    background-size: 43px 37px !important;
+                    margin-left: -42px !important;
+                }
+            }
+        }
+        .picture-3 {
+            .label-wrap {
+                bottom: -45px !important;
+                
+                .label-sub-text {
+                    width: 120px !important;
+                }
             }
         }
     }
