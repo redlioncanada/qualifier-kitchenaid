@@ -368,7 +368,7 @@ div.mobile-app-nav-arrows {
 
 .picture-3-container, .boxes-icon-2-container {
     .answer-box {
-        float: none !important; 
+        float: none; 
         margin-left: 33px;
         margin-right: 33px;
     }
@@ -541,8 +541,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
     }
     .picture-3-container {
         width: 100% !important;
-        .answer-box {
-            float: none !important; 
+        .answer-box {          
             margin-left: 15px;
             margin-right: 15px;
         }
@@ -596,6 +595,18 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 }
 
 @media(max-width:1023px) {
+    
+    	&.boxes-icon-2, &.picture-3, &.boxes-icon-split { // + Multiselect with icons - 5 answers
+		// @include make-md-column(6);
+		width: 45% !important;
+		height: 205px !important;
+		display: inline-block !important;
+        border-radius: 50% !important;
+        margin-bottom: 60px !important;
+        float: left !important;
+        margin-left: 10px !important;
+        margin-right:  10px !important;   
+	}
     
     .app-answers {
         .answer-option {
@@ -1375,7 +1386,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             margin-bottom: 33px !important;
             .img-wrap {
                 img {
-                    width: 120px !important;
+                    width: 128px !important;
                     top: 50% !important;
                     left: 50.4% !important;
                 }
@@ -1391,6 +1402,8 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             padding: 0 2.5%;
             height: 133px !important;
             margin-bottom: 33px !important;
+            margin-left: 0px !important;
+            margin-right:  0px !important;   
                   
             .icon-wrap, img-wrap {
                 width: 140px !important;
@@ -1412,27 +1425,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             margin-bottom: 20px !important;
         }
     }
-    a.boxes-icon-split.selected, a.boxes-icon-2.selected, a.picture-3.selected {
-        .icon-wrap {
-            background-size: 89% !important;
-        }
-        .img-wrap {
-            background-size: 89% !important;
-        }
-    }
-    a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
-        .icon-wrap {
-            background-size: 89% !important;
-        }
-        .img-wrap {
-            background-size: 89% !important;
-        }
-    }
-    &.boxes-icon-2, &.picture-3, &.boxes-icon-split {
-		.icon-wrap, .img-wrap {
-            background-size: 89% !important;
-        }
-    }
+    
     .app-content-main-top .extra-info-wrap {
 		position: absolute;
         top: -20px;
@@ -1577,4 +1570,11 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 
 .hiddenViaOpacity {
 	opacity: 0 !important;
+}
+div[ng-class="fr_CA"] {
+   .picture-3 {
+        .label-wrap {
+            bottom: -40px !important;
+        }
+    }
 }
