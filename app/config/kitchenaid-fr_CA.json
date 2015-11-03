@@ -1740,7 +1740,7 @@
                         "to": 2,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Très souvent; j’essaie toujours de nouvelles recettes de rôtis", "Parfois; quelques fois par année", "Jamais; je me fie à la durée de cuisson pour déterminer si mon plat est prêt"]     
+                        "scale": ["Très souvent<div></div>j’essaie toujours de nouvelles recettes de rôtis", "Parfois<div></div>quelques fois par année", "Jamais<div></div>je me fie à la durée de cuisson pour déterminer si mon plat est prêt"]     
                     },
                     "answers" : {
                         "0" : {
@@ -2340,7 +2340,7 @@
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la capacité?",
                     "explanation" : "Nous voulons nous faire une meilleure idée de la façon dont vous utilisez votre frigo et de ce que vous y mettez afin de pouvoir trouver celui qui convient le mieux à votre style de vie.",
-                    "type" : "slider-people",
+                    "type" : "slider",
                     "oneAnswer" : false,
                     "classes" : "slider-labels five fridge-capacity",
                     "answer" : 1,

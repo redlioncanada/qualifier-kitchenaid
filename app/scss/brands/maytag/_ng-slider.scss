@@ -465,6 +465,13 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 				width: 200px;
 				left: -100px;
 				text-align: center;
+
+				div {
+					margin: 5px auto;
+					height: 1px;
+					background-color: #e6e6e6;
+					width: 40px;
+				}
 			}
 		}
 		.jslider-label, .jslider-value {
