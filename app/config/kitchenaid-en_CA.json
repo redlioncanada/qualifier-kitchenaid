@@ -1695,14 +1695,14 @@
 					    "to": 2,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Very often, I'm always experimenting with new roast recipes", "Sometimes, a few times a year", "Never, I use time to figure out if my dish is done"]     
+					    "scale": ["Very often<div></div>I'm always experimenting with new roast recipes", "Sometimes<div></div>a few times a year", "Never<div></div>I use time to figure out if my dish is done"]     
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 0,
-							"text" : "Very often",
+							"text" : "Very often<div></div>I'm always experimenting with new roast recipes",
 							"scoring" : {			
 								"temperatureProbe" : 2,
 								"wirelessProbe" : 1				
@@ -1712,7 +1712,7 @@
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 1,
-							"text" : "Sometimes",
+							"text" : "Sometimes<div></div>A few times a year",
 							"scoring" : {
 								"temperatureProbe" : 1
 							}
@@ -1721,7 +1721,7 @@
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 2,
-							"text" : "Never",
+							"text" : "Never<div></div>I use time to figure out if my dish is done",
 							"scoring" : {
 							}
 						}
@@ -2291,7 +2291,7 @@
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about capacity?",
 					"explanation" : "We want to get a better idea of how you use your fridge and what you put in it so we can find you the one that fits your lifestyle.",
-					"type" : "slider-people",
+					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels five fridge-capacity",
 					"answer" : 1,
@@ -2301,11 +2301,11 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"Myself", 
-							"Me and my better half",
-							"My Family",
-							"My large family",
-							"My dinner party guests"
+							"Myself<div></div>to keep me fueled all week", 
+							"Me and my better half<div></div>we like to try new recipes together",
+							"My Family<div></div>from Mexican night to smörgåsbord Sundays, we're a hungry group",
+							"My large family<div></div>the cooking never ends, but we love creating new family classics",
+							"My dinner party guests<div></div>I'm the host with the most"
 					    ]       
 					},
 					"answers" : {
