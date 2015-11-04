@@ -367,17 +367,15 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			margin-left: -43px; 
 			cursor: pointer; 
 			cursor: hand; 
-
-
 			display: block;
 			// width: 72px;
 			// height: 66px;
-
 			z-index: 50;
 			width: 86px;
 			height: 74px;
 			background: url('../img/slider-pointer.png') center center no-repeat;
 			background-size: 86px 74px;
+            background-position: 0,0 !important;
 			// &:hover {
 
 			// }
@@ -1051,6 +1049,7 @@ div[ng-class="fr_CA"] {
 
 	.price-slider.pointer-labels {
 		.jslider {
+
 			.jslider-value, .jslider-value * {
 				font-size: 24px !important;
 			}
@@ -1101,7 +1100,6 @@ div[ng-class="fr_CA"] {
 			height: 37px !important;
 			background: url('../img/slider-pointer-small.png') center center no-repeat !important;
 			background-size: 43px 37px !important;
-			margin-left: -23px !important;
 		}
         
         .jslider-scale {
