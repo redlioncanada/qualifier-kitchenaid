@@ -1185,6 +1185,8 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 		.label-wrap .label-text {
 			font-size: 14px;
 			line-height: 16px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
 		}
 	}
 
@@ -1368,7 +1370,9 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
         }
         .label-text {
             top: 25% !important;
-            font-size: 11px !important
+            font-size: 8px !important;
+            line-height: 12px;
+            letter-spacing: 0.1px;
         }
     }
     .price-slider {

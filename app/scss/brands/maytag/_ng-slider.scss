@@ -1115,8 +1115,8 @@ div[ng-class="fr_CA"] {
 		div.jslider-value {
 			width: 54px;
 			height: 48px;
-			margin-top: -36px;
-			margin-left: -28px !important;
+			margin-top: -40px;
+			margin-left: -30px !important;
 
 			span {
 				font-size: 20px !important;
@@ -1125,6 +1125,9 @@ div[ng-class="fr_CA"] {
                 position: relative;
 			}
 		}
+        .jslider-pointer {
+            margin-left: -24px !important;
+        }
 	}
 
 	div.answers-main-content.answer-buttons {
@@ -1142,7 +1145,8 @@ div[ng-class="fr_CA"] {
  
     .jslider {
         ins {
-                left: 20px !important;
+            left: 20px !important;
+            font-size: 9px !important;
         }
     }
         
