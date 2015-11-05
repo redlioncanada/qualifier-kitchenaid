@@ -5,8 +5,8 @@ angular.module('App')
   	// jslider-value
     $timeout(function () {
         $scope.sliderScale = $($element).find('.jslider-scale');
-        console.log('loaded');
-        $($scope.sliderScale).find('ins').eq(0).find('div').addClass('show');
+        var curVal = Math.round($($element).find('.answer-slider input').val());
+        $($scope.sliderScale).find('ins').eq(curVal).find('div').addClass('show');
     },500);
 
   	$scope.setAnswer = function () {
