@@ -111,7 +111,7 @@ applianceDataDecorator.factory('$dataDecorator', function() {
 						item.largeCapacity = true
 					} else if (item.capacity <= 25) {
 						item.largerCapacity = true
-					} else if (item.capacity <= 26.8) {
+					} else if (item.capacity > 25) {
 						item.largestCapacity = true
 					}
 					break;

@@ -373,7 +373,7 @@
             "text" : [
                 {
                     "question" : "LORSQUE VOUS MAGASINEZ UNE TABLE DE CUISSON, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
-                    "sub_question" : "FAITES GLISSER POUR REARRANGER : <span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>5</span> À LA MOINS IMPORTANTE",
+                    "sub_question" : "FAITES GLISSER POUR REARRANGER : <span>1</div> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>5</div> À LA MOINS IMPORTANTE",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de ces préférences?",
                     "explanation" : "En comprenant vos priorités en matière de cuisson, nous pouvons mieux recommander la table de cuisson qui convient parfaitement à votre style de vie.",
                     "type" : "rank",
@@ -1653,7 +1653,7 @@
             "thumbnail_type" : "image",
             "text" : [
                 {
-                    "question" : "What style range do you prefer?(FR)",
+                    "question" : "Quel style de cuisinière préférez-vous?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du style?", 
                     "explanation" : "NEED COPY!(FR)",
@@ -1661,8 +1661,7 @@
                     "oneAnswer" : true,
                     "answers" : [
                         {
-                            "text" : "Front Control(FR)",
-                            "text_more" : "We’re cooking with fire now(FR)",
+                            "text" : "Commandes frontales",
                             "image" : "img/front-control.png",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
@@ -1673,8 +1672,7 @@
                             "order" : 1
                         },
                         {
-                            "text" : "Rear Control(FR)",
-                            "text_more" : "We just plug-in and go(FR)",
+                            "text" : "Panneau de commandes arrière",
                             "image" : "img/rear-control.png",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
@@ -1687,7 +1685,6 @@
                         ,
                         {
                             "text" : "Aucune restriction",
-                            "text_more" : "We just plug-in and go(FR)",
                             "image" : "img/no-preference-control.png",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
@@ -1787,7 +1784,7 @@
                         "to": 2,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Très souvent<div></div>j’essaie toujours de nouvelles recettes de rôtis", "Parfois<div></div>quelques fois par année", "Jamais<div></div>je me fie à la durée de cuisson pour déterminer si mon plat est prêt"]     
+                        "scale": ["Très souvent<div></div><div class='extra'>j’essaie toujours de nouvelles recettes de rôtis</div>", "Parfois<div></div><div class='extra'>quelques fois par année</div>", "Jamais<div></div><div class='extra'>je me fie à la durée de cuisson pour déterminer si mon plat est prêt</div>"]     
                     },
                     "answers" : {
                         "0" : {
@@ -2838,7 +2835,7 @@
             "text" : [
                 {
                     "question" : "LORSQUE VOUS MAGASINEZ POUR UN LAVE-VAISSELLE, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
-                    "sub_question" : "FAITES GLISSER POUR REARRANGER:<span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>6</span> À LA MOINS IMPORTANTE",
+                    "sub_question" : "FAITES GLISSER POUR REARRANGER:<span>1</div> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>6</div> À LA MOINS IMPORTANTE",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de mes préférences?",
                     "explanation" : "En comprenant vos priorités en matière de lavage de vaisselle, nous pouvons mieux recommander un lave-vaisselle dont les caractéristiques conviennent à votre style de vie.",
                     "type" : "rank",

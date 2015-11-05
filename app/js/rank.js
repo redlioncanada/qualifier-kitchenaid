@@ -31,6 +31,7 @@ angular.module('App')
 
     $scope.draggingListener = function(e) {
         // console.log('drag');
+
         $($scope.clonedElement).css({
             position: 'absolute',
             top: e.pageY - $scope.localY,
@@ -68,16 +69,14 @@ angular.module('App')
     		}
     	},
         dragStart: function(e) {
-           if (!$rootScope.isTabletWidthOrLess) {
                 $($scope.clonedElement).find('span').text($(e.source.itemScope.element[0]).find('span').text());
                 $(document).on('mousemove', $scope.draggingListener);
                 $scope.toggleMouseMove(false);
-            }
         },
         dragEnd: function(e) {
-            $($scope.clonedElement).hide();
-            $(document).off('mousemove', $scope.draggingListener);
-            $scope.toggleMouseMove(true);
+                $($scope.clonedElement).hide();
+                $(document).off('mousemove', $scope.draggingListener);
+                $scope.toggleMouseMove(true);
         },
 	    containment: '.answers-main-content'
 	};

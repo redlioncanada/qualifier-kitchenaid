@@ -1,8 +1,13 @@
 'use strict';
 
 angular.module('App')
-  .controller('SliderCtrl', function ($scope, $rootScope) {
+  .controller('SliderCtrl', function ($scope, $rootScope, $element, $timeout) {
   	// jslider-value
+    $timeout(function () {
+        $scope.sliderScale = $($element).find('.jslider-scale');
+        console.log('loaded');
+        $($scope.sliderScale).find('ins').eq(0).find('div').addClass('show');
+    },500);
 
   	$scope.setAnswer = function () {
       $rootScope.showTooltip = false;
@@ -46,6 +51,17 @@ angular.module('App')
         if (!!$rootScope.questionsData.question) {
           if (qs.name == $rootScope.questionsData.question.name) {    
             if (!!released) {
+              //apply show/hide of extra content
+              var curVal = Math.round($($element).find('.answer-slider input').val());
+              $.each($($scope.sliderScale).find('ins'), function(i,val){
+                if (i == curVal) {
+                  $(val).find('div').addClass('show');
+                } else {
+                  $(val).find('div').removeClass('show');
+                }
+              });
+
+              //assign answer
               for (var a in $rootScope.questionsData.question.text[0].answers) {
                     //console.log( $rootScope.questionsData.question.text[0].answer , $rootScope.questionsData.question.text[0].options.halfway,  parseFloat($rootScope.questionsData.question.text[0].answers[a].value)- $rootScope.questionsData.question.text[0].options.halfway , parseFloat($rootScope.questionsData.question.text[0].answers[a].value)+$rootScope.questionsData.question.text[0].options.halfway   )
                     if ($rootScope.questionsData.question.text[0].answer > (parseFloat($rootScope.questionsData.question.text[0].answers[a].value)- $rootScope.questionsData.question.text[0].options.halfway) &&  $rootScope.questionsData.question.text[0].answer < (parseFloat($rootScope.questionsData.question.text[0].answers[a].value)+$rootScope.questionsData.question.text[0].options.halfway)) {
