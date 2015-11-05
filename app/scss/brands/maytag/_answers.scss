@@ -80,6 +80,15 @@
 	}
 }
 
+div.img-wrap.selected {
+	background: url(../img/icon-bg-big-active.png) no-repeat !important;
+	background-size: contain !important;
+}
+
+.img-wrap.selected, .select-label-wrap.selected {
+	box-shadow: none !important;
+}
+
 .label-wrap {
 	display: inline-block;
 	text-align: left;
