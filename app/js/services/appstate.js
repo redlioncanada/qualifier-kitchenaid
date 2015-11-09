@@ -116,7 +116,7 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 	}
 
 	appstate.host = function() {
-		return $location.host() + ":" + $location.port();
+		return 'http://'+$location.host();
 	}
 
 	appstate.generateEmailURL = function() {
