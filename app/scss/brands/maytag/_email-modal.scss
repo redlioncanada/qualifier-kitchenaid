@@ -126,6 +126,10 @@ $inputBackgroundColor: #EEE;
 			border: 1px solid $textColor;
 			background-color: #FFF;
 		}
+
+		button.btn[disabled="disabled"] {
+			background-color: #EEE;
+		}
 	}
 
 	input.ng-invalid.ng-touched {

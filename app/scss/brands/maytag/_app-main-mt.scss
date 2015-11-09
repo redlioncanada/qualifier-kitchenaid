@@ -643,17 +643,11 @@ div[ng-class="fr_CA"] {
 .print-page {
 	* {
 		font-family: $AV-Light;
-		color: #002e62;
+		color: #000;
 	}
 
 	.print-page-header, .print-page-footer {
-		background-color: #002e62;
-	}
-
-	.print-page-callout .print-page-title {
-		.sku {
-			color: #CCC;
-		}
+		background-color: #cd1433;
 	}
 
 	.print-page-content-wrapper {
