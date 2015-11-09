@@ -1,31 +1,29 @@
 <div bindonce>
   <div class="modal-header">
       <h3 class="modal-title" bo-text="brandData.apptext.emailModalTitle"></h3>
+      <h3 class="modal-close" data-dismiss="modal" ng-click="close()">+</h3>
+      <div class="modal-close-background" data-dismiss="modal" ng-close="close()"></div>
   </div>
   <div class="modal-body">
-    <form name="email">
-        <span bo-text="brandData.apptext.friendsName"></span>
-        <input type="text" ng-model="email.name" required />   
-        <br />
-
-        <span bo-text="brandData.apptext.emailAddress"></span>
-        <input type="email" ng-model="email.address" />
-        <br />
-
-        <span bo-text="brandData.apptext.personalMessage"></span>
-        <textarea ng-model="email.message" required></textarea>
-
-        <div role="alert">
-          <span class="error" ng-show="email.$error.required">
-            Required!</span>
-          <span class="error" ng-show="email.$error.email">
-            Not valid email!</span>
+    <form name="email" novalidate>
+        <div class="input-wrapper">
+          <span class="input-title email-title" bo-text="brandData.apptext.emailNameTitle"></span>
+          <input class="email" type="email" ng-model="email.address" ng-minlength="6" ng-maxlength="40" placeholder="{{brandData.apptext.emailAddressPlaceholder}}" required />
         </div>
+
+        <div class="input-wrapper">
+          <span class="input-title name-title" bo-text="brandData.apptext.emailAddressTitle"></span>
+          <input class="name" type="text" ng-minlength="2" ng-maxlength="99" ng-model="email.name" placeholder="{{brandData.apptext.emailNamePlaceholder}}" required />   
+        </div>
+
+        <input class="subject" type="text" ng-model="email.subject" ng-minlength="10" ng-maxlength="100" ng-disabled="true" />
+        <br/>
+
+        <textarea class="message" ng-model="email.message" ng-minlength="10" ng-maxlength="750" placeholder="{{brandData.apptext.emailMessagePlaceholder}}" required></textarea>
     </form>
   </div>
   <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal"><span bo-text="brandData.apptext.close"></span></button>
-          <button type="submit" class="btn btn-primary" ng-click="!email.$error || submit()"><span bo-text="brandData.apptext.submit"></span></button>
+          <button type="submit" class="btn btn-primary" ng-disabled="email.$invalid" ng-click="!email.$error || submit()"><span bo-text="brandData.apptext.submit"></span></button>
   </div>
 </div>
 

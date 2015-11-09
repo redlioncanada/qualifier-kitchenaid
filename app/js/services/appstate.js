@@ -115,6 +115,10 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 		console.log('clear session')
 	}
 
+	appstate.host = function() {
+		return $location.host() + ":" + $location.port();
+	}
+
 	appstate.generateEmailURL = function() {
 	      return '?' + $base64.encode(JSON.stringify(_enumerateAnswers()));
 	}

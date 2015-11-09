@@ -19,12 +19,18 @@
 		"changeYourAnswer" : "Click on an icon to change your answer",
 		"startover" : "Start<br />&nbsp;Over",
 		"backtoresults" : "Back to<br />Results",
-		"emailAddress" : "Email Address",
-        "personalMessage" : "Personal Message",
-        "submit" : "Submit",
-        "close" : "Close",
-        "emailModalTitle" : "Email Your Results",
-        "friendsName" : "Your Friend's Name"
+		"submit" : "Send",
+		"close" : "Close",
+		"emailModalTitle" : "Email Your Results",
+		"emailNameTitle" : "To:",
+		"emailNamePlaceholder" : "Your name",
+		"emailAddressTitle" : "From:",
+		"emailAddressPlaceholder" : "yourfriend@gmail.com",
+		"emailSubject" : "I used My {{brand}} to find the perfect {{appliance}} and wanted to share with you",
+		"emailMessage" : "Finding the right appliance is hard. But with My {{brand}}, I answered a few simple questions and found the perfect {{appliance}} to fit my lifestyle. I wanted to share my results with you and also the link so you can explore, too!\r\n\r\nTry it for yourself here: {{link}}",
+		"emailMessagePlaceholder" : "Enter a message",
+		"nextQuestionAlt" : "Navigate to next question",
+		"previousQuestionAlt" : "Navigate to previous question"
 	},
 	"questions" : {
 		"Appliance" : {

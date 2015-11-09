@@ -1,43 +1,31 @@
 'use strict';
 
 angular.module('App')
-  .controller('ModalCtrl', function ($scope, $rootScope, $state, $modalInstance, $resource, $location) {
+  .controller('ModalCtrl', ['$modalInstance', 'appliance', 'link', '$scope', '$rootScope', '$timeout', function ($modalInstance, appliance, link, $scope, $rootScope, $timeout) {
 
-  	$rootScope.email = {}
-  	$scope.submit = function () {
+    var apptext = $rootScope.brandData.apptext;
+    var applianceType = appliance.appliance.slice(-1) == 's' ? appliance.appliance.slice(0, -1) : appliance.appliance;
 
-  		var link = $location.host() + "?"
+    $timeout(function() {
+      $scope.setMessage();
+      $scope.setSubject();
+    });
 
-  		for (var sq in $rootScope.questionsData.scoringQuestions) {
-  			var answer = [];
-        console.log($rootScope.questionsData.scoringQuestions[sq]);
-  			for (var t in $rootScope.questionsData.scoringQuestions[sq].text) {
-          if (typeof $rootScope.questionsData.scoringQuestions[sq].text[t].answer !== 'undefined' && $rootScope.questionsData.scoringQuestions[sq].text[t].type == 'slider') {
-            answer.push($rootScope.questionsData.scoringQuestions[sq].text[t].answer);
-            continue;
-          }
-  				for (var ans in $rootScope.questionsData.scoringQuestions[sq].text[t].answers) {
+    $scope.submit = function () {
+      console.log($scope.email);
+      $modalInstance.close();
+    }
 
-            console.log($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer, $rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer == true, !isNaN($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer));
-	  				if ($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer == true) {
-	  					answer.push($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].value)
-	  				}
-            else if (!isNaN($rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer)) {
-              answer[$rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].answer] = $rootScope.questionsData.scoringQuestions[sq].text[t].answers[ans].value
-            }
-	  			}
-  			}
-  			link += sq + "=" + answer.join(";") + "&"
-  		}
-  		console.log(link)
-  		/*$rootScope.email.message += "<br />" + link
-  		var r = $resource("placeholder/sendEmail")
-  		r.save($rootScope.email,function (res, headers) {
+    $scope.close = function() {
+      $modalInstance.dismiss('cancel');
+    }
 
+    $scope.setMessage = function() {
+      $scope.email.message = apptext.emailMessage.replace('{{brand}}', apptext.apptitle).replace('{{appliance}}', applianceType).replace('{{link}}', link);
+    }
 
-  		});
-  		$modalInstance.close();*/
+    $scope.setSubject = function() {
+      $scope.email.subject = apptext.emailSubject.replace('{{brand}}', apptext.apptitle).replace('{{appliance}}', applianceType);
+    }
 
-  	}
-
-});
+}]);

@@ -92,8 +92,31 @@ angular.module('App')
     return appliance.colours[0]
   }
 
+  $rootScope.setBestMatch = function(index,appliance) {
+    if (index != 1) return;
+    $scope.bestMatch = appliance;
+  }
+
   $rootScope.emailOpen = function () {
-    console.log($appstate.generateEmailURL());
+    var modalInstance = $modal.open({
+      animation: true,
+      templateUrl: 'views/result-templates/email-results.html',
+      controller: 'ModalCtrl',
+      resolve: {
+        appliance: function () {
+          return $scope.bestMatch;
+        },
+        link: function() {
+          return $appstate.host() + $appstate.generateEmailURL()
+        }
+      }
+    });
+    modalInstance.result.then(function (selectedItem) {
+      //$scope.selected = selectedItem;
+    }, function () {
+      //$log.info('Modal dismissed at: ' + new Date());
+    });
+    //console.log($appstate.generateEmailURL());
   };
 
 $scope.print = function(sku) {

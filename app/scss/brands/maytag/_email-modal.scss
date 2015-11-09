@@ -1,0 +1,138 @@
+$textColor: #ac0109;
+$inputBackgroundColor: #EEE;
+
+.modal-content {
+	background-color: #f4f4f4;
+	color: $textColor;
+	border: 2px solid $textColor;
+
+	.modal-header {
+		border-bottom: none;
+		font-family: $AV-Light;
+
+		h3 {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+		}
+
+		.modal-title {
+			text-transform: uppercase;
+			font-size: 12pt;
+			margin-top: 8px;
+			margin-left: 10px;
+		}
+
+		.modal-close {
+			position: relative;
+			color: #FFF;
+			font-family: 'Arial';
+			float: right;
+			transform: rotate(45deg) ;
+			-webkit-transform: rotate(45deg) ;
+			-moz-transform: rotate(45deg) ;
+			-o-transform: rotate(45deg) ;
+			-ms-transform: rotate(45deg) ;
+			font-weight: 200;
+			font-size: 22pt;
+			margin-top: -5px;
+			cursor: pointer;
+			z-index: 2;
+		}
+
+		.modal-close-background {
+			position: absolute;
+			right: 13px;
+			top: 15px;
+			height: 22px;
+			width: 22px;
+			border-radius: 12px;
+			float: right;
+			background-color: $textColor;
+			z-index: 1;
+		}
+	}
+
+	.modal-body {
+		margin-top: 0;
+		padding-top: 0;
+
+		input,textarea,.input-title {
+			font-family: $AV-Light;
+		}
+		input,textarea {
+			background-color: $inputBackgroundColor;
+			outline: none;
+			border: 0;
+			border-radius: 5px;
+		}
+		textarea {
+			resize: none;
+		}
+
+		.input-wrapper:not(:first-child) {
+			margin-top: 10px;
+		}
+
+		.input-wrapper {
+			position: relative;
+			height: 30px;
+
+			.input-title {
+				position: absolute;
+				top: 6px;
+				margin-left: 7px;
+			}
+
+			input {
+				width: 100%;
+				height: 100%;
+			}
+
+			.email {
+				padding-left: 31px;
+			}
+
+			.name {
+				padding-left: 48px;
+			}
+		}
+
+		.subject {
+			height: 30px;
+		}
+
+		.subject, .message {
+			width: 100%;
+			padding-left: 7px;
+			margin-top: 10px;
+		}
+
+		.message {
+			padding-top: 25px;
+			margin-top: 25px;
+			height: 250px;
+		}
+	}
+
+	.modal-footer {
+		padding-top: 0;
+		margin-top: 0;
+		border-top: none;
+
+		button.btn {
+			font-family: $AV-Light;
+			color: $textColor;
+			border: 1px solid $textColor;
+			background-color: #FFF;
+		}
+	}
+
+	input.ng-invalid.ng-touched {
+		background-color: #ea7f7f;
+	}
+
+	input[disabled="disabled"] {
+		background-color: #DDD;
+	}
+}
