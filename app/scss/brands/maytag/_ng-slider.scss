@@ -364,17 +364,17 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			left: 20%; 
 			top: -15px; 
 			// margin-left: -39px; 
-			margin-left: -43px; 
+			margin-left: -34px; 
 			cursor: pointer; 
 			cursor: hand; 
 			display: block;
 			// width: 72px;
 			// height: 66px;
 			z-index: 50;
-			width: 86px;
-			height: 74px;
+			width: 66px;
+			height: 75px;
 			background: url('../img/slider-pointer.png') center center no-repeat;
-			background-size: 86px 74px;
+			background-size: 66px 60px;
             background-position: 0,0 !important;
 			// &:hover {
 
@@ -446,7 +446,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			}
 			span { 
 				position: absolute; 
-				height: 28px; 
+				height: 14px; 
 				border-left: 0 !important;
 				font-size: 0; 
 			}
@@ -458,7 +458,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 				text-decoration: none; 
 				position: absolute; 
 				left: 0px; 
-				top: 47px;
+				top: 26px;
 				color: #999;
 				width: 200px;
 				left: -100px;
