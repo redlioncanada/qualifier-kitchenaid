@@ -1665,7 +1665,7 @@
                     "question" : "Quel style de cuisinière préférez-vous?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du style?", 
-                    "explanation" : "NEED COPY!(FR)",
+                    "explanation" : "Saviez-vous que les cuisines professionnelles comportent habituellement des cuisinières à commandes frontales? Une fois que nous comprenons vos préférences en matière de style, nous pouvons recommander la table de cuisson parfaite pour vous.",
                     "type" : "boxes-picture-3-radio",
                     "oneAnswer" : true,
                     "answers" : [
@@ -2265,11 +2265,11 @@
                         "step": 0.0001,
                         "dimension" : "",
                         "scale": [
-                            "Ma propre personne", 
-                            "Moi-même et ma douce moitié",
-                            "Ma famille",
-                            "Ma grande famille",
-                            "Mes invités"
+                            "Ma propre personne<div></div><div class='extra'>pour bien m’alimenter pendant toute la semaine</div>", 
+                            "Moi-même et ma douce moitié<div></div><div class='extra'>nous aimons prendre soin l’un de l’autre</div>",
+                            "Ma famille<div></div><div class='extra'>de la soirée lasagne aux rôtis du dimanche, nous sommes une bande d’affamés</div>",
+                            "Ma grande famille<div></div><div class='extra'>la cuisine ne cesse jamais, mais nous avons souvent des restes pour les paniers repas</div>",
+                            "Mes invités<div></div><div class='extra'>j’adore les barbecues en famille</div>"
                         ]       
                     },
                     "answers" : {
