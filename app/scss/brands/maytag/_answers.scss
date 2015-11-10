@@ -82,6 +82,7 @@
 div.img-wrap.selected {
 	background: url(../img/icon-bg-big-active.png) no-repeat !important;
 	background-size: contain !important;
+    background-position: 50% 50% !important;
 }
 
 .img-wrap.selected, .select-label-wrap.selected {
