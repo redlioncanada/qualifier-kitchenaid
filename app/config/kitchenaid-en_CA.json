@@ -1771,7 +1771,7 @@
 					    "to": 2,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Very often<div></div><div class='extra'>I'm always experimenting with new roast recipes</div>", "Sometimes<div></div><div class='extra'>a few times a year</div>", "Never<div></div><div class='extra'>I use time to figure out if my dish is done</div>"]     
+					    "scale": ["Never<div></div><div class='extra'>I use time to figure out if my dish is done</div>", "Sometimes<div></div><div class='extra'>a few times a year</div>", "Very often<div></div><div class='extra'>I'm always experimenting with new roast recipes</div>"]     
 					},
 					"answers" : {
 						"0" : {

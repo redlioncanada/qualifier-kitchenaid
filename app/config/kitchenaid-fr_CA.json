@@ -1801,7 +1801,7 @@
                         "to": 2,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Très souvent<div></div><div class='extra'>j’essaie toujours de nouvelles recettes de rôtis</div>", "Parfois<div></div><div class='extra'>quelques fois par année</div>", "Jamais<div></div><div class='extra'>je me fie à la durée de cuisson pour déterminer si mon plat est prêt</div>"]     
+                        "scale": ["Jamais<div></div><div class='extra'>je me fie à la durée de cuisson pour déterminer si mon plat est prêt</div>", "Parfois<div></div><div class='extra'>quelques fois par année</div>", "Très souvent<div></div><div class='extra'>j’essaie toujours de nouvelles recettes de rôtis</div>"]     
                     },
                     "answers" : {
                         "0" : {
