@@ -283,6 +283,7 @@ header.header-desktop {
 		// Bootstrap mixin
 		@include button-variant(#ffffff, #7d7d7d, #7d7d7d);
 		padding: 3px 18px;
+		border: 1px solid #ac080f !important;
 	}
 	.btn-text {
 		color: #7d7d7d;
@@ -358,29 +359,28 @@ header.header-desktop {
 	    border-left: solid 1px #ccc;
 	    padding-left: 20px;
 	    margin-left: 20px;
-		//position: absolute;
-	    //top: 680px;
-	    //left: 1100px;
+	    height: 45px;
 		text-align: center;	   
 		float: right; 
+		
 		.btn-backtoresults {
 			font-family: $AV-Light;
             background-color: white;
-            color: #747474;
+            color: #ac080f;
             border-radius: 50%;
 			width: 45px;
 			height: 45px;
 			font-size: 8px;
-			text-align: center;
-			//padding: 3px 18px;
-			padding-left: 5px;
-		    padding-top: 14px;
+			padding: 0;
+		    text-align: center;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
-		}
-        .btn-backtoresults:hover {
-            border-color: #ac080f;
+
+			> div {
+				padding-top: 14px;
+				text-align: center;
+			}
 		}
 	}
 	.startover-btn-wrap {
@@ -388,29 +388,28 @@ header.header-desktop {
 	    border-left: solid 1px #ccc;
 	    padding-left: 20px;
 	    margin-left: 20px;
-		//position: absolute;
-	    //top: 680px;
-	    //left: 1100px;
-		text-align: center;	 
+	    height: 45px;
+		text-align: center;	   
 		float: right; 
+
 		.btn-startover {
 			font-family: $AV-Light;
             background-color: white;
-            color: #747474;
+            color: #ac080f;
             border-radius: 50%;
 			width: 45px;
 			height: 45px;
 			font-size: 10px;
-			//padding: 3px 18px;
-			padding-left: 6px;
-		    padding-top: 12px;
+			padding: 0;
 		    text-align: center;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
-		}
-        .btn-startover:hover {
-           border-color: #ac080f;
+
+			> div {
+				padding-top: 12px;
+				text-align: center;
+			}
 		}
 	}
 }

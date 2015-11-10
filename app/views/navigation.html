@@ -69,12 +69,12 @@
 			<div class="btn-wrapper">
 				<div class="startover-btn-wrap" ng-if="questionsData.question.name != 'Appliance'">
 					<a id="startover" class="btn btn-startover" ng-click="startOver()">
-						<span ng-bind-html="brandData.apptext.startover"></span>
+						<div ng-bind-html="brandData.apptext.startover"></div>
 					</a>
 				</div>
 				<div class="backtoresults-btn-wrap" ng-if="!!resultsTouched && !!questionsData.question && !isTabletWidthOrLess">
 					<a id="backtoresults" class="btn btn-backtoresults" ng-click="next(true)">
-						<span ng-bind-html="brandData.apptext.backtoresults"></span>
+						<div ng-bind-html="brandData.apptext.backtoresults"></div>
 					</a>
 				</div>
 			</div>
