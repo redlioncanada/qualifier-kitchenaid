@@ -554,7 +554,7 @@
 				{
 					"question" : "Is your kitchen equipped for gas or electric?",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why are you asking me about gas?", 
+					"explanation_title" : "Why are you asking me about fuel type?", 
 					"explanation" : "Some kitchens are equipped for gas and others are not. We need to know this information to recommend the perfect range.",
 					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
@@ -779,7 +779,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about ventilation?", 
 					"explanation" : "As much as we want to maintain the smell of that simmering pot of soup, proper ventilation is important to keep kitchen air clean.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -836,7 +836,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about my habits?", 
 					"explanation" : "Some of our vents are automatic which means if you need us to, we can give you a hand turning it on.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -935,7 +935,7 @@
 						"to" : 4,      
 					    "step": 0.0001,
 					    "dimension_label" : "WIDTH",
-					    "scale": ["No Restrictions","24<br>Inches","27<br>Inches","30<br>Inches"]       
+					    "scale": ["No Restrictions","24\"","27\"","30\""]       
 					},
 					"answers" : {
 						"1" : {
@@ -1065,7 +1065,7 @@
 			"thumbnail_current" : "img/icon-features-current.png",
 			"text" : [
 				{
-					"question" : "I use my oven to...",
+					"question" : "I use my wall oven to...",
 					"sub_question" : "Select all that apply",
 					"explanation_title" : "Why are you asking me about cooking?",
 					"explanation" : "Our wall ovens all have unique features. We want to get a better idea of how you use yours so we can recommend the perfect one for your needs.",
@@ -1198,7 +1198,7 @@
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"text" : [
 				{
-					"question" : "Is being energy efficient important to your family?",
+					"question" : "How important is energy efficiency to your household?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our machines are different, just like the families they're for. If we can understand your energy usage, then we can better recommend the perfect wall oven to fit your needs.",
@@ -1211,7 +1211,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Not a Concern","somewhat of<br>a concern","It's top of mind","Very Important"]       
+					    "scale": ["Not a Concern","somewhat of<br>a concern","Important","Very Important"]       
 					},
 					"answers" : {
 						"0" : {
@@ -1271,14 +1271,14 @@
 					    "to": 2,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["No Preference","30\"","36\""]       
+					    "scale": ["No Restrictions","30\"","36\""]       
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 0,
-							"text" : "No Preference",
+							"text" : "No Restrictions",
 							"scoring" : {
 							}
 						},
@@ -2369,7 +2369,7 @@
 				{
 					"question" : "Does your kitchen have an existing waterline?",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why are you asking me about water?",
+					"explanation_title" : "Why are you asking me about a waterline?",
 					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
@@ -2802,7 +2802,7 @@
 			"text" : [
 				{
 					"question" : "WHEN SHOPPING FOR A DISHWASHER, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION? ",
-					"sub_question" : "DRAG TO REORDER. <span>1</div> IS MOST IMPORTANT AND <span>6</div> IS LEAST",
+					"sub_question" : "DRAG TO REORDER. <span>1</span> IS MOST IMPORTANT AND <span>6</span> IS LEAST",
 					"explanation_title" : "Why are you asking me about preference?",
 					"explanation" : "By understanding your dishwashing priorities, we can better recommend a dishwasher with features that suit your lifestyle.",
 					"type" : "rank",
@@ -3044,7 +3044,7 @@
 			"thumbnail_text" : "Organization",
 			"text" : [
 				{
-					"question" : "Before running our dishwasher it is...",
+					"question" : "Before running our dishwasher, it is...",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about organization?",
 					"explanation" : "After assessing your technique we can suggest ways to optimize organization for your home.",
@@ -3108,7 +3108,7 @@
 			"thumbnail_text" : "Style",
 			"text" : [
 				{
-					"question" : "Select your style:",
+					"question" : "Select your style preference...",
 					"sub_question" : "Select One",
 					"explanation_title" : "Why are you asking me about style?",
 					"explanation" : "Finding the perfect fit for your home's style is as important for us as it is for you.",
