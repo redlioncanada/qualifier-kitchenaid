@@ -656,7 +656,7 @@ div.img-wrap.selected {
 		width: 566px;
 		height: 62.2px;
 		background: url('../img/ranking-bg.png') no-repeat;
-        background-position: 0 -2px;
+        background-position: 0 0px;
         background-size: 100% 100%;
         border-radius: 6px;
         padding-left: 0 !important;
@@ -681,7 +681,7 @@ li.dragging-rank {
 	-moz-box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
 	box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
 	background-color: transparent;
-
+    border-radius: 6px;
     .rank-number-wrap {
     	display: none;
     }
@@ -691,7 +691,7 @@ li.dragging-rank {
 		height: 62.2px;
 		background: url('../img/ranking-bg.png') no-repeat;
 		background-color: transparent;
-        background-position: 0 -2px;
+        background-position: 0 0px;
         background-size: 100% 100%;
         border-radius: 6px;
         padding-left: 0 !important;
