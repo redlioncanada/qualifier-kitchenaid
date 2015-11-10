@@ -1,6 +1,6 @@
 var applianceDataDecorator = angular.module('ApplianceDataDecoratorService', []);
 
-applianceDataDecorator.factory('$dataDecorator', function() {
+applianceDataDecorator.factory('$dataDecorator', ['$filter', function() {
 	return function(data) {
 		// console.log(data);
 		var relcodes = {
@@ -9,6 +9,8 @@ applianceDataDecorator.factory('$dataDecorator', function() {
         }
                 
 		angular.forEach(data, function(item, key) {
+			item.price = parseFloat(item.colours[0].prices.CAD);
+			
 			switch (item.appliance) {
 				case "Cooktops":
 					if (item.width <= 15) {
@@ -148,6 +150,6 @@ applianceDataDecorator.factory('$dataDecorator', function() {
 				}
 			}
 		})
-		return data;
+		return $filter('orderBy')(data, '-price');
 	};
-});
+}]);

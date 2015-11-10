@@ -5,7 +5,7 @@ angular.module('App')
   	// jslider-value
     $timeout(function () {
         $scope.sliderScale = $($element).find('.jslider-scale');
-        var curVal = Math.round($($element).find('.answer-slider input').val());
+        var curVal = Math.round($($element).find('.answer-slider input').val()) - 1;
         $($scope.sliderScale).find('ins').eq(curVal).find('div').addClass('show');
     },500);
 
@@ -52,7 +52,7 @@ angular.module('App')
           if (qs.name == $rootScope.questionsData.question.name) {    
             if (!!released) {
               //apply show/hide of extra content
-              var curVal = Math.round($($element).find('.answer-slider input').val());
+              var curVal = Math.round($($element).find('.answer-slider input').val()) - 1;
               $.each($($scope.sliderScale).find('ins'), function(i,val){
                 if (i == curVal) {
                   $(val).find('div').addClass('show');
