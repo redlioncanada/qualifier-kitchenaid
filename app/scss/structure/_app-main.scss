@@ -1612,6 +1612,15 @@ div[ng-class="fr_CA"] {
             font-size: 12px !important;
         }
     }
+    .radio-4-subtext {
+    	.label-text {
+    		min-width: 110px;
+    	}
+
+    	.label-subtext {
+    		text-align: left;
+    	}
+    }
     .app-content-main-top {
         h2 {
             font-size: 23px;

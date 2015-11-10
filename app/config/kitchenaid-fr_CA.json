@@ -1165,14 +1165,15 @@
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la cuisine?",
                     "explanation" : "Nos fours encastrés sont tous dotés de caractéristiques uniques. Nous voulons nous faire une meilleure idée de l’utilisation que vous en faites afin de pouvoir recommander le four encastré qui répond parfaitement à vos besoins en matière de cuisson.",
-                    "type" : "radio-4",
+                    "type" : "radio-4-subtext",
                     "oneAnswer" : true,
                     "classes" : "family-describe",
                     "answers" : [
                         {
                             "thumbnail" : "img/icon-convection.png",
                             "thumbnail_current" : "img/icon-convection-current.png",
-                            "text" : "Un boulanger-pâtissier; je suis habituellement couvert de farine",
+                            "text" : "Un boulanger-pâtissier",
+                            "subtext" : "je suis habituellement couvert de farine",
                             "value" : "baker",
                             "scoring" : {
                                 "trueConvection" : 1
@@ -1183,8 +1184,9 @@
                         {
                             "thumbnail" : "img/icon-convection.png",
                             "thumbnail_current" : "img/icon-convection-current.png",
-                            "text" : "Un chef maison – céviche aux pétoncles et pizzas sur pain naan; j’adore essayer de nouvelles recettes",
+                            "text" : "Un chef maison",
                             "value" : "chef",
+                            "subtext" : "céviche aux pétoncles et pizzas sur pain naan; j’adore essayer de nouvelles recettes",
                             "scoring" : {
                                 "easyConvection" : 1
                             },
@@ -1193,8 +1195,9 @@
                         {
                             "thumbnail" : "img/icon-convection.png",
                             "thumbnail_current" : "img/icon-convection-current.png",
-                            "text" : "Je suis les deux – je devrais probablement démarrer mon propre blogue alimentaire",
+                            "text" : "Je suis les deux",
                             "value" : "both",
+                            "subtext" : "je devrais probablement démarrer mon propre blogue alimentaire",
                             "scoring" : {
                                 "trueConvection" : 1,
                                 "easyConvection":1
@@ -1204,8 +1207,9 @@
                         {
                             "thumbnail" : "img/icon-convection.png",
                             "thumbnail_current" : "img/icon-convection-current.png",
-                            "text" : "Je ne suis ni un ni l’autre – la pile de menus de plats à emporter chez moi est impressionnante",
+                            "text" : "Je ne suis ni un ni l’autre",
                             "value" : "neither",
+                            "subtext" : "la pile de menus de plats à emporter chez moi est impressionnante",
                             "scoring" : {
                             },
                             "order" : 4
@@ -1720,13 +1724,14 @@
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de ma cuisine?",
                     "explanation" : "Nos cuisinières sont toutes dotées de caractéristiques uniques. Nous voulons nous faire une meilleure idée de l’utilisation que vous en faites afin de pouvoir recommander la cuisinière qui répond parfaitement à vos besoins en matière de cuisson.",
-                    "type" : "radio-4",
+                    "type" : "radio-4-subtext",
                     "oneAnswer" : true,
                     "answers" : [
                         {
                             "thumbnail" : "img/icon-convection.png",
                             "thumbnail_current" : "img/icon-lifestyle-current.png",
-                            "text" : "Un boulanger-pâtissier; je suis habituellement couvert de farine",
+                            "text" : "Un boulanger-pâtissier",
+                            "subtext" : "je suis habituellement couvert de farine",
                             "value" : "baker",
                             "scoring" : {
                                 "bakingDrawer" : 1,
@@ -1737,7 +1742,8 @@
                         {
                             "thumbnail" : "img/icon-convection.png",
                             "thumbnail_current" : "img/icon-lifestyle-current.png",
-                            "text" : "Un chef maison – céviche aux pétoncles et pizzas sur pain naan; j’adore essayer de nouvelles recettes",
+                            "text" : "Un chef maison",
+                            "subtext" : "céviche aux pétoncles et pizzas sur pain naan; j’adore essayer de nouvelles recettes",
                             "value" : "home chef",
                             "scoring" : {
                                 "steamRack" : 1,
@@ -1748,7 +1754,8 @@
                         {
                             "thumbnail" : "img/icon-convection.png",
                             "thumbnail_current" : "img/icon-lifestyle-current.png",
-                            "text" : "Je suis les deux – je devrais probablement démarrer mon propre blogue alimentaire",
+                            "text" : "Je suis les deux",
+                            "subtext" : "je devrais probablement démarrer mon propre blogue alimentaire",
                             "value" : "both",
                             "scoring" : {
                                 "bakingDrawer" : 1,
@@ -1761,7 +1768,8 @@
                         {
                             "thumbnail" : "img/icon-convection.png",
                             "thumbnail_current" : "img/icon-lifestyle-current.png",
-                            "text" : "Je ne suis ni un ni l’autre – la pile de menus de plats à emporter chez moi est impressionnante",
+                            "text" : "Je ne suis ni un ni l’autre",
+                            "subtext" : "la pile de menus de plats à emporter chez moi est impressionnante",
                             "value" : "neither",
                             "scoring" : {
                             },
