@@ -21,6 +21,7 @@
 		"backtoresults" : "Back to<br />Results",
 		"submit" : "Send",
 		"close" : "Close",
+		"goBack" : "Go Back",
 		"emailModalTitle" : "Email Your Results",
 		"emailNameTitle" : "To:",
 		"emailNamePlaceholder" : "Your name",
@@ -29,6 +30,8 @@
 		"emailSubject" : "I used My {{brand}} to find the perfect {{appliance}} and wanted to share with you",
 		"emailMessage" : "Finding the right appliance is hard. But with My {{brand}}, I answered a few simple questions and found the perfect {{appliance}} to fit my lifestyle. I wanted to share my results with you and also the link so you can explore, too!\r\n\r\nTry it for yourself here: {{link}}",
 		"emailMessagePlaceholder" : "Enter a message",
+		"emailMessageSent" : "Your message has been sent",
+		"emailMessageError" : "There was an error",
 		"nextQuestionAlt" : "Navigate to next question",
 		"previousQuestionAlt" : "Navigate to previous question"
 	},

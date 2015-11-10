@@ -21,6 +21,7 @@
          "backtoresults": "Retour aux<br />Résultats",
         "submit" : "Envoyer",
         "close" : "Fermer",
+        "goBack" : "Retourner",
         "emailModalTitle" : "Envoyez vos résultats par courriel",
         "emailNameTitle" : "Pour :",
         "emailNamePlaceholder" : "Nom",
@@ -29,6 +30,8 @@
         "emailSubject" : "J'ai utilisé l'aide de {{brand}} afin de trouver le (la) {{appliance}} idéal(e) et je souhaite partager avec toi",
         "emailMessage" : "Trouver l'électroménager idéal est difficile. Mais avec {{brand}}, j'ai simplement répondu à quelques questions simples et j'ai réussi à trouver le (la) {{appliance}} idéal(e) et qui convient à mon style de vie. J'aimerais partager mes résultats avec toi; voici le lien que tu pourras explorer à ton tour!\r\n\r\nEssaie par toi-même ici : {{link}}",
         "emailMessagePlaceholder" : "Saisir un message",
+        "emailMessageSent" : "Votre message a bien été envoyé",
+        "emailMessageError" : "There was an error(fr)",
         "nextQuestionAlt" : "Navigate to next question",
         "previousQuestionAlt" : "Navigate to previous question"
      },

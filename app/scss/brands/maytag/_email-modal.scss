@@ -120,16 +120,86 @@ $inputBackgroundColor: #EEE;
 		margin-top: 0;
 		border-top: none;
 
-		button.btn {
-			font-family: $AV-Light;
-			color: $textColor;
-			border: 1px solid $textColor;
-			background-color: #FFF;
-		}
-
 		button.btn[disabled="disabled"] {
 			background-color: #EEE;
 		}
+	}
+
+	.modal-message {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		color: white;
+		display: none;
+
+
+		h1,h2,h3,h4,h5 {
+			padding: 0;
+			margin:0;
+			margin-bottom: 10px;
+		}
+
+		* {
+			position: relative;
+			text-align: center;
+			z-index: 2;
+		}
+
+		.btn {
+			background-color: $textColor;
+			color: #FFF;
+			border: 1px solid #FFF;
+		}
+
+		.content {
+			display: table-cell;
+			vertical-align: middle
+		}
+
+		.background,.content-wrapper{
+			top: 0;
+			width: inherit;
+			position: absolute;
+		}
+
+		.background,.content-wrapper {
+			height: inherit;
+		}
+
+		.content-wrapper {
+			display: table;
+		}
+
+		.content {
+			display: table-cell;
+			vertical-align: middle;
+
+			.message {
+				font-family: $AV-Light;
+				text-transform: uppercase;
+			}
+
+			button.btn {
+				font-size: 22px;
+			}
+			button.btn:hover {
+				color: white;
+			}
+		}
+
+		.background {
+			z-index: 1;
+			background-color: $textColor;
+			opacity: 0.85;
+		}
+	}
+
+	button.btn {
+		font-family: $AV-Light;
+		color: $textColor;
+		border: 1px solid $textColor;
+		background-color: #FFF;
 	}
 
 	input.ng-invalid.ng-touched {

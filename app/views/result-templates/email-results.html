@@ -25,6 +25,25 @@
   <div class="modal-footer">
           <button type="submit" class="btn btn-primary" ng-disabled="email.$invalid" ng-click="!email.$error || submit()"><span bo-text="brandData.apptext.submit"></span></button>
   </div>
+    <div class="modal-message modal-sent">
+    <div class="background"></div>
+    <div class="content-wrapper">
+      <div class="content">
+        <h2 class="message" bo-text="brandData.apptext.emailMessageSent"></h2>
+        <button class="btn" bo-text="brandData.apptext.goBack" ng-click="close()"></button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-message modal-error">
+    <div class="background"></div>
+    <div class="content-wrapper">
+      <div class="content">
+        <h2 class="message" bo-text="brandData.apptext.emailMessageError"></h2>
+        <button class="btn" bo-text="brandData.apptext.goBack" ng-click="close()"></button>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 
