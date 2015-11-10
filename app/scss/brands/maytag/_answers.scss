@@ -42,7 +42,6 @@
 	// Two boxes icons or two split
 	&.boxes-icon-2-container {
 		width: 100%;
-
 	}
 	// &.picture-3-container {
 	// 	width: 995px;
@@ -152,6 +151,16 @@ div.img-wrap.selected {
 	&.radio {
 		margin-left: auto;
 		margin-right: auto;
+	}
+	&.radio-4-subtext {
+		.label-wrap {
+			padding-left: 25px;
+			
+			.label-subtext {
+				text-align: left;
+				padding-left: 20px;
+			}
+		}
 	}
 	&.radio, &.radio-2, &.radio-3, &.radio-4 {
 		display: block;

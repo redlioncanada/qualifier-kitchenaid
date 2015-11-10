@@ -1141,14 +1141,15 @@
 					"sub_question" : "Select One",
 					"explanation_title" : "Why are you asking me about cooking?",
 					"explanation" : "Our wall ovens all have unique features. We want to get a better idea of how you use it so we can recommend the perfect wall oven for your cooking needs.",
-					"type" : "radio-4",
+					"type" : "radio-4-subtext",
 					"oneAnswer" : true,
 					"classes" : "family-describe",
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "A baker – I’m usually covered in flour",
+							"text" : "A baker",
+							"subtext" : "I’m usually covered in flour",
 							"value" : "baker",
 							"scoring" : {
 								"trueConvection" : 1
@@ -1159,7 +1160,8 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "A home chef – scallop ceviche and naan pizzas, I love trying new recipes",
+							"text" : "A home chef",
+							"subtext" : "scallop ceviche and naan pizzas, I love trying new recipes",
 							"value" : "chef",
 							"scoring" : {
 								"easyConvection" : 1
@@ -1169,7 +1171,8 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "I’m both – I should probably start my own food blog",
+							"text" : "I’m both",
+							"subtext" : "I should probably start my own food blog",
 							"value" : "both",
 							"scoring" : {
 								"trueConvection" : 1,
@@ -1180,7 +1183,8 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : " I’m neither – my stack of take-out menus is impressive",
+							"text" : " I’m neither",
+							"subtext" : "my stack of take-out menus is impressive",
 							"value" : "neither",
 							"scoring" : {
 							},
@@ -1691,13 +1695,14 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about cooking?",
 					"explanation" : "Our ranges all have unique features. We want to get a better idea of how you use it so we can recommend the perfect range for your cooking needs.",
-					"type" : "radio-4",
+					"type" : "radio-4-subtext",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-lifestyle-current.png",
-							"text" : "A baker – I’m usually covered in flour",
+							"text" : "A baker",
+							"subtext" : "I’m usually covered in flour",
 							"value" : "baker",
 							"scoring" : {
 								"bakingDrawer" : 1,
@@ -1708,7 +1713,8 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-lifestyle-current.png",
-							"text" : "A home chef – scallop ceviche and naan pizzas, I love trying new recipes",
+							"text" : "A home chef",
+							"subtext" : "scallop ceviche and naan pizzas, I love trying new recipes",
 							"value" : "home chef",
 							"scoring" : {
 								"steamRack" : 1,
@@ -1719,7 +1725,8 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-lifestyle-current.png",
-							"text" : "I’m both – I should probably start my own food blog",
+							"text" : "I’m both",
+							"subtext" : "I should probably start my own food blog",
 							"value" : "both",
 							"scoring" : {
 								"bakingDrawer" : 1,
@@ -1732,7 +1739,8 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-lifestyle-current.png",
-							"text" : "I’m neither – my stack of take-out menus is impressive",
+							"text" : "I’m neither",
+							"subtext" : "my stack of take-out menus is impressive",
 							"value" : "neither",
 							"scoring" : {
 							},
