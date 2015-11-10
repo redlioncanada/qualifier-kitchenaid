@@ -1771,17 +1771,15 @@
 					    "to": 2,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Very often<div></div><div class='extra'>I'm always experimenting with new roast recipes</div>", "Sometimes<div></div><div class='extra'>a few times a year</div>", "Never<div></div><div class='extra'>I use time to figure out if my dish is done</div>"]     
+					    "scale": ["Never<div></div><div class='extra'>I use time to figure out if my dish is done</div>", "Sometimes<div></div><div class='extra'>a few times a year</div>", "Very often<div></div><div class='extra'>I'm always experimenting with new roast recipes</div>"]     
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 0,
-							"text" : "Very often<div></div><div class='extra'>I'm always experimenting with new roast recipes</div>",
-							"scoring" : {			
-								"temperatureProbe" : 2,
-								"wirelessProbe" : 1				
+							"text" : "Never<div></div><div class='extra'>I use time to figure out if my dish is done</div>",
+							"scoring" : {
 							}
 						},
 						"1" : {
@@ -1797,8 +1795,10 @@
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 2,
-							"text" : "Never<div></div><div class='extra'>I use time to figure out if my dish is done</div>",
-							"scoring" : {
+							"text" : "Very often<div></div><div class='extra'>I'm always experimenting with new roast recipes</div>",
+							"scoring" : {			
+								"temperatureProbe" : 2,
+								"wirelessProbe" : 1				
 							}
 						}
 					}
