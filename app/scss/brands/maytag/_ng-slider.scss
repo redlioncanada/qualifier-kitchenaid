@@ -468,12 +468,14 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 					margin: 5px auto;
 					height: 1px;
 					background-color: #e6e6e6;
-					width: 40px;
+					width: 80px;
 					display: none;
 				}
 
 				.extra {
 					display: none;
+                    font-size: 8px;
+                    color: #AAA;
 				}
 			}
 		}
