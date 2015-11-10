@@ -680,6 +680,13 @@ div.img-wrap.selected {
 	
 }
 
+@media(max-width: 580px) {
+	.answers-main-content > .rank-answers-list {
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
 li.dragging-rank {
 	height: 62.1px;
     margin-bottom: 0;
