@@ -1808,10 +1808,8 @@
                             "thumbnail" : "img/icon-features.png",
                             "thumbnail_current" : "img/icon-features-current.png",
                             "value" : 0,
-                            "text" : "Très souvent",
-                            "scoring" : {           
-                                "temperatureProbe" : 2,
-                                "wirelessProbe" : 1             
+                            "text" : "Jamais",
+                            "scoring" : {
                             }
                         },
                         "1" : {
@@ -1827,8 +1825,10 @@
                             "thumbnail" : "img/icon-features.png",
                             "thumbnail_current" : "img/icon-features-current.png",
                             "value" : 2,
-                            "text" : "Jamais",
-                            "scoring" : {
+                            "text" : "Très souvent",
+                            "scoring" : {           
+                                "temperatureProbe" : 2,
+                                "wirelessProbe" : 1             
                             }
                         }
                     }
