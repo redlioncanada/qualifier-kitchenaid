@@ -5,8 +5,10 @@ angular.module('App')
   	// jslider-value
     $timeout(function () {
         $scope.sliderScale = $($element).find('.jslider-scale');
-        var curVal = Math.round($($element).find('.answer-slider input').val()) - 1;
-        $($scope.sliderScale).find('ins').eq(curVal).find('div').addClass('show');
+        if (!$rootScope.isTabletWidthOrLess) {
+          var curVal = Math.round($($element).find('.answer-slider input').val()) - 1;
+          $($scope.sliderScale).find('ins').eq(curVal).find('div').addClass('show');
+        }
     },500);
 
   	$scope.setAnswer = function () {
@@ -51,15 +53,17 @@ angular.module('App')
         if (!!$rootScope.questionsData.question) {
           if (qs.name == $rootScope.questionsData.question.name) {    
             if (!!released) {
-              //apply show/hide of extra content
-              var curVal = Math.round($($element).find('.answer-slider input').val()) - 1;
-              $.each($($scope.sliderScale).find('ins'), function(i,val){
-                if (i == curVal) {
-                  $(val).find('div').addClass('show');
-                } else {
-                  $(val).find('div').removeClass('show');
-                }
-              });
+              if (!$rootScope.isTabletWidthOrLess) {
+                //apply show/hide of extra content
+                var curVal = Math.round($($element).find('.answer-slider input').val()) - 1;
+                $.each($($scope.sliderScale).find('ins'), function(i,val){
+                  if (i == curVal) {
+                    $(val).find('div').addClass('show');
+                  } else {
+                    $(val).find('div').removeClass('show');
+                  }
+                });
+              }
 
               //assign answer
               for (var a in $rootScope.questionsData.question.text[0].answers) {
