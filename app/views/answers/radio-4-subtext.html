@@ -3,7 +3,7 @@
 	<a href="" class="answer answer-option answer-box radio-4 radio-4-subtext {{qs.text[0].classes}}" ng-repeat="answer in qs.text[0].answers" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mousedown="buttonState='down'"ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDown : buttonState=='down', toggleButtonUp : buttonState=='up', selected : answer.answer}">
 		<div class="select-icon"></div>
 		<div class="label-wrap">
-			<div class="label-text" ng-bind-html="answer.text"></div>
+			<div class="label-text one-line" ng-bind-html="answer.text"></div>
 			<div class="label-subtext label-text" ng-bind-html="answer.subtext"></div>
 		</div>
 	</a>

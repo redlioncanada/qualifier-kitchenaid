@@ -714,6 +714,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 
 	.app-content-main-top-left {
 		padding-left: 50px;
+        min-height: 62px !important;
 	}
 
 	.main-content {
@@ -1146,7 +1147,10 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 	}
 
 	.app-content-main-top-left {
-		h2 {font-size: 8pt;}
+		h2 {
+            font-size: 8pt;
+            min-height: 24px;
+        }
 	}
 
 	a.answer-box.picture-3 {
@@ -1233,12 +1237,12 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 	div.bottom-nav-intructions {
 		position: absolute;
 		width: 100%;
-		top: 13px;
+		top: 9px;
 	}
 
 	div.mobile-app-nav-arrows {
 		a.btn-prev img, a.btn-next img {
-			height: 20px;
+			height: 25px;
 		}
 
 		a.btn-prev {
@@ -1262,6 +1266,9 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             top: 6px;   
         }
         .label-wrap {
+            .one-line {
+                width: 60px;
+            }
             .label-text {
                 font-size: 8px !important;   
             }
@@ -1382,7 +1389,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
     }
     .slider-large-label-wrap .slider-large-label {
         top: -11px !important;
-        left: -3px !important;
+        left: -1px !important;
 	}
 
     .boxes-icon-2-container, .picture-3-container {
