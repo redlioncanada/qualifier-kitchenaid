@@ -33,7 +33,14 @@
 		"emailMessageSent" : "Your message has been sent",
 		"emailMessageError" : "There was an error",
 		"nextQuestionAlt" : "Navigate to next question",
-		"previousQuestionAlt" : "Navigate to previous question"
+		"previousQuestionAlt" : "Navigate to previous question",
+		"facebookTitle" : "WANT TO CHOOSE THE PERFECT APPLIANCE?",
+		"facebookDesc" : "We know that appliance shopping can be hard. Our new, simple tool helps you pick the perfect product with features that suit your needs.",
+		"facebookImage" : "/img/social.jpg",
+		"twitterTitle" : "",
+		"twitterDesc" : "We know that appliance shopping can be hard. Our new, simple tool helps you pick the perfect product with features that suit your needs.",
+		"twitterImage" : "/img/social.jpg"
+
 	},
 	"questions" : {
 		"Appliance" : {
