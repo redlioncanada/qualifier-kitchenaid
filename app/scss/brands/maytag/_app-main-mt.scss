@@ -71,14 +71,14 @@ header.header-desktop {
 				height: inherit;
 				text-align: center;
 				cursor: pointer;
-				left: 1px;
+				left: 0px;
 				
 				span {
-					font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+					font-family: $AV-Black;
 					color: #fff;
 					font-size: 16px;
 					position: relative;
-					bottom: 1px;
+					bottom: 0.5px;
 					display: block;
 					float: left;
 					text-align: center;
@@ -100,8 +100,8 @@ header.header-desktop {
 					-moz-transform: rotate(45deg) ;
 					-o-transform: rotate(45deg) ;
 					-ms-transform: rotate(45deg) ;
-					margin-top: -2px;
-					margin-left: 1px;
+					margin-top: -1px;
+					margin-left: -0px;
 				}
 			}
 			.btn-text {

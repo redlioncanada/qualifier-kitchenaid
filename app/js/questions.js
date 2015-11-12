@@ -20,11 +20,17 @@ angular.module('App')
 
 			if ($rootScope.showTooltip) {
 				var width = $('.extra-info-wrap .btn-wrap').width();
-				if (width > 0) {
+				if (width > 0 && window.innerWidth > 1024) {
 					el.css('display','block');
 					el.css({
 						'width': width + 10,
 						'margin-left': $rootScope.isTabletWidthOrLess ? -width-20 : -width/2
+					});
+				} else if (width > 0 && window.innerWidth <= 1024) {
+					el.css('display','block');
+					el.css({
+						'width': width + 180,
+						'margin-left': $rootScope.isTabletWidthOrLess ? -width-75 : -width/2
 					});
 				}
 			} else {

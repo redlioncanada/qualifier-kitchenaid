@@ -356,21 +356,24 @@ div.mobile-app-nav-arrows {
 		float: left;
         margin: 0 9px;
 		a {
-			cursor: pointer;
+			cursor: auto;
 		}
 	}
     .selected {
-        .icon-img {
+        .icon-img, .icon-img-current {
             cursor: pointer;
         }
     }
-	.icon-img {
-		max-width: 41px;
-		max-height: 41px;
-		// &.current {
-		// 	display: none;
-		// }
-	}
+  
+    .icon-img {
+        max-width: 41px;
+        max-height: 41px;
+        cursor: auto;
+        // &.current {
+        // 	display: none;
+        // }
+    }
+  
 	.icon-img-current {
 		// display: none;
 		max-width: 52px;
@@ -1207,9 +1210,11 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 		}
 
 		.label-wrap {
-			left: 62px;
-			height: 100%;
-			max-width: 75%;
+            left: 42px;
+            height: 100%;
+            max-width: 100%;
+            width: 88%;
+            padding: 0 5%;
 		}
 
 		.label-wrap .label-text {
