@@ -247,11 +247,11 @@ header.header-desktop {
     .sub-category {
         .category-name {
             margin: 20px auto 0 auto;
-            display: block;
+            display: inline-block;
             color: #000000;
-            font-size: 19px;
+            font-size: 16px;
             text-align: center;
-            width: 120px;
+            width: auto;
             font-family: $AV-Light;
         }
     }

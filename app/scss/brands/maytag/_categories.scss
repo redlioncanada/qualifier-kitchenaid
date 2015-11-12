@@ -57,7 +57,7 @@ $opacityTiming: 0.5s;
 			opacity: 0.3;
 		}
         &:hover > .category-name {
-			border-bottom: 1.5px #ac080f solid;
+			border-bottom: 2px rgba(172, 8, 15, 0.5) solid;
 		}
 		&.selected {
 			img.normal {

@@ -113,7 +113,7 @@
 			"thumbnail_current" : "img/nav-placeholder-current.png",
 			"text" : [
 				{
-					"question" : "Which product would you like to explore first?",
+					"question" : "Which product would<br />you like to explore first?",
 					"type" : "categories",
 					"oneAnswer" : true,
 					"answers" : [

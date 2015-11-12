@@ -434,6 +434,17 @@ a.answer-box.picture-4 {
         background-size: contain;
         background-position: 50% 50%;
     }
+    .label-wrap {
+        width: 190px;
+        .label-text {
+            width: auto;
+            display: inline-block;
+            border-bottom: 1px rgba(172, 8, 15, 0.6) solid;
+            left: 50%;
+            -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+        }
+    }
 }
 a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
     .icon-wrap {
@@ -445,6 +456,17 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
         background: url("../img/icon-bg-big-active.png") no-repeat;
         background-size: contain;
         background-position: 50% 50%;
+    }
+    .label-wrap {
+        width: 190px;
+        .label-text {
+            width: auto;
+            display: inline-block;
+            border-bottom: 1px rgba(172, 8, 15, 0.6) solid;
+            left: 50%;
+            -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+        }
     }
 }
 
