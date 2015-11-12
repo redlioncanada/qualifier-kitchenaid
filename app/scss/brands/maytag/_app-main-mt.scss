@@ -443,8 +443,7 @@ header.header-desktop {
 
 //popover styles
 .popover-title {
-	text-transform: uppercase;
-	border-bottom: 1px solid #FFF;
+    font-size: 11px !important;
 }
 .popover {
 	border: 0;
@@ -454,6 +453,7 @@ header.header-desktop {
 	* {
 		font-size: 9px;
 		color: #FFF;
+        text-transform: uppercase;
 	}
 }
 
