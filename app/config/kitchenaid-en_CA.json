@@ -59,7 +59,7 @@
 							"displayName": "Cooking",
 							"classes" : "category cooking",
 							"image" : "img/cooking.png",
-							
+							"image_alt" : "Kitchenaid Stove",
 							"thumbnail" : "img/walloven-double.jpg",
 							"thumbnail_current" : "img/walloven-double.jpg",
 							"thumbnail_text" : "Cooking",
@@ -75,7 +75,7 @@
 							"displayName": "Dishwasher",
 							"classes" : "category dishwasher",
 							"image" : "img/dishwasher.png",
-							
+							"image_alt" : "KitchenAid Dishwasher",
 							"thumbnail" : "img/cat-dishwasher.jpg",
 							"thumbnail_current" : "img/cat-dishwasher.jpg",
 							"thumbnail_text" : "Dishwasher",
@@ -91,7 +91,7 @@
 							"displayName": "Refrigerator",
 							"classes" : "category fridge",
 							"image" : "img/fridge.png",
-							
+							"image_alt" : "Kitchenaid Fridge",
 							"thumbnail" : "img/cat-fridge.jpg",
 							"thumbnail_current" : "img/cat-fridge.jpg",
 							"thumbnail_text" : "Fridge",
@@ -123,6 +123,7 @@
 							"displayName": "Cooktop",
 							"classes" : "sub-category wallovens",
 							"image" : "img/cook-top.png",
+                            "image_alt" : "Kitchenaid Cooktops",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Cooktops",
@@ -138,6 +139,7 @@
 							"displayName": "Range",
 							"classes" : "sub-category ranges",
 							"image" : "img/range.png",
+                            "image_alt" : "Kitchenaid Free Standing Range",
 							"thumbnail" : "img/cat-cooking-sub-free-range-1-electric.jpg",
 							"thumbnail_current" : "img/cat-cooking-sub-free-range-1-electric.jpg",
 							"thumbnail_text" : "Range",
@@ -153,6 +155,7 @@
 							"displayName": "Wall Oven",
 							"classes" : "sub-category wallovens",
 							"image" : "img/walloven.png",
+                            "image_alt" : "Kitchenaid Wall Ovens",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Wall Oven",
@@ -168,6 +171,7 @@
 							"displayName": "Vent or Hood",
 							"classes" : "sub-category wallovens",
 							"image" : "img/vents.png",
+                            "image_alt" : "Kitchenaid Vents and Hoods",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Vents and Hoods",
@@ -338,6 +342,7 @@
 							"text" : "Classic",
 							"value" : "classic",
 							"image" : "img/classic.png",
+                            "image_alt" : "Cooktops Classic",
 							"scoring" : {
 								"electric" : 1
 							},
@@ -349,6 +354,7 @@
 							"text" : "Modern",
 							"value" : "modern",
 							"image" : "img/modern.png",
+                            "image_alt" : "Cooktops Modern",
 							"scoring" : {
 								"induction" : 1
 							},
@@ -360,6 +366,7 @@
 							"text" : "Professional",
 							"value" : "professional",
 							"image" : "img/professional.png",
+                            "image_alt" : "Cooktops Professional",
 							"scoring" : {
 								"gas" : 1
 							},
@@ -569,7 +576,9 @@
 						{
 							"text" : "Gas",
 							"image" : "img/icon-thumb-gas.png",
+                            "image_alt" : "Cooktops Gas",
 							"hover" : "img/icon-thumb-gas-active.png",
+                            "image_hover_alt" : "Cooktops Gas Hover",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
@@ -578,7 +587,9 @@
 						{
 							"text" : "Electric",
 							"image" : "img/icon-thumb-electric.png",
+                            "image_alt" : "Cooktops Electric",
 							"hover" : "img/icon-thumb-electric-active.png",
+                            "image_hover_alt" : "Cooktops Electric Hover",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
@@ -700,7 +711,9 @@
 					"classes" : "vents  singleAns",
 					"answers" : [
 						{   "image" : "img/icon-thumb-yes.png",
+                            "image_alt" : "Vents Yes",
 							"hover" : "img/icon-thumb-yes-active.png",
+                            "image_hover_alt" : "Vents Yes Hover",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "",
@@ -715,7 +728,9 @@
 
 						{
                             "image" : "img/icon-thumb-no.png",
+                            "image_alt" : "Vents No",
 							"hover" : "img/icon-thumb-no-active.png",
+                            "image_hover_alt" : "Vents No Hover",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "",
@@ -749,7 +764,9 @@
 					"answers" : [
 						{
                             "image" : "img/icon-thumb-yes.png",
+                            "image_alt" : "Vents Yes",
 							"hover" : "img/icon-thumb-yes-active.png",
+                            "image_hover_alt" : "Vents Yes Hover",
 							"thumbnail" : "img/icon-speed.png",
 							"thumbnail_current" : "img/icon-speed-current.png",
 							"text" : "",
@@ -761,7 +778,9 @@
 						},
 						{
                             "image" : "img/icon-thumb-no.png",
+                            "image_alt" : "Vents No",
 							"hover" : "img/icon-thumb-no-active.png",
+                            "image_hover_alt" : "Vents No Hover",
 							"thumbnail" : "img/icon-speed.png",
 							"thumbnail_current" : "img/icon-speed-current.png",
 							"text" : "",
@@ -792,7 +811,9 @@
 						{
 							"text" : "Yes - I need ducted ventilation",
 							"image" : "img/icon-thumb-gas.png",
+                            "image_alt" : "Vents Gas",
 							"hover" : "img/icon-thumb-gas-active.png",
+                            "image_hover_alt" : "Vents Gas Hover",
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
 							"value" : "yes",
@@ -804,7 +825,9 @@
 						{
 							"text" : "No - I need non-ducted ventilation",
 							"image" : "img/icon-thumb-gas.png",
+                            "image_alt" : "Vents Electric",
 							"hover" : "img/icon-thumb-gas-active.png",
+                            "image_hover_alt" : "Vents Electric Hover",
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
 							"value" : "no",
@@ -897,7 +920,9 @@
 						{
 							"text" : "",
 							"image" : "img/icon-thumb-yes.png",
+                            "image_alt" : "Vents Yes",
 							"hover" : "img/icon-thumb-yes-active.png",
+                            "image_hover_alt" : "Vents Yes Hover",
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : "yes",
@@ -909,7 +934,9 @@
 						{
 							"text" : "",
 							"image" : "img/icon-thumb-no.png",
+                            "image_alt" : "Vents No",
 							"hover" : "img/icon-thumb-no-active.png",
+                            "image_hover_alt" : "Vents No Hover",
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : "no",
@@ -1014,6 +1041,7 @@
 							"text" : "Single Wall Oven",
 							"value" : "single",
 							"image" : "img/single-wall-oven.png",
+                            "image_alt" : "Wallovens Single",
 							"scoring" : {
 								"single" : 1,
 								"combination" : -30,
@@ -1027,6 +1055,7 @@
 							"text" : "Microwave Oven Combo",
 							"value" : "combo",
 							"image" : "img/microwave-oven-combo.png",
+                            "image_alt" : "Wallovens Combo",
 							"scoring" : {
 								"single" : -30,
 								"combination" : 1,
@@ -1040,6 +1069,7 @@
 							"text" : "Double Wall Oven",
 							"value" : "double",
 							"image" : "img/double-wall-oven.png",
+                            "image_alt" : "Wallovens Double",
 							"scoring" : {
 								"single" : -30,
 								"combination" : -30,
@@ -1053,6 +1083,7 @@
 							"text" : "No Preference",
 							"value" : "nopref",
 							"image" : "img/no-preference-oven.png",
+                            "image_alt" : "Wallovens No Preference",
 							"scoring" : {
 								"single" : -30,
 								"combination" : -30,
@@ -1653,6 +1684,7 @@
 							"text" : "Front Control",
 							"text_more" : "We’re cooking with fire now",
 							"image" : "img/front-control.png",
+                            "image_alt" : "Ranges Front Control",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "yes",
@@ -1665,6 +1697,7 @@
 							"text" : "Rear Control",
 							"text_more" : "We just plug-in and go",
 							"image" : "img/rear-control.png",
+                            "image_alt" : "Ranges Rear Control",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "no",
@@ -1678,6 +1711,7 @@
 							"text" : "No Preference",
 							"text_more" : "We just plug-in and go",
 							"image" : "img/no-preference-control.png",
+                            "image_alt" : "Ranges No Preference",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "nopref",
@@ -1831,7 +1865,9 @@
 							"text" : "Gas",
 							"text_more" : "We’re cooking with fire now",
 							"image" : "img/icon-thumb-gas.png",
+                            "image_alt" : "Ranges Gas",
 							"hover" : "img/icon-thumb-gas-active.png",
+                            "image_hover_alt" : "Ranges Gas Hover",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
@@ -1844,7 +1880,9 @@
 							"text" : "Electric",
 							"text_more" : "We just plug-in and go",
 							"image" : "img/icon-thumb-electric.png",
+                            "image_alt" : "Cooktops Electric",
 							"hover" : "img/icon-thumb-electric-active.png",
+                            "image_hover_alt" : "Ranges Electric Hover",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
@@ -2546,6 +2584,7 @@
 							"text" : "Built-In",
                             "subtext" : "I want to be able to customize the exterior of my fridge",
                             "image" : "img/built-in.png",
+                            "image_alt" : "Fridges Built In",
 							"value" : 2,
 							"scoring" : {
 								"builtIn" : 1
@@ -2558,6 +2597,7 @@
 							"text" : "Counter Depth",
                             "subtext" : "I want my fridge to be in-line with my counters ",
                             "image" : "img/counter-depth.png",
+                            "image_alt" : "Fridges Counter Depth",
 							"value" : 1,
 							"scoring" : {
 								"counterDepth" : 1
@@ -2570,6 +2610,7 @@
                             "text" : "Standard Depth",
                             "subtext" : "I don’t care if my fridge is in-line with my counters ",
                             "image" : "img/standard-depth.png",
+                            "image_alt" : "Fridges Standard Depth",
 							"value" : 0,
 							"scoring" : {
 								"standardDepth" : 1
@@ -3058,7 +3099,6 @@
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"text" : "Yes - My kitchen opens on to another room",
-							"image" : "img/Dishwasher_Q5_MT-open-concept-yes.png",
 							"value" : "yes",
 							"scoring" : {
 								 "quiet" : 1
@@ -3069,7 +3109,6 @@
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"text" : "No - My kitchen is its own room",
-							"image" : "img/Dishwasher_Q5_MT-open-concept-no.png",
 							"value" : "no",
 							"scoring" : {
 							},
@@ -3100,6 +3139,7 @@
 							"text" : "Full and organized",
 							"value" : "Full and organized",
 							"image" : "img/dishwasher-full-and-tidy.jpg",
+                            "image_alt" : "Dishwasher Full and Tidy",
 							"scoring" : {
 								 "culinaryCaddy": 1,
 								 "thirdLevelRack": 1
@@ -3112,6 +3152,7 @@
 							"text" : "Full and messy",
 							"value" : "Full and messy",
 							"image" : "img/dishwasher-full-and-messy.jpg",
+                            "image_alt" : "Dishwasher Full and Messy",
 							"scoring" : {
 								 "culinaryCaddy": 1,
 								 "thirdLevelRack": 1					
@@ -3124,6 +3165,7 @@
 							"text" : "Halfway filled",
 							"value" : "Halfway filled",
 							"image" : "img/dishwasher-i-still-see-room.jpg",
+                            "image_alt" : "Dishwasher I Still See Room",
 							"scoring" : {
 								 "culinaryCaddy": 1
 							},
@@ -3135,6 +3177,7 @@
 							"text" : "Almost empty",
 							"value" : "Almost empty",
 							"image" : "img/dishwasher-almost-empty.jpg",
+                            "image_alt" : "Dishwasher Almost Empty",
 							"scoring" : {
 							},
 							"order" : 4
@@ -3164,6 +3207,7 @@
 							"text" : "Exterior Handle",
 							"value" : "Exterior Handle",
 							"image" : "img/exterior-handle.png",
+                            "image_alt" : "Dishwasher Exterior Handle",
 							"scoring" : {	
 								"FID" : 1					
 							},
@@ -3175,6 +3219,7 @@
 							"text" : "Pocket Handle",
 							"value" : "Pocket Handle",
 							"image" : "img/pocket-handle.png",
+                            "image_alt" : "Dishwasher Pocket Handle",
 							"scoring" : {
 								"pocketHandleConsole" : 1
 							},
@@ -3186,6 +3231,7 @@
 							"text" : "Custom Panel",
 							"value" : "Custom Panel",
 							"image" : "img/custom-panel.png",
+                            "image_alt" : "Dishwasher Custom Panel",
 							"scoring" : {	
 								"panelReady" : 1					
 							},
@@ -3197,6 +3243,7 @@
 							"text" : "No Preference",
 							"value" : "No Preference",
 							"image" : "img/no-preference-panel.png",
+                            "image_alt" : "Dishwasher No Perference",
 							"scoring" : {	
 								"panelReady" : 1					
 							},
