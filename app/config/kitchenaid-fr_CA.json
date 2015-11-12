@@ -56,7 +56,7 @@
                         {
                             "text" : "Appareils de cuisson",
                             "value" : "Stove",
-                            "displayName": "Cuisinières",
+                            "displayName": "Appareils de cuisson",
                             "classes" : "category cooking",
                             "image" : "img/cooking.png",
                             
@@ -90,7 +90,7 @@
                         {
                             "text" : "Réfrigérateurs",
                             "value" : "Fridge",
-                            "displayName": "Réfrigérateurs",
+                            "displayName": "Réfrigérateur",
                             "classes" : "category fridge",
                             "image" : "img/fridge.png",
                             
@@ -139,7 +139,7 @@
                         {
                             "text" : "Cuisinières",
                             "value" : "free stand range",
-                            "displayName": "Range",
+                            "displayName": "Cuisinières",
                             "classes" : "sub-category ranges",
                             "image" : "img/range.png",
                             "thumbnail" : "img/cat-cooking-sub-free-range-1-electric.jpg",
@@ -2795,7 +2795,7 @@
                     "explanation" : "Lorsqu’il s’agit de laver la vaisselle, il n’y a pas de tâche trop grande ou trop petite. En comprenant ce que vous mettez au lave-vaisselle, nous pouvons trouver ce qui vous convient parfaitement.",
                     "type" : "slider",
                     "oneAnswer" : false,
-                    "classes" : "slider-labels four",
+                    "classes" : "slider-labels seven",
                     "answer" : 0,
                     "options" : {       
                         "from": 0,
@@ -2803,7 +2803,7 @@
                         "step": 0.0001,
                         "dimension" : "",
                         "scale": [
-                            "0<br />Environ chaque 2 semaines","5","10","15+<br />J’ai perdu le compte"
+                            "0<br />Environ chaque 2 semaines","","5","","10","","15+<br />J’ai perdu le compte"
                         ]       
                     },
                     "answers" : {
@@ -2812,6 +2812,15 @@
                             "thumbnail_current" : "img/icon-capacity-current.png",
                             "value" : 0,
                             "text" : "0",
+                            "scoring" : {
+                                "placeSettings14": 1
+                            }
+                        },
+                        "2" : {
+                            "thumbnail" : "img/icon-capacity.png",
+                            "thumbnail_current" : "img/icon-capacity-current.png",
+                            "value" : 2.5,
+                            "text" : "2.5",
                             "scoring" : {
                                 "placeSettings14": 1
                             }
@@ -2826,11 +2835,30 @@
                                 "placeSettings15": 1
                             }
                         },
+                        "7" : {
+                            "thumbnail" : "img/icon-capacity.png",
+                            "thumbnail_current" : "img/icon-capacity-current.png",
+                            "value" : 7.5,
+                            "text" : "7.5",
+                            "scoring" : {
+                                "placeSettings14": 1,
+                                "placeSettings15": 1
+                            }
+                        },
                         "10" : {
                             "thumbnail" : "img/icon-capacity.png",
                             "thumbnail_current" : "img/icon-capacity-current.png",
                             "value" : 10,
                             "text" : "10",
+                            "scoring" : {
+                                "placeSettings15": 1
+                            }
+                        },
+                        "12" : {
+                            "thumbnail" : "img/icon-capacity.png",
+                            "thumbnail_current" : "img/icon-capacity-current.png",
+                            "value" : 12.5,
+                            "text" : "12.5",
                             "scoring" : {
                                 "placeSettings15": 1
                             }

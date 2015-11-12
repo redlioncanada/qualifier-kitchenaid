@@ -56,7 +56,7 @@
 						{
 							"text" : "Cooking",
 							"value" : "Stove",
-							"displayName": "Range",
+							"displayName": "Cooking",
 							"classes" : "category cooking",
 							"image" : "img/cooking.png",
 							
@@ -120,7 +120,7 @@
                         {
 							"text" : "Cooktops",
 							"value" : "cooktops",
-							"displayName": "Cooktops",
+							"displayName": "Cooktop",
 							"classes" : "sub-category wallovens",
 							"image" : "img/cook-top.png",
 							"thumbnail" : "img/walloven-single.jpg",
@@ -165,7 +165,7 @@
 						{
 							"text" : "Vents and Hoods",
 							"value" : "vents",
-							"displayName": "Vents and Hoods",
+							"displayName": "Vent or Hood",
 							"classes" : "sub-category wallovens",
 							"image" : "img/vents.png",
 							"thumbnail" : "img/walloven-single.jpg",
@@ -2755,7 +2755,7 @@
 					"explanation" : "When it comes to washing your dishes there is no job too big or too small. Understanding what goes into your dishwasher will allow us to find the perfect fit for you.",
 					"type" : "slider",
 					"oneAnswer" : false,
-					"classes" : "slider-labels four",
+					"classes" : "slider-labels seven",
 					"answer" : 0,
 					"options" : {       
 					    "from": 0,
@@ -2763,7 +2763,7 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"0<br />Maybe every other week","5","10","15+<br />I've lost count"
+							"0<br />Maybe every other week","","5","","10","","15+<br />I've lost count"
 					    ]       
 					},
 					"answers" : {
@@ -2772,6 +2772,15 @@
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 0,
 							"text" : "0",
+							"scoring" : {
+								"placeSettings14": 1
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 2.5,
+							"text" : "2",
 							"scoring" : {
 								"placeSettings14": 1
 							}
@@ -2786,11 +2795,30 @@
 								"placeSettings15": 1
 							}
 						},
+						"7" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 7.5,
+							"text" : "7",
+							"scoring" : {
+								"placeSettings14": 1,
+								"placeSettings15": 1
+							}
+						},
 						"10" : {
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 10,
 							"text" : "10",
+							"scoring" : {
+								"placeSettings15": 1
+							}
+						},
+						"12" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 12.5,
+							"text" : "12",
 							"scoring" : {
 								"placeSettings15": 1
 							}
