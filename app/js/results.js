@@ -169,9 +169,21 @@ $scope.setPriceRange = function () {
           var value = $rootScope.questionsData.scoringQuestions.Appliance.text[0].answers[i];
 
           if (!!value.answer) {
-            var suffix = value.displayName;
-            if ($rootScope.isFrench) suffix = suffix.toUpperCase();
-            return ($rootScope.brandData.apptext.oneLastStep + " " + suffix).trim();
+            if (value.displayName == 'Cooking') {
+              for (var i in $rootScope.questionsData.scoringQuestions["Cooking - Pre-Qualifier 1"].text[0].answers) {
+                var value = $rootScope.questionsData.scoringQuestions["Cooking - Pre-Qualifier 1"].text[0].answers[i];
+
+                if (!!value.answer) {
+                  var suffix = value.displayName;
+                  if ($rootScope.isFrench) suffix = suffix.toUpperCase();
+                  return ($rootScope.brandData.apptext.oneLastStep + " " + suffix).trim();
+                }
+              }
+            } else {
+              var suffix = value.displayName;
+              if ($rootScope.isFrench) suffix = suffix.toUpperCase();
+              return ($rootScope.brandData.apptext.oneLastStep + " " + suffix).trim();
+            }
           }
         }
       }

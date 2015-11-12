@@ -45,6 +45,30 @@ html, body {
 					margin-left: 2px;
 				}
 			}
+			.share-popout {
+				.facebookCount {display: none;}
+				.facebookButton {
+					width: 30px;
+					height: 30px;
+
+					* {
+						width: inherit;
+						height: inherit;
+					}
+					.pluginButtonLabel {
+						display: none;
+					}
+					button {
+						padding: 0;
+						margin: 0;
+						border: 0;
+					}
+					.pluginButtonIcon,button {
+						background: url(../img/icon-share-fb.png) center center no-repeat;
+					}
+				}
+			}
+
 			.share-popout, .share-popout-cover {
 				position: absolute;
 				top: 0;

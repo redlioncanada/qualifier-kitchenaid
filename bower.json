@@ -2,6 +2,8 @@
   "name": "wp-qualifier-app",
   "version": "1.0.0",
   "authors": [
+    "Stephen Poole",
+    "Justin Gillis",
     "Bianca Sayan",
     "Kyle L. McGr{egor"
   ],
@@ -43,6 +45,7 @@
     "angular-images-loaded": "~0.0.8",
     "angular-local-storage": "~0.2.3",
     "angular-resource": "1.4.7",
+    "angular-socialshare": "~1.4.4",
     "imagesloaded": "~3.1.8"
   },
   "directory": "app/components",
