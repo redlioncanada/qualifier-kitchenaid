@@ -1039,7 +1039,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	}
 	.answer-button-wrapper:first-child .answer-button-answer {
 		text-transform: uppercase;
-		padding-top: 3px;
+		padding-top: 1px;
 	}
 }
 
@@ -1105,7 +1105,7 @@ div[ng-class="fr_CA"] {
 		div.jslider-pointer { 
 			width: 43px !important;
 			height: 37px !important;
-			background: url('../img/slider-pointer-small.png') center center no-repeat !important;
+			background: url('../img/slider-pointer.png') center center no-repeat !important;
 			background-size: 43px 37px !important;
 		}
         
@@ -1136,7 +1136,7 @@ div[ng-class="fr_CA"] {
 			}
 		}
         .jslider-pointer {
-            margin-left: -24px !important;
+            margin-left: -26px !important;
         }
 	}
 

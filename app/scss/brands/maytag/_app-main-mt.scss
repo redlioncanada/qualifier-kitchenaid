@@ -282,7 +282,6 @@ header.header-desktop {
 		// Bootstrap mixin
 		@include button-variant(#ffffff, #7d7d7d, #7d7d7d);
 		padding: 3px 18px;
-		border: 1px solid #ac080f !important;
 	}
 	.btn-text {
 		color: #7d7d7d;
@@ -365,7 +364,7 @@ header.header-desktop {
 		.btn-backtoresults {
 			font-family: $AV-Light;
             background-color: white;
-            color: #ac080f;
+            color: #7d7d7d;
             border-radius: 50%;
 			width: 45px;
 			height: 45px;
@@ -377,8 +376,11 @@ header.header-desktop {
 			text-transform: uppercase;
 
 			> div {
-				padding-top: 14px;
-				text-align: center;
+                position: relative;
+                top: 50%;
+                text-align: center;
+                -webkit-transform: translate(0,-50%);
+                transform: translate(0,-50%);
 			}
 		}
 	}
@@ -394,7 +396,7 @@ header.header-desktop {
 		.btn-startover {
 			font-family: $AV-Light;
             background-color: white;
-            color: #ac080f;
+            color: #7d7d7d;
             border-radius: 50%;
 			width: 45px;
 			height: 45px;
@@ -406,8 +408,11 @@ header.header-desktop {
 			text-transform: uppercase;
 
 			> div {
-				padding-top: 12px;
-				text-align: center;
+                position: relative;
+                top: 50%;
+                text-align: center;
+                -webkit-transform: translate(0,-50%);
+                transform: translate(0,-50%);
 			}
 		}
 	}
