@@ -1,5 +1,7 @@
 #results {
+	transition: opacity 0.7s;
 	.price-slider {
+		opacity: 0;
 		.jslider {
 			width: 100%; 
 		}

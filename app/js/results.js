@@ -2,6 +2,10 @@
 
 angular.module('App')
   .controller('ResultsCtrl', function ($scope, $rootScope, $state, $location, $timeout, $modal, $appstate) {
+    $timeout(function() {
+      $('#results').removeClass('hiddenViaOpacity')
+    },500);
+
     if (window.innerWidth < 1024){
             $scope.useMobileTemplates = true;
         }else{
@@ -55,7 +59,7 @@ angular.module('App')
         "fakestep": 50,
         "smooth" : false,
         "step" : 1,
-        "threshold" : 250,
+        "threshold" : 600,
         "dimension": d,
         "callback" : function(value, released) {  
 
@@ -147,6 +151,7 @@ $scope.setPriceRange = function () {
        $rootScope.resultsOptions.from = Math.floor(minPrice/50)*50;
         $rootScope.resultsOptions.to = Math.round(maxPrice/50)*50;
        $rootScope.controls.price = $rootScope.resultsOptions.from.toString() + ";" + $rootScope.resultsOptions.to.toString();
+       $('#results .price-slider').css('opacity',1);
 }
 
       $scope.expandPriceRange = function (price) {
