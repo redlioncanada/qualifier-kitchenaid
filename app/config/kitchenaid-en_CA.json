@@ -1676,7 +1676,7 @@
 					"question" : "What style range do you prefer?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about style?", 
-					"explanation" : "NEED COPY!",
+					"explanation" : "Our ranges come in different styles. By understanding your preference, we can better recommend the perfect one for you.",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
