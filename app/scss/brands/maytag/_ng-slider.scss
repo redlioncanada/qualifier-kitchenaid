@@ -1067,8 +1067,19 @@ div[ng-class="fr_CA"] {
 		font-size: 11px;
 	}
 }
-
+    #results div.price-slider.pointer-labels .jslider {
+        .jslider-pointer {
+            margin-left: -32px !important;
+            margin-top: -5px;
+        }
+	}
 @media(max-width:1023px) {
+    #results div.price-slider.pointer-labels .jslider {
+        .jslider-pointer {
+            margin-left: -31px !important;
+            margin-top: -5px;
+        }
+	}
 	.answers-main-content.answer-buttons {
 		position: absolute;
 		top: 50px;
@@ -1137,6 +1148,7 @@ div[ng-class="fr_CA"] {
 		}
         .jslider-pointer {
             margin-left: -26px !important;
+            margin-top: 3px;
         }
 	}
 
