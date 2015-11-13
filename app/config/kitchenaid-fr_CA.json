@@ -38,7 +38,8 @@
         "facebookDesc" : "(fr)My Maytag takes the guesswork out of appliance shopping. Click to discover products with features you want and features you need.",
         "facebookImage" : "/img/social.jpg",
         "twitterTitle" : "",
-        "twitterDesc" : "(fr)My Maytag takes the guesswork out of appliance shopping. Click to discover products with features you want and need."        "twitterImage" : "/img/social-fr.jpg"
+        "twitterDesc" : "(fr)My Maytag takes the guesswork out of appliance shopping. Click to discover products with features you want and need.",
+         "twitterImage" : "/img/social-fr.jpg"
 
      },
      "questions" : {
@@ -388,7 +389,7 @@
             "text" : [
                 {
                     "question" : "LORSQUE VOUS MAGASINEZ UNE TABLE DE CUISSON, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
-                    "sub_question" : "FAITES GLISSER POUR REARRANGER : <span>1</div> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>5</div> À LA MOINS IMPORTANTE",
+                    "sub_question" : "FAITES GLISSER POUR REARRANGER : <span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>5</span> À LA MOINS IMPORTANTE",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de ces préférences?",
                     "explanation" : "En comprenant vos priorités en matière de cuisson, nous pouvons mieux recommander la table de cuisson qui convient parfaitement à votre style de vie.",
                     "type" : "rank",
@@ -2886,7 +2887,7 @@
             "text" : [
                 {
                     "question" : "LORSQUE VOUS MAGASINEZ POUR UN LAVE-VAISSELLE, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
-                    "sub_question" : "FAITES GLISSER POUR REARRANGER:<span>1</div> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>6</div> À LA MOINS IMPORTANTE",
+                    "sub_question" : "FAITES GLISSER POUR REARRANGER:<span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>6</span> À LA MOINS IMPORTANTE",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de mes préférences?",
                     "explanation" : "En comprenant vos priorités en matière de lavage de vaisselle, nous pouvons mieux recommander un lave-vaisselle dont les caractéristiques conviennent à votre style de vie.",
                     "type" : "rank",
