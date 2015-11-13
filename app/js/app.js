@@ -80,7 +80,7 @@ App.filter('rearrange', function() {
       items[0] = items[1];
       items[1] = temp;     
 
-      if (items[0].colours[items[0].colours.length-1].prices.CAD > items[2].colours[items[2].colours.length-1].prices.CAD) {
+      if (parseFloat(items[0].colours[items[0].colours.length-1].prices.CAD) > parseFloat(items[2].colours[items[2].colours.length-1].prices.CAD)) {
         temp = items[0];
         items[0] = items[2];
         items[2] = temp;
