@@ -1156,7 +1156,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "Bake, bake, and bake some more",
+							"text" : "Bake, bake and bake some more",
 							"value" : "perfect",
 							"scoring" : {
 								"trueConvection" : 1
@@ -1412,7 +1412,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "Bake, bake, and bake some more",
+							"text" : "Bake, bake and bake some more",
 							"value" : "perfect",
 							"scoring" : {
 								"trueConvection" : 1,
@@ -1802,7 +1802,7 @@
 					"question" : "HOW OFTEN DO YOU FIND YOURSELF COOKING<br />A MEAT DISH THAT REQUIRES A PRECISE TEMPERATURE?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about temperature precision?",
-					"explanation" : "Did you know that some of our ranges are equipped with thermometer probes? The technology gives you precision results to notify you when your dish has reached completion.",
+					"explanation" : "Did you know that some of our ranges are equipped with thermometer probes? This technology gives you precision results to notify you when your dish has reached completion.",
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels four",
@@ -2213,7 +2213,7 @@
 					"question" : "HOW IMPORTANT IS ENERGY<br />EFFICIENCY TO YOUR HOUSEHOLD?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about energy?",
-					"explanation" : "All of our machines are different just like the people they're for. If we understand your energy usage, then we can better recommend the perfect fridge to fit your needs.",
+					"explanation" : "All of our appliances are different just like the people they're for. If we understand your energy usage, then we can better recommend the perfect fridge to fit your needs.",
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels four",
@@ -2423,7 +2423,7 @@
 					"question" : "Does your kitchen have<br />an existing waterline?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about a waterline?",
-					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
+					"explanation" : "Did you know that your kitchen needs a waterline in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
@@ -2483,7 +2483,7 @@
 					"question" : "I like to add ice to...",
 					"sub_question" : "Select all that apply",
 					"explanation_title" : "Why are you asking me about ice?",
-					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense ice? Some of our models provide ice-dispensing features. By understanding how you consume ice, we can recommend a fridge that will fit your lifestyle.",
+					"explanation" : "Did you know that your kitchen needs a waterline in order for your fridge to dispense ice? Some of our models provide ice-dispensing features. By understanding how you consume ice, we can recommend a fridge that will fit your lifestyle.",
 					"type" : "boxes-icon-5-checkbox",
 					"oneAnswer" : false,
 					"answers" : [
