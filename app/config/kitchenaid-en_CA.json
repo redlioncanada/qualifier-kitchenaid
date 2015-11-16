@@ -1199,7 +1199,7 @@
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
 							"text" : "A home chef",
-							"subtext" : "scallop ceviche and naan pizzas, I love trying new recipes",
+							"subtext" : "scallop ceviche and naan pizzas,<br />I love trying new recipes",
 							"value" : "chef",
 							"scoring" : {
 								"easyConvection" : 1
@@ -1210,7 +1210,7 @@
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
 							"text" : "I’m both",
-							"subtext" : "I should probably start my own food blog",
+							"subtext" : "I should probably start<br />my own food blog",
 							"value" : "both",
 							"scoring" : {
 								"trueConvection" : 1,
@@ -1222,7 +1222,7 @@
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
 							"text" : " I’m neither",
-							"subtext" : "my stack of take-out menus is impressive",
+							"subtext" : "my stack of take-out<br />menus is impressive",
 							"value" : "neither",
 							"scoring" : {
 							},
@@ -1370,7 +1370,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "Reheat leftovers and frozen meals",
+							"text" : "Reheat leftovers<br />and frozen meals",
 							"value" : "reheat",
 							"scoring" : {
 							},
@@ -1390,7 +1390,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "Help me host parties and cook multi-course meals",
+							"text" : "Help me host multi-<br />cousre dinners parties",
 							"value" : "host parties",
 							"scoring" : {
 								"warmingDrawer" : 1,
@@ -1621,7 +1621,7 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "From roasts to Mexican night, my family depends on me to make dinner",
+							"text" : "From roasts to Mexican night,<br />my family depends on me to make dinner",
 							"value" : "family",
 							"scoring" : {
 							},
@@ -1630,7 +1630,7 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "I love entertaining guests and need a range that can handle feasts for a crowd",
+							"text" : "I love entertaining guests and need a<br />range that can handle feasts for a crowd",
 							"value" : "crowd",
 							"scoring" : {
 								"double":1,
@@ -1642,7 +1642,7 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "I’m always trying new dishes and need a range that can handle variety",
+							"text" : "I’m always trying new dishes and<br />need a range that can handle variety",
 							"value" : "variety",
 							"scoring" : {
 								"double":1,
@@ -1654,7 +1654,7 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Cook? We rely on our impressive collection of take-out menus",
+							"text" : "Cook? We rely on our impressive<br />collection of take-out menus",
 							"value" : "frozen",
 							"scoring" : {
 								"electric" : 1
@@ -1755,7 +1755,7 @@
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-lifestyle-current.png",
 							"text" : "A home chef",
-							"subtext" : "scallop ceviche and naan pizzas, I love trying new recipes",
+							"subtext" : "scallop ceviche and naan pizzas,<br />I love trying new recipes",
 							"value" : "home chef",
 							"scoring" : {
 								"steamRack" : 1,
@@ -1767,7 +1767,7 @@
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-lifestyle-current.png",
 							"text" : "I’m both",
-							"subtext" : "I should probably start my own food blog",
+							"subtext" : "I should probably start<br />my own food blog",
 							"value" : "both",
 							"scoring" : {
 								"bakingDrawer" : 1,
@@ -1781,7 +1781,7 @@
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-lifestyle-current.png",
 							"text" : "I’m neither",
-							"subtext" : "my stack of take-out menus is impressive",
+							"subtext" : "my stack of take-out<br />menus is impressive",
 							"value" : "neither",
 							"scoring" : {
 							},
@@ -2358,7 +2358,7 @@
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "Chill the drinks – from cold press juices to wine",
+							"text" : "Chill the drinks –<br />from cold press juices to wine",
 							"value" : "chill",
 							"scoring" : {
 								"topMount" : 1,
@@ -2367,7 +2367,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "Store fresh produce from the farmers’ market",
+							"text" : "Store fresh produce<br />from the farmers’ market",
 							"value" : "produce",
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
@@ -2379,7 +2379,7 @@
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "Hold everything that we bought from the grocery store",
+							"text" : "Hold everything that we<br />bought from the grocery store",
 							"value" : "groceries",
 							"scoring" : {
 								"frenchDoor" : 1
@@ -2398,7 +2398,7 @@
 							"order" : 4
 						},
 						{
-							"text" : "Store platters of food for dinner parties and holidays",
+							"text" : "Store platters of food for<br />dinner parties and holidays",
 							"value" : "platters",
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
@@ -2428,7 +2428,7 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Yes - my kitchen has a waterline and my fridge dispenses water and ice",
+							"text" : "Yes - my kitchen has a waterline<br />and my fridge dispenses water and ice",
 							"value" : "bottle of water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2439,7 +2439,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "No - I dont have a waterline and don't need one",
+							"text" : "No - I dont have a waterline<br />and don't need one",
 							"value" : "glass of tap water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2449,7 +2449,7 @@
 							"order" : 2
 						},
 						{
-							"text" : "No - I don't have a waterline but would consider installing one so our fridge could dispense water",
+							"text" : "No - I don't have a waterline but<br />would consider installing one so our<br />fridge could dispense water and ice",
 							"value" : "glass of filtered water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2582,7 +2582,7 @@
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Built-In",
-                            "subtext" : "I want to be able to customize the exterior of my fridge",
+                            "subtext" : "I want to be able to customize<br />the exterior of my fridge",
                             "image" : "img/built-in.png",
                             "image_alt" : "Fridges Built In",
 							"value" : 2,
@@ -2595,7 +2595,7 @@
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Counter Depth",
-                            "subtext" : "I want my fridge to be in-line with my counters ",
+                            "subtext" : "I want my fridge to be<br />in-line with my counters ",
                             "image" : "img/counter-depth.png",
                             "image_alt" : "Fridges Counter Depth",
 							"value" : 1,
@@ -2608,7 +2608,7 @@
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
                             "text" : "Standard Depth",
-                            "subtext" : "I don’t care if my fridge is in-line with my counters ",
+                            "subtext" : "I don’t care if my fridge<br />is in-line with my counters ",
                             "image" : "img/standard-depth.png",
                             "image_alt" : "Fridges Standard Depth",
 							"value" : 0,
@@ -2639,7 +2639,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "I’m on a first-name basis at the farmers’ market",
+							"text" : "I’m on a first-name basis<br />at the farmers’ market",
 							"value" : "farmers market",
 							"scoring" : {
  								"freshFlowProducePreserver" : 2,
@@ -2651,7 +2651,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "I get basics and produce from the grocery store",
+							"text" : "I get basics and produce<br />from the grocery store",
 							"value" : "full grocery store",
 							"scoring" : {
 									"preservaCare" : 1,
@@ -2701,7 +2701,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Wine glasses from all my closest friends",
+							"text" : "Wine glasses from<br />all my closest friends",
 							"value" : "glasses",
 							"scoring" : {
 								"proScrub" : 1,
@@ -2725,7 +2725,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Mixing bowls and measuring cups",
+							"text" : "Mixing bowls and<br />measuring cups",
 							"value" : "mixing bowls",
 							"scoring" : {
 								"proScrub" : 1,
@@ -2748,7 +2748,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Cutting boards of every shape and size",
+							"text" : "Cutting boards of<br />every shape and size",
 							"value" : "cutting boards",
 							"scoring" : {
 								"proScrub" : 1,
@@ -2770,7 +2770,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Place settings from our family dinner",
+							"text" : "Place settings from<br />our family dinner",
 							"value" : "family",
 							"scoring" : {
 								"proDry" : 1,
