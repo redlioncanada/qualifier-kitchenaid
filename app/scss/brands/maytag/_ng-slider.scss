@@ -453,13 +453,13 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			ins { 
 				font-family: $AV-Medium;
 				text-transform: uppercase;
-				font-size: 10px;
+				font-size: 11px;
                 font-weight: 400;
 				text-decoration: none; 
 				position: absolute; 
 				left: 0px; 
 				top: 25px;
-				color: #aaa;
+				color: #777;
 				width: 200px;
 				left: -100px;
 				text-align: center;
@@ -590,6 +590,10 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 				text-transform: uppercase;
 				color: #999;
 				opacity: 1;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translate(-50%,0);
+                transform: translate(-50%,0);
 			}
 			div {
 				position: absolute;
@@ -953,6 +957,11 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 					text-transform: uppercase;
 					color: #999;
 					opacity: 1;
+                    position: absolute !important;
+                    left: 50% !important;
+                    top: 25% !important;
+                    -webkit-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
 				}
 			}
 		}
@@ -1046,12 +1055,15 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 /*french css start*/
 div[ng-class="fr_CA"] {
 	.price-slider {
+        .jslider-value {
+            color: transparent !important;
+        }
 		.jslider-value span:before {
 		    content: "";
 		}
-		/*.jslider-value span:after {
-		    content: " $";
-		}*/
+		.jslider-value span:after {
+		    content: "$";
+		}
 	}
 
 	.price-slider.pointer-labels {
