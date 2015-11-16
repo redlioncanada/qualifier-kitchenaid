@@ -1804,8 +1804,8 @@
                     "classes" : "slider-labels four",
                     "answer" : 0,
                     "options" : {       
-                        "from": 0,
-                        "to": 2,
+                        "from": 1,
+                        "to": 3,
                         "step": 0.0001,
                         "dimension": "",
                         "scale": ["Jamais<div></div><div class='extra'>je me fie à la durée de cuisson pour déterminer si mon plat est prêt</div>", "Parfois<div></div><div class='extra'>quelques fois par année</div>", "Très souvent<div></div><div class='extra'>j’essaie toujours de nouvelles recettes de rôtis</div>"]     
