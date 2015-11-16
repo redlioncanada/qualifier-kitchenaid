@@ -383,6 +383,9 @@ header.header-desktop {
                 transform: translate(0,-50%);
 			}
 		}
+         .btn-backtoresults:hover {
+            border-color: #ac080f;
+        }
 	}
 	.startover-btn-wrap {
 		display: inline-block;
@@ -415,6 +418,9 @@ header.header-desktop {
                 transform: translate(0,-50%);
 			}
 		}
+        .btn-startover:hover {
+            border-color: #ac080f;
+        }
 	}
 }
 
