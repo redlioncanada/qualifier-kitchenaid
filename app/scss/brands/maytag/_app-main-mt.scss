@@ -637,6 +637,22 @@ div[ng-class="fr_CA"] {
         font-size: 19px;
     }
     }
+    
+    .buttonnav-mobile {
+        margin-top: 50px;
+        a.banner {
+            .btn-wrapper {
+                border-radius: 15px;
+                height: 45px;
+                width: 90px;
+
+                div {
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+            }
+        }
+    }
 }
 
 .print-page {
