@@ -446,7 +446,11 @@ angular.module('App')
   		if ($rootScope.controls.lastLocation == 'results' && (q == 'Appliance' || q=='/questions/')) return;
 
   		if ($rootScope.isTabletWidthOrLess && $rootScope.isMobile) {
-			$("html, body").animate({scrollTop: "51px"}, 400);
+  			if ($location.path().indexOf('Appliance') != -1) {
+				$("html, body").animate({scrollTop: "51px"}, 400);
+			} else {
+				$("html, body").animate({scrollTop: "0px"}, 400);
+			}
 		}
 
 		if (!$rootScope.isTabletWidthOrLess && !$rootScope.isMobile && $location.path().indexOf('Appliance') != -1) {

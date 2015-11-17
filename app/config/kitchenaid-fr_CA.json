@@ -1805,7 +1805,7 @@
                     "type" : "slider",
                     "oneAnswer" : false,
                     "classes" : "slider-labels four",
-                    "answer" : 0,
+                    "answer" : 1,
                     "options" : {       
                         "from": 1,
                         "to": 3,
@@ -1817,7 +1817,7 @@
                         "0" : {
                             "thumbnail" : "img/icon-features.png",
                             "thumbnail_current" : "img/icon-features-current.png",
-                            "value" : 0,
+                            "value" : 1,
                             "text" : "Jamais",
                             "scoring" : {
                             }
@@ -1825,7 +1825,7 @@
                         "1" : {
                             "thumbnail" : "img/icon-features.png",
                             "thumbnail_current" : "img/icon-features-current.png",
-                            "value" : 1,
+                            "value" : 2,
                             "text" : "Parfois",
                             "scoring" : {
                                 "temperatureProbe" : 1
@@ -1834,7 +1834,7 @@
                         "2" : {
                             "thumbnail" : "img/icon-features.png",
                             "thumbnail_current" : "img/icon-features-current.png",
-                            "value" : 2,
+                            "value" : 3,
                             "text" : "Très souvent",
                             "scoring" : {           
                                 "temperatureProbe" : 2,
