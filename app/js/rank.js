@@ -15,6 +15,7 @@ angular.module('App')
                 .addClass('dragging-rank')
                 .removeClass('as-sortable-item')
                 .attr('as-sortable-item', '')
+                .css('width', $($element).find('.rank-answers-list li').width())
                 .hide()
                 .appendTo('body');
 
@@ -33,28 +34,49 @@ angular.module('App')
     }
 
     $scope.draggingListener = function(e) {
-        // console.log('drag');
+        console.log('drag');
         
-        $($scope.clonedElement).css({
-            position: 'absolute',
-            top: e.pageY - $scope.localY,
-            left: e.pageX - $scope.localX,
-            display: 'block'
-        })
+        if ($rootScope.isMobile) {
+            $($scope.clonedElement).css({
+                position: 'absolute',
+                top: e.originalEvent.touches[0].pageY - $scope.localY,
+                left: e.originalEvent.touches[0].pageX - $scope.localX,
+                display: 'block'
+            })
+        } else {
+            $($scope.clonedElement).css({
+                position: 'absolute',
+                top: e.pageY - $scope.localY,
+                left: e.pageX - $scope.localX,
+                display: 'block'
+            })
+        }
     };
 
     $scope.mouseMoveListener = function(e) {
         var parentOffset = $(this).parent().offset();
-        $scope.localX = e.pageX - parentOffset.left;
-        $scope.localY = e.pageY - parentOffset.top - 20;
-        // console.log('mousemove');
+        if ($rootScope.isMobile) {
+            $scope.localX = e.originalEvent.touches[0].pageX - parentOffset.left;
+            $scope.localY = e.originalEvent.touches[0].pageY - parentOffset.top - 20;
+            console.log(parentOffset, e.originalEvent.touches[0].pageX, e.originalEvent.touches[0].pageY)
+        } else {
+            $scope.localX = e.pageX - parentOffset.left;
+            $scope.localY = e.pageY - parentOffset.top - 20;
+            
+        }
     };
 
     $scope.toggleMouseMove = function(sw) {
         if (sw) {
-            $.each($scope.labelElements, function(key,value) {$(value).on('mousemove', $scope.mouseMoveListener)});
+            $.each($scope.labelElements, function(key,value) {
+                $(value).on('mousemove', $scope.mouseMoveListener);
+                $(value).on('touchmove', $scope.mouseMoveListener);
+            });
         } else {
-            $.each($scope.labelElements, function(key,value) {$(value).off('mousemove', $scope.mouseMoveListener)});
+            $.each($scope.labelElements, function(key,value) {
+                $(value).off('mousemove', $scope.mouseMoveListener);
+                $(value).off('touchmove', $scope.mouseMoveListener);
+            });
         }
     }
 
@@ -67,23 +89,22 @@ angular.module('App')
 	$scope.sortable.dragControlListeners = {
     	orderChanged: function(event) {
             $rootScope.controls.questionHasAnswer = true
+
     		for (var i in $rootScope.questionsData.question.show.answers) {
     			$rootScope.questionsData.question.show.answers[i].answer = i
     		}
     	},
         dragStart: function(e) {
-           if (!$rootScope.isTabletWidthOrLess) {
-                $($scope.clonedElement).find('span').text($(e.source.itemScope.element[0]).find('span').text());
-                $(document).on('mousemove', $scope.draggingListener);
-                $scope.toggleMouseMove(false);
-            }
+            $($scope.clonedElement).find('span').text($(e.source.itemScope.element[0]).find('span').text());
+            $(document).on('mousemove', $scope.draggingListener);
+            $(document).on('touchmove', $scope.draggingListener);
+            $scope.toggleMouseMove(false);
         },
         dragEnd: function(e) {
-            if (!$rootScope.isTabletWidthOrLess) {
-                $($scope.clonedElement).hide();
-                $(document).off('mousemove', $scope.draggingListener);
-                $scope.toggleMouseMove(true);
-            }
+            $($scope.clonedElement).hide();
+            $(document).off('mousemove', $scope.draggingListener);
+            $(document).off('touchmove', $scope.draggingListener);
+            $scope.toggleMouseMove(true);
         },
 	    containment: '.answers-main-content'
 	};

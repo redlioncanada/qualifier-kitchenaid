@@ -697,6 +697,22 @@ div.img-wrap.selected {
 		display: none !important;
 		visibility: hidden !important;
 	}
+
+	li.dragging-rank {
+		height: 41px !important;
+
+	    .rank-number-wrap {
+	    	display: none;
+	    }
+	    .label-wrap {
+			height:  41px !important;
+			width: 100% !important;
+		}
+		.label-text {
+			top: 25% !important;
+			font-size: 9px !important;
+		}
+	}
 }
 
 li.dragging-rank {
