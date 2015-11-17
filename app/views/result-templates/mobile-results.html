@@ -48,7 +48,7 @@
 							<div class="product-details">
 								<div class="sales-feature-wrapper" ng-repeat="sf in a.salesFeatures | assignScore:a | orderBy:'-score' | limitTo:3"> 
 									<h4 class="sales-feature">
-										<img ng-if="!!sf.featureKey" ng-class="{multiline: sf.headline.length > 46}" ng-src="img/icon-{{sf.featureKey}}.png" />
+										<img ng-if="!!sf.featureKey" ng-class="{multiline: sf.headline.length > 46}" ng-src="img/icon-{{sf.featureKey}}-results.png" />
 										<img ng-if="!sf.featureKey" ng-class="{multiline: sf.headline.length > 46}" ng-src="img/icon-genericfeature.png" />
 										<span ng-bind-html="sf.headline"></span>
 									</h4>
