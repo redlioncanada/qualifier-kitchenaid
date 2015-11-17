@@ -1834,7 +1834,7 @@
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels four",
-					"answer" : 0,
+					"answer" : 1,
 					"options" : {       
 					    "from": 1,
 					    "to": 3,
@@ -1846,7 +1846,7 @@
 						"0" : {
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"value" : 0,
+							"value" : 1,
 							"text" : "Never<div></div><div class='extra'>I use time to figure out if my dish is done</div>",
 							"scoring" : {
 							}
@@ -1854,7 +1854,7 @@
 						"1" : {
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"value" : 1,
+							"value" : 2,
 							"text" : "Sometimes<div></div><div class='extra'>A few times a year</div>",
 							"scoring" : {
 								"temperatureProbe" : 1
@@ -1863,7 +1863,7 @@
 						"2" : {
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"value" : 2,
+							"value" : 3,
 							"text" : "Very often<div></div><div class='extra'>I'm always experimenting with new roast recipes</div>",
 							"scoring" : {			
 								"temperatureProbe" : 2,
