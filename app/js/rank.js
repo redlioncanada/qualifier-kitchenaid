@@ -18,6 +18,9 @@ angular.module('App')
                 .hide()
                 .appendTo('body');
 
+        var numElements = ($($element).find('.rank-answers-list li').height() + parseInt($($element).find('.rank-answers-list li').eq(0).css('margin-bottom'))) * ($($element).find('.rank-answers-list li').length) + 7;
+        $($element).find('.rank-answers-list').css({'height': numElements});
+
         $scope.toggleMouseMove(true);
     },0);
 
@@ -31,7 +34,7 @@ angular.module('App')
 
     $scope.draggingListener = function(e) {
         // console.log('drag');
-
+        
         $($scope.clonedElement).css({
             position: 'absolute',
             top: e.pageY - $scope.localY,
@@ -69,14 +72,18 @@ angular.module('App')
     		}
     	},
         dragStart: function(e) {
+           if (!$rootScope.isTabletWidthOrLess) {
                 $($scope.clonedElement).find('span').text($(e.source.itemScope.element[0]).find('span').text());
                 $(document).on('mousemove', $scope.draggingListener);
                 $scope.toggleMouseMove(false);
+            }
         },
         dragEnd: function(e) {
+            if (!$rootScope.isTabletWidthOrLess) {
                 $($scope.clonedElement).hide();
                 $(document).off('mousemove', $scope.draggingListener);
                 $scope.toggleMouseMove(true);
+            }
         },
 	    containment: '.answers-main-content'
 	};
