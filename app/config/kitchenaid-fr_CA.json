@@ -200,6 +200,7 @@
             "text" : [
                 {
                     "question" : "VOUS AVEZ BESOIN D’UNE TABLE DE CUISSON DE QUELLE TAILLE?",
+                    "question_full" : "VOUS AVEZ BESOIN D’UNE TABLE DE CUISSON DE QUELLE TAILLE?",
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
                     "explanation" : "Nos tables de cuisson sont offertes en différentes tailles; nous voulons nous assurer de recommander celle qui convient parfaitement à votre espace.",
@@ -336,6 +337,7 @@
             "text" : [
                 {
                     "question" : "COMMENT DÉCRIRIEZ-VOUS LE STYLE DE VOTRE CUISINE?",
+                    "question_full" : "COMMENT DÉCRIRIEZ-VOUS LE STYLE DE VOTRE CUISINE?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du style?",
                     "explanation" : "Nos tables de cuisson sont offertes en différents styles. En comprenant vos préférences, nous pouvons mieux recommander celle qui vous convient parfaitement.",
@@ -389,6 +391,7 @@
             "text" : [
                 {
                     "question" : "LORSQUE VOUS MAGASINEZ UNE TABLE DE CUISSON, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
+                    "question_full" : "LORSQUE VOUS MAGASINEZ UNE TABLE DE CUISSON, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
                     "sub_question" : "FAITES GLISSER POUR REARRANGER : <span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>5</span> À LA MOINS IMPORTANTE",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de ces préférences?",
                     "explanation" : "En comprenant vos priorités en matière de cuisson, nous pouvons mieux recommander la table de cuisson qui convient parfaitement à votre style de vie.",
@@ -468,6 +471,7 @@
             "text" : [
                 {
                     "question" : "QUELLES TECHNIQUES DE CUISSON UTILISEZ-VOUS SOUVENT?",
+                    "question_full" : "QUELLES TECHNIQUES DE CUISSON UTILISEZ-VOUS SOUVENT?",
                     "sub_question" : "Sélectionnez toutes les réponses pertinentes",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet des techniques de cuisson?",
                     "explanation" : "Nos tables de cuisson sont dotées d’une technologie de chaleur permettant de passer rapidement du mijotage à une forte ébullition. En comprenant votre façon de cuisiner, nous pouvons mieux recommander la table de cuisson qui convient parfaitement à votre style de vie.",
@@ -573,6 +577,7 @@
             "text" : [
                 {
                     "question" : "Votre cuisine est-elle équipée pour le gaz ou l’électricité?",
+                    "question_full" : "Votre cuisine est-elle équipée pour le gaz ou l’électricité?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du type d’alimentation?", 
                     "explanation" : "Certaines cuisines sont équipées d’une conduite de gaz. Nous avons besoin de connaître cette information pour recommander la cuisinière tout indiquée.",
@@ -614,6 +619,7 @@
             "text" : [
                 {
                     "question" : "QUELLE EST LA LARGEUR DE VOTRE TABLE DE CUISSON OU CUISINIÈRE?",
+                    "question_full" : "QUELLE EST LA LARGEUR DE VOTRE TABLE DE CUISSON OU CUISINIÈRE?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la largeur?",
                     "explanation" : "En ce qui concerne les tables de cuisson, la taille importe. Ce n’est qu’une fois que nous connaissons la largeur de votre table de cuisson ou cuisinière que nous pouvons trouver le meilleur système de ventilation pour vous.",
@@ -662,6 +668,7 @@
             "text" : [
                 {
                     "question" : "OÙ POUVONS-NOUS TROUVER VOTRE SURFACE DE CUISSON DANS LA CUISINE?",
+                    "question_full" : "OÙ POUVONS-NOUS TROUVER VOTRE SURFACE DE CUISSON DANS LA CUISINE?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me demandez-vous où je cuisine?",
                     "explanation" : "Nous savons que chaque cuisine est unique. Si nous savons où se trouve votre surface de cuisson, nous pouvons recommander le système de ventilation qui convient parfaitement.",
@@ -708,6 +715,7 @@
             "text" : [
                 {
                     "question" : "Y A-T-IL DES ARMOIRES AU-DESSUS DE VOTRE SURFACE DE CUISSON?",
+                    "question_full" : "OÙ POUVONS-NOUS TROUVER VOTRE SURFACE DE CUISSON DANS LA CUISINE?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de mes armoires?",
                     "explanation" : "Certains des sous-produits de la cuisson (vapeur, humidité et graisse) peuvent être destructeurs sans la bonne ventilation. En comprenant vos besoins précis, nous pouvons trouver le système parfait pour votre cuisine.",
@@ -757,6 +765,7 @@
             "text" : [
                 {
                     "question" : "VOUS ARRIVE-T-IL SOUVENT DE PRÉPARER UNE SAUCE OU UN SAUTÉ À FEU VIF?",
+                    "question_full" : "VOUS ARRIVE-T-IL SOUVENT DE PRÉPARER UNE SAUCE OU UN SAUTÉ À FEU VIF?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la chaleur?",
                     "explanation" : "Nous savons que tout le monde a un style de cuisson différent. Si vous aimez monter le feu, nous vous trouverons une hotte avec un ventilateur plus puissant.",
@@ -801,6 +810,7 @@
             "text" : [
                 {
                     "question" : "VOTRE SYSTÈME DE VENTILATION MÈNE-T-IL VERS L’EXTÉRIEUR DE LA MAISON?",
+                    "question_full" : "VOTRE SYSTÈME DE VENTILATION MÈNE-T-IL VERS L’EXTÉRIEUR DE LA MAISON?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la ventilation?", 
                     "explanation" : "Bien que nous voulions maintenir l’odeur de ce potage en train de mijoter, une bonne ventilation est importante pour garder l’air propre dans la cuisine.",
@@ -859,6 +869,7 @@
             "text" : [
                 {
                     "question" : "VOUS ARRIVE-T-IL D’OUBLIER DE METTRE EN MARCHE VOTRE SYSTÈME DE VENTILATION?",
+                    "question_full" : "VOUS ARRIVE-T-IL D’OUBLIER DE METTRE EN MARCHE VOTRE SYSTÈME DE VENTILATION?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question sur mes habitudes?", 
                     "explanation" : "Certains de nos systèmes de ventilation sont automatiques, ce qui veut dire que si vous avez besoin de nous, nous pouvons vous aider à les mettre en marche.",
@@ -908,6 +919,7 @@
             "text" : [
                 {
                     "question" : "SOUHAITEZ-VOUS UNE LAMPE RÉCHAUD SUR VOTRE HOTTE?",
+                    "question_full" : "SOUHAITEZ-VOUS UNE LAMPE RÉCHAUD SUR VOTRE HOTTE?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet d’une lampe-réchaud?", 
                     "explanation" : "Certains de nos modèles sont dotés de lampes-réchauds. En comprenant vos préférences, nous pouvons mieux recommander la hotte qui vous convient parfaitement.",
@@ -951,6 +963,7 @@
             "text" : [
                 {
                     "question" : "QUELLE TAILLE DE FOUR ENCASTRÉ AVEZ-VOUS BESOIN?",
+                    "question_full" : "QUELLE TAILLE DE FOUR ENCASTRÉ AVEZ-VOUS BESOIN?",
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
                     "explanation" : "Nos fours encastrés sont offerts en différentes tailles; nous voulons nous assurer de recommander celui qui convient parfaitement à votre espace.",
@@ -1024,6 +1037,7 @@
             "text" : [
                 {
                     "question" : "QUELLE EST VOTRE PRÉFÉRENCE EN TERMES DE FOUR ENCASTRÉ?",
+                    "question_full" : "QUELLE EST VOTRE PRÉFÉRENCE EN TERMES DE FOUR ENCASTRÉ?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de l’orientation?",
                     "explanation" : "Nos fours encastrés sont offerts en différentes options d’orientation. Nous voulons connaître votre préférence afin de nous assurer de recommander celui qui convient parfaitement à votre maison.",
@@ -1096,6 +1110,7 @@
             "text" : [
                 {
                     "question" : "J’utilise mon four encastré pour...",
+                    "question_full" : "J’utilise mon four encastré pour...",
                     "sub_question" : "Sélectionnez toutes les réponses pertinentes",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet des modes de cuisson?",
                     "explanation" : "Nos fours encastrés sont tous dotés de caractéristiques uniques. Nous voulons nous faire une meilleure idée de l’utilisation que vous en faites afin de pouvoir recommander le four encastré qui répond parfaitement à vos besoins en matière de cuisson.",
@@ -1169,6 +1184,7 @@
             "text" : [
                 {
                     "question" : "COMMENT VOS AMIS VOUS DÉCRIRAIENT-ILS?",
+                    "question_full" : "COMMENT VOS AMIS VOUS DÉCRIRAIENT-ILS?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la cuisine?",
                     "explanation" : "Nos fours encastrés sont tous dotés de caractéristiques uniques. Nous voulons nous faire une meilleure idée de l’utilisation que vous en faites afin de pouvoir recommander le four encastré qui répond parfaitement à vos besoins en matière de cuisson.",
@@ -1235,6 +1251,7 @@
             "text" : [
                 {
                     "question" : "Est-il important pour votre famille de réaliser des économies d’énergie?",
+                    "question_full" : "Est-il important pour votre famille de réaliser des économies d’énergie?",
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de l’énergie?",
                     "explanation" : "Tous nos fours encastrés sont différents, tout comme les personnes à qui ils sont destinés. Si nous comprenons votre consommation d’énergie, nous pouvons alors mieux recommander le four encastré qui est parfaitement adapté à vos besoins.",
@@ -1296,6 +1313,7 @@
             "text" : [
                 {
                     "question" : "VOUS AVEZ BESOIN D’UNE CUISINIÈRE DE QUELLE TAILLE?",
+                    "question_full" : "VOUS AVEZ BESOIN D’UNE CUISINIÈRE DE QUELLE TAILLE?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
                     "explanation" : "Nos cuisinières sont offertes en différentes tailles; nous voulons nous assurer de recommander celle qui convient parfaitement à votre espace.",
@@ -1357,6 +1375,7 @@
             "text" : [
                 {
                     "question" : "J’utilise ma cuisinière pour...",
+                    "question_full" : "J’utilise ma cuisinière pour...",
                     "sub_question" : "Sélectionnez toutes les réponses pertinentes",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet des modes de cuisson?",
                     "explanation" : "Toutes nos cuisinières ont des fonctions différentes. Nous voulons nous faire une meilleure idée de la façon dont vous utilisez la votre afin de pouvoir trouver celle qui convient le mieux à votre style de vie.",
@@ -1440,6 +1459,7 @@
             "text" : [
                 {
                     "question" : "Quelles techniques de cuisson utilisez-vous souvent?",
+                    "question_full" : "Quelles techniques de cuisson utilisez-vous souvent?",
                     "sub_question" : "Sélectionnez toutes les réponses pertinentes",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la performance de cuisson?",
                     "explanation" : "Nos cuisinières sont dotées d’une technologie de chaleur permettant de passer rapidement du mijotage à une forte ébullition. En comprenant votre façon de cuisiner, nous pouvons mieux recommander la cuisinière qui convient parfaitement à votre style de vie.",
@@ -1545,6 +1565,7 @@
             "text" : [
                 {
                     "question" : "QUEL EST LE PLUS GROS PLAT QUE VOUS FAITES CUIRE RÉGULIÈREMENT?",
+                    "question_full" : "QUEL EST LE PLUS GROS PLAT QUE VOUS FAITES CUIRE RÉGULIÈREMENT?",
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la capacité?",
                     "explanation" : "Nos cuisinières sont offertes en différentes tailles et possèdent également des capacités uniques. Si nous pouvons comprendre la façon dont vous utilisez votre cuisinière, nous pouvons mieux recommander celle qui convient parfaitement à votre style de vie.",
@@ -1611,6 +1632,7 @@
             "text" : [
                 {
                     "question" : "Pourquoi cuisinez-vous?",
+                    "question_full" : "Pourquoi cuisinez-vous?",
                     "sub_question" : "Sélectionnez toutes les réponses pertinentes",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la cuisine?",
                     "explanation" : "Toutes nos cuisinières sont dotées de caractéristiques uniques. Nous voulons nous faire une meilleure idée de l’utilisation que vous faites de votre cuisinière afin de pouvoir recommander celle qui convient parfaitement à votre style de vie.",
@@ -1674,6 +1696,7 @@
             "text" : [
                 {
                     "question" : "Quel style de cuisinière préférez-vous?",
+                    "question_full" : "Quel style de cuisinière préférez-vous?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du style?", 
                     "explanation" : "Saviez-vous que les cuisines professionnelles comportent habituellement des cuisinières à commandes frontales? Une fois que nous comprenons vos préférences en matière de style, nous pouvons recommander la table de cuisson parfaite pour vous.",
@@ -1731,6 +1754,7 @@
             "text" : [
                 {
                     "question" : "COMMENT VOS AMIS VOUS DÉCRIRAIENT-ILS?",
+                    "question_full" : "COMMENT VOS AMIS VOUS DÉCRIRAIENT-ILS?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de ma cuisine?",
                     "explanation" : "Nos cuisinières sont toutes dotées de caractéristiques uniques. Nous voulons nous faire une meilleure idée de l’utilisation que vous en faites afin de pouvoir recommander la cuisinière qui répond parfaitement à vos besoins en matière de cuisson.",
@@ -1799,6 +1823,7 @@
             "text" : [
                 {
                     "question" : "VOUS ARRIVE-T-IL SOUVENT DE CUISINER UN PLAT DE VIANDE QUI REQUIERT UNE TEMPÉRATURE PRÉCISE?",
+                    "question_full" : "VOUS ARRIVE-T-IL SOUVENT DE CUISINER UN PLAT DE VIANDE QUI REQUIERT UNE TEMPÉRATURE PRÉCISE?",
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la température précise?",
                     "explanation" : "Saviez-vous que certaines de nos cuisinières sont équipées d’une sonde thermique? La technologie vous donne des résultats précis pour que vous sachiez quand votre plat est prêt.",
@@ -1855,6 +1880,7 @@
             "text" : [
                 {
                     "question" : "Votre cuisine est-elle équipée pour le gaz ou l’électricité?",
+                    "question_full" : "Votre cuisine est-elle équipée pour le gaz ou l’électricité?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du type d’alimentation?", 
                     "explanation" : "Certaines cuisines sont équipées d’une conduite de gaz. Nous avons besoin de connaître cette information pour recommander la cuisinière tout indiquée.",
@@ -1901,6 +1927,7 @@
             "text" : [
                 {
                     "question" : "QUELLES SONT LES RESTRICTIONS DE HAUTEUR ET DE LARGEUR DE VOTRE RÉFRIGÉRATEUR? ",
+                    "question_full" : "QUELLES SONT LES RESTRICTIONS DE HAUTEUR ET DE LARGEUR DE VOTRE RÉFRIGÉRATEUR? ",
                     "sub_question" : "Faites glisser et cliquez pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
                     "explanation" : "Nos réfrigérateurs sont offerts en de nombreuses tailles; nous voulons nous assurer de recommander celui qui convient parfaitement à votre espace.",
@@ -2209,6 +2236,7 @@
             "text" : [
                 {
                     "question" : "L’ÉCONOMIE D’ÉNERGIE EST-ELLE IMPORTANTE POUR VOTRE MÉNAGE?",
+                    "question_full" : "L’ÉCONOMIE D’ÉNERGIE EST-ELLE IMPORTANTE POUR VOTRE MÉNAGE?",
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de l’énergie?",
                     "explanation" : "Tous nos électroménagers consomment l’énergie différemment. En comprenant votre consommation d’énergie, nous pourrons plus facilement trouver l’appareil le mieux adapté à votre style de vie. ",
@@ -2270,6 +2298,7 @@
             "text" : [
                 {
                     "question" : "JE COMPTE SUR MON RÉFRIGÉRATEUR POUR CONSERVER MA NOURRITURE POUR...",
+                    "question_full" : "JE COMPTE SUR MON RÉFRIGÉRATEUR POUR CONSERVER MA NOURRITURE POUR...",
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la capacité?",
                     "explanation" : "Nous voulons nous faire une meilleure idée de la façon dont vous utilisez votre frigo et de ce que vous y mettez afin de pouvoir trouver celui qui convient le mieux à votre style de vie.",
@@ -2349,6 +2378,7 @@
             "text" : [
                 {
                     "question" : "JE COMPTE SUR MON RÉFRIGÉRATEUR POUR...",
+                    "question_full" : "JE COMPTE SUR MON RÉFRIGÉRATEUR POUR...",
                     "sub_question" : "Sélectionnez toutes les réponses pertinentes",
                     "explanation_title" : "Pourquoi me posez-vous une question sur la façon dont j’utilise mon réfrigérateur?",
                     "explanation" : "Nos réfrigérateurs sont conçus avec soin, sur tous les plans. En sachant mieux ce que vous mettez dans votre frigo, nous pourrons mieux recommander celui qui convient à votre style de vie.",
@@ -2422,6 +2452,7 @@
             "text" : [
                 {
                     "question" : "Votre cuisine est-elle actuellement équipée d’une conduite d'eau?",
+                    "question_full" : "Votre cuisine est-elle actuellement équipée d’une conduite d'eau?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de l’eau?",
                     "explanation" : "Saviez-vous que votre cuisine a besoin d’une conduite d’eau pour permettre au réfrigérateur de distribuer de l’eau? Certains de nos modèles comportent un distributeur d’eau. En comprenant votre consommation d’eau, nous pouvons recommander le réfrigérateur qui répondra le mieux à vos besoins.",
@@ -2487,6 +2518,7 @@
             "text" : [
                 {
                     "question" : "J’aime ajouter des glaçons à...",
+                    "question_full" : "J’aime ajouter des glaçons à...",
                     "sub_question" : "Sélectionnez toutes les réponses pertinentes",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet des glaçons?",
                     "explanation" : "Saviez-vous que votre cuisine a besoin d’une conduite d’eau pour permettre au réfrigérateur de distribuer des glaçons? Certains de nos modèles comportent un distributeur de glaçons. En comprenant votre consommation de glaçons, nous pouvons recommander un réfrigérateur adapté à votre style de vie.",
@@ -2578,6 +2610,7 @@
             "text" : [
                 {
                     "question" : "Je veux que ma cuisine ait l’air de ceci...",
+                    "question_full" : "Je veux que ma cuisine ait l’air de ceci...",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du style?",
                     "explanation" : "Puisque certains réfrigérateurs sont plus profonds que la profondeur de comptoir typique, nous devons savoir jusqu’à quel point le fait d’avoir un réfrigérateur affleurant au comptoir influence votre décision d’achat.",
@@ -2635,6 +2668,7 @@
             "text" : [
                 {
                     "question" : "COMMENT FAITES-VOUS L’ÉPICERIE?",
+                    "question_full" : "COMMENT FAITES-VOUS L’ÉPICERIE?",
                     "sub_question" : "Sélectionnez toutes les réponses pertinentes",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de l’épicerie?",
                     "explanation" : "Nos réfrigérateurs sont conçus avec des caractéristiques uniques. En comprenant la façon dont vous magasinez, nous en apprenons davantage sur l’utilisation que vous faites de votre réfrigérateur et pouvons mieux recommander celui qui convient parfaitement à votre style de vie.",
@@ -2698,6 +2732,7 @@
             "text" : [
                 {
                     "question" : "QUE TROUVERIONS-NOUS À L’INTÉRIEUR DE VOTRE LAVE-VAISSELLE EN CE MOMENT?",
+                    "question_full" : "QUE TROUVERIONS-NOUS À L’INTÉRIEUR DE VOTRE LAVE-VAISSELLE EN CE MOMENT?",
                     "sub_question" : "Sélectionnez toutes les réponses pertinentes",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de ce que je lave?",
                     "explanation" : "Si nous savons ce que vous mettez au lave-vaisselle, nous pourrons recommander des options qui donneront un nouvel éclat à chaque article.",
@@ -2798,6 +2833,7 @@
             "text" : [
                 {
                     "question" : "COMBIEN DE FOIS PAR SEMAINE UTILISEZ-VOUS VOTRE LAVE-VAISSELLE? ",
+                    "question_full" : "COMBIEN DE FOIS PAR SEMAINE UTILISEZ-VOUS VOTRE LAVE-VAISSELLE? ",
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la capacité?",
                     "explanation" : "Lorsqu’il s’agit de laver la vaisselle, il n’y a pas de tâche trop grande ou trop petite. En comprenant ce que vous mettez au lave-vaisselle, nous pouvons trouver ce qui vous convient parfaitement.",
@@ -2894,6 +2930,7 @@
             "text" : [
                 {
                     "question" : "LORSQUE VOUS MAGASINEZ POUR UN LAVE-VAISSELLE, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
+                    "question_full" : "LORSQUE VOUS MAGASINEZ POUR UN LAVE-VAISSELLE, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
                     "sub_question" : "FAITES GLISSER POUR REARRANGER:<span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>6</span> À LA MOINS IMPORTANTE",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de mes préférences?",
                     "explanation" : "En comprenant vos priorités en matière de lavage de vaisselle, nous pouvons mieux recommander un lave-vaisselle dont les caractéristiques conviennent à votre style de vie.",
@@ -2977,6 +3014,7 @@
             "text" : [
                 {
                     "question" : "L’ÉCONOMIE D’ÉNERGIE EST-ELLE IMPORTANTE POUR VOTRE MÉNAGE?",
+                    "question_full" : "L’ÉCONOMIE D’ÉNERGIE EST-ELLE IMPORTANTE POUR VOTRE MÉNAGE?",
                     "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de l’énergie?",
                     "explanation" : "Tous nos électroménagers consomment l’énergie différemment. En comprenant votre consommation d’énergie, nous pourrons plus facilement trouver l’appareil le mieux adapté à votre style de vie. ",
@@ -3041,6 +3079,7 @@
             "text" : [
                 {
                     "question" : "QUAND METTEZ-VOUS HABITUELLEMENT LE LAVE-VAISSELLE EN MARCHE?",
+                    "question_full" : "QUAND METTEZ-VOUS HABITUELLEMENT LE LAVE-VAISSELLE EN MARCHE?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du moment de la mise en marche?",
                     "explanation" : "Tout comme chacun de vos invités, les lave-vaisselle offrent différents profils sonores. En sachant à quel moment vous mettez le vôtre en marche, nous pouvons déterminer quel appareil vous convient le mieux.",
@@ -3100,6 +3139,7 @@
             "text" : [
                 {
                     "question" : "VIVEZ-VOUS DANS UN ESPACE OUVERT?",
+                    "question_full" : "VIVEZ-VOUS DANS UN ESPACE OUVERT?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de mon espace?",
                     "explanation" : "Si vous vivez dans un espace ouvert, nous voulons en tenir compte afin de recommander l’appareil tout indiqué pour réduire le bruit au minimum.",
@@ -3141,6 +3181,7 @@
             "text" : [
                 {
                     "question" : "AVANT DE METTRE EN MARCHE LE LAVE-VAISSELLE, IL EST...",
+                    "question_full" : "AVANT DE METTRE EN MARCHE LE LAVE-VAISSELLE, IL EST...",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de l’organisation?",
                     "explanation" : "Après avoir évalué votre technique, nous pouvons proposer des façons d’optimiser l’organisation pour votre foyer.",
@@ -3206,6 +3247,7 @@
             "text" : [
                 {
                     "question" : "SÉLECTIONNEZ VOTRE PRÉFÉRENCE EN MATIÈRE DE STYLE...",
+                    "question_full" : "SÉLECTIONNEZ VOTRE PRÉFÉRENCE EN MATIÈRE DE STYLE...",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du style?",
                     "explanation" : "Comme vous, les lave-vaisselle sont uniques. En nous aidant à déterminer votre style, nous pouvons déterminer quel modèle vous convient le mieux.",
