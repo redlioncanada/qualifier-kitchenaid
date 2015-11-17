@@ -40,7 +40,7 @@
 				</div>
 				<div class="bottom-nav-inner-inner">
 					<div ng-repeat="q in questionsData.scoringQuestions | orderByOrder" class="icon-nav-wrap" ng-if="byName(q) && q.thumbnail_text != 'Appliance' && q.thumbnail_text != 'Cooking'">
-				    	<a ng-init="a=hasAnswer(q);q.a_thumbnail_type=setType(q,a)" class="icon-nav selected" ng-click="navToQuestions(q)" popover-placement="top" popover-append-to-body="true" popover-title="{{isEnglish ? q.thumbnail_text : q.thumbnail_text_fr}}" popover="{{q.show.question}}" popover-trigger="mouseenter">
+				    	<a ng-init="a=hasAnswer(q);q.a_thumbnail_type=setType(q,a)" class="icon-nav selected" ng-click="navToQuestions(q)" popover-placement="top" popover-append-to-body="true" popover-title="{{isEnglish ? q.thumbnail_text : q.thumbnail_text_fr}}" popover="{{q.show.question.replace('<br/>',' ').replace('<br />',' ')}}" popover-trigger="mouseenter">
 					      	<img ng-if="isTabletWidthOrLess" ng-src="img/mbl/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
                             <img ng-if="!isTabletWidthOrLess" ng-src="img/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
 				    	</a>      
