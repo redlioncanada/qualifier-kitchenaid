@@ -1687,7 +1687,8 @@
                             "thumbnail_current" : "img/icon-style-current.png",
                             "value" : "yes",
                             "scoring" : {
-                                "gas" : 1
+                                "frontControl" : 3,
+                                "rearControl" : -3
                             },
                             "order" : 1
                         },
@@ -1698,7 +1699,8 @@
                             "thumbnail_current" : "img/icon-style-current.png",
                             "value" : "no",
                             "scoring" : {
-                                "gas" : -30
+                                "rearControl" : 3,
+                                "frontControl" : -3
                             },
                             "order" : 2
                         }
@@ -1710,7 +1712,8 @@
                             "thumbnail_current" : "img/icon-style-current.png",
                             "value" : "nopref",
                             "scoring" : {
-                                "gas" : -30
+                                "frontControl" : 1,
+                                "rearControl" : -1
                             },
                             "order" : 3
                         }
@@ -2431,8 +2434,9 @@
                             "thumbnail" : "img/icon-water.png",
                             "thumbnail_current" : "img/icon-water-current.png",
                             "scoring" : {
-                                "filtered" : 1,
-                                "exteriorDispenser" : 1
+                                "filtered" : 3,
+                                "exteriorDispenser" : 3,
+                                "indoorDispenser" : 3
                             },
                             "order" : 1
                         },
@@ -2442,7 +2446,9 @@
                             "thumbnail" : "img/icon-water.png",
                             "thumbnail_current" : "img/icon-water-current.png",
                             "scoring" : {
-                                "indoorDispenser" : 1
+                                "filtered" : -3,
+                                "exteriorDispenser" : -3,
+                                "indoorDispenser" : -3
                             },
                             "order" : 2
                         },
@@ -2453,7 +2459,8 @@
                             "thumbnail_current" : "img/icon-water-current.png",
                             "scoring" : {
                                 "filtered" : 1,
-                                "exteriorDispenser" : 1
+                                "exteriorDispenser" : 1,
+                                "indoorDispenser" : 1
                             },
                             "order" : 3
                         },
@@ -2586,7 +2593,7 @@
                             "image" : "img/standard-depth.png",
                             "value" : 0,
                             "scoring" : {
-                                "standardDepth" : 1
+                                "standardDepth" : 3
                             },
                             "order" : 1
                         },
@@ -2598,7 +2605,7 @@
                             "image" : "img/counter-depth.png",
                             "value" : 1,
                             "scoring" : {
-                                "counterDepth" : 1
+                                "counterDepth" : 3
                             },
                             "order" : 2
                         },
@@ -2610,7 +2617,7 @@
                             "image" : "img/built-in.png",
                             "value" : 2,
                             "scoring" : {
-                                "builtIn" : 1
+                                "builtIn" : 3
                             },
                             "order" : 3
                         }
