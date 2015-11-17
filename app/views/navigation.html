@@ -56,11 +56,11 @@
 
 					<div class="buttonnav-mobile">
 						<a class="banner backtoresults-mobile" ng-click="next(true)" ng-if="!!resultsTouched && !!questionsData.question && isTabletWidthOrLess">
-							<div ng-bind-html="brandData.apptext.backtoresults.replace('<br />',' ')"></div>
+				            <div class="btn-wrapper"><div ng-bind-html="brandData.apptext.backtoresults.replace('<br />',' ')"></div></div>
 						</a>
 
 						<a class="banner startover-mobile" ng-click="startOver()" ng-if="isTabletWidthOrLess">
-							<div ng-bind-html="brandData.apptext.startover.replace('<br />',' ')"></div>
+				            <div class="btn-wrapper"><div ng-bind-html="brandData.apptext.startover.replace('<br />',' ')"></div></div>
 						</a>
 					</div>
 				</div>

@@ -353,7 +353,7 @@ div.mobile-app-nav-arrows {
 	}
 	.icon-nav-wrap {
 		display: inline-block;
-		float: left;
+        float: left;
         margin: 0 9px;
 		a {
 			cursor: auto;
@@ -366,8 +366,8 @@ div.mobile-app-nav-arrows {
     }
   
     .icon-img {
-        max-width: 41px;
-        max-height: 41px;
+        max-width: 37px;
+        max-height: 38px;
         cursor: auto;
         // &.current {
         // 	display: none;
@@ -376,12 +376,22 @@ div.mobile-app-nav-arrows {
   
 	.icon-img-current {
 		// display: none;
-		max-width: 52px;
-		max-height: 53px;
+		max-width: 37px;
+		max-height: 38px;
 		// &.current {
 		// 	display: inline-block;
 		// }
 	}
+    
+    .icon-img[ng-if="isTabletWidthOrLess"] {
+        max-width: 15px;
+		max-height: 15px;
+    }
+    .icon-img-current[ng-if="isTabletWidthOrLess"] {
+        max-width: 15px;
+		max-height: 15px;
+    }
+
 
 }
 

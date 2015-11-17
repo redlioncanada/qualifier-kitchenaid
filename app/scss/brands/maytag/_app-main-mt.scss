@@ -327,30 +327,6 @@ header.header-desktop {
 		float: right;
 		margin-top: 20px;
 	}
-	.buttonnav-mobile {
-   		width: 100%;
-   		text-transform: uppercase;
-   		margin: 40px 0 15px 0;
-
-   		div {
-   			color: white;
-   			background-color: #ac080f;
-   			height: 30px;
-   			line-height: 30px;
-   			margin: 0 auto;
-   			position: relative;
-   			top: 5px;
-   			font-family: $AV-Light;	   		
-   		}
-
-   		.backtoresults-mobile div {
-   			margin-bottom: 4px;
-   		}
-
-   }
-   div.startover-mobile {
-   		margin: 5px 0 15px 0;
-   }
 
 	.backtoresults-btn-wrap {
 		display: inline-block;
@@ -425,27 +401,41 @@ header.header-desktop {
 }
 
 .buttonnav-mobile {
-   		width: 100%;
-   		text-transform: uppercase;
-   		margin: 40px 0 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 15px auto 15px auto;
+    text-align: center;
+    a.banner {
+        display: inline-block;
+        margin: 0 5px;
+        cursor: pointer;
+        .btn-wrapper {
+            border-radius: 50%;
+            color: #777;
+            background-color: white;
+            border: 1px solid #777;
+            height: 60px;
+            width: 60px;
+            margin: 0 auto;
+            position: relative;
+            float: none;
 
-   		div {
-   			color: white;
-   			background-color: #002e5f;
-   			height: 30px;
-   			line-height: 30px;
-   			margin: 0 auto;
-   			position: relative;
-   			top: 5px;
-   			font-family: $AV-Light;
-   			text-align: center;
-   		}
-
-   		.backtoresults-mobile div {
-   			margin-bottom: 4px;
-   		}
-
-   }
+            div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                font-size: 11px;
+                line-height: 11px;
+                font-family: $AV-Light;
+            }
+        }
+        .btn-wrapper:hover {
+            border: 1px solid #ac080f;
+        }
+    }
+}
 
 //popover styles
 .popover-title {
