@@ -28,7 +28,7 @@
 		"emailAddressTitle" : "From:",
 		"emailAddressPlaceholder" : "yourfriend@gmail.com",
 		"emailSubject" : "I found the perfect {{appliance}} and wanted to share with you",
-		"emailMessage" : "Finding the right appliance is hard. But I used {{brand}}'s new tool to answer a few simple questions and found the perfect {{appliance}}} for my lifestyle. I wanted to share my results with you and also the link so you can explore, too!\r\n\r\nTry it for yourself here: {{link}}",
+		"emailMessage" : "Finding the right appliance is hard. But I used {{brand}}'s new tool to answer a few simple questions and found the perfect {{appliance}} for my lifestyle. I wanted to share my results with you and also the link so you can explore, too!\r\n\r\nTry it for yourself here: {{link}}",
 		"emailMessagePlaceholder" : "Enter a message",
 		"emailMessageSent" : "Your message has been sent",
 		"emailMessageError" : "There was an error",
