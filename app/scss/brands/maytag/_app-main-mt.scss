@@ -269,6 +269,8 @@ header.header-desktop {
 	    -moz-transition: all 0.3s ease;
 	    -ms-transition: all 0.3s ease;
 	    transition: all 0.3s ease;
+	    position: absolute;
+	    z-index: 1;
 		&:hover:not(.disabled) {
 			opacity: 1;
 			.btn {
@@ -474,6 +476,8 @@ header.header-desktop {
 .bottom-nav-inner-inner {
 	display: inline-block;
 	margin: 0 auto;
+	position: relative;
+	z-index: 2;
 }
 
 .bottom-nav-inner {
