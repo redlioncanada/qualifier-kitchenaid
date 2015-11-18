@@ -1409,7 +1409,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "Help me host multi-<br />cousre dinners parties",
+							"text" : "Help me host multi-<br />course dinners parties",
 							"value" : "host parties",
 							"scoring" : {
 								"warmingDrawer" : 1,
@@ -2486,7 +2486,7 @@
 							"order" : 2
 						},
 						{
-							"text" : "No - I don't have a waterline but<br />would consider installing one so our<br />fridge could dispense water and ice",
+							"text" : "No – I don’t have a waterline<br />but would consider installing one",
 							"value" : "glass of filtered water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
