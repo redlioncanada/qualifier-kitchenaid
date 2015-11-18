@@ -1358,7 +1358,7 @@
                             "value" : 2,
                             "text" : "36\"",
                             "scoring" : {
-                                "width36" : -30
+                                "width36" : 5
                             }
                         }
                     }
