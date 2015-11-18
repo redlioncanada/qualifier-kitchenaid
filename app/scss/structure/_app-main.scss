@@ -225,6 +225,7 @@ div.mobile-app-nav-arrows {
 
 			.results-menu-tab {
 				margin: 0 auto;
+                margin-top: 1px;
 				width: 90px;
 				display: block;
 			}
@@ -1097,11 +1098,11 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 		.jslider {
 			div.jslider-pointer {
                 margin-top: -1px !important;
-				left: 2px;
+				left: 4px;
 				width: 43px;
 				height: 37px;
-				background: url("../img/slider-pointer-small.png") !important;
-				background-size: 43px 37px !important;
+				background: url("../img/slider-pointer-small.png") no-repeat !important;
+				background-size: 37px 37px !important;
 			}
 
 			.jslider-bg {
@@ -1740,7 +1741,7 @@ div[ng-class="fr_CA"] {
                     width: 43px !important;
                     height: 37px !important;
                     background: url('../img/slider-pointer-small.png') center center no-repeat !important;
-                    background-size: 43px 37px !important;
+                    background-size: 40px 37px !important;
                     margin-left: -42px !important;
                 }
             }

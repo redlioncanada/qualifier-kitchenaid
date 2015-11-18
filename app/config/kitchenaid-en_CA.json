@@ -386,7 +386,7 @@
 			"thumbnail_text" : "Features",
 			"text" : [
 				{
-					"question" : "WHEN SHOPPING FOR A COOKTOP, WHAT FEATURES<br />ARE MOST IMPORTANT TO YOUR PURCHASE DECISION?",
+					"question" : "WHEN SHOPPING FOR A COOKTOP, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION?",
 					"question_full" : "WHEN SHOPPING FOR A COOKTOP, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION?",
 					"sub_question" : "DRAG TO REORDER. <span>1</span> IS MOST IMPORTANT AND <span>5</span> IS LEAST",
 					"explanation_title" : "Why are you asking me about preference?",
@@ -1826,7 +1826,7 @@
 			"thumbnail_current" : "img/icon-features-current.png",
 			"text" : [
 				{
-					"question" : "HOW OFTEN DO YOU FIND YOURSELF COOKING<br />A MEAT DISH THAT REQUIRES A PRECISE TEMPERATURE?",
+					"question" : "HOW OFTEN DO YOU FIND YOURSELF COOKING A MEAT DISH THAT REQUIRES A PRECISE TEMPERATURE?",
 					"question_full" : "HOW OFTEN DO YOU FIND YOURSELF COOKING A MEAT DISH THAT REQUIRES A PRECISE TEMPERATURE?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about temperature precision?",
@@ -2928,7 +2928,7 @@
 			"thumbnail_text" : "Features",
 			"text" : [
 				{
-					"question" : "WHEN SHOPPING FOR A DISHWASHER, WHAT FEATURES ARE<br />MOST IMPORTANT TO YOUR PURCHASE DECISION?",
+					"question" : "WHEN SHOPPING FOR A DISHWASHER, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION?",
 					"question_full" : "WHEN SHOPPING FOR A DISHWASHER, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION?",
 					"sub_question" : "DRAG TO REORDER. <span>1</span> IS MOST IMPORTANT AND <span>6</span> IS LEAST",
 					"explanation_title" : "Why are you asking me about preference?",
