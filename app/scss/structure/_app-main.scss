@@ -385,12 +385,12 @@ div.mobile-app-nav-arrows {
 	}
     
     .icon-img[ng-if="isTabletWidthOrLess"] {
-        max-width: 15px;
-		max-height: 15px;
+        max-width: 25px;
+		max-height: 25px;
     }
     .icon-img-current[ng-if="isTabletWidthOrLess"] {
-        max-width: 15px;
-		max-height: 15px;
+        max-width: 25px;
+		max-height: 25px;
     }
 
 
@@ -1059,6 +1059,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 }
 
 @media(max-width:580px) {
+    .btn-next, .btn-prev {bottom: 19px !important;}
     .app-content-main-bottom {
         padding-top: 0;
     }
