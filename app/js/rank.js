@@ -15,7 +15,6 @@ angular.module('App')
                 .addClass('dragging-rank')
                 .removeClass('as-sortable-item')
                 .attr('as-sortable-item', '')
-                .css('width', $($element).find('.rank-answers-list li').width())
                 .hide()
                 .appendTo('body');
 
@@ -41,6 +40,7 @@ angular.module('App')
                 position: 'absolute',
                 top: e.originalEvent.touches[0].pageY - $scope.localY,
                 left: e.originalEvent.touches[0].pageX - $scope.localX,
+                width: $($element).find('.rank-answers-list li.answer').first().width(),
                 display: 'block'
             })
         } else {
