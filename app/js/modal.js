@@ -21,11 +21,11 @@ angular.module('App')
     }
 
     $scope.setMessage = function() {
-      $scope.email.message = apptext.emailMessage.replace('{{brand}}', apptext.apptitle).replace('{{appliance}}', applianceType).replace('{{link}}', link);
+      $scope.email.message = apptext.emailMessage.replace('{{brand}}', apptext.apptitle.toLowerCase()).replace('{{appliance}}', applianceType).replace('{{link}}', link);
     }
 
     $scope.setSubject = function() {
-      $scope.email.subject = apptext.emailSubject.replace('{{brand}}', apptext.apptitle).replace('{{appliance}}', applianceType);
+      $scope.email.subject = apptext.emailSubject.replace('{{brand}}', apptext.apptitle.toLowerCase()).replace('{{appliance}}', applianceType);
     }
 
 }]);
