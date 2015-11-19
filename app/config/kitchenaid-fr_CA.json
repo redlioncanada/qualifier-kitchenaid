@@ -61,6 +61,7 @@
                             "displayName": "Appareils de cuisson",
                             "classes" : "category cooking",
                             "image" : "img/cooking.png",
+                            "image_alt" : "Appareils de cuisson",
                             
                             "thumbnail" : "img/walloven-double.jpg",
                             "thumbnail_current" : "img/walloven-double.jpg",
@@ -78,7 +79,7 @@
                             "displayName": "Lave-vaisselle",
                             "classes" : "category dishwasher",
                             "image" : "img/dishwasher.png",
-                            
+                            "image_alt" : "Appareils de cuisson",
                             "thumbnail" : "img/cat-dishwasher.jpg",
                             "thumbnail_current" : "img/cat-dishwasher.jpg",
                             "thumbnail_text" : "Dishwasher",
@@ -95,7 +96,7 @@
                             "displayName": "Réfrigérateur",
                             "classes" : "category fridge",
                             "image" : "img/fridge.png",
-                            
+                            "image_alt" : "Réfrigérateurs",
                             "thumbnail" : "img/cat-fridge.jpg",
                             "thumbnail_current" : "img/cat-fridge.jpg",
                             "thumbnail_text" : "Refrigerators",
@@ -128,6 +129,7 @@
                             "displayName": "Tables de cuisson",
                             "classes" : "sub-category wallovens",
                             "image" : "img/cook-top.png",
+                            "image_alt" : "Tables De Cuisson",
                             "thumbnail" : "img/walloven-single.jpg",
                             "thumbnail_current" : "img/walloven-single.jpg",
                             "thumbnail_text" : "Cooktops",
@@ -144,6 +146,7 @@
                             "displayName": "Cuisinières",
                             "classes" : "sub-category ranges",
                             "image" : "img/range.png",
+                            "image_alt" : "Cuisinières",
                             "thumbnail" : "img/cat-cooking-sub-free-range-1-electric.jpg",
                             "thumbnail_current" : "img/cat-cooking-sub-free-range-1-electric.jpg",
                             "thumbnail_text" : "Ranges",
@@ -160,6 +163,7 @@
                             "displayName": "Fours encastrés",
                             "classes" : "sub-category wallovens",
                             "image" : "img/walloven.png",
+                            "image_alt" : "Fours Encastrés",
                             "thumbnail" : "img/walloven-single.jpg",
                             "thumbnail_current" : "img/walloven-single.jpg",
                             "thumbnail_text" : "Wall Oven",
@@ -176,6 +180,7 @@
                             "displayName": "Hottes et ventilation",
                             "classes" : "sub-category wallovens",
                             "image" : "img/vents.png",
+                            "image_alt" : "Hottes Et Ventilation",
                             "thumbnail" : "img/walloven-single.jpg",
                             "thumbnail_current" : "img/walloven-single.jpg",
                             "thumbnail_text" : "Vents and Hoods",
@@ -350,6 +355,7 @@
                             "thumbnail_current" : "img/icon-style-current.png",
                             "text" : "Classique",
                             "value" : "classic",
+                            "image_alt" : "Classique",
                             "image" : "img/classic.png",
                             "scoring" : {
                                 "electric" : 3,
@@ -363,6 +369,7 @@
                             "text" : "Moderne",
                             "value" : "modern",
                             "image" : "img/modern.png",
+                            "image_alt" : "Moderne",
                             "scoring" : {
                                 "induction" : 3,
                                 "electric" : -1
@@ -375,6 +382,7 @@
                             "text" : "Professionnel",
                             "value" : "professional",
                             "image" : "img/professional.png",
+                            "image_alt" : "Professionnel",
                             "scoring" : {
                                 "gas" : 3
                             },
@@ -589,8 +597,10 @@
                     "answers" : [
                         {
                             "text" : "Gaz",
-                            "image" : "img/icon-thumb-gas.png",
-                            "hover" : "img/icon-thumb-gas-active.png",
+                           "image" : "img/icon-thumb-gas.png",
+                            "image_alt" : "Au Gaz",
+							"hover" : "img/icon-thumb-gas-active.png",
+                            "image_hover_alt" : "Au Gaz",
                             "thumbnail" : "img/icon-fueltype.png",
                             "thumbnail_current" : "img/icon-fueltype-current.png",
                             "value" : "yes",
@@ -598,8 +608,10 @@
                         },
                         {
                             "text" : "Électricité",
-                            "image" : "img/icon-thumb-electric.png",
-                            "hover" : "img/icon-thumb-electric-active.png",
+                            "image" : "img/icon-electric-gas.png",
+                            "image_alt" : "Électricité",
+							"hover" : "img/icon-thumb-eletric-active.png",
+                            "image_hover_alt" : "Électricité",
                             "thumbnail" : "img/icon-fueltype.png",
                             "thumbnail_current" : "img/icon-fueltype-current.png",
                             "value" : "no",
@@ -726,8 +738,11 @@
                     "oneAnswer" : true,
                     "classes" : "vents  singleAns",
                     "answers" : [
-                        {   "image" : "img/icon-thumb-oui.png",
+                        {   
+                            "image" : "img/icon-thumb-oui.png",
+                            "image_alt" : "Oui",
                             "hover" : "img/icon-thumb-oui-active.png",
+                            "image_hover_alt" : "Oui",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
                             "text" : "",
@@ -742,7 +757,9 @@
 
                         {
                             "image" : "img/icon-thumb-non.png",
+                            "image_alt" : "Non",
                             "hover" : "img/icon-thumb-non-active.png",
+                            "image_hover_alt" : "Non",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
                             "text" : "",
@@ -778,7 +795,9 @@
                     "answers" : [
                         {
                             "image" : "img/icon-thumb-oui.png",
+                            "image_alt" : "Oui",
                             "hover" : "img/icon-thumb-oui-active.png",
+                            "image_hover_alt" : "Oui",
                             "thumbnail" : "img/icon-speed.png",
                             "thumbnail_current" : "img/icon-speed-current.png",
                             "text" : "",
@@ -790,7 +809,9 @@
                         },
                         {
                             "image" : "img/icon-thumb-non.png",
+                            "image_alt" : "Non",
                             "hover" : "img/icon-thumb-non-active.png",
+                            "image_hover_alt" : "Non",
                             "thumbnail" : "img/icon-speed.png",
                             "thumbnail_current" : "img/icon-speed-current.png",
                             "text" : "",
@@ -1053,6 +1074,7 @@
                             "text" : "Four encastré simple",
                             "value" : "single",
                             "image" : "img/single-wall-oven.png",
+                            "image_alt" : "Four Encastré Simple",
                             "scoring" : {
                                 "single" : 1,
                                 "combination" : -30,
@@ -1066,6 +1088,7 @@
                             "text" : "Four combiné avec four à micro-ondes",
                             "value" : "combo",
                             "image" : "img/microwave-oven-combo.png",
+                            "image_alt" : "Four Combiné Avec Four À Micro-ondes",
                             "scoring" : {
                                 "single" : -30,
                                 "combination" : 1,
@@ -1079,6 +1102,7 @@
                             "text" : "Four encastré double",
                             "value" : "double",
                             "image" : "img/double-wall-oven.png",
+                            "image_alt" : "Four Encastré Double",
                             "scoring" : {
                                 "single" : -30,
                                 "combination" : -30,
@@ -1092,6 +1116,7 @@
                             "text" : "Aucune restriction",
                             "value" : "nopref",
                             "image" : "img/no-preference-oven.png",
+                            "image_alt" : "Aucune Restriction",
                             "scoring" : {
                                 "single" : -30,
                                 "combination" : -30,
@@ -1709,6 +1734,7 @@
                         {
                             "text" : "Commandes frontales",
                             "image" : "img/front-control.png",
+                            "image_alt" : "Commandes Frontales",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
                             "value" : "yes",
@@ -1721,6 +1747,7 @@
                         {
                             "text" : "Panneau de commandes arrière",
                             "image" : "img/rear-control.png",
+                            "image_alt" : "Panneau De Commandes Arrière",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
                             "value" : "no",
@@ -1734,6 +1761,7 @@
                         {
                             "text" : "Aucune restriction",
                             "image" : "img/no-preference-control.png",
+                            "image_alt" : "Aucune Restriction",
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
                             "value" : "nopref",
@@ -1894,7 +1922,9 @@
                             "text" : "Gaz",
                             "text_more" : "Maintenant, nous cuisinons sur des flammes",
                             "image" : "img/icon-thumb-gas.png",
-                            "hover" : "img/icon-thumb-gas-active.png",
+                            "image_alt" : "Au Gaz",
+							"hover" : "img/icon-thumb-gas-active.png",
+                            "image_hover_alt" : "Au Gaz",
                             "thumbnail" : "img/icon-fueltype.png",
                             "thumbnail_current" : "img/icon-fueltype-current.png",
                             "value" : "yes",
@@ -1907,7 +1937,9 @@
                             "text" : "Électricité",
                             "text_more" : "We just plug-in and go(FR)",
                             "image" : "img/icon-thumb-electric.png",
-                            "hover" : "img/icon-thumb-electric-active.png",
+                            "image_alt" : "Électricité",
+							"hover" : "img/icon-thumb-electric-active.png",
+                            "image_hover_alt" : "Électricité",
                             "thumbnail" : "img/icon-fueltype.png",
                             "thumbnail_current" : "img/icon-fueltype-current.png",
                             "value" : "no",
@@ -2627,6 +2659,7 @@
                             "text" : "Réfrigérateur à profondeur standard",
                             "subtext" : "peu m’importe si mon réfrigérateur est aligné à mes armoires",
                             "image" : "img/standard-depth.png",
+                            "image_alt" : "Réfrigérateur Encastré",
                             "value" : 0,
                             "scoring" : {
                                 "standardDepth" : 3
@@ -2639,6 +2672,7 @@
                             "text" : "Réfrigérateur à profondeur de comptoir",
                             "subtext" : "je veux que mon réfrigérateur soit aligné à mes armoires",
                             "image" : "img/counter-depth.png",
+                            "image_alt" : "Réfrigérateur À Profondeur De Comptoir",
                             "value" : 1,
                             "scoring" : {
                                 "counterDepth" : 3
@@ -2651,6 +2685,7 @@
                             "text" : "Réfrigérateur encastré",
                             "subtext" : "Je veux pouvoir personnaliser l’extérieur de mon réfrigérateur",
                             "image" : "img/built-in.png",
+                            "image_alt" : "Réfrigérateur À Profondeur Standard",
                             "value" : 2,
                             "scoring" : {
                                 "builtIn" : 3
@@ -3154,6 +3189,7 @@
                             "thumbnail_current" : "img/icon-noise-current.png",
                             "text" : "Oui – Ma cuisine donne sur une autre pièce",
                             "image" : "img/Dishwasher_Q5_MT-open-concept-yes.png",
+                            "image_alt" : "Oui",
                             "value" : "yes",
                             "scoring" : {
                                  "quiet" : 1
@@ -3165,6 +3201,7 @@
                             "thumbnail_current" : "img/icon-noise-current.png",
                             "text" : "Non – Ma cuisine est une pièce séparée",
                             "image" : "img/Dishwasher_Q5_MT-open-concept-no.png",
+                            "image_alt" : "Non",
                             "value" : "no",
                             "scoring" : {
                             },
@@ -3263,6 +3300,7 @@
                             "text" : "Poignée creusée",
                             "value" : "Pocket Handle",
                             "image" : "img/pocket-handle.png",
+                            "image_alt" : "Poignée Extérieure",
                             "scoring" : {
                                 "FID" : -1,
                                 "pocketHandleConsole" : 5,
@@ -3276,6 +3314,7 @@
                             "text" : "Poignée extérieure",
                             "value" : "Exterior Handle",
                             "image" : "img/exterior-handle.png",
+                            "image_alt" : "Poignée Creusée",
                             "scoring" : {   
                                 "FID" : 5,
                                 "pocketHandleConsole" : -1,
@@ -3289,6 +3328,7 @@
                             "text" : "Panneau de recouvrement personnalisé",
                             "value" : "Custom Panel",
                             "image" : "img/custom-panel.png",
+                            "image_alt" : "Panneau De Recouvrement Personnalisé",
                             "scoring" : {   
                                 "FID" : -1,
                                 "pocketHandleConsole" : -1,
@@ -3302,6 +3342,7 @@
                             "text" : "Aucune restriction",
                             "value" : "No Preference",
                             "image" : "img/no-preference-panel.png",
+                            "image_alt" : "Aucune Restriction",
                             "scoring" : {   
                                 "panelReady" : 5
                             },
