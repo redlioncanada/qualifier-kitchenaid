@@ -53,8 +53,11 @@ $opacityTiming: 0.5s;
 			-o-transition: opacity $opacityTiming ease-in-out;
 			transition: opacity $opacityTiming ease-in-out;
 		}
+        &:hover img.normal {
+			opacity: 0.3;
+		}
         &:hover > .category-name {
-			border-bottom: 2px rgba(172, 8, 15, 0.5) solid;
+			border-bottom: 2px #AC080F solid;
 		}
 		&.selected {
 			img.normal {
@@ -62,4 +65,14 @@ $opacityTiming: 0.5s;
 			}
 		}
 	}
+}
+
+@media(max-width: 1023px) {
+    .app-answers {
+        .sub-category {
+            &:hover img.normal {
+                opacity: 1;
+            }
+        }
+    }
 }
