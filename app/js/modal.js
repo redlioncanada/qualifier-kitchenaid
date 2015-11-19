@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('App')
-  .controller('ModalCtrl', ['$modalInstance', 'appliance', 'link', '$scope', '$rootScope', '$timeout', function ($modalInstance, appliance, link, $scope, $rootScope, $timeout) {
+  .controller('ModalCtrl', ['$modalInstance', 'appliance', 'link', 'fakelink', '$scope', '$rootScope', '$timeout', function ($modalInstance, appliance, link, fakelink, $scope, $rootScope, $timeout) {
 
     var apptext = $rootScope.brandData.apptext;
     var applianceType = appliance.appliance.slice(-1) == 's' ? appliance.appliance.slice(0, -1) : appliance.appliance;
@@ -12,6 +12,7 @@ angular.module('App')
     });
 
     $scope.submit = function () {
+      $scope.email.message = $scope.email.message.replace(fakelink, link);
       console.log($scope.email);
       $modalInstance.close();
     }
@@ -21,7 +22,7 @@ angular.module('App')
     }
 
     $scope.setMessage = function() {
-      $scope.email.message = apptext.emailMessage.replace('{{brand}}', apptext.apptitle.toLowerCase()).replace('{{appliance}}', applianceType).replace('{{link}}', link);
+      $scope.email.message = apptext.emailMessage.replace('{{brand}}', apptext.apptitle.toLowerCase()).replace('{{appliance}}', applianceType).replace('{{fakelink}}', fakelink);
     }
 
     $scope.setSubject = function() {
