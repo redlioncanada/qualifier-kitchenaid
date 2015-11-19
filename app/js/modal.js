@@ -5,6 +5,7 @@ angular.module('App')
 
     var apptext = $rootScope.brandData.apptext;
     var applianceType = appliance.appliance.slice(-1) == 's' ? appliance.appliance.slice(0, -1) : appliance.appliance;
+    applianceType = applianceType.toLowerCase();
 
     $timeout(function() {
       $scope.setMessage();
