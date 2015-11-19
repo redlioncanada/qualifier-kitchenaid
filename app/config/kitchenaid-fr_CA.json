@@ -231,7 +231,7 @@
                             "value" : 2,
                             "text" : "15\"",
                             "scoring" : {
-                                "width15" : 5,
+                                "width15" : 10,
                                 "width16" : -30,
                                 "width17" : -30,
                                 "width18" : -30,
@@ -273,7 +273,7 @@
                             "value" : 3,
                             "text" : "30\"",
                             "scoring" : {
-                                "width30" : 5,
+                                "width30" : 10,
                                 "width31" : -30,
                                 "width32" : -30,
                                 "width33" : -30,
@@ -300,7 +300,7 @@
                             "value" : 4,
                             "text" : "36\"",
                             "scoring" : {
-                                "width36" : 5,
+                                "width36" : 10,
                                 "width37" : -30,
                                 "width38" : -30,
                                 "width39" : -30,
@@ -321,7 +321,7 @@
                             "value" : 5,
                             "text" : "48\"",
                             "scoring" : {
-                                "width48" : 5
+                                "width48" : 10
                             }
                         }
                     }                               
@@ -352,7 +352,8 @@
                             "value" : "classic",
                             "image" : "img/classic.png",
                             "scoring" : {
-                                "electric" : 1
+                                "electric" : 3,
+                                "induction" : -1
                             },
                             "order" : 1
                         },
@@ -363,7 +364,8 @@
                             "value" : "modern",
                             "image" : "img/modern.png",
                             "scoring" : {
-                                "induction" : 1
+                                "induction" : 3,
+                                "electric" : -1
                             },
                             "order" : 2
                         },
@@ -374,7 +376,7 @@
                             "value" : "professional",
                             "image" : "img/professional.png",
                             "scoring" : {
-                                "gas" : 1
+                                "gas" : 3
                             },
                             "order" : 3
                         }
@@ -1344,7 +1346,7 @@
                             "value" : 1,
                             "text" : "30\"",
                             "scoring" : {
-                                "width30" : 5,
+                                "width30" : 10,
                                 "width31" : -30,
                                 "width32" : -30,
                                 "width33" : -30,
@@ -1359,7 +1361,7 @@
                             "value" : 2,
                             "text" : "36\"",
                             "scoring" : {
-                                "width36" : 5
+                                "width36" : 10
                             }
                         }
                     }
@@ -1958,7 +1960,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width22" : 5,
+                                "width22" : 10,
                                 "width23" : -30,
                                 "width24" : -30,
                                 "width25" : -30,
@@ -1994,7 +1996,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width31" : 5,
+                                "width31" : 10,
                                 "width32" : -30,
                                 "width33" : -30,
                                 "width34" : -30,
@@ -2021,7 +2023,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width33" : 5,
+                                "width33" : 10,
                                 "width34" : -30,
                                 "width35" : -30,
                                 "width36" : -30,
@@ -2046,7 +2048,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width36" : 5,
+                                "width36" : 10,
                                 "width37" : -30,
                                 "width38" : -30,
                                 "width39" : -30,
@@ -2068,7 +2070,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width37" : 5,
+                                "width37" : 10,
                                 "width38" : -30,
                                 "width39" : -30,
                                 "width40" : -30,
@@ -2089,7 +2091,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width43" : 5,
+                                "width43" : 10,
                                 "width44" : -30,
                                 "width45" : -30,
                                 "width46" : -30,
@@ -2104,7 +2106,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
-                                "width49" : 5
+                                "width49" : 10
                             }
                         }
                     }                               
@@ -3262,7 +3264,9 @@
                             "value" : "Pocket Handle",
                             "image" : "img/pocket-handle.png",
                             "scoring" : {
-                                "pocketHandleConsole" : 1
+                                "FID" : -1,
+                                "pocketHandleConsole" : 5,
+                                "panelReady" : -1
                             },
                             "order" : 1
                         },
@@ -3273,7 +3277,9 @@
                             "value" : "Exterior Handle",
                             "image" : "img/exterior-handle.png",
                             "scoring" : {   
-                                "FID" : 1                   
+                                "FID" : 5,
+                                "pocketHandleConsole" : -1,
+                                "panelReady" : -1
                             },
                             "order" : 2
                         },
@@ -3284,7 +3290,9 @@
                             "value" : "Custom Panel",
                             "image" : "img/custom-panel.png",
                             "scoring" : {   
-                                "panelReady" : 1                    
+                                "FID" : -1,
+                                "pocketHandleConsole" : -1,
+                                "panelReady" : 5
                             },
                             "order" : 3
                         },
@@ -3295,7 +3303,7 @@
                             "value" : "No Preference",
                             "image" : "img/no-preference-panel.png",
                             "scoring" : {   
-                                "panelReady" : 1                    
+                                "panelReady" : 5
                             },
                             "order" : 3
                         }
