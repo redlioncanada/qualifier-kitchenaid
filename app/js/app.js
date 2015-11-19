@@ -33,7 +33,7 @@ App.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', '$httpP
       }) 
       .state('print', {
         templateUrl: 'views/print.html',
-        url : "/print/:sku",
+        url : "/print/:sku&:color",
         controller: 'PrintCtrl'
       }) 
       .state('main', {

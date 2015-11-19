@@ -123,8 +123,8 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 	      return '?' + $base64.encode(JSON.stringify(_enumerateAnswers()));
 	}
 
-	appstate.generatePrintURL = function(sku) {
-	      return '?' + $base64.encode(JSON.stringify({restore:'print',sku:sku}));
+	appstate.generatePrintURL = function(sku,color) {
+	      return '?' + $base64.encode(JSON.stringify({restore:'print',sku:sku,color:color}));
 	}
 
 	function _getSession() {

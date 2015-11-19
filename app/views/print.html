@@ -1,15 +1,15 @@
-<div class="print-page" ng-init="a=splitFeatures(a); a.picker=a.colours[0];">
+<div class="print-page" ng-init="a=splitFeatures(a);">
 	<div class="print-page-header">YOUR BEST MATCH</div>
 	<div class="print-page-callout-wrapper">
 		<div class="print-page-callout print-page-callout-left">
 			<div>
 				<div class="print-page-image">
-					<img ng-if="a.appliance!='Laundry'" ng-src="http://kitchenaid.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg">
+					<img ng-if="a.appliance!='Laundry'" ng-src="http://kitchenaid.com/digitalassets/{{color}}/Standalone_1175X1290.jpg">
 					<img ng-if="a.appliance=='Laundry'" ng-src="http://kitchenaid.com/{{a.image}}">
 				</div>
 				<div class="print-page-title">
 					<span class="name">{{a.name}}</span>
-					<span class="sku" ng-if="a.appliance!='Laundry'">{{a.picker.sku}}</span> 
+					<span class="sku" ng-if="a.appliance!='Laundry'">{{color}}</span> 
 					<span class="sku" ng-if="a.appliance=='Laundry'">{{a.picker.washerSku}}/{{a.picker.dryerSku}}</span> 
 				</div>
 			</div>

@@ -126,8 +126,8 @@ angular.module('App')
     //console.log($appstate.generateEmailURL());
   };
 
-$scope.print = function(sku) {
-  window.open($appstate.generatePrintURL(sku));
+$scope.print = function(sku,colorsku) {
+  window.open($appstate.generatePrintURL(sku,colorsku));
 }
 
 $scope.setPriceRange = function () {
