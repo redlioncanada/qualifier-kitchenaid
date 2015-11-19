@@ -118,6 +118,7 @@ gulp.task('views-prod', function() {
 
     // Any other view files from app/views
     gulp.src('app/views/**/*')
+    .pipe(preprocess({context: {ENV: env}}))
     // Will be put in the build/views folder
     .pipe(gulp.dest('build/views/'));
 });

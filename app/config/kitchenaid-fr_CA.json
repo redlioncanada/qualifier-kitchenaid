@@ -996,7 +996,7 @@
                             "value" : 2,
                             "text" : "24\"",
                             "scoring" : {
-                                "width24" : 5,
+                                "width24" : 10,
                                 "width25" : -30,
                                 "width26" : -30,
                                 "width27" : -30,
@@ -1011,7 +1011,7 @@
                             "value" : 3,
                             "text" : "27\"",
                             "scoring" : {
-                                "width27" : 5,
+                                "width27" : 10,
                                 "width28" : -30,
                                 "width29" : -30,
                                 "width30" : -30
@@ -1023,7 +1023,7 @@
                             "value" : 4,
                             "text" : "30\"",
                             "scoring" : {
-                               "width30" : 5
+                               "width30" : 10
                             }
                         }
                     }                               
