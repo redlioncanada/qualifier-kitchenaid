@@ -3293,7 +3293,7 @@
 							"text" : "No Preference",
 							"value" : "No Preference",
 							"image" : "img/no-preference-panel.png",
-                            "image_alt" : "Dishwasher No Perference",
+                            "image_alt" : "Dishwasher No Preference",
 							"scoring" : {	
 								"panelReady" : 1					
 							},
