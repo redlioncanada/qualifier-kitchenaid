@@ -89,7 +89,7 @@ angular.module('App')
 
   $rootScope.setFirstColour = function (appliance) {
     for (var c in appliance.colours) {
-      if (appliance.colours[c].colourCode == "CS" || appliance.colours[c].colourCode == "SS" || appliance.colours[c].colourCode == "PA") {
+      if (appliance.colours[c].colourCode == "BS" || appliance.colours[c].colourCode == "CS" || appliance.colours[c].colourCode == "SS" || appliance.colours[c].colourCode == "PA") {
         return appliance.colours[c]
       }
     }
