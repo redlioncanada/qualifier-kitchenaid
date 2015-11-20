@@ -735,6 +735,7 @@ li.dragging-rank {
 	box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
 	background-color: transparent;
     border-radius: 6px;
+    z-index: 100000;
     .rank-number-wrap {
     	display: none;
     }
