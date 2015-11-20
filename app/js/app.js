@@ -272,7 +272,13 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
             "img/slider-pointer.png"
           ];
 
-          $resource("http://mykitchenaid.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
+          // @if ENV='development'
+          var host = "http://mykitchenaid.wpc-stage.com";
+          // @endif
+          // @if ENV='production'
+          var host = $appstate.host();
+          // @endif
+          $resource(host+"/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = $dataDecorator(res.products);
 
                 

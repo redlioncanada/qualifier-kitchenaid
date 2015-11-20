@@ -31,17 +31,28 @@ gulp.task('sass', function () {
 
 // process JS files and return the stream.
 gulp.task('js', function () {
+    var env = 'development';
     return gulp.src('app/js/**/*.js')
+        .pipe(preprocess({context: {ENV: env}}))
         .pipe(gulp.dest('build/js'));
 });
 
 // process JS files and return the stream.
 gulp.task('js-prod', function () {
+    var env = 'production';
     return gulp.src('app/js/**/*.js')
         .pipe(stripDebug())
+        .pipe(preprocess({context: {ENV: env}}))
+        .on('error',function(e){
+            console.log(e)
+            console.log(e.stack)
+        })
         .pipe(sourcemaps.init())
         .pipe(concat('qualifier.js'))
         .pipe(uglify({'mangle':false}))
+        .on('error',function(e){
+            console.log(e)
+        })
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/js'))
         .pipe(replace('.locale = "en_CA", ".locale = "fr_CA"'))
