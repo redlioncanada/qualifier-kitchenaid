@@ -1,8 +1,8 @@
-<div id="results" class="main-content hiddenViaOpacity" ng-controller="ResultsCtrl" resize > 
+<div id="results" class="main-content" ng-controller="ResultsCtrl" resize data-ga-category="@results-appliance Results Page"> 
 	<div class="content-inner">
 		<div class="results-top" ng-if="questionsData.currentCount !=0">
 			<h1 bo-text="brandData.apptext.resultsPage"></h1>
-			<div class="results-adjust-desc" bo-text="constructPageTitle()"></div>
+			<div class="results-adjust-desc" data-appliance="{{getAppliance()}}" bo-text="constructPageTitle()"></div>
 
 			<!-- Save, Share, Print -->
 			<div ng-controller="ShareCtrl" class="show-email-icon buttons-top-right-btns">
@@ -11,7 +11,7 @@
 		</div>
 
 		<!-- Slider -->
-		<div class="price-slider-wrap">
+		<div class="price-slider-wrap" data-ga-action="Slid Results Bar" data-ga-bind-label="From @results-slider-last-value to @results-slider-value">
 			<!-- <div class="price-slider-label-wrap">
 				<span class="price-slider-label">$</span>
 			</div> -->

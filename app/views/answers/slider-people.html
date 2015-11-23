@@ -12,12 +12,12 @@ https://www.npmjs.com/package/ng-slider -->
     <!-- <div class="slider-bg slider-bg-left"></div>
     <div class="slider-bg slider-bg-right"></div> -->
 
-    <div ng-class="{'hidden': !isTabletWidthOrLess}" class="slider-wrap" ng-init="setLast(qs,true)"  ng-class="{'last-answer-active' : qs.text[0].answer == qs.text[0].last}">
+    <div ng-class="{'hidden': !isTabletWidthOrLess}" data-ga-category="@appliance Appliance Segment" data-ga-action="Slid @question-name Bar" data-ga-label="@slider-text" class="slider-wrap" ng-init="setLast(qs,true)"  ng-class="{'last-answer-active' : qs.text[0].answer == qs.text[0].last}">
 
 		<input ng-model="qs.text[0].answer" ng-change="setAnswer()"  type="text" id="answerSlider" slider options="qs.text[0].verticalOptions" />
 	</div>
 
-     <div ng-class="{'hidden': isTabletWidthOrLess}" class="slider-wrap" ng-init="setLast(qs,false)"  ng-class="{'last-answer-active' : qs.text[0].answer == qs.text[0].last}">
+     <div ng-class="{'hidden': isTabletWidthOrLess}" data-ga-category="@appliance Appliance Segment" data-ga-action="Slid @question-name Bar" data-ga-label="@slider-text" class="slider-wrap" ng-init="setLast(qs,false)"  ng-class="{'last-answer-active' : qs.text[0].answer == qs.text[0].last}">
 
         <input ng-model="qs.text[0].answer" ng-change="setAnswer()"  type="text" id="answerSlider" slider options="qs.text[0].options" />
     </div>

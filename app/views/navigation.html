@@ -1,15 +1,17 @@
-<div ng-controller="NavigationCtrl" ng-class="{{locale}}" resize style="clear: both;" class="app-content-main-bottom">
+<div ng-controller="NavigationCtrl" ng-class="{{locale}}" resize style="clear: both;" class="app-content-main-bottom" data-ga-category="@appliance Appliance Navigation">
  	<!--<div class="mobile-nav" ng-if="isTabletWidthOrLess" hmhm-swipeleftright="!!questionsData.question.previous || previous()" hmhm-swipeleftleft="(!!questionsData.question && questionsData.question.name !='Appliance' && !controls.questionHasAnswer) || next()"></div>-->
 
 	<div bo-text="brandData.appText.changeYourAnswer" ng-if="!questionsData.question"></div>
 
-	<div ng-if="!isTabletWidthOrLess" class="app-nav-arrows">
-		<a href="" class="btn-prev" ng-click="previous()" id="previous" ng-if="!!questionsData.question.previous">
-			<img class="arrow-prev" ng-src="img/arrow-left.png" alt="{{brandData.appText.previousQuestionAlt}}">
+	<div ng-if="!isTabletWidthOrLess" class="app-nav-arrows" >
+		<a href="" data-ga-action="Clicked Previous" class="btn-prev" ng-click="previous()" id="previous" ng-if="!!questionsData.question.previous">
+			<img data-ga-label="@question-name" class="arrow-prev" ng-src="img/arrow-left.png" alt="{{brandData.appText.previousQuestionAlt}}">
+
 		</a>
 
-		<a href="" class="btn-next" ng-if="!!questionsData.question && questionsData.question.name !='Appliance'" ng-click="!controls.questionHasAnswer || next()" id="next" ng-class="{'disabled' : !controls.questionHasAnswer}">
-			<img class="arrow-next" ng-src="img/arrow-right.png" alt="{{brandData.appText.nextQuestionAlt}}">
+		<a href="" data-ga-action="Clicked Next" class="btn-next" ng-if="!!questionsData.question && questionsData.question.name !='Appliance'" ng-click="!controls.questionHasAnswer || next()" id="next" ng-class="{'disabled' : !controls.questionHasAnswer}">
+			<img data-ga-label="@question-name" class="arrow-next" ng-src="img/arrow-right.png" alt="{{brandData.appText.nextQuestionAlt}}">
+
 		</a>
 
 	</div>
@@ -29,20 +31,21 @@
                     <!--<span ng-if="isTabletWidthOrLess" class="mobileInstructions">hm-swipeleft for next question</span>-->
                     <div ng-if="isTabletWidthOrLess" class="mobile-app-nav-arrows">
 						<a href="#" class="btn-prev" ng-click="previous()" id="previous" ng-if="!!questionsData.question.previous">
-							<img class="arrow-prev" ng-src="img/arrow-left.png" alt="{{brandData.appText.previousQuestionAlt}}">
+							<img data-ga-action="Clicked Previous"  data-ga-label="@question-name" class="arrow-prev" ng-src="img/arrow-left.png" alt="{{brandData.appText.previousQuestionAlt}}">
 						</a>
 
 						<a href="#" class="btn-next" ng-if="!!questionsData.question && questionsData.question.name !='Appliance'" ng-click="!controls.questionHasAnswer || next()" id="next" ng-class="{'disabled' : !controls.questionHasAnswer}">
-							<img class="arrow-next" ng-src="img/arrow-right.png" alt="{{brandData.appText.nextQuestionAlt}}">
+							<img data-ga-action="Clicked Next"  data-ga-label="@question-name" class="arrow-next" ng-src="img/arrow-right.png" alt="{{brandData.appText.nextQuestionAlt}}">
+
 						</a>
 
 					</div>
 				</div>
 				<div class="bottom-nav-inner-inner">
-					<div ng-repeat="q in questionsData.scoringQuestions | orderByOrder" class="icon-nav-wrap" ng-if="byName(q) && q.thumbnail_text != 'Appliance' && q.thumbnail_text != 'Cooking'">
+					<div data-ga-action="Clicked Question Icon" ng-repeat="q in questionsData.scoringQuestions | orderByOrder" class="icon-nav-wrap" ng-if="byName(q) && q.thumbnail_text != 'Appliance' && q.thumbnail_text != 'Cooking'">
 				    	<a ng-init="a=hasAnswer(q);q.a_thumbnail_type=setType(q,a)" class="icon-nav selected" ng-click="navToQuestions(q)" popover-placement="top" popover-append-to-body="true" popover-title="{{isEnglish ? q.thumbnail_text : q.thumbnail_text_fr}}" popover="{{q.show.question.replace('<br/>',' ').replace('<br />',' ')}}" popover-trigger="mouseenter">
-					      	<img ng-if="isTabletWidthOrLess" ng-src="img/mbl/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
-                            <img ng-if="!isTabletWidthOrLess" ng-src="img/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
+					      	<img data-ga-label="@navbar-popover-title" ng-if="isTabletWidthOrLess" ng-src="img/mbl/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
+                            <img data-ga-label="@navbar-popover-title" ng-if="!isTabletWidthOrLess" ng-src="img/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
 				    	</a>      
 					</div>
 	 
@@ -55,11 +58,11 @@
 					</div>
 
 					<div class="buttonnav-mobile">
-						<a class="banner backtoresults-mobile" ng-click="next(true)" ng-if="!!resultsTouched && !!questionsData.question && isTabletWidthOrLess">
+						<a class="banner backtoresults-mobile" data-ga-action="Clicked Back To Results" data-ga-label="@question-name Question" ng-click="next(true)" ng-if="!!resultsTouched && !!questionsData.question && isTabletWidthOrLess">
 				            <div class="btn-wrapper"><div ng-bind-html="brandData.apptext.backtoresults.replace('<br />',' ')"></div></div>
 						</a>
 
-						<a class="banner startover-mobile" ng-click="startOver()" ng-if="isTabletWidthOrLess">
+						<a class="banner startover-mobile" data-ga-action="Clicked Start Over" data-ga-label="@question-name Question" ng-click="startOver()" ng-if="isTabletWidthOrLess">
 				            <div class="btn-wrapper"><div ng-bind-html="brandData.apptext.startover.replace('<br />',' ')"></div></div>
 						</a>
 					</div>
@@ -68,7 +71,7 @@
 
 			<div class="btn-wrapper">
 				<div class="startover-btn-wrap" ng-if="questionsData.question.name != 'Appliance'">
-					<a id="startover" class="btn btn-startover" ng-click="startOver()">
+					<a id="startover" class="btn btn-startover" ng-click="startOver()" data-ga-action="Clicked Start Over" data-ga-label="@question-name Question">
 						<div ng-bind-html="brandData.apptext.startover"></div>
 					</a>
 				</div>

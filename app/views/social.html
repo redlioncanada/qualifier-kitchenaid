@@ -1,7 +1,7 @@
 <span class="icon-share"></span>
 <span class="icon-email" ng-click="emailOpen()" ng-if="!questionsData.question"></span>
-<div class="share-popout">
-	<span class="icon-share-fb"><a facebook-feed-share data-url='{{appURL}}' data-picture='{{appURL + brandData.apptext.facebookImage}}' data-name='{{brandData.apptext.facebookTitle}}' data-description='{{brandData.apptext.facebookDesc}}'></a></span>
-	<span class="icon-share-tw" ng-click="openTwitterWindow()"><a href='#'></a></span>
+<div class="share-popout" data-ga-category="@appliance Appliance Navigation" data-ga-action="Clicked Share Tool">
+	<span class="icon-share-fb" data-ga-label="Facebook"><a facebook-feed-share data-url='{{appURL}}' data-picture='{{appURL + brandData.apptext.facebookImage}}' data-name='{{brandData.apptext.facebookTitle}}' data-description='{{brandData.apptext.facebookDesc}}'></a></span>
+	<span class="icon-share-tw" data-ga-label="Twitter" ng-click="openTwitterWindow()"><a href='#'></a></span>
 </div>
 <div class="share-popout-cover"></div>

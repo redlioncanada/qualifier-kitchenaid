@@ -1,13 +1,13 @@
 <!-- 4 Picture box answers -->
-<div class="answers-main-content picture-4-container" ng-controller="RadioCtrl">
-	<a href="" ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box picture-4 {{answer.classes}} col-md-{{boxWidth}}" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDownNoShadow : buttonState=='down', toggleButtonUpNoShadow : buttonState=='up'}">
+<div class="answers-main-content picture-4-container" ng-controller="RadioCtrl" data-ga-category="@appliance Appliance Segment" data-ga-action="Checked @question-name Box" data-ga-bind-label="@button-text">
+	<a href="" data-ga-label ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box picture-4 {{answer.classes}} col-md-{{boxWidth}}" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDownNoShadow : buttonState=='down', toggleButtonUpNoShadow : buttonState=='up'}">
 		<div class="img-wrap" ng-class="{selected: answer.answer}">
 			<img ng-src="{{answer.image}}" alt="{{answer.image_alt}}" />
 		</div>
 		<div class="select-label-wrap" ng-class="{selected: answer.answer}">
 			<div class="select-icon"></div>
-			<div class="label-wrap">
-				<div class="label-text" ng-bind-html="answer.text"></div>
+			<div class="label-wrap" data-ga-label>
+				<div class="label-text" data-ga-label ng-bind-html="answer.text"></div>
 			</div>
 		</div>
 	</a>

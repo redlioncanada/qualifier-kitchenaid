@@ -1,5 +1,5 @@
 <!-- Application Start Screen -->
-<div class="main-content"> 
+<div class="main-content" data-appliance="{{$root.appliance}}" data-ga-category="@appliance Appliance Navigation"> 
 
 	<div class="content-inner">
 		<div class="buttons-top">
@@ -16,7 +16,7 @@
 				<h3 ng-if="!!questionsData.question.show.sub_question" ng-bind-html="questionsData.question.show.sub_question"></h3>
 
 				<div class="extra-info-wrap">
-					<a class="btn-wrap" ng-class="{'tooltip-open':$root.showTooltip}" ng-if="!!questionsData.question.show.explanation_title">
+					<a class="btn-wrap" data-ga-action="Clicked Why You Ask" data-ga-label="@question-name" ng-class="{'tooltip-open':$root.showTooltip}" ng-if="!!questionsData.question.show.explanation_title">
 						<div class="btn-icon-wrapper">
 							<span class="btn-icon" ng-if="!$root.showTooltip" ng-click="$root.showTooltip = !$root.showTooltip;">
 								<span id="tooltip-glyph">?</span>

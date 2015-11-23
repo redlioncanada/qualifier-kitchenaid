@@ -1,8 +1,8 @@
 <!-- Spliting results so images and headers become mini navigation. -->
-<ul class="mobile-results-nav" ng-if="questionsData.currentCount !=0">
+<ul class="mobile-results-nav" ng-if="questionsData.currentCount !=0" data-ga-action="Tap Product Results Tab" data-ga-bind-label="@mobile-results-appliance-selection">
     <li ng-repeat="a in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange" class="mobile-result-selector" ng-click="selectorClicked($event);" id="result-selector-{{$index}}">
-        <div class="product-img-wrap" ng-init="a.picker=setFirstColour(a)">
-            <img ng-src="http://kitchenaid.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" class="mobile-selector-img">
+        <div data-ga-label class="product-img-wrap" ng-init="a.picker=setFirstColour(a)">
+			<img data-ga-label ng-src="http://maytag.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" class="mobile-selector-img">
         </div>
         <span ng-if="$index==1" bo-text="brandData.apptext.yourBestMatch" ng-class="{'active': $index==1}" class="mobile-results-header" id="result-header-{{$index}}"></span>
         <span ng-if="$index!=1" bo-text="brandData.apptext.otherSuggestion" class="mobile-results-header" id="result-header-{{$index}}" ></span>
@@ -66,18 +66,18 @@
 								
 							</div>
 
-							<div class="btn-wrap">
-									<a href="{{a.url}}" class="btn btn-default" target="_blank">
-										<span class="btn-text" bo-text="brandData.apptext.moreInfo"></span>
+								<div class="btn-wrap" data-ga-action="Tap Product Results Tab">
+									<a href="{{a.url}}" data-ga-label="More Info" class="btn btn-default" target="_blank">
+										<span data-ga-label="Email" class="btn-text btn-text-email" bo-text="brandData.apptext.email"></span>
 									</a>
 
-									<a href="#" ng-click="emailOpen()" class="btn btn-default">
+									<a href="#" data-ga-label="Email" ng-click="emailOpen()" class="btn btn-default" target="_blank">
 										<span class="btn-text btn-text-email" bo-text="brandData.apptext.email"></span>
 										<img src="img/icon-email.png"/>
 									</a>
 
-									<a href="#" ng-click="startOver()" class="btn btn-default">
-										<span style="text-align:center;" class="btn-text btn-text-startover" bo-html="brandData.apptext.startover.replace('<br />',' ')"></span>
+									<a href="#" data-ga-label="Start Over" ng-click="startOver()" class="btn btn-default">
+										<span data-ga-label="Start Over" style="text-align:center;" class="btn-text btn-text-startover" bo-html="brandData.apptext.startover.replace('<br />',' ')"></span>
 									</a>
 								</div>
 

@@ -46,6 +46,7 @@
     "angular-local-storage": "~0.2.3",
     "angular-resource": "1.4.7",
     "angular-socialshare": "~1.4.4",
+    "ga-wrapper": "~0.1.10",
     "imagesloaded": "~3.1.8"
   },
   "directory": "app/components",

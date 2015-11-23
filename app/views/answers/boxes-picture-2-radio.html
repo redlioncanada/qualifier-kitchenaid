@@ -1,13 +1,13 @@
 <!-- 2 Picture box answers -->
-<div class="answers-main-content picture-2-container" ng-controller="RadioCtrl">
-	<a href="" ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box picture-2 {{answer.classes}} col-md-{{boxWidth}}" ng-click="toggle(qs.text[0].answers, answer)" ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, selected: answer.answer}">
+<div class="answers-main-content boxes-icon-2-container" ng-controller="RadioCtrl" data-ga-category="@appliance Appliance Segment" data-ga-action="Checked @question-name Box" data-ga-bind-label="@button-text">
+	<a href="" ng-repeat="answer in qs.text[0].answers" data-ga-label class="answer answer-option answer-box picture-2 {{answer.classes}} col-md-{{boxWidth}}" ng-click="toggle(qs.text[0].answers, answer)" ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, selected: answer.answer}">
 		<div class="img-wrap">
 			<img ng-src="{{answer.image}}" alt="{{answer.image_alt}}" />
 		</div>
 		<div class="select-label-wrap">
 			<div class="select-icon"></div>
-			<div class="label-wrap">
-				<div class="label-text" ng-bind-html="answer.text"></div>
+			<div class="label-wrap" data-ga-label>
+				<div class="label-text" data-ga-label ng-bind-html="answer.text"></div>
 			</div>
 		</div>
 	</a>

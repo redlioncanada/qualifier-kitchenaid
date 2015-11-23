@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('App')
-  .controller('ResultsCtrl', function ($scope, $rootScope, $state, $location, $timeout, $modal, $appstate) {
+    .controller('ResultsCtrl', function ($scope, $rootScope, $state, $location, $timeout, $modal, $appstate, $element) {
     $timeout(function() {
       $('#results').removeClass('hiddenViaOpacity')
     },500);
@@ -48,6 +48,8 @@ angular.module('App')
   					 $rootScope.moveToQuestion(q)
   				}, 100)
 		  	}
+
+        gaw.refresh();
     });
 
       if (!!!$rootScope.questionsData || !!!$rootScope.questionsData.scoringQuestions) $state.go('main.questions');
@@ -62,6 +64,8 @@ angular.module('App')
         "threshold" : 820,
         "dimension": d,
         "callback" : function(value, released) {  
+          if (!released) $($element).attr('data-last-value', value);
+          if (!!released) $($element).attr('data-value', value);
 
           if (!!released && !!value) {
             var range = value.split(";")

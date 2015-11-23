@@ -1,6 +1,6 @@
 <!-- Rank the answers -->
 <!-- https://github.com/a5hik/ng-sortable -->
-<div class="answers-main-content ranking" ng-controller="RankCtrl" ng-init="rankCount=objSize(qs.text[0].answers);initialize(qs)">
+<div class="answers-main-content ranking" data-ga-category="@appliance Appliance Segment" data-ga-action="Get Features Question Order" data-ga-label="@rank-question-order" ng-controller="RankCtrl" ng-init="rankCount=objSize(qs.text[0].answers);initialize(qs)">
 	<div>
 	<ul class="rank-numbers-list" data-as-sortable="sortable.disabledDragControlListeners" data-ng-model="qs.text[0].answers" style="height:{{(rankCount * 63)+22}}px;">
 		<li data-ng-repeat="item in qs.text[0].answers" data-as-sortable-item ng-class="{noanswer : !controls.questionHasAnswer}">

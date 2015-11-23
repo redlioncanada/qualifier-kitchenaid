@@ -15,11 +15,11 @@ https://www.npmjs.com/package/ng-slider -->
 			
 
 
-		    <div class="slider-wrap" ng-class="{'hidden': isTabletWidthOrLess, 'last-answer-active' : qs.text[0].answer == qs.text[0].last}"  style="clear: none; float:left">
+		    <div class="slider-wrap" data-ga-category="@appliance Appliance Segment" data-ga-action="Slid @question-name Bar" data-ga-bind-label="@slider-text" ng-class="{'hidden': isTabletWidthOrLess, 'last-answer-active' : qs.text[0].answer == qs.text[0].last}"  style="clear: none; float:left">
 				<input ng-model="qs.text[0].answer" ng-change="setAnswer()" type="text" id="answerSlider" slider options="qs.text[0].options" />
 			</div>
 
-			<div class="slider-wrap" ng-class="{'hidden': !isTabletWidthOrLess, 'last-answer-active' : qs.text[0].answer == qs.text[0].last}"  style="clear: none; float:left">
+			<div class="slider-wrap" data-ga-category="@appliance Appliance Segment" data-ga-action="Slid @question-name Bar" data-ga-bind-label="@slider-text" ng-class="{'hidden': !isTabletWidthOrLess, 'last-answer-active' : qs.text[0].answer == qs.text[0].last}"  style="clear: none; float:left">
 				<input ng-model="qs.text[0].answer" ng-change="setAnswer()" type="text" id="answerSlider" slider options="qs.text[0].verticalOptions" />
 			</div>
 
