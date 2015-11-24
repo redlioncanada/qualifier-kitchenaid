@@ -45,7 +45,7 @@ angular.module('App')
           qs.text[t].options.answers = qs.text[t].answers
           qs.text[t].options.iterator = t
           qs.text[t].options.callback = angular.copy(function(value, released) {  
-            $($element).find('.slider-wrap').attr('data-text', $rootScope.questionsData.question.show.answers[Math.round(value)].text);
+            //$($element).find('.slider-wrap').attr('data-text', $rootScope.questionsData.question.show.answers[Math.round(value)].text);
 
             if (!!$rootScope.questionsData.question) {
               if (qs.name == $rootScope.questionsData.question.name) {    
