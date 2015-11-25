@@ -28,7 +28,7 @@
                     'html' => $_POST["message"],
                     'text' => null,
                     'subject' => $_POST["subject"],
-                    'from_email' => 'qualifier@maytag.ca',
+                    'from_email' => 'qualifier@kitchenaid.ca',
                     'from_name' => $_POST["name"],
                     'to' => array(
                         array(
@@ -38,7 +38,7 @@
                         )
                     ),
                     'tags' => array(
-                        'maytag_qualifier'
+                        'kitchenaid_qualifier'
                     ),
                     'important' => false,
                     'track_opens' => true,
