@@ -42,6 +42,10 @@
                     top: 50px;
                 }
 
+                ul li {
+                  position: relative;
+                }
+
                 ul li:not(:first-child) {
                     margin-left: 10px;
                 }
@@ -49,6 +53,9 @@
                 ul li:hover {
                     text-decoration: underline;
                     cursor: pointer;
+                    > .submenu {
+                      display: block;
+                    }
                 }
 
                 .language {
@@ -81,20 +88,75 @@
                 height: 22px;
                 width: inherit;
 
-                li {
+                > li {
                     height: 100%;
                     text-transform: uppercase;
                     font-size: 9pt;
+                    position: relative;
                 }
-                li:first-child {
+                > li:first-child {
                     margin-right: 10px;
                 }
-                li:not(:last-child) {
+                > li:not(:last-child) {
                     margin-right: 5%;
                 }
-                li:hover {
+                > li:hover {
                     border-bottom: 3px solid #CC0000;
                     cursor: pointer;
+                }
+
+                li:hover > .submenu {
+                  display: block;
+                }
+
+                li .submenu.double {
+                  width: 300%;
+                  li {
+                    width: 50%;
+                  }
+                }
+
+                li .submenu {
+                  top: 22px;
+                  left: 0;
+                  display: none;
+                  position: absolute;
+                  width: 150%;
+                  margin-left: -25%;
+                  z-index:10001;
+                  background-color: white;
+                  border: 1px solid #BBB;
+
+                  li {
+                    width: 100%;
+                    display: block;
+                    float: none;
+                    text-transform: none;
+                    font-size: 7pt;
+                    padding: 4px 8px;
+                  }
+
+                  li.insert {
+                    margin-left: 50%;
+                    margin-top: -200px;
+                    border-left: 1px solid #BBB;
+                    * {
+                      padding-left: 9px;
+                    }
+                  }
+
+                  li:not(.insert):hover {
+                    background-color: #EEE;
+                    color: #CC0000;
+                  }
+
+                  a:first-child li {
+                    margin-top: 2px;
+                  }
+
+                  a:last-child li {
+                    margin-bottom: 13px;
+                  }
                 }
             }
          }
