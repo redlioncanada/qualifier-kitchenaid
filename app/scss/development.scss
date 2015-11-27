@@ -6,8 +6,37 @@
 	font-size:12px;
 }
 
+.scoreboard {
+	position :absolute;
+	z-index: 500;
+	top:265px;
+	max-height: 450px;
+	max-width: 350px;
+	min-width: 30px;
+	min-height: 20px;
+	overflow-y: scroll;
+	list-style: none;
+	background-color: white;
+
+	ul {
+		list-style: none;
+		padding:0;
+		margin:0;
+	}
+	li:nth-child(odd) {
+		background-color: #ededed;
+	}
+
+	.toggle {
+		position: absolute;
+		right: 2px;
+		top: 0;
+		cursor: pointer;
+	}
+}
+
 @media(max-width:1023px) {
-	p.lastupdated {
+	p.lastupdated, .scoreboard {
 		display: none;
 	}
 }
