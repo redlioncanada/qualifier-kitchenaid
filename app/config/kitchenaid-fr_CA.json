@@ -2169,23 +2169,6 @@
                             "enabledWhen" : [0,2],
                             "scoring" : {
                                  "height67" : 5,
-                                 "height68" : -30,
-                                 "height69" : -30,
-                                 "height70" : -30,
-                                 "height71" : -30,
-                                 "height72" : -30,
-                                 "height73" : -30,
-                                 "height74" : -30,
-                                 "height75" : -30,
-                                 "height76" : -30,
-                                 "height77" : -30,
-                                 "height78" : -30,
-                                 "height79" : -30,
-                                 "height80" : -30,
-                                 "height81" : -30,
-                                 "height82" : -30,
-                                 "height83" : -30,
-                                 "height84" : -30
                             }
                         },
                         "70" : {
@@ -2195,20 +2178,6 @@
                             "enabledWhen" : [0,1,2,3,4],
                             "scoring" : {
                                  "height70" : 5,
-                                 "height71" : -30,
-                                 "height72" : -30,
-                                 "height73" : -30,
-                                 "height74" : -30,
-                                 "height75" : -30,
-                                 "height76" : -30,
-                                 "height77" : -30,
-                                 "height78" : -30,
-                                 "height79" : -30,
-                                 "height80" : -30,
-                                 "height81" : -30,
-                                 "height82" : -30,
-                                 "height83" : -30,
-                                 "height84" : -30
                             }
                         },
                         "71" : {
@@ -2218,19 +2187,6 @@
                             "enabledWhen" : [0,3,4],
                             "scoring" : {
                                  "height71" : 5,
-                                 "height72" : -30,
-                                 "height73" : -30,
-                                 "height74" : -30,
-                                 "height75" : -30,
-                                 "height76" : -30,
-                                 "height77" : -30,
-                                 "height78" : -30,
-                                 "height79" : -30,
-                                 "height80" : -30,
-                                 "height81" : -30,
-                                 "height82" : -30,
-                                 "height83" : -30,
-                                 "height84" : -30
                             }
                         },
                         "72" : {
@@ -2240,18 +2196,6 @@
                             "enabledWhen" : [0,4],
                             "scoring" : {
                                  "height72" : 5,
-                                 "height73" : -30,
-                                 "height74" : -30,
-                                 "height75" : -30,
-                                 "height76" : -30,
-                                 "height77" : -30,
-                                 "height78" : -30,
-                                 "height79" : -30,
-                                 "height80" : -30,
-                                 "height81" : -30,
-                                 "height82" : -30,
-                                 "height83" : -30,
-                                 "height84" : -30
                             }
                         },
                         "84" : {
@@ -2397,7 +2341,8 @@
                             "value" : 4,
                             "text" : "Ma grande famille",
                             "scoring" : {
-                                "largerCapacity" : 1
+                                "largerCapacity" : 1,
+                                "frenchDoor5Door" : 2
                             }
                         },
                         "5" : {
@@ -2406,7 +2351,8 @@
                             "value" : 5,
                             "text" : "Mes invités",
                             "scoring" : {
-                                "largestCapacity" : 1
+                                "largestCapacity" : 1,
+                                "frenchDoor5Door" : 1
                             }
                         }
                     }
@@ -2437,7 +2383,8 @@
                             "value" : "chill",
                             "scoring" : {
                                 "topMount" : 1,
-                                "bottomMount" : 1
+                                "bottomMount" : 1,
+                                "frenchDoor5Door" : 2
                             },
                             "order" : 1
                         },
@@ -2447,7 +2394,8 @@
                             "thumbnail" : "img/icon-organization.png",
                             "thumbnail_current" : "img/icon-organization-current.png",
                             "scoring" : {
-                                "frenchDoor5Door" : 1
+                                "frenchDoor5Door" : 1,
+                                "frenchDoor" : 2
                             },
                             "order" : 2
                         },
@@ -2479,7 +2427,8 @@
                             "thumbnail_current" : "img/icon-organization-current.png",
                             "scoring" : {
                                 "frenchDoor" : 1,
-                                "maxCool" : 1
+                                "maxCool" : 1,
+                                "frenchDoor5Door" : 2
                             },
                             "order" : 5
                         }
@@ -2522,9 +2471,9 @@
                             "thumbnail" : "img/icon-water.png",
                             "thumbnail_current" : "img/icon-water-current.png",
                             "scoring" : {
-                                "filtered" : -3,
-                                "exteriorDispenser" : -3,
-                                "indoorDispenser" : -3
+                                "filtered" : -15,
+                                "exteriorDispenser" : -15,
+                                "indoorDispenser" : -15
                             },
                             "order" : 2
                         },
@@ -2672,7 +2621,9 @@
                             "image_alt" : "Réfrigérateur Encastré",
                             "value" : 0,
                             "scoring" : {
-                                "standardDepth" : 3
+                                "standardDepth" : 3,
+                                "counterDepth" : -3,
+                                "builtIn" : -3
                             },
                             "order" : 1
                         },
@@ -2685,7 +2636,9 @@
                             "image_alt" : "Réfrigérateur À Profondeur De Comptoir",
                             "value" : 1,
                             "scoring" : {
-                                "counterDepth" : 3
+                                "standardDepth" : -3,
+                                "counterDepth" : 3,
+                                "builtIn" : -3
                             },
                             "order" : 2
                         },
@@ -2698,6 +2651,8 @@
                             "image_alt" : "Réfrigérateur À Profondeur Standard",
                             "value" : 2,
                             "scoring" : {
+                                "standardDepth" : -3,
+                                "counterDepth" : -3,
                                 "builtIn" : 3
                             },
                             "order" : 3
@@ -2731,7 +2686,8 @@
                             "scoring" : {
                                 "freshFlowProducePreserver" : 2,
                                 "extendFreshPlus" : 1,
-                                "freshChill" : 2
+                                "freshChill" : 2,
+                                "producerPreserver" : 1
                             },
                             "order" : 1
                         },
@@ -2753,7 +2709,7 @@
                             "text" : "Je fais toutes les allées du magasin ",
                             "value" : "basics",
                             "scoring" : {
-                                "maxCool" : 1
+                                "maxCool" : 2
                             },
                             "order" : 3
                         },
