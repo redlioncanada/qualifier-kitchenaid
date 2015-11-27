@@ -2168,7 +2168,7 @@
                             "enabled" : true,
                             "enabledWhen" : [0,2],
                             "scoring" : {
-                                 "height67" : 5,
+                                 "height67" : 5
                             }
                         },
                         "70" : {
@@ -2177,7 +2177,7 @@
                             "enabled" : true,
                             "enabledWhen" : [0,1,2,3,4],
                             "scoring" : {
-                                 "height70" : 5,
+                                 "height70" : 5
                             }
                         },
                         "71" : {
@@ -2186,7 +2186,7 @@
                             "enabled" : true,
                             "enabledWhen" : [0,3,4],
                             "scoring" : {
-                                 "height71" : 5,
+                                 "height71" : 5
                             }
                         },
                         "72" : {
@@ -2195,7 +2195,7 @@
                             "enabled" : true,
                             "enabledWhen" : [0,4],
                             "scoring" : {
-                                 "height72" : 5,
+                                 "height72" : 5
                             }
                         },
                         "84" : {
