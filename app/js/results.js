@@ -92,12 +92,16 @@ angular.module('App')
 
 
   $rootScope.setFirstColour = function (appliance) {
+    var highestPrice = appliance.colours[0];
     for (var c in appliance.colours) {
-      if (appliance.colours[c].colourCode == "BS" || appliance.colours[c].colourCode == "CS" || appliance.colours[c].colourCode == "SS" || appliance.colours[c].colourCode == "PA") {
+      if (appliance.colours[c].colourCode == "BS" || appliance.colours[c].colourCode == "CS" || appliance.colours[c].colourCode == "SS") {
         return appliance.colours[c]
       }
+      if (appliance.colours[c].price > highestPrice.price) {
+        highestPrice = appliance.colours[c];
+      }
     }
-    return appliance.colours[0]
+    return highestPrice;
   }
 
   $rootScope.setBestMatch = function(index,appliance) {
