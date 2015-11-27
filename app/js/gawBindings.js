@@ -7,7 +7,18 @@ gaw.bind('device', function(element){
 });
 
 gaw.bind('slider-text', function(element) {
-	return $(element).closest('.slider-wrap').attr('data-text');
+    var p = $(element).closest('.slider-wrap');
+	var indLeft = parseInt($(p).find('.jslider-pointer').eq(0).css('left'));
+	var ret = '';
+
+	$(p).find('.jslider-scale span').each(function(i,v) {
+		var leftVal = parseInt($(v).css('left'));
+		if (indLeft-2 < leftVal && indLeft+2 > leftVal) {
+			ret = $(v).text();
+			return;
+		}
+	});
+	return ret;
 });
 
 gaw.bind('question-title', function(element) {
@@ -33,11 +44,19 @@ gaw.bind('navbar-popover-title', function(element) {
 });
 
 gaw.bind('button-text', function(element) {
-	return $(element).closest('.answer').find('.label-text').text();
+	return $(element).closest('.answer').find('.label-text').eq(0).text();
 });
 
+gaw.bind('slider-button', function(element) {
+	var a = $(element).closest('.enabled').find('.answer-button-answer').text().trim();
+    return a + '" Height';
+});
+
+
 gaw.bind('appliance', function(element) {
-	return $(element).closest('.main').find('.main-content').attr('data-appliance');
+    var url = decodeURIComponent(window.location.hash.replace('#/question/', '')).split(' - ');
+	return url.length == 3 ? url[1].trim() : url[0].trim();
+
 });
 
 gaw.bind('results-appliance-color', function(element) {
@@ -69,6 +88,10 @@ gaw.bind('mobile-results-appliance-selection', function(element) {
 
 gaw.bind('results-appliance', function(element) {
 	return $(element).closest('.body').find('.results-adjust-desc').attr('data-appliance');
+});
+
+gaw.bind('results-desc', function(element) {
+	return $(element).closest('.body').find('.product-name').eq(0).text();
 });
 
 gaw.bind('results-navbar-text', function(element) {

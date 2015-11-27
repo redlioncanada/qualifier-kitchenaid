@@ -44,7 +44,7 @@ https://www.npmjs.com/package/ng-slider -->
 			<ul>
 				<li ng-repeat="answer in qs.text[1].answers" class="answer-button-wrapper">
 					<div class="answer-button" ng-class="{'enabled':answer.enabled, 'selected':answer.answer}" ng-click="setButtonAnswer(answer)">
-						<div class="answer-button-content-wrapper">
+				        <div class="answer-button-content-wrapper" data-ga-action="Clicked Height Button" data-ga-label="@slider-button">
 							<p class="answer-button-answer">{{answer.text}}</p>
 							<p class="answer-button-label">{{qs.text[1].dimension_label}}</p>
 						</div>

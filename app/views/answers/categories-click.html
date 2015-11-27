@@ -1,5 +1,5 @@
 <!-- Initial Categories and Subcategores with Large Custom Pictures -->
-<div class="answers-main-content answers-category" ng-controller="RadioCtrl" data-ga-category="My Maytag Landing Page" data-ga-action="Selected Appliance Category">
+<div class="answers-main-content answers-category" ng-controller="RadioCtrl" data-ga-category="My KitchenAid Landing Page" data-ga-action="Selected Appliance Category">
 
 	<a href="" data-ga-label="{{answer.text}}" ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box categories {{answer.classes}} col-md-{{boxWidth}}" ng-click="qs.disabled || toggle(qs.text[0].answers, answer);" ng-init="answer.activeImage=answer.image" ng-class="{noanswer : !controls.questionHasAnswer}">
 		<div class="category-image" data-ga-label="{{answer.text}}">

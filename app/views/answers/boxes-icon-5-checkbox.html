@@ -1,12 +1,12 @@
 <!-- Icon box answers...this one in particular needs to be multiselect / checkbox - Fridge Q6 -->
-<div class="answers-main-content boxes-icon-5-container" ng-controller="CheckboxCtrl" data-ga-category="@appliance Appliance Segment" data-ga-action="Checked @question-name Box" data-ga-bind-label="@button-text">
+<div class="answers-main-content boxes-icon-5-container" ng-controller="CheckboxCtrl" data-ga-category="@appliance Appliance Segment" data-ga-action="Checked @question-name Icon" data-ga-bind-label="@button-text">
 	<a href="" ng-repeat="answer in qs.text[0].answers" 
 	class="answer answer-option answer-box boxes-icon-5 {{answer.classes}}" data-ga-label ng-init="answer.activeImage=answer.image" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mousedown="buttonState='down'"ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDown : buttonState=='down', toggleButtonUp : buttonState=='up', selected : answer.answer}">
 		<div class="icon-wrap">
 			<img class="normal" ng-src="{{answer.image}}" />
 			<img class="hover" ng-if="!!answer.hover" ng-src="{{answer.hover}}" />
 		</div>
-		<div class="select-icon"></div>
+		<div class="select-icon" data-ga-label></div>
 		<div class="label-wrap" data-ga-label>
 			<div class="label-text" data-ga-label ng-bind-html="answer.text"></div>
 		</div>

@@ -14,7 +14,7 @@
 								<ul class="color-wrapper">
                                     <li ng-repeat="colour in a.colours" ng-click="expandPriceRange(colour.prices.CAD);a.picker=colour;selectPicker(a,colour);" ng-class="{selected: a.picker.colourCode==colour.colourCode}">
                                         <div class="color-border-radius">
-                                            <img data-ga-action="Clicked Choose Color" data-ga-label="@results-appliance-color" ng-src="http://kitchenaid.com/digitalassets/ColorBars/{{colour.colourCode}}-off.gif"  />
+                                            <img data-ga-action="Clicked Choose Color" data-ga-label="@results-appliance-color - @results-desc" ng-src="http://kitchenaid.com/digitalassets/ColorBars/{{colour.colourCode}}-off.gif"  />
                                         </div>        
                                     </li>
 								</ul>
@@ -58,12 +58,12 @@
 							</div>
 
 							<div class="btn-wrap" data-ga-action="Clicked Resources Button">
-									<a href="{{a.url}}" class="btn btn-default" target="_blank" data-ga-label="More Info @results-sku">
-										<span class="btn-text" bo-text="brandData.apptext.moreInfo" data-ga-label="More Info @results-sku"></span>
+									<a href="{{a.url}}" class="btn btn-default" target="_blank" data-ga-label="More Info - @results-desc">
+										<span class="btn-text" bo-text="brandData.apptext.moreInfo" data-ga-label="More Info - @results-desc"></span>
 									</a>
 
-									<a href="#" ng-click="print(a.sku.replace('-NAR',''),a.picker.sku)" class="btn btn-default" target="_blank" data-ga-label="Print @results-sku">
-										<span class="btn-text" bo-text="brandData.apptext.print" data-ga-label="Print @results-sku"></span>
+									<a href="#" ng-click="print(a.sku.replace('-NAR',''),a.picker.sku)" class="btn btn-default" target="_blank" data-ga-label="Print - @results-desc">
+										<span class="btn-text" bo-text="brandData.apptext.print" data-ga-label="Print - @results-desc"></span>
 									</a>
 
 								</div>

@@ -324,7 +324,7 @@
 			]          
 		},
 		"Cooking - Cooktops - Style" : {
-			"next" : "Cooking - Cooktops - Features",
+			"next" : "Cooking - Cooktops - Features 1",
 			"previous" : "Cooking - Cooktops - Size",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Style",
@@ -381,8 +381,8 @@
 				}
 			]
 		},
-		"Cooking - Cooktops - Features" : {
-			"next" : "Cooking - Cooktops - Performance",
+		"Cooking - Cooktops - Features 1" : {
+			"next" : "Cooking - Cooktops - Features 2",
 			"previous" : "Cooking - Cooktops - Style",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
@@ -460,9 +460,9 @@
 				}
 			]
 		},
-		"Cooking - Cooktops - Performance" : {
-			"next" : "Cooking - Cooktops - Gas",
-			"previous" : "Cooking - Cooktops - Features",
+		"Cooking - Cooktops - Features 2" : {
+			"next" : "Cooking - Cooktops - Fuel Type",
+			"previous" : "Cooking - Cooktops - Features 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
 			"thumbnail_current" : "img/icon-features-current.png",
@@ -565,9 +565,9 @@
 				}
 			]
 		},
-		"Cooking - Cooktops - Gas" : {
+		"Cooking - Cooktops - Fuel Type" : {
 			"next" : null,
-			"previous" : "Cooking - Cooktops - Performance",
+			"previous" : "Cooking - Cooktops - Features 2",
 			"thumbnail_text" : "Fuel Type",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
@@ -719,7 +719,6 @@
 					"explanation" : "Some of the by-products of cooking (steam, moisture and grease) can be destructive without the right ventilation. By understanding your specific needs we can find the perfect system for your kitchen.",
 					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
-					"classes" : "vents  singleAns",
 					"answers" : [
 						{   "image" : "img/icon-thumb-yes.png",
                             "image_alt" : "Vents Yes",
@@ -727,8 +726,9 @@
                             "image_hover_alt" : "Vents Yes Hover",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "",
+							"text" : "Yes",
 							"value" : "under",
+                            "classes" : "hiddenLabelText",
 							"scoring" : {
 								"islandMount" : -30,
 								"wallMount":-30,
@@ -744,8 +744,9 @@
                             "image_hover_alt" : "Vents No Hover",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "",
+							"text" : "No",
 							"value" : "notUnder",
+                            "classes" : "hiddenLabelText",
 							"scoring" : {
 								"islandMount" : 1,
 								"wallMount": 1,
@@ -758,7 +759,7 @@
 			]
 		},
 		"Cooking - Vents - Speed" : {
-			"next" : "Cooking - Vents - Ventilation",
+			"next" : "Cooking - Vents - Ventilation 1",
 			"previous" : "Cooking - Vents - Type",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Speed",
@@ -772,7 +773,6 @@
 					"explanation" : "We know that everybody has a different cooking style. If you like to turn up the heat, we’ll find you a vent with a stronger fan.",
 					"type" : "boxes-icon-2",
 					"oneAnswer" : true,
-					"classes" : "vents  singleAns",
 					"answers" : [
 						{
                             "image" : "img/icon-thumb-yes.png",
@@ -781,8 +781,9 @@
                             "image_hover_alt" : "Vents Yes Hover",
 							"thumbnail" : "img/icon-speed.png",
 							"thumbnail_current" : "img/icon-speed-current.png",
-							"text" : "",
+							"text" : "Yes",
 							"value" : "high speed",
+                            "classes" : "hiddenLabelText",
 							"scoring" : {
 								"340CFMOrHigher" : 1
 							},
@@ -795,8 +796,9 @@
                             "image_hover_alt" : "Vents No Hover",
 							"thumbnail" : "img/icon-speed.png",
 							"thumbnail_current" : "img/icon-speed-current.png",
-							"text" : "",
+							"text" : "No",
 							"value" : "no speed",
+                            "classes" : "hiddenLabelText",
 							"scoring" : {
 							},
 							"order" : 2
@@ -805,8 +807,8 @@
 				}
 			]
 		},
-		"Cooking - Vents - Ventilation" : {
-			"next" : "Cooking - Vents - Auto",
+		"Cooking - Vents - Ventilation 1" : {
+			"next" : "Cooking - Vents - Ventilation 2",
 			"previous" : "Cooking - Vents - Speed",
 			"thumbnail_text" : "Ventilation",
 			"thumbnail_current" : "img/icon-convection-current.png",
@@ -818,7 +820,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about ventilation?", 
 					"explanation" : "As much as we want to maintain the smell of that simmering pot of soup, proper ventilation is important to keep kitchen air clean.",
-					"type" : "radio-2",
+					"type" : "radio-3",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -867,9 +869,9 @@
 				}
 			]
 		},
-		"Cooking - Vents - Auto" : {
+		"Cooking - Vents - Ventilation 2" : {
 			"next" : "Cooking - Vents - Warming",
-			"previous" : "Cooking - Vents - Ventilation",
+			"previous" : "Cooking - Vents - Ventilation 1",
 			"thumbnail_text" : "Automatic Fan",
 			"thumbnail_current" : "img/icon-convection-current.png",
 			"thumbnail_type" : "image",
@@ -880,7 +882,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about my habits?", 
 					"explanation" : "Some of our vents are automatic which means if you need us to, we can give you a hand turning it on.",
-					"type" : "radio-2",
+					"type" : "radio-3",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -918,7 +920,7 @@
 		},
 		"Cooking - Vents - Warming" : {
 			"next" : null,
-			"previous" : "Cooking - Vents - Auto",
+			"previous" : "Cooking - Vents - Ventilation 2",
 			"thumbnail_text" : "Warming",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_type" : "image",
@@ -933,7 +935,7 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "",
+							"text" : "Yes",
 							"image" : "img/icon-thumb-yes.png",
                             "image_alt" : "Vents Yes",
 							"hover" : "img/icon-thumb-yes-active.png",
@@ -941,13 +943,14 @@
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : "yes",
+                            "classes" : "hiddenLabelText",
 							"scoring" : {
 								 "warmingLamps": 1
 							},
 							"order" : 1
 						},
 						{
-							"text" : "",
+							"text" : "No",
 							"image" : "img/icon-thumb-no.png",
                             "image_alt" : "Vents No",
 							"hover" : "img/icon-thumb-no-active.png",
@@ -955,6 +958,7 @@
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : "no",
+                            "classes" : "hiddenLabelText",
 							"scoring" : {
 							},
 							"order" : 2
@@ -964,7 +968,7 @@
 			]
 		},
 		"Cooking - Wall Ovens - Size" : {
-			"next" : "Cooking - Wall Ovens - Style",
+			"next" : "Cooking - Wall Ovens - Orientation",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
@@ -1036,7 +1040,7 @@
 				}					
 			]
 		},
-		"Cooking - Wall Ovens - Style" : {
+		"Cooking - Wall Ovens - Orientation" : {
 			"next" : "Cooking - Wall Ovens - Features",
 			"previous" : "Cooking - Wall Ovens - Size",
 			"thumbnail_type" : "image",
@@ -1113,8 +1117,8 @@
 			]
 		},
 		"Cooking - Wall Ovens - Features" : {
-			"next" : "Cooking - Wall Ovens - Cooking Style",
-			"previous" : "Cooking - Wall Ovens - Style",
+			"next" : "Cooking - Wall Ovens - Style",
+			"previous" : "Cooking - Wall Ovens - Orientation",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
 			"thumbnail_current" : "img/icon-features-current.png",
@@ -1185,7 +1189,7 @@
 				}
 			]
 		},
-		"Cooking - Wall Ovens - Cooking Style" : {
+		"Cooking - Wall Ovens - Style" : {
 			"next" : "Cooking - Wall Ovens - Energy",
 			"previous" : "Cooking - Wall Ovens - Features",
 			"thumbnail_type" : "image",
@@ -1253,7 +1257,7 @@
 		},
 		"Cooking - Wall Ovens - Energy" : {
 			"next" : null,
-			"previous" : "Cooking - Wall Ovens - Cooking Style",
+			"previous" : "Cooking - Wall Ovens - Style",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Energy",
 			"thumbnail_current" : "img/icon-energy-current.png",
@@ -1313,7 +1317,7 @@
 			]
 		},
 		"Cooking - Ranges - Size" : {
-			"next" : "Cooking - Ranges - Features",
+			"next" : "Cooking - Ranges - Features 1",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
@@ -1373,8 +1377,8 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Features" : {
-			"next" : "Cooking - Ranges - Cooking Performance",
+		"Cooking - Ranges - Features 1" : {
+			"next" : "Cooking - Ranges - Features 2",
 			"previous" : "Cooking - Ranges - Size",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
@@ -1456,9 +1460,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Cooking Performance" : {
+		"Cooking - Ranges - Features 2" : {
 			"next" : "Cooking - Ranges - Capacity",
-			"previous" : "Cooking - Ranges - Features",
+			"previous" : "Cooking - Ranges - Features 1",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_text" : "Features",
@@ -1562,8 +1566,8 @@
 			]
 		},
 		"Cooking - Ranges - Capacity" : {
-			"next" : "Cooking - Ranges - Range Style",
-			"previous" : "Cooking - Ranges - Cooking Performance",
+			"next" : "Cooking - Ranges - Style",
+			"previous" : "Cooking - Ranges - Features 2",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Capacity",
 			"thumbnail_current" : "img/icon-capacity-current.png",
@@ -1627,8 +1631,8 @@
 				}											
 			]
 		},
-		"Cooking - Ranges - Range Style" : {
-			"next" : "Cooking - Ranges - Range Style2",
+		"Cooking - Ranges - Style" : {
+			"next" : "Cooking - Ranges - Style 2",
 			"previous" : "Cooking - Ranges - Capacity",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
@@ -1690,9 +1694,9 @@
 				}
 			]
 		},
-        "Cooking - Ranges - Range Style2" : {
+        "Cooking - Ranges - Style 2" : {
 			"next" : "Cooking - Ranges - Lifestyle",
-			"previous" : "Cooking - Ranges - Range Style",
+			"previous" : "Cooking - Ranges - Style",
 			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
@@ -1754,8 +1758,8 @@
 			]
 		},
 		"Cooking - Ranges - Lifestyle" : {
-			"next" : "Cooking - Ranges - Features2",
-			"previous" : "Cooking - Ranges - Range Style2",
+			"next" : "Cooking - Ranges - Features 3",
+			"previous" : "Cooking - Ranges - Style 2",
 			"thumbnail_text" : "Lifestyle",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
 			"thumbnail_type" : "image",
@@ -1821,7 +1825,7 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Features2" : {
+		"Cooking - Ranges - Features 3" : {
 			"next" : "Cooking - Ranges - Fuel Type",
 			"previous" : "Cooking - Ranges - Lifestyle",
 			"thumbnail_type" : "image",
@@ -1879,7 +1883,7 @@
 		},
 		"Cooking - Ranges - Fuel Type" : {
 			"next" : null,
-			"previous" : "Cooking - Ranges - Features2",
+			"previous" : "Cooking - Ranges - Features 3",
 			"thumbnail_text" : "Fuel Type",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
@@ -3007,7 +3011,7 @@
 			]
 		},
 		"Dishwashers - Energy" : {
-			"next" : "Dishwashers - Noise1",
+			"next" : "Dishwashers - Noise 1",
 			"previous" : "Dishwashers - Features",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-energy-current.png",
@@ -3070,8 +3074,8 @@
 				}											
 			]
 		},
-		"Dishwashers - Noise1" : {
-			"next" : "Dishwashers - Noise2",
+		"Dishwashers - Noise 1" : {
+			"next" : "Dishwashers - Noise 2",
 			"previous" : "Dishwashers - Energy",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-noise-current.png",
@@ -3129,9 +3133,9 @@
 				}
 			]
 		},
-		"Dishwashers - Noise2" : {
-			"next" : "Dishwashers - Flexibility",
-			"previous" : "Dishwashers - Noise1",
+		"Dishwashers - Noise 2" : {
+			"next" : "Dishwashers - Organization",
+			"previous" : "Dishwashers - Noise 1",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-noise-current.png",
 			"thumbnail_text" : "Noise",
@@ -3168,9 +3172,9 @@
 				}
 			]
 		},
-		"Dishwashers - Flexibility" : {
+		"Dishwashers - Organization" : {
 			"next" : "Dishwashers - Style",
-			"previous" : "Dishwashers - Noise2",
+			"previous" : "Dishwashers - Noise 2",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-organization-current.png",
 			"thumbnail_text" : "Organization",
@@ -3239,7 +3243,7 @@
 		},
 		"Dishwashers - Style" : {
 			"next" : null,
-			"previous" : "Dishwashers - Flexibility",
+			"previous" : "Dishwashers - Organization",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_text" : "Style",

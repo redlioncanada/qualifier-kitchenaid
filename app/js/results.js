@@ -175,6 +175,26 @@ $scope.setPriceRange = function () {
         $rootScope.controls.price = (Math.floor(range[0]/50)*50).toString() + ";" + (Math.round(range[1]/50)*50).toString()
 
       }
+           
+      $scope.getAppliance = function() {
+        for (var i in $rootScope.questionsData.scoringQuestions.Appliance.text[0].answers) {
+          var value = $rootScope.questionsData.scoringQuestions.Appliance.text[0].answers[i];
+
+          if (!!value.answer) {
+            if (value.displayName == 'Cooking') {
+              for (var i in $rootScope.questionsData.scoringQuestions["Cooking - Pre-Qualifier 1"].text[0].answers) {
+                var value = $rootScope.questionsData.scoringQuestions["Cooking - Pre-Qualifier 1"].text[0].answers[i];
+
+                if (!!value.answer) {
+                  return value.displayName;
+                }
+              }
+            } else {
+              return value.displayName;
+            }
+          }
+        }
+      }
 
       $scope.constructPageTitle = function() {
         for (var i in $rootScope.questionsData.scoringQuestions.Appliance.text[0].answers) {

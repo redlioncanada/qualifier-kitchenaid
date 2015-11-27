@@ -543,13 +543,18 @@ header.header-desktop {
 			margin-top: 133px;
 		}
 
-		&.regular-2-container {
+        &.regular-2-container, &.regular-3-container {
 			width: 50%;
 		}
 
-		&.regular-2-container, &.regular-3-container, &.regular-4-container, &.regular-4-container.answersize34 {
+		&.regular-2-container, &.regular-4-container, &.regular-4-container.answersize34 {
 			margin-top: 103px;
 		}
+        
+        &.regular-3-container {
+            margin-top: 70px;   
+        }
+
 
 		&.regular-4-container.answersize56 {
 			margin-top: 70px;

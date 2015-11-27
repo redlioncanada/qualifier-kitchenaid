@@ -489,7 +489,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 	.slidey {
 		width: 927px !important;
 		min-width: 927px !important;
-		left: -462px !important;
+		left: -470px !important;
 	}
 
 	.app-answers {
@@ -517,7 +517,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 
 		div[ng-controller="SliderCtrl"] {
 			.slider-wrap {
-				margin-left: 50px;
+				margin-left: 35px;
 			}
 		}
 
@@ -1345,7 +1345,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             }
         }
 	}
-    .regular-2-container {
+    .regular-2-container, .regular-3-container {
         width: 100% !important;
     }
     a.answer-box.picture-3, a.answer-box.picture-2, a.answer-box.checkbox-4, a.answer-box.radio-4, .boxes-icon-split {
@@ -1660,6 +1660,13 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 
 .hiddenViaOpacity {
 	opacity: 0 !important;
+}
+.hiddenLabelText {
+    .label-wrap {
+        .label-text {
+            display: none !important;
+        }
+    }
 }
 
 div[ng-class="fr_CA"] {

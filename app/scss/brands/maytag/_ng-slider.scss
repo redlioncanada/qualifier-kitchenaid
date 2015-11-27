@@ -453,7 +453,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			ins { 
 				font-family: $AV-Medium;
 				text-transform: uppercase;
-				font-size: 11px;
+				font-size: 12px;
                 font-weight: 400;
 				text-decoration: none; 
 				position: absolute; 
@@ -474,8 +474,10 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 
 				.extra {
 					display: none;
-                    font-size: 8px;
+                    font-size: 9px;
                     color: #AAA;
+                    width: 60%;
+                    margin: 0 auto;
 				}
 			}
 		}

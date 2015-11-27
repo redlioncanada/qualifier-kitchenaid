@@ -1,8 +1,8 @@
 <!-- Initial Categories and Subcategores with Large Custom Pictures -->
-<div class="answers-main-content answers-category" ng-controller="RadioCtrl">
+<div class="answers-main-content answers-category" ng-controller="RadioCtrl" data-ga-category="Cooking Category Landing Page" data-ga-action="Clicked Expore Cooking Products">
 
 	<a href="" ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box categories {{answer.classes}} col-md-{{boxWidth}}" ng-click="qs.disabled || toggle(qs.text[0].answers, answer);" ng-init="answer.activeImage=answer.image" ng-class="{noanswer : !controls.questionHasAnswer}">
-		<div class="category-image">
+		<div class="category-image" data-ga-label="{{answer.text}}">
 			<img class="normal" ng-src="{{answer.image}}" alt="{{answer.image_alt}}" />
 			<img class="hover" ng-if="!!answer.hover" ng-src="{{answer.hover}}" alt="{{answer.image_hover_alt}}" />
 		</div>
