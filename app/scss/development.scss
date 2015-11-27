@@ -6,6 +6,11 @@
 	font-size:12px;
 }
 
+.hide-scoreboard {
+	ul {display: none;}
+	div:first-child {display: none;}
+}
+
 .scoreboard {
 	position :absolute;
 	z-index: 500;
