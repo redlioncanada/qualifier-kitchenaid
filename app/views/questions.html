@@ -40,6 +40,15 @@
 			</div>
 		</div>
 		
+		<!-- @if ENV='development' -->
+	<div class="scoreboard hide-scoreboard" data-open="0">
+		<div>Scoring</div>
+		<ul>
+		<li ng-repeat="(i,a) in appliances | filter:{score : '!!'} | orderBy:'-score'">{{i+1}}. <a bo-href="a.url">{{a.sku}}</a> - {{a.name}}<span ng-if="!!a.width"> - <span bo-text="a.width"></span>W</span><span ng-if="!!a.height"> - <span bo-text="a.height"></span>H</span><span ng-if="!!a.capacity"> - <span bo-text="a.capacity"></span>C</span> ({{a.score}})</li>
+		</ul>
+		<div class="toggle" onclick="if ($('.scoreboard').attr('data-open') == '0') { $('.scoreboard').removeClass('hide-scoreboard').attr('data-open', 1); $('.scoreboard .toggle').text('X'); } else { $('.scoreboard').addClass('hide-scoreboard').attr('data-open', 0); $('.scoreboard .toggle').text('+'); }">+</div>
+	</div>
+	<!-- @endif -->
 
 	<div class="slidey-wrap-all">
 		<div ng-class="{
