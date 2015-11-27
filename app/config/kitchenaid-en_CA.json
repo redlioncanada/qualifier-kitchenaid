@@ -2270,6 +2270,7 @@
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"text" : "Not a Concern",
 							"scoring" : {
+								"energyStar" : 0
 							}
 						},
 						"1" : {
@@ -2278,6 +2279,7 @@
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"text" : "somewhat of<br>a concern",
 							"scoring" : {
+								"energyStar" : 1
 							}
 						},
 						"2" : {
@@ -2286,6 +2288,7 @@
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"text" : "Important",
 							"scoring" : {
+								"energyStar" : 2
 							}
 						},
 						"3" : {
@@ -2294,6 +2297,7 @@
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"text" : "Very Important",
 							"scoring" : {
+								"energyStar" : 3
 							}
 						}
 					}
