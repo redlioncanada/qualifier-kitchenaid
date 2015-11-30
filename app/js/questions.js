@@ -188,6 +188,7 @@ angular.module('App')
 			"electric" : false,
 			"powerBurner" : false,
 			"powerPreheat" : false,
+			"induction" : 0,
 			"slideIn" : 0,
 			"freestanding" : 0,
 			"mediumCapacity" : 0,
