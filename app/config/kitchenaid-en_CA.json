@@ -209,7 +209,7 @@
 						"to" : 5,      
 					    "step": 0.0001,
 					    "dimension_label" : "WIDTH",
-					    "scale": ["Any size","15\"","30\"","36\"","48\""]       
+					    "scale": ["Any size","17\"","30\"","36\"","48\""]       
 					},
 					"answers" : {
 						"1" : {
@@ -224,42 +224,40 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 2,
-							"text" : "15\"",
+							"text" : "17\"",
 							"scoring" : {
-								"width15" : 10,
-								"width16" : -30,
-								"width17" : -30,
-								"width18" : -30,
-								"width19" : -30,
-								"width20" : -30,
-								"width21" : -30,
-								"width22" : -30,
-								"width23" : -30,
-								"width24" : -30,
-								"width25" : -30,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30,
-								"width37" : -30,
-								"width38" : -30,
-								"width39" : -30,
-								"width40" : -30,
-								"width41" : -30,
-								"width42" : -30,
-								"width43" : -30,
-								"width44" : -30,
-								"width45" : -30,
-								"width46" : -30,
-								"width47" : -30,
-								"width48" : -30
+								"width17" : 10,
+								"width18" : -50,
+								"width19" : -50,
+								"width20" : -50,
+								"width21" : -50,
+								"width22" : -50,
+								"width23" : -50,
+								"width24" : -50,
+								"width25" : -50,
+								"width26" : -50,
+								"width27" : -50,
+								"width28" : -50,
+								"width29" : -50,
+								"width30" : -50,
+								"width31" : -50,
+								"width32" : -50,
+								"width33" : -50,
+								"width34" : -50,
+								"width35" : -50,
+								"width36" : -50,
+								"width37" : -50,
+								"width38" : -50,
+								"width39" : -50,
+								"width40" : -50,
+								"width41" : -50,
+								"width42" : -50,
+								"width43" : -50,
+								"width44" : -50,
+								"width45" : -50,
+								"width46" : -50,
+								"width47" : -50,
+								"width48" : -50
 							}
 						},
 						"3" : {
@@ -269,24 +267,24 @@
 							"text" : "30\"",
 							"scoring" : {
 								"width30" : 10,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30,
-								"width37" : -30,
-								"width38" : -30,
-								"width39" : -30,
-								"width40" : -30,
-								"width41" : -30,
-								"width42" : -30,
-								"width43" : -30,
-								"width44" : -30,
-								"width45" : -30,
-								"width46" : -30,
-								"width47" : -30,
-								"width48" : -30
+								"width31" : -50,
+								"width32" : -50,
+								"width33" : -50,
+								"width34" : -50,
+								"width35" : -50,
+								"width36" : -50,
+								"width37" : -50,
+								"width38" : -50,
+								"width39" : -50,
+								"width40" : -50,
+								"width41" : -50,
+								"width42" : -50,
+								"width43" : -50,
+								"width44" : -50,
+								"width45" : -50,
+								"width46" : -50,
+								"width47" : -50,
+								"width48" : -50
 							}
 						},
 						"4" : {
@@ -296,18 +294,18 @@
 							"text" : "36\"",
 							"scoring" : {
 								"width36" : 10,
-								"width37" : -30,
-								"width38" : -30,
-								"width39" : -30,
-								"width40" : -30,
-								"width41" : -30,
-								"width42" : -30,
-								"width43" : -30,
-								"width44" : -30,
-								"width45" : -30,
-								"width46" : -30,
-								"width47" : -30,
-								"width48" : -30
+								"width37" : -50,
+								"width38" : -50,
+								"width39" : -50,
+								"width40" : -50,
+								"width41" : -50,
+								"width42" : -50,
+								"width43" : -50,
+								"width44" : -50,
+								"width45" : -50,
+								"width46" : -50,
+								"width47" : -50,
+								"width48" : -50
 							}
 						},
 						"5" : {
@@ -347,8 +345,7 @@
 							"image" : "img/classic.png",
                             "image_alt" : "Cooktops Classic",
 							"scoring" : {
-								"electric" : 3,
-								"induction" : -1
+								"electric" : 5
 							},
 							"order" : 1
 						},
@@ -360,8 +357,7 @@
 							"image" : "img/modern.png",
                             "image_alt" : "Cooktops Modern",
 							"scoring" : {
-								"induction" : 3,
-								"electric" : -1
+								"induction" : 5
 							},
 							"order" : 2
 						},
@@ -506,7 +502,8 @@
 							"text" : "Saut&eacute;ing",
 							"value" : "saut&eacute;ing",
 							"scoring" : {
-								"15KBTU":1
+								"15KBTU":1,
+								"performanceBoost":1
 							},
 							"order" : 3
 						},
@@ -516,7 +513,8 @@
 							"text" : "Flamb&eacute;ing",
 							"value" : "Flamb&eacute;ing",
 							"scoring" : {
-								"20KBTUDual":1
+								"20KBTUDual":1,
+								"performanceBoost":1
 							},
 							"order" : 4
 						},
@@ -590,6 +588,9 @@
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
+                            "scoring" : {
+                                "gas" : 3
+                            },
 							"order" : 1
 						},
 						{
@@ -732,7 +733,7 @@
 							"scoring" : {
 								"islandMount" : -30,
 								"wallMount":-30,
-								"underCabinet":1
+								"underCabinet":2
 							},
 							"order" : 1
 						},
@@ -785,7 +786,7 @@
 							"value" : "high speed",
                             "classes" : "hiddenLabelText",
 							"scoring" : {
-								"340CFMOrHigher" : 1
+								"340CFMOrHigher" : 3
 							},
 							"order" : 1
 						},
@@ -833,7 +834,8 @@
 							"thumbnail_current" : "img/icon-convection-current.png",
 							"value" : "yes",
 							"scoring" : {
-								 "exterior": 1
+                                "exterior": 2,
+                                "nonVented": -2
 							},
 							"order" : 1
 						},
@@ -847,8 +849,9 @@
 							"thumbnail_current" : "img/icon-convection-current.png",
 							"value" : "no",
 							"scoring" : {
-								 "nonVented": 1,
-								 "convertible": 1
+                                "exterior": -10,
+                                "nonVented": 2,
+                                "convertible": 2
 							},
 							"order" : 2
 						},
@@ -860,8 +863,8 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "i am no sure",
 							"scoring" : {
-								"easyConversion": 1,
-								"convertible": 1
+								"easyConversion": 2,
+								"convertible": 2
 							},
 							"order" : 3
 						}
@@ -891,7 +894,7 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "often",
 							"scoring" : {
-								 "automaticOn": 1
+								 "automaticOn": 2
 							},
 							"order" : 1
 						},
@@ -945,7 +948,7 @@
 							"value" : "yes",
                             "classes" : "hiddenLabelText",
 							"scoring" : {
-								 "warmingLamps": 1
+								 "warmingLamps": 3
 							},
 							"order" : 1
 						},
@@ -1064,9 +1067,7 @@
 							"image" : "img/single-wall-oven.png",
                             "image_alt" : "Wallovens Single",
 							"scoring" : {
-								"single" : 1,
-								"combination" : -30,
-								"double" : -30
+								"single" : 3
 							},
 							"order" : 1
 						},
@@ -1078,9 +1079,7 @@
 							"image" : "img/microwave-oven-combo.png",
                             "image_alt" : "Wallovens Combo",
 							"scoring" : {
-								"single" : -30,
-								"combination" : 1,
-								"double" : -30
+								"combination" : 3
 							},
 							"order" : 2
 						},
@@ -1092,9 +1091,7 @@
 							"image" : "img/double-wall-oven.png",
                             "image_alt" : "Wallovens Double",
 							"scoring" : {
-								"single" : -30,
-								"combination" : -30,
-								"double" : 1
+								"double" : 3
 							},
 							"order" : 3
 						},
@@ -1106,9 +1103,6 @@
 							"image" : "img/no-preference-oven.png",
                             "image_alt" : "Wallovens No Preference",
 							"scoring" : {
-								"single" : -30,
-								"combination" : -30,
-								"double" : 1
 							},
 							"order" : 4
 						}
@@ -1356,12 +1350,12 @@
 							"text" : "30\"",
 							"scoring" : {
 								"width30" : 10,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width31" : -50,
+								"width32" : -50,
+								"width33" : -50,
+								"width34" : -50,
+								"width35" : -50,
+								"width36" : -50
 							}
 						},
 						"2" : {
@@ -1370,6 +1364,12 @@
 							"value" : 2,
 							"text" : "36\"",
 							"scoring" : {
+								"width30" : -50,
+								"width31" : -50,
+								"width32" : -50,
+								"width33" : -50,
+								"width34" : -50,
+								"width35" : -50,
 								"width36" : 10
 							}
 						}
@@ -1506,7 +1506,8 @@
 							"text" : "Sautéing",
 							"value" : "sautéing",
 							"scoring" : {
-								"15KBTU" : 1
+								"15KBTU" : 1,
+                                "performanceBoost": 1
 							},
 							"order" : 3
 						},
@@ -1516,7 +1517,8 @@
 							"text" : "Flambéing",
 							"value" : "flambéing",
 							"scoring" : {
-								"20KBTUDual" : 1
+								"20KBTUDual" : 1,
+                                "performanceBoost": 1
 							},
 							"order" : 4
 						},
@@ -1604,8 +1606,7 @@
 							"value" : 1,
 							"text" : "Dinner for my family",
 							"scoring" : {
-								"mediumCapacity" : 1,
-								"double":1
+								"mediumCapacity" : 1
 							}
 						},
 						"2" : {
@@ -1614,8 +1615,7 @@
 							"value" : 2,
 							"text" : "Cupcakes for all my friends",
 							"scoring" : {
-								"largeCapacity" : 1,
-								"double":1
+								"largeCapacity" : 1
 							}
 						},
 						"3" : {
@@ -1686,7 +1686,7 @@
 							"text" : "Cook? We rely on our impressive<br />collection of take-out menus",
 							"value" : "frozen",
 							"scoring" : {
-								"electric" : 1
+								"electric" : 3
 							},
 							"order" : 4
 						}
@@ -1719,8 +1719,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "yes",
 							"scoring" : {
-								"frontControl" : 3,
-								"rearControl" : -3
+								"frontControl" : 15
 							},
 							"order" : 1
 						},
@@ -1733,8 +1732,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "no",
 							"scoring" : {
-								"rearControl" : 3,
-								"frontControl" : -3
+								"rearControl" : 15
 							},
 							"order" : 2
 						}
@@ -1748,8 +1746,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "nopref",
 							"scoring" : {
-								"frontControl" : 1,
-								"rearControl" : -1
+								"frontControl" : 5
 							},
 							"order" : 3
 						}
@@ -1908,7 +1905,7 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
 							"scoring" : {
-								"gas" : 1
+								"gas" : 3
 							},
 							"order" : 1
 						},
@@ -2312,8 +2309,7 @@
 							"text" : "My large family",
 							"scoring" : {
 								"largerCapacity" : 1,
-								"frenchDoor5Door" : 2,
-								"frenchDoor" : 2
+								"frenchDoor5Door" : 2
 							}
 						},
 						"5" : {
@@ -2323,8 +2319,7 @@
 							"text" : "My dinner party guests",
 							"scoring" : {
 								"largestCapacity" : 1,
-								"frenchDoor5Door" : 1,
-								"frenchDoor" : 1
+								"frenchDoor5Door" : 1
 							}
 						}
 					}
@@ -2650,7 +2645,6 @@
 							"text" : "I’m on a first-name basis<br />at the farmers’ market",
 							"value" : "farmers market",
 							"scoring" : {
- 								"freshFlowProducePreserver" : 2,
  								"producePreserver" : 1,
  								"extendFreshPlus" : 1,
  								"freshChill" : 1
@@ -2663,9 +2657,9 @@
 							"text" : "I get basics and produce<br />from the grocery store",
 							"value" : "full grocery store",
 							"scoring" : {
-									"preservaCare" : 1,
-									"extendFresh" : 1,
-									"freshChill" : 1
+                                "preservaCare" : 1,
+                                "extendFresh" : 1,
+                                "freshChill" : 1
 							},
 							"order" : 2
 						},
@@ -2921,7 +2915,8 @@
 							"text" : "Noise Level",
 							"value" : "noise",
 							"scoring" : {
-								"quiet" : 1
+								"quiet" : 1,
+                                "cleanWater": 1
 							},
 							"order" : 2
 						},
@@ -2931,8 +2926,6 @@
 							"text" : "Ease of use",
 							"value" : "ease",
 							"scoring" : {
-								"proScrub": 1,
-								"proWash": 1,
 								"cleanWater": 1
 							},
 							"order" : 3
@@ -3028,7 +3021,7 @@
 							"value" : 3,
 							"text" : "Very Important",
 							"scoring" : {
-								"cleanWater": 2
+								"cleanWater": 3
 							}
 						}
 					}
@@ -3067,7 +3060,7 @@
 							"text" : "Before I go to bed",
 							"value" : "night",
 							"scoring" : {
-								"quiet" : 1
+								"quiet" : 5
 							},
 							"order" : 2
 						},
@@ -3077,8 +3070,7 @@
 							"text" : "Before I head out in the morning",
 							"value" : "morning",
 							"scoring" : {
-							},
-							"order" : 3
+							}
 						},
 						{
 							"thumbnail" : "img/icon-noise.png",
@@ -3086,7 +3078,7 @@
 							"text" : "Only during off-peak hours",
 							"value" : "offpeak",
 							"scoring" : {
-								"quiet" : 1
+								"quiet" : 5
 							},
 							"order" : 4
 						}
@@ -3116,7 +3108,7 @@
 							"text" : "Yes - My kitchen opens on to another room",
 							"value" : "yes",
 							"scoring" : {
-								 "quiet" : 1
+								 "quiet" : 5
 							},
 							"order" : 1
 						},
@@ -3157,8 +3149,8 @@
 							"image" : "img/dishwasher-full-and-tidy.jpg",
                             "image_alt" : "Dishwasher Full and Tidy",
 							"scoring" : {
-								 "culinaryCaddy": 1,
-								 "thirdLevelRack": 1
+								 "culinaryCaddy": 2,
+								 "thirdLevelRack": 2
 							},
 							"order" : 1
 						},
@@ -3226,9 +3218,8 @@
 							"image" : "img/exterior-handle.png",
                             "image_alt" : "Dishwasher Exterior Handle",
 							"scoring" : {	
-								"FID" : 5,
-								"pocketHandleConsole" : -1,
-								"panelReady" : -1
+								"FID" : 10,
+								"pocketHandleConsole" : -10
 							},
 							"order" : 1
 						},
@@ -3240,9 +3231,8 @@
 							"image" : "img/pocket-handle.png",
                             "image_alt" : "Dishwasher Pocket Handle",
 							"scoring" : {
-								"FID" : -1,
-								"pocketHandleConsole" : 5,
-								"panelReady" : -1
+								"FID" : -10,
+								"pocketHandleConsole" : 10
 							},
 							"order" : 2
 						},
@@ -3254,8 +3244,6 @@
 							"image" : "img/custom-panel.png",
                             "image_alt" : "Dishwasher Custom Panel",
 							"scoring" : {	
-								"FID" : -1,
-								"pocketHandleConsole" : -1,
 								"panelReady" : 5
 							},
 							"order" : 3
@@ -3268,7 +3256,6 @@
 							"image" : "img/no-preference-panel.png",
                             "image_alt" : "Dishwasher No Preference",
 							"scoring" : {	
-								"panelReady" : 5
 							},
 							"order" : 3
 						}
