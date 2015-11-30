@@ -8,7 +8,7 @@ angular.module('App')
       $rootScope.controls.questionHasAnswer = false;
       for (var t in $rootScope.questionsData.question.text) {
         for (var i in $rootScope.questionsData.question.text[t].answers) {
-          if ($rootScope.questionsData.question.text[t].answers[i].value == $rootScope.questionsData.question.text[t].answer) {
+          if ($rootScope.questionsData.question.text[t].answers[i].value == Math.round($rootScope.questionsData.question.show.answer)) {
             $rootScope.questionsData.question.text[t].answers[i].answer = true
             if (t == 1) $rootScope.controls.questionHasAnswer = true
           } else {

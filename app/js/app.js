@@ -96,12 +96,16 @@ App.filter('after', function() {
   };
 });
 
-App.filter('assignScore', function() {
+App.filter('assignScore', function($rootScope) {
   return function(items, appliance) {
       angular.forEach(items, function(item) {
         if (item.featureKey in appliance) {
           if (!!appliance[item.featureKey]) {
-            item.score = 2;
+            if (item.featureKey in $rootScope.questionsData.currentScore && !!$rootScope.questionsData.currentScore[item.featureKey]) {
+              item.score = $rootScope.questionsData.currentScore[item.featureKey] + 3;
+            } else {
+              item.score = 2;
+            }
           } else if (!!item.top3) {
             item.score = 1;
           }
@@ -111,6 +115,7 @@ App.filter('assignScore', function() {
           item.score = 0;
         }
       });          
+      console.log(items);
       return items;
   };
 });
