@@ -226,6 +226,7 @@
 							"value" : 2,
 							"text" : "17\"",
 							"scoring" : {
+                                "width14" : 10,
                                 "width15" : 10,
                                 "width16" : 10,
 								"width17" : 10,
@@ -269,8 +270,8 @@
 							"text" : "30\"",
 							"scoring" : {
 								"width30" : 10,
-								"width31" : -50,
-								"width32" : -50,
+								"width31" : 10,
+								"width32" : 10,
 								"width33" : -50,
 								"width34" : -50,
 								"width35" : -50,
@@ -296,10 +297,10 @@
 							"text" : "36\"",
 							"scoring" : {
 								"width36" : 10,
-								"width37" : -50,
-								"width38" : -50,
-								"width39" : -50,
-								"width40" : -50,
+								"width37" : 10,
+								"width38" : 10,
+								"width39" : 10,
+								"width40" : 10,
 								"width41" : -50,
 								"width42" : -50,
 								"width43" : -50,
@@ -316,7 +317,11 @@
 							"value" : 5,
 							"text" : "48\"",
 							"scoring" : {
-								"width48" : 10
+                                "width46" : 10,
+								"width47" : 10,
+								"width48" : 10,
+                                "width49" : 10,
+								"width50" : 10,
 							}
 						}
 					}								
