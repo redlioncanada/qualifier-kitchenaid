@@ -168,7 +168,6 @@ angular.module('App')
 			"steamEnhanced" : false,
 			"meltAndHold" : 0,
 			"15KBTU":0,
-			"5KBTUSimmer":0,
 			"inductionSimmer":0,
 			"performanceBoost":0,
 			"placeSettings13" : 0,
