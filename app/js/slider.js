@@ -14,7 +14,7 @@ angular.module('App')
   	$scope.setAnswer = function () {
       $rootScope.showTooltip = false;
   		for (var i in $rootScope.questionsData.question.show.answers) {
-  			if ($rootScope.questionsData.question.show.answers[i].value == $rootScope.questionsData.question.show.answer) {
+  			if ($rootScope.questionsData.question.show.answers[i].value == Math.round($rootScope.questionsData.question.show.answer)) {
   				$rootScope.questionsData.question.show.answers[i].answer = true;
           $rootScope.controls.questionHasAnswer = true;
   			} else {

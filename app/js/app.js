@@ -15,7 +15,8 @@ var nglibs = [
   'ngAnimate',
   'AppstateService',
   'djds4rce.angular-socialshare',
-  'ApplianceDataDecoratorService'
+  'ApplianceDataDecoratorService',
+  'TestsService'
 ];
 
 var App = angular.module('App', nglibs);
@@ -96,12 +97,16 @@ App.filter('after', function() {
   };
 });
 
-App.filter('assignScore', function() {
+App.filter('assignScore', function($rootScope) {
   return function(items, appliance) {
       angular.forEach(items, function(item) {
         if (item.featureKey in appliance) {
           if (!!appliance[item.featureKey]) {
-            item.score = 2;
+            if (item.featureKey in $rootScope.questionsData.currentScore && !!$rootScope.questionsData.currentScore[item.featureKey]) {
+              item.score = $rootScope.questionsData.currentScore[item.featureKey] + 3;
+            } else {
+              item.score = 2;
+            }
           } else if (!!item.top3) {
             item.score = 1;
           }
@@ -111,6 +116,7 @@ App.filter('assignScore', function() {
           item.score = 0;
         }
       });          
+      console.log(items);
       return items;
   };
 });
@@ -199,7 +205,7 @@ App.filter('byPrice', function($rootScope) {
 
 // New byPrice works by re-ranking the results, prices within the range are ranked, then prices without
 
-App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', '$dataDecorator', '$FB', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate, $dataDecorator, $FB) {
+App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', '$dataDecorator', '$tests', '$FB', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate, $dataDecorator, $tests, $FB) {
     $location.path('');
     $FB.init('919321591436851');
     $state.go('loading');
