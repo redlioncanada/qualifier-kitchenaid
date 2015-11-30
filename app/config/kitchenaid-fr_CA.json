@@ -236,6 +236,8 @@
                             "value" : 2,
                             "text" : "17\"",
                             "scoring" : {
+                                "width15" : 10,
+                                "width16" : 10,
                                 "width17" : 10,
                                 "width18" : -50,
                                 "width19" : -50,
