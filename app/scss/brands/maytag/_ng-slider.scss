@@ -925,7 +925,8 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	.price-slider {
 		margin-top: 60px;
 		margin-bottom: 20px;
-			width: 609px;
+        width: 609px;
+        z-index: 0;
 		.jslider-bg {
 			position: relative; 
 			width: 609px;
