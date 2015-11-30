@@ -15,7 +15,8 @@ var nglibs = [
   'ngAnimate',
   'AppstateService',
   'djds4rce.angular-socialshare',
-  'ApplianceDataDecoratorService'
+  'ApplianceDataDecoratorService',
+  'TestsService'
 ];
 
 var App = angular.module('App', nglibs);

@@ -62,7 +62,6 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 						item.largestCapacity = true
 					}
 					break;
-				}
 			}
 		})
 		return $filter('orderBy')(data, '-price');
