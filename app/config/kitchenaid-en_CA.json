@@ -1149,7 +1149,12 @@
 							"value" : "multiple meals",
 							"scoring" : {
 								"EasyConvection":1,
-								"5CuFt": 1
+								"5CuFt": 1,
+                                "5.7CuFt": 1,
+                                "6.2CuFt": 1,
+                                "6.4CuFt": 1,
+                                "8.6CuFt": 1,
+                                "10CuFt": 1
 							},
 							"order" : 2
 						},
@@ -1160,7 +1165,8 @@
 							"value" : "host parties",
 							"scoring" : {
 								"EasyConvection":1,
-								"5CuFt": 1
+								"double": 1,
+                                "combination" : 3
 							},
 							"order" : 3
 						},
@@ -1170,9 +1176,13 @@
 							"text" : "Cook a large holiday roast",
 							"value" : "roast",
 							"scoring" : {
-								"EasyConvection":1,
 								"temperatureProbe":1,
-								"5CuFt": 1
+								"5CuFt": 1,
+                                "5.7CuFt": 1,
+                                "6.2CuFt": 1,
+                                "6.4CuFt": 1,
+                                "8.6CuFt": 1,
+                                "10CuFt": 1
 							},
 							"order" : 4
 						},
@@ -3174,7 +3184,8 @@
 							"text" : "Yes - My kitchen opens on to another room",
 							"value" : "yes",
 							"scoring" : {
-								 "quiet" : 5
+                                "cleanWater" : -5,
+                                "quiet" : 5
 							},
 							"order" : 1
 						},
@@ -3184,6 +3195,7 @@
 							"text" : "No - My kitchen is its own room",
 							"value" : "no",
 							"scoring" : {
+                                "cleanWater" : 1
 							},
 							"order" : 2
 						}
