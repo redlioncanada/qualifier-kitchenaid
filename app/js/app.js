@@ -291,6 +291,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
                 
 // $appstate.clear();
                 $appstate.restore();
+                $tests.init($rootScope.appliances,$rootScope.brandData.questions);
 
                 // console.log($rootScope.questionsData);
           }, function () {

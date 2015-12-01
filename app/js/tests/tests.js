@@ -18,21 +18,62 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
       temp.length == 1 ? console.dir(temp[0]) : console.dir(temp);
     }
 
-	tests.run = function(appliances, questions) {
-		this.verifyScoringProperties(appliances, questions);
-		this.verifyAttrExist(appliances);
+	tests.init = function(appliances, questions) {
+		this.appliances = appliances;
+		this.questions = questions;
+		window.tests = this;
+	}
+
+	//verifys scoring properties by ensuring that each property in the scoring json exists on a salesFeature featureKey
+	tests.verifySalesFeaturePropertyAssociations = function() {
+		var missingProps = {}, existingProps = {};
+
+		for (var i in this.questions) {
+			for (var j in this.questions[i].text) {
+				for (var k in this.questions[i].text[j].answers) {
+					for (var e in this.questions[i].text[j].answers[k].scoring) {
+						var propExists = propExistsInSalesFeatures(this,e);
+
+						var appType = i.split(' - ').length == 3 ? i.split(' - ')[1].trim() : i.split(' - ')[0].trim();
+
+						if (!propExists) {
+							if (!(appType in missingProps)) missingProps[appType] = [];
+							if (missingProps[appType].indexOf(e) == -1) missingProps[appType].push(e);
+						} else {
+							if (!(appType in existingProps)) existingProps[appType] = {};
+							if (!(propExists in existingProps[appType])) existingProps[appType][propExists] = e;
+						}
+					}
+				}
+			}
+		}
+
+		console.log(JSON.stringify({
+			"missing": missingProps,
+			"associated": existingProps
+		}));
+
+		function propExistsInSalesFeatures(self,key) {
+			for (var i in self.appliances) {
+				for (var j in self.appliances[i].salesFeatures) {
+					if (self.appliances[i].salesFeatures[j].featureKey == key) {
+						return self.appliances[i].salesFeatures[j].headline;
+					}
+				}
+			}
+			return false;
+		}
 	}
 
 	//verifys scoring properties by ensuring that each property in the scoring json exists on an appliance somewhere in the appliance api
-	tests.verifyScoringProperties = function(appliances, questions) {
-		console.log(appliances);
+	tests.verifyScoringProperties = function() {
 		var props = {};
-		for (var i in questions) {
-		  for (var j in questions[i].text) {
-		    for (var k in questions[i].text[j].answers) {
-		      for (var e in questions[i].text[j].answers[k].scoring) {
+		for (var i in this.questions) {
+		  for (var j in this.questions[i].text) {
+		    for (var k in this.questions[i].text[j].answers) {
+		      for (var e in this.questions[i].text[j].answers[k].scoring) {
 		        if (!(e in props) && e !== 'type' && e !== 'appliance') {
-		          props[e] = questions[i].text[j].answers[k].scoring[e];
+		          props[e] = this.questions[i].text[j].answers[k].scoring[e];
 		        }
 		      }
 		    }
@@ -40,8 +81,8 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 		}
 		// console.log(props);
 		for (i in props) {
-			for (j in appliances) {
-				if (i in appliances[j]) {
+			for (j in this.appliances) {
+				if (i in this.appliances[j]) {
 					console.log(i);
 					delete props[i];
 					break;
@@ -51,15 +92,15 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 		console.log(props);
 	}
 
-	tests.verifyAttrExist = function(appliances) {
-		for (var i in appliances) {
-			if (!"compareFeatures" in appliances[i]) {
-				console.log('compareFeatures missing in '+appliances[i].name, appliances[i]);
+	tests.verifyAttrExist = function() {
+		for (var i in this.appliances) {
+			if (!"compareFeatures" in this.appliances[i]) {
+				console.log('compareFeatures missing in '+this.appliances[i].name, this.appliances[i]);
 			}
 		}
 	}
 
-	tests.verifyQuestionPaths = function(questions) {
+	tests.verifyQuestionPaths = function() {
 		// check(res.questions["Appliance"].text[0].answers[0],undefined,true);
 		// check(res.questions["Appliance"].text[0].answers[2],undefined,true);
 		// check(res.questions["Appliance"].text[0].answers[3],undefined,true);
@@ -97,6 +138,9 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 		  }
 		}
 	}
+	// @endif
+	// @if ENV='production'
+	tests.init = function(appliances,questions) {}
 	// @endif
 	return tests;
 }]);

@@ -47,7 +47,7 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 					}
 					break;
 				case "Wall Ovens":
-					if (item.capacity && item.capacity !== null)
+					if (item.capacity && item.capacity !== null) {
 						if (item.capacity < 5.7) {
 							item["5CuFt"] = true;
 						} else if (item.capacity >= 5.7 && item.capacity < 6.2) {
