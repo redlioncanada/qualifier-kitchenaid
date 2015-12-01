@@ -75,7 +75,7 @@
 						<div ng-bind-html="brandData.apptext.startover"></div>
 					</a>
 				</div>
-				<div class="backtoresults-btn-wrap" ng-if="!!resultsTouched && !!questionsData.question && !isTabletWidthOrLess">
+				<div data-ga-action="Clicked Back To Results Button" data-ga-label="@question-name Question" class="backtoresults-btn-wrap" ng-if="!!resultsTouched && !!questionsData.question && !isTabletWidthOrLess">
 					<a id="backtoresults" class="btn btn-backtoresults" ng-click="next(true)">
 						<div ng-bind-html="brandData.apptext.backtoresults"></div>
 					</a>

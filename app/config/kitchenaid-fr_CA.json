@@ -1167,8 +1167,13 @@
                             "text" : "Préparer des repas pour ma famille occupée",
                             "value" : "multiple meals",
                             "scoring" : {
-                                "EasyConvection":1,
-                                "5CuFt": 1
+                               "EasyConvection":1,
+								"5CuFt": 1,
+                                "5.7CuFt": 1,
+                                "6.2CuFt": 1,
+                                "6.4CuFt": 1,
+                                "8.6CuFt": 1,
+                                "10CuFt": 1
                             },
                             "order" : 2
                         },
@@ -1179,7 +1184,8 @@
                             "value" : "host parties",
                             "scoring" : {
                                 "EasyConvection":1,
-                                "5CuFt": 1
+								"double": 1,
+                                "combination" : 3
                             },
                             "order" : 3
                         },
@@ -1189,9 +1195,13 @@
                             "text" : "Cuire de gros rôtis pour les fêtes",
                             "value" : "roast",
                             "scoring" : {
-                                "EasyConvection":1,
                                 "temperatureProbe":1,
-                                "5CuFt": 1
+								"5CuFt": 1,
+                                "5.7CuFt": 1,
+                                "6.2CuFt": 1,
+                                "6.4CuFt": 1,
+                                "8.6CuFt": 1,
+                                "10CuFt": 1
                             },
                             "order" : 4
                         },
@@ -3218,7 +3228,8 @@
                             "image_alt" : "Oui",
                             "value" : "yes",
                             "scoring" : {
-                                 "quiet" : 1
+                                "cleanWater" : -5,
+                                "quiet" : 1
                             },
                             "order" : 1
                         },
@@ -3230,6 +3241,7 @@
                             "image_alt" : "Non",
                             "value" : "no",
                             "scoring" : {
+                                "cleanWater" : 1
                             },
                             "order" : 2
                         }

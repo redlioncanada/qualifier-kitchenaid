@@ -1,5 +1,5 @@
 <!-- 3 Picture box answers -->
-<div class="answers-main-content picture-3-container" ng-controller="CheckboxCtrl" data-ga-category="@appliance Appliance Segment" data-ga-action="Checked @question-name Image" data-ga-bind-label="@button-text">
+<div class="answers-main-content picture-3-container" ng-controller="CheckboxCtrl" data-ga-category="@appliance Appliance Segment" data-ga-action="Clicked @question-name Image" data-ga-bind-label="@button-text">
 	<a href="" data-ga-label ng-repeat="answer in qs.text[0].answers" class="answer answer-option answer-box picture-3 {{answer.classes}} col-md-{{boxWidth}}" ng-click="qs.disabled || toggle(qs.text[0].answers, answer); buttonState='down'" ng-mouseup="buttonState='up'" ng-class="{noanswer : !controls.questionHasAnswer, toggleButtonDownNoShadow : buttonState=='down', toggleButtonUpNoShadow : buttonState=='up', selected: answer.answer}">
 		<div class="img-wrap">
 			<img ng-src="{{answer.image}}" alt="{{answer.image_alt}}" />

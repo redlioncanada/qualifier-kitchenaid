@@ -116,7 +116,7 @@ App.filter('assignScore', function($rootScope) {
           item.score = 0;
         }
       });          
-      console.log(items);
+      //console.log(items);
       return items;
   };
 });
