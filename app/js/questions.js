@@ -2,15 +2,21 @@
 
 angular.module('App')
   .controller('QuestionsCtrl', function ($element, $scope, $rootScope, $filter, $state, localStorageService, $timeout, $interval, $location, $route, $stateParams, $appstate) {
-
+  	$scope.lastWidth = window.innerWidth;
   	$rootScope.$on('resize::resize', function() {
 	    if (window.innerWidth < 1024){
+	    	//temp fix - reload the page if going desktop to tablet and vice-versa
+	    	//reflow on tablet when changing orientation currently breaks the app
+	    	//no time to fix it before launch
+	        if ($scope.lastWidth >= 1024) location.reload();
 	        $scope.resizeElements();
 	    } else if (window.innerWidth >= 1024) {
+	    	if ($scope.lastWidth < 1024) location.reload();
 	    	//reset header height to it's css value
             $('.app-content-main-top').css('height', '');
             $('.slidey-wrap-all').css('height', '');
 	    }
+	    $scope.lastWidth = window.innerWidth;
 	});
 
   	$timeout(function(){$('.extra-info-wrap .tooltip').css('display','none')},0);
