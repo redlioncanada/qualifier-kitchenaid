@@ -144,116 +144,7 @@ angular.module('App')
 
 	$scope.recalculateResults = function () {
 		$rootScope.questionsData.currentCount = 0;
-		$rootScope.questionsData.currentScore = {	
-  			"type" : false,
-			"width" : 0,
-			"height" : 0,
-			"capacity" : 0,
-			"single" : false,
-			"double" : false,
-			"combination" : false,
-			"trueConvection" : false,
-			"soundGuard" : false,
-			"vibrationControl" : false,
-			"audioLevel" : false,
-			"frontLoad" : false,
-			"topLoad" : false,
-			"stacked" : false,
-			"rapidWash" : false,
-			"rapidDry" : false,
-			"cycleOptions" : false,
-			"sensorDry" : false,
-			"20KBTUDual":0,
-			"wrinkleControl" : false,
-			"steamEnhanced" : false,
-			"meltAndHold" : 0,
-			"15KBTU":0,
-			"inductionSimmer":0,
-			"performanceBoost":0,
-			"placeSettings13" : 0,
-			"placeSettings14" : 0,
-			"placeSettings15" : 0,
-			"evenHeat":0,
-			"5KBTUSimmer" : 0,
-			"decibels" : 0,
-			"quiet" : 0,
-			"premiumAdjusters" : false,
-			"18KBTUEvenHeat":0,
-			"fid" : false,
-			"console" : false,
-			"powerCold" : false,
-			"topMount" : false,
-			"bottomMount" : false,
-			"frenchDoor" : false,
-			"indoorDispenser" : false,
-			"counterDepth" : false,
-			"freshFlow" : false,
-			"tempControlPantry" : false,
-			"dualCool" : false,
-			"gas" : false,
-			"maxCapacity" : false,
-			"warmingDrawer" : false,
-			"electric" : false,
-			"powerBurner" : false,
-			"powerPreheat" : false,
-			"induction" : 0,
-			"slideIn" : 0,
-			"freestanding" : 0,
-			"mediumCapacity" : 0,
-			"largeCapacity" : 0,
-			"largerCapacity" : 0,
-			"largestCapacity" : 0,
-			"width22" : 0,
-			"width23" : 0,
-			"width24" : 0,
-			"width25" : 0,
-			"width26" : 0,
-			"width27" : 0,
-			"width28" : 0,
-			"width29" : 0,
-			"width30" : 0,
-			"width31" : 0,
-			"width32" : 0,
-			"width33" : 0,
-			"width34" : 0,			
-			"width35" : 0,
-			"width36" : 0,
-			"width37" : 0,
-			"width38" : 0,
-			"width39" : 0,
-			"width40" : 0,
-			"width41" : 0,
-			"width42" : 0,
-			"width43" : 0,
-			"width44" : 0,
-			"width45" : 0,
-			"width46" : 0,
-			"width47" : 0,
-			"width48" : 0,
-			"width49" : 0,
-			"height66" : 0,
-			"height67" : 0,
-			"height68" : 0,
-			"height69" : 0,
-			"height70" : 0,
-			"height71" : 0,
-			"height72" : 0,
-			"height73" : 0,
-			"height74" : 0,
-			"height75" : 0,
-			"height76" : 0,
-			"height77" : 0,
-			"height78" : 0,
-			"height79" : 0,
-			"height80" : 0,
-			"height81" : 0,
-			"height82" : 0,
-			"height83" : 0,
-			"height84" : 0,
-			"frontControl" : false,
-			"rearControl" : false
-		}
-
+		$rootScope.questionsData.currentScore = {};
 
 		for (var question in $rootScope.questionsData.scoringQuestions) {
 			var q = $rootScope.questionsData.scoringQuestions[question]
@@ -271,8 +162,12 @@ angular.module('App')
 									$rootScope.questionsData.currentScore[scores] = null
 								} else if (typeof s == "string") {
 									$rootScope.questionsData.currentScore[scores] = s
-								} else if (!isNaN(s) && $rootScope.questionsData.currentScore[scores] != null) {
-									$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s
+								} else if (!isNaN(s)) {
+									if (scores in $rootScope.questionsData.currentScore) {
+										$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s
+									} else {
+										$rootScope.questionsData.currentScore[scores] = s
+									}
 								}
 							}
 						} else if (isNaN(parseInt(a.answer)) == false) {
@@ -294,8 +189,12 @@ angular.module('App')
 									$rootScope.questionsData.currentScore[scores] = null
 								} else if (typeof s == "string") {
 									$rootScope.questionsData.currentScore[scores] = s * t
-								} else if (!isNaN(s) && $rootScope.questionsData.currentScore[scores] != null) {
-									$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + (s * t)
+								} else if (!isNaN(s)) {
+									if (scores in $rootScope.questionsData.currentScore) {
+										$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s*t
+									} else {
+										$rootScope.questionsData.currentScore[scores] = s*t
+									}
 								}
 							}									
 						}
@@ -317,8 +216,12 @@ angular.module('App')
 										$rootScope.questionsData.currentScore[scores] = null
 									} else if (typeof s == "string") {
 										$rootScope.questionsData.currentScore[scores] = s
-									} else if (!isNaN(s) && $rootScope.questionsData.currentScore[scores] != null) {
-										$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s
+									} else if (!isNaN(s)) {
+										if (scores in $rootScope.questionsData.currentScore) {
+											$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s
+										} else {
+											$rootScope.questionsData.currentScore[scores] = s
+										}
 									}
 								}
 							}
