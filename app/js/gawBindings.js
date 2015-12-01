@@ -13,7 +13,7 @@ gaw.bind('slider-text', function(element) {
 
 	$(p).find('.jslider-scale span').each(function(i,v) {
 		var leftVal = parseInt($(v).css('left'));
-		if (indLeft-2 < leftVal && indLeft+2 > leftVal) {
+		if (indLeft-4 < leftVal && indLeft+4 > leftVal) {
 			ret = $(v).text();
 			return;
 		}
@@ -40,11 +40,18 @@ gaw.bind('rank-question-order', function(element) {
 });
 
 gaw.bind('navbar-popover-title', function(element) {
-	return $(element).parent().attr('popover-title');
+    return $(element).parent().attr('popover-title');
+});
+
+gaw.bind('navbar-popover-desc', function(element) {
+    return $(element).closest("body").find('.popover-content').text();
 });
 
 gaw.bind('button-text', function(element) {
-	return $(element).closest('.answer').find('.label-text').eq(0).text();
+	var a = $(element).closest('.answer').find('.label-text').eq(0).html();
+    var b = a.replace("<br>"," ");
+    
+    return b;
 });
 
 gaw.bind('slider-button', function(element) {
@@ -55,8 +62,14 @@ gaw.bind('slider-button', function(element) {
 
 gaw.bind('appliance', function(element) {
     var url = decodeURIComponent(window.location.hash.replace('#/question/', '')).split(' - ');
-	return url.length == 3 ? url[1].trim() : url[0].trim();
-
+    url = url.length == 3 ? url[1].trim() : url[0].trim();
+    
+    if(url.indexOf('results') !== -1) {
+        url = $(element).closest('.main').find('.results-adjust-desc').attr('data-appliance');
+        return url;
+    } else {
+        return url;   
+    }
 });
 
 gaw.bind('results-appliance-color', function(element) {
@@ -87,7 +100,16 @@ gaw.bind('mobile-results-appliance-selection', function(element) {
 });
 
 gaw.bind('results-appliance', function(element) {
-	return $(element).closest('.body').find('.results-adjust-desc').attr('data-appliance');
+	var a = $(element).closest('.body').find('.results-adjust-desc').attr('data-appliance');
+
+    switch(a) {
+		case "Vent or Hood":
+			return "Vent and Hood";
+			break;
+		default:
+			return a;
+			break;
+	}
 });
 
 gaw.bind('results-desc', function(element) {
@@ -103,5 +125,12 @@ gaw.bind('results-slider-last-value', function(element) {
 });
 
 gaw.bind('results-slider-value', function(element) {
-	return $(element).closest('#results').attr('data-value');
+	var a = $(element).closest('#results').attr('data-value');
+	a = a.replace(";"," to ");
+    return a;
 });
+
+gaw.bind('clicked-text', function(element) {
+	return $(element).text();
+});
+
