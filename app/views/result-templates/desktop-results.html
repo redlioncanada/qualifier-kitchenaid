@@ -1,5 +1,5 @@
 <ul class="results-list" ng-if="questionsData.currentCount !=0">
-			<li ng-repeat="a in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange" class="result">
+			<li ng-repeat="(index,a) in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange" class="result">
 				<div class="result-wrap">
 					<div class="result-inner">
 						<h3 ng-if="$index==1" bo-text="brandData.apptext.yourBestMatch"></h3>
@@ -50,8 +50,9 @@
 								<div class="sales-feature-additional-wrapper">
 									<div ng-repeat="sf in a.salesFeatures | orderBy:'-score' | after:3 | limitTo:6"> 
 										<h4 class="sales-feature-additional">
-											<img src="img/results-checkmark.png">
-											<span ng-bind-html="sf.headline"></span>
+											<img ng-if="!isExtraFeature(index,sf,a)" src="img/results-checkmark.png">
+											<img ng-if="isExtraFeature(index,sf,a)" src="img/results-plus.png">
+											<span ng-bind-html="sf.headline" ng-class="{bold: isExtraFeature(index,sf,a)}"></span>
 										</h4>
 									</div>
 								</div>

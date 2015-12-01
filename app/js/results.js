@@ -109,6 +109,21 @@ angular.module('App')
     $scope.bestMatch = appliance;
   }
 
+  $scope.isExtraFeature = function(index,feature,appliance) {
+    //if the right "other suggestion" appliance costs less, and a feature exists on it that doesn't exist on the "best match" appliance, return true
+    if (index != 2 || $scope.bestMatch.price >= appliance.price) return false;
+    if (!objectInArrayHasKeyValue($scope.bestMatch.salesFeatures,"headline",feature.headline)) return true;
+    return false;
+
+    function objectInArrayHasKeyValue(obj,k,v) {
+      for (var i in obj) {
+          if (!(k in obj[i])) continue;
+          if (obj[i][k] == v) {console.log('true');return true;}
+      }
+      return false;
+    }
+  }
+
   $rootScope.emailOpen = function () {
     var modalInstance = $modal.open({
       animation: true,
