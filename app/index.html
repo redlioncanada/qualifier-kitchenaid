@@ -22,19 +22,35 @@
         <link rel="stylesheet" href="./css/qualifier-app.css">
         <link rel="stylesheet" href="./css/maytag.css">
 
+        <!-- @if lang="en" -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="WANT TO CHOOSE THE PERFECT APPLIANCE? ">
-        <meta name="twitter:description" content="We know that appliance shopping can be hard. Our new, simple tool helps you pick the perfect product with features that suit your needs.">
-        <meta name="twitter:url" content="http://mykitchenaid.wpc-stage.com">
-        <meta name="twitter:image" content="http://mykitchenaid.wpc-stage.com/social/img/social.jpg">
+        <meta name="twitter:description" content="Appliance shopping doesn't have to be hard. Click to use our new tool that will help you pick the perfect product:">
+        <meta name="twitter:url" content="http://findmy.kitchenaid.ca">
+        <meta name="twitter:image" content="http://findmy.kitchenaid.ca/social/img/social.jpg">
 
-        <!--
+        <meta property="og:image" content="http://findmy.kitchenaid.ca/social/img/social.jpg"/>
+        <meta property="og:image:width" content="526"/>
+        <meta property="og:image:height" content="274"/>
+        <meta property="og:title" content="WANT TO CHOOSE THE PERFECT APPLIANCE? "/>
+        <meta property="og:url" content="http://findmy.kitchenaid.ca"/>
+        <meta property="og:description" content="We know that appliance shopping can be hard. Our new, simple tool helps you pick the perfect product with features that suit your needs."/>
+        <!-- @endif -->
+
+        <!-- @if lang="fr" -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="WANT TO CHOOSE THE PERFECT APPLIANCE? (fr)">
-        <meta name="twitter:description" content="We know that appliance shopping can be hard. Our new, simple tool helps you pick the perfect product with features that suit your needs.(fr)">
-        <meta name="twitter:url" content="http://mykitchenaid.wpc-stage.com">
-        <meta name="twitter:image" content="http://mykitchenaid.wpc-stage.com/social/img/social-fr.jpg">
-        -->
+        <meta name="twitter:title" content="VOUS VOULEZ TROUVER L'ÉLECTROMÉNAGER IDÉAL?">
+        <meta name="twitter:description" content="Magasiner pour des électroménagers peut être compliqué. Notre outil vous aidera à trouver le produit idéal.">
+        <meta name="twitter:url" content="http://findmy.kitchenaid.ca/fr">
+        <meta name="twitter:image" content="http://findmy.kitchenaid.ca/social/img/social-fr.jpg">
+
+        <meta property="og:image" content="http://findmy.kitchenaid.ca/social/img/social-fr.jpg"/>
+        <meta property="og:image:width" content="526"/>
+        <meta property="og:image:height" content="274"/>
+        <meta property="og:title" content="VOUS VOULEZ TROUVER L'ÉLECTROMÉNAGER IDÉAL?"/>
+        <meta property="og:url" content="http://findmy.kitchenaid.ca/fr"/>
+        <meta property="og:description" content="Nous sommes conscients que magasiner pour des électroménagers peut s’avérer compliqué. Notre nouvel outil facile à utiliser vous permet de sélectionner les fonctions correspondant à vos besoins et vous propose le produit idéal selon vos réponses."/>
+        <!-- @endif -->
 
         <!-- @if ENV='development' -->
         <link rel="stylesheet" href="./css/development.css">
@@ -69,7 +85,6 @@
         <script src="./components/angular-touch/angular-touch.js"></script>
         <script src="./components/angular-route/angular-route.js"></script>
         <script src="./components/angular-resource/angular-resource.js"></script>
-        <script src="./components/angular-socialshare/angular-socialshare.js"></script>
         <script src="./components/angular-base64/angular-base64.js"></script>
         <script src="./components/angular-bindonce/bindonce.js"></script>
         <script src="./components/underscore/underscore.js"></script>
@@ -77,8 +92,16 @@
         <script src="./components/ng-slider/dist/ng-slider.min.js"></script>
         <script src="./components/ng-sortable/dist/ng-sortable.js"></script>
         <script src="./components/angular-animate/angular-animate.min.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+          window.fbAsyncInit = function() {FB.init({appId : '919321591436851', xfbml : true, version : 'v2.5'});};
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

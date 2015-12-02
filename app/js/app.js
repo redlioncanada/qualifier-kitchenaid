@@ -14,7 +14,6 @@ var nglibs = [
   'angularAwesomeSlider',
   'ngAnimate',
   'AppstateService',
-  'djds4rce.angular-socialshare',
   'ApplianceDataDecoratorService',
   'TestsService'
 ];
@@ -205,9 +204,8 @@ App.filter('byPrice', function($rootScope) {
 
 // New byPrice works by re-ranking the results, prices within the range are ranked, then prices without
 
-App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', '$dataDecorator', '$tests', '$FB', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate, $dataDecorator, $tests, $FB) {
+App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', '$dataDecorator', '$tests', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate, $dataDecorator, $tests) {
     $location.path('');
-    $FB.init('919321591436851');
     $state.go('loading');
 
     $rootScope.resultsTouched = false;

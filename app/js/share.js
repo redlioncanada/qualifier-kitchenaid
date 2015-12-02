@@ -3,20 +3,6 @@ angular.module('App')
   .controller('ShareCtrl', ['$scope', '$rootScope', '$appstate', '$interval', function ($scope, $rootScope, $appstate, $interval) {   
     $scope.appURL = $appstate.host();
 
-    $scope.insertMetaTags = function() {
-      if (!$('head').find('meta[name^="twitter"]').length) {
-        $('head').append(createMeta('twitter:card', 'photo'))
-                 .append(createMeta('twitter:description', $rootScope.brandData.apptext.twitterDesc))
-                 .append(createMeta('twitter:title', $rootScope.brandData.apptext.twitterTitle))
-                 .append(createMeta('twitter:image', $scope.appURL + $rootScope.brandData.apptext.twitterImage))
-                 .append(createMeta('twitter:url', $scope.appURL));
-      }
-
-      function createMeta(name, content) {
-        return '<meta name="'+name+'" content="'+content+'"/>';
-      }
-    }
-
     $scope.openTwitterWindow = function() {
       var width  = 575,
           height = 400,
@@ -31,7 +17,10 @@ angular.module('App')
       window.open(url, 'twitter', opts);
     }
 
-    //$scope.insertMetaTags();
+    $scope.openFacebookWindow = function() {
+      FB.ui({method: 'share', href: $scope.appURL}, function(response){});
+    }
+
   }]).directive('share', function() {
     return {
       restrict: 'E',

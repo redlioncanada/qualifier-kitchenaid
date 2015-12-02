@@ -96,9 +96,12 @@ gulp.task('views', function() {
 
     // Get our index.html
     gulp.src('app/index.html')
-    .pipe(preprocess({context: {ENV: env}}))
+    .pipe(preprocess({context: {ENV: env, lang: 'en'}}))
     // And put it in the build folder
     .pipe(gulp.dest('build/'))
+
+    gulp.src('app/index.html')
+    .pipe(preprocess({context: {ENV: env, lang: 'fr'}}))
     .pipe(replace('footer.html', 'footer_fr.html'))
     .pipe(replace('header.html', 'header_fr.html'))
     .pipe(replace('"en"', '"fr"'))
@@ -121,9 +124,12 @@ gulp.task('views-prod', function() {
 
     // Get our index.html
     gulp.src('app/index.html')
-    .pipe(preprocess({context: {ENV: env}}))
+    .pipe(preprocess({context: {ENV: env, lang: 'en'}}))
     // And put it in the build folder
     .pipe(gulp.dest('build/'))
+
+    gulp.src('app/index.html')
+    .pipe(preprocess({context: {ENV: env, lang: 'fr'}}))
     .pipe(replace('footer.html', 'footer_fr.html'))
     .pipe(replace('header.html', 'header_fr.html'))
     .pipe(replace('"en"', '"fr"'))
@@ -174,7 +180,6 @@ gulp.task('default', ['frontloaded-tasks'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass', browserSync.reload]);
     gulp.watch('app/views/**/*.html', ['views', browserSync.reload]);
     gulp.watch('app/js/**/*.js', ['js', browserSync.reload]);
-    gulp.watch('app/php/**/*.php', ['php', browserSync.reload]);
 });
 
 gulp.task('prod', ['sass', 'js-prod', 'images-prod', 'fonts', 'components', 'config', 'views-prod', 'php'], function() {
@@ -186,7 +191,7 @@ gulp.task('prod', ['sass', 'js-prod', 'images-prod', 'fonts', 'components', 'con
 
     gulp.watch('app/scss/**/*.scss', ['sass', browserSync.reload]);
     gulp.watch('app/views/**/*.html', ['views', browserSync.reload]);
-    gulp.watch('app/php/**/*.php', ['php', browserSync.reload]);
+    gulp.watch('app/js/**/*.js', ['js', browserSync.reload]);
 });
 
 gulp.task('frontloaded-tasks', ['sass', 'js', 'images', 'fonts', 'components', 'config', 'views', 'php'], function () {
