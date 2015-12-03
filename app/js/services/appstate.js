@@ -43,6 +43,7 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 	        		default:
 	        			//restoring a specific question
 	        			$rootScope.hasanswers = session.answers;
+	        			if (!(session.restore in $rootScope.questionsData.questions)) self.reload();
 	        			$rootScope.restore = session.restore;
 	        			location.hash = session.restore;
 	        			break;
@@ -54,7 +55,9 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 	        //fill app question data
 		  	if (!$rootScope.questionsData.question) {
 			  	for(var q in $rootScope.hasanswers) {
-
+			  		if (!(q in $rootScope.questionsData.questions)) {
+			  			self.reload();
+			  		}
 			  		if (!!$rootScope.hasanswers[q]) {
 			  			var ans = $rootScope.hasanswers[q].split(";");
 
@@ -70,7 +73,9 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 					  							if (t > 0) break;
 					  							$rootScope.questionsData.questions[q].text[0].answer = $rootScope.questionsData.questions[q].text[0].answers[a].value;
 					  							$rootScope.questionsData.questions[q].text[1].answer = parseInt(ans[1]);
-					  							$rootScope.questionsData.questions[q].text[1].answers[parseInt(ans[1])].answer = true;
+					  							if (parseInt(ans[1]) in $rootScope.questionsData.questions[q].text[1].answers) {
+													$rootScope.questionsData.questions[q].text[1].answers[parseInt(ans[1])].answer = true;
+												}
 					  							break;
 					  						case "slider":
 					  							$rootScope.questionsData.questions[q].text[t].answer = $rootScope.questionsData.questions[q].text[t].answers[a].value;
