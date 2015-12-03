@@ -718,6 +718,12 @@
 							"text" : "30\" or less",
 							"value" : "30",
 							"scoring" : {
+								"width24" : 5,
+								"width25" : 5,
+								"width26" : 5,
+								"width27" : 5,
+								"width28" : 5,
+								"width29" : 5,
 								"width30" : 5,
 								"width31": -30,
 								"width32": -30,
@@ -2533,7 +2539,7 @@
 							"scoring" : {
 								"largerCapacity" : 3,
 								"largestCapacity" : 1,
-								"frenchDoor5Door" : 2
+								"5door" : 2
 							}
 						},
 						"5" : {
@@ -2543,7 +2549,7 @@
 							"text" : "My dinner party guests",
 							"scoring" : {
 								"largestCapacity" : 3,
-								"frenchDoor5Door" : 2
+								"5door" : 2
 							}
 						}
 					}
@@ -2583,7 +2589,7 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"frenchDoor5Door" : 2
+								"5door" : 2
 							},
 							"order" : 2
 						},
@@ -2594,7 +2600,7 @@
 							"value" : "groceries",
 							"scoring" : {
 								"frenchDoor" : 2,
-								"frenchDoor5Door" : 1
+								"5door" : 1
 							},
 							"order" : 3
 						},
@@ -2617,7 +2623,7 @@
 							"scoring" : {
 								"frenchDoor" : 1,
 								"maxCool" : 1,
-								"frenchDoor5Door" : 2
+								"5door" : 2
 							},
 							"order" : 5
 						}

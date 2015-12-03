@@ -2569,7 +2569,7 @@
                             "scoring" : {
                                 "largerCapacity" : 3,
 								"largestCapacity" : 1,
-								"frenchDoor5Door" : 2
+								"5door" : 2
                             }
                         },
                         "5" : {
@@ -2579,7 +2579,7 @@
                             "text" : "Mes invités",
                             "scoring" : {
                                 "largestCapacity" : 3,
-								"frenchDoor5Door" : 2
+								"5door" : 2
                             }
                         }
                     }
@@ -2620,7 +2620,7 @@
                             "thumbnail" : "img/icon-organization.png",
                             "thumbnail_current" : "img/icon-organization-current.png",
                             "scoring" : {
-                                "frenchDoor5Door" : 2
+                                "5door" : 2
                             },
                             "order" : 2
                         },
@@ -2631,7 +2631,7 @@
                             "value" : "groceries",
                             "scoring" : {
                                 "frenchDoor" : 1,
-                                "frenchDoor5Door" : 1
+                                "5door" : 1
                             },
                             "order" : 3
                         },
@@ -2654,7 +2654,7 @@
                             "scoring" : {
                                 "frenchDoor" : 1,
                                 "maxCool" : 1,
-                                "frenchDoor5Door" : 2
+                                "5door" : 2
                             },
                             "order" : 5
                         }
