@@ -280,8 +280,8 @@
 								"width20" : -50,
 								"width21" : -50,
 								"width22" : -50,
-								"width23" : -50,
-								"width24" : -50,
+								"width23" : 10,
+								"width24" : 10,
 								"width25" : -50,
 								"width26" : -50,
 								"width27" : -50,
@@ -876,7 +876,7 @@
 							"value" : "high speed",
                             "classes" : "hiddenLabelText",
 							"scoring" : {
-								"340CFMOrHigher" : 3
+								"400CFMOrHigher" : 3
 							},
 							"order" : 1
 						},
@@ -1478,7 +1478,7 @@
 								"width32" : -50,
 								"width33" : -50,
 								"width34" : -50,
-								"width35" : -50,
+								"width35" : 10,
 								"width36" : 10
 							}
 						}
@@ -2358,24 +2358,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,2],
 							"scoring" : {
-								 "height67" : 5,
-								 "height68" : -30,
-								 "height69" : -30,
-								 "height70" : -30,
-								 "height71" : -30,
-								 "height72" : -30,
-								 "height73" : -30,
-								 "height74" : -30,
-								 "height75" : -30,
-								 "height76" : -30,
-								 "height77" : -30,
-								 "height78" : -30,
-								 "height79" : -30,
-								 "height80" : -30,
-								 "height81" : -30,
-								 "height82" : -30,
-								 "height83" : -30,
-								 "height84" : -30
+								 "height67" : 5
 							}
 						},
 						"70" : {
@@ -2384,21 +2367,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,1,2,3,4],
 							"scoring" : {
-								 "height70" : 5,
-								 "height71" : -30,
-								 "height72" : -30,
-								 "height73" : -30,
-								 "height74" : -30,
-								 "height75" : -30,
-								 "height76" : -30,
-								 "height77" : -30,
-								 "height78" : -30,
-								 "height79" : -30,
-								 "height80" : -30,
-								 "height81" : -30,
-								 "height82" : -30,
-								 "height83" : -30,
-								 "height84" : -30
+								 "height70" : 5
 							}
 						},
 						"71" : {
@@ -2407,20 +2376,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,3,4],
 							"scoring" : {
-								 "height71" : 5,
-								 "height72" : -30,
-								 "height73" : -30,
-								 "height74" : -30,
-								 "height75" : -30,
-								 "height76" : -30,
-								 "height77" : -30,
-								 "height78" : -30,
-								 "height79" : -30,
-								 "height80" : -30,
-								 "height81" : -30,
-								 "height82" : -30,
-								 "height83" : -30,
-								 "height84" : -30
+								 "height71" : 5
 							}
 						},
 						"72" : {
@@ -2429,19 +2385,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,4],
 							"scoring" : {
-								 "height72" : 5,
-								 "height73" : -30,
-								 "height74" : -30,
-								 "height75" : -30,
-								 "height76" : -30,
-								 "height77" : -30,
-								 "height78" : -30,
-								 "height79" : -30,
-								 "height80" : -30,
-								 "height81" : -30,
-								 "height82" : -30,
-								 "height83" : -30,
-								 "height84" : -30
+								 "height72" : 5
 							}
 						},
 						"84" : {
