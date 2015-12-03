@@ -1,8 +1,9 @@
 <div bindonce>
   <div class="modal-header">
       <h3 class="modal-title" bo-text="brandData.apptext.emailModalTitle"></h3>
-      <h3 class="modal-close" data-dismiss="modal" ng-click="close()">+</h3>
-      <div class="modal-close-background" data-dismiss="modal" ng-close="close()"></div>
+      <div class="modal-close-background" data-dismiss="modal" ng-close="close()">
+        <h3 class="modal-close" data-dismiss="modal" ng-click="close()">&#10005;</h3>
+      </div>
   </div>
   <div class="modal-body" stop-event="touchend">
     <form name="email" novalidate>
