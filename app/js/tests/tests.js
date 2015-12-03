@@ -24,8 +24,8 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 		window.tests = this;
 	}
 
-	//verifys scoring properties by ensuring that each property in the scoring json exists on a salesFeature featureKey
 	tests.verifySalesFeaturePropertyAssociations = function() {
+		console.log("verifys scoring properties by ensuring that each property in the scoring json exists on a salesFeature featureKey");
 		var missingProps = {}, existingProps = {};
 
 		for (var i in this.questions) {
@@ -48,10 +48,10 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 			}
 		}
 
-		console.log(JSON.stringify({
+		console.log({
 			"missing": missingProps,
 			"associated": existingProps
-		}));
+		});
 
 		function propExistsInSalesFeatures(self,key) {
 			for (var i in self.appliances) {
@@ -65,8 +65,9 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 		}
 	}
 
-	//verifys scoring properties by ensuring that each property in the scoring json exists on an appliance somewhere in the appliance api
 	tests.verifyScoringProperties = function() {
+		console.log("verifys scoring properties by ensuring that each property in the scoring json exists on an appliance somewhere in the appliance api");
+		console.log("if a property appears it means that it exists in the scoring json, but not on an appliance");
 		var props = {};
 		for (var i in this.questions) {
 		  for (var j in this.questions[i].text) {
@@ -83,7 +84,6 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 		for (i in props) {
 			for (j in this.appliances) {
 				if (i in this.appliances[j]) {
-					console.log(i);
 					delete props[i];
 					break;
 				}
