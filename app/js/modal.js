@@ -25,17 +25,24 @@ angular.module('App')
       }).success(function(data, status, headers, config) {
           if (status == 200) {
             if (data.status !== 'error') {
-              console.log('email post success: '+data.status)
+              console.log('email post success: '+data.status);
+              $scope.showModalMessage("sent");
             } else {
               console.log('email post error: '+data.message);
+              $scope.showModalMessage("error");
             }
           } else {
             console.log('email post error: status '+status);
+            $scope.showModalMessage("error");
           }
       }).error(function(data, status, headers, config) {
           console.log('email post error: '+data);
+          $scope.showModalMessage("error");
         });
-      $modalInstance.close();
+    }
+
+    $scope.showModalMessage = function(type) {
+      $('html,body').find('.modal-message.modal-'+type).show();
     }
 
     $scope.close = function() {

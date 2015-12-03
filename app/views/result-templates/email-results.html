@@ -25,7 +25,7 @@
   <div class="modal-footer">
           <button type="submit" class="btn btn-primary" ng-disabled="email.$invalid" ng-click="!email.$error || submit()"><span bo-text="brandData.apptext.submit"></span></button>
   </div>
-    <div class="modal-message modal-sent">
+    <div class="modal-message modal-sent" ng-click="close()">
     <div class="background"></div>
     <div class="content-wrapper">
       <div class="content">
@@ -34,7 +34,7 @@
       </div>
     </div>
   </div>
-  <div class="modal-message modal-error">
+  <div class="modal-message modal-error" ng-click="close()">
     <div class="background"></div>
     <div class="content-wrapper">
       <div class="content">
