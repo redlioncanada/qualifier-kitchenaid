@@ -158,7 +158,7 @@ angular.module('App')
 				for (var answers in q.show.answers) {
 					var a = q.show.answers[answers]
 					// If answer isn't null, use it for scoring
-					if (a.answer !== false) {
+					if (!!a.answer) {
 						// If it is true, simply apply scoring
 						if (a.answer === true) {
 							for (var scores in a.scoring) {
@@ -176,21 +176,26 @@ angular.module('App')
 									}
 								}
 							}
-						} else if (isNaN(parseInt(a.answer)) == false) {
+						}
+					} else {
+						if (q.show.type == "rank") {
 							var rankscoring = {
 								"0" : 3,
 								"1" : 2,
 								"2" : 1
 							}
+
 							var getScore = function (ranking) {
 								if (ranking.toString() in rankscoring) {
 									return rankscoring[ranking.toString()]
 								}
 								return 0
 							}
+
 							for (var scores in a.scoring) {
 								var s = a.scoring[scores]
-								var t = getScore(a.answer)
+								var t = getScore(a.answer || a.order.toString());
+
 								if (s == null) {
 									$rootScope.questionsData.currentScore[scores] = null
 								} else if (typeof s == "string") {
@@ -202,9 +207,8 @@ angular.module('App')
 										$rootScope.questionsData.currentScore[scores] = s*t
 									}
 								}
-							}									
+							}
 						}
-					} else {
 					}
 				}
 			} else {
