@@ -64,6 +64,11 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 			  			for (var t in $rootScope.questionsData.questions[q].text) {
 				  			for (var a in $rootScope.questionsData.questions[q].text[t].answers) {
 				  				$rootScope.questionsData.questions[q].text[t].answers[a].answer = false;
+
+				  				if (!$rootScope.questionsData.questions[q].text[t].answers[a].toString().length) {
+				  					self.reload();
+				  				}
+
 				  				if ($rootScope.questionsData.questions[q].text[t].type != "rank") {
 					  				if (ans.indexOf($rootScope.questionsData.questions[q].text[t].answers[a].value.toString()) != -1 ) {
 					  					// console.log($rootScope.questionsData.questions[q].text[t].answers[a]);
