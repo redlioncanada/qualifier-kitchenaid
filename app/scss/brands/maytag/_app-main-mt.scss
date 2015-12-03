@@ -66,7 +66,7 @@ header.header-desktop {
 			.btn-icon {
 				position: absolute;
 				background: #ac080f;
-				border-radius: 20px;
+				border-radius: 50%;
 				width: inherit;
 				height: inherit;
 				text-align: center;
@@ -77,12 +77,12 @@ header.header-desktop {
 					font-family: $AV-Black;
 					color: #fff;
 					font-size: 16px;
-					position: relative;
-					bottom: 0.5px;
-					display: block;
-					float: left;
-					text-align: center;
-					width: 100%;
+                    line-height: normal;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
 				}
 
 			}
@@ -95,13 +95,7 @@ header.header-desktop {
 			}
 			.btn-icon.x {
 				span {
-					transform: rotate(45deg) ;
-					-webkit-transform: rotate(45deg) ;
-					-moz-transform: rotate(45deg) ;
-					-o-transform: rotate(45deg) ;
-					-ms-transform: rotate(45deg) ;
-					margin-top: -1px;
-					margin-left: -0px;
+                    font-size: 11px;
 				}
 			}
 			.btn-text {
