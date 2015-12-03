@@ -111,7 +111,7 @@ angular.module('App')
 
   $scope.isExtraFeature = function(index,feature,appliance) {
     //if the right "other suggestion" appliance costs less, and a feature exists on it that doesn't exist on the "best match" appliance, return true
-    if (index != 2 || appliance.price >= $scope.bestMatch.price) return false;
+    if (index != 2 || $scope.bestMatch.price >= appliance.price) return false;
     if (!objectInArrayHasKeyValue($scope.bestMatch.salesFeatures,"headline",feature.headline)) return true;
     return false;
 

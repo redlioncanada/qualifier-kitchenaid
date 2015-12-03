@@ -1372,6 +1372,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             .label-text {
                 font-size: 9px !important;
                 margin: auto;
+                max-width: 147px;
             }
             .label-sub-text {
                 position: absolute;
@@ -1483,7 +1484,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
             width: 50% !important;
             padding: 0 2.5%;
             height: 133px !important;
-            margin-bottom: 33px !important;
+            margin-bottom: 40px !important;
             margin-left: 0px !important;
             margin-right:  0px !important;   
                   
@@ -1750,23 +1751,21 @@ div[ng-class="fr_CA"] {
                 font-size: 12px !important;
             }
         }
-        div.slidey .app-answers, .slidey .answers-main-content.answer-slider, .slidey .answers-main-content.price-slider {
-            .jslider {
-                div.jslider-pointer { 
-                    width: 43px !important;
-                    height: 37px !important;
-                    background: url('../img/slider-pointer-small.png') center center no-repeat !important;
-                    background-size: 40px 37px !important;
-                    margin-left: -42px !important;
-                }
-            }
-        }
         .picture-3 {
             .label-wrap {
+                font-size: 7px !important;
                 bottom: -45px !important;
+                margin-top: 5px !important;
                 
                 .label-sub-text {
                     width: 120px !important;
+                }
+            }
+        }
+        a.answer-box.checkbox-4, a.answer-box.radio-2, a.answer-box.radio-3, a.answer-box.radio-4 {
+            .label-wrap {
+                .label-text {
+                    font-size: 7px !important;   
                 }
             }
         }

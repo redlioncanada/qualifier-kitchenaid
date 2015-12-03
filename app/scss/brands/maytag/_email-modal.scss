@@ -28,15 +28,11 @@ $inputBackgroundColor: #EEE;
 			position: relative;
 			color: #FFF;
 			font-family: 'Arial';
-			float: right;
-			transform: rotate(45deg) ;
-			-webkit-transform: rotate(45deg) ;
-			-moz-transform: rotate(45deg) ;
-			-o-transform: rotate(45deg) ;
-			-ms-transform: rotate(45deg) ;
 			font-weight: 200;
-			font-size: 22pt;
-			margin-top: -5px;
+			font-size: 15pt;
+			margin: 0 auto;
+            width: 75%;
+            display: block;
 			cursor: pointer;
 			z-index: 2;
 		}
@@ -211,3 +207,65 @@ $inputBackgroundColor: #EEE;
 		background-color: #DDD;
 	}
 }
+
+.modal-content {
+	background-color: #f4f4f4;
+	color: $textColor;
+	border: 2px solid $borderColor;
+
+	.modal-header {
+		border-bottom: none;
+		font-family: $AV-Light;
+
+		h3 {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+		}
+
+		.modal-title {
+			text-transform: uppercase;
+			font-size: 12pt;
+			margin-top: 8px;
+			margin-left: 10px;
+		}
+
+		.modal-close {
+			position: relative;
+			color: #FFF;
+			font-family: 'Arial';
+			font-weight: 200;
+			font-size: 15pt;
+			margin: 0 auto;
+            width: 75%;
+            display: block;
+			cursor: pointer;
+			z-index: 2;
+		}
+
+		.modal-close-background {
+			position: absolute;
+			right: 13px;
+			top: 15px;
+			height: 22px;
+			width: 22px;
+			border-radius: 12px;
+			float: right;
+			background-color: $borderColor;
+			z-index: 1;
+		}
+	}
+}
+
+.modal-body:lang(fr) {
+    .input-wrapper {
+        .email {
+            padding-left: 45px !important;
+        }
+        .name {
+            padding-left: 85px !important;
+        }
+    }
+}
+
+
