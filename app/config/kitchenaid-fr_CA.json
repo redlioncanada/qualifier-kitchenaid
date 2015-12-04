@@ -1445,7 +1445,7 @@
                 {
                     "question" : "VOUS AVEZ BESOIN D’UNE CUISINIÈRE DE QUELLE TAILLE?",
                     "question_full" : "VOUS AVEZ BESOIN D’UNE CUISINIÈRE DE QUELLE TAILLE?",
-                    "sub_question" : "Sélectionnez une réponse",
+                    "sub_question" : "Faites glisser pour répondre",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
                     "explanation" : "Nos cuisinières sont offertes en différentes tailles; nous voulons nous assurer de recommander celle qui convient parfaitement à votre espace.",
                     "type" : "slider",
@@ -2384,6 +2384,7 @@
                             "enabled" : true,
                             "enabledWhen" : [0,2],
                             "scoring" : {
+                                 "height66" : 10,
                                  "height67" : 10
                             }
                         },
@@ -2393,6 +2394,7 @@
                             "enabled" : true,
                             "enabledWhen" : [0,1,2,3,4],
                             "scoring" : {
+                                 "height69" : 10,
                                  "height70" : 10
                             }
                         },
@@ -2420,6 +2422,7 @@
                             "enabled" : true,
                             "enabledWhen" : [0,4,5,6,7],
                             "scoring" : {
+                                 "height83" : 10,
                                  "height84" : 10
                             }
                         }
