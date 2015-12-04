@@ -180,9 +180,9 @@ angular.module('App')
 					} else {
 						if (q.show.type == "rank") {
 							var rankscoring = {
-								"0" : 3,
-								"1" : 2,
-								"2" : 1
+								"1" : 3,
+								"2" : 2,
+								"3" : 1
 							}
 
 							var getScore = function (ranking) {
