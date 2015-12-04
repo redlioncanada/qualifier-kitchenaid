@@ -45,7 +45,7 @@
     "angular-images-loaded": "~0.0.8",
     "angular-local-storage": "~0.2.3",
     "angular-resource": "1.4.7",
-    "ga-wrapper": "~0.1.18",
+    "ga-wrapper": "~0.1.21",
     "imagesloaded": "~3.1.8"
   },
   "directory": "app/components",
