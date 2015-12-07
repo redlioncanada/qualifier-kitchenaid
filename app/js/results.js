@@ -104,21 +104,24 @@ angular.module('App')
     return highestPrice;
   }
 
-  $rootScope.setBestMatch = function(index,appliance) {
-    if (index != 1) return;
-    $scope.bestMatch = appliance;
+  $rootScope.setMatches = function(arr) {
+    $scope.matches = arr;
+    $scope.bestMatch = arr[1];
   }
 
-  $scope.isExtraFeature = function(index,feature,appliance) {
+  $scope.isExtraFeature = function(index,feature,filteredAppliances) {
     //if the right "other suggestion" appliance costs less, and a feature exists on it that doesn't exist on the "best match" appliance, return true
-    if (index != 2 || $scope.bestMatch.price >= appliance.price) return false;
-    if (!objectInArrayHasKeyValue($scope.bestMatch.salesFeatures,"headline",feature.headline)) return true;
+    if (filteredAppliances.length != 3 || index != 2) return;
+    var appliance = filteredAppliances[index];
+    var bestMatch = filteredAppliances[1];
+    if (bestMatch.price >= appliance.price) return false;
+    if (!objectInArrayHasKeyValue(bestMatch.salesFeatures,"headline",feature.headline)) return true;
     return false;
 
     function objectInArrayHasKeyValue(obj,k,v) {
       for (var i in obj) {
           if (!(k in obj[i])) continue;
-          if (obj[i][k] == v) {return true;}
+          if (obj[i][k].toLowerCase() == v.toLowerCase()) return true;
       }
       return false;
     }

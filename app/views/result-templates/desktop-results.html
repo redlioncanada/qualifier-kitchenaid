@@ -1,10 +1,10 @@
 <ul class="results-list" ng-if="questionsData.currentCount !=0">
-			<li ng-repeat="(index,a) in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange" class="result">
-				<div class="result-wrap">
+			<li ng-repeat="(index,a) in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange as filteredAppliances" class="result">
+				<div class="result-wrap" >
 					<div class="result-inner">
 						<h3 ng-if="$index==1" bo-text="brandData.apptext.yourBestMatch"></h3>
 						<h3 ng-if="$index!=1" bo-text="brandData.apptext.otherSuggestion"></h3>
-						<div class="product-img-wrap" ng-init="a.picker=setFirstColour(a);setBestMatch($index,a);">
+						<div class="product-img-wrap" ng-init="a.picker=setFirstColour(a);setMatches(filteredAppliances);">
 							<img ng-src="http://kitchenaid.com/digitalassets/{{a.picker.sku}}/Standalone_1175X1290.jpg" style="width: 127px">
 							<img ng-if="a.appliance=='Washers'" ng-src="http://kitchenaid.com/digitalassets/{{a.picker.dryersku}}/Standalone_1175X1290.jpg" style="width: 127px;">
 						</div>
@@ -48,11 +48,11 @@
 								</div>
 								<div class="sales-feature-spacer smaller"></div>
 								<div class="sales-feature-additional-wrapper">
-									<div ng-repeat="sf in a.salesFeatures | orderBy:'-score' | after:3 | limitTo:6"> 
+									<div ng-repeat="sf in a.salesFeatures | orderBy:'-score' | after:3 | limitTo:6">
 										<h4 class="sales-feature-additional">
-											<img ng-if="!isExtraFeature(index,sf,a)" src="img/results-checkmark.png">
-											<img ng-if="isExtraFeature(index,sf,a)" src="img/results-plus.png">
-											<span ng-bind-html="sf.headline" ng-class="{bold: isExtraFeature(index,sf,a)}"></span>
+											<img ng-if="!isExtraFeature(index,sf,filteredAppliances)" src="img/results-checkmark.png">
+											<img ng-if="isExtraFeature(index,sf,filteredAppliances)" src="img/results-plus.png">
+											<span ng-bind-html="sf.headline" ng-class="{bold: isExtraFeature(index,sf,filteredAppliances)}"></span>
 										</h4>
 									</div>
 								</div>
