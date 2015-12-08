@@ -1423,7 +1423,7 @@
 				{
 					"question" : "WHAT SIZE OF RANGE DO YOU NEED?",
 					"question_full" : "WHAT SIZE OF RANGE DO YOU NEED?",
-					"sub_question" : "Select one",
+					"sub_question" : "Slide to Answer",
 					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Our ranges come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider",
