@@ -490,3 +490,28 @@ $scale2: 1.07;
 
 	transform: translate(0px, 0px);
 }
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+
+	opacity: 1;
+}
