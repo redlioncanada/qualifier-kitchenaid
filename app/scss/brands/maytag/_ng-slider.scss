@@ -450,6 +450,10 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 				border-left: 0 !important;
 				font-size: 0; 
 			}
+            b {
+                font-weight: 400;
+                text-transform: lowercase;
+            }
 			ins { 
 				font-family: $AV-Medium;
 				text-transform: uppercase;
@@ -1054,6 +1058,31 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 		padding-top: 1px;
 	}
 }
+
+div[ng-class="fr_CA"] {
+    .answers-main-content.answer-buttons {
+        ul {
+            li:nth-child(n+2) {
+                .answer-button-answer {
+                    position: relative;
+                    bottom: -13px;
+                    font-size: 9pt;
+                }
+                .answer-button-label {
+                    position: relative;
+                    bottom: 13px;
+                    font-size: 7pt;
+                }
+            }
+        }
+    }
+    .answer-buttons.label-inches {
+	.answer-button-wrapper:not(:first-child) .answer-button-answer::after {
+		content: '';
+	}
+}
+}
+
 
 /*french css start*/
 div[ng-class="fr_CA"] {
