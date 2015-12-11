@@ -67,8 +67,10 @@
         <![endif]-->
 
         <!-- Header -->
-        <div ng-include src="'./views/header.html'" style="position: relative; z-index: 100;"></div>
-        <div class="main" bindonce ui-view></div> 
+        <div class="headerInclude" ng-include src="'./views/header_fr.html'"></div>
+        <div class="mobileOverlay"></div>
+        <div class="main" bindonce ui-view></div>
+
 
         <!-- Footer -->
         <div class="footer-wrapper" ng-include src="'./views/footer.html'"></div>
@@ -128,6 +130,7 @@
         <script src="./js/tests/tests.js"></script>
         <script src="./js/app.js"></script>
         <script src="./js/loading.js"></script>
+        <script src="./js/header.js"></script>
         <script src="./js/navigation.js"></script>
         <script src="./js/main.js"></script>
         <script src="./js/questions.js"></script>

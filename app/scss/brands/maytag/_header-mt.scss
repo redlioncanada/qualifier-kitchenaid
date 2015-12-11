@@ -301,8 +301,377 @@ header.header-mobile {
 @media(max-width:1023px) {
   header.header-mobile {
     display: block;
+    position: relative;
   }
   header.header-desktop {
     display: none;
   }
+}
+
+/*------------------------------------
+      Main Side Slide Nav
+-------------------------------------*/
+
+#main-nav
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width:255px;
+  height: 604px;
+  background-image:url("http://www.whirlpool.ca/images/template/fabric_of_squares_gray.png");
+  background-repeat:repeat;
+  display:none;
+  color:#363636;
+}
+
+#main-nav a, #main-nav a:hover, #main-nav a:visited
+{
+  color:#363636;
+  text-decoration:none;
+}
+
+
+#main-nav-container
+{
+  position:absolute;
+  width:100%;
+  height:auto;
+}
+
+.main-page
+{
+  background-color:#ffffff;
+  position:relative;
+  z-index:100;
+  left:0;
+  padding-bottom: 52px;
+  float: left;
+  width:100%;
+  min-height: 428px
+}
+
+.main-container
+{
+  position:relative;
+  height:100%;
+}
+
+#main-nav ul
+{
+  background-color:#ffffff;
+}
+
+#main-nav li.submenu ul
+{
+  display:none;
+}
+
+#main-nav li, #main-nav li a #main-nav li span
+{
+  width:255px;
+  display:block;
+  font-size:14px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#main-nav li
+{
+  border-bottom:1px dotted #D6D6D6;
+  cursor:pointer;
+  line-height:22px;
+}
+
+#main-nav li a
+{
+  padding:10px 10px 10px 17px;
+  width:100%;
+  display:block;
+}
+
+#main-nav li.home-item
+{
+  font-size:18px;
+  text-indent:25px;
+  border-bottom:1px solid #D6D6D6;
+  background-image:url("http://www.whirlpool.ca/images/template/home-sprite.png");
+  background-repeat:no-repeat;
+  background-size: 20px 50px;
+  -webkit-background-size: 20px 50px;
+  background-position:6% 13px;
+}
+
+#main-nav li.home-item.hold a
+{
+  background-image:url("http://www.whirlpool.ca/images/template/home-sprite.png");
+  background-repeat:no-repeat;
+  background-size: 20px 50px;
+  -webkit-background-size: 20px 50px;
+  background-position:6% -22px;
+}
+
+#main-nav li.hold, #main-nav li.hold a
+{
+  background-color:#eeb111;
+  color:#ffffff;
+}
+
+#main-nav li:last-child
+{
+  border-bottom:solid 1px #D6D6D6;
+}
+
+#main-nav li.submenu
+{
+  background-image:url("http://www.kitchenaid.ca/images/template/nav-next-sprite.png");
+  background-repeat:no-repeat;
+  background-position:94% 13px;
+  background-size:15px 60px;
+  -webkit-background-size:15px 60px;
+  padding:10px 10px 10px 17px;
+}
+
+// #main-nav li.submenu.hold
+// {
+//   background-image:url("http://www.whirlpool.ca/images/template/nav-next-sprite.png");
+//   background-position:84% -32px;
+// }
+
+#main-nav li.submenu-about
+{
+  font-size:13px;
+}
+
+#main-nav li.submenu-about a
+{
+  padding:15px 10px 15px 17px;
+  width:100%;
+  display:block;
+}
+
+.submenu-about .sub-title
+{
+  font-size:18px;
+}
+
+.submenu-about .sub-collection
+{
+  width:190px;
+  line-height:17px;
+  margin-bottom:8px;
+}
+
+#main-nav li.menu-back
+{
+  background-image:url("../images/template/nav-back-sprite.png");
+  background-repeat:no-repeat;
+  background-position:6% 16px;
+  border-bottom:1px solid #D6D6D6;
+  background-size:6px 60px;
+  -webkit-background-size:6px 60px;
+  font-size:18px;
+  padding:10px 10px 10px 17px;
+}
+
+#main-nav li.menu-back.hold, 
+#main-nav li.menu-back-light.hold
+{
+  background-image:url("../images/template/nav-back-sprite.png");
+  background-position:6% -9px;
+}
+
+#main-nav li.menu-back-light
+{
+  background-image:url("../images/template/nav-back-sprite.png");
+  background-repeat:no-repeat;
+  background-position:6% -33px;
+  border-bottom:1px solid #D6D6D6;
+  background-size:6px 60px;
+  -webkit-background-size:6px 60px;
+  font-size:18px;
+  color:#919195;
+  padding:10px 10px 10px 17px;
+}
+
+#main-nav li.menu-back-light.hold
+{
+  color:#ffffff;
+}
+
+#main-nav li.menu-back span, #main-nav li.menu-back-light span
+{
+  padding-left: 15px;
+}
+
+.submenu-container
+{
+  display:none;
+  position:absolute;
+  background-color:#ffffff;
+  width:100%;
+}
+
+.content-overlay
+{
+  position: fixed;
+  left: 0px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #333333;
+  //Cross-browser opacity below
+  -moz-opacity:.80;
+  filter:alpha(opacity=80);
+  opacity:.80;
+  z-index: 10000000;
+  display:none;
+  overflow:hidden;
+}
+
+.nav-footer
+{
+  color:#363636;
+  font-size:12px;
+}
+
+#main-nav  .nav-footer-links li a {
+    padding: 0px;
+}
+
+#main-nav .nav-footer-links li:active, #main-nav .nav-footer-links li a:active,
+#main-nav .nav-footer-links ul li.hold,#main-nav .nav-footer-links ul li.hold a
+{
+  background-color:transparent;
+  color:#eeb111;
+}
+
+#main-nav .nav-copyright-links a:active
+{
+  color:#eeb111;
+}
+
+
+.nav-footer hr
+{
+  border-top: 1px solid #959595;
+  border-bottom: 1px solid #ffffff;
+  height: 2px;
+  margin-bottom:4px;
+}
+
+.nav-social
+{
+  padding:25px 17px 36px;
+}
+
+.nav-social div
+{
+  float:left;
+}
+
+.nav-social div:first-child
+{
+  float:none;
+  margin-bottom:14px;
+}
+
+.nav-social .facebook img
+{
+  width:32px;
+  height:32px;
+  margin-right:23px;
+}
+
+.nav-social .twitter img
+{
+  width:39px;
+  height:32px;
+  margin-right:16px;
+}
+
+.nav-social .youtube img
+{
+  width:52px;
+  height:21px;
+  margin-right:23px;
+}
+
+.nav-social .pintrest img
+{
+  width:35px;
+  height:35px;
+}
+
+#main-nav .nav-footer-links
+{
+  margin-top:17px;
+}
+
+#main-nav .nav-footer-links ul
+{
+  float:left;
+  width:120px;
+  background-color:transparent;
+  margin-bottom:14px;
+}
+
+#main-nav .nav-footer-links ul:first-child
+{
+  padding-left:12px;
+}
+
+#main-nav .nav-footer-links ul li
+{
+  background-color:transparent;
+  border: 0px;
+  font-size:11px;
+  padding:0px 5px 5px 5px;
+}
+
+#main-nav .nav-footer-links li:last-child
+{
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.nav-copyright-links
+{
+  font-size:11px;
+  padding:0px 17px 10px;
+  line-height:26px;
+}
+
+
+//Manual Changes
+#main-nav-container {
+    overflow: hidden;
+    ul {
+        padding-left: 0;
+    }
+}
+#main-nav {
+    overflow-x: scroll;
+}
+
+.mobileOverlay {
+    position: absolute;
+    background-color: #333333;
+    opacity: 0;
+    width: 100vw;
+    z-index: 101;
+    display: none;
+}
+
+@media screen and (min-width: 580px) {
+    #main-nav, .mobileOverlay {
+        height: 1000px !important;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    #main-nav {
+        display: none !important;
+    }
 }

@@ -1,6 +1,12 @@
 html, body {
 	min-width: 320px;
 	overflow-x: hidden;
+    position: relative;
+}
+
+.headerInclude {
+    position: relative; 
+    z-index: 100;
 }
 
 .main-content {
@@ -110,7 +116,10 @@ html, body {
 }
 
 .main {
+	position: relative;
 	min-width: 320px;
+    background-color: white;
+
 	.main-content {
 		min-height: 60px;
 	}
@@ -659,7 +668,10 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 }
 
 @media(max-width:1023px) {
-    
+    .headerInclude {
+        position: inherit; 
+    }    
+
     	&.boxes-icon-2, &.picture-3, &.boxes-icon-split { // + Multiselect with icons - 5 answers
 		// @include make-md-column(6);
 		width: 45% !important;
@@ -683,6 +695,7 @@ a.boxes-icon-split:hover, a.boxes-icon-2:hover, a.picture-3:hover {
 	.main {
 		overflow: hidden;
 		-webkit-overflow-scrolling: touch;
+		z-index: 100;
 	}
 
 	.popover {
