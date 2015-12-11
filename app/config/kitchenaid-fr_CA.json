@@ -9,7 +9,7 @@
         "msrp": "MSRP",
         "oneLastStep": "RÉVISEZ VOTRE FOURCHETTE DE PRIX AFIN DE PRÉCISER VOS RÉSULTATS",
         "moreInfo": "Informations supplémentaires",
-        "print": "Impression",
+        "print": "Imprimer",
         "email": "Imprimer",
         "colourPreference": "Sélectionnez votre couleur",
         "yourBestMatch": "Votre Meilleur Résultat",
@@ -25,7 +25,7 @@
         "emailModalTitle" : "Envoyez vos résultats par courriel",
         "emailNameTitle" : "Pour :",
         "emailNamePlaceholder" : "Nom",
-        "emailAddressTitle" : "À partir de :",
+        "emailAddressTitle" : "De :",
         "emailAddressPlaceholder" : "ami@email.com",
         "emailSubject" : "J'ai trouvé le(a) parfait(e) {{appliance}} et souhaiterais partager cela avec toi.",
         "emailMessage" : "C'est difficile de trouver l'électroménager idéal. Mais en utilisant le nouvel outil de sélection de KitchenAid, j'ai simplement répondu à quelques questions et j'ai trouvé le(a) {{appliance}} idéal(e) pour mon style de vie. J’aimerais partager mes résultats ainsi que le lien pour que tu puisses l'explorer toi aussi. \r\n\r\nEssaie par toi-même ici : {{fakelink}}",
@@ -51,7 +51,7 @@
             "thumbnail_text_fr": "Éléctroménager",
             "text" : [
                 {
-                    "question" : "Que pouvons-nous vous aider à trouver?",
+                    "question" : "Que Recherchez-vous?",
                     "type" : "categories-click",
                     "oneAnswer" : true,
                     "answers" : [
@@ -219,7 +219,7 @@
                         "to" : 5,      
                         "step": 0.0001,
                         "dimension_label" : "LARGEUR",
-                        "scale": ["N’importe quelle taille","15","30","36","48"]       
+                        "scale": ["N’importe quelle taille","15 <b>po</b>","30 <b>po<b>","36 <b>po</b>","48 <b>po</b>"]       
                     },
                     "answers" : {
                         "1" : {
@@ -730,7 +730,7 @@
                         {
                             "thumbnail" : "img/icon-capacity.png",
                             "thumbnail_current" : "img/icon-size-current.png",
-                            "text" : "30\" po ou moins",
+                            "text" : "30 po ou moins",
                             "value" : "30",
                             "scoring" : {
                                 "width24" : 5,
@@ -747,7 +747,7 @@
                         {
                             "thumbnail" : "img/icon-capacity.png",
                             "thumbnail_current" : "img/icon-size-current.png",
-                            "text" : "36\" po ou plus",
+                            "text" : "36 po ou plus",
                             "value" : "36",
                             "scoring" : {
                                "width35": 5,
@@ -769,8 +769,8 @@
             "thumbnail_current" : "img/icon-location-current.png",
             "text" : [
                 {
-                    "question" : "OÙ POUVONS-NOUS TROUVER VOTRE SURFACE DE CUISSON DANS LA CUISINE?",
-                    "question_full" : "OÙ POUVONS-NOUS TROUVER VOTRE SURFACE DE CUISSON DANS LA CUISINE?",
+                    "question" : "DANS QUEL ENDROIT DE LA CUSINE SE TROUVE VOTRE SURFACE DE CUSSION?",
+                    "question_full" : "DANS QUEL ENDROIT DE LA CUSINE SE TROUVE VOTRE SURFACE DE CUSSION?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me demandez-vous où je cuisine?",
                     "explanation" : "Nous savons que chaque cuisine est unique. Si nous savons où se trouve votre surface de cuisson, nous pouvons recommander le système de ventilation qui convient parfaitement.",
@@ -1090,7 +1090,7 @@
                         "to" : 4,      
                         "step": 0.0001,
                         "dimension_label" : "LARGEUR",
-                        "scale": ["Aucune restriction","24","27","30"]       
+                        "scale": ["Aucune restriction","24 <b>po</b>","27 <b>po</b>","30 <b>po</b>"]       
                     },
                     "answers" : {
                         "1" : {
@@ -1457,7 +1457,7 @@
                         "to": 2,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Aucune restriction","30\"","36\""]       
+                        "scale": ["Aucune restriction","30 <b>po</b>","36<b>po</b>"]       
                     },
                     "answers" : {
                         "0" : {
@@ -1839,7 +1839,7 @@
                     "question_full" : "Quel style de cuisinière préférez-vous?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet du style?", 
-                    "explanation" : "Saviez-vous que les cuisines professionnelles comportent habituellement des cuisinières à commandes frontales? Une fois que nous comprenons vos préférences en matière de style, nous pouvons recommander la table de cuisson parfaite pour vous.",
+                    "explanation" : "Saviez-vous que les cuisines professionnelles comportent habituellement des cuisinières à commandes frontales? Une fois que nous comprenons vos préférences en matière de style, nous pouvons recommander la cuisinière parfaite pour vous.",
                     "type" : "boxes-picture-3-radio",
                     "oneAnswer" : true,
                     "answers" : [
@@ -2380,7 +2380,7 @@
                         },
                         "67" : {
                             "value" : 67,
-                            "text" : "67",
+                            "text" : "67 po",
                             "enabled" : true,
                             "enabledWhen" : [0,2],
                             "scoring" : {
@@ -2390,7 +2390,7 @@
                         },
                         "70" : {
                             "value" : 70,
-                            "text" : "70",
+                            "text" : "70 po",
                             "enabled" : true,
                             "enabledWhen" : [0,1,2,3,4],
                             "scoring" : {
@@ -2400,7 +2400,7 @@
                         },
                         "71" : {
                             "value" : 71,
-                            "text" : "71",
+                            "text" : "71 po",
                             "enabled" : true,
                             "enabledWhen" : [0,3,4],
                             "scoring" : {
@@ -2409,7 +2409,7 @@
                         },
                         "72" : {
                             "value" : 72,
-                            "text" : "72",
+                            "text" : "72 po",
                             "enabled" : true,
                             "enabledWhen" : [0,4],
                             "scoring" : {
@@ -2418,7 +2418,7 @@
                         },
                         "84" : {
                             "value" : 84,
-                            "text" : "84",
+                            "text" : "84 po",
                             "enabled" : true,
                             "enabledWhen" : [0,4,5,6,7],
                             "scoring" : {
@@ -2453,14 +2453,14 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas une préoccupation","Plus ou moins importante ","Importante","Très importante"]       
+                        "scale": ["Pas importante","Plus ou moins importante ","Importante","Très importante"]       
                     },
                     "answers" : {
                         "0" : {
                             "value" : 0,
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
-                            "text" : "Pas une préoccupation",
+                            "text" : "Pas importante",
                             "scoring" : {
                                 "energyStar" : 0
                             }
@@ -2709,7 +2709,7 @@
                             "order" : 3
                         },
                         {
-                            "text" : "Je ne suis pas sûr",
+                            "text" : "Je ne suis pas certain",
                             "value" : "glass of milk or juice",
                             "thumbnail" : "img/icon-water.png",
                             "thumbnail_current" : "img/icon-water-current.png",
@@ -2835,7 +2835,7 @@
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
                             "text" : "Réfrigérateur à profondeur standard",
-                            "subtext" : "peu m’importe si mon réfrigérateur est aligné à mes armoires",
+                            "subtext" : "Peu m’importe si mon réfrigérateur est aligné à mes armoires",
                             "image" : "img/standard-depth.png",
                             "image_alt" : "Réfrigérateur Encastré",
                             "value" : 0,
@@ -2850,7 +2850,7 @@
                             "thumbnail" : "img/icon-style.png",
                             "thumbnail_current" : "img/icon-style-current.png",
                             "text" : "Réfrigérateur à profondeur de comptoir",
-                            "subtext" : "je veux que mon réfrigérateur soit aligné à mes armoires",
+                            "subtext" : "Je veux que mon réfrigérateur soit aligné à mes armoires",
                             "image" : "img/counter-depth.png",
                             "image_alt" : "Réfrigérateur À Profondeur De Comptoir",
                             "value" : 1,
@@ -3153,9 +3153,9 @@
             "thumbnail_text_fr" : "Caractéristiques",
             "text" : [
                 {
-                    "question" : "LORSQUE VOUS MAGASINEZ POUR UN LAVE-VAISSELLE, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
-                    "question_full" : "LORSQUE VOUS MAGASINEZ POUR UN LAVE-VAISSELLE, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
-                    "sub_question" : "FAITES GLISSER POUR REARRANGER:<span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>6</span> À LA MOINS IMPORTANTE",
+                    "question" : "LORSQUE VOUS MAGASINEZ UN LAVE-VAISSELLE, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
+                    "question_full" : "LORSQUE VOUS MAGASINEZ UN LAVE-VAISSELLE, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
+                    "sub_question" : "FAITES GLISSER POUR RÉARRANGER:<span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>6</span> À LA MOINS IMPORTANTE",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de mes préférences?",
                     "explanation" : "En comprenant vos priorités en matière de lavage de vaisselle, nous pouvons mieux recommander un lave-vaisselle dont les caractéristiques conviennent à votre style de vie.",
                     "type" : "rank",
