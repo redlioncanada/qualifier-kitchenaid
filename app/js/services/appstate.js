@@ -43,7 +43,7 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 	        		default:
 	        			//restoring a specific question
 	        			$rootScope.hasanswers = session.answers;
-	        			if (!(session.restore in $rootScope.questionsData.questions)) self.reload();
+	        			if (!(session.restore in $rootScope.questionsData.questions) && location.href.indexOf('results') == -1) self.reload();
 	        			$rootScope.restore = session.restore;
 	        			location.hash = session.restore;
 	        			break;
