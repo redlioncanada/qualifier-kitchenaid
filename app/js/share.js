@@ -18,7 +18,13 @@ angular.module('App')
     }
 
     $scope.openFacebookWindow = function() {
-      FB.ui({method: 'share', href: $scope.appURL}, function(response){});
+      FB.ui({
+            method: 'feed',
+            link: $scope.appURL,
+            picture: $scope.appURL+$rootScope.brandData.apptext.facebookImage,
+            caption: $rootScope.brandData.apptext.facebookDesc,
+            display: 'dialog'
+      }, function(response){});
     }
 
   }]).directive('share', function() {
