@@ -142,7 +142,7 @@
                         {
                             "text" : "Cuisinières",
                             "value" : "free stand range",
-                            "displayName": "Cuisinières",
+                            "displayName": "Cuisinière",
                             "classes" : "sub-category ranges",
                             "image" : "img/range.png",
                             "image_alt" : "Cuisinières",
@@ -159,7 +159,7 @@
                         {
                             "text" : "Fours encastrés",
                             "value" : "wall oven",
-                            "displayName": "Fours encastrés",
+                            "displayName": "Fours encastré",
                             "classes" : "sub-category wallovens",
                             "image" : "img/walloven.png",
                             "image_alt" : "Fours Encastrés",
@@ -1394,14 +1394,14 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas important","Plus ou moins important","Important","Très important"]       
+                        "scale": ["Pas importante","Plus ou moins important","Important","Très important"]       
                     },
                     "answers" : {
                         "0" : {
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 0,
-                            "text" : "Pas important",
+                            "text" : "Pas importante",
                             "scoring" : {
                             }
                         },
@@ -2453,14 +2453,14 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas important","Plus ou moins important","Important","Très important"]       
+                        "scale": ["Pas importante","Plus ou moins important","Important","Très important"]       
                     },
                     "answers" : {
                         "0" : {
                             "value" : 0,
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
-                            "text" : "Pas important",
+                            "text" : "Pas importante",
                             "scoring" : {
                                 "energyStar" : 0
                             }
@@ -3250,14 +3250,14 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas important","Plus ou moins important ","Important","Très important"]       
+                        "scale": ["Pas importante","Plus ou moins important ","Important","Très important"]       
                     },
                     "answers" : {
                         "0" : {
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 0,
-                            "text" : "Pas important",
+                            "text" : "Pas importante",
                             "scoring" : {
                             }
                         },
