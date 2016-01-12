@@ -673,7 +673,8 @@
 							"value" : "yes",
                             "scoring" : {
                                 "gas" : 3,
-                                "electric": -15
+                                "electric": -30,
+                                "induction": -5
                             },
 							"order" : 1
 						},

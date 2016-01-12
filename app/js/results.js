@@ -204,7 +204,7 @@ $scope.setPriceRange = function () {
           var value = $rootScope.questionsData.scoringQuestions.Appliance.text[0].answers[i];
 
           if (!!value.answer) {
-            if (value.text == 'Cooking') {
+            if (value.text == 'Cooking' || value.text == 'Appareils de cuisson') {
               for (var i in $rootScope.questionsData.scoringQuestions["Cooking - Pre-Qualifier 1"].text[0].answers) {
                 var value = $rootScope.questionsData.scoringQuestions["Cooking - Pre-Qualifier 1"].text[0].answers[i];
 

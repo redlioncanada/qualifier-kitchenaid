@@ -6,7 +6,7 @@
         "previous": "Previous",
         "next": "Next",
         "results": "RÉSULTATS",
-        "msrp": "MSRP",
+        "msrp": "PDSF",
         "oneLastStep": "RÉVISEZ VOTRE FOURCHETTE DE PRIX AFIN DE PRÉCISER VOS RÉSULTATS",
         "moreInfo": "Informations supplémentaires",
         "print": "Imprimer",
@@ -62,7 +62,6 @@
                             "classes" : "category cooking",
                             "image" : "img/cooking.png",
                             "image_alt" : "Appareils de cuisson",
-                            
                             "thumbnail" : "img/walloven-double.jpg",
                             "thumbnail_current" : "img/walloven-double.jpg",
                             "thumbnail_text" : "Cuisinières",
@@ -126,7 +125,7 @@
                         {
                             "text" : "Tables de cuisson",
                             "value" : "cooktops",
-                            "displayName": "Tables de cuisson",
+                            "displayName": "Table de cuisson",
                             "classes" : "sub-category wallovens",
                             "image" : "img/cook-top.png",
                             "image_alt" : "Tables De Cuisson",
@@ -177,7 +176,7 @@
                         {
                             "text" : "Hottes et ventilation",
                             "value" : "vents",
-                            "displayName": "Hottes et ventilation",
+                            "displayName": "Système de ventilation",
                             "classes" : "sub-category wallovens",
                             "image" : "img/vents.png",
                             "image_alt" : "Hottes Et Ventilation",
@@ -234,7 +233,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "value" : 2,
-                            "text" : "15\"",
+                            "text" : "15 po",
                             "scoring" : {
                                 "width14" : 10,
                                 "width15" : 10,
@@ -279,7 +278,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "value" : 3,
-                            "text" : "30\"",
+                            "text" : "30 po",
                             "scoring" : {
                                 "width14" : -50,
                                 "width15" : -50,
@@ -324,7 +323,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "value" : 4,
-                            "text" : "36\"",
+                            "text" : "36 po",
                             "scoring" : {
                                 "width14" : -50,
                                 "width15" : -50,
@@ -369,7 +368,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "value" : 5,
-                            "text" : "48\"",
+                            "text" : "48 po",
                             "scoring" : {
                                 "width14" : -50,
                                 "width15" : -50,
@@ -482,7 +481,7 @@
                 {
                     "question" : "LORSQUE VOUS MAGASINEZ UNE TABLE DE CUISSON, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
                     "question_full" : "LORSQUE VOUS MAGASINEZ UNE TABLE DE CUISSON, QUELLES CARACTÉRISTIQUES SONT LES PLUS IMPORTANTES POUR VOTRE DÉCISION D’ACHAT?",
-                    "sub_question" : "FAITES GLISSER POUR REARRANGER : <span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>5</span> À LA MOINS IMPORTANTE",
+                    "sub_question" : "FAITES GLISSER POUR RÉARRANGER : <span>1</span> CORRESPOND À LA CARACTÉRISTIQUE LA PLUS IMPORTANTE ET <span>5</span> À LA MOINS IMPORTANTE",
                     "explanation_title" : "Pourquoi me posez-vous une question au sujet de ces préférences?",
                     "explanation" : "En comprenant vos priorités en matière de cuisson, nous pouvons mieux recommander la table de cuisson qui convient parfaitement à votre style de vie.",
                     "type" : "rank",
@@ -684,7 +683,7 @@
                             "image_hover_alt" : "Au Gaz",
                             "thumbnail" : "img/icon-fueltype.png",
                             "thumbnail_current" : "img/icon-fueltype-current.png",
-                            "value" : "yes",                    
+                            "value" : "yes",
                             "scoring" : {
                                 "gas" : 3,
                                 "electric": -20
@@ -1157,7 +1156,7 @@
             "previous" : "Cooking - Wall Ovens - Size",
             "thumbnail_type" : "image",
             "thumbnail_text" : "Style",
-            "thumbnail_text_fr" : "Style",
+            "thumbnail_text_fr" : "Orientation",
             "thumbnail_current" : "img/icon-orientation-current.png",
             "text" : [
                 {
@@ -1395,14 +1394,14 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas une préoccupation","Plus ou moins important","Importante","Très important"]       
+                        "scale": ["Pas important","Plus ou moins important","Important","Très important"]       
                     },
                     "answers" : {
                         "0" : {
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 0,
-                            "text" : "Pas une préoccupation",
+                            "text" : "Pas important",
                             "scoring" : {
                             }
                         },
@@ -1418,7 +1417,7 @@
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 2,
-                            "text" : "Importante",
+                            "text" : "Important",
                             "scoring" : {
                             }
                         },
@@ -1457,7 +1456,7 @@
                         "to": 2,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Aucune restriction","30 <b>po</b>","36<b>po</b>"]       
+                        "scale": ["Aucune restriction","30 <b>po</b>","36 <b>po</b>"]       
                     },
                     "answers" : {
                         "0" : {
@@ -2040,7 +2039,8 @@
                             "value" : "yes",
                             "scoring" : {
                                 "gas" : 3,
-                                "electric": -20
+                                "electric": -30,
+                                "induction": -5
                             },
                             "order" : 1
                         },
@@ -2086,12 +2086,12 @@
                         "to" : 7,      
                         "step": 0.0001,
                         "dimension_label": "LARGEUR",
-                        "scale": ["Aucune restriction","22\"","31\"","33\"", "36\"", "37\"", "43\"", "49\""]       
+                        "scale": ["Aucune restriction","22 po","31 po","33 po", "36 po", "37 po", "43 po", "49 po"]       
                     },
                     "answers" : {
                         "0" : {
                             "value" : 0,
-                            "text" : "No Preference",
+                            "text" : "Aucune Restriction",
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "scoring" : {
@@ -2453,14 +2453,14 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas importante","Plus ou moins importante ","Importante","Très importante"]       
+                        "scale": ["Pas important","Plus ou moins important","Important","Très important"]       
                     },
                     "answers" : {
                         "0" : {
                             "value" : 0,
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
-                            "text" : "Pas importante",
+                            "text" : "Pas important",
                             "scoring" : {
                                 "energyStar" : 0
                             }
@@ -2469,7 +2469,7 @@
                             "value" : 1,
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
-                            "text" : "Plus ou moins importante",
+                            "text" : "Plus ou moins important",
                             "scoring" : {
                                 "energyStar" : 1
                             }
@@ -2478,7 +2478,7 @@
                             "value" : 2,
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
-                            "text" : "Importante",
+                            "text" : "Important",
                             "scoring" : {
                                 "energyStar" : 3
                             }
@@ -2487,7 +2487,7 @@
                             "value" : 3,
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
-                            "text" : "Très importante",
+                            "text" : "Très important",
                             "scoring" : {
                                 "energyStar" : 5
                             }
@@ -3250,14 +3250,14 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas une préoccupation","Plus ou moins importante ","Importante","Très importante"]       
+                        "scale": ["Pas important","Plus ou moins important ","Important","Très important"]       
                     },
                     "answers" : {
                         "0" : {
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 0,
-                            "text" : "Pas une préoccupation",
+                            "text" : "Pas important",
                             "scoring" : {
                             }
                         },
@@ -3265,7 +3265,7 @@
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 1,
-                            "text" : "Plus ou moins importante ",
+                            "text" : "Plus ou moins important ",
                             "scoring" : {
                                 "cleanWater": 1
                             }
@@ -3274,7 +3274,7 @@
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 2,
-                            "text" : "Importante",
+                            "text" : "Important",
                             "scoring" : {
                                 "cleanWater": 2
                             }
@@ -3283,7 +3283,7 @@
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 3,
-                            "text" : "Très importante",
+                            "text" : "Très important",
                             "scoring" : {
                                 "cleanWater": 3
                             }
