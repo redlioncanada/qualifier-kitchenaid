@@ -1059,7 +1059,8 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	}
 }
 
-div[ng-class="fr_CA"] {
+html[lang="fr"] {
+	background-color: black !important;
     .answers-main-content.answer-buttons {
         ul {
             li:nth-child(n+2) {
@@ -1077,10 +1078,11 @@ div[ng-class="fr_CA"] {
         }
     }
     .answer-buttons.label-inches {
-	.answer-button-wrapper:not(:first-child) .answer-button-answer::after {
-		content: '';
+		.answer-button-wrapper:not(:first-child) .answer-button-answer::after {
+			top: 20px;
+			content: ' po' !important;
+		}
 	}
-}
 }
 
 

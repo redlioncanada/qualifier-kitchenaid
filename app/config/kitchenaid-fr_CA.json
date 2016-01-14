@@ -159,7 +159,7 @@
                         {
                             "text" : "Fours encastrés",
                             "value" : "wall oven",
-                            "displayName": "Fours encastré",
+                            "displayName": "Four encastré",
                             "classes" : "sub-category wallovens",
                             "image" : "img/walloven.png",
                             "image_alt" : "Fours Encastrés",
@@ -768,8 +768,8 @@
             "thumbnail_current" : "img/icon-location-current.png",
             "text" : [
                 {
-                    "question" : "DANS QUEL ENDROIT DE LA CUSINE SE TROUVE VOTRE SURFACE DE CUSSION?",
-                    "question_full" : "DANS QUEL ENDROIT DE LA CUSINE SE TROUVE VOTRE SURFACE DE CUSSION?",
+                    "question" : "DANS QUEL ENDROIT DE LA CUISINE SE TROUVE VOTRE SURFACE DE CUSSION?",
+                    "question_full" : "DANS QUEL ENDROIT DE LA CUISINE SE TROUVE VOTRE SURFACE DE CUSSION?",
                     "sub_question" : "Sélectionnez une réponse",
                     "explanation_title" : "Pourquoi me demandez-vous où je cuisine?",
                     "explanation" : "Nous savons que chaque cuisine est unique. Si nous savons où se trouve votre surface de cuisson, nous pouvons recommander le système de ventilation qui convient parfaitement.",
@@ -1394,14 +1394,14 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas importante","Plus ou moins important","Important","Très important"]       
+                        "scale": ["Pas important","Plus ou moins important","Important","Très important"]       
                     },
                     "answers" : {
                         "0" : {
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 0,
-                            "text" : "Pas importante",
+                            "text" : "Pas important",
                             "scoring" : {
                             }
                         },
@@ -2453,7 +2453,7 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas importante","Plus ou moins important","Important","Très important"]       
+                        "scale": ["Pas importante","Plus ou moins importante","importante","Très importante"]       
                     },
                     "answers" : {
                         "0" : {
@@ -2469,7 +2469,7 @@
                             "value" : 1,
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
-                            "text" : "Plus ou moins important",
+                            "text" : "Plus ou moins importante",
                             "scoring" : {
                                 "energyStar" : 1
                             }
@@ -2478,7 +2478,7 @@
                             "value" : 2,
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
-                            "text" : "Important",
+                            "text" : "importante",
                             "scoring" : {
                                 "energyStar" : 3
                             }
@@ -2487,7 +2487,7 @@
                             "value" : 3,
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
-                            "text" : "Très important",
+                            "text" : "Très importante",
                             "scoring" : {
                                 "energyStar" : 5
                             }
@@ -3250,7 +3250,7 @@
                         "to": 3,
                         "step": 0.0001,
                         "dimension": "",
-                        "scale": ["Pas importante","Plus ou moins important ","Important","Très important"]       
+                        "scale": ["Pas importante","Plus ou moins importante ","importante","Très importante"]       
                     },
                     "answers" : {
                         "0" : {
@@ -3265,7 +3265,7 @@
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 1,
-                            "text" : "Plus ou moins important ",
+                            "text" : "Plus ou moins importante ",
                             "scoring" : {
                                 "cleanWater": 1
                             }
@@ -3274,7 +3274,7 @@
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 2,
-                            "text" : "Important",
+                            "text" : "importante",
                             "scoring" : {
                                 "cleanWater": 2
                             }
@@ -3283,7 +3283,7 @@
                             "thumbnail" : "img/icon-energy.png",
                             "thumbnail_current" : "img/icon-energy-current.png",
                             "value" : 3,
-                            "text" : "Très important",
+                            "text" : "Très importante",
                             "scoring" : {
                                 "cleanWater": 3
                             }
