@@ -5,6 +5,7 @@ angular.module('App')
 
     var apptext = $rootScope.brandData.apptext;
     var applianceType = appliance.displayName.toLowerCase();
+    var submitted = false;
 
     $timeout(function() {
       $scope.setMessage();
@@ -12,6 +13,8 @@ angular.module('App')
     });
 
     $scope.submit = function () {
+      if (submitted) return;
+      submitted = true;
       $scope.email.message = $scope.email.message.replace(fakelink, "<a href='"+link+"'>"+fakelink+"</a>");
       var message = $.param({address: $scope.email.address, message: $scope.email.message, name: $scope.email.name, subject: $scope.email.subject});
 
