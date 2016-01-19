@@ -280,7 +280,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
           var host = "http://mykitchenaid.wpc-stage.com";
           // @endif
           // @if ENV='production'
-          var host = $appstate.host();
+          var host = "http://findmy.maytag.ca";
           // @endif
           $resource(host+"/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = $dataDecorator(res.products);
