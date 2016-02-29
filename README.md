@@ -28,11 +28,11 @@ Each brand has it's own palette, fonts, and other individual files to adjust the
 
 
 ##Locale  
-To change app locale, open app.js and change $rootScope.locale to either:  
+To change app locale, open index.html and change the lang attribute on the html tag to either
 ```
-$rootScope.locale = "en_CA";  
+lang="en" 
 ```
 or  
 ```
-$rootScope.locale = "fr_CA";
+lang="fr"
 ```
