@@ -8,7 +8,7 @@
 					<img ng-if="a.appliance=='Laundry'" ng-src="http://kitchenaid.com/{{a.image}}">
 				</div>
 				<div class="print-page-title">
-					<span class="name">{{a.name}}</span>
+					<span class="name" bo-html="a.name"></span>
 					<span class="sku" ng-if="a.appliance!='Laundry'">{{color}}</span> 
 					<span class="sku" ng-if="a.appliance=='Laundry'">{{a.picker.washerSku}}/{{a.picker.dryerSku}}</span> 
 				</div>
