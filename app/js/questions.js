@@ -155,6 +155,13 @@ angular.module('App')
     	return false
   	}
 
+  	$scope.getTitle = function() {
+  		var title = $location.path().replace(/\/question\//g, '')
+  		title = title.replace(/ - .*/g, '')
+  		if (title == "Appliance") title = "Appliances";
+		return title.charAt(0).toUpperCase() + title.slice(1)
+  	}
+
 	$scope.recalculateResults = function () {
 		$rootScope.questionsData.currentCount = 0;
 		$rootScope.questionsData.currentScore = {};
