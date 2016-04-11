@@ -29,10 +29,15 @@ angular.module('App')
 
     });
 
+    $rootScope.didSendResultsPageView = false
     $scope.$on('$locationChangeSuccess', function(event) {
-      ga('set', 'page', $location.path())
-      console.log($location.path())
-      ga('send', 'pageview')
+      if (!$rootScope.didSendResultsPageView) {
+          ga('set', 'page', $location.path())
+          console.log($location.path())
+          ga('send', 'pageview')
+          $rootScope.didSendResultsPageView = true
+      }
+      document.title = "Results | KitchenAid Qualifier Consumer App"
       
       // console.log('results location change')
       if (!$rootScope.questionsData && !$rootScope.questionsData.scoringQuestions) console.log('no init');

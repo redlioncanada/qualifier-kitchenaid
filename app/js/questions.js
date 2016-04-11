@@ -58,7 +58,10 @@ angular.module('App')
     	// console.log('question location change');
     	ga('set', 'page', $location.path())
 	    console.log($location.path())
-	    ga('send', 'pageview')
+	    // ga('send', 'pageview', $location.path())
+	    ga('send', {'hitType':'pageview','page':$location.path(),'title':'Qualifier: '+$location.path()})
+
+	    document.title = $scope.getTitle()+" | KitchenAid Qualifier Consumer App"
 	    
     		var q = ($location.path()).toString().replace("/question/","");
 
