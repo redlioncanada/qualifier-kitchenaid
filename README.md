@@ -1,4 +1,4 @@
-#WP Qualifier Tool
+#KitchenAid Qualifier Tool
 
 ##Development
 1. Run
