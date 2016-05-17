@@ -13,7 +13,12 @@ bower install
 ```
 To install all the app dependencies
 
-3. To build and run the app, simply run 
+3. Copy Components
+
+Copy ```bower_components``` to ```/app``` and rename it ```components```
+Copy ```app/js/components/ng-slider/dist/ng-slider.min.js``` to ```app/components/ng-slider/dist```, replacing the existing file
+
+4. To build and run the app, simply run 
 ```
 gulp
 ```
