@@ -15,8 +15,9 @@ To install all the app dependencies
 
 3. Copy Components
 
-Copy ```bower_components``` to ```/app``` and rename it ```components```
-Copy ```app/js/components/ng-slider/dist/ng-slider.min.js``` to ```app/components/ng-slider/dist```, replacing the existing file
+Copy ```bower_components``` to ```/app``` and rename it ```components```  
+Copy ```app/js/components/ng-slider/dist/ng-slider.min.js``` to ```app/components/ng-slider/dist```, replacing the existing file  
+Copy ```app/img``` to ```build```, replacing the existing folder
 
 4. To build and run the app, simply run 
 ```
