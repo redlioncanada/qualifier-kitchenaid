@@ -1,4 +1,4 @@
-#KitchenAid Qualifier Tool
+#KA Qualifier Tool
 
 ##Development
 1. Run
@@ -19,6 +19,7 @@ Copy ```bower_components``` to ```/app``` and rename it ```components```
 Copy ```app/js/components/ng-slider/dist/ng-slider.min.js``` to ```app/components/ng-slider/dist```, replacing the existing file  
 Copy ```app/img``` to ```build```, replacing the existing folder
 
+
 4. To build and run the app, simply run 
 ```
 gulp
@@ -34,11 +35,24 @@ Each brand has it's own palette, fonts, and other individual files to adjust the
 
 
 ##Locale  
-To change app locale, open index.html and change the lang attribute on the html tag to either
+To change app locale, open app.js and change $rootScope.locale to either:  
 ```
-lang="en" 
+$rootScope.locale = "en_CA";  
 ```
 or  
 ```
-lang="fr"
+$rootScope.locale = "fr_CA";
 ```
+
+##Deployment
+To compile the app for production, simply run
+```
+gulp prod
+```
+This will compile the app to /build, combining all .js into a single .js file without comments, and excluding any development-specific code. 
+
+To view the app in French mode, run
+```
+gulp prod
+```
+then copy the contents of ```/build/fr``` to ```/build```, replacing any existing files
