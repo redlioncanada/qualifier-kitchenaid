@@ -131,7 +131,7 @@
 							"scoring" : {
 								"appliance" : "Cooktops"
 							},
-							"next" : "Cooking - Cooktops - Size",						
+							"next" : "Cooktops - Size",						
 							"order" : 1
 						},
 						{
@@ -147,7 +147,7 @@
 							"scoring" : {
 								"appliance" : "Ranges"
 							},
-							"next" : "Cooking - Ranges - Size",
+							"next" : "Ranges - Size",
 							"order" : 2
 						},
 						{
@@ -163,7 +163,7 @@
 							"scoring" : {
 								"appliance" : "Wall Ovens"
 							},
-							"next" : "Cooking - Wall Ovens - Size",						
+							"next" : "Wall Ovens - Size",						
 							"order" : 3
 						},
 						{
@@ -179,7 +179,7 @@
 							"scoring" : {
 								"appliance" : "Vents"
 							},
-							"next" : "Cooking - Vents - Size",						
+							"next" : "Vents - Size",						
 							"order" : 4
 						}
 					]
@@ -187,8 +187,8 @@
 			],
 			"category" : "aesthetics"
 		},
-		"Cooking - Cooktops - Size" : {
-			"next" : "Cooking - Cooktops - Style",
+		"Cooktops - Size" : {
+			"next" : "Cooktops - Style",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
@@ -404,9 +404,9 @@
 				}					
 			]          
 		},
-		"Cooking - Cooktops - Style" : {
-			"next" : "Cooking - Cooktops - Features 1",
-			"previous" : "Cooking - Cooktops - Size",
+		"Cooktops - Style" : {
+			"next" : "Cooktops - Features 1",
+			"previous" : "Cooktops - Size",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
@@ -460,9 +460,9 @@
 				}
 			]
 		},
-		"Cooking - Cooktops - Features 1" : {
-			"next" : "Cooking - Cooktops - Features 2",
-			"previous" : "Cooking - Cooktops - Style",
+		"Cooktops - Features 1" : {
+			"next" : "Cooktops - Features 2",
+			"previous" : "Cooktops - Style",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_text" : "Features",
@@ -539,9 +539,9 @@
 				}
 			]
 		},
-		"Cooking - Cooktops - Features 2" : {
-			"next" : "Cooking - Cooktops - Fuel Type",
-			"previous" : "Cooking - Cooktops - Features 1",
+		"Cooktops - Features 2" : {
+			"next" : "Cooktops - Fuel Type",
+			"previous" : "Cooktops - Features 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
 			"thumbnail_current" : "img/icon-features-current.png",
@@ -646,9 +646,9 @@
 				}
 			]
 		},
-		"Cooking - Cooktops - Fuel Type" : {
+		"Cooktops - Fuel Type" : {
 			"next" : null,
-			"previous" : "Cooking - Cooktops - Features 2",
+			"previous" : "Cooktops - Features 2",
 			"thumbnail_text" : "Fuel Type",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
@@ -696,8 +696,8 @@
 				}
 			]
 		},
-		"Cooking - Vents - Size" : {
-			"next" : "Cooking - Vents - Location",
+		"Vents - Size" : {
+			"next" : "Vents - Location",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
@@ -746,9 +746,9 @@
 				}
 			]
 		},
-		"Cooking - Vents - Location" : {
-			"next" : "Cooking - Vents - Type",
-			"previous" : "Cooking - Vents - Size",
+		"Vents - Location" : {
+			"next" : "Vents - Type",
+			"previous" : "Vents - Size",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Location",
 			"thumbnail_current" : "img/icon-location-current.png",
@@ -790,9 +790,9 @@
 				}
 			]
 		},
-		"Cooking - Vents - Type" : {
-			"next" : "Cooking - Vents - Speed",
-			"previous" : "Cooking - Vents - Location",
+		"Vents - Type" : {
+			"next" : "Vents - Speed",
+			"previous" : "Vents - Location",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
@@ -841,9 +841,9 @@
 				}
 			]
 		},
-		"Cooking - Vents - Speed" : {
-			"next" : "Cooking - Vents - Ventilation 1",
-			"previous" : "Cooking - Vents - Type",
+		"Vents - Speed" : {
+			"next" : "Vents - Ventilation 1",
+			"previous" : "Vents - Type",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Speed",
 			"thumbnail_current" : "img/icon-speed-current.png",
@@ -890,9 +890,9 @@
 				}
 			]
 		},
-		"Cooking - Vents - Ventilation 1" : {
-			"next" : "Cooking - Vents - Ventilation 2",
-			"previous" : "Cooking - Vents - Speed",
+		"Vents - Ventilation 1" : {
+			"next" : "Vents - Ventilation 2",
+			"previous" : "Vents - Speed",
 			"thumbnail_text" : "Ventilation",
 			"thumbnail_current" : "img/icon-convection-current.png",
 			"thumbnail_type" : "image",
@@ -954,9 +954,9 @@
 				}
 			]
 		},
-		"Cooking - Vents - Ventilation 2" : {
-			"next" : "Cooking - Vents - Warming",
-			"previous" : "Cooking - Vents - Ventilation 1",
+		"Vents - Ventilation 2" : {
+			"next" : "Vents - Warming",
+			"previous" : "Vents - Ventilation 1",
 			"thumbnail_text" : "Automatic Fan",
 			"thumbnail_current" : "img/icon-convection-current.png",
 			"thumbnail_type" : "image",
@@ -1003,9 +1003,9 @@
 				}
 			]
 		},
-		"Cooking - Vents - Warming" : {
+		"Vents - Warming" : {
 			"next" : null,
-			"previous" : "Cooking - Vents - Ventilation 2",
+			"previous" : "Vents - Ventilation 2",
 			"thumbnail_text" : "Warming",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_type" : "image",
@@ -1052,8 +1052,8 @@
 				}
 			]
 		},
-		"Cooking - Wall Ovens - Size" : {
-			"next" : "Cooking - Wall Ovens - Orientation",
+		"Wall Ovens - Size" : {
+			"next" : "Wall Ovens - Orientation",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
@@ -1136,9 +1136,9 @@
 				}					
 			]
 		},
-		"Cooking - Wall Ovens - Orientation" : {
-			"next" : "Cooking - Wall Ovens - Features",
-			"previous" : "Cooking - Wall Ovens - Size",
+		"Wall Ovens - Orientation" : {
+			"next" : "Wall Ovens - Features",
+			"previous" : "Wall Ovens - Size",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Orientation",
 			"thumbnail_current" : "img/icon-orientation-current.png",
@@ -1203,9 +1203,9 @@
 				}
 			]
 		},
-		"Cooking - Wall Ovens - Features" : {
-			"next" : "Cooking - Wall Ovens - Style",
-			"previous" : "Cooking - Wall Ovens - Orientation",
+		"Wall Ovens - Features" : {
+			"next" : "Wall Ovens - Style",
+			"previous" : "Wall Ovens - Orientation",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
 			"thumbnail_current" : "img/icon-features-current.png",
@@ -1287,9 +1287,9 @@
 				}
 			]
 		},
-		"Cooking - Wall Ovens - Style" : {
-			"next" : "Cooking - Wall Ovens - Energy",
-			"previous" : "Cooking - Wall Ovens - Features",
+		"Wall Ovens - Style" : {
+			"next" : "Wall Ovens - Energy",
+			"previous" : "Wall Ovens - Features",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
@@ -1353,9 +1353,9 @@
 				}
 			]
 		},
-		"Cooking - Wall Ovens - Energy" : {
+		"Wall Ovens - Energy" : {
 			"next" : null,
-			"previous" : "Cooking - Wall Ovens - Style",
+			"previous" : "Wall Ovens - Style",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Energy",
 			"thumbnail_current" : "img/icon-energy-current.png",
@@ -1414,8 +1414,8 @@
 				}											
 			]
 		},
-		"Cooking - Ranges - Size" : {
-			"next" : "Cooking - Ranges - Features 1",
+		"Ranges - Size" : {
+			"next" : "Ranges - Features 1",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
@@ -1484,9 +1484,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Features 1" : {
-			"next" : "Cooking - Ranges - Features 2",
-			"previous" : "Cooking - Ranges - Size",
+		"Ranges - Features 1" : {
+			"next" : "Ranges - Features 2",
+			"previous" : "Ranges - Size",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_text" : "Features",
@@ -1567,9 +1567,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Features 2" : {
-			"next" : "Cooking - Ranges - Capacity",
-			"previous" : "Cooking - Ranges - Features 1",
+		"Ranges - Features 2" : {
+			"next" : "Ranges - Capacity",
+			"previous" : "Ranges - Features 1",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_text" : "Features",
@@ -1674,9 +1674,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Capacity" : {
-			"next" : "Cooking - Ranges - Style",
-			"previous" : "Cooking - Ranges - Features 2",
+		"Ranges - Capacity" : {
+			"next" : "Ranges - Style",
+			"previous" : "Ranges - Features 2",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Capacity",
 			"thumbnail_current" : "img/icon-capacity-current.png",
@@ -1738,9 +1738,9 @@
 				}											
 			]
 		},
-		"Cooking - Ranges - Style" : {
-			"next" : "Cooking - Ranges - Style 2",
-			"previous" : "Cooking - Ranges - Capacity",
+		"Ranges - Style" : {
+			"next" : "Ranges - Style 2",
+			"previous" : "Ranges - Capacity",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_text" : "Style",
@@ -1801,9 +1801,9 @@
 				}
 			]
 		},
-        "Cooking - Ranges - Style 2" : {
-			"next" : "Cooking - Ranges - Lifestyle",
-			"previous" : "Cooking - Ranges - Style",
+        "Ranges - Style 2" : {
+			"next" : "Ranges - Lifestyle",
+			"previous" : "Ranges - Style",
 			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
@@ -1862,9 +1862,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Lifestyle" : {
-			"next" : "Cooking - Ranges - Features 3",
-			"previous" : "Cooking - Ranges - Style 2",
+		"Ranges - Lifestyle" : {
+			"next" : "Ranges - Features 3",
+			"previous" : "Ranges - Style 2",
 			"thumbnail_text" : "Lifestyle",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
 			"thumbnail_type" : "image",
@@ -1930,9 +1930,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Features 3" : {
-			"next" : "Cooking - Ranges - Fuel Type",
-			"previous" : "Cooking - Ranges - Lifestyle",
+		"Ranges - Features 3" : {
+			"next" : "Ranges - Fuel Type",
+			"previous" : "Ranges - Lifestyle",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
 			"thumbnail_current" : "img/icon-features-current.png",
@@ -1986,9 +1986,9 @@
 				}											
 			]
 		},
-		"Cooking - Ranges - Fuel Type" : {
+		"Ranges - Fuel Type" : {
 			"next" : null,
-			"previous" : "Cooking - Ranges - Features 3",
+			"previous" : "Ranges - Features 3",
 			"thumbnail_text" : "Fuel Type",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
