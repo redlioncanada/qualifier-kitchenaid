@@ -253,6 +253,28 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
     $rootScope.log = function (log) {
       console.log(log);
     }
+    $rootScope.parseHomeQuestions = function() {
+      var questions = {}
+      for (var index in $rootScope.brandData.questions) {
+        var question = $rootScope.brandData.questions[index]
+        var category = getCategoryFromName(question.name)
+
+        if ("isFirstQuestion" in question && question["isFirstQuestion"] && !(category in questions)) {
+          questions[category] = question.name
+        }
+      }
+      $rootScope.homeQuestions = questions
+
+      function getCategoryFromName(name) {
+        var cnt = name.match(/-/g) ? name.match(/-/g).length : false
+
+        if (cnt) {
+          return (name.split('-')[cnt-1]).trim()
+        }
+        return false
+      }
+    }
+
 
     $rootScope.isTabletWidthOrLess = window.innerWidth < 1024;
     $rootScope.$on('resize::resize', function() {
@@ -288,6 +310,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
                 
                 
 // $appstate.clear();
+                $rootScope.parseHomeQuestions()
                 $appstate.restore();
                 $tests.init($rootScope.appliances,$rootScope.brandData.questions);
 

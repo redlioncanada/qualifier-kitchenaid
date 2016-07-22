@@ -140,10 +140,25 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 	function _getSession() {
 		var session = false;
 
+		//check for a direct-to-category query
+		var search = $location.search()
+		if ("category" in search) {
+			var category = search['category'].replace(/%20/, ' ')
+			if (search['category'] in $rootScope.homeQuestions) {
+				var name = $rootScope.homeQuestions[category];
+				appstate.clear()
+
+				session = {
+					"restore": name
+				}
+				console.log('forwarding session to question titled '+name);
+			}
+		}
+
 		//check for a valid state in the URL
         var hash = $location.$$absUrl.split("?");
 
-        if (1 in hash) {
+        if (1 in hash && !session) {
           hash = hash[1].split('#')[0];
           //if there is one, clear localstorage
           appstate.clear();

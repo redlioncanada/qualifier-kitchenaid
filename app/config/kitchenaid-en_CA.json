@@ -188,6 +188,7 @@
 			"category" : "aesthetics"
 		},
 		"Cooking - Cooktops - Size" : {
+			"isFirstQuestion": true,
 			"next" : "Cooking - Cooktops - Style",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
@@ -697,6 +698,7 @@
 			]
 		},
 		"Cooking - Vents - Size" : {
+			"isFirstQuestion": true,
 			"next" : "Cooking - Vents - Location",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
@@ -1053,6 +1055,7 @@
 			]
 		},
 		"Cooking - Wall Ovens - Size" : {
+			"isFirstQuestion": true,
 			"next" : "Cooking - Wall Ovens - Orientation",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
@@ -1415,6 +1418,7 @@
 			]
 		},
 		"Cooking - Ranges - Size" : {
+			"isFirstQuestion": true,
 			"next" : "Cooking - Ranges - Features 1",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
@@ -2038,6 +2042,7 @@
 			]
 		},
 		"Fridges - Size" : {
+			"isFirstQuestion": true,
 			"next" : "Fridges - Energy",
 			"previous" : "Appliance",
 			"thumbnail_type" : "image",
@@ -2911,6 +2916,7 @@
 			]
 		},
 		"Dishwashers - Cleaning Power" : {
+			"isFirstQuestion": true,
 			"next" : "Dishwashers - Capacity",
 			"previous" : "Appliance",
 			"thumbnail_type" : "image",
