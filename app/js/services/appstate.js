@@ -144,8 +144,12 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 		var search = $location.search()
 		if ("category" in search) {
 			var category = search['category'].replace(/%20/, ' ')
-			if (search['category'] in $rootScope.homeQuestions) {
-				var name = $rootScope.homeQuestions[category];
+
+			var name
+			if (search['category'] in $rootScope.homeQuestions) name = $rootScope.homeQuestions[category];
+			if (category == 'Qualifier 1') name = 'Cooking - Pre-Qualifier 1'	//can't beat them, join them
+
+			if (name) {
 				appstate.clear()
 
 				session = {
@@ -153,6 +157,7 @@ appstateModule.factory('$appstate', ['$window', '$state', '$rootScope', 'localSt
 				}
 				console.log('forwarding session to question titled '+name);
 			}
+
 		}
 
 		//check for a valid state in the URL

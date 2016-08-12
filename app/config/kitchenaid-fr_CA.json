@@ -113,6 +113,7 @@
         },
         "Cooking - Pre-Qualifier 1" : {
             "previous" : "Appliance",
+            "isFirstQuestion": true,
             "thumbnail_type" : "image",
             "thumbnail_text" : "Cooking",
             "thumbnail_current" : "img/nav-placeholder-current.png",
